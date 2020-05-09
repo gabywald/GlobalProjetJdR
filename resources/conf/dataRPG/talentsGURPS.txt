@@ -1,0 +1,68 @@
+Acrobaties (DX/A)	DX–6
+Acteur (QI/M)	QI–5
+Arme de Jet (DX/F)	DX–4	[Couteau;Hache/Masse;Lance;Shuriken]
+Arme de Mêlée (DX/Varie)	Spécial	[Armes d’Escrime;Armes à Hampe;Armes à Impact;Epées;Fléaux]
+Arme à Projectiles (Feu) (DX/Varie)	*	[Carabine (DX-4);Fusil (DX-4);Lance-Roquettes Antichar (LRAC) (DX-4);Pistolet (DX-4);Pistolet-Mitrailleur (PM) (DX-4)]
+Arme à Projectiles Diverses (DX/Varie)	*	[Arbalète (DX-4);Arc (DX-5);Sarbacane (DX-6)]
+Arme à Projectiles (Artilleur) (DX/Varie)	*	[Arme à Rayons (DX-4);Canon (DX-4);Mitrailleuse (DX-4);Lance-Flammes (DX-4)]
+Armurerie/NT (QI/M)	QI–5
+Art Oratoire (QI/M)	QI–5
+Bouclier (DX/F)	DX–4
+Camouflage (QI/F)	QI–4
+Combat à Mains Nues (DX/F)	Néant.
+Commandement (QI/M)	QI–5
+Commerce (QI/M)	QI–5
+Compétences d’Influence	Variable.	[Baratin (QI/M)	QI–5;Diplomatie (QI/A)	QI–6;Intimidation (QI/M)	QI–5;Savoir-Vivre (QI/F)	QI–4;Sensualité (S/M)	S–3]
+Compétences en Véhicules (DX/Varie)	Spécial.
+Connaissance du Milieu (QI/F)	QI–4
+Connaissance de la Nature (QI/A)	QI–6
+Contrebande (QI/M)	QI–5
+Contrefaçon/NT (QI/A)	QI–6
+Criminologie/NT (QI/M)	QI–5
+Crochetage/NT (QI/M)	QI–5
+Déguisement/NT (QI/M)	QI–5
+Diagnostic/NT (QI/A)	QI–6
+Discrétion (DX/M)	DX–5
+Dissimulation (QI/M)	QI–5
+Dressage (QI/M)	QI–5
+Droit (QI/A)	QI–6
+Ecrivain (QI/M)	QI–5
+Equipier/NT (QI/F)	QI–4
+Escalade (DX/M)	DX–5
+Evasion (DX/A)	DX–6
+Explosifs/NT (QI/M)	QI–5
+Festoyer (S/F)	S–4
+Filature (QI/M)	QI–5
+Fouille (QI/M)	QI–5
+Informatique/NT (QI/F)	QI–4
+Ingénierie/NT (QI/A)	Néant.
+Interrogatoire (QI/M)	QI–5
+Jeu (QI/M)	QI–5
+Karaté (DX/A)	Néant.
+Lancer (DX/M)	DX–3
+Lettres (QI/A)	QI–6
+Marche à Pied (S/M)	S–5
+Mathématiques/NT (QI/A)	QI–6
+Mécanique/NT (QI/M)	QI–5
+Médecine/NT (QI/A)	QI–7
+Monte (DX/M)	DX–5
+Natation (S/F)	S–4
+Navigation/NT (QI/M)	QI–5	[Maritime;Aérienne;Terrestre;Spatiale;Hyper-Spatiale]
+Observation (QI/M)	QI–5
+Occultisme (QI/M)	QI–5
+Photographie/NT (QI/M)	QI–5
+Pièges/NT (QI/M)	QI–5
+Pistage (QI/M)	QI–5
+Premiers Secours/NT (QI/F)	QI–4
+Programmation/NT (QI/A)	Néant.
+Recherche/NT (QI/M)	QI–5
+Réparation de Matériel Electronique/NT (QI/M)	QI–5
+Saut (DX/F)	Néant.
+Scaphandre/NT (DX/M)	DX–5	[Scaphandre de Plongée/NT;Scaphandre Pressurisé/NT;Scaphandre de Combat/NT;Scaphandre NBC/NT]
+Sciences Naturelles/NT (QI/A)	QI–6
+Sciences Sociales (QI/A)	QI–6	[Anthropologie;Archéologie;Psychologie;Sociologie;*]
+Survie (QI/M)	QI–5
+Système D (QI/F)	QI–4
+Tactique (QI/A)	QI–6
+Utilisation de Matériel Electronique/NT (QI/M)	QI–5
+Vol à la Tire (DX/A)	DX–6

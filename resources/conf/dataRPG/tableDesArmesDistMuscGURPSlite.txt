@@ -1,0 +1,6 @@
+Arbalète	estoc+4	NT2	FOR:7
+Arc Court	estoc	NT0	FOR:7
+Arc Long	estoc+2	NT0	FOR:11
+Grand couteau	estoc	NT0	FOR:6
+Hache de Lancer	TAI+2	NT0	FOR:11
+Lance	estoc+2	NT0	FOR:9

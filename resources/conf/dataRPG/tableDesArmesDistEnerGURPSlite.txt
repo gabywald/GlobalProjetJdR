@@ -1,0 +1,8 @@
+Derringer (.41)	1D6	NT5	FOR:9
+Pistolet Automatique (9mm)	2D6+2	NT6	FOR:9
+Revolver (.357)	3D6-1	NT7	FOR:10
+Pistolet Automatique (.44M)	3D6 NT8	FOR:12
+Carabine (.30)	5D6	NT5	FOR:10
+Fusil semi-Automatique (7,62)	7D6	NT6	FOR:10
+Fusil de précision (.338)	9D6+1	NT8	FOR:11
+Fusil à pompe (cal. 12)	1D6+1	NT6	FOR:10

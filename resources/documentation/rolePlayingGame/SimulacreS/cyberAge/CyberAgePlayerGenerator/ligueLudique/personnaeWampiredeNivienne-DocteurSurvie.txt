@@ -1,0 +1,51 @@
+BEGIN personnae
+CONCEPT Wampire de Nivienne
+NAME Docteur Survie
+IMAGE img/personnageAnonymous.jpg
+TITLE Wampire de Nivienne
+PV 13
+IMPACT 0
+SAN 44
+APP 9
+CON 16
+DEX 11
+FOR 12
+TAI 10
+EDU 12
+INT 12
+POU 10
+BEGIN cyberequipement
+END cyberequipement
+BEGIN cailloux
+END cailloux
+AGE 61
+SEXE Ind{\'e}termin{\'e}-e
+PARRAIN Chef de Gang
+ARGENT 17000
+DIVERS Dette de Yakuza. 
+METIER Wampire
+BEGIN talents
+Armes l{\'e}g{\`e}res	80
+Camouflage	90
+Connaissance du milieu de la rue	65
+Electronique	55
+M{\'e}decine	90
+Psychologie	50
+END talents
+BEGIN lightbio
+[Yakuza] Un Yakuza a une dette vis-{\`a}-vis de vous. Vous pouvez lui demander un service. 
+[Gangs] Vous tombez amoureux(se) d'un membre de Gang.  --- Votre liaison vous trahit. Vous la ha{\"i}ssez. 
+[Wampire-R{\^e}veur] Vous exercez le m{\'e}tier de Wampire pendant quelques mois.
+[Gangs] Vous passez une partie de votre adolescence dans un Gang. 
+[Gangs] Vous devenez l'ami d'un chef de Gang. 
+[Divers] Vous passez votre jeunesse dans une tr{\`e}s bonne {\'e}cole. 
+[Wampire-R{\^e}veur] Vous exercez le m{\'e}tier de Wampire pendant quelques mois.
+[Espace-Venise] Vous faites naufrage en plein espace. Vous restez un an et demi en Synthivers. 
+\emph{For Job, max was [240] (EDU*20), used [210], remain [00]}
+\emph{For Perso, max was [120] (INT*10), used [60], remain [60]}
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+

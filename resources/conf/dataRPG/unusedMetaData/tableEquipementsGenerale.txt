@@ -1,0 +1,55 @@
+Protections (SimulacreS)
+	Bassinet	3
+	Heaume	5
+	Fourrures	1
+	Cuir	2
+	Cuir Clouté	3
+	Plaque	6
+	Casque de protection (chantier, roller)	1
+	Casque intégral (motard)	2
+	Casque simple (CRS)	3
+	Casque de combat	5
+	Protège-tibia (CRS)	3
+	Protection artisanale	1
+	Protection lagère (discrète)	2
+	Protection Lourde (CRS)	3
+	Gilet pare-balles	5
+	Kevlar	5
+	Gilet pare-balles d'assault	6
+Magique (SimulacreS)
+	Amulette d’ordre	*
+	Amulette de vigilance	*
+	Amulette de cuivre 3 fois beni	*
+	Amulette d’adamantine	*
+	Amulette de jade enchanté	*
+	Amulette de charbon	*
+	Amulette de fer	*
+	Amulette d’argent vertueux	*
+	Pendentif d’invisibilité	*
+	Miroir d’ommnivision	*
+	Miroir d’emprisonnement	*
+	Miroir d’opposition	*
+	Baguette d’Onyx	*
+	Baguette de poussière	*
+	Potion de déguisement	*
+	Potion de force morale	*
+	Potion de force de géant	*
+	Potion de résistance au feu	*
+	Potion de respiration aquatique	*
+	Potion de contrôle des plantes	*
+	Potion d’ombre	*
+	Potion d’amianthus	*
+	Potion de vigueur magique	*
+	Potion de dextérité	*
+	Potion de soins	*
+	Potion d’énergie occulte	*
+	Liqueur de nyctalopie	*
+	Potion de métamorphose	*
+	Anneau de Coups	*
+	Anneau de folie	*
+	Anneau de force morale	*
+	Grimoire [*]	*
+Hardware / Matériel Info.
+	Console de base	*
+Software / Logiciel Info.
+	BriseGlace de base	*

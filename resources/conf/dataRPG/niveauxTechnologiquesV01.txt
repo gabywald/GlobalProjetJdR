@@ -1,0 +1,17 @@
+0 : Age de pierre	Feu, levier, language.
+1 : Age du bronze (Athènes)	Roue, écriture, agriculture. 1ers villages.
+2 : Age du fer (Rome)	Voute et clé de voute. Architecture et urbanisme.
+3 : Moyen-Age (Jusqu'en 1450)	Algèbre et invention du zéro. Premiers grands érudits.
+4 : Renaissance/Colonial (1450-1700)	Poudre à canon, imprimerie.	Les "Lumières", avancement des arts et des techniques.
+5 : Révolution industrielle (1700-1900)	Production de masse, machines à vapeur, télégraphe.
+6 : Atomique (1900-1950)	Automobiles,aéroplanes, TSF, premières fusées.
+7 : Nucléaire (1950-2000)	Fission de l'atome, ordinateurs, lasers, fusées, voyage orbital.Grandes évolutions dans différents secteurs (biologie & informatique).
+8 : Spatial (2000-2050?)	Voyage subluminique, fusion de l'atome, enregistrements cérébraux, implants, intelligences artificielles.
+9 : Stellaire	Voyage interstellaire plus rapide que la lumière, ordinateurs conscients, propulsion anti-newtonienne.
+10 : Antimatière	Énergie de l'antimatière, gravité artificielle, radio hyperluminique(HL) lente.
+11 : Énergétique	Champs de force, rayons tracteurs, radio HL rapide.
+12 : Gravitique	Antigravité, compensateurs de gravité, champs de force personnels.
+13 : Batisseurs de mondes	Terraformation complète et changement d'orbite des planètes.
+14 : Dysonien	Contruction de planètes, d'anneaux-mondes.
+15 : <<Divin>>	Transmission instantanée de la matière, énergie cosmique maitrisée, transmissions radios HL très rapide.
+16 : Et plus... 	Tout ce que vous voulez.

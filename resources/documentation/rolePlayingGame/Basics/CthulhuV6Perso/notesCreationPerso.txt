@@ -1,0 +1,548 @@
+http://sans-detour.com/index.php/Forum/77-Inspirations-ressources/6561-Feuille-de-Perso-Delta-Green.html -- Belles fiches perso DG
+http://sans-detour.com/index.php/Forum/76-Inspirations-ressources/6575-Feuille-de-Perso-AdC-30eme.html#6575 -- idem AdC
+
+http://forum.crazy-orc.org/index.php?topic=1099.0 -- 
+
+Vous trouverez des feuilles de personnages ici, dont une éditable:
+http://www.sans-detour.com/index.php?option=com_docman&Itemid=36
+
+Etape 1: Imaginer un concept
+Un professeur passionné par le folklore, un officier de l'armée qui a servi dans les colonies, un enquêteur privé qui s'occupe des affaires dont personne ne veut entendre parler, un dilettante qui passe ses journées à jouer au polo et parier sur des courses de chevaux, etc.
+
+Etape 2: Scores de caractéristiques
+	Caractéristiques	Score 	Dérivée
+	Apparence			3D6 	Prestance		= APP x5%
+	Constitution		3D6 	Endurance		= CON x5%
+	Dextérité			3D6 	Agilité			= DEX x5%
+	Force				3D6 	Puissance		= FOR x5%
+	Taille				2D6+6 	Corpulence		= TAI x5%
+	Éducation			3D6+6 	Connaissance	= EDU x5%
+	Intelligence		2D6+6 	Intuition		= INT x5%
+	Pouvoir				3D6 	Volonté			= POU x5%
+
+Si le tirage ne vous convient pas...
+	- Composer avec le hasard: avant d'envisager de modifier les caractéristiques d'un personnage, essayez de voir si ces caractéristiques hors normes ne peuvent pas donner une certaine originalité, un cachet particulier au personnage. Par exemple un professeur d'université ayant une EDU limitée mais une APP élevée pourrait avoir fait carrière en faisant jouer ses relations et son charisme plutôt que ses compétences personnelles. Un joueur souhaitant incarner un militaire et obtenant des valeurs de DEX et CON inférieures à la moyenne pourrait considérer que son personnage est un vétéran de la Première Guerre Mondiale souffrant d'importantes séquelles physiques.
+	- Moduler les caractéristiques: un joueur peut transférer 10 points entre ses différentes caractéristiques principales. Cela permet de corriger le hasard afin d'adapter les caractéristiques au concept du personnage. Cette méthode ne permet pas de diminuer une caractéristique en dessous de 6 ou de l'augmenter au-delà de 18, à l'exception de l'EDU qui peut aller jusqu'à 21 et du POU qui ne peut dépasser 15 (le POU peut dépasser 15 si c'est le hasard qui l'a décidé).
+	- Recommencer: Si les scores sont vraiment trop bas, avec l'autorisation du Gardien (MJ) vous pouvez tout retirer en espérant tomber sur des scores meilleurs.
+
+Etape 3: Autres valeurs
+	Aplomb				= 0
+	Santé Mentale (SAN)	= POU x5%
+	Points de Vie		= (CON + TAI) / 2, arrondi à l'entier supérieur
+	Seuil de Blessure	= Points de Vie / 2, arrondi à l'entier inférieur
+	Points de Magie		= POU
+	Impact				= voir la table ci-dessous
+	
+	FOR+TAI  	Impact
+	02 à 12  	  -4
+	13 à 16  	  -2
+	17 à 24  	  0
+	25 à 32  	  +2
+	33 à 40  	  +4
+
+Etape 4: Choisir une occupation
+	Choisissez une occupation qui corresponde au concept de votre personnage parmi celles décrites ci-dessous.
+
+    Répartissez EDUx20 points dans les compétences indiquées, en choisissant l'une d'elle comme étant la compétence phare de votre profession et qui doit être à 60% minimum. Une étoile après une compétence indique qu'il faut répartir les points dans une ou plusieurs sous-catégories de cette compétence (voir plus loin la liste des sous-catégories par compétence).
+    Vous devez choisir UNE particularité parmi les trois proposées. Le premier choix est toujours une compétence qui "parle d'elle-même" au niveau 50+1D20% et qu'il est possible d'augmenter avec les points donnés ci-dessus. Le bonus du second choix ne permet pas d'obtenir plus de 99% dans une compétence. Si le troisième choix est choisi et qu'il donne un bonus à une caractéristique, il faut recalculer les valeurs dérivées et les points de compétences.
+    Les cercles d'influence sont notés dans cet ordre: Proche, Éloigné, Opposé.
+
+
+
+Artiste
+	Écrivain, peintre, sculpteur, écrivain voyageur, photographe, ...
+	
+	Compétences d'occupation
+	Bibliothèque, Contacts & Ressources, Culture artistique*, Langues*, Métier* (Contrefaçon, Taxidermie,...), Négociation, Persuasion, Photographie, Pratique artistique*, Psychologie, Sciences de la terre*, Sciences de la vie*, Sciences formelles*, Sciences humaines*
+	
+	Particularités
+	- Compétence: Interpréter différemment les faits OU
+	- +10% à la compétence Culture artistique OU
+	- +1 en ÉDUcation
+	
+	Cercles d'influence
+	Culturel, Gotha (Mécènes), Business
+	
+	Équipement fétiche
+	Son atelier d'artiste ou bureau, avec son matériel, ses ouvrages de référence, ses études et ses notes, qui lui procurent un bonus de 10% en Pratique artistique
+	
+	Niveau de vie
+	Indigent à Riche
+
+
+Baroudeur
+	Aviateur, marin, globe-trotter, chasseur, plongeur/scaphandrier, convoyeur, ...
+	
+	Compétences d'occupation
+	Armes à feu*, Armes blanches*, Armes exotiques*, Baratin, Bricolage, Bureaucratie, Corps à Corps*, Jeu*, Langues*, Orientation, Psychologie, Survie, Vigilance, et une compétence à définir en fonction de son activité principale (Conduite*, Navigation, Piloter*, ...)
+	
+	Particularités
+	- Compétence: Parler avec les mains OU
+	- +10% à la compétence Bricolage OU
+	- +1 point d'Aplomb
+	
+	Cercles d'influence
+	Globe-trotters, Fonctionnaires, Forces de l'Ordre
+	
+	Équipement fétiche
+	Son couteau multifonctions qui lui procure un bonus de 10% en Bricolage
+	
+	Niveau de vie
+	Pauvre à Aisé
+
+
+Détective
+	Policier, détective privé, enquêteur d'assurances, inspecteur, agent fédéral,...
+	
+	Compétences d'occupation
+	Armes à feu*, Baratin, Bureaucratie, Contacts & Ressources, Corps à Corps*, Criminalistique, Discrétion, Écouter, Imposture, Interroger, Métier (Serrurier), Photographie, Pister, Se cacher, Trouver Objet Caché, Vigilance
+	
+	Particularités
+	- Compétence: Noter les petits détails insignifiants OU
+	- +10% à la compétence Contacts & Ressources OU
+	- +1 point d'Aplomb
+	
+	Cercles d'influence
+	Forces de l'Ordre, Pègre, Notables
+	
+	Équipement fétiche
+	Une plaque officielle (ou plus ou moins officielle), qui lui procure un bonus ou un malus de 10% aux compétences d'influence, en fonction de la perception que l'interlocuteur a des "officiels"
+	
+	Niveau de vie
+	Pauvre à Aisé
+
+
+Dilettante
+	Riche oisif, homme d'affaires, diplomate, négociateur, ...
+	
+	Compétences d'occupation
+	Contacts & Ressources, Crédit, Équitation, Jeu*, Sciences humaines* (Droit, Loi, Comptabilité,...), et des compétence au choix selon les envies et loisirs de l'investigateur.
+	
+	Particularités
+	- Compétence: Plaire à la gent du sexe opposé OU
+	- +10% à la compétence Crédit OU
+	- +1 point d'APParence
+	
+	Cercles d'influence
+	Gotha, Business, Médias
+	
+	Équipement fétiche
+	Son chéquier, qui lui procure un bonus de 10% dans les compétences d'influence, à condition qu'il puisse l'utiliser.
+	
+	Niveau de vie
+	Aisé à Riche
+
+
+Explorateur
+	Archéologue, cartographe, ethnologue, anthropologue, scientifique, chasseur de trésors, ...
+	
+	Compétences d'occupation
+	Armes à feu*, Athlétisme, Bureaucratie, Langues*, Orientation, Premiers soins, Savoir-vire, Sciences de la Terre*, Sciences de la vie*, Sciences humaines*, Survie, Trouver Objet Caché, Vigilance
+	
+	Particularités
+	- Compétence: Donner des ordre aux porteurs OU
+	- +10% à la compétence Survie OU
+	- +1 en CONstitution
+	
+	Cercles d'influence
+	Universitaires, Musées & Instituts, Fonctionnaires
+	
+	Équipement fétiche
+	Son matériel d'orientation (sextant, boussole, cartes) qui lui procure un bonus de 10% en Orientation.
+	
+	Niveau de vie
+	Classe Moyenne
+
+
+Homme de foi
+	Spirite, médium, prêtre, missionnaire, prédicateur, ...
+	
+	Compétences d'occupation
+	Baratin, Contacts & Ressources, Crédit, Imposture, Langues* (Anciennes, Mortes, Cryptiques,...) , Persuasion, Psychologie, Sciences de la vie*, Sciences formelles*, Sciences occultes.
+	
+	Particularités
+	- Compétence: Inspirer la confiance à son interlocuteur OU
+	- +10% à la compétence Sciences occultes OU
+	- +1 en POUvoir
+	
+	Cercles d'influence
+	Cultes, Sans-abri, Forces de l'ordre
+	
+	Équipement fétiche
+	L'habit de sa charge (collerette,pour le prêtre, robe pour le médium, ...) qui lui procure 10% en persuasion.
+	
+	Niveau de vie
+	Indigent à Aisé, voire Riche
+
+
+Journaliste
+	Reporter, photographe, journaliste mondain, journaliste financier, ...
+	
+	Compétences d'occupation
+	Baratin, Bibliothèque, Contacts & Ressources, Discrétion, Écouter, Imposture, Interroger, Photographie, Pister, Pratique Artistique (Écriture), Se cacher, Trouver Objet Caché, Vigilance.
+	
+	Particularités
+	- Compétence: Au fait des rumeurs et commérages OU
+	- +10% à la compétence Langue Maternelle OU
+	- +1 en INTelligence
+	
+	Cercles d'influence
+	Un cercle à définir en fonction de la spécialité du journaliste (Gotha pour un journaliste mondain, Finances pour un journaliste financier,...) un second à définir en fonction du premier, Médias (les concurrents)
+	
+	Équipement fétiche
+	Ses calepins, dossiers et ses notes diverses, qui lui procurent un bonus de 10% en Bibliothèque.
+	
+	Niveau de vie
+	Pauvre à Aisé
+
+
+Médecin
+	Médecin généraliste, infirmier, médecin légiste, psychologue,...
+	
+	Compétences d'occupation
+	Bibliothèque, Contacts & Ressources, Crédit, Hypnose, Langues (Latin), Médecine, Premiers Soins, Psychanalyse, Psychologie, Sciences de la vie*, Trouver Objet Caché
+	
+	Particularités
+	- Compétence: Réconforter autrui OU
+	- +10% à la compétence pour résister à toutes les maladies, microbes, et autres vecteurs contagieux OU
+	- +1 point d'Aplomb
+	
+	Cercles d'influence
+	Santé, Notables, Anarchistes
+	
+	Équipement fétiche
+	Son cabinet personnel avec son équipement et ses ouvrages de référence qui lui procurent un bonus de 10% en Médecine
+	
+	Niveau de vie
+	Aisé à Riche
+
+
+Militaire
+	Officier, vétéran, mercenaire, ...
+	
+	Compétences d'occupation
+	Armes à feu*, Armes blanches*, Artillerie*, Athlétisme, Corps à corps*, Discrétion*, Métier* (Armurerie, Explosifs, ...), Orientation, Premiers soins, Se cacher, Vigilance, et une compétence au choix en fonction du corps d'armée (Bureaucratie pour la logistique, Équitation pour la cavalerie, Métier: mécanique pour le génie, Navigation pour la marine, Piloter pour l'aviation, ...)
+	
+	Particularités
+	- Compétence: Tactique et stratégie militaire OU
+	- +10% à toutes les compétences relationnelles, mais seulement auprès des militaires OU
+	- +1 point d'Aplomb
+	
+	Cercles d'influence
+	Militaires, Forces de l'Ordre, Anarchistes
+	
+	Équipement fétiche
+	Ses médailles et décorations, qui lui procurent un bonus de 10% aux compétences relationnelles, en fonction de la perception que l'interlocuteur a des "officiels"
+	
+	Niveau de vie
+	Classe moyenne à Riche
+
+
+Universitaire
+	Professeur, étudiant, scientifique, chercheur, ...
+	
+	Compétences d'occupation
+	Bibliothèque, Bureaucratie, Contacts & Ressources, Crédit, Langues*, Savoir-vivre, Sciences de la terre*, Sciences de la vie*, Sciences formelles*, Sciences humaines*
+	
+	Particularités
+	- Compétence: Comprendre les discours abscons OU
+	- +10% à la compétence Bibliothèque OU
+	- +1 en ÉDUcation
+	
+	Cercles d'influence
+	Universitaires, Culturel, Business
+	
+	Équipement fétiche
+	Son cabinet de curiosités qui lui procure un bonus de 10% aux compétences de Sciences
+	
+	Niveau de vie
+	Pauvre à Aisé
+
+Etape 5: Les Compétences d'intérêts personnels
+	Vous avez INTx10% points à répartir dans les compétences qui ne sont pas listées dans votre occupation (ou que vous n'avez pas choisies comme compétences d'occupation). Vous ne pouvez pas prendre la compétence Mythe de Cthulhu (sauf accord du Gardien) et aucune compétence ne peut dépasser 99%.
+	Préférez quelques compétences avec un bon niveau plutôt qu'une myriade avec un faible niveau. Privilégiez les chiffres ronds plutôt que les comptes d'apothicaire.
+
+Etape 6: Finitions
+	Choisissez librement la personnalité.
+	
+	Définissez l'état civil en trouvant un nom, une nationalité, un sexe.
+	
+	L'âge doit être au moins égal à l'EDU+6. Si vous voulez que le personnage soit bien plus vieux, pour chaque tranche de 10 ans au dessus de ce minimum, ajouter 1 point en EDU et repartir 20 points de compétences supplémentaires dans celles relatives à l'occupation. En contrepartie, pour tenir compte du vieillissement, retirer également 1 point en FOR, CON, DEX ou APP, au choix, par décennie additionnelle.
+	
+	Choisir librement l'équipement en respectant le niveau de vie et avec l'accord du gardien.
+	
+	L'histoire personnelle, dans les grandes lignes, est à indiquer au verso de la fiche.
+
+=============================================================================================
+
+=============================================================================================
+
+Niveau de vie
+	A choisir parmi :
+		- Indigent 5% (0 à 500 $ annuels)
+		- Pauvre 25% (500 à 2500 $ annuels)
+		- Classe moyenne 50% (2500 à 6000 $ annuels)
+		- Aisé 75% (6000 à 25000 $ annuels)
+		- Riche 95% (25000 $ et plus annuels)
+		
+L’âge doit être au moins égal à EDU+6.
+	Pour tenir compte du vieillissement, appliquez les modificateurs suivants :
+		Age			Modificateurs
+		30-34
+		35-39
+		40-44
+		45-49
+		50-54
+		55-59
+		60-64
+		67-70
+		Etc.
+					10 points de compétences à ajouter et 1 point à enlever parmi FOR, CON, DEX ou APP
+					20 points de compétences à ajouter et 2 points à enlever parmi FOR, CON, DEX ou APP
+					30 points de compétences à ajouter et 3 points à enlever parmi FOR, CON, DEX ou APP
+					40 points de compétences à ajouter et 4 points à enlever parmi FOR, CON, DEX ou APP
+					50 points de compétences à ajouter et 5 points à enlever parmi FOR, CON, DEX ou APP
+					60 points de compétences à ajouter et 6 points à enlever parmi FOR, CON, DEX ou APP
+					70 points de compétences à ajouter et 7 points à enlever parmi FOR, CON, DEX ou APP
+					80 points de compétences à ajouter et 8 points à enlever parmi FOR, CON, DEX ou APP
+					Etc.
+
+=============================================================================================
+
+Les compétences en résumé
+
+Connaissance
+
+	Bureaucratie (10 %)
+	Gérer les papiers et obtenir des autorisations
+	
+	Culture artistique* (10 %)
+	Reconnaître et évaluer les oeuvres artistiques
+	Choix possibles : Littérature, Peinture, Sculpture, Musique, Théâtre, Cinéma, Architecture, Orfèvrerie...
+	
+	Langue maternelle (EDU x5 %)
+	Savoir s'exprimer correctement
+	
+	Langues* (00 %)
+	Pratiquer une langue étrangère
+	Choix possibles : L'ensemble des langues vivantes ou mortes, ainsi que les argots, les jargons et langues cryptiques, alchimiques, morse, langue des signes...
+	
+	Mythe de Cthulhu (00 %)
+	La connaissance des savoirs impies
+	
+	Sciences humaines* (00 %)
+	Connaissances en histoire, géographie, archéologie,...
+	Choix possibles : Administration et Économie, Anthropologie, Archéologie, Droit, Histoire, Géographie, Science politique, Sociologie...
+	
+	Sciences de la terre* (00 %)
+	Connaissances en géologie, océanographie, sismologie, ...
+	Choix possibles : Géologie, Glaciologie, Hydrologie, Météorologie, Minéralogie, Océanographie, Sismologie, Volcanologie...
+	
+	Sciences de la vie* (00 %)
+	Connaissances en biologie, botanique, zoologie, ...
+	Choix possibles : Biochimie, Biologie, Botanique, Paléontologie, Zoologie, Pharmacologie...
+	
+	Sciences formelles* (00 %)
+	Connaissances en physique, mathématiques, chimie, ...
+	Choix possibles : Astronomie, Chimie, Cryptographie, Mathématiques, Physique...
+	
+	Sciences occultes (05 %)
+	Connaissances et pratique des rituels occultes
+	
+	Exemples de compétences à créer soi-même
+	Comptabilité, Stratégie Militaire, Cartomancie, ...
+
+
+Savoir-faire
+
+	Bricolage (20 %)
+	Réparer ou construire des choses simples
+	
+	Criminalistique (00 %)
+	Connaissance des techniques d'investigation
+	
+	Hypnose (05 %)
+	Pratique de l'hypnose et de la régression
+	
+	Médecine (05 %)
+	Soigner les maladies et effectuer des actes chirurgicaux
+	
+	Métier* (05 %)
+	Pratiquer un métier précis et technique
+	Choix possibles : Électricité, Électronique, Serrurerie, Système de sécurité, Explosifs, Armurerie, Contrefaçon, Mécanique, Menuiserie, Plomberie, Taxidermie, Dressage...
+	
+	Photographie (10 %)
+	Prendre des photos et les développer
+	
+	Pratique artistique* (05 %)
+	Pratiquer une activité artistique
+	Choix possibles : Chant, Danse, Peinture, Écriture, Sculpture, Musique, Imposture, Comédie..
+	
+	Premiers Soins (30 %)
+	Prodiguer les premiers secours
+	
+	Psychanalyse (00 %)
+	Diagnostiquer et soigner les troubles mentaux
+	
+	Survie (05 %)
+	Maîtriser les techniques de survie
+	
+	Exemples de compétences à créer soi-même
+	Opérateur TSF, Lasso, Cartographie, Informatique, Cuisinier, Origami, ...
+
+
+Sensorielle
+
+	Bibliothèque (25 %)
+	Effectuer des recherches dans des documents
+	
+	Discrétion (10 %)
+	Eviter de se faire repérer
+	
+	Dissimulation (15 %)
+	Cacher des indices ou soi-même
+	
+	Écouter(25 %)
+	Espionner une conversation ou identifier des bruits
+	
+	Orientation (10 %)
+	S'orienter et se repérer, ainsi que lire ou dessiner une carte
+	
+	Pister (10 %)
+	Suivre une piste physique
+	
+	Psychologie (05 %)
+	Analyser le comportement d'un individu
+	
+	Se Cacher (10 %)
+	Se fondre dans le décor
+	
+	Trouver Objet Cacher (25 %)
+	Rechercher quelque chose de précis quelque part
+	
+	Vigilance (25 %)
+	Repérer un détail, être sur ses gardes
+	
+	Exemples de compétences à créer soi-même
+	Lecture sur les lèvres, lire à l'envers, Oenologie, ...
+
+
+Influence
+
+	Baratin (05 %)
+	Embobiner quelqu'un, le mener en bateau
+	
+	Contactes & ressources (10 %)
+	Mettre à profit son cercle relationnel
+	
+	Crédit (15 %)
+	Jouer de son statut social
+	
+	Imposture (00 %)
+	Se faire passer pour quelqu'un d'autre
+	
+	Interroger (10 %)
+	Obtenir des renseignements ou aveux d'un individu
+	
+	Jeu* (10 %)
+	Pratiquer un jeu de société
+	Choix possibles : Un type de jeu: hasard, stratégie, cartes, etc.
+	
+	Négociation (05 %)
+	Marchander, passer un accord
+	
+	Perspicacité (INT x2 %)
+	Déceler les mensonges ou baratins
+	
+	Persuasion (15 %)
+	Ranger quelqu'un à son point de vue
+	
+	Savoir-vivre (EDU x2 %)
+	Faire preuve de bienséance, respecter les us
+	
+	Exemples de compétences à créer soi-même
+	Meneur d'hommes, Séduction, ...
+
+
+Action
+
+	Armes à feu* (20 %)
+	Se servir d'une arme à feu
+	Choix possibles : Armes de poing, Armes d'épaule, Armes automatiques, Armes anciennes, ...
+	
+	Armes blanches* (20 %)
+	Se servir d'une arme blanche
+	Choix possibles : Armes de mêlée, Armes de jet, Armes à propulsion, Armes de lancer, ...
+	
+	Armes exotiques* (00 %)
+	Utiliser des armes particulières
+	Choix possibles : Toutes les armes non usuelles, chaque arme étant considérée comme une compétence à part entière
+	
+	Artillerie* (15 %)
+	Se servir d'armes militaires lourdes
+	Choix possibles : Mortier, Mitrailleuse lourde, Canons, ...
+	
+	Athlétisme (15 %)
+	Crapahuter, sauter, nager, ...
+	
+	Conduite* (20 %)
+	Conduire différents engins
+	Choix possibles : Automobile, Hippomobile, Deux roues, Véhicules chenillés, ...
+	
+	Corps à corps* (DEX x2 %)
+	Se battre avec ses poings et pieds
+	Choix possibles : Bagarre, un art martial (Box, Boxe Anglaise, Lutte, Judo, Jujitsu, Box Française ou Savate, Canne de combat)
+	
+	Équitation (05 %)
+	Utiliser un animal de monte
+	
+	Navigation (00 %)
+	Piloter les engins maritimes
+	
+	Piloter* (00 %)
+	Piloter les engins aériens
+	Choix possibles : Avion, Hélicoptère, Montgolfière, Dirigeable
+
+	Exemples de compétences à créer soi-même
+	Plongée, Saut en parachute, tous les sports: golf, football, baseball, ...
+	
+=========================
+
+Gestion santé mentale
+	Quantification de l'horreur
+		1 ou 1D2	Inconfort ou légère confusion
+		1D3	Frayeur, confusion ou dégoût
+		1D4	Panique, désorientation ou écoeurement
+		1D6 ou 1D6+1	Nausée ou stupeur <[moyenne]>
+		1D8, 1D6+2, 2D4	Choc nerveux
+		1D10	Choc important
+		2D6 ou 2D8	Horreur traumatisante
+		1D20, 2D10, 3D6	Horreur extrême
+		3D10	Abomination absolue
+		1D100	Mal Cosmique Ultime
+		
+	Aplomb : utilité comme bouclier mental, pour chaque <<niveau>> de points, l'investigateur...
+		1	... a déjà été confronté à des situations horribles. 
+		2	... a l'habitude des situations stressantes, comme un médecin ou un ancien combattant. 
+		4	... a souvent été confronté à l'horreur, est habitué, il a peut-être fait la guerre. 
+		6	... est détaché ; pour lui, l'horreur est banale, la réalité quotidienne lui semble banale. 
+		8 et +	... est blasé, il en a trop vu ; il en faut beaucoup pour le faire réagir !
+		
+	Tests de SAN
+		L'élément perturbateur a deux valeurs séparés par un "/", en général un nombre simple puis un jet de dés (cf. _Quantification_). 
+		Pour l'investigateur : test simple sous sa SAN actuelle : 
+			- Réussite critique : aucune perte, 
+			- Réussite : perte mineure (nombre indiqué en premier), 
+			- Échec : perte majeure (jet de dé indiqué), 
+			- Maladresse : perte maximisée (résultat maximal qui oeut être obtenu avec le jet de dé). 
+		=> Moins le score d'Aplomb, à retrancher de la perte en SAN ! Sacrifice de points d'Aplomb pour modifier le dégré de réussite du test (un point par degré). 
+		
+	Chocs psychologiques (1D100), si pert de plus de 5 points de SAN, plus séquelles si plus de 1/5ème (apparition troubles mentaux, voir en fin scénario) : 
+		01-05	Prostration. 
+		06-15	Évanouissement. 
+		16-30	Amnésie partielle. 
+		31-50	Perte de coordination. 	[-20% à toutes actions]
+		51-70	Panique. 	[-10% à toutes actions]
+		71-85	Crise hystérique. 	[-20% à toutes actions]
+		86-95	Fuite irrationnelle. 
+		96-00	Crise de démence. 	[Coups Furieux]

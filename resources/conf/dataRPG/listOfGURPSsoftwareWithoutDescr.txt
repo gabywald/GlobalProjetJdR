@@ -1,0 +1,301 @@
+Dwarf	3	3	230	Stronger version of Worm	BB	Intrusion
+Grubb	1	3	210	Weaker version of Worm	BB	Intrusion
+Hammer	4	1	400	2D6 to Data Wall STR, alerts programs within 10 spaces	CP20	Intrusion
+Jackhammer	2	2	360	1D6 to Data Wall STR	CP20	Intrusion
+Jap Water Torture	3	4	260	Min of 2 turns, each additional turn adds +1 STR (max 7)	BB	Intrusion
+Pile Driver	8	4	800	4D6 to Data Wall STR, alerts progs in 30 spaces, & Netwatch	Chr3	Intrusion
+Portal	2	6	750	Opens door in Data Wall, takes 3 turns, no alert	NET	Intrusion
+Ramming Piston	10	3	900	5D6 to Data Wall STR, "audible" to anything within 50 spaces	BB	Intrusion
+Sledgehammer	6	2	600	3D6 to Data Wall STR, alerts programs within 15 spaces	Chr3	Intrusion
+Termite	1	2	160	1D6 to Data Wall STR	Chr1	Intrusion
+Worm	2	5	660	Opens Data Wall in 2 turns, no alert	CP20	Intrusion
+
+Codecracker	3	2	380	Opens Code Gates	CP20	Decryption
+Cyfermaster	6	3	700	Stronger version of Raffles	BB	Decryption
+Dupre	1-8	4	900	Opens Code Gates & File Locks	Chr3	Decryption
+Raffles	5	3	560	Opens Code Gates & File Locks	CP20	Decryption
+Tinweasel	3	4	300	Sneaky decryptor	BB	Decryption
+Wizard's Book	4/6	2	400	Opens Code Gates & File Locks	CP20	Decryption
+
+Bloodhound	3	5	700	Detects entry, traces, alerts master	CP20	Detection/Alarm
+Bulldog	6	6	660	Detects entry, alerts master, disconnects intruder	Chr1	Detection/Alarm
+Canis Major/Minor	4	5	610	Detect entry, alerts owner	BB	Detection/Alarm
+Cry Baby	4	4	430	"Tags", adds 4 to traces when copied	Chr3	Detection/Alarm
+Clairvoyance	4	4	720	SeeYa 3.0, detects and IDs Icons (+invisibles) within 2 subgrids	Chr3	Detection/Alarm
+Data Raven	5	6	1000	Detects entry, traces, alerts master whenever target appears	BB	Detection/Alarm
+Fang	4	6	1300	Detects entry, traces, disconnects target until destroyed	BB	Detection/Alarm
+Fang 2.0	5	6	1600	Detects entry, traces, disconnects target until destroyed	BB	Detection/Alarm
+Fetch 4.01.1	3	5	700	Detects entry, traces, alerts master	BB	Detection/Alarm
+Guard-Dog	4	5	720	Invisible; detects entry, alerts master	Chr1	Detection/Alarm
+Hidden Virtue	3	1	280	Detects "real" things in VR	CP20	Detection/Alarm
+Hunter	5	5	900	Detects entry, traces, alerts master	BB	Detection/Alarm
+Looking Glass	1-6	3	250+20/str	Detects disguised Icons	Chr3	Detection/Alarm
+Mouse	5	5	350	Creeps into forts and makes a record of what's inside	BB	Detection/Alarm
+Netspace Inverter	3/5	4	540	Travels through a fort at 2 subgrids/turn IDing programs and files	BB	Detection/Alarm
+Pit Bull	2	6	780	Detects entry, traces, disconnects target until destroyed	CP20	Detection/Alarm
+Rex	3	6	1000	Detects entry, traces, disconnects target until destroyed	BB	Detection/Alarm
+See Ya	3	1	280	Detects Invisible Icons	CP20	Detection/Alarm
+Shadow	4	3	540	Degrades evasion programs	Chr3	Detection/Alarm
+Smarteye	3	4	620	Detects progs within 10 spaces, IDs attack progs	Chr1	Detection/Alarm
+Speedtrap	4	4	600	Detects attack programs within 10 spaces	CP20	Detection/Alarm
+Watchdog	4	5	610	Detects entry, alerts owner	CP20	Detection/Alarm
+
+Asp	4	2	800	Kills cyberdeck interface	BB	Anti-System
+Cascade	7	4	900	Erases 2D6 MU of random memory	Chr3	Anti-System
+Cascade II	3	2	800	20% chance that program changes. Decks chose new prog/turn	BB	Anti-System
+Clown	3	5	1130	Disrupts data transmission, progs are -1 STR, 'runners -1 Initiative	BB	Anti-System
+DecKRASH	4	2	600	Crashes 'deck for 1D6 turns	CP20	Anti-System
+Feedback	4	3	960	Kills deck's interface and "jams" 'runner plugs	I.3	Anti-System
+Flatline	3	2	570	Kills cyberdeck interface	CP20	Anti-System
+Fragmentation Storm	4	3	1000	Kills system RAM	BB	Anti-System
+Grid Wave	7	8	20K	Distorts I-G algorithms	Chr4	Anti-System
+HellBurner	6	5	1000	Destroys target CPU	Chr3	Anti-System
+Krash	3	2	570	Crashes closest CPU for 1D6+1 turns	CP20	Anti-System
+Murphy	3	2	600	Causes system to randomly activate programs	CP20	Anti-System
+Pi in the Face	5	4	800	Makes CPU calculate Pi	Chr3	Anti-System
+Poison Flatline	2	2	540	Kills system RAM	CP20	Anti-System
+Poltergeist	5	3	660	Randomly erases one file each turn	BB	Anti-System
+Pox	4	2	800	Causes a glitch in ambush ICE, 30% chance of derezzing	BB	Anti-System
+Scatter Shot	4	3	660	Kills system RAM	BB	Anti-System
+Swarm	1	7	3000	Causes target system to replicate Swarm programs	Chr4	Anti-System
+Typhoid Mary	6	8	2400	Infiltrates 'runner and deletes files	Chr3	Anti-System
+Weed	2	3	630	-1 target speed per successful attack	Chr4	Anti-System
+Vacuum	5	3	1200	Attacks location algorithms, forces 'runner to where he entered fort	BB	Anti-System
+Virizz	4	2	600	Ties up 1 system action until turned off or destroyed	CP20	Anti-System
+Viral 15	4	2	590	Randomly erases one file each turn	CP20	Anti-System
+
+Black Mask	1-5	3-4 	200/STR	Makes your Icon look like something/one else	NET	Evasion/Stealth
+Cloak	5	2	2000	Powerful variant of Invisibility	BB	Evasion/Stealth
+Domino	5	3	1500	Makes your Icon look like one common to the locale	BB	Evasion/Stealth
+George	4	1	300	Adds 4 to Trace Difficulty	Chr3	Evasion/Stealth
+Invisibility	3	1	300	Makes cybersignal invisible	CP20	Evasion/Stealth
+Open-Ended Mileage	4	5	330	Adds another LDL to make traces harder when activated	BB	Evasion/Stealth
+Rabbit	5/1	2	360	Draws off "Dog" programs, +2 Initiative when released	BB	Evasion/Stealth
+Replicator	3/4	2	180	Confuses attacking ICE with millions of false signals	CP20	Evasion/Stealth
+Signpost	4	1	300	Adds 4 to Trace Difficulty	BB	Evasion/Stealth
+Silhouette	6	4	600	'Runner looks like he's jacked out and is invisible for 5 turns	I.3	Evasion/Stealth
+Spore	7	7	2320	AI suicide-replication, sends multiple copies into Net to reproduce	NET	Evasion/Stealth
+Stealth	4	3	480	Mutes cybersignal, making detection harder	CP20	Evasion/Stealth
+Superballs	3	4	500	Distracts targets, causing -3 Initiative	Chr4	Evasion/Stealth
+Vewy Vewy Quiet	4	2	400	Concentrates on avoiding detection	BB	Evasion/Stealth
+
+Armor	4	2	170	Reduces attacks from Stun, Hellbolt, Zombie, etc by 3 points	CP20	Protection
+DeckShield One	6	2	320	Adds +3 to deck's Data Walls	Chr4	Protection
+Flak	4/2	2	180	Creates static Wall to blind attackers; STR 2 vs Dog programs	CP20	Protection
+Force Shield	4	2	160	Stops attacks against 'runner	CP20	Protection
+Joan of Arc	3	2	190	Remains "active" and takes damage meant for current program	BB	Protection
+OutJack	2	4	150	Jacks 'runner out of Net if he's taken Critical damage	Chr3	Protection
+Reflector	5	2	160	Reflects Stun, Hellbolt, Knockout attacks	CP20	Protection
+Shield	3	1	150	Stops attacks to 'runner	CP20	Protection
+
+Aardvark	4	3	1000	Detects and destroys Worms	CP20	Anti-Program
+Banpei	1	5	1280	1D6 to program STR	BB	Anti-Program
+Black Dahlia	7	7	2000	Interactive, super-realistic Killer. 2D6 damage	BB	Anti-Program
+Bunnies	4	3	440	Overloads Vampyres	Chr1	Anti-Program
+Chameleon	4	6	1650	Killer IV with active Disguise	NET	Anti-Program
+Codeslinger	4	3	2500	Killer written to fit less MU. 1D6 damage	BB	Anti-Program
+D'Arc Knight	3	5	1360	1D6 to program STR	BB	Anti-Program
+Data Naga	6	5	1480	1D6 to program STR	BB	Anti-Program
+Dogcatcher	10	7	1176	Chases and destroys tracing "Dogs"	Chr3	Anti-Program
+Dragon	4	3	960	Attacks and derezzes Demons	CP20	Anti-Program
+Dropp	4	4	800	1D6 damage, and jacks the 'runner out of the system	BB	Anti-Program
+Eradicator	8/5	7	1600	Acts as Killer V, destroys AI Spores	NET	Anti-Program
+Exorcist	4	3	600	Removes effects of Possession	Chr3	Anti-Program
+Hydra	3	3	920	Attacks and derezzes Demons	CP20	Anti-Program
+Ice Pick Willie	2	5	1320	1D6 to program STR	BB	Anti-Program
+Killer II	2	5	1320	1D6 to any program STR	CP20	Anti-Program
+Killer IV	4	5	1400	1D6 to any program STR	CP20	Anti-Program
+Killer VI	6	5	1480	1D6 to any program STR	CP20	Anti-Program
+Loony Goon	1	4	900	1D6 damage. Strength 0 to defend against other Killers	BB	Anti-Program
+Manticore	2	3	880	Attacks and derezzes Demons	CP20	Anti-Program
+Mirror	5	4	1200	Rebounds Hellbolts	Chr4	Anti-Program
+Ninja	5	5	1520	Invisible Killer	Chr4	Anti-Program
+Orion	7	7	6240	Tracks Spores, 'runners, & programs. Destroys Spores	I1.3	Anti-Program
+Possessor	4	3	1000	"Possesses" programs	Chr3	Anti-Program
+Raptor	2-6	3	1900	Killer that strikes at range, 1D6 damage. +80eb/level over 2	BB	Anti-Program
+Raven	5	4	1000	"Blinds" any programs	Chr3	Anti-Program
+Sentinels Prime	5	5	1440	1D6 to program STR	BB	Anti-Program
+Shaka	4	5	1400	1D6 to program STR	BB	Anti-Program
+Snowball	2+	5	3000	1D6 damage, +2 STR for each program it destroys while active	BB	Anti-Program
+Start-Up Immolator	4	5	1280	Destroys target if used in the round when program was rezzed up	BB	Anti-Program
+Triggerman	4	5	1480	1D6 to program STR	BB	Anti-Program
+Wildcard	1	3	1400	1D6 to program STR	BB	Anti-Program
+Wolf	4	6	1500	Killer disguised as Watchdog	Chr1	Anti-Program
+
+Ball and Chain	3	3	5000	Slows 'runners movement to 1 square for 1D6+3 turns	Chr3	Anti-Personnel
+Bolter Cluster	4	4	8000	Powerful Hellbolt that does 4D6 damage	BB	Anti-Personnel
+Brainwipe	3	4	6500	Reduces INT by 1D6/turn, killing 'runner	CP20	Anti-Personnel
+Cerebus	6	8	9500	Pit Bull that shoots Hellbolts	NET	Anti-Personnel
+Cinderella	6	4	9000	High-powered Firestarter	BB	Anti-Personnel
+Code Corpse	5	4	7500	Reduces INT by 1D6/turn, making 'runner mindless	BB	Anti-Personnel
+Cortical Scrub	3	4	6500	Reduces INT by 1D6/turn, killing 'runner	BB	Anti-Personnel
+Data Darts	3	4	5500	Hellbolt variant that does 3D6 damage	BB	Anti-Personnel
+Fatal Attractor	7	7	10750	Attractively disguised Hellhound	Chr1	Anti-Personnel
+Firestarter	4	4	6250	Power surge electrocutes 'runner	CP20	Anti-Personnel
+Glue	5	4	6500	Locks 'runner in place for 1D10 turns	CP20	Anti-Personnel
+Hellbolt	4	4	6250	1D10 physical damage to 'runner	CP20	Anti-Personnel
+Hellhound	6	6	10,000	Tracks target, waits, causes heart attack	CP20	Anti-Personnel
+Homewrecker	5	4	8000	High-powered Firestarter	BB	Anti-Personnel
+Jack Attack	3	3	6000	'Runner can't log off for 1D6 turns	CP20	Anti-Personnel
+King Trail	3	2	3500	Leaves glowing trail behind 'runner for 3D6 turns	NET	Anti-Personnel
+Knockout	4	3	6250	Causes coma for 1D6 hours	CP20	Anti-Personnel
+Liche	4	4	7250	Erases 'runners memory and over-writes personality	CP20	Anti-Personnel
+Mastiff	5	6	12000	Tracks & tags target, does 1D6 damage and reduces INT 1D6	BB	Anti-Personnel
+Neural Blade	3	4	6750	1D6 physical damage to target	BB	Anti-Personnel
+Pepe Le Pue	6	5	7750	Reduces 'runners INT and REF for 1D6+1 turns	NET	Anti-Personnel
+Psychodrome	4(5)	11	14000	Unconscious for 1D6 hours, scares victim	Chr1	Anti-Personnel
+Red-Out	5	4	6750	Paralyses 'runner for 1D6 turns	Chr4	Anti-Personnel
+Shock.r	4	5	6300	Freezes 'runner for 1D6 turns	BB	Anti-Personnel
+Sleeper	6	4	7250	Non-lethal Brainwipe, makes target do a task (diff 20-30 to resist)	I.3	Anti-Personnel
+Spazz	4	3	6250	Halves 'runners REF for 1D6 turns	CP20	Anti-Personnel
+Stationery	4	6	10000	Prevents 'runner from moving for 5 turns	Chr3	Anti-Personnel
+Stun	3	3	6000	Freezes 'runner for 1D6 turns	CP20	Anti-Personnel
+Sword	3	4	6750	1D6 physical damage to target	CP20	Anti-Personnel
+The Audio Virus	5	5	8000	Reduces INT and REF until 'runner destroys program	Chr4	Anti-Personnel
+Threat	5	6	7000	Makes 'runner so nervous he jacks out	Chr3	Anti-Personnel
+TKO 2.0	4	3	6250	Causes coma for 1D6 hours	BB	Anti-Personnel
+Werewolf	6	6	13,000	Invisible Hellhound	NET	Anti-Personnel
+Zombie	5	4	7500	Reduces INT 1D6/turn, making 'runner mindless	CP20	Anti-Personnel
+
+A Picture's Worth	2	6	1200	Hides data within VRs	Chr4	Multi-Purpose
+Al Boon	1D6	7	3600	Goes through Gates, does 1D6 damage to Walls & programs	BB	Multi-Purpose
+Black Sky	5	8	4480	Hides 'runner in a cloud which attacks programs with "lightning"	Chr3	Multi-Purpose
+Blink	5	7	1500	1D6 damage to Walls and programs, goes through Gates. 50% rel	BB	Multi-Purpose
+Dummy	1	2	450	Fake, disguisable program	Chr3	Multi-Purpose
+Evil Twin	8	7	2700	Combination Shield/Krash	Chr3	Multi-Purpose
+IGOR	4	7	4800	On-line flunky	Chr4	Multi-Purpose
+Lightning Bug	2	6	1540	6 "bugs" that kill ICE before it can attack	NET	Multi-Purpose
+Omnivore	3	8	18500	Derezzes programs, fries CPUs, temporarily reduces INT by 2D6	Chr3	Multi-Purpose
+Satchel Charge	8	7	18500	5D6 damage to 'runner & progs in 1 subgrid, 3D6 to Walls & Gates	SW	Multi-Purpose
+Scribe	6	8	NA	Stops and disassembles programs for copying. Program roll 47+	Chr4	Multi-Purpose
+Wolfpack	6	8	15200	Does 1D6 damage to ICE/Demon STR, 1D10 damage to 'runners	Chr3	Multi-Purpose
+
+Crystal Ball	4	1	140	Operates video cameras, remote sensors, etc	CP20	Controller
+Dee-2	3	1	130	Operates robots, cleaning machines, autofactories, etc	CP20	Controller
+Genie	5	1	150	Operates doors, elevators	CP20	Controller
+Hotwire	3	1	130	Operates remote vehicles	CP20	Controller
+Knevil	4	3	220	Limited AI vehicle controller, no safeguards	Chr3	Controller
+News At 8	4	1	140	Allows access to Data Terms & Screamsheets via the Net	CP20	Controller
+Open Sesame	3	1	130	Weaker program to operate doors, elevators	CP20	Controller
+Phone Home	5/2	1	150	Can place/receive calls while in the Net, can intercept at STR 2	CP20	Controller
+Rockerbit	4	2	200	Limited AI microphone/voxbox controller, broadcast at preset time	Chr3	Controller
+Soundmachine	4	1	140	Controls mikes, speakers, vocoders, etc	CP20	Controller
+Terminator	4	2	260	Control terminals	Chr3	Controller
+Viddy Master	4	1	140	Allows control of videoboards	CP20	Controller
+WAD Controller	2	1	150	Difficulty 10-35 to patch into signal	Chr3	Controller
+
+Alias	6	2	160	Replaces file name with false one	CP20	Utility
+Backup	4	1	140	Used to copy programs	CP20	Utility
+Baedeker's Net Map	2	1	130	Routes calls public 2 or 3 dataterm numbers. +3 System Know	BB	Utility
+Bakdoor	3	2	600+	Routes link through at least one private system	BB	Utility
+Breadcrumbs	4	4	290	Finds new LDL link routes (legally), 1 round per uplink or LDL	NET	Utility
+Butcher Boy	3	7	550	Creates a paper trail, whilst funnelling funds elsewhere	BB	Utility
+Cartographer	6	3	200	STR vs CPU INT/2 for map of data fort, must be run inside the fort	Chr3	Utility
+Databaser	8	2	180	Stores up to 10,000 pages per file	CP20	Utility
+Dolphin Programs	3	5	310	Clean Pacifica of junk data	NET	Utility
+ElectroLock	7	2	170	Locks files at STR 3	CP20	Utility
+Expert Schedule An	4	3	250+	Skims files at 1MU per turn. Shelf life of a month	BB	Utility
+Filelocker	4	1	140	Locks files with code word, equal to STR 5 Code Gate	CP20	Utility
+File Packer	4	1	140	1/2 MU size, 2 turns to unpack	CP20	Utility
+Flare Gun	2	2	300	Message travels 3 spaces per turn for 2D6 turns	Chr3	Utility
+Flip Switch 2.0	10	0	225	Flip Switch controller, -5 Net Initiative when active	Chr3	Utility
+Flip Switch 3.0	10	0	250	Flip Switch glogo controller, 3 settings	BB	Utility
+GateMaster	5	1	150	Anti-virus, detects & destroys Virizz & Viral 15	CP20	Utility
+Guest Book	4	2	200	Detects 'runners within 2 squares, treat as STR 3 Code Gate	Chr4	Utility
+Instant Replay	8	2	180	Records 'runners trip	CP20	Utility
+Mictotech AI Interface	2	4	330	Pseudo-AI that scans files looking for keywords	BB	Utility
+Multinetter	10	20	2000	Allows multiple 'runners to run through one computer	Chr3	Utility
+Multi-Tasker	5	6	1140	Extra actions on mainframes	NET	Utility
+Mystery Box	5	4	300	Searches for and copies programs from files	BB	Utility
+NetMap	4	1	140	Major region locator map, +2 to System Knowledge	CP20	Utility
+Newsgroup Filter	4	4	200	Goes out and skims news and interest groups for specified info	BB	Utility
+Padlock	4	2	160	Access code needed to log onto deck	CP20	Utility
+Re-Rezz	3	1	130	Recompiles damaged programs and files	CP20	Utility
+R&D Protocol Files	4	3	250+	Skims R&D files at 1MU per turn. Shelf life of two weeks	BB	Utility
+Shredder Uplink	5	3	250	Reconstructs files in the Trash buffer	BB	Utility
+Translator 2000	4	2	240	Takes pictures to make virtual objects	Chr4	Utility
+Zetatech Installer	1	1	300	Compresses programs to half size but reduces Speed by 1	BB	Utility
+
+Afreet II	3	4	1160	Carries 3 programs	CP20	Demons
+Balron II	5	5	1240	Carries 4 programs	CP20	Demons
+Imp II	3	3	1000	Carries 2 programs	CP20	Demons
+Reaper	5	7	12500	Seeks out & destroys users in a set area. 1D6 to 'runners/progs	SW	Demons
+Soulkiller 3.0	7	45-4000+	NA	1D6 INT loss/ to Data Walls & programs, -4 to detect, 3 actions	SW	Demons
+Succubus II	4	4	1200	Carries 4 programs	CP20	Demons
+Thug	3	6	10440	Permanent subroutines, 1D6 damage to programs and 'runners	Chr3	Demons
+Vampyre II	6	7	2300	Can absorb up to 6 programs	Chr1	Demons
+
+Boardwalk	3	7	1080	Records messages and conversation in admin/budget database	BB	Daemons
+Cockroach	5	7	1600	Eats files, turns them into more cockroaches	BB	Daemons
+Cream Pie	7	7	1715	Carries 3 programs (Poison Flatline, Killer IV, & Murphy)	BB	Daemons
+Deep Thought	3	7	1080	Records messages and conversation in research database	BB	Daemons
+Eavesdropper	3	6	1365	Carries Databaser. Records messages and conversation in system	BB	Daemons
+Fait Accompli	3	7	570	Subtly messes up project files	BB	Daemons
+False Echo	2	6	380	Triggers false system alerts	BB	Daemons
+Gremlins	4	7	7000	Produces more gremlins and randomly shoots off programs	BB	Daemons
+I Spy	3	6	400+	Commercial version of Eavesdropper	BB	Daemons
+Incubator	2	6	760	Reproduces other programs	BB	Daemons
+Pattel's Virus	6	7	2200	Weakens 1 type of ICE	BB	Daemons
+Skivviss	4	7	1320	Inflates project costs, so that they get cancelled	BB	Daemons
+
+Chimera	5	4	100,000	Invisible anti-demon. If undetected it gets a free turn to act	BB	Ambushes
+Soulkiller 1.0	4	NA	500,000	Drains target's intellect, etc (1D6 INT/turn) into a data matrix	BB	Ambushes
+Trap!	4x3	NA	200,000	3 Asp programs hidden in a file or node that attack if undetected	BB	Ambushes
+
+CloakMore	6	5/cpu	4000/cpu	Cloaks an entire data fort. Neutralizes 1 INT/CPU	NET	Systemware
+Dazzler	5	14	14800	Disguised VR "cell" with trace, diff 15-25 Interface roll to detect	Chr3	Systemware
+Monitor	4	7	950	Roving internal Net security	NET	Systemware
+Panzer	8	7	20000	Monitor that does 1D6 damage to 'runners and programs	BB	Systemware
+Pocket VR	4	13	13000	Disguised VR "cell" with trace, diff 15-25 Interface roll to detect	BB	Systemware
+Too Many Doors	3	3	1000	Gives 'runner a choice of doors, disconnected if wrong one chosen	BB	Systemware
+
+Data Wall	1-10	-	1000/level	Basic Data Wall. STR = CPUs+0 to +9 (max 10)	CP20	Data Walls
+Data Wall 2.0	+1	-	1000	Flashy Data Wall. STR = CPUs+1	BB	Data Walls
+Wall of Static	+2	-	2000	Flashy Data Wall. STR = CPUs+2	BB	Data Walls
+Crystal Wall	+3	-	3000	Flashy Data Wall. STR = CPUs+3	BB	Data Walls
+Fire Wall	+4	-	4000	Flashy Data Wall. STR = CPUs+4	BB	Data Walls
+Reinforced Wall	+4	-	4000	Flashy Data Wall. STR = CPUs+4	BB	Data Walls
+Rock is Strong	+5	-	5000	Flashy Data Wall. STR = CPUs+5	BB	Data Walls
+
+Anti-Program Wall	1-5	-	4800+	Attacks Intrusion programs as Killer, +160eb/STR	NET	UpgradedDataWalls
+Anti-Personnel Wall	1-5	-	30000+	Attacks 'runners, 2-3 Stun, 4 Spazz, 5 Hellbolt, +1000eb/STR	NET	UpgradedDataWalls
+Laser Wire	+2/2	-	34000	1D6 damage to 'runner (STR 2), goes inert after 3 rounds	BB	UpgradedDataWalls
+Razor Wire	+3/3	-	36000	2D6 damage to 'runner (STR 3), goes inert after 3 rounds	BB	UpgradedDataWalls
+Shotgun Wire	+5/5	-	40000	2D6 damage to 'runner (STR 5), goes inert after 3 rounds	BB	UpgradedDataWalls
+Wall of Ice	+6/6	-	44000	4D6 damage to 'runner (STR 6), goes inert after 3 rounds	BB	UpgradedDataWalls
+Superior Net Barrier	+1	-	300,000	Tighter coding makes them stronger, difference easily noted	BB	UpgradedDataWalls
+
+Code Gates	1-10	-	1000/level	Basic Code Gates. Many variations exist (Brainware Blowout)	CP20	Code Gates
+Cortical Scanner	5	-	20000	Uses a brainwave ID scanner. 3 Interface rolls needs to pass	BB	Code Gates
+Endless Corridor	4	4	8000	Requires two passwords. +3 diff to crack second password	BB	Code Gates
+Encryp Breakthrough	+1	-	250,000	Tighter coding makes them stronger, difference easily noted	BB	Code Gates
+Haunting Inquisition	8/6	8	80000	If you fail to get past it launches Psychodrome (STR 6)	BB	Code Gates
+Mazer	7	-	7000	Code Gate variant	BB	Code Gates
+Nerve Labyrinth	6/4	NA	50000	If you fail to get past it does 4D6 damage to the 'runner (STR 4)	BB	Code Gates
+Shrouded Gate	1-10	4	3000+	Makes a Code Gate invisible. +1000eb/1 STR	NET	Code Gates
+Tutor	3/5	NA	50000	Easy to crack, but tags 'runner so that ICE can break link (STR 5)	BB	Code Gates
+
+Trailer Hitch	1	3	300	Adds 20% extra MU, Speed -1	NET	Transportation
+18-Wheeler	1	4	500	Doubles remaining memory (MU-4), Speed=1	NET	Transportation
+
+Brain Buster	4	6	4500	+4 to INT, +2 speed	I.3	Enhancement
+Gestalt	9	7	5600	Up to 3 'runners can combine INT, REF, and Interface	I.3	Enhancement
+
+Memorial ICEbreaker	6	2	1500	Hold 4 programs like a Demon, but each program has full strength	BB	Rache Specials
+Bone	4	4	270	Attracts "Dog" programs from all over	NET	Rache Specials
+Pirate Uplink	5	7	NA	Alerts LDLs to presence of illegal calls	NET	Rache Specials
+Rache's SeeYa	6	2	NA	Prog 15+. IDs Icon as either prog, 'runner, or AI	NET	Rache Specials
+Rice Burner	2	2+	NA	+1 to Net movement, -50% deck MU	NET	Rache Specials
+SideWalker	3	3	NA	Allows you to walk on the sides of the Olympia sidewalks	NET	Rache Specials
+Succubus III	7	4	NA	Compiler, carries 2 programs. 2D6 anti-personnel damage	SW	Rache Specials
+
+EmergencySelf-Construct	4	30	NA	Converts 'runner to electronic entity, roll 1D10+4 for max INT	BB	Specials
+Lunch Money™	3	7	145000	Compiler (assassin to kill it), 1D6 physical damage to the 'runner	BB	Specials
+
+Antiquated Routines	NA	NA	50000	Circa 2013 interface. All 'runner Initiative rolls at -2	BB	SystemConstruction
+Bizzare Encryption	NA	NA	10000	All system data is encrypted (STR 10 Gate), 1-2 hrs to decode	BB	SystemConstruction
+Blood Cat	10/5	NA	300,000	INT 6 pseudo-AI, STR 5 attacks vs 'runners and programs	BB	SystemConstruction
+TesseractConstruction	NA	NA	100,000	Escher style data fort, -3 to 'runner Initiative until use to it	BB	SystemConstruction
+
+Black ICE QA	+2	NA	250,000	Money poured into programmers for optimizing its Black ICE (+2)	BB	ICE Upgrades
+Security Optimization	+1	NA	250,000	All ICE upgraded to the latest version (+1 STR)	BB	ICE Upgrades

@@ -1,0 +1,13 @@
+Hache d'hast	TAI+4	NT3	FOR:12
+Bâton	TAI+2 ou estoc+2	NT0	FOR:7
+Poing américain	estoc	NT1	FOR:0
+Grand couteau	TAI-2 ou estoc	NT0	FOR:6
+Epée courte	TAI ou estoc	NT2	FOR:8
+Grande Epée d'estoc	TAI+3 ou estoc+3	NT3	FOR:12
+Epée Large	TAI+1 ou estoc+1	NT2	FOR:10
+Epée Large d'estoc	TAI+2 ou estoc+2	NT2	FOR:10
+Hache	TAI+2	NT0	FOR:11
+Masse d'armes	TAI+3	NT2	FOR:12
+Lance	estoc+2	NT0	FOR:9+
+Lance à deux mains	estoc+3	NT0	FOR:9
+Rapière	estoc+1	NT4	FOR:9

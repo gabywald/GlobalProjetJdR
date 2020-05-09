@@ -1,0 +1,30 @@
+Armes de Melée
+	Hache d'hast	TAI+4	NT3	FOR:12
+	Bâton	TAI+2 ou estoc+2	NT0	FOR:7
+	Poing américain	estoc	NT1	FOR:0
+	Grand couteau	TAI-2 ou estoc	NT0	FOR:6
+	Epée courte	TAI ou estoc	NT2	FOR:8
+	Grande Epée d'estoc	TAI+3 ou estoc+3	NT3	FOR:12
+	Epée Large	TAI+1 ou estoc+1	NT2	FOR:10
+	Epée Large d'estoc	TAI+2 ou estoc+2	NT2	FOR:10
+	Hache	TAI+2	NT0	FOR:11
+	Masse d'armes	TAI+3	NT2	FOR:12
+	Lance	estoc+2	NT0	FOR:9+
+	Lance à deux mains	estoc+3	NT0	FOR:9
+	Rapière	estoc+1	NT4	FOR:9
+Armes à distance -- Puissance musculaire
+	Arbalète	estoc+4	NT2	FOR:7
+	Arc Court	estoc	NT0	FOR:7
+	Arc Long	estoc+2	NT0	FOR:11
+	Grand couteau	estoc	NT0	FOR:6
+	Hache de Lancer	TAI+2	NT0	FOR:11
+	Lance	estoc+2	NT0	FOR:9
+Armes à distance -- Energétiques
+	Derringer (.41)	1D6	NT5	FOR:9
+	Pistolet Automatique (9mm)	2D6+2	NT6	FOR:9
+	Revolver (.357)	3D6-1	NT7	FOR:10
+	Pistolet Automatique (.44M)	3D6 NT8	FOR:12
+	Carabine (.30)	5D6	NT5	FOR:10
+	Fusil semi-Automatique (7,62)	7D6	NT6	FOR:10
+	Fusil de précision (.338)	9D6+1	NT8	FOR:11
+	Fusil à pompe (cal. 12)	1D6+1	NT6	FOR:10
