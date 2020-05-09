@@ -1,0 +1,4 @@
+port	31338
+localhost	127.0.0.1
+mainServer	192.168.1.153
+peers	

@@ -1,0 +1,234 @@
+	\[Portrait\]~\\
+	\textbf{\Large test1...}~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& 7\dotfill & \FRdefCharacterSkillsPES & \dotfill 35 \%	\\
+		\FRdefCharacterSkillsCON	& 10\dotfill & \FRdefCharacterSkillsSTA & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsDEX	& 6\dotfill & \FRdefCharacterSkillsAGI & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsPOW	& 9\dotfill & \FRdefCharacterSkillsPUI & \dotfill 45 \%	\\
+		\FRdefCharacterSkillsTAI	& 13\dotfill & \FRdefCharacterSkillsCOR & \dotfill 65 \%	\\
+		\FRdefCharacterSkillsEDU	& 20\dotfill & \FRdefCharacterSkillsKNO & \dotfill 100 \%	\\
+		\FRdefCharacterSkillsINT	& 12\dotfill & \FRdefCharacterSkillsIUI & \dotfill 60 \%	\\
+		\FRdefCharacterSkillsPOU	& 11\dotfill & \FRdefCharacterSkillsVOL & \dotfill 55 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 55~\\
+	 Points de Vie : 12~\\
+	 Seuil Blessure : 6~\\
+	 Points de Magie : 11~\\
+	 Impact :  0~\\
+
+
+	\textbf{Comp{\'e}tences}~\\
+		repartir 400 dans les competences metiers (une {\`a} 60\% et +)~\\
+
+
+		repartir 120 dans les competences interet personnel~\\
+
+
+	\textbf{Langues}~\\
+
+
+	\textbf{Description}~\\
+
+
+	\vfill
+	\columnbreak
+
+
+	\[Portrait\]~\\
+	\textbf{\Large test2...}~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& 10\dotfill & \FRdefCharacterSkillsPES & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsCON	& 7\dotfill & \FRdefCharacterSkillsSTA & \dotfill 35 \%	\\
+		\FRdefCharacterSkillsDEX	& 8\dotfill & \FRdefCharacterSkillsAGI & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsPOW	& 9\dotfill & \FRdefCharacterSkillsPUI & \dotfill 45 \%	\\
+		\FRdefCharacterSkillsTAI	& 13\dotfill & \FRdefCharacterSkillsCOR & \dotfill 65 \%	\\
+		\FRdefCharacterSkillsEDU	& 20\dotfill & \FRdefCharacterSkillsKNO & \dotfill 100 \%	\\
+		\FRdefCharacterSkillsINT	& 11\dotfill & \FRdefCharacterSkillsIUI & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsPOU	& 9\dotfill & \FRdefCharacterSkillsVOL & \dotfill 45 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 45~\\
+	 Points de Vie : 11~\\
+	 Seuil Blessure : 5~\\
+	 Points de Magie : 9~\\
+	 Impact :  0~\\
+
+
+	\textbf{Comp{\'e}tences}~\\
+		repartir 400 dans les competences metiers (une {\`a} 60\% et +)~\\
+
+
+		repartir 110 dans les competences interet personnel~\\
+
+
+	\textbf{Langues}~\\
+
+
+	\textbf{Description}~\\
+
+
+	\vfill
+	\columnbreak
+
+
+	\[Portrait\]~\\
+	\textbf{\Large test3...}~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& 6\dotfill & \FRdefCharacterSkillsPES & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsCON	& 8\dotfill & \FRdefCharacterSkillsSTA & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsDEX	& 11\dotfill & \FRdefCharacterSkillsAGI & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsPOW	& 6\dotfill & \FRdefCharacterSkillsPUI & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsTAI	& 11\dotfill & \FRdefCharacterSkillsCOR & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsEDU	& 12\dotfill & \FRdefCharacterSkillsKNO & \dotfill 60 \%	\\
+		\FRdefCharacterSkillsINT	& 15\dotfill & \FRdefCharacterSkillsIUI & \dotfill 75 \%	\\
+		\FRdefCharacterSkillsPOU	& 10\dotfill & \FRdefCharacterSkillsVOL & \dotfill 50 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 50~\\
+	 Points de Vie : 10~\\
+	 Seuil Blessure : 5~\\
+	 Points de Magie : 10~\\
+	 Impact :  0~\\
+
+
+	\textbf{Comp{\'e}tences}~\\
+		repartir 240 dans les competences metiers (une {\`a} 60\% et +)~\\
+
+
+		repartir 150 dans les competences interet personnel~\\
+
+
+	\textbf{Langues}~\\
+
+
+	\textbf{Description}~\\
+
+
+	\vfill
+	\columnbreak
+
+
+	\[Portrait\]~\\
+	\textbf{\Large test4...}~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& 10\dotfill & \FRdefCharacterSkillsPES & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsCON	& 8\dotfill & \FRdefCharacterSkillsSTA & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsDEX	& 9\dotfill & \FRdefCharacterSkillsAGI & \dotfill 45 \%	\\
+		\FRdefCharacterSkillsPOW	& 7\dotfill & \FRdefCharacterSkillsPUI & \dotfill 35 \%	\\
+		\FRdefCharacterSkillsTAI	& 9\dotfill & \FRdefCharacterSkillsCOR & \dotfill 45 \%	\\
+		\FRdefCharacterSkillsEDU	& 8\dotfill & \FRdefCharacterSkillsKNO & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsINT	& 12\dotfill & \FRdefCharacterSkillsIUI & \dotfill 60 \%	\\
+		\FRdefCharacterSkillsPOU	& 6\dotfill & \FRdefCharacterSkillsVOL & \dotfill 30 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 30~\\
+	 Points de Vie : 9~\\
+	 Seuil Blessure : 4~\\
+	 Points de Magie : 6~\\
+	 Impact : -2~\\
+
+
+	\textbf{Comp{\'e}tences}~\\
+		repartir 160 dans les competences metiers (une {\`a} 60\% et +)~\\
+
+
+		repartir 120 dans les competences interet personnel~\\
+
+
+	\textbf{Langues}~\\
+
+
+	\textbf{Description}~\\
+
+
+	\vfill
+	\columnbreak
+
+
+	\[Portrait\]~\\
+	\textbf{\Large test5...}~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& 6\dotfill & \FRdefCharacterSkillsPES & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsCON	& 8\dotfill & \FRdefCharacterSkillsSTA & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsDEX	& 6\dotfill & \FRdefCharacterSkillsAGI & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsPOW	& 13\dotfill & \FRdefCharacterSkillsPUI & \dotfill 65 \%	\\
+		\FRdefCharacterSkillsTAI	& 11\dotfill & \FRdefCharacterSkillsCOR & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsEDU	& 15\dotfill & \FRdefCharacterSkillsKNO & \dotfill 75 \%	\\
+		\FRdefCharacterSkillsINT	& 14\dotfill & \FRdefCharacterSkillsIUI & \dotfill 70 \%	\\
+		\FRdefCharacterSkillsPOU	& 6\dotfill & \FRdefCharacterSkillsVOL & \dotfill 30 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 30~\\
+	 Points de Vie : 10~\\
+	 Seuil Blessure : 5~\\
+	 Points de Magie : 6~\\
+	 Impact :  0~\\
+
+
+	\textbf{Comp{\'e}tences}~\\
+		repartir 300 dans les competences metiers (une {\`a} 60\% et +)~\\
+
+
+		repartir 140 dans les competences interet personnel~\\
+
+
+	\textbf{Langues}~\\
+
+
+	\textbf{Description}~\\
+
+
+	\vfill
+	\columnbreak
+
+
+	\[Portrait\]~\\
+	\textbf{\Large test6...}~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& 6\dotfill & \FRdefCharacterSkillsPES & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsCON	& 13\dotfill & \FRdefCharacterSkillsSTA & \dotfill 65 \%	\\
+		\FRdefCharacterSkillsDEX	& 11\dotfill & \FRdefCharacterSkillsAGI & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsPOW	& 11\dotfill & \FRdefCharacterSkillsPUI & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsTAI	& 14\dotfill & \FRdefCharacterSkillsCOR & \dotfill 70 \%	\\
+		\FRdefCharacterSkillsEDU	& 11\dotfill & \FRdefCharacterSkillsKNO & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsINT	& 14\dotfill & \FRdefCharacterSkillsIUI & \dotfill 70 \%	\\
+		\FRdefCharacterSkillsPOU	& 14\dotfill & \FRdefCharacterSkillsVOL & \dotfill 70 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 70~\\
+	 Points de Vie : 14~\\
+	 Seuil Blessure : 7~\\
+	 Points de Magie : 14~\\
+	 Impact : +2~\\
+
+
+	\textbf{Comp{\'e}tences}~\\
+		repartir 220 dans les competences metiers (une {\`a} 60\% et +)~\\
+
+
+		repartir 140 dans les competences interet personnel~\\
+
+
+	\textbf{Langues}~\\
+
+
+	\textbf{Description}~\\
+
+
+	\vfill
+	\columnbreak
+
+

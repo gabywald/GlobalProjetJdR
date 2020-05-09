@@ -1,0 +1,474 @@
+
+\usepackage{eurosym}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+% http://www.trustonme.net/didactels/250.html
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+ \pagestyle{fancy}
+% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LO, RE]{\includegraphics[width=0.5cm]{logo-glider.png} \hfill 
+	\FRdefCharacterSheetHeaderTitle 
+\hfill \thepage /\pageref{LastPage}}
+\fancyfoot[LE, RO]{  }
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+\usepackage{fancybox}
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+%============================= Corps =================================
+\begin{document}
+
+\setlength\parindent{0pt} % \noindent for all document
+
+	\small
+
+Style de jeu \dotfill Guardien \dotfill Campagne \dotfill ~\\
+
+\begin{minipage}[ht]{2.50cm}
+	% \includegraphics[width=2.45cm]{DeltaGreenLogo.png}
+	\Huge{\emph{\textbf{Cyber Age}}}
+\end{minipage} \hfill \begin{minipage}[ht]{15cm}
+	\fbox{\begin{minipage}{0.975\textwidth}
+		\FRdefBOXTITLEPersonalInforma~\\ %% ~\\
+		%% 
+		\begin{tabular}[c]{ p{0.15\textwidth} p{0.30\textwidth} p{0.15\textwidth} p{0.30\textwidth} }
+			\FRdefPersonnalInfosNAM	& \CApersoName \dotfill		&	\textbf{Parrain}		& \CApersoPARRAIN \dotfill	\\
+			\FRdefPersonnalInfosOCC	& \CApersoTitle \dotfill	&	\FRdefPersonnalInfosAGE & \CApersoAGE \dotfill	\\
+			\FRdefPersonnalInfosPRO	& \CApersoMETIER \dotfill	&	\FRdefPersonnalInfosSEX	& \CApersoSEXE \dotfill	\\
+			\FRdefPersonnalInfosPER	& \dotfill					&	\FRdefPersonnalInfosNAT & \dotfill	\\
+			Niveau de vie			& \dotfill					& 	\dotfill \%				& \CApersoARGENT \euro  \dotfill \\
+		\end{tabular}
+	\end{minipage}} % end fbox
+\end{minipage} \hfill \begin{minipage}[ht]{1.50cm}
+	\fbox{\begin{minipage}{0.80\textwidth}
+		\includegraphics[width=0.98\textwidth]{\CApersoImage }
+	\end{minipage}} % end fbox
+\end{minipage}~\\
+
+\begin{minipage}[ht]{0.55\textwidth}
+	\fbox{\begin{minipage}{0.975\textwidth }
+		\FRdefBOXTITLECharacteristics~\\~\\
+		%% 
+		\begin{tabular}[c]{ p{2.50cm} p{2.00cm} p{2.50cm} p{2.00cm} }
+			\FRdefCharacterSkillsAPP	& \dotfill \CApersoAPP & \FRdefCharacterSkillsPES & \dotfill \CApersoPES \%	\\
+			\FRdefCharacterSkillsCON	& \dotfill \CApersoCON & \FRdefCharacterSkillsSTA & \dotfill \CApersoSTA \%	\\
+			\FRdefCharacterSkillsDEX	& \dotfill \CApersoDEX & \FRdefCharacterSkillsAGI & \dotfill \CApersoAGI \%	\\
+			\FRdefCharacterSkillsPOW	& \dotfill \CApersoFOR & \FRdefCharacterSkillsPUI & \dotfill \CApersoPUI \%	\\
+			\FRdefCharacterSkillsTAI	& \dotfill \CApersoTAI & \FRdefCharacterSkillsCOR & \dotfill \CApersoCOR \%	\\
+			\FRdefCharacterSkillsEDU	& \dotfill \CApersoEDU & \FRdefCharacterSkillsKNO & \dotfill \CApersoKNO \%	\\
+			\FRdefCharacterSkillsINT	& \dotfill \CApersoINT & \FRdefCharacterSkillsIUI & \dotfill \CApersoIUI \%	\\
+			\FRdefCharacterSkillsPOU	& \dotfill \CApersoPOU & \FRdefCharacterSkillsVOL & \dotfill \CApersoVOL \%	\\
+		\end{tabular}			
+	\end{minipage}} % end fbox
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\fbox{\begin{minipage}[ht]{0.975\textwidth}
+		\textbf{Cercles d'influence...} ~\\
+		\begin{tabular}[c]{ p{1.50cm} p{1.50cm} p{1.50cm} p{1.50cm} }
+			Proches			&	\dotfill	& Oppos{\'e}s	&	\dotfill	\\
+			{\'E}loign{\'e}s	&	\dotfill	& Ennemi	&	\dotfill	\\
+		\end{tabular}
+			\rule{0.975\textwidth}{0.01cm}
+		\textbf{Sant{\'e}} --- Base : \CApersoPV ~\\
+		Seuil de blessure \dotfill ~\\
+		{ \footnotesize \begin{tabular}[c]{ p{1.00cm} c c c c c c c c c }
+			Points	& 1  & 2  & 3  & 4  & 5  & 6  & 7  & 8  & 9  \\
+			de Vie	& 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
+		\end{tabular} }
+		Protections \dotfill ~\\
+		Blessures \dotfill ~\\
+		---	\dotfill
+	\end{minipage}} % end fbox
+	~\hrulefill %% \rule{0.40\textwidth}{0.01cm}
+\end{minipage} %% ~\\
+
+\begin{multicols}{3}
+	\textbf{Connaissance} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Bureaucratie (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Culture Artistique* (10\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Langue Maternelle* (EDUx5\%)	& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Langues* (00\%)			& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Mythe de Cthullu (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences de la Terre* (00\%)	& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		Sciences de la Vie* (00\%)	& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences Formelle* (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences Humaines (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Connaissance milieu (\emph{15\%})	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} }~\\
+	
+	\begin{center}
+		\includegraphics[width=5.00cm]{MASTMediASsisT.jpg}
+	\end{center}
+	
+	\vfill
+	\columnbreak
+	
+	\textbf{Savoir-Faire} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Bricolage (20\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Comptabilit{\'e} (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Criminalistique (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Explosifs (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Informatique (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		M{\'e}decine (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		M{\'e}tier* (05\%)		& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Photographie (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Plong{\'e}e sous-marine (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Premiers Soins (30\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Recherche sur HyperNet (30\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Survie (00\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Survie milieu sp{\'e}cial (\emph{15\%})			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Techniques sp{\'e}cialis{\'e}es* (\emph{15\%})	& --- ---     & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\textbf{Sensorielles} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Biblioth{\`e}que (25\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Discr{\'e}tion (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Dissimulation (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		{\'E}couter (25\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Orientation (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Onirisme (25\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Pister (10\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Pratiques shamaniques (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Se cacher (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Trouver Objet Cach{\'e} (25\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Vigilance (25\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\vfill
+	\columnbreak
+	
+	\textbf{Influence} \hrulefill ~\\	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Baratin (05\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Contact \& Ressources (10\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Cr{\'e}dit (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Imposture (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Interroger (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Jeu* (10\%)			& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		N{\'e}gociation (05\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Perspicacit{\'e} (INTx2\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Persuasion (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Savoir-Vivre (EDUx2\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\textbf{Action} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Armes L{\'e}g{\`e}res* (30\%)		& --- ---     & -- \\ 
+		%% Armes {\`a} feu* (20\%)		& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Armes normales* (15\%)		& --- ---     & -- \\
+		%% Armes blanches* (20\%)		& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Armes lourdes* (15\%)		& --- ---     & -- \\
+		%% Armes exotiques* (00\%)		& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Athl{\'e}tisme (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Conduite* (20\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Corps {\`a} corps (DEXx2\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Interview / Animation (30\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Nager (20\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Navigation (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Parachutisme (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Piloter (00\%)			& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Piratage (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\vfill
+	
+\end{multicols}
+
+\begin{minipage}[ht]{1.00\textwidth}
+	\fbox{ \begin{minipage}[ht]{0,975\textwidth} % 
+		\FRdefBOXTITLESanitySanitySan --- Base : \CApersoSAN \% ~\\~\\ %
+		{\footnotesize Modificateur social \dotfill \% Aplomb \dotfill SAN initiale \dotfill SAN Max ({\scriptsize 99 - Mythe de Cthullu}) \dotfill } %% ~\\ %
+		{\scriptsize \begin{tabular}[c]{ c c c c c c c c c c c c c c c c c c c c }
+			01$_{01}$ &	02$_{01}$ &	03$_{01}$ &	04$_{01}$ &	05$_{01}$ &
+			06$_{02}$ &	07$_{02}$ &	08$_{02}$ &	09$_{02}$ &	10$_{02}$ &
+			11$_{03}$ &	12$_{03}$ &	13$_{03}$ &	14$_{03}$ &	15$_{03}$ &
+			16$_{04}$ &	17$_{04}$ &	18$_{04}$ &	19$_{04}$ &	20$_{04}$ \\
+			21$_{05}$ &	22$_{05}$ &	23$_{05}$ &	24$_{05}$ &	25$_{05}$ &
+			26$_{06}$ &	27$_{06}$ &	28$_{06}$ &	29$_{06}$ &	30$_{06}$ &
+			31$_{07}$ &	32$_{07}$ &	33$_{07}$ &	34$_{07}$ &	35$_{07}$ &
+			36$_{08}$ &	37$_{08}$ &	38$_{08}$ &	39$_{08}$ &	40$_{08}$ \\
+			41$_{09}$ &	42$_{09}$ &	43$_{09}$ &	44$_{09}$ &	45$_{09}$ &
+			46$_{10}$ &	47$_{10}$ &	48$_{10}$ &	49$_{10}$ &	50$_{10}$ &
+			51$_{11}$ &	52$_{11}$ &	53$_{11}$ &	54$_{11}$ &	55$_{11}$ &
+			56$_{12}$ &	57$_{12}$ &	58$_{12}$ &	59$_{12}$ &	60$_{12}$ \\
+			61$_{13}$ &	62$_{13}$ &	63$_{13}$ &	64$_{13}$ &	65$_{13}$ &
+			66$_{14}$ &	67$_{14}$ &	68$_{14}$ &	69$_{14}$ &	70$_{14}$ &
+			71$_{15}$ &	72$_{15}$ &	73$_{15}$ &	74$_{15}$ &	75$_{15}$ &
+			76$_{16}$ &	77$_{16}$ &	78$_{16}$ &	79$_{16}$ &	80$_{16}$ \\
+			81$_{17}$ &	82$_{17}$ &	83$_{17}$ &	84$_{17}$ &	85$_{17}$ &
+			86$_{18}$ &	87$_{18}$ &	88$_{18}$ &	89$_{18}$ &	90$_{18}$ &
+			91$_{19}$ &	92$_{19}$ &	93$_{19}$ &	94$_{19}$ &	95$_{10}$ &
+			96$_{20}$ &	97$_{20}$ &	98$_{20}$ &	99$_{20}$ &	00$_{20}$ \\
+		\end{tabular} } %% ~\\ % 
+	\end{minipage} } % end fbox
+\end{minipage} %% ~\\
+
+\begin{minipage}[ht]{0.60\textwidth}
+	\fbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLEEquipmentEquipm %~\\
+		\begin{center} \begin{tabular}[c]{ p{0.2\textwidth} p{0.7\textwidth} }
+			\dotfill		&	\dotfill	\\
+			\dotfill		&	\dotfill	\\
+			\dotfill		&	\dotfill	\\
+		\end{tabular} \end{center}
+		%% \rule{0.90\textwidth}{0.01cm}~\\
+		Points de Magie	\emph{[1-18]} \dotfill
+	\end{minipage}} % end fbox
+\end{minipage} \hfill \begin{minipage}[ht]{0.40\textwidth}
+	\fbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLEWeaponsWeaponsW % ~\\
+		{\footnotesize \begin{center} \begin{tabular}[c]
+			{ p{0.30\textwidth} p{0.10\textwidth} p{0.10\textwidth} p{0.10\textwidth} p{0.10\textwidth} }
+			Arme		&	D{\'e}gats	& Port.		& Cad.		& Charg.	\\
+			\dotfill	&	\dotfill	& \dotfill	& \dotfill	& \dotfill	\\
+			\dotfill	&	\dotfill	& \dotfill	& \dotfill	& \dotfill	\\
+		\end{tabular} \end{center} ~\\
+		Impact \CApersoIMPACT \dotfill -- Pieds 1D6 -- Poings 1D3 -- T{\^e}te 1D4
+		} %%
+	\end{minipage}} % end fbox
+\end{minipage}
+
+\clearpage
+
+~\\ %% ~\\ %% ~\\
+
+\begin{minipage}[ht]{0.15\textwidth}
+	\begin{center}
+		\includegraphics[width=0.98\textwidth]{\CApersoImage }
+	\end{center}
+	
+\end{minipage} \hfill \begin{minipage}[ht]{0.80\textwidth}
+	\begin{tabular}[c]{ p{0.15\textwidth} p{0.30\textwidth} p{0.15\textwidth} p{0.30\textwidth} }
+		\FRdefPersonnalInfosNAM	& \CApersoName \dotfill		&	\textbf{Parrain}		& \CApersoPARRAIN \dotfill	\\
+		\FRdefPersonnalInfosOCC	& \CApersoTitle \dotfill	&	\FRdefPersonnalInfosAGE & \CApersoAGE \dotfill		\\
+		\FRdefPersonnalInfosPRO	& \CApersoMETIER \dotfill	&	\FRdefPersonnalInfosSEX	& \CApersoSEXE \dotfill		\\
+		\textbf{Fortune : }		& \CApersoARGENT \euro		&	\dotfill				& \dotfill					\\
+	\end{tabular}
+	
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{Filet_CA.png}
+	\end{center}
+	
+	\begin{minipage}[ht]{0.725\textwidth}
+		\begin{tabular}[c]{ p{2.50cm} p{2.00cm} p{2.50cm} p{2.00cm} }
+			\FRdefCharacterSkillsAPP	& \dotfill \CApersoAPP & \FRdefCharacterSkillsPES & \dotfill \CApersoPES \%	\\
+			\FRdefCharacterSkillsCON	& \dotfill \CApersoCON & \FRdefCharacterSkillsSTA & \dotfill \CApersoSTA \%	\\
+			\FRdefCharacterSkillsDEX	& \dotfill \CApersoDEX & \FRdefCharacterSkillsAGI & \dotfill \CApersoAGI \%	\\
+			\FRdefCharacterSkillsPOW	& \dotfill \CApersoFOR & \FRdefCharacterSkillsPUI & \dotfill \CApersoPUI \%	\\
+			\FRdefCharacterSkillsTAI	& \dotfill \CApersoTAI & \FRdefCharacterSkillsCOR & \dotfill \CApersoCOR \%	\\
+			\FRdefCharacterSkillsEDU	& \dotfill \CApersoEDU & \FRdefCharacterSkillsKNO & \dotfill \CApersoKNO \%	\\
+			\FRdefCharacterSkillsINT	& \dotfill \CApersoINT & \FRdefCharacterSkillsIUI & \dotfill \CApersoIUI \%	\\
+			\FRdefCharacterSkillsPOU	& \dotfill \CApersoPOU & \FRdefCharacterSkillsVOL & \dotfill \CApersoVOL \%	\\
+		\end{tabular}
+	\end{minipage} \hfill \begin{minipage}[ht]{0.25\textwidth}
+		Points de Vie : \CApersoPV ~\\
+		Impact : \CApersoIMPACT ~\\
+		Sant{\'e} Mentale : \CApersoSAN \% ~\\~\\ %
+	\end{minipage}
+	
+\end{minipage} ~\\
+
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{Filet_CA.png}
+	\end{center}
+
+\begin{minipage}[ht]{0.10\textwidth}
+	~\\
+\end{minipage} \hfill \begin{minipage}[ht]{0.38\textwidth}
+
+	\textbf{\large Talents}~\\
+	\CApersoTALENT ~\\
+	
+\end{minipage} \hfill \begin{minipage}[ht]{0.38\textwidth}
+	
+	\textbf{\large Cyber-{\'E}quipement}~\\
+	\CApersoCYBEQU ~\\
+	
+\end{minipage} \hfill \begin{minipage}[ht]{0.10\textwidth}
+	~\\
+\end{minipage} ~\\
+
+\begin{minipage}[ht]{0.10\textwidth}
+	~\\
+\end{minipage} \hfill \begin{minipage}[ht]{0.38\textwidth}
+
+	\textbf{\large Cailloux}~\\
+	\CApersoCAILLO ~\\
+
+\end{minipage} \hfill \begin{minipage}[ht]{0.38\textwidth}
+
+	\textbf{\large Programmes}~\\
+	\CApersoPROGRA ~\\
+	
+\end{minipage} \hfill \begin{minipage}[ht]{0.10\textwidth}
+	~\\
+\end{minipage} % ~\\
+
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{Filet_CA.png}
+	\end{center}
+
+\textbf{\large Biographie}~\\
+\CApersoBIOLIG ~\\
+\CApersoBIOBIO ~\\
+
+\end{document}
