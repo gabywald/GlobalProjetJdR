@@ -1,0 +1,59 @@
+Agriculture	X
+Architecture	X
+Maçonnerie	X
+Botanique	X
+Conduite	X
+Pilotage	X
+Minéralogie	X
+Joaillerie	X
+Navigation	X
+Piratage	X
+Programmation	X	[*;Java;C/C++;Python;PHP;SQL;WebGeneral;Unix/Linux;Windows;Mac OS]
+Pilotage	X	[bateaux à voile;bateaux à moteur;sousmarins;avions de chasse;avions de tourisme;avions de ligne;hélicoptères;véhicules militaires blindés;*]
+Sciences	X	[anatomie;anthropologie;archéologie;astronomie;biochimie;biologie;biotechnologie;botanique;chimie;criminologie;cryptologie;écologie;entomologie;ergonomie;ethnologie;génétique;géologie;géopolitique;linguistique;mathématique;météorologie;nanotechnologie;pharmacologie;physique;sociologie;théologie;virologie;volcanologie;zoologie;*]
+Tactique et Stratégie	X
+Serrurerie	X
+Zoologie	X
+Langues complexes	X
+Armes légères	-4	[armes blanches;armes contondantes;armes à deux mains;armes propulsées]
+Armes normales	-2	[armes de poing;armes d'épaule;armes de guerre;laser]
+Armes lourdes	X	[*]
+Explosifs	X
+Codes et Usages	-4	[militaire;juridique;diplomatique;politique;scientifique;corporatiste;journalistique;la pègre;la rue;*]
+Connaissance d'un milieu	-4	[*]
+Langues étrangères	-4	[*]
+Lire/Écrire	-4
+Camouflage	-4
+Close combat	-4
+Culture Générale	-4
+Equitation	-4
+Médecine	-4
+Plongée	-4
+Psychologie	-4
+Survie	-4	[milieu aride;milieu polaire;milieu tropical;milieu tempéré;milieu urbain;*]
+Techniques	-4  [matériaux;énergies;électronique;mécanique;robotique;logistique et transport;réseaux et télécommunications;aéronautique;construction navale;*]
+Arts et Artisanat	-2 [danse;chant;musique;poésie;écriture;sculpture;comédie;dessin;peinture;jonglage;mime;maquillage;déguisement;haute couture;cuisine;coiffure;photographie;*]
+Bricolage	-2
+Commerce	-2
+Conduite	-2	[voiture;moto;transport de passagers;camion;engins de chantier;*]
+Dissimulation	-2
+Escalade	-2
+Fouille	-2
+Intimidation	-2
+Mémoire	-2
+Natation	-2
+Odorat et Goût	-2
+Orientation	-2
+Premiers Soins	-2
+Renseignements	-2
+Sang-froid	-2
+Athlétisme	0
+Bagarre	0
+Baratin	0
+Chaud lapin	0
+Discrétion	0
+Estimation	0
+Langue maternelle	0
+Ouïe	0
+Séduction	0
+Vue	0

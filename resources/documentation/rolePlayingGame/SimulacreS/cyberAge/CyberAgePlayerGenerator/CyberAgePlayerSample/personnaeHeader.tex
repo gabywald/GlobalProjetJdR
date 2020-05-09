@@ -1,0 +1,267 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{0.50cm}{0.50cm}{0.50cm}{0.50cm}{22pt}{3pt}{15pt}{10pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{empty}
+
+
+%%%%%%%%%%% SOME VALUES IN ENGLISH %%%%%%%%%%%%%%%%%%%%%
+\def\ENdefCharacterSheetHeaderTitle{Standard Sample BRP Character Sheet -- \emph{Name, First Name}}
+\def\ENdefCharacterSheetFooterTitle{Basic Role-Playing -- Character Sheet}
+
+\def\ENdefBOXTITLECharacteristics{ {\large \textbf{Characteristic and Rolls}} }
+\def\ENdefBOXTITLEPersonalInforma{ {\large \textbf{Personnal Information}} }
+\def\ENdefBOXTITLESkillsSkillsSki{ {\large \textbf{Skills}} }
+\def\ENdefBOXTITLEPowerPointsPowe{ {\large \textbf{Power Points}} }
+\def\ENdefBOXTITLEFatiguePointsFa{ {\large \textbf{Fatique Points}} }
+\def\ENdefBOXTITLEHitPointsHitPoi{ {\large \textbf{Hit Points}} }
+\def\ENdefBOXTITLEHitLocationsHit{ {\large \textbf{Hit Locations}} }
+\def\ENdefBOXTITLEMagicSpellAndPo{ {\large \textbf{Magic Spells and Powers}} }
+\def\ENdefBOXTITLECharacterPoints{ {\large \textbf{Character Points and Failings}} }
+\def\ENdefBOXTITLESanitySanitySan{ {\large \textbf{Sanity}} }
+\def\ENdefBOXTITLEEquipmentEquipm{ {\large \textbf{Equipment}} }
+\def\ENdefBOXTITLEArmorArmorArmor{ {\large \textbf{Armor}} }
+\def\ENdefBOXTITLEWeaponsWeaponsW{ {\large \textbf{Weapons}} }
+\def\ENdefBOXTITLENotesNotesNotes{ {\large \textbf{Notes}} }
+
+\def\ENdefCharacterSkillsORIGINA{\bfseries \emph{original}}
+\def\ENdefCharacterSkillsCURRENT{\bfseries \emph{current}}
+\def\ENdefCharacterSkillsSTR{\bfseries STRength}
+\def\ENdefCharacterSkillsCON{\bfseries CONstitution}
+\def\ENdefCharacterSkillsTAI{\bfseries Size}
+\def\ENdefCharacterSkillsINT{\bfseries INTelligence}
+\def\ENdefCharacterSkillsPOW{\bfseries POWer}
+\def\ENdefCharacterSkillsDEX{\bfseries DEXterity}
+\def\ENdefCharacterSkillsAPP{\bfseries APPearance}
+\def\ENdefCharacterSkillsEDU{\bfseries EDUcation}
+\def\ENdefCharacterSkillsSAN{\bfseries SANity}
+
+\def\ENdefCharacterSkillsEFF{\bfseries Effort}
+\def\ENdefCharacterSkillsSTA{\bfseries Stamina}
+\def\ENdefCharacterSkillsIDE{\bfseries Idea}
+\def\ENdefCharacterSkillsLUC{\bfseries Luck}
+\def\ENdefCharacterSkillsAGI{\bfseries Agility}
+\def\ENdefCharacterSkillsCHA{\bfseries Charisma}
+\def\ENdefCharacterSkillsKNO{\bfseries Knowledge}
+
+\def\ENdefPersonnalInfosNAM{\bfseries Name}
+\def\ENdefPersonnalInfosRAC{\bfseries Race}
+\def\ENdefPersonnalInfosGEN{\bfseries Gender}
+\def\ENdefPersonnalInfosAGE{\bfseries Age}
+\def\ENdefPersonnalInfosMOV{\bfseries Mov}
+\def\ENdefPersonnalInfosHEI{\bfseries Height}
+\def\ENdefPersonnalInfosWEI{\bfseries Weight}
+\def\ENdefPersonnalInfosNAT{\bfseries Nationality/Homeland}
+\def\ENdefPersonnalInfosPRO{\bfseries Profession}
+\def\ENdefPersonnalInfosALL{\bfseries Allegiance}
+\def\ENdefPersonnalInfosDIS{\bfseries Distinctive Features}
+
+\def\ENdefPowerPointsPersonnal{\textbf{Personnal} }
+\def\ENdefPowerPointsExternalS{External Source}
+\def\ENdefFatigPointsExhausted{Exhausted:}
+\def\ENdefFatigPointsTotalEncu{Total Encumbrance}
+\def\ENdefHitPointsMajorWounds{Major Wound}
+\def\ENdefHitPointsDeadDeadDea{Dead}
+
+\def\ENdefHitLocationsMeleeMel{ {\footnotesize \emph{Melee} } }
+\def\ENdefHitLocationsLocation{ {\footnotesize \emph{Location} } }
+\def\ENdefHitLocationsMissileM{ {\footnotesize \emph{Missile} } }
+\def\ENdefHitLocationsRightLeg{\bfseries \textsc{Right Leg}}
+\def\ENdefHitLocationsLeftLegL{\bfseries \textsc{Left  Leg}}
+\def\ENdefHitLocationsAbdomenA{\bfseries \textsc{Abdomen}}
+\def\ENdefHitLocationsChestChe{\bfseries \textsc{Chest}}
+\def\ENdefHitLocationsRightArm{\bfseries \textsc{Right Arm}}
+\def\ENdefHitLocationsLeftArmL{\bfseries \textsc{Left Arm}}
+\def\ENdefHitLocationsHeadHead{\bfseries \textsc{Head}}
+
+\def\ENdefMagicSpellsPowerName{ {\footnotesize \emph{Spell/Power} } }
+\def\ENdefMagicSpellsPowerPerc{ {\footnotesize \emph{\%} } }
+\def\ENdefMagicSpellsPowerLeve{ {\footnotesize \emph{Levels} } }
+\def\ENdefMagicSpellsPowerDama{ {\footnotesize \emph{Damage} } }
+\def\ENdefMagicSpellsPowerRang{ {\footnotesize \emph{Range} } }
+\def\ENdefMagicSpellsPowerPPpp{ {\footnotesize \emph{PP} } }
+\def\ENdefMagicSpellsPowerDura{ {\footnotesize \emph{Duration} } }
+\def\ENdefMagicSpellsPowerCost{ {\footnotesize \emph{Cost} } }
+\def\ENdefMagicSpellsPowerFree{Free \textsc{Int}}
+\def\ENdefMagicSpellsPowerTota{Total Cost}
+
+\def\ENdefCharacterPointsPower{ \textbf{Power Level} }
+\def\ENdefCharacterPointsPoint{ Character Points }
+\def\ENdefCharacterPointsFaili{ \textbf{Character Failings} }
+\def\ENdefCharacterPointsFDesc{ {\footnotesize \emph{Failing} } }
+\def\ENdefCharacterPointsFCoun{ {\footnotesize \emph{Points} } }
+\def\ENdefCharacterPointsTotal{ Total }
+
+\def\ENdefSanityInsane{ \textbf{Insane} }
+\def\ENdefSanityMental{ \textbf{Mental Disorder} }
+\def\ENdefSanityDisord{ {\footnotesize \emph{Disorder} } }
+\def\ENdefSanitySeveri{ {\footnotesize \emph{Severity} } }
+
+\def\ENdefEquipmentItems{ {\footnotesize \emph{Item} } }
+\def\ENdefEquipmentEncEn{ {\footnotesize \emph{Enc.} } }
+\def\ENdefEquipmentTotal{ Total \textsc{Enc.} }
+
+\def\ENdefArmorTypeType{ {\footnotesize \emph{Type} } }
+\def\ENdefArmorLocation{ {\footnotesize \emph{Location} } }
+
+\def\ENdefWeaponsDamBon{ \textbf{Damage Bonus:} }
+\def\ENdefWeaponsDamDex{ Dex SR }
+\def\ENdefWeaponsDamSiz{ Siz SR }
+\def\ENdefWeaponsDamBas{ Base SR }
+\def\ENdefWeaponsWeapon{ {\footnotesize \emph{Weapon} } }
+\def\ENdefWeaponsAttack{ {\footnotesize \emph{Attack SR} } }
+\def\ENdefWeaponsPercen{ {\footnotesize \emph{\%} } }
+\def\ENdefWeaponsDamage{ {\footnotesize \emph{Damage} } }
+\def\ENdefWeaponsAPRang{ {\footnotesize \emph{AP/Range} } }
+
+
+%%%%%%%%%%% QUELQUES VALEURS EN FRANCAIS %%%%%%%%%%%%%%%%%%%%%
+\def\FRdefCharacterSheetHeaderTitle{Feuille de Personnage Cyber Age -- \emph{Nom, Prenom} }
+\def\FRdefCharacterSheetFooterTitle{Cyber Age -- Feuille de personnage}
+
+\def\FRdefBOXTITLECharacteristics{ {\large \textbf{Caract{\'e}ristiques \& Attributs}} }
+\def\FRdefBOXTITLEPersonalInforma{ {\large \textbf{{\'E}tat civil}} }
+\def\FRdefBOXTITLESkillsSkillsSki{ {\large \textbf{Comp{\'e}tences}} }
+\def\FRdefBOXTITLEPowerPointsPowe{ {\large \textbf{Points d'{\'e}nergies}} }
+\def\FRdefBOXTITLEFatiguePointsFa{ {\large \textbf{Points de fatigue}} }
+\def\FRdefBOXTITLEHitPointsHitPoi{ {\large \textbf{Points de touche}} }
+\def\FRdefBOXTITLEHitLocationsHit{ {\large \textbf{Localisation de touche}} }
+\def\FRdefBOXTITLEMagicSpellAndPo{ {\large \textbf{Sorts et pouvoirs}} }
+\def\FRdefBOXTITLECharacterPoints{ {\large \textbf{Character Points and Failings}} }
+\def\FRdefBOXTITLESanitySanitySan{ {\large \textbf{Sant{\'e} mentale}} }
+\def\FRdefBOXTITLEEquipmentEquipm{ {\large \textbf{{\'E}quipement}} }
+\def\FRdefBOXTITLEArmorArmorArmor{ {\large \textbf{Armure}} }
+\def\FRdefBOXTITLEWeaponsWeaponsW{ {\large \textbf{Armes}} }
+\def\FRdefBOXTITLENotesNotesNotes{ {\large \textbf{Notes}} }
+
+\def\FRdefCharacterSkillsORIGINA{\bfseries \emph{original}}
+\def\FRdefCharacterSkillsCURRENT{\bfseries \emph{courant}}
+\def\FRdefCharacterSkillsSTR{\bfseries FORce}
+\def\FRdefCharacterSkillsCON{\bfseries CONstitution}
+\def\FRdefCharacterSkillsTAI{\bfseries TAIlle}
+\def\FRdefCharacterSkillsINT{\bfseries INTelligence}
+\def\FRdefCharacterSkillsPOW{\bfseries FORce}
+\def\FRdefCharacterSkillsDEX{\bfseries DEXterit{\'e}}
+\def\FRdefCharacterSkillsAPP{\bfseries APParence}
+\def\FRdefCharacterSkillsEDU{\bfseries EDUcation}
+\def\FRdefCharacterSkillsSAN{\bfseries SANt{\'e}}
+\def\FRdefCharacterSkillsPOU{\bfseries POUvoir}
+
+\def\FRdefCharacterSkillsEFF{\bfseries Effort}
+\def\FRdefCharacterSkillsSTA{\bfseries Endurance}
+\def\FRdefCharacterSkillsIDE{\bfseries Intuition}
+\def\FRdefCharacterSkillsLUC{\bfseries Chance}
+\def\FRdefCharacterSkillsAGI{\bfseries Agilit{\'e}}
+\def\FRdefCharacterSkillsCHA{\bfseries Charisme}
+\def\FRdefCharacterSkillsKNO{\bfseries Connaissance}
+\def\FRdefCharacterSkillsPES{\bfseries Prestance}
+\def\FRdefCharacterSkillsPUI{\bfseries Puissance}
+\def\FRdefCharacterSkillsCOR{\bfseries Corpulence}
+\def\FRdefCharacterSkillsIUI{\bfseries Intuition}
+\def\FRdefCharacterSkillsVOL{\bfseries Volont{\'e}}
+
+\def\FRdefPersonnalInfosNAM{\bfseries Nom}
+\def\FRdefPersonnalInfosFNA{\bfseries Pr{\'e}nom}
+\def\FRdefPersonnalInfosSEX{\bfseries Sexe}
+\def\FRdefPersonnalInfosOCC{\bfseries Occupation}
+\def\FRdefPersonnalInfosPER{\bfseries Personnalit{\'e}}
+\def\FRdefPersonnalInfosRAC{\bfseries Race}
+\def\FRdefPersonnalInfosGEN{\bfseries Genre}
+\def\FRdefPersonnalInfosAGE{\bfseries {\^A}ge}
+\def\FRdefPersonnalInfosMOV{\bfseries Movt}
+\def\FRdefPersonnalInfosHEI{\bfseries Taille}
+\def\FRdefPersonnalInfosWEI{\bfseries Poid}
+\def\FRdefPersonnalInfosNAT{\bfseries Nationalit{\'e}}
+\def\FRdefPersonnalInfosPRO{\bfseries Profession}
+\def\FRdefPersonnalInfosALL{\bfseries All{\'e}geance}
+\def\FRdefPersonnalInfosDIS{\bfseries {\'E}l{\'e}ments distinctifs}
+
+\def\FRdefPowerPointsPersonnal{\textbf{Personnel} }
+\def\FRdefPowerPointsExternalS{Source externe}
+\def\FRdefFatigPointsExhausted{{\'E}puis{\'e} : }
+\def\FRdefFatigPointsTotalEncu{Encombrement total}
+\def\FRdefHitPointsMajorWounds{Blessure majeure}
+\def\FRdefHitPointsDeadDeadDea{Mort}
+
+\def\FRdefHitLocationsMeleeMel{ {\footnotesize \emph{Mel{\'e}e} } }
+\def\FRdefHitLocationsLocation{ {\footnotesize \emph{Localisation} } }
+\def\FRdefHitLocationsMissileM{ {\footnotesize \emph{Missile} } }
+\def\FRdefHitLocationsRightLeg{\bfseries \textsc{Jambe droite}}
+\def\FRdefHitLocationsLeftLegL{\bfseries \textsc{Jambe gauche}}
+\def\FRdefHitLocationsAbdomenA{\bfseries \textsc{Abdomen}}
+\def\FRdefHitLocationsChestChe{\bfseries \textsc{Chest}}
+\def\FRdefHitLocationsRightArm{\bfseries \textsc{Bras droit}}
+\def\FRdefHitLocationsLeftArmL{\bfseries \textsc{Bras gauche}}
+\def\FRdefHitLocationsHeadHead{\bfseries \textsc{T{\^e}te}}
+
+\def\FRdefMagicSpellsPowerName{ {\footnotesize \emph{Sort/Pouvoir} } }
+\def\FRdefMagicSpellsPowerPerc{ {\footnotesize \emph{\%} } }
+\def\FRdefMagicSpellsPowerLeve{ {\footnotesize \emph{Niveaux} } }
+\def\FRdefMagicSpellsPowerDama{ {\footnotesize \emph{Dommage} } }
+\def\FRdefMagicSpellsPowerRang{ {\footnotesize \emph{Distance} } }
+\def\FRdefMagicSpellsPowerPPpp{ {\footnotesize \emph{PP} } }
+\def\FRdefMagicSpellsPowerDura{ {\footnotesize \emph{Dur{\'e}e} } }
+\def\FRdefMagicSpellsPowerCost{ {\footnotesize \emph{Co{\^u}t} } }
+\def\FRdefMagicSpellsPowerFree{Free \textsc{Int}}
+\def\FRdefMagicSpellsPowerTota{Total Cost}
+
+\def\FRdefCharacterPointsPower{ \textbf{Niveau de pouvoir} }
+\def\FRdefCharacterPointsPoint{ Points de personnage }
+\def\FRdefCharacterPointsFaili{ \textbf{Faiblesses ...} }
+\def\FRdefCharacterPointsFDesc{ {\footnotesize \emph{Faiblesses} } }
+\def\FRdefCharacterPointsFCoun{ {\footnotesize \emph{Avantages} } }
+\def\FRdefCharacterPointsTotal{ Total }
+
+\def\FRdefSanityInsane{ \textbf{Fou} }
+\def\FRdefSanityMental{ \textbf{D{\'e}sordre mental} }
+\def\FRdefSanityDisord{ {\footnotesize \emph{D{\'e}sordre} } }
+\def\FRdefSanitySeveri{ {\footnotesize \emph{S{\'e}v{\'e}rit{\'e}} } }
+
+\def\FRdefEquipmentItems{ {\footnotesize \emph{Objet} } }
+\def\FRdefEquipmentEncEn{ {\footnotesize \emph{Enc.} } }
+\def\FRdefEquipmentTotal{ Total \textsc{Enc.} }
+
+\def\FRdefArmorTypeType{ {\footnotesize \emph{Type} } }
+\def\FRdefArmorLocation{ {\footnotesize \emph{Localisation} } }
+
+\def\FRdefWeaponsDamBon{ \textbf{Bonus Dommages:} }
+\def\FRdefWeaponsDamDex{ Dex SR }
+\def\FRdefWeaponsDamSiz{ Tai SR }
+\def\FRdefWeaponsDamBas{ Base SR }
+\def\FRdefWeaponsWeapon{ {\footnotesize \emph{Arme} } }
+\def\FRdefWeaponsAttack{ {\footnotesize \emph{Attaque SR} } }
+\def\FRdefWeaponsPercen{ {\footnotesize \emph{\%} } }
+\def\FRdefWeaponsDamage{ {\footnotesize \emph{Dommage} } }
+\def\FRdefWeaponsAPRang{ {\footnotesize \emph{AP/Range} } }
+
+%%%%% exchange (find & replace) between 'ENdef' end 'FRdef' from here to forward (XXX occurences) %%%%%
+

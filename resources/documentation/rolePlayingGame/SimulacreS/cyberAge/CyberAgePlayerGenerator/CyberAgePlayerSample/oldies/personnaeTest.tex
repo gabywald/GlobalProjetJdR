@@ -1,0 +1,112 @@
+
+%% http://www.personal.ceu.hu/tex/input.htm
+
+%% %% LaTeX Splitting the Input
+%% %% %% A large document requires a lot of input. Rather than putting the whole input in a single large file, it's more efficient to split it into several smaller ones. Regardless of how many separate files you use, there is one that is the root file; it is the one whose name you type when you run LaTeX.
+%% %% %% \include
+%% %% %% %% \include{file}
+%% %% The \include command is used in conjunction with the \includeonly command for selective inclusion of files. The file argument is the first name of a file, denoting FILE.TEX. If file is one the file names in the file list of the \includeonly command or if there is no \includeonly command, the \include command is equivalent to
+%% %% %% \clearpage \input{file} \clearpage
+%% %% except that if the file FILE.TEX does not exist, then a warning message rather than an error is produced. If the file is not in the file list, the \include command is equivalent to \clearpage.
+%% %% %% The \include command may not appear in the preamble or in a file read by another \include command.
+%% %% %% %% \includeonly
+%% %% %% %% \includeonly{file_list}
+%% %% The \includeonly command controls which files will be read in by an \include command. It can only appear in the preamble.
+%% %% \input
+%% %% \input{file}
+%% %% %% The \input command causes the indicated file to be read and processed, exactly as if its contents had been inserted in the current file at that point. The file name may be a complete file name with extension or just a first name, in which case the file FILE.TEX is used.
+%% %% \endinput
+%% %% %% The \endinput command means no more input from the file. All material after \endinput is discarded.
+
+\input{personnaeHeader.tex} 
+
+\def\PersonnaeName{ Ernst Kobel }
+
+\def\FRdefCharacterSheetHeaderTitle{Feuille de Personnage Cyber Age -- \emph{\PersonnaeName } }
+
+\def\CApersoName{ {\footnotesize \PersonnaeName } }
+\def\CApersoImage{img/personnageErnstKobel.jpg}
+\def\CApersoTitle{ {\footnotesize Bladerunner, ancien pilote de voile solaire} }
+\def\CApersoPV{11}
+\def\CApersoIMPACT{0}
+\def\CApersoSAN{55}
+
+\def\CApersoAPP{8}
+\def\CApersoCON{8}
+\def\CApersoDEX{12}
+\def\CApersoFOR{9}
+\def\CApersoTAI{14}
+\def\CApersoEDU{8}
+\def\CApersoINT{11}
+\def\CApersoPOU{11}
+
+\def\CApersoPES{40}
+\def\CApersoSTA{40}
+\def\CApersoAGI{60}
+\def\CApersoPUI{45}
+\def\CApersoCOR{70}
+\def\CApersoKNO{40}
+\def\CApersoIUI{55}
+\def\CApersoVOL{55}
+
+\def\CApersoAGE{28}
+\def\CApersoSEXE{Homme}
+\def\CApersoPARRAIN{---}
+\def\CApersoARGENT{800}
+\def\CApersoDIVERS{---}
+\def\CApersoMETIER{Pilote de voile solaire. } 
+
+\def\CApersoCYBEQU{%
+	\begin{itemize}
+		\item C{\^a}blage optique infrarouge des deux yeux. 
+		\item C{\^a}blage de pilotage. 
+		\item \dotfill
+		\item \dotfill
+		\item \dotfill
+	\end{itemize}
+}%
+\def\CApersoCAILLO{%
+	\begin{itemize}
+		\item Pilotage de voiles solaires
+		\item Pilotage d'hovertank
+		\item Anglais
+		\item Japonais
+		\item Fran\c{c}ais
+	\end{itemize}
+}%
+\def\CApersoTALENT{%
+	\begin{itemize}
+		\item Filature	60 \%
+		\item Combat {\'a} mains nues	75 \%
+		\item Pistolet	75 \%
+		\item Astrophysique	50 \%
+		\item \dotfill
+	\end{itemize}
+}%
+\def\CApersoPROGRA{%
+	\begin{itemize}
+		\item \dotfill
+		\item \dotfill
+		\item \dotfill
+		\item \dotfill
+		\item \dotfill
+	\end{itemize}
+}%
+\def\CApersoBIOLIG{%
+	\begin{itemize}
+		\item 9/10	Dette vis {\`a} vis d'un Yakuza. 
+		\item 12/3	Un R{\^e}veur devient fou. 
+		\item 5/12	Une agence de d{\'e}tectives vous apprend les rudiments du m{\'e}tier de BladeRunner. 
+		\item 3/7	Vous devenez Pilote de Voile Solaire
+		\item 6/9	Accident. Perte des yeux. 
+		\item 8/10	C{\^a}blage gratuit.
+	\end{itemize}
+}%
+\def\CApersoBIOBIO{%
+Ernst devient pilote {\`a} la suite de son {\'e}viction d'un gang d'adolescents dans la banlieue de Sao Paulo. Il remporte de nombreuses courses et tombe amoureux d'une vedette du \texttt{CosmoR{\^e}ve} : Elisa M{\'e}tamorphosis. C'est {\`a} cette {\'e}poque qu'il se fait poser un c{\^a}blage de pilotage multifonctions Data System Sensei. ~\\
+S'apercevant que son amie devient peu {\`a} peu folle, il tente de racheter son contrat. Pour cela il c{\`e}de au \texttt{Yakuza} et accepte de truquer une course. Mais en voulant couper la route {\`a} un concurrent sa voile s'enflamme et c'est l'accident, il perd la vue. ~\\
+Des mois de convalescence passent, Elisa sombre dans la folie. Ernst abandonne la course et se fait poser des yeux {\'e}lectroniques Zeiss / Ikon. ~\\
+Il redescend sur Terre, star d{\'e}chue. Amateur de sensations fortes, il d{\'e}cide de devenir chasseur de primes. Gr{\^a}ce {\`a} d'anciens contacts, il apprend les rudiments du m{\'e}tier aupr{\`e}s de l'Agence new-yorkaise Mac Burns. Il s'est install{\'e} depuis peu {\`a} La D{\'e}fense. ~\\
+}%
+
+\input{personnaeBottom.tex} 

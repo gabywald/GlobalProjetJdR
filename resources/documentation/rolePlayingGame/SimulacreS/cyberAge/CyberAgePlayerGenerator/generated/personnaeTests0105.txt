@@ -1,0 +1,259 @@
+BEGIN personnae
+CONCEPT Test01
+NAME Yetan Other
+IMAGE img/personnageAnonymous.jpg
+TITLE Test01
+PV 15
+IMPACT 2
+SAN 50
+APP 14
+CON 13
+DEX 11
+FOR 11
+TAI 16
+EDU 16
+INT 9
+POU 10
+BEGIN cyberequipement
+C{\^a}blage de combat --- C{\^a}blage nerveux (vitesse). 
+Broche de type A ou B. 
+END cyberequipement
+BEGIN cailloux
+un caillou au choix. 
+END cailloux
+AGE 57
+SEXE Ind{\'e}termin{\'e}-e
+PARRAIN Chef de Gang
+ARGENT 13000
+DIVERS Dette de BladeRunner. 
+METIER CyberTek
+BEGIN talents
+Arts martiaux	50
+Electronique	60
+G{\'e}n{\'e}tique	50
+Informatique	50
+Onirologie	50
+Survie en milieu sp{\'e}cial	50
+Technom{\'e}canique	50
+Travail en milieu spatial[-4]	60
+END talents
+BEGIN lightbio
+[Espace-Venise] Vous signez un contrat de mineur pour deux ans en Espace profond. 
+[Divers] Vous perdez votre famille lorsque vous {\^e}tes tr{\`e}s jeune. 
+[Espace-Venise] Vous faites naufrage en plein espace. Vous restez un an et demi en Synthivers. 
+[Gangs] Vous devenez l'ami d'un chef de Gang. 
+[BladeRunner] Un BladeRunner a une dette vis-{\`a}-vis de vous. Vous pouvez lui demander un service. 
+[Jackeur] Vous vous faites un ennemi d'un Jackeur. Il peut chercher {\`a} vous attaquer s'il vous rencontre dans la Matrice / le REZO. 
+[Yakuza] Vous travaillez un temps pour le Yakuza, puis vous le d{\'e}sertez. Il vous est d{\'e}sormais impossible de travailler pour le Yakuza. 
+[Network] Vous participez {\`a} une Chasse. 
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+
+BEGIN personnae
+CONCEPT Test02
+NAME Blondie Calling
+IMAGE img/personnageAnonymous.jpg
+TITLE Test02
+PV 13
+IMPACT 2
+SAN 75
+APP 10
+CON 10
+DEX 13
+FOR 14
+TAI 15
+EDU 16
+INT 16
+POU 15
+BEGIN cyberequipement
+Broche de type A ou B. 
+END cyberequipement
+BEGIN cailloux
+un caillou au choix. 
+END cailloux
+AGE 25
+SEXE Femme
+PARRAIN Membre de Gang
+ARGENT 13000
+DIVERS ---
+METIER Pilote de Voile Solaire
+BEGIN talents
+Conduite d'engins sp{\'e}ciaux	50
+Connaissance du milieu du showbiz	60
+Pilotage	50
+Pilotage d'engins volants	50
+Survie en milieu spatial	50
+Techniques d'{\'e}limination	50
+END talents
+BEGIN lightbio
+[Yakuza] Vous travaillez un temps pour le Yakuza, puis vous le d{\'e}sertez. Il vous est d{\'e}sormais impossible de travailler pour le Yakuza. 
+[R{\^o}nin] Vous {\^e}tes trahi(e) par une Mercenaire. Vous cherchez {\`a} vous venger.  --- Cicatrice : Bras droit. {\`A} peine visible. 
+[TechnoBloc] Vous vous faites des ennemis dans votre TechnoBloc. 
+[Yakuza] Vous {\^e}tes trahi(e) par un Yakuza qui manque de vous tuer.  --- Cicatrice : Bras gauche. {\`A} peine visible. 
+[Network] Vous devenez Pilote de voile Solaire. 
+[Gangs] Vous tombez amoureux(se) d'un membre de Gang.  --- Vous vous f{\^a}chez. Vous vous quittez en bons termes. 
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+
+BEGIN personnae
+CONCEPT Test03
+NAME Katanitic Kolon
+IMAGE img/personnageAnonymous.jpg
+TITLE Test03
+PV 13
+IMPACT 2
+SAN 62
+APP 16
+CON 13
+DEX 13
+FOR 17
+TAI 13
+EDU 12
+INT 12
+POU 13
+BEGIN cyberequipement
+Broche de type A ou B. 
+Broche de type A ou B. 
+END cyberequipement
+BEGIN cailloux
+un caillou au choix. 
+un caillou au choix. 
+END cailloux
+AGE 25
+SEXE Homme
+PARRAIN TechnoBloc
+ARGENT 13000
+DIVERS Dette de Yakuza. 
+METIER CyberTek
+BEGIN talents
+Connaissance du milieu des Mercenaires	50
+Connaissance du milieu des Yakuzas	50
+Electronique	50
+Explosifs	50
+Gestion	50
+Informatique	50
+M{\'e}decine	50
+Nanotechnologies	70
+Recherche dans HyperNet	50
+END talents
+BEGIN lightbio
+[TechnoBloc] Vous acc{\'e}dez {\`a} un poste de cadre dans votre TechnoBloc. 
+[R{\^o}nin] Vous devenez Mercenaire pendant quelques mois. 
+[Espace-Venise] Vous faites naufrage en plein espace. Vous restez un an et demi en Synthivers. 
+[Gangs] Vous devenez l'ennemi d'un chef de Gang. Faites attention quand vous passez sur son territoire. 
+[Yakuza] Un Yakuza vous enseigne ce qu'il (elle) sait. 
+[Yakuza] Un Yakuza a une dette vis-{\`a}-vis de vous. Vous pouvez lui demander un service. 
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+
+BEGIN personnae
+CONCEPT Test04
+NAME Lady Luck
+IMAGE img/personnageAnonymous.jpg
+TITLE Test04
+PV 13
+IMPACT 2
+SAN 2
+APP 11
+CON 12
+DEX 12
+FOR 12
+TAI 14
+EDU 17
+INT 15
+POU 10
+BEGIN cyberequipement
+Broche de Type C. 
+END cyberequipement
+BEGIN cailloux
+6 cailloux d'onirogramme. 
+END cailloux
+AGE 26
+SEXE Femme
+PARRAIN BladeRunner
+ARGENT 30000000
+DIVERS ---
+METIER BladeRunner
+BEGIN talents
+Arme normale	50
+Connaissance des M{\'e}dias	30
+Connaissance du milieu de la rue	50
+Discr{\'e}tion	50
+Droit mondial	50
+Filature	80
+Math{\'e}matiques chaotiques	60
+Onirisme	60
+END talents
+BEGIN lightbio
+[Divers] Vous {\^e}tes testeur d'onirogrammes pendant un an. Vous avez une broche de type C et six cailloux d'onirogramme.  
+[Gangs] Vous tombez amoureux(se) d'un membre de Gang.  --- Vous trahissez votre liaison. Elle (Il) vous hait. 
+[Network] vous {\^e}tes la cible d'une Chasse. Vous tuez votre Chasseur. 
+[Wampire-R{\^e}veur] Vous devenez pendant quelques mois une star des usines {\`a} r{\^e}ves. Vous vous {\'e}chappez. Vous poss{\'e}dez 30 000 000 de cr{\'e}dits. Votre {\'e}quilibre psychique est au minimum (remont{\'e}e possible avec traitement psychiatrique). Vous ne supportez pas l'id{\'e}e que l'on puisse vous rajouter un {\'e}quipement cybern{\'e}tique. 
+[BladeRunner] Un(e) BladeRunner vous enseigne ce qu'il (elle) sait. 
+[Divers] Vous gagnez lors d'un concours l'arme personnelle de votre choix. 
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+
+BEGIN personnae
+CONCEPT Test05
+NAME Keny Solutri
+IMAGE img/personnageAnonymous.jpg
+TITLE Test05
+PV 12
+IMPACT 2
+SAN 55
+APP 9
+CON 12
+DEX 17
+FOR 14
+TAI 12
+EDU 16
+INT 12
+POU 11
+BEGIN cyberequipement
+Broche de type A ou B. 
+C{\^a}blage auditif --- Talkie-Walkie. 
+G.O.S.T. 
+END cyberequipement
+BEGIN cailloux
+un caillou au choix. 
+END cailloux
+AGE 50
+SEXE Homme
+PARRAIN Mercenaire
+ARGENT 40000
+DIVERS ---
+METIER CyberTek
+BEGIN talents
+Armes normales	50
+Electronique	80
+Nanotechnologies	50
+Pilotage	50
+Recherche dans HyperNet	50
+Technom{\'e}canique	50
+END talents
+BEGIN lightbio
+[Network] Vous devenez Pilote de voile Solaire. 
+[Divers] Vous participez {\`a} une course d'hovertanks. 
+[Divers] Vous gagnez un s{\'e}jour d'un mois sur les {\^I}les de la Lune. 
+[TechnoBloc] Votre TechnoBloc vous offre un cablage gratuit. 
+[Espace-Venise] Vous passez plusieurs mois sur une base spatiale. 
+[Network] Vous participez {\`a} une action terroriste. 
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+
