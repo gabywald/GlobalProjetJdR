@@ -1,0 +1,53 @@
+BEGIN personnae
+NAME Saeko TakeAri
+IMAGE img/c46de01a38f10b75f90156c0d8f64b2a.jpg
+TITLE Personnage de Nikau
+PV 11
+IMPACT 0
+SAN 70
+APP 15
+CON 10
+DEX 16
+FOR 9
+TAI 12
+EDU 12
+INT 14
+POU 14
+BEGIN cyberequipement
+Broche de type A ou B. 
+Acquisiteur de cible. Avec Interface radio sur une arme. % \emph{Interface sous-cutan{\'e}e {\`a} acheter en sus. }
+END cyberequipement 
+BEGIN cailloux
+Un cailloux au choix : Pilotage.  
+END cailloux
+AGE 30
+SEXE Femme
+PARRAIN TechnoBloc
+ARGENT 34 000
+DIVERS ---
+METIER BladeRunner
+BEGIN talents
+Connaissance Milieu Rue	70
+Filature	60
+Discr{\'e}tion	60
+Droit Mondial 50
+Armes Normales	50
+Explosifs	10
+Connaissance Milieu Mercenaires 65
+Chimie 40
+Gestion	40
+END talents
+BEGIN lightbio
+Tue un R{\^o}nin. Cicatrice {\`a} la t{\^e}te, tr{\`e}s profonde. 
+Mercenaire pendant quelques mois. 
+Amoureux d'un membre de Gang qui me trahit. 
+L'Agence de Mercs m'apprend le m{\'e}tier de BladeRunner. 
+C{\'e}l{\`e}bre pendant 2 semaines. Imaginer la raison. 
+Poste de cadre dans un TechnoBloc. 
+END lightbio 
+EDU*20 : 240 reste (30)
+INT*10 : 140 reste (100)
+BEGIN biography
+\emph{{\'E}crire plus précisemment ?..}
+END biography
+END personnae
