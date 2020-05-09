@@ -1,0 +1,730 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{0.20cm}{0.20cm}{0.20cm}{0.50cm}{15pt}{3pt}{50pt}{10pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{empty}
+
+
+%%%%%%%%%%% SOME VALUES IN ENGLISH %%%%%%%%%%%%%%%%%%%%%
+\def\ENdefCharacterSheetHeaderTitle{Standard Sample BRP Character Sheet}
+\def\ENdefCharacterSheetFooterTitle{Basic Role-Playing -- Character Sheet}
+
+\def\ENdefBOXTITLECharacteristics{ {\Large \textbf{\textcolor{lightgray}{Characteristic and Rolls}}} }
+\def\ENdefBOXTITLEPersonalInforma{ {\Large \textbf{\textcolor{lightgray}{Personnal Information}}} }
+\def\ENdefBOXTITLESkillsSkillsSki{ {\Large \textbf{\textcolor{lightgray}{Skills}}} }
+\def\ENdefBOXTITLEPowerPointsPowe{ {\Large \textbf{\textcolor{lightgray}{Power Points}}} }
+\def\ENdefBOXTITLEFatiguePointsFa{ {\Large \textbf{\textcolor{lightgray}{Fatique Points}}} }
+\def\ENdefBOXTITLEHitPointsHitPoi{ {\Large \textbf{\textcolor{lightgray}{Hit Points}}} }
+\def\ENdefBOXTITLEHitLocationsHit{ {\Large \textbf{\textcolor{lightgray}{Hit Locations}}} }
+\def\ENdefBOXTITLEMagicSpellAndPo{ {\Large \textbf{\textcolor{lightgray}{Magic Spells and Powers}}} }
+\def\ENdefBOXTITLECharacterPoints{ {\Large \textbf{\textcolor{lightgray}{Character Points and Failings}}} }
+\def\ENdefBOXTITLESanitySanitySan{ {\Large \textbf{\textcolor{lightgray}{Sanity}}} }
+\def\ENdefBOXTITLEEquipmentEquipm{ {\Large \textbf{\textcolor{lightgray}{Equipment}}} }
+\def\ENdefBOXTITLEArmorArmorArmor{ {\Large \textbf{\textcolor{lightgray}{Armor}}} }
+\def\ENdefBOXTITLEWeaponsWeaponsW{ {\Large \textbf{\textcolor{lightgray}{Weapons}}} }
+\def\ENdefBOXTITLENotesNotesNotes{ {\Large \textbf{\textcolor{lightgray}{Notes}}} }
+
+\def\ENdefCharacterSkillsORIGINA{\bfseries \emph{original}}
+\def\ENdefCharacterSkillsCURRENT{\bfseries \emph{current}}
+\def\ENdefCharacterSkillsSTR{\bfseries STRength}
+\def\ENdefCharacterSkillsCON{\bfseries CONstitution}
+\def\ENdefCharacterSkillsTAI{\bfseries Size}
+\def\ENdefCharacterSkillsINT{\bfseries INTelligence}
+\def\ENdefCharacterSkillsPOW{\bfseries POWer}
+\def\ENdefCharacterSkillsDEX{\bfseries DEXterity}
+\def\ENdefCharacterSkillsAPP{\bfseries APPearance}
+\def\ENdefCharacterSkillsEDU{\bfseries EDUcation}
+\def\ENdefCharacterSkillsSAN{\bfseries SANity}
+
+\def\ENdefCharacterSkillsEFF{\bfseries Effort}
+\def\ENdefCharacterSkillsSTA{\bfseries Stamina}
+\def\ENdefCharacterSkillsIDE{\bfseries Idea}
+\def\ENdefCharacterSkillsLUC{\bfseries Luck}
+\def\ENdefCharacterSkillsAGI{\bfseries Agility}
+\def\ENdefCharacterSkillsCHA{\bfseries Charisma}
+\def\ENdefCharacterSkillsKNO{\bfseries Knowledge}
+
+\def\ENdefPersonnalInfosNAM{\bfseries Name}
+\def\ENdefPersonnalInfosRAC{\bfseries Race}
+\def\ENdefPersonnalInfosGEN{\bfseries Gender}
+\def\ENdefPersonnalInfosAGE{\bfseries Age}
+\def\ENdefPersonnalInfosMOV{\bfseries Mov}
+\def\ENdefPersonnalInfosHEI{\bfseries Height}
+\def\ENdefPersonnalInfosWEI{\bfseries Weight}
+\def\ENdefPersonnalInfosNAT{\bfseries Nationality/Homeland}
+\def\ENdefPersonnalInfosPRO{\bfseries Profession}
+\def\ENdefPersonnalInfosALL{\bfseries Allegiance}
+\def\ENdefPersonnalInfosDIS{\bfseries Distinctive Features}
+
+\def\ENdefPowerPointsPersonnal{\textbf{Personnal} }
+\def\ENdefPowerPointsExternalS{External Source}
+\def\ENdefFatigPointsExhausted{Exhausted:}
+\def\ENdefFatigPointsTotalEncu{Total Encumbrance}
+\def\ENdefHitPointsMajorWounds{Major Wound}
+\def\ENdefHitPointsDeadDeadDea{Dead}
+
+\def\ENdefHitLocationsMeleeMel{ {\footnotesize \emph{Melee} } }
+\def\ENdefHitLocationsLocation{ {\footnotesize \emph{Location} } }
+\def\ENdefHitLocationsMissileM{ {\footnotesize \emph{Missile} } }
+\def\ENdefHitLocationsRightLeg{\bfseries \textsc{Right Leg}}
+\def\ENdefHitLocationsLeftLegL{\bfseries \textsc{Left  Leg}}
+\def\ENdefHitLocationsAbdomenA{\bfseries \textsc{Abdomen}}
+\def\ENdefHitLocationsChestChe{\bfseries \textsc{Chest}}
+\def\ENdefHitLocationsRightArm{\bfseries \textsc{Right Arm}}
+\def\ENdefHitLocationsLeftArmL{\bfseries \textsc{Left Arm}}
+\def\ENdefHitLocationsHeadHead{\bfseries \textsc{Head}}
+
+\def\ENdefMagicSpellsPowerName{ {\footnotesize \emph{Spell/Power} } }
+\def\ENdefMagicSpellsPowerPerc{ {\footnotesize \emph{\%} } }
+\def\ENdefMagicSpellsPowerLeve{ {\footnotesize \emph{Levels} } }
+\def\ENdefMagicSpellsPowerDama{ {\footnotesize \emph{Damage} } }
+\def\ENdefMagicSpellsPowerRang{ {\footnotesize \emph{Range} } }
+\def\ENdefMagicSpellsPowerPPpp{ {\footnotesize \emph{PP} } }
+\def\ENdefMagicSpellsPowerDura{ {\footnotesize \emph{Duration} } }
+\def\ENdefMagicSpellsPowerCost{ {\footnotesize \emph{Cost} } }
+\def\ENdefMagicSpellsPowerFree{Free \textsc{Int}}
+\def\ENdefMagicSpellsPowerTota{Total Cost}
+
+\def\ENdefCharacterPointsPower{ \textbf{Power Level} }
+\def\ENdefCharacterPointsPoint{ Character Points }
+\def\ENdefCharacterPointsFaili{ \textbf{Character Failings} }
+\def\ENdefCharacterPointsFDesc{ {\footnotesize \emph{Failing} } }
+\def\ENdefCharacterPointsFCoun{ {\footnotesize \emph{Points} } }
+\def\ENdefCharacterPointsTotal{ Total }
+
+\def\ENdefSanityInsane{ \textbf{Insane} }
+\def\ENdefSanityMental{ \textbf{Mental Disorder} }
+\def\ENdefSanityDisord{ {\footnotesize \emph{Disorder} } }
+\def\ENdefSanitySeveri{ {\footnotesize \emph{Severity} } }
+
+\def\ENdefEquipmentItems{ {\footnotesize \emph{Item} } }
+\def\ENdefEquipmentEncEn{ {\footnotesize \emph{Enc.} } }
+\def\ENdefEquipmentTotal{ Total \textsc{Enc.} }
+
+\def\ENdefArmorTypeType{ {\footnotesize \emph{Type} } }
+\def\ENdefArmorLocation{ {\footnotesize \emph{Location} } }
+
+\def\ENdefWeaponsDamBon{ \textbf{Damage Bonus:} }
+\def\ENdefWeaponsDamDex{ Dex SR }
+\def\ENdefWeaponsDamSiz{ Siz SR }
+\def\ENdefWeaponsDamBas{ Base SR }
+\def\ENdefWeaponsWeapon{ {\footnotesize \emph{Weapon} } }
+\def\ENdefWeaponsAttack{ {\footnotesize \emph{Attack SR} } }
+\def\ENdefWeaponsPercen{ {\footnotesize \emph{\%} } }
+\def\ENdefWeaponsDamage{ {\footnotesize \emph{Damage} } }
+\def\ENdefWeaponsAPRang{ {\footnotesize \emph{AP/Range} } }
+
+
+%%%%%%%%%%% QUELQUES VALEURS EN FRANCAIS %%%%%%%%%%%%%%%%%%%%%
+\def\FRdefCharacterSheetHeaderTitle{Feuille de Personnage BRP Standard}
+\def\FRdefCharacterSheetFooterTitle{Basic Role-Playing -- Feuille de personnage}
+
+\def\FRdefBOXTITLECharacteristics{ {\Large \textbf{\textcolor{lightgray}{Caract{\'e}ristiques}}} }
+\def\FRdefBOXTITLEPersonalInforma{ {\Large \textbf{\textcolor{lightgray}{Informations personnelles}}} }
+\def\FRdefBOXTITLESkillsSkillsSki{ {\Large \textbf{\textcolor{lightgray}{Comp{\'e}tences}}} }
+\def\FRdefBOXTITLEPowerPointsPowe{ {\Large \textbf{\textcolor{lightgray}{Points d'{\'e}nergies}}} }
+\def\FRdefBOXTITLEFatiguePointsFa{ {\Large \textbf{\textcolor{lightgray}{Points de fatigue}}} }
+\def\FRdefBOXTITLEHitPointsHitPoi{ {\Large \textbf{\textcolor{lightgray}{Points de touche}}} }
+\def\FRdefBOXTITLEHitLocationsHit{ {\Large \textbf{\textcolor{lightgray}{Localisation de touhce}}} }
+\def\FRdefBOXTITLEMagicSpellAndPo{ {\Large \textbf{\textcolor{lightgray}{Sorts et pouvoirs}}} }
+\def\FRdefBOXTITLECharacterPoints{ {\Large \textbf{\textcolor{lightgray}{Character Points and Failings}}} }
+\def\FRdefBOXTITLESanitySanitySan{ {\Large \textbf{\textcolor{lightgray}{Sant{\'e} mentale}}} }
+\def\FRdefBOXTITLEEquipmentEquipm{ {\Large \textbf{\textcolor{lightgray}{{\'E}quipement}}} }
+\def\FRdefBOXTITLEArmorArmorArmor{ {\Large \textbf{\textcolor{lightgray}{Armure}}} }
+\def\FRdefBOXTITLEWeaponsWeaponsW{ {\Large \textbf{\textcolor{lightgray}{Armes}}} }
+\def\FRdefBOXTITLENotesNotesNotes{ {\Large \textbf{\textcolor{lightgray}{Notes}}} }
+
+\def\FRdefCharacterSkillsORIGINA{\bfseries \emph{original}}
+\def\FRdefCharacterSkillsCURRENT{\bfseries \emph{courant}}
+\def\FRdefCharacterSkillsSTR{\bfseries FORce}
+\def\FRdefCharacterSkillsCON{\bfseries CONstitution}
+\def\FRdefCharacterSkillsTAI{\bfseries Taille}
+\def\FRdefCharacterSkillsINT{\bfseries INTelligence}
+\def\FRdefCharacterSkillsPOW{\bfseries FORce}
+\def\FRdefCharacterSkillsDEX{\bfseries DEXterit{\'e}}
+\def\FRdefCharacterSkillsAPP{\bfseries APParence}
+\def\FRdefCharacterSkillsEDU{\bfseries EDUcation}
+\def\FRdefCharacterSkillsSAN{\bfseries SANt{\'e}}
+
+\def\FRdefCharacterSkillsEFF{\bfseries Effort}
+\def\FRdefCharacterSkillsSTA{\bfseries Endurance}
+\def\FRdefCharacterSkillsIDE{\bfseries Intuition}
+\def\FRdefCharacterSkillsLUC{\bfseries Chance}
+\def\FRdefCharacterSkillsAGI{\bfseries Agilit{\'e}}
+\def\FRdefCharacterSkillsCHA{\bfseries Charisme}
+\def\FRdefCharacterSkillsKNO{\bfseries Connaissance}
+
+\def\FRdefPersonnalInfosNAM{\bfseries Nom}
+\def\FRdefPersonnalInfosRAC{\bfseries Race}
+\def\FRdefPersonnalInfosGEN{\bfseries Genre}
+\def\FRdefPersonnalInfosAGE{\bfseries {\^A}ge}
+\def\FRdefPersonnalInfosMOV{\bfseries Movt}
+\def\FRdefPersonnalInfosHEI{\bfseries Taille}
+\def\FRdefPersonnalInfosWEI{\bfseries Poid}
+\def\FRdefPersonnalInfosNAT{\bfseries Nationalit{\'e}}
+\def\FRdefPersonnalInfosPRO{\bfseries Profession}
+\def\FRdefPersonnalInfosALL{\bfseries All{\'e}geance}
+\def\FRdefPersonnalInfosDIS{\bfseries {\'E}l{\'e}ments distinctifs}
+
+\def\FRdefPowerPointsPersonnal{\textbf{Personnel} }
+\def\FRdefPowerPointsExternalS{Source externe}
+\def\FRdefFatigPointsExhausted{{\'E}puis{\'e} : }
+\def\FRdefFatigPointsTotalEncu{Encombrement total}
+\def\FRdefHitPointsMajorWounds{Blessure majeure}
+\def\FRdefHitPointsDeadDeadDea{Mort}
+
+\def\FRdefHitLocationsMeleeMel{ {\footnotesize \emph{Mel{\'e}e} } }
+\def\FRdefHitLocationsLocation{ {\footnotesize \emph{Localisation} } }
+\def\FRdefHitLocationsMissileM{ {\footnotesize \emph{Missile} } }
+\def\FRdefHitLocationsRightLeg{\bfseries \textsc{Jambe droite}}
+\def\FRdefHitLocationsLeftLegL{\bfseries \textsc{Jambe gauche}}
+\def\FRdefHitLocationsAbdomenA{\bfseries \textsc{Abdomen}}
+\def\FRdefHitLocationsChestChe{\bfseries \textsc{Chest}}
+\def\FRdefHitLocationsRightArm{\bfseries \textsc{Bras droit}}
+\def\FRdefHitLocationsLeftArmL{\bfseries \textsc{Bras gauche}}
+\def\FRdefHitLocationsHeadHead{\bfseries \textsc{T{\^e}te}}
+
+\def\FRdefMagicSpellsPowerName{ {\footnotesize \emph{Sort/Pouvoir} } }
+\def\FRdefMagicSpellsPowerPerc{ {\footnotesize \emph{\%} } }
+\def\FRdefMagicSpellsPowerLeve{ {\footnotesize \emph{Niveaux} } }
+\def\FRdefMagicSpellsPowerDama{ {\footnotesize \emph{Dommage} } }
+\def\FRdefMagicSpellsPowerRang{ {\footnotesize \emph{Distance} } }
+\def\FRdefMagicSpellsPowerPPpp{ {\footnotesize \emph{PP} } }
+\def\FRdefMagicSpellsPowerDura{ {\footnotesize \emph{Dur{\'e}e} } }
+\def\FRdefMagicSpellsPowerCost{ {\footnotesize \emph{Co{\^u}t} } }
+\def\FRdefMagicSpellsPowerFree{Free \textsc{Int}}
+\def\FRdefMagicSpellsPowerTota{Total Cost}
+
+\def\FRdefCharacterPointsPower{ \textbf{Niveau de pouvoir} }
+\def\FRdefCharacterPointsPoint{ Points de personnage }
+\def\FRdefCharacterPointsFaili{ \textbf{Faiblesses ...} }
+\def\FRdefCharacterPointsFDesc{ {\footnotesize \emph{Faiblesses} } }
+\def\FRdefCharacterPointsFCoun{ {\footnotesize \emph{Avantages} } }
+\def\FRdefCharacterPointsTotal{ Total }
+
+\def\FRdefSanityInsane{ \textbf{Fou} }
+\def\FRdefSanityMental{ \textbf{D{\'e}sordre mental} }
+\def\FRdefSanityDisord{ {\footnotesize \emph{D{\'e}sordre} } }
+\def\FRdefSanitySeveri{ {\footnotesize \emph{S{\'e}v{\'e}rit{\'e}} } }
+
+\def\FRdefEquipmentItems{ {\footnotesize \emph{Objet} } }
+\def\FRdefEquipmentEncEn{ {\footnotesize \emph{Enc.} } }
+\def\FRdefEquipmentTotal{ Total \textsc{Enc.} }
+
+\def\FRdefArmorTypeType{ {\footnotesize \emph{Type} } }
+\def\FRdefArmorLocation{ {\footnotesize \emph{Localisation} } }
+
+\def\FRdefWeaponsDamBon{ \textbf{Bonus Dommages:} }
+\def\FRdefWeaponsDamDex{ Dex SR }
+\def\FRdefWeaponsDamSiz{ Tai SR }
+\def\FRdefWeaponsDamBas{ Base SR }
+\def\FRdefWeaponsWeapon{ {\footnotesize \emph{Arme} } }
+\def\FRdefWeaponsAttack{ {\footnotesize \emph{Attaque SR} } }
+\def\FRdefWeaponsPercen{ {\footnotesize \emph{\%} } }
+\def\FRdefWeaponsDamage{ {\footnotesize \emph{Dommage} } }
+\def\FRdefWeaponsAPRang{ {\footnotesize \emph{AP/Range} } }
+
+%%%%% exchange (find & replace) between 'ENdef' end 'FRdef' from here to forward (XXX occurences) %%%%%
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+% http://www.trustonme.net/didactels/250.html
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+ \pagestyle{fancy}
+% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LO, RE]{\bfseries\leftmark \hfill \FRdefCharacterSheetHeaderTitle \hfill \bfseries\rightmark}
+\fancyfoot[LE, RO]{ \hfill % \includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+	\FRdefCharacterSheetFooterTitle % TITLE
+\hfill \thepage /\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+
+
+\usepackage{fancybox}
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+%============================= Corps =================================
+\begin{document}
+
+\begin{minipage}[ht]{12cm}
+	\shadowbox{\begin{minipage}{0.9\textwidth }
+		\FRdefBOXTITLECharacteristics~\\~\\
+		%% 
+		\begin{tabular}[c]{ p{1.75cm} p{1.75cm} p{1.75cm} p{1.75cm} p{1.75cm} }
+										& \FRdefCharacterSkillsORIGINA	& \FRdefCharacterSkillsCURRENT	& 							&			\\
+			\FRdefCharacterSkillsSTR	& \dotfill						& \dotfill						& \FRdefCharacterSkillsEFF	& \dotfill	\\
+			\FRdefCharacterSkillsCON	& \dotfill						& \dotfill						& \FRdefCharacterSkillsSTA	& \dotfill	\\
+			\FRdefCharacterSkillsTAI	& \dotfill						& \dotfill						& 							& 			\\
+			\FRdefCharacterSkillsINT	& \dotfill						& \dotfill						& \FRdefCharacterSkillsIDE	& \dotfill	\\
+			\FRdefCharacterSkillsPOW	& \dotfill						& \dotfill						& \FRdefCharacterSkillsLUC	& \dotfill	\\
+			\FRdefCharacterSkillsDEX	& \dotfill						& \dotfill						& \FRdefCharacterSkillsAGI	& \dotfill	\\
+			\FRdefCharacterSkillsAPP	& \dotfill						& \dotfill						& \FRdefCharacterSkillsCHA	& \dotfill	\\
+			\FRdefCharacterSkillsEDU	& \dotfill						& \dotfill						& \FRdefCharacterSkillsKNO	& \dotfill	\\
+			\FRdefCharacterSkillsSAN	& \dotfill						& \dotfill						& 							& 			\\
+		\end{tabular}			
+	\end{minipage}} % end shabox
+\end{minipage}
+\hfill
+\begin{minipage}[ht]{8cm}
+	\shadowbox{\begin{minipage}{0.9\textwidth}
+		\FRdefBOXTITLEPersonalInforma~\\
+		\begin{tabular}[c]{ p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} }
+			\FRdefPersonnalInfosNAM	& \multicolumn{3}{ p{0.7\textwidth} }{\dotfill} 					\\
+			\FRdefPersonnalInfosRAC	& \dotfill					& \FRdefPersonnalInfosGEN & \dotfill	\\
+			\FRdefPersonnalInfosAGE	& \dotfill					& \FRdefPersonnalInfosMOV & \dotfill	\\
+			\FRdefPersonnalInfosHEI	& \dotfill					& \FRdefPersonnalInfosWEI & \dotfill	\\
+			\multicolumn{2}{ p{0.45\textwidth} }{\FRdefPersonnalInfosNAT}	
+													& \multicolumn{2}{ p{0.45\textwidth} }{\dotfill} 	\\
+			\FRdefPersonnalInfosPRO	& \multicolumn{3}{ p{0.7\textwidth} }{\dotfill} 					\\
+			\FRdefPersonnalInfosALL	& \multicolumn{3}{ p{0.7\textwidth} }{\dotfill} 					\\
+			\multicolumn{3}{ p{0.7\textwidth} }{\FRdefPersonnalInfosDIS}	& \dotfill					\\
+			\multicolumn{4}{ p{0.9\textwidth} }{\dotfill} 												\\
+			\multicolumn{4}{ p{0.9\textwidth} }{\dotfill} 												\\
+			\multicolumn{4}{ p{0.9\textwidth} }{\dotfill} 												\\
+		\end{tabular}
+	\end{minipage}} % end shabox
+\end{minipage}~\\~\\
+
+\begin{tabular}{ p{11.50cm} p{8cm} }
+	\multirow{5}{*}{%
+		\begin{minipage}[ht]{12.00cm}%
+			\setlength{\shadowsize}{4pt}%
+			\shadowbox{\begin{minipage}{0.9\textwidth}
+				\FRdefBOXTITLESkillsSkillsSki~\\
+				\setlength{\shadowsize}{1pt} %% change size of shadow of shadowbox !!
+				\begin{small} \begin{tabular}[c]{ p{0.30\textwidth} p{0.10\textwidth} p{0.30\textwidth} p{0.10\textwidth} }
+					\textbf{Communication}		& (\dotfill)				&	Psychotherapy (\_\%)	& \dotfill \shadowbox{~}	\\
+					Bargain (05\%)				& \dotfill \shadowbox{~}	&	Science (01\%) 			& 							\\
+					Command (05\%)				& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					Disguise (01\%)				& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					Etiquette (05\%)			& \dotfill \shadowbox{~}	&	Strategy (01\%)			& \dotfill \shadowbox{~}	\\
+					FastTalk (05\%)				& \dotfill \shadowbox{~}	&	Technical (\_\_\%)		& 							\\
+					%
+					\multicolumn{2}{ p{0.50\textwidth} }{Language, Own (\textsc{Int/Edu} x5\%)}		
+																			&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					\multicolumn{2}{ p{0.50\textwidth} }{Language, Other (00\%)}		
+																			&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	\textbf{Perception}		& (\dotfill)				\\
+					%
+					Perform (05\%)				& \dotfill \shadowbox{~}	&	Insight (05\%)			& \dotfill \shadowbox{~}	\\
+					Persuade (15\%)				& \dotfill \shadowbox{~}	&	Listen (25\%)			& \dotfill \shadowbox{~}	\\
+					Status (15+\%)				& \dotfill \shadowbox{~}	&	Navigate (10\%)			& \dotfill \shadowbox{~}	\\
+					Teach (10\%)				& \dotfill \shadowbox{~}	&	Research (25\%)			& \dotfill \shadowbox{~}	\\
+												& 							&	Sense (10\%)			& \dotfill \shadowbox{~}	\\
+					%
+					\textbf{Manipulation}		& (\dotfill)				&	Spot (25\%)				& \dotfill \shadowbox{~}	\\
+					Art (05\%)					& 							&	Track (10\%)			& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&							& 							\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	\textbf{Physical}		& (\dotfill)				\\
+					Craft (05\%)				& \dotfill \shadowbox{~}	&	Climb (40\%)			& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	Drive (\_\_\%)			& 							\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					Demolition (01\%)			& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					Fine Manip.~\footnote{Fine Manipulation} (05\%)				& \dotfill \shadowbox{~}	&	Fly (\_\_\%)			& \dotfill \shadowbox{~}	\\
+					%
+					Heavy Mech.~\footnote{Heavy Machine} (01\%)					& \dotfill \shadowbox{~}	&	Hide (10\%)				& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	Jump (25\%)				& \dotfill \shadowbox{~}	\\
+					Repair (15\%)				& \dotfill \shadowbox{~}	&	Pilot (01\%)			& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					Slight of Hand (05\%)		& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+								 				& 							&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					%
+					\textbf{Mental}				& (\dotfill)				&	{\footnotesize Projection (\textsc{Dex}x02\%)}		& \dotfill \shadowbox{~}	\\
+					Appraise (15\%)				& \dotfill \shadowbox{~}	&	Ride (05\%)				& \dotfill \shadowbox{~}	\\
+					First Aid (30\%)			& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					Gaming (\textsc{Int+Pow})	& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\	 	
+					Knowledge (\_\_\%)			& 							&	Stealth (10\%)			& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	Swim (25\%)				& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	Throw (25\%)			& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					%
+					\dotfill	 				& \dotfill \shadowbox{~}	&	\textbf{Combat}			& (\dotfill)				\\
+					Literacy (\_\_\%)			& \dotfill \shadowbox{~}	&	Brawl (25\%)			& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	Dodge (\textsc{Dex}x02\%)& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	Grapple (25\%)			& \dotfill \shadowbox{~}	\\
+					Medicine (\_\_\%)			& \dotfill \shadowbox{~}	&	Martial Arts (01\%)		& \dotfill \shadowbox{~}	\\
+					%
+					\dotfill	 				& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+					\dotfill	 				& \dotfill \shadowbox{~}	&	\dotfill	 			& \dotfill \shadowbox{~}	\\
+				\end{tabular} \end{small} % footnotesize
+			\end{minipage}} % end shabox
+			\setlength{\shadowsize}{4pt} %% change size to initial value... !!
+		\end{minipage} \vspace{\fill}
+	} &	
+		\includegraphics[width=1.0cm]{../../../../../imgGraphics/artsDecos/ornement10whiteBG.png} 
+		\includegraphics[width=1.0cm]{../../../../../imgGraphics/artsDecos/ornement10whiteBG.png}
+		\includegraphics[width=1.0cm]{../../../../../imgGraphics/artsDecos/ornement10whiteBG.png}
+		\includegraphics[width=1.0cm]{../../../../../imgGraphics/artsDecos/ornement10whiteBG.png}
+		\includegraphics[width=1.0cm]{../../../../../imgGraphics/artsDecos/ornement10whiteBG.png}
+		\includegraphics[width=1.0cm]{../../../../../imgGraphics/artsDecos/ornement10whiteBG.png}
+		\includegraphics[width=1.0cm]{../../../../../imgGraphics/artsDecos/ornement10whiteBG.png}
+		\\
+	% \includegraphics[width=1.5cm]{../../../../../imgGraphics/artsDecos/ornement10whiteBG.png} \\
+	% \begin{minipage}[ht]{8cm} ~\\{\bfseries \FRdefCharacterSheetHeaderTitle }~\\ \end{minipage}	\\
+	
+		&
+	\begin{minipage}[ht]{8cm}
+		\shadowbox{\begin{minipage}{0.9\textwidth}
+			\FRdefBOXTITLEPowerPointsPowe~\\
+			\FRdefPowerPointsPersonnal~\\ % !!
+			\begin{tabular}[c]{ p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} }
+					01	&	02	&	03	&	04	&	05	&	06	&	07	&	08	&	09	\\
+					10	&	11	&	12	&	13	&	14	&	15	&	16	&	17	&	18	\\
+					19	&	20	&	21	&	22	&	23	&	24	&	25	&	26	&	27	\\
+					28	&	29	&	30	&	31	&	32	&	33	&	34	&	35	&	36	\\
+					37	&	38	&	39	&	40	&	41	&	42	&	43	&	44	&	45	\\
+					46	&	47	&	48	&	49	&	50	&	51	&	52	&	53	&	54	\\
+					55	&	56	&	57	&	58	&	59	&	60	&	61	&	62	&	63	\\
+			\end{tabular}
+			\begin{tabular}[c]{ p{0.40\textwidth} p{0.40\textwidth} }
+				\FRdefPowerPointsExternalS		& \dotfill \\ % !!
+			\end{tabular}
+		\end{minipage}}~\\% end shabox
+	\end{minipage} \\
+	
+		& 
+	\begin{minipage}[ht]{8cm}
+		\shadowbox{\begin{minipage}{0.9\textwidth}
+			\FRdefBOXTITLEFatiguePointsFa~\\
+			\begin{tabular}[c]{ p{0.40\textwidth} p{0.40\textwidth} }
+				\FRdefFatigPointsExhausted		& \dotfill \\ % !!
+			\end{tabular}
+			\begin{tabular}[c]{ p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} }
+					01	&	02	&	03	&	04	&	05	&	06	&	07	&	08	&	09	\\
+					10	&	11	&	12	&	13	&	14	&	15	&	16	&	17	&	18	\\
+					19	&	20	&	21	&	22	&	23	&	24	&	25	&	26	&	27	\\
+					28	&	29	&	30	&	31	&	32	&	33	&	34	&	35	&	36	\\
+					37	&	38	&	39	&	40	&	41	&	42	&	43	&	44	&	45	\\
+					46	&	47	&	48	&	49	&	50	&	51	&	52	&	53	&	54	\\
+			\end{tabular}
+			\begin{tabular}[c]{ p{0.60\textwidth} p{0.30\textwidth} }
+				\FRdefFatigPointsTotalEncu		& \dotfill \\ % !!
+			\end{tabular}
+		\end{minipage}}~\\% end shabox
+	\end{minipage} \\
+	
+		&
+	\begin{minipage}[ht]{8cm}
+		\shadowbox{\begin{minipage}{0.9\textwidth}
+			\FRdefBOXTITLEHitPointsHitPoi~\\
+			\begin{tabular}[c]{ p{0.40\textwidth} p{0.40\textwidth} }
+				\FRdefHitPointsMajorWounds		& \dotfill \\ % !!
+				\FRdefHitPointsDeadDeadDea		& \dotfill \\ % !!
+			\end{tabular}
+			\begin{tabular}[c]{ p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} p{0.055\textwidth} }
+					01	&	02	&	03	&	04	&	05	&	06	&	07	&	08	&	09	\\
+					10	&	11	&	12	&	13	&	14	&	15	&	16	&	17	&	18	\\
+					19	&	20	&	21	&	22	&	23	&	24	&	25	&	26	&	27	\\
+					28	&	29	&	30	&	31	&	32	&	33	&	34	&	35	&	36	\\
+			\end{tabular}
+		\end{minipage}}~\\% end shabox
+	\end{minipage} \\
+	
+		&
+	\begin{minipage}[ht]{8cm}
+		\colorbox{verylightgray}{%
+		\shadowbox{\begin{minipage}{0.9\textwidth}
+			\FRdefBOXTITLEHitLocationsHit
+			\begin{center} \begin{tabular}[c]{ c c c }
+				\FRdefHitLocationsMeleeMel	&	\FRdefHitLocationsLocation	&	\FRdefHitLocationsMissileM	\\
+				01-04				&	\FRdefHitLocationsRightLeg	&	01-03								\\
+				05-08						&	\FRdefHitLocationsLeftLegL	&	04-06						\\
+				09-11						&	\FRdefHitLocationsAbdomenA	&	07-10						\\
+				12							&	\FRdefHitLocationsChestChe	&	11-15						\\
+				13-15						&	\FRdefHitLocationsRightArm	&	16-17						\\
+				16-18						&	\FRdefHitLocationsLeftArmL	&	18-19						\\
+				19-20						&	\FRdefHitLocationsHeadHead	&	20							\\
+			\end{tabular} \end{center}
+		\end{minipage}}~\\% end shabox
+		}%
+	\end{minipage} \\
+	
+		& 
+			\includegraphics[width=0.75cm]{../../../../../imgGraphics/artsDecos/ornement01whiteBG.png}
+			\includegraphics[width=0.75cm]{../../../../../imgGraphics/artsDecos/ornement05whiteBG.png}
+			\includegraphics[width=0.75cm]{../../../../../imgGraphics/artsDecos/ornement01whiteBG.png} 
+			\includegraphics[width=0.75cm]{../../../../../imgGraphics/artsDecos/ornement05whiteBG.png}
+			\includegraphics[width=0.75cm]{../../../../../imgGraphics/artsDecos/ornement08whiteBG.png}
+			\includegraphics[width=0.75cm]{../../../../../imgGraphics/artsDecos/ornement05whiteBG.png} 
+			\includegraphics[width=0.75cm]{../../../../../imgGraphics/artsDecos/ornement01whiteBG.png}
+			\includegraphics[width=0.75cm]{../../../../../imgGraphics/artsDecos/ornement05whiteBG.png}
+			\includegraphics[width=0.75cm]{../../../../../imgGraphics/artsDecos/ornement01whiteBG.png} 
+		\\
+	
+\end{tabular}
+
+
+\clearpage
+
+\begin{minipage}[ht]{0.55\textwidth}
+	\shadowbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLEMagicSpellAndPo %~\\
+		\begin{center} \begin{tabular}[c]{ p{0.15\textwidth} p{0.05\textwidth} p{0.10\textwidth} p{0.10\textwidth} p{0.07\textwidth} p{0.05\textwidth} p{0.12\textwidth} p{0.05\textwidth} }
+			\FRdefMagicSpellsPowerName	&	\FRdefMagicSpellsPowerPerc	&	\FRdefMagicSpellsPowerLeve	&	\FRdefMagicSpellsPowerDama	&	\FRdefMagicSpellsPowerRang	&	\FRdefMagicSpellsPowerPPpp	&	\FRdefMagicSpellsPowerDura	&	\FRdefMagicSpellsPowerCost	\\
+			% \dotfill	& \dotfill	& \dotfill	&	\dotfill	&	\dotfill	& \dotfill	& \dotfill	&	\dotfill	\\
+			%
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	&	\hrulefill	& \hrulefill	& \hrulefill	&	\hrulefill	\\
+			%
+			\multicolumn{2}{ p{0.25\textwidth} }{ \FRdefMagicSpellsPowerFree \dotfill }	&
+				\multicolumn{3}{ c }{  }	&
+				\multicolumn{3}{ p{0.25\textwidth} }{ \FRdefMagicSpellsPowerTota \dotfill }	\\
+			
+		\end{tabular} \end{center}		
+	\end{minipage}} % end shabox
+\end{minipage}
+\hfill
+\begin{minipage}[ht]{0.40\textwidth}
+	\shadowbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLECharacterPoints %~\\
+		%
+		\FRdefCharacterPointsPower \hrulefill ~\\
+		\FRdefCharacterPointsPoint \hrulefill ~\\
+
+		\FRdefCharacterPointsFaili 
+		\begin{center} \begin{tabular}[c]{ p{0.7\textwidth} p{0.2\textwidth} }
+			\FRdefCharacterPointsFDesc	&	\FRdefCharacterPointsFCoun	\\
+			%
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			%
+			\FRdefCharacterPointsTotal	&	\hrulefill	\\
+		\end{tabular} \end{center}
+	\end{minipage}} % end shabox
+\end{minipage}~\\
+
+\begin{minipage}[ht]{0.55\textwidth}
+	\shadowbox{\begin{minipage}{0.95\textwidth }
+		\FRdefBOXTITLESanitySanitySan %~\\
+		\begin{center} \begin{tabular}[c]{ c c c c c c c c c c c c c }
+			\multicolumn{3}{ l }{ \FRdefSanityInsane }	&	
+				\textbf{00}	&	01	&	02	&	03	&	04	&	05	&	06	&	07	&	08	&	09	\\
+				10	&	11	&	12	&	13	&	14	&	15	&	16	&	17	&	18	&	19	&	20	&	21	&	22	\\
+				23	&	24	&	25	&	26	&	27	&	28	&	29	&	30	&	31	&	32	&	33	&	34	&	35	\\
+				36	&	37	&	38	&	39	&	40	&	41	&	42	&	43	&	44	&	45	&	46	&	47	&	48	\\
+				49	&	50	&	51	&	52	&	53	&	54	&	55	&	56	&	57	&	58	&	59	&	60	&	61	\\
+				62	&	63	&	64	&	65	&	66	&	67	&	68	&	69	&	70	&	71	&	72	&	73	&	74	\\
+				75	&	76	&	77	&	78	&	79	&	80	&	81	&	82	&	83	&	84	&	85	&	86	&	87	\\
+				88	&	89	&	90	&	91	&	92	&	93	&	94	&	95	&	96	&	97	&	98	&	99	&	100	\\
+			%
+		\end{tabular} \end{center}~\\
+		\FRdefSanityMental
+		\begin{center} \begin{tabular}[c]{ p{0.6\textwidth} p{0.3\textwidth} }
+			\FRdefSanityDisord	&	\FRdefSanitySeveri	\\
+			%
+			\hrulefill			&	\hrulefill	\\
+			\hrulefill			&	\hrulefill	\\
+			\hrulefill			&	\hrulefill	\\
+			\hrulefill			&	\hrulefill	\\
+			\hrulefill			&	\hrulefill	\\
+			\hrulefill			&	\hrulefill	\\
+			\hrulefill			&	\hrulefill	\\
+		\end{tabular} \end{center}
+	\end{minipage}} % end shabox
+\end{minipage}
+\hfill
+\begin{minipage}[ht]{0.40\textwidth}
+	\shadowbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLEEquipmentEquipm %~\\
+		\begin{center} \begin{tabular}[c]{ p{0.7\textwidth} p{0.2\textwidth} }
+			\FRdefEquipmentItems	&	\FRdefEquipmentEncEn	\\
+			%
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			%
+			\FRdefEquipmentTotal	&	\hrulefill	\\
+		\end{tabular} \end{center}
+	\end{minipage}} % end shabox
+\end{minipage}~\\
+
+
+\begin{minipage}[ht]{0.35\textwidth}
+	\shadowbox{\begin{minipage}{0.95\textwidth }
+		\FRdefBOXTITLEArmorArmorArmor~\\
+		\begin{center} \begin{tabular}[c]{ p{0.7\textwidth} p{0.2\textwidth} }
+			\FRdefArmorTypeType	&	\FRdefArmorLocation	\\
+			%
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+			\hrulefill					&	\hrulefill	\\
+		\end{tabular} \end{center}			
+	\end{minipage}} % end shabox
+\end{minipage}
+\hfill
+\begin{minipage}[ht]{0.6\textwidth}
+	\shadowbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLEWeaponsWeaponsW % ~\\
+		\begin{center} \begin{tabular}[c]{ p{0.305\textwidth} p{0.155\textwidth} p{0.05\textwidth} p{0.155\textwidth} p{0.155\textwidth} }
+			\FRdefWeaponsDamBon \hrulefill		&	
+				\multicolumn{4}{ l }{ $\FRdefWeaponsDamDex \hrulefill + \FRdefWeaponsDamSiz \hrulefill = \FRdefWeaponsDamBas \hrulefill$ }
+				\\	\\	\\
+			%
+			\FRdefWeaponsWeapon		&	\FRdefWeaponsAttack	&	\FRdefWeaponsPercen	&	\FRdefWeaponsDamage	&	\FRdefWeaponsAPRang	\\
+			%
+			\hrulefill				&	\hrulefill			&	\hrulefill			&	\hrulefill			&	\hrulefill			\\
+			\hrulefill				&	\hrulefill			&	\hrulefill			&	\hrulefill			&	\hrulefill			\\
+			\hrulefill				&	\hrulefill			&	\hrulefill			&	\hrulefill			&	\hrulefill			\\
+			\hrulefill				&	\hrulefill			&	\hrulefill			&	\hrulefill			&	\hrulefill			\\
+			\hrulefill				&	\hrulefill			&	\hrulefill			&	\hrulefill			&	\hrulefill			\\
+			\hrulefill				&	\hrulefill			&	\hrulefill			&	\hrulefill			&	\hrulefill			\\
+			\hrulefill				&	\hrulefill			&	\hrulefill			&	\hrulefill			&	\hrulefill			\\
+		\end{tabular} \end{center}
+	\end{minipage}} % end shabox
+\end{minipage}~\\
+
+\clearpage
+
+	\begin{minipage}[ht]{1.0\textwidth}
+		\shadowbox{\begin{minipage}{0.95\textwidth}
+			\FRdefBOXTITLENotesNotesNotes~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+						
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+						
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+						
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+			
+			\dotfill~\\
+						
+		\end{minipage}}~\\% end shabox
+	\end{minipage}
+
+\begin{center}
+	\includegraphics[width=3cm]{../../../../../imgGraphics/artsDecos/ornement06whiteBG.png}
+\end{center}
+\end{document}

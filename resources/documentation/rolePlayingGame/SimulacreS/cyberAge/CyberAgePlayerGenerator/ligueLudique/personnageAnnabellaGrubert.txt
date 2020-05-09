@@ -1,0 +1,75 @@
+BEGIN personnae
+NAME Annabella Grubert
+IMAGE img/AnabellaGrubertCyberPsychiatre.jpg
+TITLE Cyber Psychiatre -- Institut du Bon Secours
+PV 11
+IMPACT 0
+SAN 90
+APP 18
+CON 10
+DEX 12
+FOR 12
+TAI 12
+EDU 16
+INT 16
+POU 18
+BEGIN cyberequipement
+Aucun (connection sur HyperNet / la Matrice / patient via des {\'e}lectrodes). 
+END cyberequipement 
+BEGIN cailloux
+Aucun
+END cailloux
+AGE 35
+SEXE Femme
+PARRAIN \emph{Dactyles suppos{\'e}s. }
+ARGENT 34 000
+DIVERS ---
+METIER Cyber Psychiatre
+BEGIN talents
+M{\'e}ditation Transcendentale	90
+Piratage Informatique	80
+Psychiatrie	80
+Informatique	70
+Psychologie	70
+Survie en milieu Contamin{\'e}	70
+M{\'e}decine	50
+Survie en milieu Tropical	50
+END talents
+% 320 points {\`a} r{\'e}partir (métier), reste : --
+% 160 points {\`a} r{\'e}partir (autres), reste : --
+BEGIN lightbio
+--- 
+END lightbio 
+BEGIN biography
+%\emph{{\'E}crire plus précisemment ?..}
+Voir description compl{\`e}te dans l'\texttt{Encyclop{\'e}die Cyber Age} (Section de l'\emph{Institut du Bon Secours}). ~\\
+
+\clearpage
+
+%% {\footnotesize
+
+\textbf{L'Institut du Bon Secours}~\\
+	
+Que faire alors de ces l{\'e}gumes vivants, surtout s'ils n'ont pas pay{\'e} leurs cotisations sociales. Annabella Grubert a trouv{\'e} une solution. Ag{\'e}e d'une trentaine d'ann{\'e}es, cette ancienne missionnaire dans les Zones Blanches d'Afrique centrale a ouvert {\`a} Paris un hospice pour les d{\'e}ficients mentaux.~\\
+	
+La vocation du Bon Secours est de porter assistance aux d{\'e}biles, aux malform{\'e}s c{\'e}r{\'e}braux (mutants, malades) et {\`a} quelques junkies au cerveau rong{\'e} par la drogue. Ayant parmi ses anciens amis des \texttt{jackeurs} au cerveau grill{\'e}, elle a tent{\'e} de les faire entrer comme patients. Devant le refus de l'administration de reconna{\^i}tre ces cas, elle utilise d{\'e}sormais une m{\'e}thode peu chr{\'e}tienne pour les faire admettre. Elle leur fait absorber suffisamment de drogue pour qu'ils passent les <<tests d'entr{\'e}e>> de l'institut. Elle esp{\`e}re les sevrer apr{\`e}s, si elle arrive {\`a} les r{\'e}parer.~\\
+	
+\textbf{Doctoresse Jekyll}~\\
+	
+Les patients de l'institut qui nous int{\'e}ressent se classent en deux cat{\'e}gories. La premi{\`e}re, ce sont les arpenteurs de la \texttt{Matrice} classique qui ont rencontr{\'e} une glace noire (celle-ci leur a vraiment bouff{\'e} des neurones). Pour les soigner, il faut leur r{\'e}parer physiquement le cerveau. La deuxi{\`e}me cat{\'e}gorie concerne ceux qui se sont immerg{\'e}s trop profond{\'e}ment dans les niveaux Jungle ou Kernel de la \texttt{Matrice} et n'en sont jamais remont{\'e}s.~\\
+	
+Pour soigner ces patients, Annabella Grubert a d{\'e}velopp{\'e} une m{\'e}thode psychiatrique "de l'int{\'e}rieur ". Elle se connecte sur un r{\'e}seau local, en lien direct avec le cerveau du malade, et va discuter avec toutes les strates conscientes et inconscientes du sujet. La m{\'e}thode est relativement efficace avec les patients de la seconde cat{\'e}gorie. Elle les retrouve g{\'e}n{\'e}ralement prostr{\'e}s dans un univers fantasmatique plut{\^o}t sombre (o{\`u} si{\`e}gent parfois des cauchemars) et elle entreprend de les rassurer. Dans cette \texttt{Matrice}, elle prend souvent l'apparence d'une religieuse rayonnante, calme et charismatique, tr{\`e}s proche de ce qu'elle est dans la r{\'e}alit{\'e}. Il est courant que ses anciens patients l'appellent par la suite la Dame du Bon Secours, et lui vouent une grande admiration.~\\
+	
+Pour les sujets dont le cerveau est vraiment endommag{\'e}, elle proc{\`e}de en rajoutant des faux souvenirs, des d{\'e}rivations mentales. Son but: faire oublier l'{\'e}pisode traumatisant d{\`e}s qu'il revient {\`a} la conscience. En g{\'e}n{\'e}ral, le patient gu{\'e}ri se "rappellera" qu'il se droguait (m{\^e}me si c'est faux) et que, apr{\`e}s de nombreuses pertes de conscience, il a d{\'e}cid{\'e} de se faire d{\'e}sintoxiquer {\`a} l'institut du Bon Secours, o{\`u} soeur Annabella lui a prodigu{\'e} soutien et affection.~\\
+	
+\textbf{Sister Hyde}~\\
+	
+Les subventions sont rares {\`a} l'institut (les \texttt{TechnoBlocs} ne sont pas pr{\^e}ts {\`a} payer pour les non-productifs), et le Bon Secours re\c{c}oit peu de dons (soeur Annabella se m{\'e}fie des m{\'e}dias). Mais la religieuse a trouv{\'e} un moyen tr{\`e}s lucratif de rentabiliser ses gu{\'e}risons, et de participer {\`a} la " grande r{\'e}volution contre les \texttt{TechnoBlocs} d{\'e}shumanisants". Elle a remarqu{\'e} que la structure d'un cerveau grill{\'e} avait souvent un rapport avec le type de glace rencontr{\'e}. Gr{\^a}ce {\`a} la divine Providence, une grande puissance de d{\'e}duction et une pointe de g{\'e}nie, elle arrive {\`a} d{\'e}crypter ces blessures et {\`a} identifier la glace responsable du dommage, et par l{\`a} de concevoir des BriseGlaces adapt{\'e}s {\`a} ces protections. Ce dont elle ne se prive pas.~\\
+	
+Quant aux autres patients, ceux qu'elle a remont{\'e}s du fin fond de leur inconscient, elle a remarqu{\'e} qu'elle pouvait aider grandement leur m{\'e}moire en allant directement faire le m{\'e}nage dedans, en {\'e}liminant les parasites. Ces plongeurs en \texttt{Matrice} profonde viennent donc souvent la voir apr{\`e}s des passes diff iciles, pour se faire aider {\`a} retrouver les donn{\'e}es enfouies dans leur cerveau. Donn{\'e}es qu'ils offrent alors {\'e}galement {\`a} l'institut du Bon Secours.~\\
+	
+Annabella Grubert est-elle aussi d{\'e}sint{\'e}ress{\'e}e qu'il y parait ? Est-elle une id{\'e}aliste r{\'e}volutionnaire, un agent des Dactyles? ~\\
+
+%% } % \footnotesize
+END biography
+END personnae

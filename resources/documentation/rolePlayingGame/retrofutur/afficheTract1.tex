@@ -1,0 +1,131 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en francais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lscape} % changement orientation page
+
+\usepackage{lastpage}
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.5cm}{1.5cm}{1.5cm}{1.5cm}{64pt}{1pt}{15pt}{1pt}
+
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{empty}
+
+%% \usepackage[all,center]{background}
+%% \SetBgContents{Confidential}
+%% \SetBgAngle{45}
+%% \SetBgScale{15}
+%% \SetBgOpacity{0.1}
+
+%% \usepackage[printwatermark=true,allpages=true,
+%% 	fontfamily=pag,color=gray!25,textmark=DRAFT,
+%% 	angle=45,scale=0.8,xcoord=0,ycoord=0]{xwatermark}
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+\definecolor{yellowPassed}{RGB}{237, 230, 212}
+
+\definecolor{titlered}{RGB}{110, 17, 10}
+
+
+%============================= Corps =================================
+\begin{document}
+
+\begin{center} \begin{bfseries} \begin{scshape}
+
+\pagecolor{yellowPassed}
+
+
+\textcolor{titlered}{\LARGE Citoyens du monde entier, }
+\textcolor{titlered}{\LARGE depuis quatre-vingt ans, }
+\textcolor{titlered}{\LARGE nous vivons sous le r{\`e}gne du mensonge ! }~\\
+
+~\\
+
+Depuis le jour du contact, tout ce qui fait la grandeur de l'humanit{\'e}~\\
+a {\'e}t{\'e} mis entre parenth{\`e}ses pour atteindre <<le plus noble des objectifs>> :~\\
+la rencontre des {\'E}trangers.~\\
+
+~\\
+
+Nous nous sommes pr{\'e}par{\'e}s, ~\\nous avons construit les titanopoles, ~\\
+nous avons attendus.~\\
+
+~\\
+
+Mais petit {\`a} petit, tout nous a {\'e}t{\'e} arrach{\'e}, ~\\
+notre libert{\'e} d'action et de penser.~\\ 
+
+~\\
+
+Puis il y a deux ans tout a bascul{\'e}. Lors de la fameuse conf{\'e}rence de Princeton, ~\\
+le Pr. Einstein a pr{\'e}sent{\'e} un nouveau mod{\`e}le math{\'e}matique de l'univers, ~\\
+qui contredit le dogme officiel.~\\ 
+
+~\\
+
+Un mod{\`e}le qui prouve l'inexistence des {\'E}trangers ! ~\\
+Nous sommes seuls dans l'univers, seuls face aux agences, ~\\
+face {\`a} un syst{\`e}me sans l{\'e}gitimit{\'e}.~\\
+
+~\\
+
+\textcolor{titlered}{\LARGE REGARDEZ LA R{\'E}ALIT{\'E} EN FACE ~\\
+REJOIGNEZ LA R{\'E}SISTANCE ! }~\\
+
+~\\
+
+\includegraphics{img/resistance_logo_greys_yellow.jpg}~\\
+
+~\\
+
+Vous {\^e}tes des millions {\`a} {\^e}tre conscients de la tyrannie ~\\
+des agences sans oser agir. ~\\
+Allions nous et rien ne pourra nous arr{\^e}ter.~\\
+
+~\\
+
+R{\'e}sistez, nous ne sommes pas loin. ~\\
+Nous vous trouverons et ensemble nous arracherons la victoire.~\\
+
+~\\
+
+<<\textcolor{titlered}{Chaque instant hors de la tutelle des agences est un succ{\`e}s. ~\\
+Chaque acte qui ne rentre pas dans leurs sch{\'e}mas est un triomphe. ~\\
+Chaque pens{\'e}e libre est une victoire. }>>~\\
+
+~\\
+
+Catacombes de Paris, 20 Novembre 1950, ~\\
+Jean Moulin~\\
+
+
+\end{scshape} \end{bfseries} \end{center}
+
+\end{document}

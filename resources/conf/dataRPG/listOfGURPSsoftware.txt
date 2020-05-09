@@ -1,0 +1,278 @@
+Dwarf	3	3	230	Stronger version of Worm	BB	Intrusion	Small, quiet digging machine.
+Grubb	1	3	210	Weaker version of Worm	BB	Intrusion	Swarm of puke-green grubs that eat their way through the Wall.
+Hammer	4	1	400	2D6 to Data Wall STR, alerts programs within 10 spaces	CP20	Intrusion	Glowing red hammer.
+Jackhammer	2	2	360	1D6 to Data Wall STR	CP20	Intrusion	Glowing red jackhammer, which fires a stream of white hot energy bolts at the Data Wall.
+Jap Water Torture	3	4	260	Min of 2 turns, each additional turn adds +1 STR (max 7)	BB	Intrusion	Tiny, random drops of glowing "water" strike the Wall, causing ripples.
+Pile Driver	8	4	800	4D6 to Data Wall STR, alerts progs in 30 spaces, & Netwatch	Chr3	Intrusion	Steam-powered pile driver on the verge of blowing up.
+Portal	2	6	750	Opens door in Data Wall, takes 3 turns, no alert	NET	Intrusion	Metallic door that slowly meshes with the Data Wall then swings open for the Netrunner.
+Ramming Piston	10	3	900	5D6 to Data Wall STR, "audible" to anything within 50 spaces	BB	Intrusion	Huge nuclear powered battering ram, as drawn by Jack Kirby.
+Sledgehammer	6	2	600	3D6 to Data Wall STR, alerts programs within 15 spaces	Chr3	Intrusion	Glowing white Sledgehammer.
+Termite	1	2	160	1D6 to Data Wall STR	Chr1	Intrusion	Brown, fist-sized, fractal insect with bright blue eyes. Emits low-pitched bleeps as it burrows into Wall.
+Worm	2	5	660	Opens Data Wall in 2 turns, no alert	CP20	Intrusion	Gold-metal, robotic worm, with green neon eyes.
+Codecracker	3	2	380	Opens Code Gates	CP20	Decryption	Thin beam of white light, which shoots from the Netrunner's hands and spreads through the Code Gate.
+Cyfermaster	6	3	700	Stronger version of Raffles	BB	Decryption	Fractal image of a man floating in lotus position.
+Dupre	1-8	4	900	Opens Code Gates & File Locks	Chr3	Decryption	Elegant middle-aged Victorian. He speaks to the locked Gate, and takes notes as he does so.
+Raffles	5	3	560	Opens Code Gates & File Locks	CP20	Decryption	Dapper young man wearing evening clothes of the 1990's. He speaks to the door then vanishes.
+Tinweasel	3	4	300	Sneaky decryptor	BB	Decryption	Shifty-eyed character with an insincere smile.
+Wizard's Book	4/6	2	400	Opens Code Gates & File Locks	CP20	Decryption	Stream of blazing white symbols, flowing at incredible speed from the Netrunner's open hand.
+Bloodhound	3	5	700	Detects entry, traces, alerts master	CP20	Detection/Alarm	Large, gun-metal grey hound. It has glowing blue eyes and wears a thick circlet of blue neon.
+Bulldog	6	6	660	Detects entry, alerts master, disconnects intruder	Chr1	Detection/Alarm	Short, burly humanoid in metal armour. A glowing visor is situated above snarling, canine jaws.
+Canis Major/Minor	4	5	610	Detect entry, alerts owner	BB	Detection/Alarm	Large steel statue of a dog/a computerised chihuahua.
+Cry Baby	4	4	430	"Tags", adds 4 to traces when copied	Chr3	Detection/Alarm	None until activated, then it appears as a baby, hanging around the Netrunner's neck, screaming.
+Clairvoyance	4	4	720	SeeYa 3.0, detects and IDs Icons (+invisibles) within 2 subgrids	Chr3	Detection/Alarm	The eyes of the Netrunner's icon glow fiery blue, or a pair of glowing eyes appear if the icon has none.
+Data Raven	5	6	1000	Detects entry, traces, alerts master whenever target appears	BB	Detection/Alarm	Metal-plated black bird.
+Fang	4	6	1300	Detects entry, traces, disconnects target until destroyed	BB	Detection/Alarm	Glowing green pit bull.
+Fang 2.0	5	6	1600	Detects entry, traces, disconnects target until destroyed	BB	Detection/Alarm	Robotic pit bull with a red head.
+Fetch 4.01.1	3	5	700	Detects entry, traces, alerts master	BB	Detection/Alarm	Chrome greyhound with glowing blue collar.
+Guard-Dog	4	5	720	Invisible; detects entry, alerts master	Chr1	Detection/Alarm	Detected it appears as a standard Bloodhound, other wise it is a slight flicker at the periphery of vision.
+Hidden Virtue	3	1	280	Detects "real" things in VR	CP20	Detection/Alarm	Glowing green ring which the Netrunner looks through.
+Hunter	5	5	900	Detects entry, traces, alerts master	BB	Detection/Alarm	Hound head lunging down the target's line.
+Looking Glass	1-6	3	250+20/str	Detects disguised Icons	Chr3	Detection/Alarm	Series of mirrors appears in front of the Netrunner, passing over and through the target icon.
+Mouse	5	5	350	Creeps into forts and makes a record of what's inside	BB	Detection/Alarm	Small, innocuous mouse.
+Netspace Inverter	3/5	4	540	Travels through a fort at 2 subgrids/turn IDing programs and files	BB	Detection/Alarm	Flying eyeball; turns invisible when activated.
+Pit Bull	2	6	780	Detects entry, traces, disconnects target until destroyed	CP20	Detection/Alarm	Short, heavily built, steel dog. It has glowing red eyes and wears a circlet of red neon.
+Rex	3	6	1000	Detects entry, traces, disconnects target until destroyed	BB	Detection/Alarm	Rather nasty, metal plated dog with really big teeth.
+See Ya	3	1	280	Detects Invisible Icons	CP20	Detection/Alarm	Shimmering silver screen.
+Shadow	4	3	540	Degrades evasion programs	Chr3	Detection/Alarm	Netrunner's icon gains a long, humanoid shadow.
+Smarteye	3	4	620	Detects progs within 10 spaces, IDs attack progs	Chr1	Detection/Alarm	Spinning crystal ball; the ball stops and the appropriate icon appears within.
+Speedtrap	4	4	600	Detects attack programs within 10 spaces	CP20	Detection/Alarm	Flat, glowing plate of glass, in which images appear.
+Watchdog	4	5	610	Detects entry, alerts owner	CP20	Detection/Alarm	Large, black, metal dog. It has glowing red eyes and a spiked metal collar.
+Asp	4	2	800	Kills cyberdeck interface	BB	Anti-System	Glowing golden snake.
+Cascade	7	4	900	Erases 2D6 MU of random memory	Chr3	Anti-System	Shower of random neon-coloured pods & capsules sprays the target's icon and are absorbed on contact.
+Cascade II	3	2	800	20% chance that program changes. Decks chose new prog/turn	BB	Anti-System	Floating ball of energy.
+Clown	3	5	1130	Disrupts data transmission, progs are -1 STR, 'runners -1 Initiative	BB	Anti-System	Annoying, loud, obnoxious, white-faced circus clown, complete with slapstick, seltzer bottle, pies, etc.
+DecKRASH	4	2	600	Crashes 'deck for 1D6 turns	CP20	Anti-System	Cartoon stick of dynamite with fuse.
+Feedback	4	3	960	Kills deck's interface and "jams" 'runner plugs	I.3	Anti-System	Beam of orange neon which shoots from the Netrunner's fingertips.
+Flatline	3	2	570	Kills cyberdeck interface	CP20	Anti-System	Beam of yellow neon which shoots from the Netrunner's fingertips.
+Fragmentation Storm	4	3	1000	Kills system RAM	BB	Anti-System	Huge white electrical arc that strikes the target and follows his line back to his deck.
+Grid Wave	7	8	20K	Distorts I-G algorithms	Chr4	Anti-System	Black sphere with twisting light waves surrounding it.
+HellBurner	6	5	1000	Destroys target CPU	Chr3	Anti-System	Giant, disembodied fist which burns with blue, fractal fire, grabs onto target, engulfing it in blue flames.
+Krash	3	2	570	Crashes closest CPU for 1D6+1 turns	CP20	Anti-System	Large, cartoon anarchist bomb, with a sizzling fuse.
+Murphy	3	2	600	Causes system to randomly activate programs	CP20	Anti-System	You never know...
+Pi in the Face	5	4	800	Makes CPU calculate Pi	Chr3	Anti-System	Large cartoon pie, for throwing.
+Poison Flatline	2	2	540	Kills system RAM	CP20	Anti-System	Beam of green neon which launches from the Netrunner's fingertips.
+Poltergeist	5	3	660	Randomly erases one file each turn	BB	Anti-System	Random flashes of energy from everywhere, wiping data and files.
+Pox	4	2	800	Causes a glitch in ambush ICE, 30% chance of derezzing	BB	Anti-System	Floating ball of energy that explodes into a wash of sickly coloured globules.
+Scatter Shot	4	3	660	Kills system RAM	BB	Anti-System	Shotgun shooting fractal shot.
+Swarm	1	7	3000	Causes target system to replicate Swarm programs	Chr4	Anti-System	Cartoon-y bee that flies towards a CPU, stinging it.
+Typhoid Mary	6	8	2400	Infiltrates 'runner and deletes files	Chr3	Anti-System	Female Killer robot.
+Weed	2	3	630	-1 target speed per successful attack	Chr4	Anti-System	Tangled weeds growing on the icon of the system's CPU(s).
+Vacuum	5	3	1200	Attacks location algorithms, forces 'runner to where he entered fort	BB	Anti-System	Series of hexagonal frames that suck the 'runner's Icon out of the data fort.
+Virizz	4	2	600	Ties up 1 system action until turned off or destroyed	CP20	Anti-System	Glittering DNA shape made of lights and neon.
+Viral 15	4	2	590	Randomly erases one file each turn	CP20	Anti-System	Swirling metallic blue fog with a white neon DNA helix embedded in the centre.
+Black Mask	1-5	3-4 	200/STR	Makes your Icon look like something/one else	NET	Evasion/Stealth	Anything programmed into it.
+Cloak	5	2	2000	Powerful variant of Invisibility	BB	Evasion/Stealth	Makes the user's Icon invisible.
+Domino	5	3	1500	Makes your Icon look like one common to the locale	BB	Evasion/Stealth	Depends on the data fort.
+George	4	1	300	Adds 4 to Trace Difficulty	Chr3	Evasion/Stealth	Cartoon signpost with signs pointing in all directions.
+Invisibility	3	1	300	Makes cybersignal invisible	CP20	Evasion/Stealth	Flickering, iridescent sheet, which drapes over the Netrunner.
+Open-Ended Mileage	4	5	330	Adds another LDL to make traces harder when activated	BB	Evasion/Stealth	Blue sphere surrounded by two stylized lightning bolts.
+Rabbit	5/1	2	360	Draws off "Dog" programs, +2 Initiative when released	BB	Evasion/Stealth	Fractal rabbit going like the blazes. Also Bugs Bunny variants around.
+Replicator	3/4	2	180	Confuses attacking ICE with millions of false signals	CP20	Evasion/Stealth	Chrome sphere creating millions of holographic images of the Netrunner.
+Signpost	4	1	300	Adds 4 to Trace Difficulty	BB	Evasion/Stealth	Signpost with signs pointing in all directions.
+Silhouette	6	4	600	'Runner looks like he's jacked out and is invisible for 5 turns	I.3	Evasion/Stealth	Looks as it the Netrunner has jacked out.
+Spore	7	7	2320	AI suicide-replication, sends multiple copies into Net to reproduce	NET	Evasion/Stealth	Each spore looks like a small mote of light.
+Stealth	4	3	480	Mutes cybersignal, making detection harder	CP20	Evasion/Stealth	Sheet of black energy draped over the Netrunner's Icon.
+Superballs	3	4	500	Distracts targets, causing -3 Initiative	Chr4	Evasion/Stealth	Thousands of primary-coloured rubber balls bouncing around target's square, as if in a glass cube.
+Vewy Vewy Quiet	4	2	400	Concentrates on avoiding detection	BB	Evasion/Stealth	The 'runner makes no sound and turns translucent.
+Armor	4	2	170	Reduces attacks from Stun, Hellbolt, Zombie, etc by 3 points	CP20	Protection	Glowing golden armor in a high tech design.
+DeckShield One	6	2	320	Adds +3 to deck's Data Walls	Chr4	Protection	Deck's data fort/position in netspace is sheathed in fractal armor-plating.
+Flak	4/2	2	180	Creates static Wall to blind attackers; STR 2 vs Dog programs	CP20	Protection	Cloud of blinding, glowing, multicoloured lights, swirling in all directions.
+Force Shield	4	2	160	Stops attacks against 'runner	CP20	Protection	Flickering silver energy barrier.
+Joan of Arc	3	2	190	Remains "active" and takes damage meant for current program	BB	Protection	Woman's face that grimaces in pain.
+OutJack	2	4	150	Jacks 'runner out of Net if he's taken Critical damage	Chr3	Protection	None. 
+Reflector	5	2	160	Reflects Stun, Hellbolt, Knockout attacks	CP20	Protection	Flare of blue green light, coalescing into a mirrored bowl.
+Shield	3	1	150	Stops attacks to 'runner	CP20	Protection	Shifting circular energy field appearing in front of the Netrunner.
+Aardvark	4	3	1000	Detects and destroys Worms	CP20	Anti-Program	Matrix of thin yellow neon lines, which close around the Worm, then dematerialise with it trapped.
+Banpei	1	5	1280	1D6 to program STR	BB	Anti-Program	Robotic samurai.
+Black Dahlia	7	7	2000	Interactive, super-realistic Killer. 2D6 damage	BB	Anti-Program	Incredibly seductive woman in a black evening dress.
+Bunnies	4	3	440	Overloads Vampyres	Chr1	Anti-Program	Rapidly-multiplying bunch of burnished gunmetal coloured bubbles, with classic "rabbit ears" antennae.
+Chameleon	4	6	1650	Killer IV with active Disguise	NET	Anti-Program	Killer with a polished mirror face that reflects the Icon of the program it is attacking.
+Codeslinger	4	3	2500	Killer written to fit less MU. 1D6 damage	BB	Anti-Program	Cowboy with six-shooter codeguns.
+D'Arc Knight	3	5	1360	1D6 to program STR	BB	Anti-Program	Svelte knight in armor.
+Data Naga	6	5	1480	1D6 to program STR	BB	Anti-Program	Exotic woman with a serpentine lower torso and six arms.
+Dogcatcher	10	7	1176	Chases and destroys tracing "Dogs"	Chr3	Anti-Program	Basic male or female humanoid shape carrying a net on a pole.
+Dragon	4	3	960	Attacks and derezzes Demons	CP20	Anti-Program	Great golden dragon robot, wreathed in electrical discharges. Laser beams shoot from it's eyes.
+Dropp	4	4	800	1D6 damage, and jacks the 'runner out of the system	BB	Anti-Program	A ripple across the immediate area like a drop in a pond.
+Eradicator	8/5	7	1600	Acts as Killer V, destroys AI Spores	NET	Anti-Program	Glowing amoeba with huge jaws.
+Exorcist	4	3	600	Removes effects of Possession	Chr3	Anti-Program	Fractal priest in full regalia, carrying a large religious symbol.
+Hydra	3	3	920	Attacks and derezzes Demons	CP20	Anti-Program	Glittering blue fog that encircles its target and dematerializes it.
+Ice Pick Willie	2	5	1320	1D6 to program STR	BB	Anti-Program	Classic '30s gangster hitman.
+Killer II	2	5	1320	1D6 to any program STR	CP20	Anti-Program	Large manlike robot, dressed as a metallic samurai. His eyes glow red and he carries a glowing Katana.
+Killer IV	4	5	1400	1D6 to any program STR	CP20	Anti-Program	Large manlike robot, dressed as a metallic samurai. His eyes glow red and he carries a glowing Katana.
+Killer VI	6	5	1480	1D6 to any program STR	CP20	Anti-Program	Large manlike robot, dressed as a metallic samurai. His eyes glow red and he carries a glowing Katana.
+Loony Goon	1	4	900	1D6 damage. Strength 0 to defend against other Killers	BB	Anti-Program	Cartoon character of the 'runner's choice.
+Manticore	2	3	880	Attacks and derezzes Demons	CP20	Anti-Program	Huge, lionlike shape, drawn in red neon schematic lines. A large scorpion tail arcs over one shoulder.
+Mirror	5	4	1200	Rebounds Hellbolts	Chr4	Anti-Program	Large, square mirror floating in front of the 'runner. The bolt goes in then comes out again.
+Ninja	5	5	1520	Invisible Killer	Chr4	Anti-Program	When seen it appears as a ninja carrying a glowing sword.
+Orion	7	7	6240	Tracks Spores, 'runners, & programs. Destroys Spores	I1.3	Anti-Program	Powerful man or woman with bow and flying platform or an angel with wings and divine radiance.
+Possessor	4	3	1000	"Possesses" programs	Chr3	Anti-Program	Hooded robe, with nothing inside. Robe will cover another Icon, which can be seen in the hood.
+Raptor	2-6	3	1900	Killer that strikes at range, 1D6 damage. +80eb/level over 2	BB	Anti-Program	Realistic falcon which swoops down upon it's prey.
+Raven	5	4	1000	"Blinds" any programs	Chr3	Anti-Program	Raven that attempts to peck out the eyes of the target.
+Sentinels Prime	5	5	1440	1D6 to program STR	BB	Anti-Program	Golden humanoid with a big gun.
+Shaka	4	5	1400	1D6 to program STR	BB	Anti-Program	Zulu warrior with spear and shield.
+Snowball	2+	5	3000	1D6 damage, +2 STR for each program it destroys while active	BB	Anti-Program	Snowball that grows in size for each program it destroys.
+Start-Up Immolator	4	5	1280	Destroys target if used in the round when program was rezzed up	BB	Anti-Program	Bolt of flame that shoots from the 'runner's mouth and burns the target program to ash.
+Triggerman	4	5	1480	1D6 to program STR	BB	Anti-Program	Film noire-style detective.
+Wildcard	1	3	1400	1D6 to program STR	BB	Anti-Program	Representation of the old Capone ganger "Wild Card".
+Wolf	4	6	1500	Killer disguised as Watchdog	Chr1	Anti-Program	Identical to the Watchdog icon, except that it will flash entirely red as it attacks.
+Ball and Chain	3	3	5000	Slows 'runners movement to 1 square for 1D6+3 turns	Chr3	Anti-Personnel	Classic prisoner's ball and chain clamped to some part of the target icon.
+Bolter Cluster	4	4	8000	Powerful Hellbolt that does 4D6 damage	BB	Anti-Personnel	Wicked looking turret springs forth to blast the target.
+Brainwipe	3	4	6500	Reduces INT by 1D6/turn, killing 'runner	CP20	Anti-Personnel	Acid-green electrical arc, which leaps from the floor and engulfs and kills the 'runner.
+Cerebus	6	8	9500	Pit Bull that shoots Hellbolts	NET	Anti-Personnel	Dark, metallic dog with 2 heads. One fires Hellbolts from its eyes, the other howls as it pursues target.
+Cinderella	6	4	9000	High-powered Firestarter	BB	Anti-Personnel	Lovely woman with green glowing eyes, in 18th century ball gown, Anything she touches ignites.
+Code Corpse	5	4	7500	Reduces INT by 1D6/turn, making 'runner mindless	BB	Anti-Personnel	Skeleton in a cloak with a scythe attacks the target.
+Cortical Scrub	3	4	6500	Reduces INT by 1D6/turn, killing 'runner	BB	Anti-Personnel	Green globe that send out electrical arcs.
+Data Darts	3	4	5500	Hellbolt variant that does 3D6 damage	BB	Anti-Personnel	Swarm of red globes that strike at the target.
+Fatal Attractor	7	7	10750	Attractively disguised Hellhound	Chr1	Anti-Personnel	Attractive young woman in a skintight bodysuit. DIFF Sys Know to recognise her.
+Firestarter	4	4	6250	Power surge electrocutes 'runner	CP20	Anti-Personnel	Blazing pillar of fire, which speaks the Netrunner's name in a hissing, booming voice, then leaps at him.
+Glue	5	4	6500	Locks 'runner in place for 1D10 turns	CP20	Anti-Personnel	Shifting pattern of red shapes flickering across the floor to entangle the Netrunner.
+Hellbolt	4	4	6250	1D10 physical damage to 'runner	CP20	Anti-Personnel	Bolt of crimson fire launched from the Netrunner's raised hand.
+Hellhound	6	6	10,000	Tracks target, waits, causes heart attack	CP20	Anti-Personnel	Huge, black, metal wolf. It's eyes glow white, and fire ripples over its body. Repeats the 'runner's name.
+Homewrecker	5	4	8000	High-powered Firestarter	BB	Anti-Personnel	Fiery electrical arc that shoots at the target's eyes.
+Jack Attack	3	3	6000	'Runner can't log off for 1D6 turns	CP20	Anti-Personnel	Pair of glowing schematic handcuffs encircling the Netrunner's wrists.
+King Trail	3	2	3500	Leaves glowing trail behind 'runner for 3D6 turns	NET	Anti-Personnel	Glowing yellow banana slug.
+Knockout	4	3	6250	Causes coma for 1D6 hours	CP20	Anti-Personnel	Yellow neon schematic boxer appears and strikes out at the Netrunner's Icon.
+Liche	4	4	7250	Erases 'runners memory and over-writes personality	CP20	Anti-Personnel	Metallic skeleton dressed in black robes. Grabs the 'runner in its grasp and drags him under the floor.
+Mastiff	5	6	12000	Tracks & tags target, does 1D6 damage and reduces INT 1D6	BB	Anti-Personnel	Glowing blue mastiff with a huge spiked collar.
+Neural Blade	3	4	6750	1D6 physical damage to target	BB	Anti-Personnel	Glowing, rune-etched broadsword.
+Pepe Le Pue	6	5	7750	Reduces 'runners INT and REF for 1D6+1 turns	NET	Anti-Personnel	Cartoon skunk the wraps around the Netrunner's Icon.
+Psychodrome	4(5)	11	14000	Unconscious for 1D6 hours, scares victim	Chr1	Anti-Personnel	Disguised as system. 'Runner is placed in virtual room of faceted, mirrored walls displaying torture.
+Red-Out	5	4	6750	Paralyses 'runner for 1D6 turns	Chr4	Anti-Personnel	Shifting contextural haze of red pixels that descend on the Netrunner; changing the colour of his Icon.
+Shock.r	4	5	6300	Freezes 'runner for 1D6 turns	BB	Anti-Personnel	Golden bolt from the Netrunner's palm.
+Sleeper	6	4	7250	Non-lethal Brainwipe, makes target do a task (diff 20-30 to resist)	I.3	Anti-Personnel	Electrical arc, which leaps from the floor and engulfs the 'runner.
+Spazz	4	3	6250	Halves 'runners REF for 1D6 turns	CP20	Anti-Personnel	Nimbus of electrical energy surrounding the target.
+Stationery	4	6	10000	Prevents 'runner from moving for 5 turns	Chr3	Anti-Personnel	Pieces of paper, with 'You're Nicked!' on them, appears in a sort of snowstorm over the Netrunner.
+Stun	3	3	6000	Freezes 'runner for 1D6 turns	CP20	Anti-Personnel	Bolt of blue flame streaking from the Netrunner's open palm.
+Sword	3	4	6750	1D6 physical damage to target	CP20	Anti-Personnel	Glowing energy katana.
+The Audio Virus	5	5	8000	Reduces INT and REF until 'runner destroys program	Chr4	Anti-Personnel	Photo-realistic stereo system, which will tremble and vibrate from the noise it makes.
+Threat	5	6	7000	Makes 'runner so nervous he jacks out	Chr3	Anti-Personnel	Any minor offensive or defensive program. Set at time of purchase.
+TKO 2.0	4	3	6250	Causes coma for 1D6 hours	BB	Anti-Personnel	Chrome boxer who smacks the target with a nasty left hook.
+Werewolf	6	6	13,000	Invisible Hellhound	NET	Anti-Personnel	None normally, but a stylish wolf in a suit when rezzed.
+Zombie	5	4	7500	Reduces INT 1D6/turn, making 'runner mindless	CP20	Anti-Personnel	Shrouded, skeletal form, enveloped in stinking grey mist. It lunges out and rips the Netrunner's head off.
+A Picture's Worth	2	6	1200	Hides data within VRs	Chr4	Multi-Purpose	Slot machine. Data flows in though coin slot, machine spins a jackpot, scrambled data pours into MU.
+Al Boon	1D6	7	3600	Goes through Gates, does 1D6 damage to Walls & programs	BB	Multi-Purpose	Stream of fractal code that rapidly coalesces into a fractal solid.
+Black Sky	5	8	4480	Hides 'runner in a cloud which attacks programs with "lightning"	Chr3	Multi-Purpose	Black cloud which forms between the enemy program and the runner.
+Blink	5	7	1500	1D6 damage to Walls and programs, goes through Gates. 50% rel	BB	Multi-Purpose	Swirling cloud of fractal code that coalesces into a random fractal solid (when it works). Or blows up.
+Dummy	1	2	450	Fake, disguisable program	Chr3	Multi-Purpose	Small spinning chrome pyramid that reflects the Icon of any program it encounters.
+Evil Twin	8	7	2700	Combination Shield/Krash	Chr3	Multi-Purpose	The Netrunner's Icon seems to fly around in large arcs.
+IGOR	4	7	4800	On-line flunky	Chr4	Multi-Purpose	Classic "mad-scientist's" assistant; complete with lab coat and hunchback.
+Lightning Bug	2	6	1540	6 "bugs" that kill ICE before it can attack	NET	Multi-Purpose	6 motes of light that slowly alternate between red and white. The motes lazily circle the Netrunner.
+Omnivore	3	8	18500	Derezzes programs, fries CPUs, temporarily reduces INT by 2D6	Chr3	Multi-Purpose	Whirring, buzzing, screeching ball of blades which careens into its target and thoroughly mangles it.
+Satchel Charge	8	7	18500	5D6 damage to 'runner & progs in 1 subgrid, 3D6 to Walls & Gates	SW	Multi-Purpose	A bomb in a backpack.
+Scribe	6	8	NA	Stops and disassembles programs for copying. Program roll 47+	Chr4	Multi-Purpose	Cowled chrome monk with feather pen.
+Wolfpack	6	8	15200	Does 1D6 damage to ICE/Demon STR, 1D10 damage to 'runners	Chr3	Multi-Purpose	Pack of electrically-charged wolflike forms which pounce upon their target, ripping it apart.
+Crystal Ball	4	1	140	Operates video cameras, remote sensors, etc	CP20	Controller	None.
+Dee-2	3	1	130	Operates robots, cleaning machines, autofactories, etc	CP20	Controller	None.
+Genie	5	1	150	Operates doors, elevators	CP20	Controller	None.
+Hotwire	3	1	130	Operates remote vehicles	CP20	Controller	None.
+Knevil	4	3	220	Limited AI vehicle controller, no safeguards	Chr3	Controller	Wildly-dressed motorcyclist, with madly glinting eyes. He grabs the remote's icon and begins moving it.
+News At 8	4	1	140	Allows access to Data Terms & Screamsheets via the Net	CP20	Controller	None.
+Open Sesame	3	1	130	Weaker program to operate doors, elevators	CP20	Controller	None.
+Phone Home	5/2	1	150	Can place/receive calls while in the Net, can intercept at STR 2	CP20	Controller	None.
+Rockerbit	4	2	200	Limited AI microphone/voxbox controller, broadcast at preset time	Chr3	Controller	Cartoonish Rocker that hangs around the speaker remote and 'yells' into it as appropriate.
+Soundmachine	4	1	140	Controls mikes, speakers, vocoders, etc	CP20	Controller	None.
+Terminator	4	2	260	Control terminals	Chr3	Controller	A disembodied cyberarm begins typing, writing, or drawing on the remote icon in question.
+Viddy Master	4	1	140	Allows control of videoboards	CP20	Controller	None.
+WAD Controller	2	1	150	Difficulty 10-35 to patch into signal	Chr3	Controller	None.
+Alias	6	2	160	Replaces file name with false one	CP20	Utility	None.
+Backup	4	1	140	Used to copy programs	CP20	Utility	None.
+Baedeker's Net Map	2	1	130	Routes calls public 2 or 3 dataterm numbers. +3 System Know	BB	Utility	A green line extending across a Net map.
+Bakdoor	3	2	600+	Routes link through at least one private system	BB	Utility	A green line extending across a Net map.
+Breadcrumbs	4	4	290	Finds new LDL link routes (legally), 1 round per uplink or LDL	NET	Utility	Line of glowing sparks forming a trail.
+Butcher Boy	3	7	550	Creates a paper trail, whilst funnelling funds elsewhere	BB	Utility	Takes the appearance of a system accounting program.
+Cartographer	6	3	200	STR vs CPU INT/2 for map of data fort, must be run inside the fort	Chr3	Utility	None.
+Databaser	8	2	180	Stores up to 10,000 pages per file	CP20	Utility	None.
+Dolphin Programs	3	5	310	Clean Pacifica of junk data	NET	Utility	Sleek, chrome dolphin.
+ElectroLock	7	2	170	Locks files at STR 3	CP20	Utility	None.
+Expert Schedule An	4	3	250+	Skims files at 1MU per turn. Shelf life of a month	BB	Utility	None needed, but might appear as a humanoid icon that leads you to the files you requested.
+Filelocker	4	1	140	Locks files with code word, equal to STR 5 Code Gate	CP20	Utility	None.
+File Packer	4	1	140	1/2 MU size, 2 turns to unpack	CP20	Utility	None.
+Flare Gun	2	2	300	Message travels 3 spaces per turn for 2D6 turns	Chr3	Utility	Big-barrelled flare gun.
+Flip Switch 2.0	10	0	225	Flip Switch controller, -5 Net Initiative when active	Chr3	Utility	None.
+Flip Switch 3.0	10	0	250	Flip Switch glogo controller, 3 settings	BB	Utility	None.
+GateMaster	5	1	150	Anti-virus, detects & destroys Virizz & Viral 15	CP20	Utility	None.
+Guest Book	4	2	200	Detects 'runners within 2 squares, treat as STR 3 Code Gate	Chr4	Utility	An old-style hotel guest book and quill.
+Instant Replay	8	2	180	Records 'runners trip	CP20	Utility	None.
+Mictotech AI Interface	2	4	330	Pseudo-AI that scans files looking for keywords	BB	Utility	Floating hollow mask.
+Multinetter	10	20	2000	Allows multiple 'runners to run through one computer	Chr3	Utility	None.
+Multi-Tasker	5	6	1140	Extra actions on mainframes	NET	Utility	None.
+Mystery Box	5	4	300	Searches for and copies programs from files	BB	Utility	Cartoon box with strange gears and widgets on each surface.
+NetMap	4	1	140	Major region locator map, +2 to System Knowledge	CP20	Utility	None.
+Newsgroup Filter	4	4	200	Goes out and skims news and interest groups for specified info	BB	Utility	A simple Icon of the user's choice.
+Padlock	4	2	160	Access code needed to log onto deck	CP20	Utility	None.
+Re-Rezz	3	1	130	Recompiles damaged programs and files	CP20	Utility	None.
+R&D Protocol Files	4	3	250+	Skims R&D files at 1MU per turn. Shelf life of two weeks	BB	Utility	None needed, but might appear as a humanoid icon that leads you to the files you requested.
+Shredder Uplink	5	3	250	Reconstructs files in the Trash buffer	BB	Utility	Janitor program who rifles through the pieces inside a trash can and pulls out complete files.
+Translator 2000	4	2	240	Takes pictures to make virtual objects	Chr4	Utility	None.
+Zetatech Installer	1	1	300	Compresses programs to half size but reduces Speed by 1	BB	Utility	'Tronnic humanoid upper body mounted in a round metallic base, who feeds programs into base.
+Afreet II	3	4	1160	Carries 3 programs	CP20	Demons	Tall, powerful black man, dressed in evening clothes, wears a fez and speaks in a formal, deep voice.
+Balron II	5	5	1240	Carries 4 programs	CP20	Demons	Huge, male figure. Dressed in futuristic black armor. Carries a red glowing energy blade.
+Imp II	3	3	1000	Carries 2 programs	CP20	Demons	Small, orange sphere of light, with two amused looking red eyes. Beeps, whistles, & pings.
+Reaper	5	7	12500	Seeks out & destroys users in a set area. 1D6 to 'runners/progs	SW	Demons	Classic Grim Reaper, complete with flaming sickle and cloak made of outer space.
+Soulkiller 3.0	7	45-4000+	NA	1D6 INT loss/ to Data Walls & programs, -4 to detect, 3 actions	SW	Demons	Swirling vortex that speaks in a high crystalline voice, and sucks the 'runner into it.
+Succubus II	4	4	1200	Carries 4 programs	CP20	Demons	Voluptuous, nude, hairless female, made from shiny chrome metal. Has large batlike wings, blue eyes.
+Thug	3	6	10440	Permanent subroutines, 1D6 damage to programs and 'runners	Chr3	Demons	Generic cartoon thug.
+Vampyre II	6	7	2300	Can absorb up to 6 programs	Chr1	Demons	Figure in grey robes, with golden eyes, & fangs. Transforms into misty cloud that dissolves other icons.
+Boardwalk	3	7	1080	Records messages and conversation in admin/budget database	BB	Daemons	Stylized porcupine-like shape that invades the database.
+Cockroach	5	7	1600	Eats files, turns them into more cockroaches	BB	Daemons	Small cockroach-like image that multiplies across the face of the database.
+Cream Pie	7	7	1715	Carries 3 programs (Poison Flatline, Killer IV, & Murphy)	BB	Daemons	A cream pie.
+Deep Thought	3	7	1080	Records messages and conversation in research database	BB	Daemons	Dark depression/hole that slowly works it's way into the database (when it's visible at all).
+Eavesdropper	3	6	1365	Carries Databaser. Records messages and conversation in system	BB	Daemons	None specific, it's supposed to blend in.
+Fait Accompli	3	7	570	Subtly messes up project files	BB	Daemons	Cloaked and hooded man, with a glimmer of a sinister smirk under the hood.
+False Echo	2	6	380	Triggers false system alerts	BB	Daemons	Shimmering "hologram" mirror image of the 'runner.
+Gremlins	4	7	7000	Produces more gremlins and randomly shoots off programs	BB	Daemons	Little green men running around carrying monkey wrenches.
+I Spy	3	6	400+	Commercial version of Eavesdropper	BB	Daemons	Hollow mask with piercing light-beam eyes.
+Incubator	2	6	760	Reproduces other programs	BB	Daemons	Translucent pyramid with the nucleus of another program always growing inside it.
+Pattel's Virus	6	7	2200	Weakens 1 type of ICE	BB	Daemons	Swirl of hundreds of crystalline fragments.
+Skivviss	4	7	1320	Inflates project costs, so that they get cancelled	BB	Daemons	Bulbous chrome robot with four arms that act as a finder subroutine while corrupting data.
+Chimera	5	4	100,000	Invisible anti-demon. If undetected it gets a free turn to act	BB	Ambushes	Fully animated chimera which breaths fire and choking gas at the target demon.
+Soulkiller 1.0	4	NA	500,000	Drains target's intellect, etc (1D6 INT/turn) into a data matrix	BB	Ambushes	Swirling vortex that speaks in a high crystalline voice. The vortex sucks the 'runner into it.
+Trap!	4x3	NA	200,000	3 Asp programs hidden in a file or node that attack if undetected	BB	Ambushes	Three Asps flowing out of the file/node.
+CloakMore	6	5/cpu	4000/cpu	Cloaks an entire data fort. Neutralizes 1 INT/CPU	NET	Systemware	None.
+Dazzler	5	14	14800	Disguised VR "cell" with trace, diff 15-25 Interface roll to detect	Chr3	Systemware	Usually disguised as a piece of system architecture or simple defence program.
+Monitor	4	7	950	Roving internal Net security	NET	Systemware	None. 
+Panzer	8	7	20000	Monitor that does 1D6 damage to 'runners and programs	BB	Systemware	Big computer generated tank. Often customised by in Corp data forts.
+Pocket VR	4	13	13000	Disguised VR "cell" with trace, diff 15-25 Interface roll to detect	BB	Systemware	Usually disguised as a piece of system architecture or simple defence program.
+Too Many Doors	3	3	1000	Gives 'runner a choice of doors, disconnected if wrong one chosen	BB	Systemware	Junction of 3 or more access routes. These "doors" can be unlabelled, labelled identically, or wrongly.
+Data Wall	1-10	-	1000/level	Basic Data Wall. STR = CPUs+0 to +9 (max 10)	CP20	Data Walls	Standard Data Wall.
+Data Wall 2.0	+1	-	1000	Flashy Data Wall. STR = CPUs+1	BB	Data Walls	Picket fence.
+Wall of Static	+2	-	2000	Flashy Data Wall. STR = CPUs+2	BB	Data Walls	Shifting wall of static surrounding the data fort.
+Crystal Wall	+3	-	3000	Flashy Data Wall. STR = CPUs+3	BB	Data Walls	Crystalline wall.
+Fire Wall	+4	-	4000	Flashy Data Wall. STR = CPUs+4	BB	Data Walls	Wall of flame.
+Reinforced Wall	+4	-	4000	Flashy Data Wall. STR = CPUs+4	BB	Data Walls	Very sturdy looking concrete wall.
+Rock is Strong	+5	-	5000	Flashy Data Wall. STR = CPUs+5	BB	Data Walls	Huge stone wall.
+Anti-Program Wall	1-5	-	4800+	Attacks Intrusion programs as Killer, +160eb/STR	NET	UpgradedDataWalls	Looks like a standard Data Wall.
+Anti-Personnel Wall	1-5	-	30000+	Attacks 'runners, 2-3 Stun, 4 Spazz, 5 Hellbolt, +1000eb/STR	NET	UpgradedDataWalls	Looks like a standard Data Wall.
+Laser Wire	+2/2	-	34000	1D6 damage to 'runner (STR 2), goes inert after 3 rounds	BB	UpgradedDataWalls	Mesh of laser light that reaches out to engulf the 'runner.
+Razor Wire	+3/3	-	36000	2D6 damage to 'runner (STR 3), goes inert after 3 rounds	BB	UpgradedDataWalls	Data Walls that can sprout buzzsaw blades to attack the 'runner.
+Shotgun Wire	+5/5	-	40000	2D6 damage to 'runner (STR 5), goes inert after 3 rounds	BB	UpgradedDataWalls	An aimpoint appears on the 'runner's Icon, at which the Wall will fire a burst of neural feedback.
+Wall of Ice	+6/6	-	44000	4D6 damage to 'runner (STR 6), goes inert after 3 rounds	BB	UpgradedDataWalls	Huge, brain-like image emerges from the Data Wall to bombard the 'runner with spheres of programming.
+Superior Net Barrier	+1	-	300,000	Tighter coding makes them stronger, difference easily noted	BB	UpgradedDataWalls	Upgraded Data Walls have a tight matrix woven into them.
+Code Gates	1-10	-	1000/level	Basic Code Gates. Many variations exist (Brainware Blowout)	CP20	Code Gates	Normal Code Gate, but variations are commonplace (see Brainware Blowout).
+Cortical Scanner	5	-	20000	Uses a brainwave ID scanner. 3 Interface rolls needs to pass	BB	Code Gates	Keyhole that scans your Icon.
+Endless Corridor	4	4	8000	Requires two passwords. +3 diff to crack second password	BB	Code Gates	The Gate looks like a corridor that just keeps going on and on and on.
+Encryp Breakthrough	+1	-	250,000	Tighter coding makes them stronger, difference easily noted	BB	Code Gates	Upgraded Code Gates have a tight matrix woven into them.
+Haunting Inquisition	8/6	8	80000	If you fail to get past it launches Psychodrome (STR 6)	BB	Code Gates	Normal Gate until it activates. Then it's whatever your worst nightmare is.
+Mazer	7	-	7000	Code Gate variant	BB	Code Gates	Looks like a maze.
+Nerve Labyrinth	6/4	NA	50000	If you fail to get past it does 4D6 damage to the 'runner (STR 4)	BB	Code Gates	Green labyrinth that seems to draw in the 'runner and squeeze his brain.
+Shrouded Gate	1-10	4	3000+	Makes a Code Gate invisible. +1000eb/1 STR	NET	Code Gates	Invisible or disguised as a Data Wall.
+Tutor	3/5	NA	50000	Easy to crack, but tags 'runner so that ICE can break link (STR 5)	BB	Code Gates	Regular Code Gate that gives your Icon a tail which other ICE can yank.
+Trailer Hitch	1	3	300	Adds 20% extra MU, Speed -1	NET	Transportation	An open-topped, single-exit trailer.
+18-Wheeler	1	4	500	Doubles remaining memory (MU-4), Speed=1	NET	Transportation	An 18-wheeler trailer with the Netrunner's icon on the sides of the trailer.
+Brain Buster	4	6	4500	+4 to INT, +2 speed	I.3	Enhancement	User's head looks as it's steroids, and he radiates an aura of great intellect.
+Gestalt	9	7	5600	Up to 3 'runners can combine INT, REF, and Interface	I.3	Enhancement	Whatever it wants, after all it is a super intelligence.
+Memorial ICEbreaker	6	2	1500	Hold 4 programs like a Demon, but each program has full strength	BB	Rache Specials	A non-Euclidean corkscrew.
+Bone	4	4	270	Attracts "Dog" programs from all over	NET	Rache Specials	Rubber dog Bone.
+Pirate Uplink	5	7	NA	Alerts LDLs to presence of illegal calls	NET	Rache Specials	None.
+Rache's SeeYa	6	2	NA	Prog 15+. IDs Icon as either prog, 'runner, or AI	NET	Rache Specials	Shimmering silver screen, shows nothing (program), sine wave (human), sawtooth wave (AI/Pseudo Int).
+Rice Burner	2	2+	NA	+1 to Net movement, -50% deck MU	NET	Rache Specials	Japanese-style racing motorcycle.
+SideWalker	3	3	NA	Allows you to walk on the sides of the Olympia sidewalks	NET	Rache Specials	None.
+Succubus III	7	4	NA	Compiler, carries 2 programs. 2D6 anti-personnel damage	SW	Rache Specials	Very close variant on Spider Murphy's Icon, a busty, curvaceous, rendition of a red-headed anime girl.
+EmergencySelf-Construct	4	30	NA	Converts 'runner to electronic entity, roll 1D10+4 for max INT	BB	Specials	Swirling vortex of blue lightning that sucks the 'runner's Icon into it; if successful the Icon later emerges.
+Lunch Money™	3	7	145000	Compiler (assassin to kill it), 1D6 physical damage to the 'runner	BB	Specials	Super-realistic little girl that plays innocent, then gets an evil look in it's eyes and attacks the 'runner.
+Antiquated Routines	NA	NA	50000	Circa 2013 interface. All 'runner Initiative rolls at -2	BB	SystemConstruction	Older-style and more primitive Net imagery.
+Bizzare Encryption	NA	NA	10000	All system data is encrypted (STR 10 Gate), 1-2 hrs to decode	BB	SystemConstruction	None.
+Blood Cat	10/5	NA	300,000	INT 6 pseudo-AI, STR 5 attacks vs 'runners and programs	BB	SystemConstruction	Dead-black panther with glowing red eyes and mouth.
+TesseractConstruction	NA	NA	100,000	Escher style data fort, -3 to 'runner Initiative until use to it	BB	SystemConstruction	Fort Fort's interior defies orientation, up, down and sideways constantly changing, walls at impossible angles.
+Black ICE QA	+2	NA	250,000	Money poured into programmers for optimizing its Black ICE (+2)	BB	ICE Upgrades	None.
+Security Optimization	+1	NA	250,000	All ICE upgraded to the latest version (+1 STR)	BB	ICE Upgrades	None.

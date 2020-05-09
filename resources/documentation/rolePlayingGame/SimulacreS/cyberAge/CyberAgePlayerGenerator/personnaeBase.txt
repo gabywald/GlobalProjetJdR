@@ -1,0 +1,320 @@
+BEGIN personnae
+NAME Ernst Kobel
+IMAGE img/personnageErnstKobel.jpg
+TITLE Bladerunner, ancien pilote de voile solaire
+PV 11
+IMPACT 0
+SAN 55
+APP 8
+CON 8
+DEX 12
+FOR 9
+TAI 14
+EDU 8
+INT 11
+POU 11
+BEGIN cyberequipement
+C{\^a}blage optique infrarouge des deux yeux. 
+C{\^a}blage de pilotage. 
+Broche de Type A. 
+END cyberequipement 
+BEGIN cailloux
+Pilotage de voiles solaires
+Pilotage d'hovertank
+Anglais
+Japonais
+Fran\c{c}ais
+END cailloux
+AGE 28
+SEXE Homme
+PARRAIN ---
+ARGENT 800
+DIVERS ---
+METIER Pilote de voile solaire. 
+BEGIN talents
+Filature	60
+Combat {\'a} mains nues	75
+Pistolet	75
+Astrophysique	50
+END talents
+BEGIN lightbio
+9/10	Dette vis {\`a} vis d'un Yakuza. 
+12/3	Un R{\^e}veur devient fou. 
+5/12	Une agence de d{\'e}tectives vous apprend les rudiments du m{\'e}tier de BladeRunner. 
+3/7	Vous devenez Pilote de Voile Solaire
+6/9	Accident. Perte des yeux. 
+8/10	C{\^a}blage gratuit.
+END lightbio 
+BEGIN biography
+Ernst devient pilote {\`a} la suite de son {\'e}viction d'un gang d'adolescents dans la banlieue de Sao Paulo. Il remporte de nombreuses courses et tombe amoureux d'une vedette du \texttt{CosmoR{\^e}ve} : Elisa M{\'e}tamorphosis. C'est {\`a} cette {\'e}poque qu'il se fait poser un c{\^a}blage de pilotage multifonctions Data System Sensei. ~\\
+S'apercevant que son amie devient peu {\`a} peu folle, il tente de racheter son contrat. Pour cela il c{\`e}de au \texttt{Yakuza} et accepte de truquer une course. Mais en voulant couper la route {\`a} un concurrent sa voile s'enflamme et c'est l'accident, il perd la vue. ~\\
+Des mois de convalescence passent, Elisa sombre dans la folie. Ernst abandonne la course et se fait poser des yeux {\'e}lectroniques Zeiss / Ikon. ~\\
+Il redescend sur Terre, star d{\'e}chue. Amateur de sensations fortes, il d{\'e}cide de devenir chasseur de primes. Gr{\^a}ce {\`a} d'anciens contacts, il apprend les rudiments du m{\'e}tier aupr{\`e}s de l'Agence new-yorkaise Mac Burns. Il s'est install{\'e} depuis peu {\`a} La D{\'e}fense. ~\\
+END biography
+
+END personnae
+
+BEGIN personnae
+NAME Paul Morgan
+IMAGE img/personnagePaulMorgan.jpg
+TITLE Holoreporter
+PV 10
+IMPACT 0
+SAN 50
+APP 11
+CON 10
+DEX 12
+FOR 8
+TAI 10
+EDU 8
+INT 13
+POU 10
+BEGIN cyberequipement
+C{\^a}blage Optique : enregistrer vid{\'e}o. 
+C{\^a}blage auditif : t{\'e}l{\'e}phonique. 
+END cyberequipement
+BEGIN cailloux
+END cailloux
+AGE 29
+SEXE Homme
+PARRAIN Un ancien BladeRunner. 
+ARGENT 12 000
+DIVERS dette d'un Yakuza, dette envers un Wampire. 
+METIER HoloReporter
+BEGIN talents
+Filature	75
+Connaissance de la rue	75
+Gestion	60
+Chimie	40
+Falsification de documents {\'e}crits	40
+Danse 60
+END talents
+BEGIN lightbio
+3/12	Victime d'une action terroriste. 
+11/3	Exfiltr{\'e} de son TechnoBloc. Cicatrice normale {\`a} la jambe gauche. 
+3/6	R{\'e}alisation d'une vid{\'e}o. 
+12/10	Dette vis {\`a} vis d'un Wampire. 
+5/3	Enseignement d'un BladeRunner. 
+9/11	Dette d'un Yakuza. 
+END lightbio
+BEGIN biography
+En 2066, Paul Morgan est victime du c{\'e}l{\`e}bre coup de main contre la navette Berlin-Tokyo perp{\'e}tu{\'e} par la \emph{neu-RAF}. Il a 15 ans, et cette m{\'e}saventure le marque. C'est sans doute {\`a} cause de cet incident qu'il d{\'e}cide de devenir \texttt{HoloReporter}. Sa vid{\'e}o sur les \texttt{gangs} de Hambourg lui vaut d'{\^e}tre engag{\'e} au \texttt{Network} \emph{NHK}. Il poursuit sa carri{\`e}re en sortant un reportage sur son exfiltration du \texttt{TechnoBloc} \emph{General Electric}, {\`a} la fronti{\`e}re du Mexique, qui lui vaut de devenir une r{\'e}f{\'e}rence dans son m{\'e}tier. Suivent des reportages sur les \texttt{Wampires}, les \texttt{BladeRunners} et les \texttt{Yakuzas}. ~\\
+Dans tous les cas, Paul s'arrange, contrairement {\`a} la pratique journalistique courante, pour se faire de nombreux amis, il prot{\`e}ge ses sources et ne cherche jamais le sensationnel. ~\\
+Il est toujours {\`a} la recherche d'un sujet et pr{\^e}t {\`a} prendre tous les risques pour le ramener, c'est un des rares exemples de journaliste honn{\^e}te et consciencieux. ~\\
+END biography
+
+END personnae
+
+BEGIN personnae
+NAME Jenel Astaki
+IMAGE img/personnageJenelAstaki.jpg
+TITLE CyberTek en Espace Profond
+PV 11
+IMPACT 0
+SAN 20
+APP 8
+CON 8
+DEX 9
+FOR 9
+TAI 14
+EDU 8
+INT 13
+POU 14
+BEGIN cyberequipement
+Broche d'Interface. 
+END cyberequipement
+BEGIN cailloux
+END cailloux
+BEGIN programmes
+Smaug
+Noiraud
+Snuff 2.3
+END programmes
+AGE 25
+SEXE Homme
+PARRAIN ---
+ARGENT 300
+DIVERS {\'E}quilibre mental fragile. 
+METIER  CyberTek
+%% (Piratage, Conduite d'engins spatiaux, D{\'e}placement en gravit{\'e} z{\'e}ro, {\'E}lectronique). 
+BEGIN talents
+Pistolet	60
+Premiers soins	60
+Plong{\'e}e	60
+Piratage 50
+Conduite d'engins spatiaux 50
+D{\'e}placement en gravit{\'e} z{\'e}ro 50
+{\'E}lectronique 50
+END talents
+BEGIN lightbio
+9/8	Meurtre d'un Yakuza. Cicatrice {\`a} peine visible. 
+3/5	Mineur en Espace Profond. 
+4/3	Mauvaise passe dans la Matrice. 
+4/6	Un jackeur vous paye en nature. 
+2/12	Vengeance sur un Phase II. 
+3/5	\emph{D{\'e}j{\`a} tir{\'e}. }
+END lightbio
+BEGIN biography
+{\`A} 18 ans, Jenel tue un \texttt{Yakuza}, dans des circonstances mal {\'e}lucid{\'e}es, dans un {\'e}cosyst{\`e}me d'\emph{Atlantide III} (une \texttt{Venise} au large de la Floride) d'o{\`u} il est originaire : il a des g{\`e}nes \texttt{Triton} modifi{\'e}s. Pour {\'e}chapper {\`a} la vengeance du gang, il signe un contrat de mineur en \texttt{Espace Profond}. Il y fait la connaissance d'un ancien \texttt{Jackeur} retir{\'e} qui lui donne quelques tuyaux en {\'e}change d'une protection. Il tente une passe contre une base de donn{\'e}es du \texttt{TechnoBloc} \emph{Avant Garde} {\`a} partir de l'ast{\'e}ro{\"i}de \emph{Alpha V}. Pour cela, faisant confiance {\`a} un autre <<transform{\'e}>>, il s'adjoint les services d'un \texttt{Phase II} qui doit assurer une op{\'e}ration de diversion. Mais le \texttt{Phase II} n'est pas au rendez-vous et Jenel manque de se faire pi{\'e}ger par un programme tueur \emph{Janissaire}. ~\\
+Fuyant dans une navette, le syst{\`e}me de propulsion se met en panne et il reste un an en \texttt{Synthivers} avant d'{\^e}tre r{\'e}cup{\'e}r{\'e} par un cargo non loin de Mars. Les quatre ann{\'e}es suivantes, il rembourse les frais de sauvetage en travaillant comme \texttt{CyberTek} pour divers \texttt{TechnoBlocs}. Il vient de revenir sur Terre. ~\\
+Jenel est une t{\^e}te br{\^u}l{\'e}e, endurci par les mois pass{\'e}s en \texttt{Espace Profond}, rejet{\'e} aussi bien par les \texttt{Tritons} que par les \texttt{Nomades}. Il n'est anim{\'e} que par un objectif : retrouver le \texttt{Phase II} et le tuer. Mais pour cela, il faut repartir dans l'espace et \c{c}a co{\^u}te de l'argent, beaucoup d'argent. ~\\
+END biography
+
+END personnae
+	
+BEGIN personnae
+NAME J{\'e}r{\'e}miah Steel
+IMAGE img/personnageJeremiahSteel.jpg
+TITLE Jackeur
+PV 12
+IMPACT 0
+SAN 40
+APP 8
+CON 14
+DEX 10
+FOR 9
+TAI 11
+EDU 10
+INT 16
+POU 8
+BEGIN cyberequipement
+C{\^a}blage interne d'Interface (type C) avec liaison satellite. 
+END cyberequipement
+BEGIN cailloux
+Pistolet Revolver
+Premiers Soins
+END cailloux
+BEGIN programmes
+LazBeam II
+Petiot IX
+Noiraud
+Magnum 28
+Blindman IV
+END programmes
+AGE 22
+SEXE Homme
+PARRAIN Une dirigeante d'un TechnoBloc. 
+ARGENT 1 000
+DIVERS Dette d'une I.A.
+METIER Jackeur
+BEGIN talents
+Explosifs	50
+Bazooka	50
+Droit Mondial	60
+Anglais 70
+END talents
+BEGIN lightbio
+11/11	Liaison avec un cadre de TechnoBloc qui se change en amiti{\'e}. 
+11/8	B{\'e}n{\'e}ficie de la pose d'une broche gratuite. 
+7/9	Un Jackeur vous {\'e}duque. 
+4/12	Une I.A. vous est redevable. 
+10/4	Bless{\'e} dans une bagarre entre gangs. Cicatrice. 
+10/7	Mercenaire pendant quelques mois. Cicatrice. 
+END lightbio
+BEGIN biography
+J{\'e}r{\'e}miah passe son enfance dans les quartiers pauvres de Saint-Ouen. Bless{\'e} dans une bagarre entre gangs, il d{\'e}cide de lettre {\`a} profit sa convalescence pour apprendre aupr{\`e}s d'un ami les rudiment du m{\'e}tier de \texttt{Jackeur}. ~\\
+C'est l{\`a} qu'il rend un service inconnu {\`a} une I.A. bancaire des Cara{\"i}bes. Gr{\^a}ces aux b{\'e}n{\'e}fices tir{\'e}s de cette coop{\'e}ration, il entre au \texttt{TechnoBloc} \emph{Exxon} et se fait poser un c{\^a}blage d'Interface Nakamichi. Vers l'{\^a}ge de 19 ans, il a une liaison avec une dirigeante de son \texttt{TechnoBloc} qui se termine rapidement, les deux amants gardant de bons contacts. Trouvant sa vie trop fade, J{\'e}r{\'e}miah d{\'e}cide peu apr{\`e}s de s'engager dans les <<Maraudeurs de Merill>>, une \texttt{Force Mercenaire} de bon niveau. Il y entre directement comme officier gr{\^a}ce {\`a} sa formation de \texttt{Jackeur}. On lui pose une broche avec des cailloux de maniement d'armes. Un an apr{\`e}s son engagement, il est bless{\'e} lors d'une guerre priv{\'e}e \emph{ITT} conte \emph{Hoffman Laroche} en Californie du Sud. Apr{\`e}s plusieurs mois d'h{\^o}pital, il est lib{\'e}r{\'e} et garde de sa mission une impressionnante cicatrice au ventre. ~\\
+Sa prime en poche, il est disponible pour toute mission impliquant un peu d'action. Steel est un bon \texttt{Jackeur}, sans {\^e}tre un as ; il b{\'e}n{\'e}ficie d'une bonne formation militaire. C'est un aventurier qui ne tient pas en place, il aime l'action et le danger. ~\\
+END biography
+
+END personnae
+
+BEGIN personnae
+NAME Irina Toss
+IMAGE img/personnageIrinaToss.jpg
+TITLE Garde du corps Yakuza
+PV 14
+IMPACT 0
+SAN 45
+APP 8
+CON 14
+DEX 10
+FOR 9
+TAI 14
+EDU 10
+INT 15
+POU 9
+BEGIN cyberequipement
+M{\'e}taGriffes (aux deux mains). 
+END cyberequipement
+BEGIN cailloux
+END cailloux
+AGE 21
+SEXE Femme
+PARRAIN Un chef Yakuza. 
+ARGENT 40 000
+DIVERS Elle poss{\`e}de aussi des griffes <<normales>> qu'elle met parfois en guise de <<camouflage>>. 
+METIER Yakuza
+BEGIN talents
+Acrobatie	70
+Conduite d'engins lourds	60
+END talents
+BEGIN lightbio
+3/5	Cible d'une Chasse. Vous tuez votre Chasseur. 
+6/7	Gagne un pari dans une course solaire. 
+9/7	Devient Yakuza pendant quelques mois. 
+5/8	Meurtre d'un BladeRunner. Pas de cicatrice. 
+12/7	Exfiltre un ami d'une usine {\`a} R{\^e}ves. 
+9/4	Arr{\^e}t{\'e}e {\`a} la place d'un Yakuza. Trois ans sur un ast{\'e}ro{\"i}de minier. Pas de cicatrice. 
+END lightbio
+BEGIN biography
+{\`A} 15 ans, Irina est prise pour cible dans une \texttt{Chasse}. Chose rare, c'est elle qui {\'e}limine son chasseur et cet exploit lui vaut d'{\^e}tre remarqu{\'e}e par le \texttt{Yakuza} qui lui propose une place de garde du corps dans un gang. Plus tard, ses activit{\'e}s lui attirent l'animosit{\'e} d'un \texttt{TechnoBloc} qui envoie un \texttt{BladeRunner} contre elle, un professionnel, que l'on retrouve avec une balle dans la t{\^e}te au fond d'une ruelle de Singapour. Gr{\^a}ce {\`a} ses contacts au sein du \texttt{Yakuza}, Irina gagne de coquettes sommes dans les paris sur les \texttt{Courses Solaires}. Plusieurs mois passent, elle se lie d'amiti{\'e} avec un certain David Feeshop, un \texttt{R{\^e}veur} professionnel et organise son exfiltration de l'\texttt{Usine {\`a} R{\^e}ves} de Toronto (appartenant au \texttt{TechnoBloc} \emph{MGM/Sony}). Arr{\^e}t{\'e}e {\`a} la suite de cette op{\'e}ration, elle refuse de collaborer avec les services de police du \texttt{TechnoBloc} qui lui proposent de livrer ses contacts \texttt{Yakuzas} contre une remise de peine. Elle {\'e}cope d'une condamnation de 3 ans dans les mines spatiales. Entre-temps, David a subi le sort des r{\^e}veurs professionnels : il d{\'e}ambule dans les couloirs d'un discret h{\^o}pital psychiatrique. ~\\
+Irina vient de terminer son temps et de revenir sur Terre. C'est une tueuse, lucide et froide, tr{\`e}s intelligente et sans un soup\c{c}on de piti{\'e}. ~\\
+END biography
+
+END personnae
+
+
+BEGIN personnae	
+NAME Sandra Vitteker
+IMAGE img/personnageSandraVitteker.jpg
+TITLE R{\^o}nin
+PV 12
+IMPACT 0
+SAN 50
+APP 8
+CON 11
+DEX 11
+FOR 9
+TAI 14
+EDU 8
+INT 14
+POU 10
+BEGIN cyberequipement
+C{\^a}blage d'acquisition de cible reli{\'e} {\`a} la paume avec broche de calibrage. 
+Broche de type C. 
+END cyberequipement
+BEGIN cailloux
+R{\'e}glage d'acquisition pour tous types d'armes. 
+Pilotage d'engins lourds. 
+Anglais. 
+Arabe. 
+Chimie. 
+END cailloux
+AGE 20
+SEXE Femme
+PARRAIN Un Yakuza. 
+ARGENT 12 000
+DIVERS Dette envers un Yakuza. 
+METIER R{\^o}nin
+BEGIN talents
+Pilotage d'engin spatiaux	50
+Pistolet	60
+Chant	70
+END talents
+BEGIN lightbio
+3/7	Pilote de Voile Solaire. 
+9/10	Dette vis {\`a} vis du Yakuza. 
+9/11	Un BladeRunner a une dette envers vous. 
+10/8	Mort d'un R{\^o}nin. 
+6/10	C{\^a}blage gratuit. 
+10/3	Un R{\^o}nin vous enseigne ce qu'il sait. 
+END lightbio
+BEGIN biography
+{\`A} 17 ans, Sandra blesse mortellement un \texttt{R{\^o}nin} dans une ruelle du vieux Londre, elle affirmera qu'il voulait la violer. Cette action d'{\'e}clat lui vaut d'{\^e}tre remarqu{\'e} par les \texttt{Yakuzas} qui lui font des propositions d'embauche. ~\\
+Durant deux ann{\'e}es, Sandra devient membre d'un gang \texttt{Yakuza} bas{\'e} {\`a} Paris. Son parrain lui paye un c{\^a}blage et une formation de Pilote de Voile Solaire. {\`A} 19 ans, elle participe {\`a} sa premi{\`e}re course mais abandonne rapidement, elle ne supporte pas de reste plus d'un mois seule dans l'espace. C'est {\`a} cette {\'e}poque qu'elle rencontre un \texttt{R{\^o}nin} avec qui elle se lie d'amiti{\'e} et qui lui apprend les trucs du m{\'e}tier. Il se fait malheureusement descendre. ~\\
+Sandra recommence {\`a} travailler pour son gang comme tueuse {\`a} gage et sauve la mise {\`a} un \texttt{BladeRunner} d{\'e}butant venu op{\'e}rer sur son territoire. Elle vient de quitter les \texttt{Yakuzas} pour travailler en free-lance, comme garde du corps. ~\\
+D'apr{\`e}s ses propres conclusions, <<elle n'est bonne que comme flingueuse>> et d'apr{\`e}s tous les avis, \c{c}a semble {\^e}tre effectivement le cas. ~\\
+END biography
+
+END personnae

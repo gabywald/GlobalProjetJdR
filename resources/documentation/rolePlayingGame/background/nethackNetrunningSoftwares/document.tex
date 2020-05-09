@@ -1,0 +1,1184 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[english]{babel}  % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.00cm}{1.00cm}{1.00cm}{1.00cm}{15pt}{3pt}{50pt}{20pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{empty}
+
+\def\txtTITLE{Instant Netrunning -- Netrunning Softwares} %%%%% !! TITRE !! %%%%%
+\def\imgCORNER{\includegraphics[width=0.25cm]{../../../../imgGraphics/logos/glider/logo-glider.png}}
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+%% \fancyhead[LE,RO]{\bfseries\thepage}
+%% \fancyhead[LO]{\bfseries\rightmark}
+%% \fancyhead[RE]{\bfseries\leftmark}
+\fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	\scriptsize{\txtTITLE} % TITLE
+\hfill \imgCORNER }
+\fancyfoot[RO]{\imgCORNER \hfill
+	\scriptsize{\txtTITLE} % TITLE
+\hfill \thepage /\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.0pt} %% !!
+\renewcommand{\footrulewidth}{0.5pt}
+%% \addtolength{\headheight}{0.5pt}
+% \fancypagestyle{plain}{
+	% \fancyhead{}
+	% \renewcommand{\headrulewidth}{0pt}
+% }
+
+\usepackage{lettrine}
+\usepackage{fancybox}
+
+\title{\txtTITLE}
+\date{ --- }
+
+\newenvironment{local_enumerate}{
+\begin{enumerate}
+     \setlength{\itemsep}{1pt}
+     \setlength{\parskip}{0pt}
+     \setlength{\parsep}{0pt}}
+{\end{enumerate}
+}
+
+\newenvironment{local_itemize}{
+\begin{itemize}
+     \setlength{\itemsep}{1pt}
+     \setlength{\parskip}{0pt}
+     \setlength{\parsep}{0pt}}
+{\end{itemize}
+}
+
+%============================= Corps =================================
+\begin{document}
+
+\setlength\parindent{0pt} % \noindent for all document
+
+%% \begin{multicols*}{2}
+%% \end{multicols*}
+%% ~\\ \vfill
+
+\begin{center}
+	\textbf{\LARGE Instant Netrunning -- A Fuzion Plug-In -- by Christian Conkle } ~\\ ~\\
+	(\texttt{conkle@europa.com}, \texttt{http://www.europa.com/\textasciitilde conkle})
+\end{center}
+
+\begin{center} \rule{0.85\textwidth}{0.01cm} \end{center}
+
+\begin{multicols*}{2}
+
+\textbf{\underline{\large Introduction}}~\\
+
+This is a system of rules expanding the hacking rules for Fuzion and Interlock. These rules draw heavily on Cyberpunk 2020's Netrunning rules and are intended to be native in a Cyberpunk environment where neural cyber-interfaces are standard, though they are written generically enough to be useable in a modern setting as well. ~\\
+
+These rules were designed to use existing Cyberpunk 2020 equipment and software with little modification. There are several differences from the original rules, however, that are intended to speed play and optimize simplicity. First, these rules lack a grid. Movement within the virtual environment of cyberspace is conceptual. To convert applications that give ``ranges'', simply apply a percentage chance of effectiveness based on range. Second, these rules incorporate the Power attribute from other Fuzion games, essentially the equivalent to a computer's Intelligence from CP2020. Third, software and memory no longer needs to be assigned to specific CPUs. If the GM wishes, each MU of application and datafile can be assigned to specific CPUs such that if that CPU fails, the application or datafile is no longer available. This process was removed to eliminate extra bookkeeping. These rules assume a 3d6 die-rolling mechanic option of Fuzion. If you're playing Interlock, or the Fuzion option of 1d10, simply replace the 3d6 with a 1d10 die roll. You won't achieve the same kind of bell curve, but the results will be sufficiently randomized. %% ~\\
+
+\begin{center} \rule{0.45\textwidth}{0.01cm} \end{center}
+
+\textbf{\underline{\large The Net}}~\\
+
+The Net is a global computer network allowing fast and convenient access to millions of computers from any other computer on earth or beyond. Any computer connected to this network has the capability to access information from any other computer connected to this network regardless of distance or time of day. Whether it is called the Internet, the Web, the Cybernet, the Face, or the Net, all use different special effects and technologies to describe the same thing. This plug-in assumes a near-future setting which makes use of a Virtual Reality interface and gives exciting names to actions and tasks which can be easily modified to fit a more mundane modern setting. ~\\
+
+All computers connected to the Net are assigned LDL. This LDL serves as a kind of telephone number for that computer, to which other computers know where to send information. In a futuristic setting, a Virtual Construct or Icon may substitute for the LDL. The Net User connects their computer to a Virtual Reality Interface, within which companies pay for space and create elaborate virtual constructs to represent their LDL, the VR equivalent of Internet Portal Sites such as Infoseek or Yahoo! today. The Net User may now tour the bustling 3D Virtual City regardless of gravity or speed. Corporate virtual constructs are like giant 3D advertisements, attempting to entice the average Net User into their Virtual Realities to sell products or services. Some Virtual Realities actually provide useful services such as information or online software applications. The VR equivalent to modern Websites. These Virtual Realities are housed on Dataservers maintained by the respective corporations or institutions. It is the information housed on these Dataservers that isn't readily available to the public that draws the Hacker. Normally, a corporate dataserver is openly accessible to the Net public, providing information either to the public or its employees through a variety of interfaces: text-only, text and graphics (the Web), audio/video, or fullsensory virtual reality (the Net). ~\\
+
+However, the value of information available on public dataserver sites is poor and bland. In addition, access to remote software applications is limited to public-domain applications. ~\\
+
+Datafortresses are the restricted hidden levels of a dataserver providing remote access to restricted data or software applciations to authorized users. Security is maintained through the datafortress' DataWall program. The level of security restriction depends on the value of the information or application. Secure information may be housed on the same dataserver as public information, only hidden in restricted directories, effectively invisible from those who lack proper authorization. Authorization comes with proper identification. --- \emph{Identification} can come in many forms: Authorized Net LDLs, passwords, proper interface software, or even biometric data. %% ~\\
+
+It is a hacker's goal in life to gain unrestricted access to restricted information, uncover secrets, make unauthorized changes to data, or to use a restricted software application. ~\\
+
+When attempting to gain unauthorized access to a corporate datafortress, the hacker establishes a legal connection to the company's dataserver. Once connected, the hacker has normal access to the free services. Normally, an authorized user will then use an interface program to gain access to the datafortress. The datafortress' Code Gate program verifies authorization and allows access. The hacker attempts to fool the code gate into authorizing entry. Should that fail, the hacker may attempt to gain entry by disabling the DataWall program protecting the information. ~\\
+
+Once past security, the Datafortress constantly re-checks authorization through the use of Detection software. Detection software double-checks the authorization of all the users connected to the datafortress. If it finds a discrepancy or error, it notifies the Datafortress System Administrator (SysAdmin) who will either attempt to disconnect the hacker, determine the hacker's location with a Trace application, disable the hacker's software with an Anti-ICE application, disable the hacker's computer with Anti-System software, or physically injure the hacker with Anti-Personnel software. The hacker uses Stealth software to fool detection software into either authorizing or ignoring the hacker's connection. If discovered, the hacker may fight back against the SysAdmin with Anti-ICE, Anti-System, or Anti-Personnel software of their own. ~\\
+
+Should the hacker gain access to the Datafortress' directories, they may view, copy, or alter data. Data comes in the form of online applications for remote use, inter-office communication, public display data (text, audio-video, or VR), databases, or records. ~\\
+
+\begin{center} \rule{0.45\textwidth}{0.01cm} \end{center}
+
+\textbf{\underline{\large The Hacker}}~\\
+
+The Hacker's arsenal includes a computer, specialized hacking software, and, foremost, a way to connect to a remote target computer, usually via the Net though direct connections, however unwise, can be made. ~\\
+
+A Hacker's access to the Net is very important. To connect to the Net, the Hacker must have an LDL. LDL's cost 50 euro a month from the Internet Corporation, though they, too, can be hacked. Connections between computers are relatively easy to trace. Each computer connection has a corresponding Trace Value from 1 to 10. Hackers generally make a chain of several connections before they proceed to their target computer. A SysAdmin wishing to trace the ultimate origin of the Hacker must trace every connection to find the source. ~\\
+
+\begin{center} \rule{0.45\textwidth}{0.01cm} \end{center}
+
+\textbf{\underline{\large The SysAdmin}}~\\
+
+The SysAdmin is in charge of security for a Dataserver/Datafortress. It is their primary job to prevent Hackers from illegally gaining unauthorized access to restricted data. It is their secondary job to catch hackers who have already have. ~\\
+
+SysAdmins use their own computers connected to a Dataserver/Datafortress to execute software applications. The Dataserver/Datafortress itself uses software such as Codegates, Datawalls, and Detection software deter and identify hackers, yet allow authorized users in. ~\\
+
+A Datafortress is also characterized by its Power and its Speed. A Datafortress is also rated by a Security Level from 1 to 10. This number is added as a skill would to the computer's Power when executing software applications. The computer's Security Level is also it's Trace Value if being used to chain connections. A SysAdmin can't do anything to catch a Hacker if he doesn't know they're there, so the SysAdmin relies heavily on Detection software to notify them of unauthorized access. Once detected, the SysAdmin can run Anti- Personnel software against the intruder, or opt to trace the hacker and run Anti-System software against the Hacker's computer. ~\\
+
+\textbf{\underline{\large The Computers}}~\\
+
+Computers, whether they are Palmtops, Desktops, Minis, or mainframe supercomputers, exist to execute software applications. The computer is characterized by its Power and its Speed and its Security Level. ~\\
+
+The Power is used like the computer's Body and it's Reflexes, it determines it's resiliency to attack and its base chance to perform an action. Power is based on the number of Central Processing Units driving a computer. One CPU has a Power of 3, each additional CPU adds an additional 3. Each CPU costs \$10,000. A Computer may have up to 7 CPUs for a Power of 21. Additional CPUs increase processing capacity and provide backups in case one CPU should fail due to Anti-System software. ~\\
+
+A Computer's CPU also determines how much software it can run and data it can store. Software and Data are stored in Memory Units. A Computer can store as many MU's as it's CPU x 40. Memory can be improved for \$250 per MU. CPUs also determines the starting level of system Datawall. A Datafortress' base Datawall strength is equal to the number of CPUs driving it. Computers with Powers higher than 10 are Artificial Intelligences with complete personalities and full interactivity. Power can be decreased for a cost reduction of \$3000 per level. A Computer may also possess skills like a character. Memory can be put aside to use as skills at a rate of 1 MU per Skill Level. In this way, a computer can devote 5 MU to have a Security Skill of 5. All computer skills use Power as the primary statistic. ~\\
+
+The Speed is used to determine initiative. If using the Speed Chart, it can be used to determine the number and order of actions in a turn. Speed can be increased for \$2000 per bonus up to +5. ~\\
+
+The Security Level is the SysAdmin's Security skill, added to its Power when resisting attacks. The Security Level is also used to determine a server's Trace Value when using it to chain connections in preparation for a run. ~\\
+
+A Computer can respond to hacker's automatically. Once Detection software has identified an unauthorized intruder, the Computer can automatically execute Anti-Personnel software against the Hacker, or trace the signal and run Anti-System software against the Hacker's computer. ~\\
+
+A Computer can also be defined as a Cyberdeck. Cyberdecks or Cybermodems are small devices that are similar to computers in that they execute programs, but are different in that they are connected to the user's living brain and use it's neurological wiring to act as its Central Processing Unit. The Cyberdeck, modern terms, is little more than a hard drive and network connection. All input and output is processed by the user's brain. ~\\
+
+Cyberdecks do not have CPUs, but the user must have a Neural Interface and Cybermodem processor installed in their brain, the cost of which is \$1100 for the hardware and \$500 for the surgery. Cyberdecks provide 10 MU, a Speed of 0, and have a Data Wall strength of 2. The basic parts of a cyberdeck costs \$1000 for the external hardware, though this is often marked down to as low as \$500 for a used model. ~\\
+
+\textbf{Computer Hardware Price List }
+\begin{center}
+	\begin{tabular}[ht]{ p{3.00cm} p{2.00cm} p{12.00cm} }
+		\textbf{1 CPU}			&	\$10,000	&	(Power 3, 40 MU, Data Wall Strength of 1)										\\
+		\textbf{1 Cyberdeck}	&	\$1000		&	(Power 0, 10 MU, Data Wall Strength of 2)										\\
+		+1 CPU					&	\$10,000	&	(Power +3 each, +40 MU each, Data Wall Strength of +1 each, maximum 7 CPUs)		\\
+		+1 MU					&	\$250		&	(no maximum)																	\\
+		+1 Speed				&	\$2,000		&	(maximum of +5)																	\\
+		-1 Power				&	-\$3,000	&	(no maximum, but at more than -2 you may as well buy fewer CPUs)				\\
+	\end{tabular}
+\end{center}
+
+\textbf{\underline{\large Cyberdecks vs. Computers}}~\\
+
+In games where cybernetic interfaces are common and older manual interfaces are uncommon, simply apply a -- 2 to all actions taken by manual-interface computers. In games where cybernetic interfaces are uncommon, such as the modern world, apply a +2 to all actions taken by cybernetic interface computers. ~\\
+
+Successful attacks made against Cyberdecks using Anti-System software will cause the brain to disconnect and become unconscious for 1d6 rounds in lieu of the CPU. ~\\
+
+\begin{center} \rule{0.45\textwidth}{0.01cm} \end{center}
+
+\textbf{\underline{\large The Menu}}~\\
+
+To simplify using a computer in a game context, a simple set of commands has been devised. These commands
+are called ``The Menu''. A Hacker simply chooses his action based on the list available in the Menu. ~\\
+
+\textbf{The Menu}
+\begin{local_itemize}
+	\item \textbf{Log On/Off}: Legally gain access to an unrestricted Dataserver through proper authorization techniques (password, LDL authentication, or biometrics).
+	\item \textbf{Run Program}: Run either a local or remote software application.
+	\item \textbf{Read File}: View the contents of a datafile, be it Text, Graphics, Audio/Video, or Virtual Reality.
+	\item \textbf{Copy File}: Copy a file from a remote location to a local one. Warning, a record is kept of each copy in a file history.
+	\item \textbf{Edit File}: Edit the contents of a datafile above. Warning, a record is kept of each modification in a file history, including the modification of the file history.
+	\item \textbf{Erase File}: Erase a datafile above. Warning, a record is kept of each erasure in a file history, including the erasure of the file history.
+	\item \textbf{LDL}: Establish a connection to a Dataserver. Warning, if disconnecting from datafortress, if the stealth roll was unsuccessful, the SysAdmin can still do a trace on your LDL.
+\end{local_itemize}
+
+\end{multicols*}
+
+\clearpage
+
+\begin{center} \rule{0.85\textwidth}{0.01cm} \end{center}
+
+\textbf{\underline{\large The Software}}~\\
+
+Software applications are measured by their Strength, which act as a sort of Weapon Accuracy which is added to all tasks performed with that application. Software Strength is rated from 1 to 10. ~\\
+
+Software is also measured by how many Memory Units it uses on its host computer. This is cumulative. A computer with 30 Memory Units can run one 15MU program and three 5MU programs simultaneously. Switching out a program takes one action. ~\\
+
+Software applications can have very specific effects, depending on the application being used. The most common and broadly-defined applications are as follows: ~\\
+\begin{tabular}[ht]{ p{3.00cm} p{10.00cm} p{1.50cm} p{1.50cm} p{1.50cm} }
+	\textbf{\underline{Type}}	&	\textbf{\underline{Effect}}	&	\textbf{\underline{Strength}}	&	\textbf{\underline{MU}}	&	\textbf{\underline{Cost}}	\\
+		\textbf{Decryption} \newline {\scriptsize (Wizard's Book)}	&
+		Defeats Codegates and File Locks.										&	4	&	2	&	400		\\
+		\textbf{Intrustion} \newline {\scriptsize (Hammer)}			&
+		Defeats Datawalls.														&	4	&	1	&	400		\\
+		\textbf{Stealth} \newline {\scriptsize (Invisibility)}		&
+		Defeats Detection Software.												&	3	&	1	&	300		\\
+		\textbf{Protection} \newline {\scriptsize (Shield)}			&
+		Defeats Anti-Personnel Software.										&	3	&	1	&	150		\\
+		\textbf{Anti-System} \newline {\scriptsize (Flatline)}		&
+		Causes system to crash.													&	3	&	2	&	570		\\
+		\textbf{Anti-ICE} \newline {\scriptsize (Killer II)}		&
+		Does 1d6 damage to target software's STR.								&	2	&	5	&	1320	\\
+		\textbf{Anti-Personnel} \newline {\scriptsize (Hellbolt)}	&
+		Does 1d10 Hits directly to target's body if connected via a cyber-jack.	&	4	&	4	&	6750	\\
+		\textbf{Firewall} \newline {\scriptsize (Datawall)}			&
+		Prevents all access to restricted information.							&	POW	&	--	&	--		\\
+																	&			&	+1	&	+1	&	+1000	\\
+		\textbf{Authentication} \newline {\scriptsize (Codegate)}	&
+		Allows access to restricted information to authorized users				&	2	&	1	&	2000	\\
+																	&			&	+1	&	+1	&	+2000	\\
+		\textbf{Detection} \newline {\scriptsize (Guard Dog)}		&
+		Detects unauthorized users, traces signal, and alerts SysAdmin.			&	4	&	5	&	720		\\
+\end{tabular}~\\
+
+Other software found in Cyberpunk 2020 is fully compatible with this system.
+
+\begin{center} \rule{0.85\textwidth}{0.01cm} \end{center}
+
+\clearpage
+
+\begin{center} \rule{0.85\textwidth}{0.01cm} \end{center}
+
+\textbf{\underline{\large Utilities}}~\\
+
+Utilities are programs that help the Hacker in between runs. Though most don't provide any practical application during the run, they're nonetheless essential applications for the upkeep and preparation of a hacker's computer. ~\\
+
+\begin{tabular}[ht]{ p{3.00cm} p{10.00cm} p{1.50cm} p{1.50cm} p{1.50cm} }
+	\textbf{\underline{Type}}	&	\textbf{\underline{Effect}}	&	\textbf{\underline{Strength}}	&	\textbf{\underline{MU}}	&	\textbf{\underline{Cost}}	\\
+		\textbf{Restore Utility}			\newline {\scriptsize (ReRezz)}			&
+		Recompiles and restores destroyed programs.					&	3	&	1	&	130		\\
+		\textbf{Recorder Utility}			\newline {\scriptsize (Instant Replay)}	&
+		Records activities of current Hack for replay later.		&	8	&	2	&	180		\\
+		\textbf{Virus Protection Utility}	\newline {\scriptsize (Gatemaster)}		&
+		Detects and destroys Virus programs.						&	5	&	1	&	150		\\
+		\textbf{File Protection Utility}	\newline {\scriptsize (Electrolock)}	&
+		Locks datafiles as a Strength 3 Code Gate.					&	7	&	2	&	170		\\
+		\textbf{Compression Utility}		\newline {\scriptsize (Packer)}			&
+		Reduces program size by 1/2. Takes 2 turns to unpack.		&	4	&	1	&	140		\\
+		\textbf{Backup Utility}				\newline {\scriptsize (Backup)}			&
+		Creates copies of most programs on chip.					&	4	&	1	&	140		\\
+		\textbf{VR Map Utility}				\newline {\scriptsize (Cartographer)}	&
+		Supplies complete system map of VR interface.				&	6	&	3	&	200		\\
+		\textbf{Utility Package}				\newline {\scriptsize  }			&	
+		All of the above in one package. Saves MU and money.		&	5	&	10	&	1000	\\
+\end{tabular}
+
+\begin{center} \rule{0.85\textwidth}{0.01cm} \end{center}
+
+%% \clearpage
+
+\begin{multicols}{2}
+
+\textbf{\underline{\large The Goods}}~\\
+Once a successful Hacker has bypassed security (Datawalls, Codegates, and Detection software), he now has access to the Datafortress' CPU. The Hacker may now view stored files (text, video, audio, VR) or run online software applications. Be warned, individual files may have further security measures attached to them. For example, a file marked ``Black Ops: Top Secret'' might have another Detection application attached to it which the Hacker must bypass. Or it may be file-locked. Tampering with any ICE applications automatically requires the Hacker bypass a File Protection Utility and any Detection Software. ~\\
+
+Common datafiles found on corporate datafortresses include:
+\begin{local_enumerate}
+	\item Inter-Office Memos (E-Mail)
+	\item Promotional Material(such as VR advertising sims and Web Pages)
+	\item Business Records (including databases)
+	\item Financial Transactions
+	\item Grey Ops
+	\item Black Ops
+\end{local_enumerate}
+
+CPU's house applications for online use as well. Applications range from simple spreadsheets and word processors to VR Simulations and computer-controlled robotic systems such as security video surveillance, elevators, building climate-control, assembly robots, etc. ~\\
+
+\textbf{Note on making copies}: In the Cyberpunk future, all files have a file-history, recording all modifications to the file. Though modifications can be made to the file-history, the File-history now has a record of the modification. This feature is used to determine the propriety of data. For instance, a hacker finds a file in the Arasaka database called ``Black Ops: Top Secret''. The File History for that file will indicate how many times it's been viewed, by what User, and when. Our Hacker decides to make a copy. The original now records that a copy was made at this date by this user. The new Copy records that it was copied from an original on this date by this user. Every time the hacker views the material, the record shows that the file was viewed on this date by this user. If the hacker wishes to sell this information, a prospective buyer can view the file-history and see how many times the file has been seen, modified, and copied and by whom. Diluted data will lower the file's value. Virgin data will raise it's value. The enterprising Hacker can easily change the File-History, but a record is made that the filehistory has been changed, thus lowering the value even more. The Hacker can then try to delete the record of the change, but the deletion of the change is recorded in the file-history. It never ends. The safest bet is to just own one copy and not view it. ~\\
+
+\textbf{\large Standard Hacker Software} %% ~\\
+\begin{local_itemize}
+	\item[] Decryption (Strength 4, MU 2, \$400)
+	\item[] Intrusion (Strength 4, MU 1, \$400)
+	\item[] Stealth (Strength 3, MU 1, \$300)
+	\item[] Protection (Strength 3, MU 1, \$150)
+	\item[] Anti-ICE (Strength 2, MU 5, \$1320)
+	\item[] Total (MU 10, \$2570)
+\end{local_itemize}~\\
+
+\textbf{\large Standard Datafortress Software} %% ~\\
+
+\begin{local_enumerate}
+	\item \textbf{Mundane Systems}~\\
+		Detection (Strength 4, MU 5, \$720)~\\
+		Total (MU5, \$720)
+	\item \textbf{Grey Systems}~\\
+		Detection (Strength 4, MU 5, \$720)~\\
+		Anti-System (Strength 3, MU 2, \$570) Grey Systems Only~\\
+		Total (MU 7, \$1290)
+	\item \textbf{Black Systems}~\\
+		Detection (Strength 4, MU 5, \$720)~\\
+		Anti-System (Strength 3, MU 2, \$570) Grey Systems Only~\\
+		Anti-Personnel (Strength 4, MU 4, \$6750) Black Systems Only~\\
+		Total (MU 11, \$8040)
+\end{local_enumerate}
+
+\vfill
+\columnbreak
+
+\textbf{\large Sample Computers} %% ~\\
+
+\begin{local_enumerate}
+	\item \textbf{Minor business} or \textbf{personal system} (grey info) ~\\
+		Statistics: POW 1 (1 CPU, -2 POW) , MU 40, Speed 0, \$4000 ~\\
+		Example: DataTerms, Minor Personal Information, Palmtops, Portable Computers.
+	\item \textbf{Major business} (grey info) or \textbf{personal system} (black info) ~\\
+		Statistics: POW 3 (1 CPU), MU 40, Speed 3, \$16,000 ~\\
+		Example: Business Accounts, Secret Personal Information
+	\item \textbf{Major business} (black info) or \textbf{Megacorp system} (grey info) ~\\
+		Statistics: POW 6 (2 CPU), MU 80, Speed 6, \$32,000 ~\\
+		Example: Alternative Accounts, Customer Sales Information
+	\item \textbf{Government} (grey info), \textbf{Megacorp} (black info) or \textbf{Criminal system} (grey info) ~\\
+		Statistics: POW 9 (3 CPU), MU 120, Speed 9, \$48,000 ~\\
+		Example: Police Files, Sabotage Information, Holdings Information
+	\item \textbf{Government} (black info), \textbf{Orbital} (grey info), or \textbf{Criminal system} (black info) ~\\
+		Statistics: POW 10 (4 CPU, -2 POW), MU 160, Speed 10, \$54,000 ~\\
+		Example: Black Op Files, Internet Account Holders, Face Bank Accounts
+	\item \textbf{Orbital system} (black info) ~\\
+		Statistics: POW 12 (4 CPU), MU 160, Speed 12, \$64,000 ~\\
+		Example: Agora Mecca, Cyber Circle Lunar, Ishima Orbital Databases, Artificial Intelligences.
+\end{local_enumerate} %% ~\\
+
+\end{multicols}
+
+\begin{center} \rule{0.85\textwidth}{0.01cm} \end{center}
+
+\textbf{\underline{\large Steps in Cracking a Datafortress:}} %% ~\\
+
+\begin{local_enumerate}
+	\item \textbf{Library Research} (\emph{Intelligence} + \emph{Library Research} + \emph{3d6 vs. Difficulty Number}) to determine little facts about the corporation. The margin of success is granted as a bonus to the Decryption roll in step 2. ~\\
+		\textbf{\emph{Bonus: }}The Hacker loads up a good selection of software. Necessary applications include one Decryption, one Intrusion, one Stealth, one Anti-ICE, and one Protection.
+	\item \textbf{LDL} (\emph{Roll over LDL Security Level on 1d10}). The Hacker has connected to a remote server and may use it to connect (LDL) to another remote server, making a chain of connections to their target. SysAdmins must trace each connection to determine the Hacker's LDL. Once a chain of connections has been established, the Hacker may use the same chain indefinitely unless access is revoked by the remote server's Net Access Provider. ~\\
+		If unsuccessful, the remote server has refused to connect the Hacker. The Hacker must then make a final connection to the target server.
+	\item \textbf{Decryption vs. Codegate} (\emph{Intelligence} + \emph{Hacking} + \emph{Decryption Program Str} + \emph{3d6 vs. Power} + \emph{Security} + \emph{Codegate Str} + \emph{3d6}). If successful, the Hacker has fooled the Code Gate into allowing unauthorized access to the server. The Hacker is still susceptible to Detection software, proceed to step 4. ~\\
+		If unsuccessful, the Hacker still has no access to the server. Repeated failed attempts(3d6) will cause any Detection Software to alert the SysAdmin to the attempt who may use Detection software to initiate a trace to locate and/or monitor the possible Hacker. Continue to Step 4.
+	\item \textbf{Intrusion vs. Datawall} (\emph{Intelligence} + \emph{Hacking} + \emph{Intrusion Program Str} + \emph{3d6 vs. Power} + \emph{Security} + \emph{Datawall Str} + \emph{3d6}). If successful, the Datawall has been circumvented and the hacker now has access to the server. The Hacker is still susceptible to Detection software, however. Proceed to step 5. ~\\
+		If unsuccessful The Hacker still has no access to the server but may have been noticed. If unnoticed, try again. ~\\
+		If noticed, either a SysAdmin or an Anti-Personnel Program has been notified of the Hacker's presence and will attempt to apprehend or discourage him, proceed to Combat!
+	\item \textbf{Stealth vs. Detection} (\emph{Power} + \emph{Security} + \emph{Detection Str} + \emph{3d6 vs. Intelligence} + \emph{Hacking} + \emph{Stealth Str} + \emph{3d6}). If successful, the Detection Software has detected no unauthorized activity but may attempt to re-validate the user after an interval of time (3d6 rounds), proceed to step 6. ~\\
+		If unsuccessful, the Detection Program has detected unauthorized activity and may notified either a SysAdmin or an Anti-Personnel Program to apprehend or discourage the Hacker, proceed to Combat!
+	\item \textbf{You now have access to the CPU}. The computer thinks you are logged on as an official authorized user. You may access datafiles and software applications available on that server. Some datafiles and applications may contain further security measures. If so, repeat step 3.
+	\item \textbf{Cover your tracks}. Failing to log off or being cut from the line means that the SysAdmin can still trace your location. Be sure to always log off properly. View the contents of any file you download, but be wary of the filehistory: don't dilute your data!
+\end{local_enumerate} %% ~\\
+
+\begin{center} \rule{0.85\textwidth}{0.01cm} \end{center}
+
+\textbf{\underline{\large Combat!}} %% ~\\
+
+\begin{local_enumerate}
+	\item \textbf{Initiative. }~\\
+		\emph{Human Intelligence} + \emph{Computer's Speed} + \emph{3d6} versus
+		\emph{Computer's Power} + \emph{Speed} + \emph{3d6}
+	\item \textbf{Loser declares first, Winner acts first. } Therefore, if the loser is launching an Anti-Personnel Program towards the intruder, the winner may either activate a suitable defense or take a chance and attack the loser first. 
+	\item \textbf{Combat Options:}
+	\begin{local_enumerate}
+		\item[a] \textbf{Intruder attacks ICE. } (\emph{Intelligence} + \emph{Hacking} + \emph{Anti-ICE Program Str} + \emph{3d6 vs. Computer's Power} + \emph{Security} + \emph{Program Str} + \emph{3d6}). If successful, the target software application has crashed and erased from the server. ~\\
+			If unsuccessful, the attack has failed to crash the application. Detection Software automatically traces the Hacker's connection and alerts the SysAdmin to the attempt who may attempt to discourage the Hacker.
+		\item[b] \textbf{Intruder attacks SysAdmin or SysAdmin attacks Intruder. } (\emph{Intelligence} + \emph{Hacking/Security} + \emph{Anti-Personnel Program Str} + \emph{3d6 vs. Protection Program Str} + \emph{Intelligence} + \emph{Hacking/Security} + \emph{3d6}) If successful, the Anti-Personnel program has done damage directly to the user's brain (STR -- Protection STR in Hits), only if connected via a cyber-modem. On older non-cyber connections, treat attack as an Anti-System attack. ~\\
+			If unsuccessful, the attack has failed to do any damage.
+		\item[c] \textbf{Defending CPU attacks Intruder } (\emph{Computer's Power} + \emph{Security} + \emph{Anti-Personnel Program Str} + \emph{3d6 vs. Intelligence} + \emph{Hacking} + \emph{Protection Program Str} + \emph{3d6}) If successful, the Anti-Personnel program has done damage directly to the user's brain (STR -- Protection STR in Hits), only if connected via a cyber-modem. On older non-cyber connections, treat attack as an Anti-System attack. ~\\
+			If unsuccessful, the attack has failed to do any damage.
+		\item[d] \textbf{Intruder attacks System. } (\emph{Intelligence} + \emph{Hacking} + \emph{Program Str} + \emph{3d6 vs. Computer's Power} + \emph{Security} + \emph{DataWall Str} + \emph{3d6}) If successful, the Anti-system software has caused a CPU to crash, ceasing all activity until the CPU can be re-initialized using a Restore Utility. The Intruder is immediately disconnected, but not logged off. Once the CPU is re-initialized, the SysAdmin may attempt the trace the connection. If the target is using more than 1 CPU, all CPUs must be neutralized for the target to crash. ~\\
+			If unsuccessful, the attack against the CPU failed. Detection Software automatically alerts the SysAdmin to the attempt who may initiate a trace to locate and/or monitor the possible Hacker.
+		\item[e] \textbf{Detection Software Traces Intruder } (\emph{Power} + \emph{Security} + \emph{Program Str} + \emph{3d6 vs. Intelligence} + \emph{Hacking} + \emph{Trace Value} + \emph{3d6}) If successful, the Detection Software has located the origin of the Hacker's connection and informed the SysAdmin. A Detection Program must trace each connection in the event of chained connections (see above) to determine the origin. Once determined, the SysAdmin may notify the Hacker's Net Access Provider in an attempt to have their access revoked. In addition, any further attempts to connect from any server on a traced chain will automatically alert the SysAdmin's Detection Software of the unauthorized access. If a connection was severed without spending an action Logging Off, the SysAdmin can still perform a Trace on that severed connection. ~\\
+		If unsuccessful, the trace has failed. The Detection Program may attempt to trace a connection each round.
+	\end{local_enumerate}
+	\item \textbf{Damage. } Damage is allocated to affected systems or programs (or Hits in the case of Black ICE).
+\end{local_enumerate} %% ~\\
+
+\begin{center} \rule{0.85\textwidth}{0.01cm} \end{center}
+
+\begin{multicols*}{2}
+	\small
+\textbf{\underline{\large Glossary}} %% ~\\
+
+\begin{local_itemize}
+	\item[] \textbf{Anti-ICE Software: } software meant to crash and delete other software applications.
+	\item[] \textbf{Anti-Personnel Software: } software meant to do damage to the actual Netuser. Only works in mileu that use Cybernetic interfaces.
+	\item[] \textbf{Anti-System Software: } software meant to crash or immobilize another computer's CPU.
+	\item[] \textbf{Artificial Intelligence: } an advanced computer capable of full interaction and decision-making.
+	\item[] \textbf{Black Info/System: } Top Secret information. Information that someone is willing to kill to keep secret. A Datafortress with deadly countermeasures such as Anti-Personnel software.
+	\item[] \textbf{Codegate: } a Cyberpunk 2020 term for an authentication mechanism or Firewall. Codegates could check namepassword combinations, computer location (LDL), fingerprints, retinas, voice-prints, DNA, etc.
+	\item[] \textbf{CPU: } Central Processing Unit, the brain of a computer. Many computers have multiple redundant CPUs that increase processing power. Also, if one fails, the computer can keep operating at a reduced level.
+	\item[] \textbf{Cyberdeck: } or Cybermodem, a computer device that uses the operator's living brain as a CPU.
+	\item[] \textbf{Datafile: } any file that contains information. Datafiles can be text, graphics, video, audio, or full sensory VR simulations.
+	\item[] \textbf{Datafortress: } A Dataserver that restricts information to authorized users.
+	\item[] \textbf{Dataserver: } A futuristic term for a server, a computer which provides data upon request.
+	\item[] \textbf{Datawall: } A Cyberpunk 2020 term for a Firewall, a Datawall without a Codegate simply doesn't provide access to it's protected information and must be defeated with Intrustion Software.
+	\item[] \textbf{Decryption Software: } Software designed to bypass Codegates by fooling it into providing access.
+	\item[] \textbf{Detection Software: } Software that periodically re-checks users on a server to authenticate access. If unauthorized access is discovered, the Detection Software notifies the SysAdmin or automatically deploys Anti- Personnel or Anti-System applications depending on how the Datafortress is set up.
+	\item[] \textbf{Euro: } The Cyberpunk 2020 unit of currency. For modern settings, simply replace with dollars.
+	\item[] \textbf{Grey Info/System: } Secret information. Information no one is willing to kill to keep secret. A Datafortress with non-lethal countermeasures such as Anti-System software.
+	\item[] \textbf{Hacker: } A generic term for anyone attempting to gain unauthorized access to restricted information of applications.
+	\item[] \textbf{Hacking: } Skill used by Hackers. In game terms, Hacking and Security are the same skill used for different purposes.
+	\item[] \textbf{ICE: } Intrusion Countermeasure Electronics, encompassing any software applications designed to prevent unauthorized access to a Datafortress.
+	\item[] \textbf{Icon: } A visual representation. In Cyberpunk 2020, refers to a 3D representation of a computer object. A file might be represented by an icon that, once clicked/grabbed/pushed/opened, will display the contents of that file. Often, events are represented by an icon. For instance, a SysAdmin might represent his presence on the server with an icon of a knight in armor. If the Hacker sees a knight in armor, then he knows the SysAdmin is logged onto the server.
+	\item[] \textbf{Internet Corporation: } A Cyberpunk 2020 creation meant to be a conglomerate of Net Access Providers. In the modern world, these would be comprised of several companies such as MCI, ATT, UUNet, etc. Intrusion Software: Software meant to temporarily disable Datawalls, allowing access to the server. The disadvantage is that their use may alert Detection Software applications.
+	\item[] \textbf{LDL: } A Cyberpunk 2020 equivalent of the modern IP address. In Cyberpunk 2020, the LDL also serves as an allpurpose phone number, e-mail address, and voice-mail box.
+	\item[] \textbf{Memory Unit: } A Cyberpunk 2020 equivalent to Megabytes. It has no real-world conversion and was used in lieu of actual future memory sizes which can become dated quickly.
+		\vfill \columnbreak
+	\item[] \textbf{Mundane Info/System: } Confidential information, but hardly a secret. Information that is restricted but isn't guarded by countermeasures. Datafortresses that employ Detection Software only.
+	\item[] \textbf{The Net: } The Cyberpunk 2020 equivalent of the Internet. The Cyberpunk 2020 Net is represented by a 3D fullsensory
+	\item[] \textbf{Virtual Reality: } Other names for the Net include the Face, the Cybernet, the Interface, the Web, etc.
+	\item[] \textbf{Net Access Provider: } A company that rents temporary LDL's to Netusers. The Internet Corporation is a large Net Access Provider. NAP's generally cooperate with SysAdmins in discouraging Hacker activity. If an NAP is notified that one of their Netusers is possibly a Hacker, they will discontinue that Netuser's service. The futuristic equivalent of modern day Internet Service Providers.
+	\item[] \textbf{Netuser: } Anyone using the Net legally. The equivalent of the modern Net surfer.
+	\item[] \textbf{Power: } A Fuzion game mechanic meant to be a relative measure of a computer's ability.
+	\item[] \textbf{Security Level: } A Fuzion game mechanic meant to represent the skill used by either a SysAdmin or Computer CPU to deter or capture Hackers. In game terms, Security and Hacking are the same skill used for different purposes.
+	\item[] \textbf{Server: } A computer connected to the Net. The server acts as a middle-man between the person requesting information and the memory storing the information. Your computer sends a request to the server, the server finds it, the server sends the information to your computer.
+	\item[] \textbf{Speed: } A Fuzion game mechanic meant to be a relative measure of a computer's speed. Stealth Software: Software that attempts to fool Detection Software into authenticating or ignoring an unauthorized Hacker.
+	\item[] \textbf{Strength: } A Fuzion game mechanic meant to be a relative measure of a program application's ability.
+	\item[] \textbf{SysAdmin: } System Administrator. The person in charge of maintaining a Datafortress' security.
+	\item[] \textbf{System: } A collection of computer components that work together. A group of computers attached to a single network would be a system. The Net as a whole might be considered a very large system. Trace Value: The relative difficulty in tracing a connection's origin.
+	\item[] \textbf{Virtual Reality Interface: } Much like a modern Graphic User Interface (GUI), the VR Interface displays the computer's ``Desktop'' as a 3D interactive universe around the user. In Cyberpunk 2020, the Net can be accessed in such an interface, displaying Net LDL's as Icons around the user. The user moves freely about in this space, choosing the icon they wish by coming into contact with it with their hands. Their bodies are displayed to them as whatever the user wishes and programs much like a modern cursor, their hands acting as a mouse in space.
+	\item[] \textbf{VR Construct: } A 3D Icon in a VR Interface. A VR construct can be anything, limited only by the imagine of the creator. It's size is determined by how much memory it requires.
+	\item[] \textbf{VR Sim: } A VR Simulation. A tiny virtual universe. In Cyberpunk 2020, VR Sims can be interactive games, advertisements, network conference areas, or fantasy playgrounds. Any situation that requires being someplace you can't actually physically be can be solved with a VR Sim.
+\end{local_itemize}
+
+\begin{center} \rule{0.45\textwidth}{0.01cm} \end{center}
+
+\textbf{\underline{\large References}}~\\
+
+For more information on other Hacking and Netrunning systems, see:
+\begin{local_itemize}
+	\item[] \textbf{Cyberpunk 2020} by Mike Pondsmith, R.Talsorian Games.
+	\item[] \textbf{Bubblegum Crisis RPG} ~\\ by Benjamin Wright, R.Talsorian Games.
+	\item[] \textbf{NETRUNNING RULES} by \texttt{syberman@syberman.demon.co.uk.}
+	\item[] \textbf{Skyfire Master Force} by Gary Townsend, HERO Games.
+	\item[] \textbf{How Hackers Break In... and How They Are Caught} by Carolyn P. Meinel, Scientific American, October 1998.
+\end{local_itemize}
+
+\begin{center} \rule{0.45\textwidth}{0.01cm} \end{center}
+
+\includegraphics[width=5.00cm]{rTalsorianGamesInc-logo.png}
+
+{\scriptsize Cyberpunk:2020 and Fuzion are a Registered Trademarks of R.Talsorian Corporation. Original Cyberpunk:2020 material Copyright 1994, 1995 by R.Talsorian Corporation. All Rights Reserved. Used without permission. Any use of R.Talsorian Corporation's copyrighted material or trademarks in this archive should not be viewed as a challenge to those copyrights or trademarks. }
+
+\end{multicols*}
+
+\clearpage
+
+\begin{landscape}
+
+\begin{center}
+	\textbf{\LARGE Netrunning Softwares}
+\end{center}
+
+\rowcolors{1}{white}{verylightgray}
+\begin{longtable}[ht]{ p{3.00cm} p{0.75cm} p{0.75cm} p{1.25cm} p{10.00cm} p{0.75cm} p{7.50cm} }
+	%% \textbf{<<Type / Name>>}		&	\textbf{Str}	&	\textbf{MU}		&	\textbf{Cost(eb)}	&	
+	%% 		\textbf{Function}		&	\textbf{From}	&	\textbf{Icon}	\\
+			
+			\hline
+			\rowcolor{lightgray}
+				\textbf{Type / Name}		&	\textbf{Str}	&	\textbf{MU}		&	\textbf{Cost(eb)}	&	
+						\textbf{Function}		&	\textbf{From}	&	\textbf{Icon}	\\
+			\hline 
+		\endfirsthead
+			\hline
+			\rowcolor{verylightgray} ... & ... &... & ... &... & ... & ... \\
+			\hline
+			\rowcolor{lightgray}
+				\textbf{Type / Name}		&	\textbf{Str}	&	\textbf{MU}		&	\textbf{Cost(eb)}	&	
+						\textbf{Function}		&	\textbf{From}	&	\textbf{Icon}	\\
+			\hline
+		\endhead
+			\hline
+			\rowcolor{verylightgray} ... & ... &... & ... &... & ... & .... \\
+			\hline
+		\endfoot
+			\hline \hline
+		\endlastfoot
+		
+	\hline %% 						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Intrusion}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Dwarf					&	3	&	3	&	230	&	Stronger version of Worm	
+		&	BB	&		Small, quiet digging machine.	\\
+	Grubb					&	1	&	3	&	210	&	Weaker version of Worm	
+		&	BB	&		Swarm of puke-green grubs that eat their way through the Wall.	\\
+	Hammer					&	4	&	1	&	400	&	2D6 to Data Wall STR, alerts programs within 10 spaces	
+		&	CP20	&		Glowing red hammer.	\\
+	Jackhammer				&	2	&	2	&	360	&	1D6 to Data Wall STR	
+		&	CP20	&		Glowing red jackhammer, which fires a stream of white hot energy bolts at the Data Wall.	\\
+	Jap Water Torture		&	3	&	4	&	260	&	Min of 2 turns, each additional turn adds +1 STR (max 7)	
+		&	BB	&		Tiny, random drops of glowing "water" strike the Wall, causing ripples.	\\
+	Pile Driver				&	8	&	4	&	800	&	4D6 to Data Wall STR, alerts progs in 30 spaces, \& Netwatch	
+		&	Chr3	&		Steam-powered pile driver on the verge of blowing up.	\\
+	Portal					&	2	&	6	&	750	&	Opens door in Data Wall, takes 3 turns, no alert	
+		&	NET	&		Metallic door that slowly meshes with the Data Wall then swings open for the Netrunner.	\\
+	Ramming Piston			&	10	&	3	&	900	&	5D6 to Data Wall STR, "audible" to anything within 50 spaces	
+		&	BB	&		Huge nuclear powered battering ram, as drawn by Jack Kirby.	\\
+	Sledgehammer			&	6	&	2	&	600	&	3D6 to Data Wall STR, alerts programs within 15 spaces	
+		&	Chr3	&		Glowing white Sledgehammer.	\\
+	Termite					&	1	&	2	&	160	&	1D6 to Data Wall STR	
+		&	Chr1	&		Brown, fist-sized, fractal insect with bright blue eyes. Emits low-pitched bleeps as it burrows into Wall.	\\
+	Worm					&	2	&	5	&	660	&	Opens Data Wall in 2 turns, no alert	
+		&	CP20	&		Gold-metal, robotic worm, with green neon eyes.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Decryption}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Codecracker				&	3	&	2	&	380	&	Opens Code Gates	
+		&	CP20	&		Thin beam of white light, which shoots from the Netrunner's hands and spreads through the Code Gate.	\\
+	Cyfermaster				&	6	&	3	&	700	&	Stronger version of Raffles	
+		&	BB	&		Fractal image of a man floating in lotus position.	\\
+	Dupre					&	1-8	&	4	&	900	&	Opens Code Gates \& File Locks	
+		&	Chr3	&		Elegant middle-aged Victorian. He speaks to the locked Gate, and takes notes as he does so.	\\
+	Raffles					&	5	&	3	&	560	&	Opens Code Gates \& File Locks	
+		&	CP20	&		Dapper young man wearing evening clothes of the 1990's. He speaks to the door then vanishes.	\\
+	Tinweasel				&	3	&	4	&	300	&	Sneaky decryptor	
+		&	BB	&		Shifty-eyed character with an insincere smile.	\\
+	Wizard's Book			&	4/6	&	2	&	400	&	Opens Code Gates \& File Locks	
+		&	CP20	&		Stream of blazing white symbols, flowing at incredible speed from the Netrunner's open hand.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Detection/Alarm}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Bloodhound				&	3	&	5	&	700	&	Detects entry, traces, alerts master	
+		&	CP20	&		Large, gun-metal grey hound. It has glowing blue eyes and wears a thick circlet of blue neon.	\\
+	Bulldog					&	6	&	6	&	660	&	Detects entry, alerts master, disconnects intruder	
+		&	Chr1	&		Short, burly humanoid in metal armour. A glowing visor is situated above snarling, canine jaws.	\\
+	Canis Major/Minor		&	4	&	5	&	610	&	Detect entry, alerts owner	
+		&	BB	&		Large steel statue of a dog/a computerised chihuahua.	\\
+	Cry Baby				&	4	&	4	&	430	&	"Tags", adds 4 to traces when copied	
+		&	Chr3	&		None until activated, then it appears as a baby, hanging around the Netrunner's neck, screaming.	\\
+	Clairvoyance			&	4	&	4	&	720	&	SeeYa 3.0, detects and IDs Icons (+invisibles) within 2 subgrids	
+		&	Chr3	&		The eyes of the Netrunner's icon glow fiery blue, or a pair of glowing eyes appear if the icon has none.	\\
+	Data Raven				&	5	&	6	&	1000	&	Detects entry, traces, alerts master whenever target appears	
+		&	BB	&		Metal-plated black bird.	\\
+	Fang					&	4	&	6	&	1300	&	Detects entry, traces, disconnects target until destroyed	
+		&	BB	&		Glowing green pit bull.	\\
+	Fang 2.0				&	5	&	6	&	1600	&	Detects entry, traces, disconnects target until destroyed	
+		&	BB	&		Robotic pit bull with a red head.	\\
+	Fetch 4.01.1			&	3	&	5	&	700	&	Detects entry, traces, alerts master	
+		&	BB	&		Chrome greyhound with glowing blue collar.	\\
+	Guard-Dog				&	4	&	5	&	720	&	Invisible; detects entry, alerts master	
+		&	Chr1	&		Detected it appears as a standard Bloodhound, other wise it is a slight flicker at the periphery of vision.	\\
+	Hidden Virtue			&	3	&	1	&	280	&	Detects "real" things in VR	
+		&	CP20	&		Glowing green ring which the Netrunner looks through.	\\
+	Hunter					&	5	&	5	&	900	&	Detects entry, traces, alerts master	
+		&	BB	&		Hound head lunging down the target's line.	\\
+	Looking Glass			&	1-6	&	3	&	250+20/str	&	Detects disguised Icons	
+		&	Chr3	&		Series of mirrors appears in front of the Netrunner, passing over and through the target icon.	\\
+	Mouse					&	5	&	5	&	350	&	Creeps into forts and makes a record of what's inside	
+		&	BB	&		Small, innocuous mouse.	\\
+	Netspace Inverter		&	3/5	&	4	&	540	&	Travels through a fort at 2 subgrids/turn IDing programs and files	
+		&	BB	&		Flying eyeball; turns invisible when activated.	\\
+	Pit Bull				&	2	&	6	&	780	&	Detects entry, traces, disconnects target until destroyed	
+		&	CP20	&		Short, heavily built, steel dog. It has glowing red eyes and wears a circlet of red neon.	\\
+	Rex						&	3	&	6	&	1000	&	Detects entry, traces, disconnects target until destroyed	
+		&	BB	&		Rather nasty, metal plated dog with really big teeth.	\\
+	See Ya					&	3	&	1	&	280	&	Detects Invisible Icons	
+		&	CP20	&		Shimmering silver screen.	\\
+	Shadow					&	4	&	3	&	540	&	Degrades evasion programs	
+		&	Chr3	&		Netrunner's icon gains a long, humanoid shadow.	\\
+	Smarteye				&	3	&	4	&	620	&	Detects progs within 10 spaces, IDs attack progs	
+		&	Chr1	&		Spinning crystal ball; the ball stops and the appropriate icon appears within.	\\
+	Speedtrap				&	4	&	4	&	600	&	Detects attack programs within 10 spaces	
+		&	CP20	&		Flat, glowing plate of glass, in which images appear.	\\
+	Watchdog				&	4	&	5	&	610	&	Detects entry, alerts owner	
+		&	CP20	&		Large, black, metal dog. It has glowing red eyes and a spiked metal collar.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Anti-System}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Asp						&	4	&	2	&	800	&	Kills cyberdeck interface	
+		&	BB	&		Glowing golden snake.	\\
+	Cascade					&	7	&	4	&	900	&	Erases 2D6 MU of random memory	
+		&	Chr3	&		Shower of random neon-coloured pods \& capsules sprays the target's icon and are absorbed on contact.	\\
+	Cascade II				&	3	&	2	&	800	&	20\% chance that program changes. Decks chose new prog/turn	
+		&	BB	&		Floating ball of energy.	\\
+	Clown					&	3	&	5	&	1130	&	Disrupts data transmission, progs are -1 STR, 'runners -1 Initiative	
+		&	BB	&		Annoying, loud, obnoxious, white-faced circus clown, complete with slapstick, seltzer bottle, pies, etc.	\\
+	DecKRASH				&	4	&	2	&	600	&	Crashes 'deck for 1D6 turns	
+		&	CP20	&		Cartoon stick of dynamite with fuse.	\\
+	Feedback				&	4	&	3	&	960	&	Kills deck's interface and "jams" 'runner plugs	
+		&	I.3	&		Beam of orange neon which shoots from the Netrunner's fingertips.	\\
+	Flatline				&	3	&	2	&	570	&	Kills cyberdeck interface	
+		&	CP20	&		Beam of yellow neon which shoots from the Netrunner's fingertips.	\\
+	Fragmentation Storm			&	4	&	3	&	1000	&	Kills system RAM	
+		&	BB	&		Huge white electrical arc that strikes the target and follows his line back to his deck.	\\
+	Grid Wave				&	7	&	8	&	20K	&	Distorts I-G algorithms	
+		&	Chr4	&		Black sphere with twisting light waves surrounding it.	\\
+	HellBurner				&	6	&	5	&	1000	&	Destroys target CPU	
+		&	Chr3	&		Giant, disembodied fist which burns with blue, fractal fire, grabs onto target, engulfing it in blue flames.	\\
+	Krash					&	3	&	2	&	570	&	Crashes closest CPU for 1D6+1 turns	
+		&	CP20	&		Large, cartoon anarchist bomb, with a sizzling fuse.	\\
+	Murphy					&	3	&	2	&	600	&	Causes system to randomly activate programs	
+		&	CP20	&		You never know...	\\
+	Pi in the Face			&	5	&	4	&	800	&	Makes CPU calculate Pi	
+		&	Chr3	&		Large cartoon pie, for throwing.	\\
+	Poison Flatline			&	2	&	2	&	540	&	Kills system RAM	
+		&	CP20	&		Beam of green neon which launches from the Netrunner's fingertips.	\\
+	Poltergeist				&	5	&	3	&	660	&	Randomly erases one file each turn	
+		&	BB	&		Random flashes of energy from everywhere, wiping data and files.	\\
+	Pox						&	4	&	2	&	800	&	Causes a glitch in ambush ICE, 30\% chance of derezzing	
+		&	BB	&		Floating ball of energy that explodes into a wash of sickly coloured globules.	\\
+	Scatter Shot			&	4	&	3	&	660	&	Kills system RAM	
+		&	BB	&		Shotgun shooting fractal shot.	\\
+	Swarm					&	1	&	7	&	3000	&	Causes target system to replicate Swarm programs	
+		&	Chr4	&		Cartoon-y bee that flies towards a CPU, stinging it.	\\
+	Typhoid Mary			&	6	&	8	&	2400	&	Infiltrates 'runner and deletes files	
+		&	Chr3	&		Female Killer robot.	\\
+	Weed					&	2	&	3	&	630	&	-1 target speed per successful attack	
+		&	Chr4	&		Tangled weeds growing on the icon of the system's CPU(s).	\\
+	Vacuum					&	5	&	3	&	1200	&	Attacks location algorithms, forces 'runner to where he entered fort	
+		&	BB	&		Series of hexagonal frames that suck the 'runner's Icon out of the data fort.	\\
+	Virizz					&	4	&	2	&	600	&	Ties up 1 system action until turned off or destroyed	
+		&	CP20	&		Glittering DNA shape made of lights and neon.	\\
+	Viral 15				&	4	&	2	&	590	&	Randomly erases one file each turn	
+		&	CP20	&		Swirling metallic blue fog with a white neon DNA helix embedded in the centre.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Evasion/Stealth}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Black Mask				&	1-5	&	3-4 	&	200/STR	&	Makes your Icon look like something/one else	
+		&	NET	&		Anything programmed into it.	\\
+	Cloak					&	5	&	2	&	2000	&	Powerful variant of Invisibility	
+		&	BB	&		Makes the user's Icon invisible.	\\
+	Domino					&	5	&	3	&	1500	&	Makes your Icon look like one common to the locale	
+		&	BB	&		Depends on the data fort.	\\
+	George					&	4	&	1	&	300	&	Adds 4 to Trace Difficulty	
+		&	Chr3	&		Cartoon signpost with signs pointing in all directions.	\\
+	Invisibility			&	3	&	1	&	300	&	Makes cybersignal invisible	
+		&	CP20	&		Flickering, iridescent sheet, which drapes over the Netrunner.	\\
+	Open-Ended Mileage		&	4	&	5	&	330	&	Adds another LDL to make traces harder when activated	
+		&	BB	&		Blue sphere surrounded by two stylized lightning bolts.	\\
+	Rabbit					&	5/1	&	2	&	360	&	Draws off "Dog" programs, +2 Initiative when released	
+		&	BB	&		Fractal rabbit going like the blazes. Also Bugs Bunny variants around.	\\
+	Replicator				&	3/4	&	2	&	180	&	Confuses attacking ICE with millions of false signals	
+		&	CP20	&		Chrome sphere creating millions of holographic images of the Netrunner.	\\
+	Signpost				&	4	&	1	&	300	&	Adds 4 to Trace Difficulty	
+		&	BB	&		Signpost with signs pointing in all directions.	\\
+	Silhouette				&	6	&	4	&	600	&	'Runner looks like he's jacked out and is invisible for 5 turns	
+		&	I.3	&		Looks as it the Netrunner has jacked out.	\\
+	Spore					&	7	&	7	&	2320	&	AI suicide-replication, sends multiple copies into Net to reproduce	
+		&	NET	&		Each spore looks like a small mote of light.	\\
+	Stealth					&	4	&	3	&	480	&	Mutes cybersignal, making detection harder	
+		&	CP20	&		Sheet of black energy draped over the Netrunner's Icon.	\\
+	Superballs				&	3	&	4	&	500	&	Distracts targets, causing -3 Initiative	
+		&	Chr4	&		Thousands of primary-coloured rubber balls bouncing around target's square, as if in a glass cube.	\\
+	Vewy Vewy Quiet			&	4	&	2	&	400	&	Concentrates on avoiding detection	
+		&	BB	&		The 'runner makes no sound and turns translucent.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Protection}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Armor					&	4	&	2	&	170	&	Reduces attacks from Stun, Hellbolt, Zombie, etc by 3 points	
+		&	CP20	&		Glowing golden armor in a high tech design.	\\
+	DeckShield One			&	6	&	2	&	320	&	Adds +3 to deck's Data Walls	
+		&	Chr4	&		Deck's data fort/position in netspace is sheathed in fractal armor-plating.	\\
+	Flak					&	4/2	&	2	&	180	&	Creates static Wall to blind attackers; STR 2 vs Dog programs	
+		&	CP20	&		Cloud of blinding, glowing, multicoloured lights, swirling in all directions.	\\
+	Force Shield			&	4	&	2	&	160	&	Stops attacks against 'runner	
+		&	CP20	&		Flickering silver energy barrier.	\\
+	Joan of Arc				&	3	&	2	&	190	&	Remains "active" and takes damage meant for current program	
+		&	BB	&		Woman's face that grimaces in pain.	\\
+	OutJack					&	2	&	4	&	150	&	Jacks 'runner out of Net if he's taken Critical damage	
+		&	Chr3	&		None. 	\\
+	Reflector				&	5	&	2	&	160	&	Reflects Stun, Hellbolt, Knockout attacks	
+		&	CP20	&		Flare of blue green light, coalescing into a mirrored bowl.	\\
+	Shield					&	3	&	1	&	150	&	Stops attacks to 'runner	
+		&	CP20	&		Shifting circular energy field appearing in front of the Netrunner.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Anti-Program}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Aardvark				&	4	&	3	&	1000	&	Detects and destroys Worms	
+		&	CP20	&		Matrix of thin yellow neon lines, which close around the Worm, then dematerialise with it trapped.	\\
+	Banpei					&	1	&	5	&	1280	&	1D6 to program STR	
+		&	BB	&		Robotic samurai.	\\
+	Black Dahlia			&	7	&	7	&	2000	&	Interactive, super-realistic Killer. 2D6 damage	
+		&	BB	&		Incredibly seductive woman in a black evening dress.	\\
+	Bunnies					&	4	&	3	&	440	&	Overloads Vampyres	
+		&	Chr1	&		Rapidly-multiplying bunch of burnished gunmetal coloured bubbles, with classic "rabbit ears" antennae.	\\
+	Chameleon				&	4	&	6	&	1650	&	Killer IV with active Disguise	
+		&	NET	&		Killer with a polished mirror face that reflects the Icon of the program it is attacking.	\\
+	Codeslinger				&	4	&	3	&	2500	&	Killer written to fit less MU. 1D6 damage	
+		&	BB	&		Cowboy with six-shooter codeguns.	\\
+	D'Arc Knight			&	3	&	5	&	1360	&	1D6 to program STR	
+		&	BB	&		Svelte knight in armor.	\\
+	Data Naga				&	6	&	5	&	1480	&	1D6 to program STR	
+		&	BB	&		Exotic woman with a serpentine lower torso and six arms.	\\
+	Dogcatcher				&	10	&	7	&	1176	&	Chases and destroys tracing "Dogs"	
+		&	Chr3	&		Basic male or female humanoid shape carrying a net on a pole.	\\
+	Dragon					&	4	&	3	&	960	&	Attacks and derezzes Demons	
+		&	CP20	&		Great golden dragon robot, wreathed in electrical discharges. Laser beams shoot from it's eyes.	\\
+	Dropp					&	4	&	4	&	800	&	1D6 damage, and jacks the 'runner out of the system	
+		&	BB	&		A ripple across the immediate area like a drop in a pond.	\\
+	Eradicator				&	8/5	&	7	&	1600	&	Acts as Killer V, destroys AI Spores	
+		&	NET	&		Glowing amoeba with huge jaws.	\\
+	Exorcist				&	4	&	3	&	600	&	Removes effects of Possession	
+		&	Chr3	&		Fractal priest in full regalia, carrying a large religious symbol.	\\
+	Hydra					&	3	&	3	&	920	&	Attacks and derezzes Demons	
+		&	CP20	&		Glittering blue fog that encircles its target and dematerializes it.	\\
+	Ice Pick Willie			&	2	&	5	&	1320	&	1D6 to program STR	
+		&	BB	&		Classic '30s gangster hitman.	\\
+	Killer II				&	2	&	5	&	1320	&	1D6 to any program STR	
+		&	CP20	&		Large manlike robot, dressed as a metallic samurai. His eyes glow red and he carries a glowing Katana.	\\
+	Killer IV				&	4	&	5	&	1400	&	1D6 to any program STR	
+		&	CP20	&		Large manlike robot, dressed as a metallic samurai. His eyes glow red and he carries a glowing Katana.	\\
+	Killer VI				&	6	&	5	&	1480	&	1D6 to any program STR	
+		&	CP20	&		Large manlike robot, dressed as a metallic samurai. His eyes glow red and he carries a glowing Katana.	\\
+	Loony Goon				&	1	&	4	&	900	&	1D6 damage. Strength 0 to defend against other Killers	
+		&	BB	&		Cartoon character of the 'runner's choice.	\\
+	Manticore				&	2	&	3	&	880	&	Attacks and derezzes Demons	
+		&	CP20	&		Huge, lionlike shape, drawn in red neon schematic lines. A large scorpion tail arcs over one shoulder.	\\
+	Mirror					&	5	&	4	&	1200	&	Rebounds Hellbolts	
+		&	Chr4	&		Large, square mirror floating in front of the 'runner. The bolt goes in then comes out again.	\\
+	Ninja					&	5	&	5	&	1520	&	Invisible Killer	
+		&	Chr4	&		When seen it appears as a ninja carrying a glowing sword.	\\
+	Orion					&	7	&	7	&	6240	&	Tracks Spores, 'runners, \& programs. Destroys Spores	
+		&	I1.3	&		Powerful man or woman with bow and flying platform or an angel with wings and divine radiance.	\\
+	Possessor				&	4	&	3	&	1000	&	"Possesses" programs	
+		&	Chr3	&		Hooded robe, with nothing inside. Robe will cover another Icon, which can be seen in the hood.	\\
+	Raptor				&	2-6	&	3	&	1900	&	Killer that strikes at range, 1D6 damage. +80eb/level over 2	
+		&	BB	&		Realistic falcon which swoops down upon it's prey.	\\
+	Raven				&	5	&	4	&	1000	&	"Blinds" any programs	
+		&	Chr3	&		Raven that attempts to peck out the eyes of the target.	\\
+	Sentinels Prime			&	5	&	5	&	1440	&	1D6 to program STR	
+		&	BB	&		Golden humanoid with a big gun.	\\
+	Shaka				&	4	&	5	&	1400	&	1D6 to program STR	
+		&	BB	&		Zulu warrior with spear and shield.	\\
+	Snowball			&	2+	&	5	&	3000	&	1D6 damage, +2 STR for each program it destroys while active	
+		&	BB	&		Snowball that grows in size for each program it destroys.	\\
+	Start-Up Immolator			&	4	&	5	&	1280	&	Destroys target if used in the round when program was rezzed up	
+		&	BB	&		Bolt of flame that shoots from the 'runner's mouth and burns the target program to ash.	\\
+	Triggerman			&	4	&	5	&	1480	&	1D6 to program STR	
+		&	BB	&		Film noire-style detective.	\\
+	Wildcard			&	1	&	3	&	1400	&	1D6 to program STR	
+		&	BB	&		Representation of the old Capone ganger "Wild Card".	\\
+	Wolf				&	4	&	6	&	1500	&	Killer disguised as Watchdog	
+		&	Chr1	&		Identical to the Watchdog icon, except that it will flash entirely red as it attacks.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Anti-Personnel}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Ball and Chain			&	3	&	3	&	5000	&	Slows 'runners movement to 1 square for 1D6+3 turns	
+		&	Chr3	&		Classic prisoner's ball and chain clamped to some part of the target icon.	\\
+	Bolter Cluster			&	4	&	4	&	8000	&	Powerful Hellbolt that does 4D6 damage	
+		&	BB	&		Wicked looking turret springs forth to blast the target.	\\
+	Brainwipe				&	3	&	4	&	6500	&	Reduces INT by 1D6/turn, killing 'runner	
+		&	CP20	&		Acid-green electrical arc, which leaps from the floor and engulfs and kills the 'runner.	\\
+	Cerebus					&	6	&	8	&	9500	&	Pit Bull that shoots Hellbolts	
+		&	NET	&		Dark, metallic dog with 2 heads. One fires Hellbolts from its eyes, the other howls as it pursues target.	\\
+	Cinderella				&	6	&	4	&	9000	&	High-powered Firestarter	
+		&	BB	&		Lovely woman with green glowing eyes, in 18th century ball gown, Anything she touches ignites.	\\
+	Code Corpse				&	5	&	4	&	7500	&	Reduces INT by 1D6/turn, making 'runner mindless	
+		&	BB	&		Skeleton in a cloak with a scythe attacks the target.	\\
+	Cortical Scrub			&	3	&	4	&	6500	&	Reduces INT by 1D6/turn, killing 'runner	
+		&	BB	&		Green globe that send out electrical arcs.	\\
+	Data Darts				&	3	&	4	&	5500	&	Hellbolt variant that does 3D6 damage	
+		&	BB	&		Swarm of red globes that strike at the target.	\\
+	Fatal Attractor			&	7	&	7	&	10750	&	Attractively disguised Hellhound	
+		&	Chr1	&		Attractive young woman in a skintight bodysuit. DIFF Sys Know to recognise her.	\\
+	Firestarter				&	4	&	4	&	6250	&	Power surge electrocutes 'runner	
+		&	CP20	&		Blazing pillar of fire, which speaks the Netrunner's name in a hissing, booming voice, then leaps at him.	\\
+	Glue					&	5	&	4	&	6500	&	Locks 'runner in place for 1D10 turns	
+		&	CP20	&		Shifting pattern of red shapes flickering across the floor to entangle the Netrunner.	\\
+	Hellbolt				&	4	&	4	&	6250	&	1D10 physical damage to 'runner	
+		&	CP20	&		Bolt of crimson fire launched from the Netrunner's raised hand.	\\
+	Hellhound				&	6	&	6	&	10,000	&	Tracks target, waits, causes heart attack	
+		&	CP20	&		Huge, black, metal wolf. It's eyes glow white, and fire ripples over its body. Repeats the 'runner's name.	\\
+	Homewrecker				&	5	&	4	&	8000	&	High-powered Firestarter	
+		&	BB	&		Fiery electrical arc that shoots at the target's eyes.	\\
+	Jack Attack				&	3	&	3	&	6000	&	'Runner can't log off for 1D6 turns	
+		&	CP20	&		Pair of glowing schematic handcuffs encircling the Netrunner's wrists.	\\
+	King Trail				&	3	&	2	&	3500	&	Leaves glowing trail behind 'runner for 3D6 turns	
+		&	NET	&		Glowing yellow banana slug.	\\
+	Knockout				&	4	&	3	&	6250	&	Causes coma for 1D6 hours	
+		&	CP20	&		Yellow neon schematic boxer appears and strikes out at the Netrunner's Icon.	\\
+	Liche					&	4	&	4	&	7250	&	Erases 'runners memory and over-writes personality	
+		&	CP20	&		Metallic skeleton dressed in black robes. Grabs the 'runner in its grasp and drags him under the floor.	\\
+	Mastiff					&	5	&	6	&	12000	&	Tracks \& tags target, does 1D6 damage and reduces INT 1D6	
+		&	BB	&		Glowing blue mastiff with a huge spiked collar.	\\
+	Neural Blade			&	3	&	4	&	6750	&	1D6 physical damage to target	
+		&	BB	&		Glowing, rune-etched broadsword.	\\
+	Pepe Le Pue				&	6	&	5	&	7750	&	Reduces 'runners INT and REF for 1D6+1 turns	
+		&	NET	&		Cartoon skunk the wraps around the Netrunner's Icon.	\\
+	Psychodrome				&	4(5)	&	11	&	14000	&	Unconscious for 1D6 hours, scares victim	
+		&	Chr1	&		Disguised as system. 'Runner is placed in virtual room of faceted, mirrored walls displaying torture.	\\
+	Red-Out					&	5	&	4	&	6750	&	Paralyses 'runner for 1D6 turns	
+		&	Chr4	&		Shifting contextural haze of red pixels that descend on the Netrunner; changing the colour of his Icon.	\\
+	Shock.r					&	4	&	5	&	6300	&	Freezes 'runner for 1D6 turns	
+		&	BB	&		Golden bolt from the Netrunner's palm.	\\
+	Sleeper					&	6	&	4	&	7250	&	Non-lethal Brainwipe, makes target do a task (diff 20-30 to resist)	
+		&	I.3	&		Electrical arc, which leaps from the floor and engulfs the 'runner.	\\
+	Spazz					&	4	&	3	&	6250	&	Halves 'runners REF for 1D6 turns	
+		&	CP20	&		Nimbus of electrical energy surrounding the target.	\\
+	Stationery				&	4	&	6	&	10000	&	Prevents 'runner from moving for 5 turns	
+		&	Chr3	&		Pieces of paper, with 'You're Nicked!' on them, appears in a sort of snowstorm over the Netrunner.	\\
+	Stun					&	3	&	3	&	6000	&	Freezes 'runner for 1D6 turns	
+		&	CP20	&		Bolt of blue flame streaking from the Netrunner's open palm.	\\
+	Sword					&	3	&	4	&	6750	&	1D6 physical damage to target	
+		&	CP20	&		Glowing energy katana.	\\
+	The Audio Virus			&	5	&	5	&	8000	&	Reduces INT and REF until 'runner destroys program	
+		&	Chr4	&		Photo-realistic stereo system, which will tremble and vibrate from the noise it makes.	\\
+	Threat					&	5	&	6	&	7000	&	Makes 'runner so nervous he jacks out	
+		&	Chr3	&		Any minor offensive or defensive program. Set at time of purchase.	\\
+	TKO 2.0					&	4	&	3	&	6250	&	Causes coma for 1D6 hours	
+		&	BB	&		Chrome boxer who smacks the target with a nasty left hook.	\\
+	Werewolf				&	6	&	6	&	13,000	&	Invisible Hellhound	
+		&	NET	&		None normally, but a stylish wolf in a suit when rezzed.	\\
+	Zombie					&	5	&	4	&	7500	&	Reduces INT 1D6/turn, making 'runner mindless	
+		&	CP20	&		Shrouded, skeletal form, enveloped in stinking grey mist. It lunges out and rips the Netrunner's head off.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Multi-Purpose}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	A Picture's Worth			&	2	&	6	&	1200	&	Hides data within VRs	
+		&	Chr4	&		Slot machine. Data flows in though coin slot, machine spins a jackpot, scrambled data pours into MU.	\\
+	Al Boon					&	1D6	&	7	&	3600	&	Goes through Gates, does 1D6 damage to Walls \& programs	
+		&	BB	&		Stream of fractal code that rapidly coalesces into a fractal solid.	\\
+	Black Sky				&	5	&	8	&	4480	&	Hides 'runner in a cloud which attacks programs with "lightning"	
+		&	Chr3	&		Black cloud which forms between the enemy program and the runner.	\\
+	Blink				&	5	&	7	&	1500	&	1D6 damage to Walls and programs, goes through Gates. 50\% rel	
+		&	BB	&		Swirling cloud of fractal code that coalesces into a random fractal solid (when it works). Or blows up.	\\
+	Dummy					&	1	&	2	&	450	&	Fake, disguisable program	
+		&	Chr3	&		Small spinning chrome pyramid that reflects the Icon of any program it encounters.	\\
+	Evil Twin				&	8	&	7	&	2700	&	Combination Shield/Krash	
+		&	Chr3	&		The Netrunner's Icon seems to fly around in large arcs.	\\
+	IGOR					&	4	&	7	&	4800	&	On-line flunky	
+		&	Chr4	&		Classic "mad-scientist's" assistant; complete with lab coat and hunchback.	\\
+	Lightning Bug			&	2	&	6	&	1540	&	6 "bugs" that kill ICE before it can attack	
+		&	NET	&		6 motes of light that slowly alternate between red and white. The motes lazily circle the Netrunner.	\\
+	Omnivore				&	3	&	8	&	18500	&	Derezzes programs, fries CPUs, temporarily reduces INT by 2D6	
+		&	Chr3	&		Whirring, buzzing, screeching ball of blades which careens into its target and thoroughly mangles it.	\\
+	Satchel Charge			&	8	&	7	&	18500	&	5D6 damage to 'runner \& progs in 1 subgrid, 3D6 to Walls \& Gates	
+		&	SW	&		A bomb in a backpack.	\\
+	Scribe					&	6	&	8	&	NA	&	Stops and disassembles programs for copying. Program roll 47+	
+		&	Chr4	&		Cowled chrome monk with feather pen.	\\
+	Wolfpack				&	6	&	8	&	15200	&	Does 1D6 damage to ICE/Demon STR, 1D10 damage to 'runners	
+		&	Chr3	&		Pack of electrically-charged wolflike forms which pounce upon their target, ripping it apart.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Controller}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Crystal Ball			&	4	&	1	&	140	&	Operates video cameras, remote sensors, etc	
+		&	CP20	&		None.	\\
+	Dee-2					&	3	&	1	&	130	&	Operates robots, cleaning machines, autofactories, etc	
+		&	CP20	&		None.	\\
+	Genie					&	5	&	1	&	150	&	Operates doors, elevators	
+		&	CP20	&		None.	\\
+	Hotwire					&	3	&	1	&	130	&	Operates remote vehicles	
+		&	CP20	&		None.	\\
+	Knevil					&	4	&	3	&	220	&	Limited AI vehicle controller, no safeguards	
+		&	Chr3	&		Wildly-dressed motorcyclist, with madly glinting eyes. He grabs the remote's icon and begins moving it.	\\
+	News At 8				&	4	&	1	&	140	&	Allows access to Data Terms \& Screamsheets via the Net	
+		&	CP20	&		None.	\\
+	Open Sesame				&	3	&	1	&	130	&	Weaker program to operate doors, elevators	
+		&	CP20	&		None.	\\
+	Phone Home				&	5/2	&	1	&	150	&	Can place/receive calls while in the Net, can intercept at STR 2	
+		&	CP20	&		None.	\\
+	Rockerbit				&	4	&	2	&	200	&	Limited AI microphone/voxbox controller, broadcast at preset time	
+		&	Chr3	&		Cartoonish Rocker that hangs around the speaker remote and 'yells' into it as appropriate.	\\
+	Soundmachine			&	4	&	1	&	140	&	Controls mikes, speakers, vocoders, etc	
+		&	CP20	&		None.	\\
+	Terminator				&	4	&	2	&	260	&	Control terminals	
+		&	Chr3	&		A disembodied cyberarm begins typing, writing, or drawing on the remote icon in question.	\\
+	Viddy Master			&	4	&	1	&	140	&	Allows control of videoboards	
+		&	CP20	&		None.	\\
+	WAD Controller			&	2	&	1	&	150	&	Difficulty 10-35 to patch into signal	
+		&	Chr3	&		None.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Utility}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Alias					&	6	&	2	&	160	&	Replaces file name with false one	
+		&	CP20	&		None.	\\
+	Backup					&	4	&	1	&	140	&	Used to copy programs	
+		&	CP20	&		None.	\\
+	Baedeker's Net Map			&	2	&	1	&	130	&	Routes calls public 2 or 3 dataterm numbers. +3 System Know	
+		&	BB	&		A green line extending across a Net map.	\\
+	Bakdoor					&	3	&	2	&	600+	&	Routes link through at least one private system	
+		&	BB	&		A green line extending across a Net map.	\\
+	Breadcrumbs				&	4	&	4	&	290	&	Finds new LDL link routes (legally), 1 round per uplink or LDL	
+		&	NET	&		Line of glowing sparks forming a trail.	\\
+	Butcher Boy				&	3	&	7	&	550	&	Creates a paper trail, whilst funnelling funds elsewhere	
+		&	BB	&		Takes the appearance of a system accounting program.	\\
+	Cartographer			&	6	&	3	&	200	&	STR vs CPU INT/2 for map of data fort, must be run inside the fort	
+		&	Chr3	&		None.	\\
+	Databaser				&	8	&	2	&	180	&	Stores up to 10,000 pages per file	
+		&	CP20	&		None.	\\
+	Dolphin Programs			&	3	&	5	&	310	&	Clean Pacifica of junk data	
+		&	NET	&		Sleek, chrome dolphin.	\\
+	ElectroLock				&	7	&	2	&	170	&	Locks files at STR 3	
+		&	CP20	&		None.	\\
+	Expert Schedule An			&	4	&	3	&	250+	&	Skims files at 1MU per turn. Shelf life of a month	
+		&	BB	&		None needed, but might appear as a humanoid icon that leads you to the files you requested.	\\
+	Filelocker				&	4	&	1	&	140	&	Locks files with code word, equal to STR 5 Code Gate	
+		&	CP20	&		None.	\\
+	File Packer				&	4	&	1	&	140	&	1/2 MU size, 2 turns to unpack	
+		&	CP20	&		None.	\\
+	Flare Gun				&	2	&	2	&	300	&	Message travels 3 spaces per turn for 2D6 turns	
+		&	Chr3	&		Big-barrelled flare gun.	\\
+	Flip Switch 2.0			&	10	&	0	&	225	&	Flip Switch controller, -5 Net Initiative when active	
+		&	Chr3	&		None.	\\
+	Flip Switch 3.0			&	10	&	0	&	250	&	Flip Switch glogo controller, 3 settings	
+		&	BB	&		None.	\\
+	GateMaster				&	5	&	1	&	150	&	Anti-virus, detects \& destroys Virizz \& Viral 15	
+		&	CP20	&		None.	\\
+	Guest Book				&	4	&	2	&	200	&	Detects 'runners within 2 squares, treat as STR 3 Code Gate	
+		&	Chr4	&		An old-style hotel guest book and quill.	\\
+	Instant Replay			&	8	&	2	&	180	&	Records 'runners trip	
+		&	CP20	&		None.	\\
+	Mictotech AI Interface	&	2	&	4	&	330	&	Pseudo-AI that scans files looking for keywords	
+		&	BB	&		Floating hollow mask.	\\
+	Multinetter				&	10	&	20	&	2000	&	Allows multiple 'runners to run through one computer	
+		&	Chr3	&		None.	\\
+	Multi-Tasker			&	5	&	6	&	1140	&	Extra actions on mainframes	
+		&	NET	&		None.	\\
+	Mystery Box				&	5	&	4	&	300	&	Searches for and copies programs from files	
+		&	BB	&		Cartoon box with strange gears and widgets on each surface.	\\
+	NetMap					&	4	&	1	&	140	&	Major region locator map, +2 to System Knowledge	
+		&	CP20	&		None.	\\
+	Newsgroup Filter			&	4	&	4	&	200	&	Goes out and skims news and interest groups for specified info	
+		&	BB	&		A simple Icon of the user's choice.	\\
+	Padlock					&	4	&	2	&	160	&	Access code needed to log onto deck	
+		&	CP20	&		None.	\\
+	Re-Rezz					&	3	&	1	&	130	&	Recompiles damaged programs and files	
+		&	CP20	&		None.	\\
+	R\&D Protocol Files			&	4	&	3	&	250+	&	Skims R\&D files at 1MU per turn. Shelf life of two weeks	
+		&	BB	&		None needed, but might appear as a humanoid icon that leads you to the files you requested.	\\
+	Shredder Uplink			&	5	&	3	&	250	&	Reconstructs files in the Trash buffer	
+		&	BB	&		Janitor program who rifles through the pieces inside a trash can and pulls out complete files.	\\
+	Translator 2000			&	4	&	2	&	240	&	Takes pictures to make virtual objects	
+		&	Chr4	&		None.	\\
+	Zetatech Installer		&	1	&	1	&	300	&	Compresses programs to half size but reduces Speed by 1	
+		&	BB	&		'Tronnic humanoid upper body mounted in a round metallic base, who feeds programs into base.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Demons}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Afreet II				&	3	&	4	&	1160	&	Carries 3 programs	
+		&	CP20	&		Tall, powerful black man, dressed in evening clothes, wears a fez and speaks in a formal, deep voice.	\\
+	Balron II				&	5	&	5	&	1240	&	Carries 4 programs	
+		&	CP20	&		Huge, male figure. Dressed in futuristic black armor. Carries a red glowing energy blade.	\\
+	Imp II					&	3	&	3	&	1000	&	Carries 2 programs	
+		&	CP20	&		Small, orange sphere of light, with two amused looking red eyes. Beeps, whistles, \& pings.	\\
+	Reaper					&	5	&	7	&	12500	&	Seeks out \& destroys users in a set area. 1D6 to 'runners/progs	
+		&	SW	&		Classic Grim Reaper, complete with flaming sickle and cloak made of outer space.	\\
+	Soulkiller 3.0			&	7	&	45-4000+	&	NA	&	1D6 INT loss/ to Data Walls \& programs, -4 to detect, 3 actions	
+		&	SW	&		Swirling vortex that speaks in a high crystalline voice, and sucks the 'runner into it.	\\
+	Succubus II				&	4	&	4	&	1200	&	Carries 4 programs	
+		&	CP20	&		Voluptuous, nude, hairless female, made from shiny chrome metal. Has large batlike wings, blue eyes.	\\
+	Thug					&	3	&	6	&	10440	&	Permanent subroutines, 1D6 damage to programs and 'runners	
+		&	Chr3	&		Generic cartoon thug.	\\
+	Vampyre II				&	6	&	7	&	2300	&	Can absorb up to 6 programs	
+		&	Chr1	&		Figure in grey robes, with golden eyes, \& fangs. Transforms into misty cloud that dissolves other icons.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Daemons}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Boardwalk				&	3	&	7	&	1080	&	Records messages and conversation in admin/budget database	
+		&	BB	&		Stylized porcupine-like shape that invades the database.	\\
+	Cockroach				&	5	&	7	&	1600	&	Eats files, turns them into more cockroaches	
+		&	BB	&		Small cockroach-like image that multiplies across the face of the database.	\\
+	Cream Pie				&	7	&	7	&	1715	&	Carries 3 programs (Poison Flatline, Killer IV, \& Murphy)	
+		&	BB	&		A cream pie.	\\
+	Deep Thought			&	3	&	7	&	1080	&	Records messages and conversation in research database	
+		&	BB	&		Dark depression/hole that slowly works it's way into the database (when it's visible at all).	\\
+	Eavesdropper			&	3	&	6	&	1365	&	Carries Databaser. Records messages and conversation in system	
+		&	BB	&		None specific, it's supposed to blend in.	\\
+	Fait Accompli			&	3	&	7	&	570	&	Subtly messes up project files	
+		&	BB	&		Cloaked and hooded man, with a glimmer of a sinister smirk under the hood.	\\
+	False Echo				&	2	&	6	&	380	&	Triggers false system alerts	
+		&	BB	&		Shimmering "hologram" mirror image of the 'runner.	\\
+	Gremlins				&	4	&	7	&	7000	&	Produces more gremlins and randomly shoots off programs	
+		&	BB	&		Little green men running around carrying monkey wrenches.	\\
+	I Spy					&	3	&	6	&	400+	&	Commercial version of Eavesdropper	
+		&	BB	&		Hollow mask with piercing light-beam eyes.	\\
+	Incubator				&	2	&	6	&	760	&	Reproduces other programs	
+		&	BB	&		Translucent pyramid with the nucleus of another program always growing inside it.	\\
+	Pattel's Virus			&	6	&	7	&	2200	&	Weakens 1 type of ICE	
+		&	BB	&		Swirl of hundreds of crystalline fragments.	\\
+	Skivviss				&	4	&	7	&	1320	&	Inflates project costs, so that they get cancelled	
+		&	BB	&		Bulbous chrome robot with four arms that act as a finder subroutine while corrupting data.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Ambushes}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Chimera					&	5	&	4	&	100,000	&	Invisible anti-demon. If undetected it gets a free turn to act	
+		&	BB	&		Fully animated chimera which breaths fire and choking gas at the target demon.	\\
+	Soulkiller 1.0			&	4	&	NA	&	500,000	&	Drains target's intellect, etc (1D6 INT/turn) into a data matrix	
+		&	BB	&		Swirling vortex that speaks in a high crystalline voice. The vortex sucks the 'runner into it.	\\
+	Trap!					&	4x3	&	NA	&	200,000	&	3 Asp programs hidden in a file or node that attack if undetected	
+		&	BB	&		Three Asps flowing out of the file/node.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Systemware}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	CloakMore				&	6	&	5/cpu	&	4000/cpu	&	Cloaks an entire data fort. Neutralizes 1 INT/CPU	
+		&	NET	&		None.	\\
+	Dazzler					&	5	&	14	&	14800	&	Disguised VR "cell" with trace, diff 15-25 Interface roll to detect	
+		&	Chr3	&		Usually disguised as a piece of system architecture or simple defence program.	\\
+	Monitor					&	4	&	7	&	950	&	Roving internal Net security	
+		&	NET	&		None. 	\\
+	Panzer					&	8	&	7	&	20000	&	Monitor that does 1D6 damage to 'runners and programs	
+		&	BB	&		Big computer generated tank. Often customised by in Corp data forts.	\\
+	Pocket VR				&	4	&	13	&	13000	&	Disguised VR "cell" with trace, diff 15-25 Interface roll to detect	
+		&	BB	&		Usually disguised as a piece of system architecture or simple defence program.	\\
+	Too Many Doors			&	3	&	3	&	1000	&	Gives 'runner a choice of doors, disconnected if wrong one chosen	
+		&	BB	&		Junction of 3 or more access routes. These "doors" can be unlabelled, labelled identically, or wrongly.	\\
+
+
+									&		&		&		&		&		&					\\
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Data Walls}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Data Wall				&	1-10	&	-	&	1000/level	&	Basic Data Wall. STR = CPUs+0 to +9 (max 10)	
+		&	CP20	&		Standard Data Wall.	\\
+	Data Wall 2.0			&	+1	&	-	&	1000	&	Flashy Data Wall. STR = CPUs+1	
+		&	BB	&		Picket fence.	\\
+	Wall of Static			&	+2	&	-	&	2000	&	Flashy Data Wall. STR = CPUs+2	
+		&	BB	&		Shifting wall of static surrounding the data fort.	\\
+	Crystal Wall			&	+3	&	-	&	3000	&	Flashy Data Wall. STR = CPUs+3	
+		&	BB	&		Crystalline wall.	\\
+	Fire Wall				&	+4	&	-	&	4000	&	Flashy Data Wall. STR = CPUs+4	
+		&	BB	&		Wall of flame.	\\
+	Reinforced Wall			&	+4	&	-	&	4000	&	Flashy Data Wall. STR = CPUs+4	
+		&	BB	&		Very sturdy looking concrete wall.	\\
+	Rock is Strong			&	+5	&	-	&	5000	&	Flashy Data Wall. STR = CPUs+5	
+		&	BB	&		Huge stone wall.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{UpgradedDataWalls}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Anti-Program Wall			&	1-5	&	-	&	4800+	&	Attacks Intrusion programs as Killer, +160eb/STR	
+		&	NET	&		Looks like a standard Data Wall.	\\
+	Anti-Personnel Wall			&	1-5	&	-	&	30000+	&	Attacks 'runners, 2-3 Stun, 4 Spazz, 5 Hellbolt, +1000eb/STR	
+		&	NET	&		Looks like a standard Data Wall.	\\
+	Laser Wire				&	+2/2	&	-	&	34000	&	1D6 damage to 'runner (STR 2), goes inert after 3 rounds	
+		&	BB	&		Mesh of laser light that reaches out to engulf the 'runner.	\\
+	Razor Wire				&	+3/3	&	-	&	36000	&	2D6 damage to 'runner (STR 3), goes inert after 3 rounds	
+		&	BB	&		Data Walls that can sprout buzzsaw blades to attack the 'runner.	\\
+	Shotgun Wire			&	+5/5	&	-	&	40000	&	2D6 damage to 'runner (STR 5), goes inert after 3 rounds	
+		&	BB	&		An aimpoint appears on the 'runner's Icon, at which the Wall will fire a burst of neural feedback.	\\
+	Wall of Ice				&	+6/6	&	-	&	44000	&	4D6 damage to 'runner (STR 6), goes inert after 3 rounds	
+		&	BB	&		Huge, brain-like image emerges from the Data Wall to bombard the 'runner with spheres of programming.	\\
+	Superior Net Barrier	&	+1	&	-	&	300,000	&	Tighter coding makes them stronger, difference easily noted	
+		&	BB	&		Upgraded Data Walls have a tight matrix woven into them.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Code Gates}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Code Gates				&	1-10	&	-	&	1000/level	&	Basic Code Gates. Many variations exist (Brainware Blowout)	
+		&	CP20	&		Normal Code Gate, but variations are commonplace (see Brainware Blowout).	\\
+	Cortical Scanner		&	5	&	-	&	20000	&	Uses a brainwave ID scanner. 3 Interface rolls needs to pass	
+		&	BB	&		Keyhole that scans your Icon.	\\
+	Endless Corridor		&	4	&	4	&	8000	&	Requires two passwords. +3 diff to crack second password	
+		&	BB	&		The Gate looks like a corridor that just keeps going on and on and on.	\\
+	Encryp Breakthrough		&	+1	&	-	&	250,000	&	Tighter coding makes them stronger, difference easily noted	
+		&	BB	&		Upgraded Code Gates have a tight matrix woven into them.	\\
+	Haunting Inquisition	&	8/6	&	8	&	80000	&	If you fail to get past it launches Psychodrome (STR 6)	
+		&	BB	&		Normal Gate until it activates. Then it's whatever your worst nightmare is.	\\
+	Mazer					&	7	&	-	&	7000	&	Code Gate variant	
+		&	BB	&		Looks like a maze.	\\
+	Nerve Labyrinth			&	6/4	&	NA	&	50000	&	If you fail to get past it does 4D6 damage to the 'runner (STR 4)	
+		&	BB	&		Green labyrinth that seems to draw in the 'runner and squeeze his brain.	\\
+	Shrouded Gate			&	1-10	&	4	&	3000+	&	Makes a Code Gate invisible. +1000eb/1 STR	
+		&	NET	&		Invisible or disguised as a Data Wall.	\\
+	Tutor					&	3/5	&	NA	&	50000	&	Easy to crack, but tags 'runner so that ICE can break link (STR 5)	
+		&	BB	&		Regular Code Gate that gives your Icon a tail which other ICE can yank.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Transportation}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Trailer Hitch			&	1	&	3	&	300	&	Adds 20\% extra MU, Speed -1	
+		&	NET	&		An open-topped, single-exit trailer.	\\
+	18-Wheeler				&	1	&	4	&	500	&	Doubles remaining memory (MU-4), Speed=1	
+		&	NET	&		An 18-wheeler trailer with the Netrunner's icon on the sides of the trailer.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Enhancement}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Brain Buster			&	4	&	6	&	4500	&	+4 to INT, +2 speed	
+		&	I.3	&		User's head looks as it's steroids, and he radiates an aura of great intellect.	\\
+	Gestalt					&	9	&	7	&	5600	&	Up to 3 'runners can combine INT, REF, and Interface	
+		&	I.3	&		Whatever it wants, after all it is a super intelligence.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Rache Specials}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Memorial ICEbreaker		&	6	&	2	&	1500	&	Hold 4 programs like a Demon, but each program has full strength	
+		&	BB	&		A non-Euclidean corkscrew.	\\
+	Bone					&	4	&	4	&	270	&	Attracts "Dog" programs from all over	
+		&	NET	&		Rubber dog Bone.	\\
+	Pirate Uplink			&	5	&	7	&	NA	&	Alerts LDLs to presence of illegal calls	
+		&	NET	&		None.	\\
+	Rache's SeeYa			&	6	&	2	&	NA	&	Prog 15+. IDs Icon as either prog, 'runner, or AI	
+		&	NET	&		Shimmering silver screen, shows nothing (program), sine wave (human), sawtooth wave (AI/Pseudo Int).	\\
+	Rice Burner				&	2	&	2+	&	NA	&	+1 to Net movement, -50\% deck MU	
+		&	NET	&		Japanese-style racing motorcycle.	\\
+	SideWalker				&	3	&	3	&	NA	&	Allows you to walk on the sides of the Olympia sidewalks	
+		&	NET	&		None.	\\
+	Succubus III			&	7	&	4	&	NA	&	Compiler, carries 2 programs. 2D6 anti-personnel damage	
+		&	SW	&		Very close variant on Spider Murphy's Icon, a busty, curvaceous, rendition of a red-headed anime girl.	\\
+
+
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{Specials}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	EmergencySelf-Construct	&	4	&	30	&	NA	&	Converts 'runner to electronic entity, roll 1D10+4 for max INT	
+		&	BB	&		Swirling vortex of blue lightning that sucks the 'runner's Icon into it; if successful the Icon later emerges.	\\
+	Lunch Money™			&	3	&	7	&	145000	&	Compiler (assassin to kill it), 1D6 physical damage to the 'runner	
+		&	BB	&		Super-realistic little girl that plays innocent, then gets an evil look in it's eyes and attacks the 'runner.	\\
+
+
+									&		&		&		&		&		&					\\
+	\hline %%						&		&		&		&		&		&					\\
+	\multicolumn{3}{ p{4.50cm} }{\textbf{\emph{SystemConstruction}} }		&		&		&		&				\\
+				%% Str MU Cost (eb) Function From
+	Antiquated Routines		&	NA	&	NA	&	50000	&	Circa 2013 interface. All 'runner Initiative rolls at -2	
+		&	BB	&		Older-style and more primitive Net imagery.	\\
+	Bizzare Encryption		&	NA	&	NA	&	10000	&	All system data is encrypted (STR 10 Gate), 1-2 hrs to decode	
+		&	BB	&		None.	\\
+	Blood Cat				&	10/5	&	NA	&	300,000	&	INT 6 pseudo-AI, STR 5 attacks vs 'runners and programs	
+		&	BB	&		Dead-black panther with glowing red eyes and mouth.	\\
+	TesseractConstruction	&	NA	&	NA	&	100,000	&	Escher style data fort, -3 to 'runner Initiative until use to it	
+		&	BB	&		Fort Fort's interior defies orientation, up, down and sideways constantly changing, walls at impossible angles.	\\
+
+\end{longtable}
+
+Information \copyright R.Talsorian Games Inc. All rights reserved.~\\
+Collated by Andrew James 25/11/98. \texttt{node16@ajames.force9.net}~\\
+New collation by Gaby Wald + Amael Assour 07/09/2012. 
+
+\end{landscape}
+
+\end{document}
