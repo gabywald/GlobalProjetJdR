@@ -1,0 +1,32 @@
+Amulette d'ordre	*
+Amulette de vigilance	*
+Amulette de cuivre 3 fois beni	*
+Amulette d'adamantine	*
+Amulette de jade enchanté	*
+Amulette de charbon	*
+Amulette de fer	*
+Amulette d'argent vertueux	*
+Pendentif d'invisibilité	*
+Miroir d'ommnivision	*
+Miroir d'emprisonnement	*
+Miroir d'opposition	*
+Baguette d'Onyx	*
+Baguette de poussière	*
+Potion de déguisement	*
+Potion de force morale	*
+Potion de force de géant	*
+Potion de résistance au feu	*
+Potion de respiration aquatique	*
+Potion de contrôle des plantes	*
+Potion d'ombre	*
+Potion d'amianthus	*
+Potion de vigueur magique	*
+Potion de dextérité	*
+Potion de soins	*
+Potion d'énergie occulte	*
+Liqueur de nyctalopie	*
+Potion de métamorphose	*
+Anneau de Coups	*
+Anneau de folie	*
+Anneau de force morale	*
+Grimoire [*]	*

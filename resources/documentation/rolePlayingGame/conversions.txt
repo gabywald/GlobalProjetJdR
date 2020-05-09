@@ -1,0 +1,54 @@
+
+++ fiches persos http://jdrvirtuel.azureforum.com/t6040-presentation-de-simulacres -- 
+
+http://www.simulacres.free.fr/wiki/index.php?pagename=ConvertionJDR.SimToBasic -- 
+	FORce = 3 * (Corps - 2) + Puissance .
+	DEXtérité? = Instincts + (Précision + Rapidité ) / 2 + Résistance + Perception .
+	INTelligence = 2 * Esprit + Perception + 1.
+	APParence = 3 * Coeur + Désir - 6.
+	TAIlle = 3 * Action + (Puissance + 1) / 2 + Corps .
+	POUvoir = Instincts + 2 * Désir + Précision .
+	CONstitution = Corps + 3 * Résistance + Puissance .
+	EDUcation (pour l’AdC) = 2 * Esprit + Coeur / 2 + Action - 6. 
+
+Règne >
+Talent		0	1	2	3
+	X		0	10	25	40
+	-8		1	14	28	45
+	-6		2	16	30	50
+	-4		3	20	35	55
+	-2		5	25	45	70
+	-1		6	28	48	75
+	0		10	40	50	80
+	1		25	50	64	90
+	2		45	60	75	95
+	3		60	75	90	100 
+
+http://www.simulacres.free.fr/wiki/index.php?pagename=ConvertionJDR.BasicToSim -- 
+    Corps : MOY = FORce + CONstitution + DEXtérité? / 3
+    Instincts : MOY = DEXtérité? + POUvoir / 2
+    Coeur : MOY = APParance + POUvoir / 2
+    Esprit : MOY = INTelligence + EDUcation / 2 
+       
+    Action : [ ( TAIlle + DEXtérité? ) / 6 ] - 1 arrondi à l’inférieur
+    Perception : [ ( INTelligence + DEXtérité? ) / 6 ] - 1 arrondi à l’inférieur
+    Désir : ( POUvoir / 3 ) - 1 arrondi à l’inférieur
+    Résistance : ( CONstitution / 3 ) - 1 arrondi à l’inférieur 
+
+    Puissance = FORce + TAIlle / 12 arrondi à l’inférieur.
+    Rapidité = ( DEXtérité? - 3 ) / 4 arrondi à l’inférieur.
+    Précision = ( DEXtérité? + POUvoir - 6) / 4 arrondi à l’inférieur. 
+    
+    0 - 2 	X
+	3 - 5 	-8
+	6 - 9 	-6
+	10 - 20 	-4
+	21 - 35 	-2
+	36 - 47 	-1
+	48 - 64 	0
+	65 - 74 	+1 dans une spécialisation
+	75 - 81 	2 points de spécialisation a répartir
+	82 - 88 	3 points de spécialisation a répartir
+	89 - 93 	4 points de spécialisation a répartir
+	94 - 97 	5 points de spécialisation a répartir
+	98 - 99 	6 points de spécialisation a répartir 

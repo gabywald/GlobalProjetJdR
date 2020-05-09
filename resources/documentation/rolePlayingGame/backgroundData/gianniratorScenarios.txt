@@ -1,0 +1,151 @@
+
+http://2ndage.blogspot.fr/2012/12/bookshelf-based-random-adventure.html -- 
+
+Using but a few dice, your bookshelf, and the blueprint below, you will be able to design/improvise a fully-fledged role-playing adventure. Here's how.
+
+First, get hold of 1D6, 1D30, and 1D100. Each adventure seed is based upon SIX books from your bookshelf, and information from within those books randomly extracted using the results of the dice rolls.
+
+THE RANDOM ADVENTURE GENERATOR
+For __each one of those six books__, roll five dice, in the following order:
+
+	Roll __1D6__. Check the results of the roll: 1-3: use the top shelf; 4-6: use the bottom shelf. Of course if you have more than two shelves use a different die.
+	Roll __1D6__. Check the results of the roll: 1-3: start counting from the left; 4-6: start counting from the right.
+	Roll __1D30__. Count as many books from either the left or the right, depending on the previous die roll.
+	Roll __1D6__. Check the results of the roll: 1-3: start from the beginning; 4-6: start from the end. Ignore covers, indices, empty pages, etc.
+	Roll __1D100__. __Count as many pages__. Using the guidelines from the blueprint, __choose the relevant element__ from within the page.
+
+	From within BOOK ONE, choose an __NPC__ (person, sentient creature, god...).
+	From within BOOK TWO, choose a __LOCATION__ (city, hex, place, building, planet...).
+	From within BOOK THREE, choose a __PERSON__ or an __OBJECT__.
+	From within BOOK FOUR, choose an __NPC__.
+	From within BOOK FIVE, choose a __LOCATION__.
+	From within BOOK SIX, pick up __something interesting__ (this is the 'freer' choice you get): a situation, a political party, a magical item, a cult, a disease, weather type... anything!
+
+Then using the SIX elements from the above list, fill in the following blueprint:
+
+The Player Characters start their adventure in their home town/hex/current location in the campaign. __________ asks the PCs to go to __________ to retrieve __________. The PCs will end up fighting against __________ in __________. During the course of the adventure, __________ will feature prominently.
+
+
+http://loukoum.online.fr/jdr/adj/gianni1.htm -- 
+
+Giannirateur de scénarios, V 3.2
+
+Comme son nom l'indique, ce générateur de scénarios a connu plusieurs développements avant d'arriver à la version actuelle.
+
+Le principe de base consiste en des tirages aléatoires d'éléments pris dans une liste d'ouvrages choisis (des manuels de JDR, par exemple ; mais le générateur fonctionne également avec des livres "normaux", et je l'ai même testé avec succès avec des jaquettes de disques).
+Il convient donc dans un premier temps d'établir la liste des ouvrages parmi lesquels il sera possible de puiser son inspiration, chacun d'eux se voyant attribuer un numéro d'ordre permettant de procéder à un tirage équiprobable dans la liste, par exemple au moyen de dés (si on retient par exemple 30 ouvrages pour un tirage, celui-ci se fera avec 1D30).
+Le générateur de scénarios nécessite de procéder à plusieurs tirages successifs ; les listes d'ouvrages peuvent très bien être différentes pour chacun de ces tirages (et il est même possible d'effectuer un tirage sur un seul ouvrage !).
+
+Une fois un ouvrage sélectionné dans la liste, on tire au sort une de ses pages, toujours selon une méthode donnant des résultats équiprobables. Sur la page ainsi obtenue, le scénariste choisira un élément, pris librement au sein du texte ou dans une illustration.
+On choisira ainsi successivement un ___Commanditaire___, une ___Destination___, un ___Objectif___, un ___Antagoniste___, un ___Théâtre___ et un ___Élément intéressant___.
+
+Outre ces six tirages d'éléments piochés dans des ouvrages aléatoirement déterminés, il conviendra aussi de réaliser deux autres tirages sur les tables ci-dessous : l'un indiquera l'___Action___ que devront accomplir les personnages dans le scénario, l'autre (facultatif) la ___Motivation___ qui les y pousse.
+
+La combinaison de ces huit tirages donne une phrase, le ___Résultat___, qui résume le scénario et que le scénariste n'a plus qu'à développer à sa sauce.
+
+1D20	Action
+1	Aller chercher (récupérer / s'emparer de / enlever / ramener / acheter)
+2	Transporter (livrer)
+3	Délivrer (sauver / libérer)
+4	Survivre à (échapper à / fuir / s'évader de)
+5	Atteindre (aller à / pénétrer dans)
+6	Explorer (découvrir / étudier / inventer)
+7	Élucider (enquêter sur / résoudre)
+8	Venger
+9	Vendre (échanger / se débarrasser de)
+10	Humilier (diffamer / salir)
+11	Défendre (protéger / aider / escorter)
+12	Convaincre (séduire / soudoyer / convertir / recruter)
+13	Créer (fabriquer / bâtir)
+14	Dissimuler (cacher / mettre à l'abri)
+15	Faire chanter (menacer, prendre en otage)
+16	Détruire (tuer)
+17	Tromper (faire croire / trahir / mentir / tricher)
+18	Se sacrifier pour
+19	Conquérir (envahir / ravager / affronter / vaincre)
+20	Autre ou au choix
+
+1D20	Motivation
+1	Obéissance (à un patron, une hiérarchie, etc...)
+2	Bénéfice matériel (argent, objets, terres, etc...)
+3	Bénéfice immatériel (réputation, gloire, amour, fierté, orgueil, amour-propre, etc...)
+4	Bénéfice spirituel (bénédiction, absolution, etc...)
+5	Survie
+6	Contrainte (PJ prisonniers, otages en jeu, etc...)
+7	Vengeance (peut inclure la résistance à l'occupant)
+8	Plaisir (gourmandise, luxure, etc...)
+9	Fanatisme (zèle religieux, patriotisme, racisme, etc...)
+10	Solidarité (envers sa famille, ses amis, ses collègues, ses concitoyens, etc...)
+11	Altruisme (serviabilité, compassion, bonté, etc...)
+12	Adrénaline (se dépasser, accomplir un exploit, etc...)
+13	Autodestruction (sacrifice, automutilation, etc...)
+14	Curiosité
+15	Méchanceté (sadisme, volonté de nuire, etc...)
+16	Paresse, facilité
+17	Pris dans le cours des évènements (les PJ sont au mauvais endroit au mauvais moment)
+18	Peur (terreur, angoisse, phobie, etc...)
+19	Altération du discernement (drogues, folie, etc...)
+20	Autre ou au choix
+
+Le Résultat s'énonce ainsi :
+
+__[Le Commanditaire] amène les PJ à se rendre à [la Destination] pour y exercer [l'Action] sur [l'Objectif]. Motivés par [la Motivation], les PJ seront gênés par [l'Antagoniste] sur [le Théâtre]. Un élément majeur du scénario sera [l'Élément intéressant].__
+
+Ce Résultat nécessite en général un Lissage plus ou moins soigné pour aboutir à un scénario exploitable et intéressant.
+
+Rien n'impose que le Commanditaire soit une entité pensante (ou composée d'individus pensants) : ça peut aussi par exemple être des circonstances ; sans oublier tous les cas où le Commanditaire n'est qu'un prétexte dans la construction du scénario.
+
+La Destination peut être un lieu, mais aussi une époque (en cas de voyage dans le temps) ou un moment, voire un état particulier (en transes, par exemple).
+La gêne occasionnée par l'Antagoniste n'est pas forcément une agression : l'Antagoniste peut par exemple être une circonstance extérieure gênant les personnages, ou sa simple présence ou ses actes peuvent gêner les personnages sans qu'ils ne l'affrontent (ils peuvent même être dans le même "camp" !).
+
+Les conseils de base pour le Lissage sont : _Pensez en dehors du cadre_ ; _Utilisez votre imagination_ et _Le Résultat est flexible_, n'ayez pas peur de le tordre dans tous les sens.
+Si un tirage ne convient pas au scénariste ou ne l'inspire pas, il est bien entendu possible de relancer. On peut aussi échanger les places de deux résultats dans la phrase.
+Mais en fait, toutes les manipulations, modifications et entorses sont possibles : seul compte le résultat final ! 
+
+
+
+http://loukoum.online.fr/jdr/adj/gianni2.htm -- 
+
+
+Générateur bondien
+
+Un générateur de scénarios tel que le Giannirateur est un outil qui me donne personnellement toute satisfaction, car il correspond à la façon dont je conçois généralement mes scénarios : une situation de départ bien définie, des lieux, éventuellement une suite prévue d'évènements (indépendamment des actions des persos, qui peuvent évidemment ne pas se contenter d'être spectateurs), une implication des personnages, et je les lâche dedans en voyant comment les choses évoluent.
+Mais pour ceux qui aiment avoir des scénarios plus construits, avec une succession de scènes, une montée de la tension dramatique, et souvent en corollaire une certaine linéarité, l'outil peut se révéler insuffisant. Un résultat plus structuré leur conviendra donc mieux ; ou tout au moins, moins mal.
+
+Le générateur bondien est une variante du Giannirateur, permettant de produire des scénarios structurés en cinq parties (ou ___tranches___), à peu près sur le modèle d'un film bondien standard (d'où son nom) : une séquence prégénérique, trois actes (I, II et III) et un final (bien qu'il n'ait pas été conçu au moyen d'un générateur, le scénario Opération : Foudre et Tonnerre est structuré de cette façon).
+Cet outil est exploitable vers d'autres contextes, moyennant un peu d'extrapolation.
+_James Bond 007_ proposait déjà dans _For Your Information_ un système de création aléatoire de scénarios. Plus simple que le générateur bondien, il utilisait des tables qui pourront être recyclées ici.
+
+La ___séquence prégénérique___ n'a pas réellement de rapport avec le reste du scénario, mais elle permet d'introduire un élément, une situation ou un personnage qu'on retrouvera par la suite. Elle est courte et dynamique.
+Dans l'___acte I___, les personnages se voient confier leur mission (par M, en principe) et, en l'accomplissant (ou du moins, en essayant de l'accomplir), découvrent l'existence d'une machination plus complexe et plus grave qui les amène à devoir changer de mission pour la contrecarrer.
+Dans l'___acte II___, les personnages sont confrontés à forte partie, subissent un revers et semblent en voie d'être défaits.
+Dans l'___acte III___, les choses s'emballent et les personnages sont en position de reprendre le dessus.
+Dans le final, idéalement, les personnages viennent à bout du grand méchant en déjouant son plan machiavélique, et doivent si possible le faire dans un temps limité.
+
+À l'exception du briefing de mission qui se passe généralement à Londres, chacune de ces cinq tranches se déroulera dans un cadre différent. Il faudra donc pour chacune d'elles déterminer un __Pays__ (ou éventuellement, une __Ville__, par exemple en utilisant la table fournie dans _For Your Information_) ; puis un __Type de lieu__ (qui peut être un bâtiment, en particulier si on a précédemment choisi une ville, un lieu extérieur, voire un moyen de transport) dans lequel se déroulera la scène majeure de la tranche concernée (généralement, l'affrontement (combat, poursuite, joute verbale, jeu de casino ou autre) avec l'Antagoniste). On peut utiliser la méthode classique du Giannirateur pour déterminer ces éléments, en procédant à des tirages dans des ouvrages choisis aléatoirement dans une liste appropriée.
+
+Pour le prégénérique, il faut déterminer :
+- le type de ___mission___ dont ont été chargés les personnages : on peut pour cela tirer sur la table des Actions du Giannirateur, ou utiliser la table de For _Your Information_) ;
+- le pays ou la ville, et le type de lieu ;
+- l'Antagoniste ;
+- l'Objectif ;
+- l'Élément récurrent (qui fera le lien entre la séquence prégénérique et le reste du scénar).
+Tout ceci se fait à la façon habituelle du Giannirateur.
+
+Pour l'acte I, il faut déterminer :
+- le type de la mission initialement confiée par M au début de l'acte ;
+- le pays ou la ville où se déroule l'acte ;
+- le type de lieu où se déroule la scène majeure de l'acte ;
+- l'Objectif de la mission ;
+- l'Antagoniste ;
+- le type de la mission découlant des découvertes des personnages ;
+- l'Antagoniste principal du scénario (le _grand méchant_ ou l'organisation derrière la machination découverte par les personnages) ;
+- un Élément intéressant.
+
+Pour les actes II et III et pour le final, il faut à chaque fois déterminer :
+- le pays ou la ville où se déroule la tranche ;
+- le type de lieu où se déroule la scène majeure de la tranche ;
+- l'Antagoniste (en principe au service de l'Antagoniste principal) ;
+- un Élément intéressant.
+
+Si l'on veut coller un peu plus à la structure des films, on peut également déterminer un ___Allié___ qui vient à l'aide des personnages à partir de la fin de l'acte II ou plus tard, mais cela n'est souvent pas très approprié en JDR, où les personnages sont plusieurs et n'ont pas besoin qu'on les aide. 

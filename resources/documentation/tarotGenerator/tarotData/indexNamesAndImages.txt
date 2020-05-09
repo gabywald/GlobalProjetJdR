@@ -1,0 +1,87 @@
+0		GENERAL_GENERAL_GENERAL	Le Mat	0_Excuse_LeMat.jpg
+I		BATON_CARREAU_AIR	Le Bateleur	1_LeBateleur_financial.png
+II		BATON_CARREAU_AIR	La Papesse	2_LaPapesse.jpg
+III		BATON_CARREAU_AIR	L'Impératrice	3_LImperatrice.jpg
+IV		BATON_CARREAU_AIR	L'Empereur	4_LEmpereur.jpg
+V		NONE_NONE_NONE	Le Pape	5_LePape.jpg
+VI		EPEE_TREFLE_FEU	L'Amoureux	6_LAmoureux_personadmin.png
+VII		EPEE_TREFLE_FEU	Le Chariot	7_LeChariot_datahaven.png
+VIII	EPEE_TREFLE_FEU	La Justice	8_LaJustice_juridic.png
+IX		EPEE_TREFLE_FEU	L'Ermite	9_LErmite_outdial.png
+X		NONE_NONE_NONE	Roue de Fortune	10_LaFortune_academic.png
+XI		COUPE_COEUR_EAU	La Force	11_LaForce_military.png
+XII		COUPE_COEUR_EAU	Le Pendu	12_LePendu_padlock.png
+XIII	COUPE_COEUR_EAU	<Sans Nom>	color_none.jpg
+XIV		COUPE_COEUR_EAU	Tempérance	14_Temperance_gatewaynet.png
+XVI		DENIER_PIQUE_TERRE	La Maison Dieu	16_LaMaisonDieu_privatesystem.png
+XV		NONE_NONE_NONE	Le Diable	15_LeDiable_researchetdev.png
+XVII	DENIER_PIQUE_TERRE	L'Étoile	17_LEtoile.jpg
+XVIII	DENIER_PIQUE_TERRE	La Lune	18_symbole_lune.jpg
+XIX		DENIER_PIQUE_TERRE	Le Soleil	19_symbole_soleil.jpg
+XX		NONE_NONE_NONE	Le Jugement	20_LeJugement_legislative.png
+XXI		NONE_NONE_NONE	Le Monde	21_LeMonde_uplink.png
+BACKGROUND_CARDS_BG	cards_background.jpg	cards_background.jpg	cards_background.jpg
+NONE_NONE_NONE	color_none.jpg	color_none.jpg	color_none.jpg
+NEUTRAL_NEUTRAL_NEUTRAL	color_none.jpg	color_none.jpg	color_none.jpg
+GENERAL_GENERAL_GENERAL	color_none.jpg	color_none.jpg	element_neutral.jpg
+-- color_interrexclam.jpg	
+BATON_CARREAU_AIR	color_carreau.jpg	color_none.jpg	element_air.jpg
+	BATON_CARREAU_AIR	King	Roi d'Air / Carreau / Bâton	Chess_King.jpg
+	BATON_CARREAU_AIR	Queen	Reine d'Air / Carreau / Bâton	Chess_Queen.jpg
+	BATON_CARREAU_AIR	Knight	Cavalier d'Air / Carreau / Bâton	Chess_Knight.jpg
+	BATON_CARREAU_AIR	Bishop	Valet d'Air / Carreau / Bâton	Chess_Bishop.jpg
+	BATON_CARREAU_AIR	Pawn-10	10 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+	BATON_CARREAU_AIR	Pawn-9	9 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+	BATON_CARREAU_AIR	Pawn-8	8 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+	BATON_CARREAU_AIR	Pawn-7	7 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+	BATON_CARREAU_AIR	Pawn-6	6 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+	BATON_CARREAU_AIR	Pawn-5	5 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+	BATON_CARREAU_AIR	Pawn-4	4 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+	BATON_CARREAU_AIR	Pawn-3	3 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+	BATON_CARREAU_AIR	Pawn-2	2 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+	BATON_CARREAU_AIR	Pawn-1	1 d'Air / Carreau / Bâton	Chess_Pawn.jpg
+COUPE_COEUR_EAU	color_coeur.jpg	color_none.jpg	element_water.jpg
+	COUPE_COEUR_EAU	King	Roi d'Eau / Coeur / Coupe	Chess_King.jpg
+	COUPE_COEUR_EAU	Queen	Reine d'Eau / Coeur / Coupe	Chess_Queen.jpg
+	COUPE_COEUR_EAU	Knight	Cavalier d'Eau / Coeur / Coupe	Chess_Knight.jpg
+	COUPE_COEUR_EAU	Bishop	Valet d'Eau / Coeur / Coupe	Chess_Bishop.jpg
+	COUPE_COEUR_EAU	Pawn-10	10 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+	COUPE_COEUR_EAU	Pawn-9	9 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+	COUPE_COEUR_EAU	Pawn-8	8 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+	COUPE_COEUR_EAU	Pawn-7	7 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+	COUPE_COEUR_EAU	Pawn-6	6 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+	COUPE_COEUR_EAU	Pawn-5	5 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+	COUPE_COEUR_EAU	Pawn-4	4 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+	COUPE_COEUR_EAU	Pawn-3	3 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+	COUPE_COEUR_EAU	Pawn-2	2 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+	COUPE_COEUR_EAU	Pawn-1	1 d'Eau / Coeur / Coupe	Chess_Pawn.jpg
+DENIER_PIQUE_TERRE	color_pique.jpg	color_none.jpg	element_earth.jpg
+	DENIER_PIQUE_TERRE	King	Roi de Terre / Pique / Denier	Chess_King.jpg
+	DENIER_PIQUE_TERRE	Queen	Reine de Terre / Pique / Denier	Chess_Queen.jpg
+	DENIER_PIQUE_TERRE	Knight	Cavalier de Terre / Pique / Denier	Chess_Knight.jpg
+	DENIER_PIQUE_TERRE	Bishop	Valet de Terre / Pique / Denier	Chess_Bishop.jpg
+	DENIER_PIQUE_TERRE	Pawn-10	10 de Terre / Pique / Denier	Chess_Pawn.jpg
+	DENIER_PIQUE_TERRE	Pawn-9	9 de Terre / Pique / Denier	Chess_Pawn.jpg
+	DENIER_PIQUE_TERRE	Pawn-8	8 de Terre / Pique / Denier	Chess_Pawn.jpg
+	DENIER_PIQUE_TERRE	Pawn-7	7 de Terre / Pique / Denier	Chess_Pawn.jpg
+	DENIER_PIQUE_TERRE	Pawn-6	6 de Terre / Pique / Denier	Chess_Pawn.jpg
+	DENIER_PIQUE_TERRE	Pawn-5	5 de Terre / Pique / Denier	Chess_Pawn.jpg
+	DENIER_PIQUE_TERRE	Pawn-4	4 de Terre / Pique / Denier	Chess_Pawn.jpg
+	DENIER_PIQUE_TERRE	Pawn-3	3 de Terre / Pique / Denier	Chess_Pawn.jpg
+	DENIER_PIQUE_TERRE	Pawn-2	2 de Terre / Pique / Denier	Chess_Pawn.jpg
+	DENIER_PIQUE_TERRE	Pawn-1	1 de Terre / Pique / Denier	Chess_Pawn.jpg
+EPEE_TREFLE_FEU	color_trefle.jpg	color_none.jpg	element_fire.jpg
+	EPEE_TREFLE_FEU	King	Roi de Trêfle / Feu / Épée	Chess_King.jpg
+	EPEE_TREFLE_FEU	Queen	Reine de Trêfle / Feu / Épée	Chess_Queen.jpg
+	EPEE_TREFLE_FEU	Knight	Cavalier de Trêfle / Feu / Épée	Chess_Knight.jpg
+	EPEE_TREFLE_FEU	Bishop	Valet de Trêfle / Feu / Épée	Chess_Bishop.jpg
+	EPEE_TREFLE_FEU	Pawn-10	10 de Trêfle / Feu / Épée	Chess_Pawn.jpg
+	EPEE_TREFLE_FEU	Pawn-9	9 de Trêfle / Feu / Épée	Chess_Pawn.jpg
+	EPEE_TREFLE_FEU	Pawn-8	8 de Trêfle / Feu / Épée	Chess_Pawn.jpg
+	EPEE_TREFLE_FEU	Pawn-7	7 de Trêfle / Feu / Épée	Chess_Pawn.jpg
+	EPEE_TREFLE_FEU	Pawn-6	6 de Trêfle / Feu / Épée	Chess_Pawn.jpg
+	EPEE_TREFLE_FEU	Pawn-5	5 de Trêfle / Feu / Épée	Chess_Pawn.jpg
+	EPEE_TREFLE_FEU	Pawn-4	4 de Trêfle / Feu / Épée	Chess_Pawn.jpg
+	EPEE_TREFLE_FEU	Pawn-3	3 de Trêfle / Feu / Épée	Chess_Pawn.jpg
+	EPEE_TREFLE_FEU	Pawn-2	2 de Trêfle / Feu / Épée	Chess_Pawn.jpg
+	EPEE_TREFLE_FEU	Pawn-1	1 de Trêfle / Feu / Épée	Chess_Pawn.jpg

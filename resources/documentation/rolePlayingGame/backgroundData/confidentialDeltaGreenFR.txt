@@ -1,0 +1,163 @@
+
+Livre Delta Green, Éditions Sans détour, p188-193, 2011, ISBN 978-2-917994-31-1 . 
+
+==Classifications de sécurité==
+
+Au cours de leurs enquêtes, les agents gouvernementaux manipulent couramment des documents classifiés. Il peut s'agir de documents, photos, films, objets ou tout autre information que le gouvernement estime trop importante pour la sécurité nationale et la protection de la population. Une compréhension de base des procédures de classification et du système de marquage est vitale pour renforcer le sinistre réalisme du jeu. 
+
+===Sources d'information===
+
+La récupération d'informations est notée selon l'origine des renseignements recueillis. Chaque domaine spécialisé du renseignement a ses propres avantages et inconvénients. 
+
+====HUMINT====
+
+__(Human Intelligence = Renseignement de source humaine)__
+
+Il s'agit des technologies de base de l'espionnage et elles concernent les informations fournies directement par les agents, les informateurs étrangers ou même les militaires sur le terrain. Les renseignement HUMINT sont extrêmement précieux mais dangereux à rassembler et sujets aux erreurs. Les agents rassemblent en général des renseignements par le biais d'un petit réseau d'informateurs plutôt que de risquer d'être capturés la main dans le sac. Si les informateurs sont arrêtés ou commencent à mourir les uns après les autres, l'agent responsable est normalement averti suffisamment tôt pour fermer boutique et quitter le pays. Les rapports HUMINT sont classiquement notés selon la fiabilité de leur source. 
+
+====SIGINT====
+
+__(Signals Intelligence = Renseignement obtenu à partir de signaux)__
+
+Ce domaine regroupe deux disciplines distinctes. Les informations COMINT (_Communications Intelligence_) sont obtenues grâce à des interception de messages radio, sur lesquelles travaillent les linguistes et des opérateurs de code Morse entre autres. Les renseignements ELINT(_Electronic Intelligence_) couvre le déchiffrement de signaux et des schémas ondulatoires de radars, ordinateurs et autres équipement émettant une signature électronique unique. Ces deux disciplines combinées permettent à SIGINT de fournir des informations sur les messages secrets, les opération militaires, les localisations de troupes et d'équipment. 
+
+====IMINT====
+
+__(Imagery Intelligence)__
+
+Les données obtenues à partir de photographies aériennes ou transmises par satellites tombent dans cette catégorie importante qui inclut également les informations obtenues à partir de balayages actifs par radars des mouvements de troupes adverses (ELINT regroupe les réceptions passives de signaux radars ennemis). Les analystes en imagerie sont spécialement entraînés à reconnaître les véhicules, équipements, installations de production critiques et les installations dissimulées. 
+
+====CI====
+
+__(Counter-Intelligence = Contre-Espionnage)__
+
+Les agents CI sont simplement des chasseurs d'espions. Leur mission est de débusquer les agents ennemis et d'identifier les risques potentiels pour la sécurité. Ce sont souvent des agents en civil qui observent pour détecter les fuites potentielles ou qui tentent, avec des appâts, d'amener les possibles traitres et les agents doubles à se révéler. Les tâches les plus courantes comprennent les entretiens des procédures de sécurité et l'estimation des dégâts engendrés par les révélations non autorisées. 
+
+====ARCHINT====
+
+__(Archeological Intelligence)__
+
+Ce n'est pas vraiment une source normale de renseignement mais cette discipline est parfaite pour les aventures Delta Green les plus secrètes. Imaginée par l'écrivain Will Murray dans son roman _To clear the Earth_, l'ARCHINT inclut les connaissances en occultisme et celles concernanrt le Mythe de Cthulhu, obtenues au cours de recherches archéologiques et d'études de textes anciens. 
+L'ARCHINT ne devrait être accessible que dans le cadre de Programmes d'Accès Spécial et être soumise aux plus sévères restrictions pour éviter toute révélation non autorisée. Seuls les agents les plus sûrs auront accès à ces terribles secrets. Les renseignements ARCHINT auraient une grande valeur pour Delta Green. 
+
+
+
+===Classifications de base===
+
+Il y a quatre classification de base pour définir le niveau de sécurité et l'importance attachée par le gouvernement [à cette information]. 
+
+====Non Classifié====
+
+Étant donné que 99% de la paperasse gouvernementale tombe dans cette catégorie, la plupart des documents non classifiés ne portent aucune marque particulière. Cela ne veut pas dire que les informations non classifiées sont inoffensives. Si un analyste chevronnné rassemble suffisamment de fragments de données apparemment sans rapports entre elles, il peut dessiner une image étonnamment précise d'activités secrètes. Les documents non classifiés ne sont marqués comme tels que lorsqu'ils sont présentés à d'autres qui le sont. 
+
+====Confidentiel====
+
+Cette information peut nuire à la sécurité nationale si elle est divulguée par des voies non autorisées. Il peut s'agir par exemple de données sur les forces militaires ou les caractéristiques des armes, ou de données sensibles sur l'entraînement des troupes, mais aussi d'informations générales sur les forces militaires étrangères et les organisations terroristes. 
+
+====Secret====
+
+C'est la classification la plus courante. Elle protège les informations qui pourraient, en de mauvaises mains, provoquer de graves dégâts ou embarrasser les politiques, détériorer les relations diplomatiques, dévoiler des plans militaires ou des opérations de renseignement et compromettre des programmes scientifiques vitaux liés à la défense nationale. 
+
+====Top Secret====
+
+La divulgation non autorisée de renseignements Top Secret pourrait provoquer de très graves dommages à la sécurité nationale. Les informations susceptibles de déclencher des hostilités armées envers les États-Unis ou un de leurs alliés, perturber les relations internationales, compromettre le système de communications chiffrées ou dévoiler des données technologiques critiques, tombent dans cette catégorie. 
+
+===Classifications secondaires===
+
+Ces classifications sont souvent combinées à une série d'avertissements, d'instruction particulières restreignant l'accès aux informations de façon plus précise que les quatres niveaux de base. 
+On parlera de tels documents en les qualifiant de <<SECRET/NOORN/WNINTEL>> ou <<TOP SECRET/ORCON>>, le premier terme correspondant à la classification de base et le ou les suivants aux avertissements et instructions particulières attirant l'attention sur les restrictions supplémentaires de communication de ces informations. 
+Quelques notes standards sont rappelées ci-dessous, que vous pouvez utiliser sur les aides de jeu fournies aux joueurs pour leur donner un air plus authentique. 
+
+====CNWDI====
+
+__(Critical Nuclear Weapons Design Information)__
+
+Le plus souvent appliquée à des documents TOP SECRET, cette note indique la présence de données liées à la fabrication et l'utilisation d'armes nucléaires. Étant donné la menace croissante du terrorisme atomique et des stocks non contrôlés de produits fissibles, cet avertissement n'est pas à prendre à la légère. 
+
+====COMSEC====
+
+__(Communication Security = Sécurité des Communications)__
+
+Cela concerne les systèmes de chiffrement des communication. Vu l'avance des États-Unis dans les domaines des techniques de cryptage des données et émissions radios, la protection des documents COMSEC est prise très au sérieux. Les livres de code, clés électroniques et matériels de cryptage tombent tous dans cette catégorie. 
+
+====NOCONTRACT====
+
+__(Not releasable to Contractors/ consultants = Ne pas communiquer aux personnes consultantes ou contractuelles)__
+
+Cet avertissement couvre entre autre les informations relatives à la conception et la fabrication des armes et équipements militaires américains, de façon à éviter que les firmes rivales travaillant pour la défense ne se volent des secrets entre elles. 
+
+====NOFORN====
+
+__(Not releasable to Foreign National = ne pas communiquer aux ressortissants étrangers)__
+
+Si dit d'un document qui ne peut être lu que par un citoyen américain possédant les accréditations requises et ayant besoin de la connaître. Les étrangers, même ressortissants d'un pays allié, ne sont pas autorisés à en prendre connaissance. 
+
+====ORCON====
+
+__(Origin Controlled -- Divulgation et extraction contrôlée par la personne à l'origine de cette information)__
+
+Pour une information extrêmement peu divulguée. Quiconque souhaite en extraire des renseignements ou transmettre l'information à d'autres agents doit au préalable en demander l'autorisation à l'agence qui l'a ramenée au départ. C'est la procédure classique <<Rien que pour vos yeux>>. Les documents ORCON sont le plus souvent TOP SECRET mais cela s'applique aussi à des informations classées SECRET. 
+
+====RD====
+
+__(Restricted Data -- Information à diffusion restreinte)__
+
+Ces doculents contiennent des informations liées à l'énergie atomique. Appliqué le plus souvent aux renseignements concernant la recherche et la production d'énergie plutôt qu'à la conception des armements et à leur puissance. Les informations RD sont habituellement classées SECRET ou TOP SECRET. 
+
+====RELxxxx====
+
+__(Auorized Release to XXXX -- Divulgation autorisée à xxxx)__
+
+Ce code indique quelle(s) agence(s) étrangère(s) peu(ven)t avoir accès à un document précis. On trouvera par exemple des documents RELNATO (relatifs à l'OTAN), RELCANUKAUS (Canada, Australie et Royaume-Unis) ou RELUNOPROFOR (Force de Protection des Nations Unies). Certains de ces codes peuvent êtres particulièrement longs et difficiles à prononcer. 
+
+====SCI====
+
+__(Sensitive Compartmentalized Information -- Information sensible compartimentée)__
+
+Les informations IMINT, SIGINT et certaines HUMINT particulièrement sensibles, sont classées SCI. On les considère comme telles du fait qu'elles démontrent l'efficacité de certaines techniques spéciales de collecte de renseignement, comme la définition des images envoyées par les satellites espions. Une puissance étrangère qui .verrait des documents SCI aurait la possibilité de prévoir des protections contre les techniques utilisées. L'origine des informations est habituellement identifiée par un nom de code. L'accès à ces données et leur manipulation sont soigneusement contrôlés et elles ne circulent qu'exceptionnellement hors de bâtiments SCI sécurisés (SCIF). 
+
+====WNINTEL====
+
+__(Warning Notice, Intelligence Sources or Method Involved -- Avertissement, mention de méthodes ou d'origine de renseignements)__
+
+Cette mention rappelle que le contenu du document dévoile une source de renseignements. Il peut s'agir de références explicites à des agents, des informateurs ou des techniques d'espionnage électroniques particulières. La plus grande prudence est requise pour préserver cette source d'informations. 
+
+==== Special Access Programs====
+
+__(Programmes d'Accès Spécial)__
+
+Il existe des Programmes d'Accès Spécial, réglementant la diffusion de données sensibles, au niveau national comme au niveau local. Ils sont tous identifiés par un nom de code et remplissent des fonctions similaires à celles des avretissements, la différence étant un contrôle plus trict. Ces documents sont conservés dans un bâtiment SCI et ne peuvent être divulgués qu'à des personnes ayant accès en lecture à ce programme précis. Les documents diplomatiques, les enquêtes de contre-espionnage et les écrits recelant des connaissances du Mythe de Cthullu peuvent tous postuler à ces programmes. Le nom du code du programme ne doit pas donner d'informations sur la nature de celui-ci. Le projet LIVRE BLEU est l'un des exemples les plus célèbre de Programme Spécial. 
+
+===Accréditations===
+
+Une accréditation de sécurité indique le degré de confiance du gouvernement envers un individu donné. Elle correspond à une classification des informations. On a donc des accréditations __Confidentiel__, __Secret__ et __Top Secret__. Une enquête est menée sur le passé (BI : _Background Investigation_) de toute personne à laquelle on envisage d'accorder une accréditaiton ainsi qu'un contrôle au niveau de son agence (NAC : _National Agency Check_). Le DIS épluche les dossiers de la police et du FBI et interroge ceux qui le connaissent afin de déterminer la fiabilité du candidat. 
+Les personnes susceptibles d'obtenir une accréditation __Top Secret__ sont soumises à une enquête en profondeur sur leur passé (SBI : _Special Background Investigation_) bien plus fouillée que les BI et NAC standards. Un entretien sous détecteur de mensonge est courant dans le cadre d'un Programme d'Accès Spécial. 
+Ces enquêtes sont renouvelées tous les quinze ans (cinq ans pour les accréditations __TOP Secret__) et si ce n'est pas le cas, l'accréditation de l'agent descend automatiquement d'un cran. Toute la paperasse, les rapports d'enquêtes et autres informations dérogatoires, sont envoyées à la _Central Clearance Facility_ (CCF : Service Central des accréditations) qui prend la décision d'accorder ou de refuser l'acréditation demandée. 
+
+
+====Accréditations d'accès====
+
+Le fait d'avoir une accréditation de sécurité ne donne pas automatiquement accès à des informations classifiées, celui-ci étant accordé aux agents en fonction des nécessités de leur travail et du besoin de savoir certaines choses. Lorsqu'une personne se voit accorder l'autorisation de consulter une catégorie précise d'informations, on dit souvent qu'elle a accès en <<lecture>> à celle-ci. 
+C'est le directeur de la sécurité de son agence (souvent appelé Officier Spécial de Sécurité ou SSO) qui définit quelles informations un agent peut connaître. Les SSO tiennent à jour les dossiers des agents actifs dans leur domaine de compétence et peuvent donner ou refuser à un agent l'accès à certains documents. Ceci évite des abus dans l'utilisation des accréditations : un agent travaillant dans les communications et doté d'une accréditation __Top Secret__, par exemple, ne pourra se prévaloir de celle-ci pour entrer dans un centre de recherches sur les armes nucléaires. 
+
+===Documents===
+
+Dans le cadre d'une campagne, des documents <<classifiés>> réalistes ajouteront énormément de plaisir aux joueurs adorant avoir des indices matériels bien faits. Le système de marquage de documents peut être extrêmement détaillé et complexe mais es règles de base sont très simples. 
+
+====Couvertures et étiquettes====
+
+Les documents classifiés sont protégés par une couverture indiquant la classification la plus élévée des papiers contenus à l'intérieur, ainsi que les avertissements et autres instructions particulières. Dans le cas d'un classeur ou d'un ouvrage relié, les deux couvertures doivent comporter ces informations. Les disquettes, CD, DVD informatiques et équipements électroniques doivent être étiquetés. Les couvertures, étiquettes et classeurs répondent en général à un code couleur précis : 
+	__TOP SECRET__		:	___Orange___
+	__SECRET__		:	___Rouge___
+	__CONFIDENTIEL__	:	___Bleu___
+	__NON CLASSIFIÉ__	:	___Vert___
+
+===Marquage des documents===
+
+La classification d'un document est indiquée bien en évidence au sommet et au bas de chaque page. L'avertissement et les noms de code SAP (_Special Access Program_) sont imprimés juste au dessous. Si une page contient uniquement des informations non cléssifiées, par exemple une lettre d'introduction accompagnant un dossier __Secret__, elle comporte quand même l'indication de classification du document en question soulignée de la mention <<Régresse à Non Classifié si Séparée des Pièces Jointes Classifiées>>. 
+Les documents les mieux contrôlés comportent une mention : <<Exemplaire n° -- sur -- exemplaires>> en bas de page, le numéro de série unique étant indique à la place des blancs (en plus de la numérotation des pages). En cas de perte d'un de ces documents, on peut contrôler la liste des personnes ayant signé un reçu en prenant possession de cet exemplaire. 
+On trouve en bas de page les mentions : <<Classifié par>> et <<Déclassifier si>> qui indiquent l'une l'agence, la directive ou les documents d'origine qui ont déterminé la classification de l'ensemble (souvent <<sources multiples>>) et l'autre la date ou les évènements qui amèneront à la perte de celle-ci (généralement : OADR -- _Originating Agency's Determination Required_ : selon indications de l'agence d'origine). 
+
+====Marquage d'une partie d'un document====
+
+Ce système n'est pas obligatoire mais recommandé. Il consiste à marquer chaque page en fonction du plus haut degré de sécurité des informations qui y sont portées. Chaque paragraphe est précédé d'une abbréviation indiquant son niveau (TS, TS/RD, S/NOFRON, U, etc. ). L'agent peut ainsi différencier ce dont il peut parler ou pas avec d'autres personnes et classifier de façon plus précise les informations extraites de ce document. 

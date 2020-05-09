@@ -1,0 +1,17 @@
+Bassinet	3
+Heaume	5
+Fourrures	1
+Cuir	2
+Cuir Clouté	3
+Plaque	6
+Casque de protection (chantier, roller)	1
+Casque intégral (motard)	2
+Casque simple (CRS)	3
+Casque de combat	5
+Protège-tibia (CRS)	3
+Protection artisanale	1
+Protection lagère (discrète)	2
+Protection Lourde (CRS)	3
+Gilet pare-balles	5
+Kevlar	5
+Gilet pare-balles d'assault	6

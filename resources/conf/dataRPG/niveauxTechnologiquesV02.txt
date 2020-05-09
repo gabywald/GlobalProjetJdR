@@ -1,0 +1,13 @@
+NT0	Age de Pierre (à partir de la Préhistoire)	250 $
+NT1	Age du Bronze (à partir de 3 500 av. J.-C.)	500 $
+NT2	Age du Fer (à partir de 1 200 av. J.-C.)	750 $
+NT3	Moyen Age (à partir de 600 ap. J.-C.)	1 000 $
+NT4	Age de la Voile (à partir de 1 450 ap. J.-C.)	2 000 $
+NT5	Révolution Industrielle (à partir de 1 730 ap. J.-C.)	5 000 $
+NT6	Ere de la Motorisation (à partir de 1 880 ap. J.-C.)	10 000 $
+NT7	Ere du Nucléaire (à partir de 1 940 ap. J.-C.)	15 000 $
+NT8	Ere du Numérique (à partir de 1 980 ap. J.-C.)	20 000 $
+NT9	Ere de la Microtechnologie (à partir de 2 025 ap. J.-C. ?)	30 000 $
+NT10	Ere de la Robotique (à partir de 2 070 ap. J.-C. ?)	50 000 $
+NT11	Ere de la Matière Exotique	75 000 $
+NT12+	Selon les désirs du MJ !	100 000 $

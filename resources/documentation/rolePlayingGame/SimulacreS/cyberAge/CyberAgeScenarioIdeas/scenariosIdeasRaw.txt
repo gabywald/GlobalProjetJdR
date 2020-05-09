@@ -1,0 +1,88 @@
+Idées 20140926-28, reprise numérique le 20141001
+
+Scénario Cyber Age / Cyberpunk
+
+Idées de base : 
+	- JASON (amnésique...)
+	- TANGER
+	- ZENTAK^TM, WHITE MA
+	- Low Tech -> paiements CASH
+	- MAST / MediaAsSisT => "un de nos clients a perdu la trace d'un de ses agents"
+	- agent devenu amnésique ; a tenté attaque station spatiale de recherche secrète "MadaCorp" et plus précisemment d'une de ses filiales, ZZYZX
+	- a infiltré sous une fausse ID et a tenté de détruire ce labo
+	- dernier message => "colis 781227"
+	- colis amnésique / sans passé (et pour cause -> cf. Kyle XY) en caisson cryogénique (clone d'une série tatoué 781227BZ ?), récupéré en zone transit d'une grosse station commerciale
+
+Reprise presque scénarisée : 
+
+PJ : ceux par défaut (ou +/- customisés) : 
+	- Jackeur / NetRunner
+	- HoloReporter
+	- Pilote voile solaire / navette spatiale
+	- Techie Espace Profond + NetRun
+	- Gunner
+	- Combat Rapproché
+
+
+MAST, contacté par TechnoBloc / Corporation [Orpheus Inc.]
+	- Orpheus Inc. a perdu la trace d'un de ses cadres dirigeants (et fondateur) opérationnel (Jason McMillan) ; 
+	- personnage assez atypique (voire excentrique), il disparaissait physiquement, parfois pendant plusieurs mois, mais gardait le contact via son secrétariat électronique, toutes les semaines (voire tous les quinze jours), là : pas de nouvelles depuis trois semaines. De plus, personne n'a eu de contact physique avec lui depuis presque un an (après enquête interne + MAST) : grosse affaire en perspective étant donné ses trouvailles antérieures. 
+	- dans un de ses mémos accessibles sur le projet en cours : une liste de noms et compétences => les PJ ! ; 
+	- trace d'une réservation au CrystalPalace(TM) dans les Îles de la Lune (mais pas de trace de l'identité utilisée, inconnue et pas la sienne) ; 
+	- dernier mémo accessible => "colis 781227", données de transport d'un container de cruobagne ou similaire ; 
+
+
+Crédit de 20 000 euros pour les PJ, avec mission de trois (3) jours d'enquête, billets et réservation pour le CrystalPalace(TM), avec les consignes suivantes : 
+	- si les PJ retrouvent Jason McMillan : contacter MAST via la réception en laissant un message pour leur "agence de voyage" qui leur sert de couverture (théoriquement pour des entretiens et conférences sur les "nouvelles ouvertures d'opportunités commerciales des Îles de la Lune")
+	- Orpheus Inc. leur propose comme paiment un crédit de 3 000 euros (par PJ) chez eux sur _tout_ leur catalogue {armes légères ; software ; consoles de cyberspace ; ...}. Libres ensuite à eux d'en faire ce qu'ils veulent. 
+	- ...
+
+Qu'est devenu Jason McMillan ?
+	- toujours à la recherche d'opportunités pour son TechnoBloc / sa corporation, c'est un infiltrateur chevronné (en plus de foisonner d'idées et de créer des équipes indépendantes qu'il fait intégrer ensuite) ; 
+	- secrétariat électronique : accès sécurisés de haut niveau et identification complexe ; souvent seul lien avec lui ; quasiment un serveur de coporation indépendant (dossiers publics / privés ; un Système Expert Évolué qui est quasiment une I.A. ; ...)
+	- dernière mission : a intégré la sécurité de Madacorp (TechnoBloc / Corporation qui possède sa propre ïle de la Lune ; basée sur Terre à Seattle et Tanger ; une I.A. -Zentak- ; une mécène principale -White Ma- ; ...)
+		=> a découvert un de leur labos orbitaux, possédé via une de leur sous-filiale -ZZYZX- et de leurs travaux de recherche en cours dans cette station : <<élevage / culture>> fiable d'être humains en <<cuve>> et utilisation comme traitement de données plus fiable que les I.A. ; 
+		=> a volé un <<exemplaire>>, avec les données sur le projet (en utilisant le <<sujet>> comme <<hôte>> des données) : son idée est de réutiliser le projet de façon différente, plus dans l'idée originale : développement d'embryons <<ex utero>>. 
+	- seul problème : il s'est fait surprendre avec avoir récupéré et conditionné le caisson et fait prendre celui-ci en charge pour une livraison automatique au service bagagerie du CrystalPalace(TM), sous une autre identité (inconnue de Orpheus Inc. et de Madacorp), pour laquelle il a une réservation quasi permanente. 
+	- il n'est ni mort ni capturé, il a réussi à s'enfuir mais fortement blessé (sa combinaison spatiale contient de quoi assister un G.O.S.T. de combat), il a été récupéré à la dérive par un cargo à destination de la lune, mais est devenu amnésique... 
+	- amnésique perdu dans un cargo à destination de la lune, qui passe sur le CrystalPalace(TM) au retour : transit et remplacement de l'équipage, les PJ verront ce cargo parmi d'autres depuis la baie vitrée du restaurant le deuxième jour de leur enquête, avec un jet d'intuition, ils peuvent reconnaître Jason McMillan parmi les membres d'équipages (ils ont eu des photos / projections 3D du bonhomme). 
+
+
+L'enquête des PJ : 
+	- s'ils cherchent Jason McMillan sous son identité ou une identité connu de Orpheus Inc. : rien !
+	- une corrélation entre les dates où il a contacté son secréaire virtuel et les réservations / passages de clients au CrystalPalace(TM) : deux (2) clients correspondent et qui ont pris des appartements / caissons voisins... Il s'agit en fait de Jason McMillan sous deux identités différentes, son identité d'infiltré (cadre de sécurité) chez MadaCorp et une de ses identités de rechange / d'espion. 
+	- si au restaurant ou au bar principal du CrystalPalace(TM), les PJ parlent d'Orpheus Inc. ou de la deuxième identité de Jason McMillan : un serveur vient leur parler d'un <<colis qui traine à la bagagerie>> (adressé pour son identité ou une boite postale au nom d'Orpheus Inc., que le secretaire virtuel devait signaler au bout d'un mois sans signal de sa part). 
+
+Le colis qui traîne à la bagagerie... 
+	=> Cela fait deux semaines qu'il est dans la zone de transit pour les gros bagages des clients du CrystalPalace(TM) : c'est le fameux 781227, noté BZ !
+	- Il est apparamment fermé, mais le contenu est... parti. Une analyse du caisson révèle qu'il s'agit d'un caisson de cryobagne <<modifié>> (pas prévu pour congeler son contenu dans tous les cas) ; en faisant attention, les PJ peuvent trouver des restes d'une susbstance rôsatre gélifiée (l'envoi et l'analyse en labo prendront une journée : <<Une sorte de liquide nutritif de synthèse, qui peut être rechargé en oxygène et remplacé en flux continu. Du même type que ce qui constituait le liquide des caissons utilisés avant les cryoconteneurs, amis en beaucoup plus efficace. >>). Des connecteurs sont présent en plus, prévus pour la transmission de grosses quantités de données (flux vidéo, simulations 3D tremps réel...). 
+	- La marque du fabriquant est toujours présente : ZZYZX et une suite de caractères : 781227BZ ; un système informatique minimal est présent, mais nécessite une recharge en énergie (batteries vides). Remonter à un fabricant est très difficile, ZZYZX figure dans l'annuaire, mais c'est tout (juste une <<boite postale>> sur le réseau) ; remonter à MadaCorp, seulement si on cherche dans les fournisseurs de ce type de matériel d'il y a 30 ans ! (mais ils continuent à faire de la R&D là-dessus et à produire en petites quantité, pour des usages et un nombre de clients assez restreint -- à cause de la concurrence des cryo-conteneurs, qu'ils produisent égalements !). 
+
+
+Le <<passager>> du container 781227-BZ : 
+	- Son <<passager>> s'est réveillé après 24heures --18heures après être arrivé au CrystalPalace(TM)--, une équipe de surveillance / femmes de chambres / stewart s'en est occupé après son réveil, l'ayant trouvé errant et incapable de parler ; maintenant il est un peu homme à tout faire un peu partout dans le CrystalPalace(TM), qu'il connaît comme sa poche et dont il maîtrise même le serveur informatique... 
+	- Les PJ ne le savent pas, mais ils l'ont croisé plusieurs fois (au restaurant et dans la chambre réservée au propriétaire du <<colis>>) ; il se cachera d'eux au début et se dévoilera à eux le troisième jour de l'enquête s'ils ne l'ont pas déniché avant. Au MJ de décider s'il se manifeste de façon discrète ou pas (il leur livre des indices sans se montrer se présente à l'entrée de leur <<suite>>). 
+	- Réellement amnésique (et pour cause : il n'a pas de passé, hors du container et de son utilisation par ZZYZX), son cerveau contient quand même les données récoltées pour reproduire l'expérience ayant servit à le générer (pirater la mémoire via une broche de type C, au moins 50% de réussite, ou tirage cryptage à part). 
+
+
+Orpheus Inc. --- petit TechnoBloc ?
+	- Leur catalogue est assez diversifié : 
+		- armes légères --revolvers, fouets et sabres / katanas monofilaments--, 
+		- logiciels / softwares divers --pratiques : hack, virus, décrypteurs, brisesGlaces...--, 
+		- consoles de cyberespace au style épuré mais très fonctionnel --similaire à ceux de Apple Computer Inc. --
+		- cours et université virtuelle permanente --basé sur les Îles de la Lune et à ParisLaDefense--
+		- lasers, systèmes d'identification de cible, armes molles...
+		- ...
+		- ...
+	- Du fait de Jason McMillan (et des personnes dont il a su s'entourer dès le départ, d'autres cadres similaires), les activités de Orpheus Inc. sont en effet très variées, mais restent centralisées autour du groupe de départ (<<labs>> isolés qui sont assez vite rapatriés dans la <<maison-mère>>, sous la même entité juridique --sinon physiquement--  en Europe, dans l'enclave ParisLaDefense). Existe depuis les années 2060 ; belle santé économique ; pas de filiales. Les <<labs>> sont fondés indépendamment, puis acquis de façon pacifique (pour un univers cyberpunk). 
+	- En fait, Orpheus Inc. est une façade légale des Dactyles, qui ont trouvé là une façon de faire de la Recherche et Développement, mais aussi d'écouler une partie de leur marchandise de façon discrète sans éveiller les soupçons de TechnoBlocs soucieux d'acquérir les technologies Dactyles. Les fondateurs de Orpheus Inc sont en fait des Dactyles (ou ont été formés par elles / eux), sans avoir conservés de liens explicites avec les autres Dactyles (fonctionnement type <<résistance>> pour les échanges : boites aux lettres mortes réelles / virtuelles, agent <<miroir>>...). 
+	- Client régulier de MediASsisT (investigation / exfiltration sur de nouvelles recrues ; espionnage / vol de données sur un concurrent dans un domaine spécifique ; ...). 
+	- ...
+
+MadaCorp
+	- ...
+	- ...
+	- ...
+	- ...
+	- ...
+
