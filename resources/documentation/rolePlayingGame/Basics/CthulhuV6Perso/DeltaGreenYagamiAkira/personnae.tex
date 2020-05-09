@@ -1,0 +1,607 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+%% \usepackage{frcursive}
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{0.50cm}{0.50cm}{0.50cm}{0.50cm}{22pt}{3pt}{15pt}{10pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{empty}
+
+
+%%%%%%%%%%% SOME VALUES IN ENGLISH %%%%%%%%%%%%%%%%%%%%%
+\def\ENdefCharacterSheetHeaderTitle{Standard Sample BRP Character Sheet}
+\def\ENdefCharacterSheetFooterTitle{Basic Role-Playing -- Character Sheet}
+
+
+%%%%%%%%%%% QUELQUES VALEURS EN FRANCAIS %%%%%%%%%%%%%%%%%%%%%
+\def\FRdefCharacterSheetHeaderTitle{Feuille de Personnage Delta Green -- \emph{Yagami, Akira} }
+\def\FRdefCharacterSheetFooterTitle{Delta Green -- Feuille de personnage}
+
+\def\FRdefBOXTITLECharacteristics{ {\large \textbf{Caract{\'e}ristiques \& Attributs}} }
+\def\FRdefBOXTITLEPersonalInforma{ {\large \textbf{{\'E}tat civil}} }
+\def\FRdefBOXTITLESkillsSkillsSki{ {\large \textbf{Comp{\'e}tences}} }
+\def\FRdefBOXTITLEPowerPointsPowe{ {\large \textbf{Points d'{\'e}nergies}} }
+\def\FRdefBOXTITLEFatiguePointsFa{ {\large \textbf{Points de fatigue}} }
+\def\FRdefBOXTITLEHitPointsHitPoi{ {\large \textbf{Points de touche}} }
+\def\FRdefBOXTITLEHitLocationsHit{ {\large \textbf{Localisation de touche}} }
+\def\FRdefBOXTITLEMagicSpellAndPo{ {\large \textbf{Sorts et pouvoirs}} }
+\def\FRdefBOXTITLECharacterPoints{ {\large \textbf{Character Points and Failings}} }
+\def\FRdefBOXTITLESanitySanitySan{ {\large \textbf{Sant{\'e} mentale}} }
+\def\FRdefBOXTITLEEquipmentEquipm{ {\large \textbf{{\'E}quipement}} }
+\def\FRdefBOXTITLEArmorArmorArmor{ {\large \textbf{Armure}} }
+\def\FRdefBOXTITLEWeaponsWeaponsW{ {\large \textbf{Armes}} }
+\def\FRdefBOXTITLENotesNotesNotes{ {\large \textbf{Notes}} }
+
+\def\FRdefCharacterSkillsORIGINA{\bfseries \emph{original}}
+\def\FRdefCharacterSkillsCURRENT{\bfseries \emph{courant}}
+\def\FRdefCharacterSkillsSTR{\bfseries FORce}
+\def\FRdefCharacterSkillsCON{\bfseries CONstitution}
+\def\FRdefCharacterSkillsTAI{\bfseries TAIlle}
+\def\FRdefCharacterSkillsINT{\bfseries INTelligence}
+\def\FRdefCharacterSkillsPOW{\bfseries FORce}
+\def\FRdefCharacterSkillsDEX{\bfseries DEXterit{\'e}}
+\def\FRdefCharacterSkillsAPP{\bfseries APParence}
+\def\FRdefCharacterSkillsEDU{\bfseries EDUcation}
+\def\FRdefCharacterSkillsSAN{\bfseries SANt{\'e}}
+\def\FRdefCharacterSkillsPOU{\bfseries POUvoir}
+
+\def\FRdefCharacterSkillsEFF{\bfseries Effort}
+\def\FRdefCharacterSkillsSTA{\bfseries Endurance}
+\def\FRdefCharacterSkillsIDE{\bfseries Intuition}
+\def\FRdefCharacterSkillsLUC{\bfseries Chance}
+\def\FRdefCharacterSkillsAGI{\bfseries Agilit{\'e}}
+\def\FRdefCharacterSkillsCHA{\bfseries Charisme}
+\def\FRdefCharacterSkillsKNO{\bfseries Connaissance}
+\def\FRdefCharacterSkillsPES{\bfseries Prestance}
+\def\FRdefCharacterSkillsPUI{\bfseries Puissance}
+\def\FRdefCharacterSkillsCOR{\bfseries Corpulence}
+\def\FRdefCharacterSkillsIUI{\bfseries Intuition}
+\def\FRdefCharacterSkillsVOL{\bfseries Volont{\'e}}
+
+\def\FRdefPersonnalInfosNAM{\bfseries Nom}
+\def\FRdefPersonnalInfosFNA{\bfseries Pr{\'e}nom}
+\def\FRdefPersonnalInfosSEX{\bfseries Sexe}
+\def\FRdefPersonnalInfosOCC{\bfseries Occupation}
+\def\FRdefPersonnalInfosPER{\bfseries Personnalit{\'e}}
+\def\FRdefPersonnalInfosRAC{\bfseries Race}
+\def\FRdefPersonnalInfosGEN{\bfseries Genre}
+\def\FRdefPersonnalInfosAGE{\bfseries {\^A}ge}
+\def\FRdefPersonnalInfosMOV{\bfseries Movt}
+\def\FRdefPersonnalInfosHEI{\bfseries Taille}
+\def\FRdefPersonnalInfosWEI{\bfseries Poid}
+\def\FRdefPersonnalInfosNAT{\bfseries Nationalit{\'e}}
+\def\FRdefPersonnalInfosPRO{\bfseries Profession}
+\def\FRdefPersonnalInfosALL{\bfseries All{\'e}geance}
+\def\FRdefPersonnalInfosDIS{\bfseries {\'E}l{\'e}ments distinctifs}
+
+\def\FRdefPowerPointsPersonnal{\textbf{Personnel} }
+\def\FRdefPowerPointsExternalS{Source externe}
+\def\FRdefFatigPointsExhausted{{\'E}puis{\'e} : }
+\def\FRdefFatigPointsTotalEncu{Encombrement total}
+\def\FRdefHitPointsMajorWounds{Blessure majeure}
+\def\FRdefHitPointsDeadDeadDea{Mort}
+
+\def\FRdefHitLocationsMeleeMel{ {\footnotesize \emph{Mel{\'e}e} } }
+\def\FRdefHitLocationsLocation{ {\footnotesize \emph{Localisation} } }
+\def\FRdefHitLocationsMissileM{ {\footnotesize \emph{Missile} } }
+\def\FRdefHitLocationsRightLeg{\bfseries \textsc{Jambe droite}}
+\def\FRdefHitLocationsLeftLegL{\bfseries \textsc{Jambe gauche}}
+\def\FRdefHitLocationsAbdomenA{\bfseries \textsc{Abdomen}}
+\def\FRdefHitLocationsChestChe{\bfseries \textsc{Chest}}
+\def\FRdefHitLocationsRightArm{\bfseries \textsc{Bras droit}}
+\def\FRdefHitLocationsLeftArmL{\bfseries \textsc{Bras gauche}}
+\def\FRdefHitLocationsHeadHead{\bfseries \textsc{T{\^e}te}}
+
+\def\FRdefMagicSpellsPowerName{ {\footnotesize \emph{Sort/Pouvoir} } }
+\def\FRdefMagicSpellsPowerPerc{ {\footnotesize \emph{\%} } }
+\def\FRdefMagicSpellsPowerLeve{ {\footnotesize \emph{Niveaux} } }
+\def\FRdefMagicSpellsPowerDama{ {\footnotesize \emph{Dommage} } }
+\def\FRdefMagicSpellsPowerRang{ {\footnotesize \emph{Distance} } }
+\def\FRdefMagicSpellsPowerPPpp{ {\footnotesize \emph{PP} } }
+\def\FRdefMagicSpellsPowerDura{ {\footnotesize \emph{Dur{\'e}e} } }
+\def\FRdefMagicSpellsPowerCost{ {\footnotesize \emph{Co{\^u}t} } }
+\def\FRdefMagicSpellsPowerFree{Free \textsc{Int}}
+\def\FRdefMagicSpellsPowerTota{Total Cost}
+
+\def\FRdefCharacterPointsPower{ \textbf{Niveau de pouvoir} }
+\def\FRdefCharacterPointsPoint{ Points de personnage }
+\def\FRdefCharacterPointsFaili{ \textbf{Faiblesses ...} }
+\def\FRdefCharacterPointsFDesc{ {\footnotesize \emph{Faiblesses} } }
+\def\FRdefCharacterPointsFCoun{ {\footnotesize \emph{Avantages} } }
+\def\FRdefCharacterPointsTotal{ Total }
+
+\def\FRdefSanityInsane{ \textbf{Fou} }
+\def\FRdefSanityMental{ \textbf{D{\'e}sordre mental} }
+\def\FRdefSanityDisord{ {\footnotesize \emph{D{\'e}sordre} } }
+\def\FRdefSanitySeveri{ {\footnotesize \emph{S{\'e}v{\'e}rit{\'e}} } }
+
+\def\FRdefEquipmentItems{ {\footnotesize \emph{Objet} } }
+\def\FRdefEquipmentEncEn{ {\footnotesize \emph{Enc.} } }
+\def\FRdefEquipmentTotal{ Total \textsc{Enc.} }
+
+\def\FRdefArmorTypeType{ {\footnotesize \emph{Type} } }
+\def\FRdefArmorLocation{ {\footnotesize \emph{Localisation} } }
+
+\def\FRdefWeaponsDamBon{ \textbf{Bonus Dommages:} }
+\def\FRdefWeaponsDamDex{ Dex SR }
+\def\FRdefWeaponsDamSiz{ Tai SR }
+\def\FRdefWeaponsDamBas{ Base SR }
+\def\FRdefWeaponsWeapon{ {\footnotesize \emph{Arme} } }
+\def\FRdefWeaponsAttack{ {\footnotesize \emph{Attaque SR} } }
+\def\FRdefWeaponsPercen{ {\footnotesize \emph{\%} } }
+\def\FRdefWeaponsDamage{ {\footnotesize \emph{Dommage} } }
+\def\FRdefWeaponsAPRang{ {\footnotesize \emph{AP/Range} } }
+
+%%%%% exchange (find & replace) between 'ENdef' end 'FRdef' from here to forward (XXX occurences) %%%%%
+
+
+% mettre du texte en diagonale sur le fond : tikz
+\usepackage{tikz} 
+\def\confidentialTIKZ{%
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[rotate=60,scale=15,text opacity=0.1] at (current page.center) {Confidentiel};
+	\end{tikzpicture}
+}%
+
+\def\confidentialDGTIKZ{%
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[rotate=60,scale=7.5,text opacity=0.1] at (current page.center) {Confidential -- Delta Green};
+	\end{tikzpicture}
+}%
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+% http://www.trustonme.net/didactels/250.html
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+ \pagestyle{fancy}
+% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LO, RE]{\includegraphics[width=0.5cm]{DeltaGreenLogo.png} \hfill 
+	\FRdefCharacterSheetHeaderTitle \confidentialDGTIKZ
+\hfill \thepage /\pageref{LastPage}}
+\fancyfoot[LE, RO]{ }
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+\usepackage{fancybox}
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+%============================= Corps =================================
+\begin{document}
+
+\setlength\parindent{0pt} % \noindent for all document
+
+	\footnotesize
+
+Style de jeu \dotfill Guardien \dotfill Campagne \dotfill ~\\
+
+\begin{minipage}[ht]{2.50cm}
+	\includegraphics[width=2.45cm]{DeltaGreenLogo.png}
+\end{minipage} \hfill \begin{minipage}[ht]{15cm}
+	\fbox{\begin{minipage}{0.975\textwidth}
+		\FRdefBOXTITLEPersonalInforma~\\ %% ~\\
+		%% 
+		\begin{tabular}[c]{ p{0.15\textwidth} p{0.30\textwidth} p{0.15\textwidth} p{0.30\textwidth} }
+			\FRdefPersonnalInfosNAM	& \texttt{Yagami}	\dotfill			& \FRdefPersonnalInfosFNA & \texttt{Akira}	\dotfill	\\
+			\FRdefPersonnalInfosOCC	& \emph{M{\'e}decin} \dotfill						&		\FRdefPersonnalInfosAGE & \texttt{42 ans} \dotfill			\\
+			\FRdefPersonnalInfosPRO	& \texttt{H{\^o}pital de Seattle -- Mut{\'e} {\`a} Quantico} \dotfill					& 			\FRdefPersonnalInfosSEX	& \texttt{Homme} \dotfill		\\
+			\FRdefPersonnalInfosPER	& \emph{Calme, Solitaire} \dotfill					& \FRdefPersonnalInfosNAT & \texttt{Am{\'e}ricain d'origine nip.} \dotfill	 	\\
+			Niveau de vie		& \dotfill Ais{\'e} \dotfill	&  \dotfill 75 & \%		\\
+		\end{tabular}
+	\end{minipage}} % end fbox
+\end{minipage} \hfill \begin{minipage}[ht]{2.00cm}
+	\fbox{\begin{minipage}{0.90\textwidth}
+		~\\
+		~\\
+		\emph{Portrait}~\\
+		~\\
+		~\\
+	\end{minipage}} % end fbox
+\end{minipage}~\\
+
+\begin{minipage}[ht]{0.55\textwidth}
+	\fbox{\begin{minipage}{0.975\textwidth }
+		\FRdefBOXTITLECharacteristics~\\~\\
+		%% 
+		\begin{tabular}[c]{ p{2.50cm} p{2.00cm} p{2.50cm} p{2.00cm} }
+			\FRdefCharacterSkillsAPP	& 16	 & \FRdefCharacterSkillsPES & 80 \%	\\
+			\FRdefCharacterSkillsCON	& 10	 & \FRdefCharacterSkillsSTA & 50 \%	\\
+			\FRdefCharacterSkillsDEX	& 16	 & \FRdefCharacterSkillsAGI & 80 \%	\\
+			\FRdefCharacterSkillsPOW	& 10	 & \FRdefCharacterSkillsPUI & 50 \%	\\
+			\FRdefCharacterSkillsTAI	& 12	 & \FRdefCharacterSkillsCOR & 60 \%	\\
+			\FRdefCharacterSkillsEDU	& 18	 & \FRdefCharacterSkillsKNO & 90 \%	\\
+			\FRdefCharacterSkillsINT	& 11	 & \FRdefCharacterSkillsIUI & 55 \%	\\
+			\FRdefCharacterSkillsPOU	& 9	 & \FRdefCharacterSkillsVOL & 45 \%	\\
+		\end{tabular}			
+	\end{minipage}} % end fbox
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\fbox{\begin{minipage}[ht]{0.975\textwidth}
+		\textbf{Cercles d'influence...} ~\\
+		\begin{tabular}[c]{ p{1.50cm} p{1.50cm} p{1.50cm} p{1.50cm} }
+			Proches		 & \emph{Sant{\'e}} \dotfill	& Oppos{\'e}s	& \emph{Anarchs.} \dotfill	\\
+			{\'E}loign{\'e}s & \emph{Notables} \dotfill	& Ennemi	& \dotfill	\\
+		\end{tabular}
+			\rule{0.975\textwidth}{0.01cm}
+		\textbf{Sant{\'e}} ~\\
+		Seuil de blessure \dotfill ~\\
+		{ \footnotesize \begin{tabular}[c]{ p{1.00cm} c c c c c c c c c }
+			Points	& 1  & 2  & 3  & 4  & 5  & 6  & 7  & 8  & 9  \\
+			de Vie	& 10 & \textbf{11} & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
+		\end{tabular} }
+		Protections \dotfill ~\\
+		Blessures \emph{Seuil {\`a} 5} \dotfill ~\\
+		---	\dotfill
+	\end{minipage}} % end fbox
+	~\hrulefill %% \rule{0.40\textwidth}{0.01cm}
+\end{minipage} %% ~\\
+
+%% %% %% EDUx20 => 360 (occupation)
+%% !! M{\'e}decine 		-80
+%% !! Pharmacologie 		-50
+%% !! Botanique 		-50
+%% !! Biblioth{\`e}que 		-35
+%% !! Trouver objet cach{\'e} 	-35
+%% !! Premiers soins		-45
+%% !! Psychologie		-45
+%% !! Contacts et Resources 	-20
+
+%% %% %% INTx10 => 110 (centres int{\'e}r{\^e}ts personnels)
+%% !! katana / Kendo 		-30
+%% !! Japonais 			-60
+%% !! Latin 			-20
+
+%% %% %% Age 40-44
+%% 30 points de comp{\'e}tences {\`a} ajouter et 3 points {\`a} enlever parmi FOR, CON, DEX ou APP
+%% %% DONE
+%% a priori -1 en CON (10) et -2 en FOR (10)...
+%% les 30 points :: bureaucratie !!
+
+\begin{multicols}{3}
+	\textbf{Connaissance} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Bureaucratie (10\%)		& 40 \% & ~ \\ 		%% !! bonus li{\'e} {\`a} l'{\^a}ge (30) !
+		\cline{3-3}
+		Culture Artistique* (10\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Langue Maternelle* (EDUx5\%)	& --- ---     & -- \\
+		\cline{3-3}
+		\texttt{Anglo-Am{\'e}ricain} \dotfill & 90 \dotfill \% & ~ \\
+		\cline{3-3}
+		Langues* (00\%)			& --- ---     & -- \\
+		\cline{3-3}
+		\texttt{Japonais} \dotfill	& 60 \% & ~ \\		%% !! INTx10 (110) => -60
+		\cline{3-3}
+		\texttt{Latin} \dotfill		& 20 \% & ~ \\		%% !! INTx10 (110) => -20
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Mythe de Cthullu (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences de la Terre* (00\%)	& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences de la Vie* (00\%)	& --- ---     & -- \\
+		\cline{3-3}
+		\texttt{Pharmacologie}		& 50 \% & ~ \\ 		%% !! EDUx20 (360) -50
+		\cline{3-3}
+		\texttt{Botanique}		& 50 \% & ~ \\		%% !! EDUx20 (360) -50
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences Formelle* (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences Humaines (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences Occultes (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} }~\\
+	
+	\begin{center}
+		\includegraphics[width=2.50cm]{../../../../../imgGraphics/artsDecos/ornement06whiteBG.png}
+	\end{center}
+	
+	\vfill
+	\columnbreak
+	
+	\textbf{Savoir-Faire} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Bricolage (20\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Comptabilit{\'e} (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Criminalistique (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Explosifs (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Hypnose (00\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		M{\'e}decine (00\%)		& 80 \% & ~ \\		%% !! EDUx20 (360) 80
+		\cline{3-3}
+		M{\'e}tier* (05\%)		& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Photographie (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Plong{\'e}e sous-marine (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Pratique Artistique* (05\%)	& --- ---     & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Premiers Soins (30\%)		& 75 \% & ~ \\		%% !! EDUx20 (360) -45
+		\cline{3-3}
+		Psychanalyse (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Survie (00\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\textbf{Sensorielles} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Biblioth{\`e}que (25\%)		& 60 \% & ~ \\ 		%% !! EDUx20 (360) -35
+		\cline{3-3}
+		Discr{\'e}tion (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Dissimulation (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		{\'E}couter (25\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Orientation (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Pister (10\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Psychologie (05\%)		& 50 \% & ~ \\		%% !! EDUx20 (360) -45
+		\cline{3-3}
+		Se cacher (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Trouver Objet Cach{\'e} (25\%)	& 60 \% & ~ \\ 		%% !! EDUx20 (360) -35
+		\cline{3-3}
+		Vigilance (25\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\vfill
+	\columnbreak
+	
+	\textbf{Influence} \hrulefill ~\\	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Baratin (05\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Contact \& Ressources (10\%)	& 30 \% & ~ \\ 		%% !! EDUx20 (360) -40
+		\cline{3-3}
+		Cr{\'e}dit (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Imposture (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Interroger (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Jeu* (10\%)			& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		N{\'e}gociation (05\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Perspicacit{\'e} (INTx2\%)	& 22	 \% & ~ \\
+		\cline{3-3}
+		Persuasion (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Savoir-Vivre (EDUx2\%)		& 36	 \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\textbf{Action} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Armes {\`a} feu* (20\%)		& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Armes blanches* (20\%)		& --- ---     & -- \\
+		\cline{3-3}
+		\texttt{Katana / Kendo}		& 50 	\% & ~ \\	%% !! INTx10 (110) => -30
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Armes exotiques* (00\%)		& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Athl{\'e}tisme (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Conduite* (20\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Corps {\`a} corps (DEXx2\%)	& 32	\% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		{\'E}quitation (05\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Nager (20\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Navigation (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Parachutisme (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Nager (00\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Piloter (00\%)			& --- ---     & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\vfill
+	
+\end{multicols}
+
+\begin{minipage}[ht]{1.00\textwidth}
+	\fbox{ \begin{minipage}[ht]{0,975\textwidth} % 
+		\FRdefBOXTITLESanitySanitySan ~\\ %% ~\\ %
+		{\footnotesize Modificateur social \dotfill \% Aplomb [ 1 ] \dotfill SAN initiale 45 \dotfill SAN Max ({\scriptsize 99 - Mythe de Cthullu}) \dotfill } %% ~\\ %
+		{\scriptsize \begin{tabular}[c]{ c c c c c c c c c c c c c c c c c c c c }
+			01$_{01}$ &	02$_{01}$ &	03$_{01}$ &	04$_{01}$ &	05$_{01}$ &
+			06$_{02}$ &	07$_{02}$ &	08$_{02}$ &	09$_{02}$ &	10$_{02}$ &
+			11$_{03}$ &	12$_{03}$ &	13$_{03}$ &	14$_{03}$ &	15$_{03}$ &
+			16$_{04}$ &	17$_{04}$ &	18$_{04}$ &	19$_{04}$ &	20$_{04}$ \\
+			21$_{05}$ &	22$_{05}$ &	23$_{05}$ &	24$_{05}$ &	25$_{05}$ &
+			26$_{06}$ &	27$_{06}$ &	28$_{06}$ &	29$_{06}$ &	30$_{06}$ &
+			31$_{07}$ &	32$_{07}$ &	33$_{07}$ &	34$_{07}$ &	35$_{07}$ &
+			36$_{08}$ &	37$_{08}$ &	38$_{08}$ &	39$_{08}$ &	40$_{08}$ \\
+			41$_{09}$ &	42$_{09}$ &	43$_{09}$ &	44$_{09}$ &	\textbf{45}$_{09}$ &
+			46$_{10}$ &	47$_{10}$ &	48$_{10}$ &	49$_{10}$ &	50$_{10}$ &
+			51$_{11}$ &	52$_{11}$ &	53$_{11}$ &	54$_{11}$ &	55$_{11}$ &
+			56$_{12}$ &	57$_{12}$ &	58$_{12}$ &	59$_{12}$ &	60$_{12}$ \\
+			61$_{13}$ &	62$_{13}$ &	63$_{13}$ &	64$_{13}$ &	65$_{13}$ &
+			66$_{14}$ &	67$_{14}$ &	68$_{14}$ &	69$_{14}$ &	70$_{14}$ &
+			71$_{15}$ &	72$_{15}$ &	73$_{15}$ &	74$_{15}$ &	75$_{15}$ &
+			76$_{16}$ &	77$_{16}$ &	78$_{16}$ &	79$_{16}$ &	80$_{16}$ \\
+			81$_{17}$ &	82$_{17}$ &	83$_{17}$ &	84$_{17}$ &	85$_{17}$ &
+			86$_{18}$ &	87$_{18}$ &	88$_{18}$ &	89$_{18}$ &	90$_{18}$ &
+			91$_{19}$ &	92$_{19}$ &	93$_{19}$ &	94$_{19}$ &	95$_{10}$ &
+			96$_{20}$ &	97$_{20}$ &	98$_{20}$ &	99$_{20}$ &	00$_{20}$ \\
+		\end{tabular} } %% ~\\ % 
+	\end{minipage} } % end fbox
+\end{minipage} %% ~\\
+
+\begin{minipage}[ht]{0.60\textwidth}
+	\fbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLEEquipmentEquipm %~\\
+		\begin{center} \begin{tabular}[c]{ p{0.2\textwidth} p{0.7\textwidth} }
+			<<F{\'e}tiche>>		&	Appareil d'identification de produits et plantes (et catalogue informatis{\'e}, encyclop{\'e}dique)	\\
+			\dotfill		&	\dotfill	\\
+			\dotfill		&	\dotfill	\\
+		\end{tabular} \end{center}
+		%% \rule{0.90\textwidth}{0.01cm}~\\
+		Points de Magie	\emph{[1-18]} \textbf{9} \dotfill
+	\end{minipage}} % end fbox
+\end{minipage} \hfill \begin{minipage}[ht]{0.40\textwidth}
+	\fbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLEWeaponsWeaponsW % ~\\
+		{\footnotesize \begin{center} \begin{tabular}[c]
+			{ p{0.30\textwidth} p{0.10\textwidth} p{0.10\textwidth} p{0.10\textwidth} p{0.10\textwidth} }
+			Arme		&	D{\'e}gats	& Port.		& Cad.		& Charg.	\\
+			\emph{Katana}	&	1D10+impact	& \dotfill	& \dotfill	& \dotfill	\\
+			\dotfill	&	\dotfill	& \dotfill	& \dotfill	& \dotfill	\\
+		\end{tabular} \end{center} ~\\
+		Impact \emph{0} -- Pieds 1D6 -- Poings 1D3 -- T{\^e}te 1D4
+		} %%
+	\end{minipage}} % end fbox
+\end{minipage}
+
+\clearpage
+
+N{\'e} aux USA d'un p{\`e}re japonais et d'une m{\`e}re native de San Francisco (1970). \dotfill ~\\
+Poursuit des {\'e}tudes sup{\'e}rieures : m{\'e}decine options notables botanique et pharmacie mais reste g{\'e}n{\'e}raliste. \dotfill ~\\
+Tr{\`e}s patient, se documente beaucoup, tr{\`e}s m{\'e}ticuleux... \dotfill ~\\
+Dispose d'une documentation assez compl{\`e}te et {\`a} jour en pharmacologie et en botanique. \dotfill ~\\
+Dialogue souvent avec les patients du service des urgences o{\`u} il est affect{\'e} {\`a} l'h{\^o}pital de Seattle. \dotfill ~\\
+A collabor{\'e} {\`a} plusieurs occasions avec les services de police locale et le FBI dans la r{\'e}gion de Seattle pour reconstituer certaines affaires sans toutefois maintenir de contact r{\'e}gulier avec ces services. \dotfill ~\\
+Garde le contact avec la culture paternelle ({\'e}tude de la langue japonaise, et d'un sport de combat d{\'e}riv{\'e} du kendo). \dotfill ~\\
+
+
+Contact{\'e} par le FBI pour son affectation (\emph{Quantico, Virginie}) {\`a} la formation d'agents sur l'utilisation de techniques m{\'e}dicales d'urgence, ainsi que pour ses connaissances appliqu{\'e}es en pharmacie et en botanique. \dotfill ~\\
+
+
+\end{document}

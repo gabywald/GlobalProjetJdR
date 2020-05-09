@@ -1,0 +1,301 @@
+Dwarf	Small, quiet digging machine.
+Grubb	Swarm of puke-green grubs that eat their way through the Wall.
+Hammer	Glowing red hammer.
+Jackhammer	Glowing red jackhammer, which fires a stream of white hot energy bolts at the Data Wall.
+Jap Water Torture	Tiny, random drops of glowing "water" strike the Wall, causing ripples.
+Pile Driver	Steam-powered pile driver on the verge of blowing up.
+Portal	Metallic door that slowly meshes with the Data Wall then swings open for the Netrunner.
+Ramming Piston	Huge nuclear powered battering ram, as drawn by Jack Kirby.
+Sledgehammer	Glowing white Sledgehammer.
+Termite	Brown, fist-sized, fractal insect with bright blue eyes. Emits low-pitched bleeps as it burrows into Wall.
+Worm	Gold-metal, robotic worm, with green neon eyes.
+
+Codecracker	Thin beam of white light, which shoots from the Netrunner's hands and spreads through the Code Gate.
+Cyfermaster	Fractal image of a man floating in lotus position.
+Dupre	Elegant middle-aged Victorian. He speaks to the locked Gate, and takes notes as he does so.
+Raffles	Dapper young man wearing evening clothes of the 1990's. He speaks to the door then vanishes.
+Tinweasel	Shifty-eyed character with an insincere smile.
+Wizard's Book	Stream of blazing white symbols, flowing at incredible speed from the Netrunner's open hand.
+
+Bloodhound	Large, gun-metal grey hound. It has glowing blue eyes and wears a thick circlet of blue neon.
+Bulldog	Short, burly humanoid in metal armour. A glowing visor is situated above snarling, canine jaws.
+Canis Major/Minor	Large steel statue of a dog/a computerised chihuahua.
+Cry Baby	None until activated, then it appears as a baby, hanging around the Netrunner's neck, screaming.
+Clairvoyance	The eyes of the Netrunner's icon glow fiery blue, or a pair of glowing eyes appear if the icon has none.
+Data Raven	Metal-plated black bird.
+Fang	Glowing green pit bull.
+Fang 2.0	Robotic pit bull with a red head.
+Fetch 4.01.1	Chrome greyhound with glowing blue collar.
+Guard-Dog	Detected it appears as a standard Bloodhound, other wise it is a slight flicker at the periphery of vision.
+Hidden Virtue	Glowing green ring which the Netrunner looks through.
+Hunter	Hound head lunging down the target's line.
+Looking Glass	Series of mirrors appears in front of the Netrunner, passing over and through the target icon.
+Mouse	Small, innocuous mouse.
+Netspace Inverter	Flying eyeball; turns invisible when activated.
+Pit Bull	Short, heavily built, steel dog. It has glowing red eyes and wears a circlet of red neon.
+Rex	Rather nasty, metal plated dog with really big teeth.
+See Ya	Shimmering silver screen.
+Shadow	Netrunner's icon gains a long, humanoid shadow.
+Smarteye	Spinning crystal ball; the ball stops and the appropriate icon appears within.
+Speedtrap	Flat, glowing plate of glass, in which images appear.
+Watchdog	Large, black, metal dog. It has glowing red eyes and a spiked metal collar.
+
+Asp	Glowing golden snake.
+Cascade	Shower of random neon-coloured pods & capsules sprays the target's icon and are absorbed on contact.
+Cascade II	Floating ball of energy.
+Clown	Annoying, loud, obnoxious, white-faced circus clown, complete with slapstick, seltzer bottle, pies, etc.
+DecKRASH	Cartoon stick of dynamite with fuse.
+Feedback	Beam of orange neon which shoots from the Netrunner's fingertips.
+Flatline	Beam of yellow neon which shoots from the Netrunner's fingertips.
+Fragmentation Storm	Huge white electrical arc that strikes the target and follows his line back to his deck.
+Grid Wave	Black sphere with twisting light waves surrounding it.
+HellBurner	Giant, disembodied fist which burns with blue, fractal fire, grabs onto target, engulfing it in blue flames.
+Krash	Large, cartoon anarchist bomb, with a sizzling fuse.
+Murphy	You never know...
+Pi in the Face	Large cartoon pie, for throwing.
+Poison Flatline	Beam of green neon which launches from the Netrunner's fingertips.
+Poltergeist	Random flashes of energy from everywhere, wiping data and files.
+Pox	Floating ball of energy that explodes into a wash of sickly coloured globules.
+Scatter Shot	Shotgun shooting fractal shot.
+Swarm	Cartoon-y bee that flies towards a CPU, stinging it.
+Typhoid Mary	Female Killer robot.
+Weed	Tangled weeds growing on the icon of the system's CPU(s).
+Vacuum	Series of hexagonal frames that suck the 'runner's Icon out of the data fort.
+Virizz	Glittering DNA shape made of lights and neon.
+Viral 15	Swirling metallic blue fog with a white neon DNA helix embedded in the centre.
+
+Black Mask	Anything programmed into it.
+Cloak	Makes the user's Icon invisible.
+Domino	Depends on the data fort.
+George	Cartoon signpost with signs pointing in all directions.
+Invisibility	Flickering, iridescent sheet, which drapes over the Netrunner.
+Open-Ended Mileage	Blue sphere surrounded by two stylized lightning bolts.
+Rabbit	Fractal rabbit going like the blazes. Also Bugs Bunny variants around.
+Replicator	Chrome sphere creating millions of holographic images of the Netrunner.
+Signpost	Signpost with signs pointing in all directions.
+Silhouette	Looks as it the Netrunner has jacked out.
+Spore	Each spore looks like a small mote of light.
+Stealth	Sheet of black energy draped over the Netrunner's Icon.
+Superballs	Thousands of primary-coloured rubber balls bouncing around target's square, as if in a glass cube.
+Vewy Vewy Quiet	The 'runner makes no sound and turns translucent.
+
+Armor	Glowing golden armor in a high tech design.
+DeckShield One	Deck's data fort/position in netspace is sheathed in fractal armor-plating.
+Flak	Cloud of blinding, glowing, multicoloured lights, swirling in all directions.
+Force Shield	Flickering silver energy barrier.
+Joan of Arc	Woman's face that grimaces in pain.
+OutJack	None. 
+Reflector	Flare of blue green light, coalescing into a mirrored bowl.
+Shield	Shifting circular energy field appearing in front of the Netrunner.
+
+Aardvark	Matrix of thin yellow neon lines, which close around the Worm, then dematerialise with it trapped.
+Banpei	Robotic samurai.
+Black Dahlia	Incredibly seductive woman in a black evening dress.
+Bunnies	Rapidly-multiplying bunch of burnished gunmetal coloured bubbles, with classic "rabbit ears" antennae.
+Chameleon	Killer with a polished mirror face that reflects the Icon of the program it is attacking.
+Codeslinger	Cowboy with six-shooter codeguns.
+D'Arc Knight	Svelte knight in armor.
+Data Naga	Exotic woman with a serpentine lower torso and six arms.
+Dogcatcher	Basic male or female humanoid shape carrying a net on a pole.
+Dragon	Great golden dragon robot, wreathed in electrical discharges. Laser beams shoot from it's eyes.
+Dropp	A ripple across the immediate area like a drop in a pond.
+Eradicator	Glowing amoeba with huge jaws.
+Exorcist	Fractal priest in full regalia, carrying a large religious symbol.
+Hydra	Glittering blue fog that encircles its target and dematerializes it.
+Ice Pick Willie	Classic '30s gangster hitman.
+Killer II	Large manlike robot, dressed as a metallic samurai. His eyes glow red and he carries a glowing Katana.
+Killer IV	Large manlike robot, dressed as a metallic samurai. His eyes glow red and he carries a glowing Katana.
+Killer VI	Large manlike robot, dressed as a metallic samurai. His eyes glow red and he carries a glowing Katana.
+Loony Goon	Cartoon character of the 'runner's choice.
+Manticore	Huge, lionlike shape, drawn in red neon schematic lines. A large scorpion tail arcs over one shoulder.
+Mirror	Large, square mirror floating in front of the 'runner. The bolt goes in then comes out again.
+Ninja	When seen it appears as a ninja carrying a glowing sword.
+Orion	Powerful man or woman with bow and flying platform or an angel with wings and divine radiance.
+Possessor	Hooded robe, with nothing inside. Robe will cover another Icon, which can be seen in the hood.
+Raptor	Realistic falcon which swoops down upon it's prey.
+Raven	Raven that attempts to peck out the eyes of the target.
+Sentinels Prime	Golden humanoid with a big gun.
+Shaka	Zulu warrior with spear and shield.
+Snowball	Snowball that grows in size for each program it destroys.
+Start-Up Immolator	Bolt of flame that shoots from the 'runner's mouth and burns the target program to ash.
+Triggerman	Film noire-style detective.
+Wildcard	Representation of the old Capone ganger "Wild Card".
+Wolf	Identical to the Watchdog icon, except that it will flash entirely red as it attacks.
+
+Ball and Chain	Classic prisoner's ball and chain clamped to some part of the target icon.
+Bolter Cluster	Wicked looking turret springs forth to blast the target.
+Brainwipe	Acid-green electrical arc, which leaps from the floor and engulfs and kills the 'runner.
+Cerebus	Dark, metallic dog with 2 heads. One fires Hellbolts from its eyes, the other howls as it pursues target.
+Cinderella	Lovely woman with green glowing eyes, in 18th century ball gown, Anything she touches ignites.
+Code Corpse	Skeleton in a cloak with a scythe attacks the target.
+Cortical Scrub	Green globe that send out electrical arcs.
+Data Darts	Swarm of red globes that strike at the target.
+Fatal Attractor	Attractive young woman in a skintight bodysuit. DIFF Sys Know to recognise her.
+Firestarter	Blazing pillar of fire, which speaks the Netrunner's name in a hissing, booming voice, then leaps at him.
+Glue	Shifting pattern of red shapes flickering across the floor to entangle the Netrunner.
+Hellbolt	Bolt of crimson fire launched from the Netrunner's raised hand.
+Hellhound	Huge, black, metal wolf. It's eyes glow white, and fire ripples over its body. Repeats the 'runner's name.
+Homewrecker	Fiery electrical arc that shoots at the target's eyes.
+Jack Attack	Pair of glowing schematic handcuffs encircling the Netrunner's wrists.
+King Trail	Glowing yellow banana slug.
+Knockout	Yellow neon schematic boxer appears and strikes out at the Netrunner's Icon.
+Liche	Metallic skeleton dressed in black robes. Grabs the 'runner in its grasp and drags him under the floor.
+Mastiff	Glowing blue mastiff with a huge spiked collar.
+Neural Blade	Glowing, rune-etched broadsword.
+Pepe Le Pue	Cartoon skunk the wraps around the Netrunner's Icon.
+Psychodrome	Disguised as system. 'Runner is placed in virtual room of faceted, mirrored walls displaying torture.
+Red-Out	Shifting contextural haze of red pixels that descend on the Netrunner; changing the colour of his Icon.
+Shock.r	Golden bolt from the Netrunner's palm.
+Sleeper	Electrical arc, which leaps from the floor and engulfs the 'runner.
+Spazz	Nimbus of electrical energy surrounding the target.
+Stationery	Pieces of paper, with 'You're Nicked!' on them, appears in a sort of snowstorm over the Netrunner.
+Stun	Bolt of blue flame streaking from the Netrunner's open palm.
+Sword	Glowing energy katana.
+The Audio Virus	Photo-realistic stereo system, which will tremble and vibrate from the noise it makes.
+Threat	Any minor offensive or defensive program. Set at time of purchase.
+TKO 2.0	Chrome boxer who smacks the target with a nasty left hook.
+Werewolf	None normally, but a stylish wolf in a suit when rezzed.
+Zombie	Shrouded, skeletal form, enveloped in stinking grey mist. It lunges out and rips the Netrunner's head off.
+
+A Picture's Worth	Slot machine. Data flows in though coin slot, machine spins a jackpot, scrambled data pours into MU.
+Al Boon	Stream of fractal code that rapidly coalesces into a fractal solid.
+Black Sky	Black cloud which forms between the enemy program and the runner.
+Blink	Swirling cloud of fractal code that coalesces into a random fractal solid (when it works). Or blows up.
+Dummy	Small spinning chrome pyramid that reflects the Icon of any program it encounters.
+Evil Twin	The Netrunner's Icon seems to fly around in large arcs.
+IGOR	Classic "mad-scientist's" assistant; complete with lab coat and hunchback.
+Lightning Bug	6 motes of light that slowly alternate between red and white. The motes lazily circle the Netrunner.
+Omnivore	Whirring, buzzing, screeching ball of blades which careens into its target and thoroughly mangles it.
+Satchel Charge	A bomb in a backpack.
+Scribe	Cowled chrome monk with feather pen.
+Wolfpack	Pack of electrically-charged wolflike forms which pounce upon their target, ripping it apart.
+
+Crystal Ball	None.
+Dee-2	None.
+Genie	None.
+Hotwire	None.
+Knevil	Wildly-dressed motorcyclist, with madly glinting eyes. He grabs the remote's icon and begins moving it.
+News At 8	None.
+Open Sesame	None.
+Phone Home	None.
+Rockerbit	Cartoonish Rocker that hangs around the speaker remote and 'yells' into it as appropriate.
+Soundmachine	None.
+Terminator	A disembodied cyberarm begins typing, writing, or drawing on the remote icon in question.
+Viddy Master	None.
+WAD Controller	None.
+
+Alias	None.
+Backup	None.
+Baedeker's Net Map	A green line extending across a Net map.
+Bakdoor	A green line extending across a Net map.
+Breadcrumbs	Line of glowing sparks forming a trail.
+Butcher Boy	Takes the appearance of a system accounting program.
+Cartographer	None.
+Databaser	None.
+Dolphin Programs	Sleek, chrome dolphin.
+ElectroLock	None.
+Expert Schedule An	None needed, but might appear as a humanoid icon that leads you to the files you requested.
+Filelocker	None.
+File Packer	None.
+Flare Gun	Big-barrelled flare gun.
+Flip Switch 2.0	None.
+Flip Switch 3.0	None.
+GateMaster	None.
+Guest Book	An old-style hotel guest book and quill.
+Instant Replay	None.
+Mictotech AI Interface	Floating hollow mask.
+Multinetter	None.
+Multi-Tasker	None.
+Mystery Box	Cartoon box with strange gears and widgets on each surface.
+NetMap	None.
+Newsgroup Filter	A simple Icon of the user's choice.
+Padlock	None.
+Re-Rezz	None.
+R&D Protocol Files	None needed, but might appear as a humanoid icon that leads you to the files you requested.
+Shredder Uplink	Janitor program who rifles through the pieces inside a trash can and pulls out complete files.
+Translator 2000	None.
+Zetatech Installer	'Tronnic humanoid upper body mounted in a round metallic base, who feeds programs into base.
+
+Afreet II	Tall, powerful black man, dressed in evening clothes, wears a fez and speaks in a formal, deep voice.
+Balron II	Huge, male figure. Dressed in futuristic black armor. Carries a red glowing energy blade.
+Imp II	Small, orange sphere of light, with two amused looking red eyes. Beeps, whistles, & pings.
+Reaper	Classic Grim Reaper, complete with flaming sickle and cloak made of outer space.
+Soulkiller 3.0	Swirling vortex that speaks in a high crystalline voice, and sucks the 'runner into it.
+Succubus II	Voluptuous, nude, hairless female, made from shiny chrome metal. Has large batlike wings, blue eyes.
+Thug	Generic cartoon thug.
+Vampyre II	Figure in grey robes, with golden eyes, & fangs. Transforms into misty cloud that dissolves other icons.
+
+Boardwalk	Stylized porcupine-like shape that invades the database.
+Cockroach	Small cockroach-like image that multiplies across the face of the database.
+Cream Pie	A cream pie.
+Deep Thought	Dark depression/hole that slowly works it's way into the database (when it's visible at all).
+Eavesdropper	None specific, it's supposed to blend in.
+Fait Accompli	Cloaked and hooded man, with a glimmer of a sinister smirk under the hood.
+False Echo	Shimmering "hologram" mirror image of the 'runner.
+Gremlins	Little green men running around carrying monkey wrenches.
+I Spy	Hollow mask with piercing light-beam eyes.
+Incubator	Translucent pyramid with the nucleus of another program always growing inside it.
+Pattel's Virus	Swirl of hundreds of crystalline fragments.
+Skivviss	Bulbous chrome robot with four arms that act as a finder subroutine while corrupting data.
+
+Chimera	Fully animated chimera which breaths fire and choking gas at the target demon.
+Soulkiller 1.0	Swirling vortex that speaks in a high crystalline voice. The vortex sucks the 'runner into it.
+Trap!	Three Asps flowing out of the file/node.
+
+CloakMore	None.
+Dazzler	Usually disguised as a piece of system architecture or simple defence program.
+Monitor	None. 
+Panzer	Big computer generated tank. Often customised by in Corp data forts.
+Pocket VR	Usually disguised as a piece of system architecture or simple defence program.
+Too Many Doors	Junction of 3 or more access routes. These "doors" can be unlabelled, labelled identically, or wrongly.
+
+Data Wall	Standard Data Wall.
+Data Wall 2.0	Picket fence.
+Wall of Static	Shifting wall of static surrounding the data fort.
+Crystal Wall	Crystalline wall.
+Fire Wall	Wall of flame.
+Reinforced Wall	Very sturdy looking concrete wall.
+Rock is Strong	Huge stone wall.
+
+Anti-Program Wall	Looks like a standard Data Wall.
+Anti-Personnel Wall	Looks like a standard Data Wall.
+Laser Wire	Mesh of laser light that reaches out to engulf the 'runner.
+Razor Wire	Data Walls that can sprout buzzsaw blades to attack the 'runner.
+Shotgun Wire	An aimpoint appears on the 'runner's Icon, at which the Wall will fire a burst of neural feedback.
+Wall of Ice	Huge, brain-like image emerges from the Data Wall to bombard the 'runner with spheres of programming.
+Superior Net Barrier	Upgraded Data Walls have a tight matrix woven into them.
+
+Code Gates	Normal Code Gate, but variations are commonplace (see Brainware Blowout).
+Cortical Scanner	Keyhole that scans your Icon.
+Endless Corridor	The Gate looks like a corridor that just keeps going on and on and on.
+Encryp Breakthrough	Upgraded Code Gates have a tight matrix woven into them.
+Haunting Inquisition	Normal Gate until it activates. Then it's whatever your worst nightmare is.
+Mazer	Looks like a maze.
+Nerve Labyrinth	Green labyrinth that seems to draw in the 'runner and squeeze his brain.
+Shrouded Gate	Invisible or disguised as a Data Wall.
+Tutor	Regular Code Gate that gives your Icon a tail which other ICE can yank.
+
+Trailer Hitch	An open-topped, single-exit trailer.
+18-Wheeler	An 18-wheeler trailer with the Netrunner's icon on the sides of the trailer.
+
+Brain Buster	User's head looks as it's steroids, and he radiates an aura of great intellect.
+Gestalt	Whatever it wants, after all it is a super intelligence.
+
+Memorial ICEbreaker	A non-Euclidean corkscrew.
+Bone	Rubber dog Bone.
+Pirate Uplink	None.
+Rache's SeeYa	Shimmering silver screen, shows nothing (program), sine wave (human), sawtooth wave (AI/Pseudo Int).
+Rice Burner	Japanese-style racing motorcycle.
+SideWalker	None.
+Succubus III	Very close variant on Spider Murphy's Icon, a busty, curvaceous, rendition of a red-headed anime girl.
+
+EmergencySelf-Construct	Swirling vortex of blue lightning that sucks the 'runner's Icon into it; if successful the Icon later emerges.
+Lunch Money™	Super-realistic little girl that plays innocent, then gets an evil look in it's eyes and attacks the 'runner.
+
+Antiquated Routines	Older-style and more primitive Net imagery.
+Bizzare Encryption	None.
+Blood Cat	Dead-black panther with glowing red eyes and mouth.
+TesseractConstruction	Fort Fort's interior defies orientation, up, down and sideways constantly changing, walls at impossible angles.
+
+Black ICE QA	None.
+Security Optimization	None.

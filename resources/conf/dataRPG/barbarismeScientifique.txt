@@ -1,0 +1,161 @@
+Table Générale
+	Table Objet	[Objet]
+	Table Nature	[Nature]
+	Table Préfixe	[Préfixe]
+	Table Fonction	[Fonction]
+	Table Position	[Position]
+	Table VerbesPannes	[VerbesPannes]
+
+Table Objet
+	Alternateur
+	Batterie
+	Booster
+	Bouclier
+	Cabine
+	Cale
+	Carburateur
+	Champs
+	Circuits
+	Comburant
+	Compteur
+	Computer
+	Condensateur
+	Coupleur
+	Cyclotron
+	Déflecteur
+	Driver
+	Essuie-glace
+	Extincteur
+	Fusée
+	Générateur
+	Injection
+	Laser
+	Levier
+	Liquide
+	Ordinateur
+	Oscillateur
+	Pression
+	Processus
+	Pulseur
+	Radio
+	Senseurs
+	Stabilisateur
+	Transducteur
+	Ventilo
+	Vibromètre
+	Vobulateur
+
+Table Nature
+	Avancement
+	Combustion
+	Condensation
+	Conditionnement
+	Effet
+	Energie
+	Frottement
+	Glissement
+	Impact
+	Médiation
+	Mémoire
+	Ascillation
+	Positionnement
+	Pression
+	Propension
+	Pulsion
+	Rayonnement
+	Réaction
+	Refroidissement
+	Retardement
+	Stabilisation
+	Tension
+	Turbulence
+	Vibration
+
+Table Préfixe
+	Aéro
+	Astro
+	Bi
+	Bio
+	Carbo
+	Cryo
+	Gyro
+	Hétéro
+	Homo
+	Hydro
+	Hyper
+	Inter
+	Interféro
+	Magnéto
+	Méga
+	Méta
+	Philo
+	Prolo
+	Rétro
+	Roto
+	Servo
+	Super
+	Thermo
+	Turbo
+	Vibro
+
+Table Fonction
+	Actif
+	Athermogile
+	Atomique
+	Automatique
+	Biogérique
+	Dynamique
+	Electronique
+	Energique
+	Hétérodyne
+	Ionique
+	Magnétique
+	Manuel
+	Métrique
+	Moléculaire
+	Neuronal
+	Nucléaire
+	Optique
+	Posotronique
+	Pulsé
+	Régulé
+	Retardé
+	Sinusoïdal
+	Stabilisé
+	Statique
+	Triangulaire
+
+Table Position
+	Arrière
+	Avant
+	Central
+	Se secours
+	De soutien
+	Inversé
+	Latéral
+	Parallèle
+	Principal
+	Relatif
+	Secondaire
+
+Table VerbesPannes
+	A des ratés
+	A ripé
+	Bourjouffle
+	Délire
+	Dérape
+	Disjoncte
+	Est à plat
+	Est dans le rouge
+	Est K.O.
+	Est mort
+	Est naze
+	Flanche
+	Fuit
+	Grille à fond
+	Ne répond plus
+	S'enflamme
+	Se dévisse
+	Se dilate
+	Se disloque
+	Tourne dans le vide

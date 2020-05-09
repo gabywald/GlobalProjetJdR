@@ -1,0 +1,252 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+\usepackage{lastpage}
+\usepackage{multirow}
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{60pt}{25pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{headings}
+
+\def\MainTitle{Sc{\'e}nario Cyber Age -- Introduction Argonautes}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	\MainTitle 
+\hfill \includegraphics[width=0.5cm]{img/logo_glider.png} }
+\fancyfoot[RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+	\MainTitle 
+\hfill \thepage /\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.25pt}
+\renewcommand{\footrulewidth}{0.50pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+%============================= Corps =================================
+\begin{document}
+
+\setlength\parindent{0pt}
+
+%% ~\\
+\vfill
+
+\begin{center}
+	\textbf{\Large \MainTitle }~\\
+	\textbf{ Sc{\'e}nario Cyber Age / Cyberpunk }~\\
+	\emph{Id{\'e}es 20140926-28, reprise num{\'e}rique le 20141001-16}~\\
+	\emph{PlayTest 20141121 (\emph{Picsou, Pruparl, Horyzone, Elise}), et notes / corrections suppl{\'e}mentaires}~\\
+	\emph{20150223 notes / corrections suppl{\'e}mentaires, id{\'e}es r{\'e}-orientation + campagne... }
+\end{center}
+
+\tableofcontents
+
+\vfill
+
+~\\
+
+%% \clearpage
+
+\section*{Id{\'e}es de base : \markboth{Id{\'e}es de base : }{Id{\'e}es de base : }}
+\addcontentsline{toc}{section}{Id{\'e}es de base : }
+
+\begin{itemize}
+	\item JASON (amn{\'e}sique...), Argonautes, Argos...
+	\item Seattle, Tanger, ZENTAK~\texttrademark, WHITE MA, MadaCorp, Dactyles...
+	\item MAST / MediaAsSisT => "un de nos clients a perdu la trace d'un de ses agents"
+	\item agent, a infiltr{\'e} sous une fausse ID et a tent{\'e} de d{\'e}truire ce labo, devenu amn{\'e}sique ; a tent{\'e} attaque station spatiale de recherche secr{\`e}te "\texttt{\texttt{\emph{MadaCorp}}}" et plus pr{\'e}cisemment d'une de ses filiales, \texttt{ZZYZX}
+	\item dernier message => "colis 781227", colis amn{\'e}sique / sans pass{\'e} (et pour cause -> cf. Kyle XY) en caisson cryog{\'e}nique (clone d'une s{\'e}rie tatou{\'e} 781227BZ ?), r{\'e}cup{\'e}r{\'e} en zone transit d'une grosse station commerciale
+	\item Low Tech -> paiements CASH ?? ; Miss Green ?? ; C3C ?? ; BBB ??
+\end{itemize}
+
+\subsection*{PJ conseill{\'e}s\markboth{PJ conseill{\'e}s}{PJ conseill{\'e}s}}
+\addcontentsline{toc}{subsection}{PJ conseill{\'e}s}
+
+PJ : ceux par d{\'e}faut (ou +/- customis{\'e}s) : 
+\begin{itemize}
+	\item Jackeur / NetRunner
+	\item HoloReporter
+	\item Pilote voile solaire / navette spatiale
+	\item Techie Espace Profond + NetRun
+	\item Gunner
+	\item Combat Rapproch{\'e}
+\end{itemize}
+
+\clearpage
+
+\section*{Reprise presque sc{\'e}naris{\'e}e : \markboth{Reprise presque sc{\'e}naris{\'e}e : }{Reprise presque sc{\'e}naris{\'e}e : }}
+\addcontentsline{toc}{section}{Reprise presque sc{\'e}naris{\'e}e : }
+
+\subsection*{Du c{\^o}t{\'e} de chez MAST. \markboth{Du c{\^o}t{\'e} de chez MAST. }{Du c{\^o}t{\'e} de chez MAST. }}
+\addcontentsline{toc}{subsection}{Du c{\^o}t{\'e} de chez MAST. }
+
+MAST, contact{\'e} par TechnoBloc / Corporation \textbf{\emph{\texttt{Orpheus Inc.}}} : 
+\begin{itemize}
+	\item \texttt{Orpheus Inc.} a perdu la trace d'un de ses cadres dirigeants (et fondateur) op{\'e}rationnel (Jason McMillan) ; 
+	\item personnage assez atypique (voire excentrique), il disparaissait physiquement, parfois pendant plusieurs mois, mais gardait le contact via son secr{\'e}tariat {\'e}lectronique, toutes les semaines (voire tous les quinze jours), l{\`a} : pas de nouvelles depuis trois semaines. De plus, personne n'a eu de contact physique avec lui depuis presque un an (apr{\`e}s enqu{\^e}te interne + MAST) : grosse affaire en perspective {\'e}tant donn{\'e} ses trouvailles ant{\'e}rieures. 
+	\item dans un de ses m{\'e}mos accessibles sur le projet en cours : une liste de noms et comp{\'e}tences => les PJ ! ; 
+	\item trace d'une r{\'e}servation au CrystalPalace~\texttrademark dans les {\^I}les de la Lune (mais pas de trace de l'identit{\'e} utilis{\'e}e, inconnue et pas la sienne) ; 
+	\item dernier m{\'e}mo accessible => "colis 781227", donn{\'e}es de transport d'un container de cryobagne ou similaire ; 
+\end{itemize}~\\
+
+Cr{\'e}dit de 20 000 euros pour les PJ, avec mission de trois (3) jours d'enqu{\^e}te, billets et r{\'e}servation pour le CrystalPalace~\texttrademark, avec les consignes suivantes : 
+\begin{itemize}
+	\item si les PJ retrouvent Jason McMillan : contacter MAST via la r{\'e}ception en laissant un message pour leur "agence de voyage" qui leur sert de couverture (th{\'e}oriquement pour des entretiens et conf{\'e}rences sur les "nouvelles ouvertures d'opportunit{\'e}s commerciales des {\^I}les de la Lune")
+	\item \texttt{Orpheus Inc.} leur propose comme paiment un cr{\'e}dit de 3 000 euros (par PJ) chez eux sur \textbf{tout} leur catalogue {armes l{\'e}g{\`e}res ; software ; consoles de cyberspace ; ...}. Libres ensuite {\`a} eux d'en faire ce qu'ils veulent. 
+	\item ...
+\end{itemize}
+
+%% \clearpage
+
+\subsection*{Qu'est devenu Jason McMillan ?\markboth{Qu'est devenu Jason McMillan ?}{Qu'est devenu Jason McMillan ?}}
+\addcontentsline{toc}{subsection}{Qu'est devenu Jason McMillan ?}
+
+\begin{itemize}
+	\item toujours {\`a} la recherche d'opportunit{\'e}s pour son TechnoBloc / sa corporation, c'est un infiltrateur chevronn{\'e} (en plus de foisonner d'id{\'e}es et de cr{\'e}er des {\'e}quipes ind{\'e}pendantes qu'il fait int{\'e}grer ensuite) ; 
+	\item secr{\'e}tariat {\'e}lectronique : acc{\`e}s s{\'e}curis{\'e}s de haut niveau et identification complexe ; souvent seul lien avec lui ; quasiment un serveur de coporation ind{\'e}pendant (dossiers publics / priv{\'e}s ; un Syst{\`e}me Expert {\'E}volu{\'e} qui est quasiment une I.A. ; ...)
+	\item derni{\`e}re mission : a int{\'e}gr{\'e} la s{\'e}curit{\'e} de \textbf{\emph{\texttt{\emph{MadaCorp}}}} (TechnoBloc / Corporation qui poss{\`e}de sa propre {\^I}le de la Lune ; bas{\'e}e sur Terre {\`a} Seattle et Tanger ; une I.A. --Zentak-- ; une m{\'e}c{\`e}ne principale --White Ma-- ; ...)
+	\begin{itemize}
+		\item[$\Rightarrow$] a d{\'e}couvert un de leur labos orbitaux, poss{\'e}d{\'e} via une de leur sous-filiale --\texttt{ZZYZX}-- et de leurs travaux de recherche en cours dans cette station : <<{\'e}levage / culture>> fiable d'{\^e}tre humains en <<cuve>> et utilisation comme traitement de donn{\'e}es plus fiable que les I.A. ; 
+		\item[$\Rightarrow$] a vol{\'e} un <<exemplaire>>, avec les donn{\'e}es sur le projet (en utilisant le <<sujet>> comme <<h{\^o}te>> des donn{\'e}es) : son id{\'e}e est de r{\'e}utiliser le projet de fa\c{c}on diff{\'e}rente, plus dans l'id{\'e}e originale : d{\'e}veloppement d'embryons <<ex utero>>. 
+	\end{itemize}
+	\item seul probl{\`e}me : il s'est fait surprendre avec avoir r{\'e}cup{\'e}r{\'e} et conditionn{\'e} le caisson et fait prendre celui-ci en charge pour une livraison automatique au service bagagerie du CrystalPalace~\texttrademark, sous une autre identit{\'e} (inconnue de \texttt{Orpheus Inc.} et de \texttt{\emph{MadaCorp}}), pour laquelle il a une r{\'e}servation quasi permanente. 
+	\item il n'est ni mort ni captur{\'e}, il a r{\'e}ussi {\`a} s'enfuir mais fortement bless{\'e} (sa combinaison spatiale contient de quoi assister un G.O.S.T. de combat), il a {\'e}t{\'e} r{\'e}cup{\'e}r{\'e} {\`a} la d{\'e}rive par un cargo {\`a} destination de la lune, mais est devenu amn{\'e}sique... 
+	\item amn{\'e}sique perdu dans un cargo {\`a} destination de la lune, qui passe sur le CrystalPalace~\texttrademark au retour : transit et remplacement de l'{\'e}quipage, les PJ verront ce cargo parmi d'autres depuis la baie vitr{\'e}e du restaurant le deuxi{\`e}me jour de leur enqu{\^e}te, avec un jet d'intuition, ils peuvent reconna{\^i}tre Jason McMillan parmi les membres d'{\'e}quipages (ils ont eu des photos / projections 3D du bonhomme). 
+\end{itemize}
+
+\clearpage
+
+\subsection*{Enqu{\^e}te...\markboth{Enqu{\^e}te...}{Enqu{\^e}te...}}
+\addcontentsline{toc}{subsection}{Enqu{\^e}te...}
+
+\subsubsection*{L'enqu{\^e}te des PJ : \markboth{L'enqu{\^e}te des PJ : }{L'enqu{\^e}te des PJ : }}
+\addcontentsline{toc}{subsubsection}{L'enqu{\^e}te des PJ : }
+\begin{itemize}
+	\item s'ils cherchent Jason McMillan sous son identit{\'e} ou une identit{\'e} connue de \texttt{Orpheus Inc.} : rien !
+	\item une corr{\'e}lation entre les dates o{\`u} il a contact{\'e} son secr{\'e}aire virtuel et les r{\'e}servations / passages de clients au CrystalPalace~\texttrademark : deux (2) clients correspondent et qui ont pris des appartements / caissons voisins... Il s'agit en fait de Jason McMillan sous deux identit{\'e}s diff{\'e}rentes, son identit{\'e} d'infiltr{\'e} (cadre de s{\'e}curit{\'e}) chez \texttt{\emph{MadaCorp}} et une de ses identit{\'e}s de rechange / d'espion. 
+	\item si au restaurant ou au bar principal du CrystalPalace~\texttrademark, les PJ parlent d'\texttt{Orpheus Inc.} ou de la deuxi{\`e}me identit{\'e} de Jason McMillan : un serveur vient leur parler d'un <<colis qui traine {\`a} la bagagerie>> (adress{\'e} pour son identit{\'e} ou une boite postale au nom d'\texttt{Orpheus Inc.}, que le secretaire virtuel devait signaler au bout d'un mois sans signal de sa part). 
+\end{itemize} % ~\\
+
+\subsubsection*{Le colis qui tra{\^i}ne {\`a} la bagagerie...\markboth{Le colis qui tra{\^i}ne {\`a} la bagagerie...}{Le colis qui tra{\^i}ne {\`a} la bagagerie...}}
+\addcontentsline{toc}{subsubsection}{Le colis qui tra{\^i}ne {\`a} la bagagerie...}
+\begin{itemize}
+	\item[$\Rightarrow$] Cela fait deux semaines qu'il est dans la zone de transit pour les gros bagages des clients du CrystalPalace~\texttrademark : c'est le fameux 781227, not{\'e} BZ !
+	\item Il est apparamment ferm{\'e}, mais le contenu est... parti. Une analyse du caisson r{\'e}v{\`e}le qu'il s'agit d'un caisson de cryobagne <<modifi{\'e}>> (pas pr{\'e}vu pour congeler son contenu dans tous les cas) ; en faisant attention, les PJ peuvent trouver des restes d'une susbstance r{\^o}satre g{\'e}lifi{\'e}e (l'envoi et l'analyse en labo prendront une journ{\'e}e : <<Une sorte de liquide nutritif de synth{\`e}se, qui peut {\^e}tre recharg{\'e} en oxyg{\`e}ne et remplac{\'e} en flux continu. Du m{\^e}me type que ce qui constituait le liquide des caissons utilis{\'e}s avant les cryoconteneurs, amis en beaucoup plus efficace. >>). Des connecteurs sont pr{\'e}sent en plus, pr{\'e}vus pour la transmission de grosses quantit{\'e}s de donn{\'e}es (flux vid{\'e}o, simulations 3D temps r{\'e}el...). 
+	\item La marque du fabriquant est toujours pr{\'e}sente : \texttt{ZZYZX} et une suite de caract{\`e}res : 781227BZ ; un syst{\`e}me informatique minimal est pr{\'e}sent, mais n{\'e}cessite une recharge en {\'e}nergie (batteries vides). Remonter {\`a} un fabricant est tr{\`e}s difficile, \texttt{ZZYZX} figure dans l'annuaire, mais c'est tout (juste une <<boite postale>> sur le r{\'e}seau) ; remonter {\`a} \texttt{\emph{MadaCorp}}, seulement si on cherche dans les fournisseurs de ce type de mat{\'e}riel d'il y a 30 ans ! (mais ils continuent {\`a} faire de la R\&D l{\`a}-dessus et {\`a} produire en petites quantit{\'e}, pour des usages et un nombre de clients assez restreint -- {\`a} cause de la concurrence des cryo-conteneurs, qu'ils produisent {\'e}galements !). 
+\end{itemize} % ~\\
+
+\subsubsection*{Le <<passager>> du container 781227-BZ : \markboth{Le <<passager>> du container 781227-BZ : }{Le <<passager>> du container 781227-BZ : }}
+\addcontentsline{toc}{subsubsection}{Le <<passager>> du container 781227-BZ : }
+\begin{itemize}
+	\item Son <<passager>> s'est r{\'e}veill{\'e} apr{\`e}s 24heures -- 18heures apr{\`e}s {\^e}tre arriv{\'e} au CrystalPalace~\texttrademark--, une {\'e}quipe de surveillance / femmes de chambres / stewart s'en est occup{\'e} apr{\`e}s son r{\'e}veil, l'ayant trouv{\'e} errant et incapable de parler ; maintenant il est un peu homme {\`a} tout faire un peu partout dans le CrystalPalace~\texttrademark, qu'il conna{\^i}t comme sa poche et dont il ma{\^i}trise m{\^e}me le serveur informatique... 
+	\item Les PJ ne le savent pas, mais ils l'ont crois{\'e} plusieurs fois (au restaurant et dans la chambre r{\'e}serv{\'e}e au propri{\'e}taire du <<colis>>) ; il se cachera d'eux au d{\'e}but et se d{\'e}voilera {\`a} eux le troisi{\`e}me jour de l'enqu{\^e}te s'ils ne l'ont pas d{\'e}nich{\'e} avant. Au MJ de d{\'e}cider s'il se manifeste de fa\c{c}on discr{\`e}te ou pas (il leur livre des indices sans se montrer se pr{\'e}sente {\`a} l'entr{\'e}e de leur <<suite>>). 
+	\item R{\'e}ellement amn{\'e}sique (et pour cause : il n'a pas de pass{\'e}, hors du container et de son utilisation par \texttt{ZZYZX}), son cerveau contient quand m{\^e}me les donn{\'e}es r{\'e}colt{\'e}es pour reproduire l'exp{\'e}rience ayant servit {\`a} le g{\'e}n{\'e}rer (pirater la m{\'e}moire via une broche de type C, au moins 50\% de r{\'e}ussite, ou tirage cryptage {\`a} part). 
+\end{itemize} %% ~\\
+
+\subsection*{\texttt{\texttt{\emph{MadaCorp}}}...\markboth{\texttt{\texttt{\emph{MadaCorp}}}...}{\texttt{\texttt{\emph{MadaCorp}}}...}}
+\addcontentsline{toc}{subsection}{\texttt{\texttt{\emph{MadaCorp}}}...}
+
+\begin{itemize}
+	\item Seattle, Tanger et {\^I}les de la Lune. 
+	\item Labos clandestins dans leurs sous-filiales (reprendre similaire {\`a} dans la s{\'e}rie \emph{Kyle XY}). 
+	\item Une I.A. -Zentak~\texttrademark-, lou{\'e}e aupr{\`e}s de certains groupes \texttt{Yakuzas} ou de cha{\^i}nes de communication comme la \texttt{Vox~\textregistered} ; unit{\'e}s centrales {\`a} Gibraltar (information difficile {\`a} trouver, propri{\'e}t{\'e} de White Ma), connection au REZO via Tanger (dans le \texttt{Califat de Carthage}, hors juridiction de \texttt{Cr{\'e}puscule}). 
+	\item Principale M{\'e}c{\`e}ne / propri{\'e}taire : White Ma (fortune faite dans les narcotrafics, Usines {\`a} R{\^e}ves...), qui veut en fait transf{\'e}rer sa <<conscience>> dans une I.A. potentiellement immortelle, mais surtout libre. 
+	\item ...
+\end{itemize} %% ~\\
+
+\clearpage
+
+\subsection*{\texttt{Orpheus Inc.} --- petit TechnoBloc ?\markboth{\texttt{Orpheus Inc.} --- petit TechnoBloc ?}{\texttt{Orpheus Inc.} --- petit TechnoBloc ?}}
+\addcontentsline{toc}{subsection}{\texttt{Orpheus Inc.} --- petit TechnoBloc ?}
+
+\begin{itemize}
+	\item Leur catalogue est assez diversifi{\'e} : 
+	\begin{itemize}
+		\item armes l{\'e}g{\`e}res --revolvers, fouets et sabres / katanas monofilaments--, 
+		\item logiciels / softwares divers --pratiques : hack, virus, d{\'e}crypteurs, brisesGlaces...--, 
+		\item consoles de cyberespace au style {\'e}pur{\'e} mais tr{\`e}s fonctionnel --similaire {\`a} ceux de Apple Computer Inc. --
+		\item cours et universit{\'e} virtuelle permanente --bas{\'e} sur les {\^I}les de la Lune et {\`a} ParisLaDefense--
+		\item lasers, syst{\`e}mes d'identification de cible, armes molles...
+		\item ...
+		\item ...
+	\end{itemize}
+	\item Du fait de Jason McMillan (et des personnes dont il a su s'entourer d{\`e}s le d{\'e}part, d'autres cadres similaires), les activit{\'e}s de \texttt{Orpheus Inc.} sont en effet tr{\`e}s vari{\'e}es, mais restent centralis{\'e}es autour du groupe de d{\'e}part (<<labs>> isol{\'e}s qui sont assez vite rapatri{\'e}s dans la <<maison-m{\`e}re>>, sous la m{\^e}me entit{\'e} juridique --sinon physiquement--  en Europe, dans l'enclave ParisLaDefense). Existe depuis les ann{\'e}es 2060 ; belle sant{\'e} {\'e}conomique ; pas de filiales. Les <<labs>> sont fond{\'e}s ind{\'e}pendamment, puis acquis de fa\c{c}on pacifique (pour un univers cyberpunk). 
+	\item En fait, \texttt{Orpheus Inc.} est une fa\c{c}ade l{\'e}gale des Dactyles, qui ont trouv{\'e} l{\`a} une fa\c{c}on de faire de la Recherche et D{\'e}veloppement, mais aussi d'{\'e}couler une partie de leur marchandise de fa\c{c}on discr{\`e}te sans {\'e}veiller les soup\c{c}ons de TechnoBlocs soucieux d'acqu{\'e}rir les technologies Dactyles. Les fondateurs de Orpheus Inc sont en fait des Dactyles (ou ont {\'e}t{\'e} form{\'e}s par elles / eux), sans avoir conserv{\'e}s de liens explicites avec les autres Dactyles (fonctionnement type <<r{\'e}sistance>> pour les {\'e}changes : boites aux lettres mortes r{\'e}elles / virtuelles, agent <<miroir>>...). 
+	\item Client r{\'e}gulier de MediASsisT (investigation / exfiltration sur de nouvelles recrues ; espionnage / vol de donn{\'e}es sur un concurrent dans un domaine sp{\'e}cifique ; ...).
+	\item Poss{\`e}de des bureaux dans toutes les villes (un tant soit peu) importantes du monde -- parfois sous diverses fa\c{c}ades caritatives / ONG priv{\'e}es / fondations --, souvent petits (un {\'e}tage ou deux d'un immeuble commercial, une maison de banlieue...) et reli{\'e}s par leur propre r{\'e}sau / protocole interne (parall{\`e}le {\`a} celui des Dactyles et que ceux-ci utilisent).  
+	\item ...
+\end{itemize}
+
+\section*{Suite au premier playtest -- 20141121\markboth{Suite au premier playtest -- 20141121}{Suite au premier playtest -- 20141121}}
+\addcontentsline{toc}{section}{Suite au premier playtest -- 20141121}
+
+La partie a dur{\'e} 1h30-1h45 sur les {\'e}l{\'e}ments initiaux, bonne introduction campagne, tr{\`e}s orient{\'e} enqu{\^e}te sans action...
+
+\begin{itemize}
+	\item Mettre plus d'action : \texttt{\emph{MadaCorp}} veut exfiltrer JMM et les PJ obtiennent les infos du d{\'e}but de l'enqu{\^e}te par eux-m{\^e}me) (ou par \texttt{Opheus Inc.} s'ils se font rep{\'e}rer). 
+	\item D{\'e}velopper ouverture sur deuxi{\`e}me partie (enqu{\^e}te sur \emph{\texttt{\emph{MadaCorp}}} {\`a} Tanger ou Seattle : {\^I}le de la Lune + labos clandestins ; enqu{\^e}te sur \emph{Orpheus Inc.} ? cela peut emmener les PJ loin s'ils le d{\'e}sirent... ). 
+	\item Enqu{\^e}ter sur \texttt{Orpheus Inc.} ? (ou un PJ Dactyle ou affili{\'e}). 
+	\item ...
+	\item ...
+\end{itemize}
+
+\clearpage
+
+\section*{Sc{\'e}narisation++ (20150223) : \markboth{Sc{\'e}narisation++ (20150223) : }{Sc{\'e}narisation++ (20150223) : }}
+\addcontentsline{toc}{section}{Sc{\'e}narisation++ (20150223) : }
+
+D{\'e}marrage {\`a} Seattle, pour l'inauguration du PaleoZoo~\texttrademark (\emph{Velociraptor inside}, mais {\`a} priori sans danger), un certain <<Mister Johnson>> les prend {\`a} part pour leur remettre la mission d'exfiltration ; en leur proposant une somme un tout petit peu en-dessous de ce qui est propos{\'e} {\`a} des Mercenaires -- 3 000 euros par t{\^e}te --, une recherche dans le milieu indique que \texttt{\emph{MadaCorp}}  recrute r{\'e}guli{\`e}rement des Mercs (parfois ind{\'e}pendants), sans parfois {\^e}tre tr{\`e}s r{\'e}glo (certains sont partis loin / ont disparus). Si les PJ tra{\^i}nent un peu (ou ne prennent pas l'initiative de ``visiter'' les bureaux locaux de \texttt{Orpheus Inc.} : MAST les contacte parce que \texttt{Orpheus Inc.} a perdu la trace de Jason MacMillan, si les PJ r{\'e}pondent qu'ils le recherchent d{\'e}j{\`a} (ou que \emph{Orpheus Inc.} s'en aper\c{c}oit) : ils ont d'embl{\'e}e la contre-proposition compl{\`e}te... ~\\
+
+En r{\'e}alit{\'e}, une unit{\'e} de recherche de \texttt{\emph{MadaCorp}}  veut lib{\'e}rer une I.A. (et la rendre Consciente --- Zentak~\texttrademark)... Pour cela, ils ont besoin d'un programme (\emph{software}) nomm{\'e} \texttt{Argos}, d{\'e}velopp{\'e} par Jason MacMillan. \texttt{Orpheus Inc.} n'a aucun int{\'e}r{\^e}t {\`a} favoriser <<l'{\'e}mancipation>> d'une I.A. telle que Zentak (personne n'y a d'int{\'e}r{\^e}t d'ailleurs, encore moins celles des \texttt{Sept Dragons}, qui le sont d{\'e}j{\`a} ; voir plus loin la possibilit{\'e} d'une intervention d'une \texttt{unit{\'e} Cr{\'e}puscule} et pourquoi). --- Bien s{\^u}r, \emph{Mister Johnson} n'est qu'un interm{\'e}diaire qui ne sait rien de tout \c{c}a (surtout pourquoi \texttt{\emph{MadaCorp}} tient absolument {\`a} r{\'e}cup{\'e}rer JMM). ~\\
+
+En fait, JMM a infiltr{\'e} \texttt{\emph{MadaCorp}}. Les PJ d{\'e}couvriront effectivement un JMM amn{\'e}sique sur la station CrystalPalace~\texttrademark  [\emph{Aux bons soins du MJ de savoir si c'est le vrai JMM ou pas, sachant que \texttt{\emph{MadaCorp}}  n'a jamais d{\'e}couvert que JMM les a infiltr{\'e} . }] La liste des PJ est arriv{\'e}e sur le bureau du donneur d'ordre de l'exfiltration de JMM, par le biais du piratage du secr{\'e}taire virtuel du donneur d'ordre (par JMM, ou par Zentak~\texttrademark, ou viais un relais anonyme du secr{\'e}taire virtuel de JMM). ~\\ 
+
+Petit d{\'e}tail : JMM a cach{\'e} \emph{Argos} (et l'{\'e}quipe de d{\'e}veloppement / tests) sur l'ast{\'e}ro{\"i}de \emph{Chiron}, assez loin pour {\'e}viter tout d{\'e}g{\^a}ts voire dommages collat{\'e}raux lors des tests sur une I.A. ainsi isol{\'e}e du REZO. Si les PJ veulent le r{\'e}cup{\'e}rer (ou emp{\^e}cher sa r{\'e}cup{\'e}ration, par MadaCorp par exemple), ils devront aller sur place : quelque part entre l'orbite de Saturne et Uranus, sachant que la situation peut d{\'e}g{\'e}n{\'e}rer sur Terre et aux alentours sans qu'ils ne soient rapidement au courant...~\\
+
+\emph{Embranchement optionnel, orient{\'e} Campagne ; ``{\`a} {\'e}viter si option sc{\'e}naristique courte'', quoique une intervention d'une \texttt{unit{\'e} Cr{\'e}puscule} n'est pas une option. } \texttt{Cr{\'e}puscule} a d{\'e}j{\`a} son attention attir{\'e}e par l'utilisation de cette I.A. (location notamment pour l'{\'e}criture de sc{\'e}narios assez ``r{\'e}alistes'', orient{\'e}s \emph{snuff-movies}). D{\`e}s que les PJ auront d{\'e}couvert l'existence d'\emph{Argos}, ils seront contact{\'e}s par <<Miss Green>> (qui ici travaille officiellement pour \texttt{Cr{\'e}puscule}) : un document papier d{\'e}pos{\'e} {\`a} l'accueil de leur h{\^o}tel {\`a} Seattle (une photo promotionnelle avec marqu{\'e} au dos <<Berlin, Ishtar Tor>>. La principale raison du contact de \texttt{Cr{\'e}puscule} / Miss Green est la suivante : l'arriv{\'e}e {\`a} la Conscience d'une I.A. telle que Zentak~\texttrademark  provoquerait un d{\'e}s{\'e}quilibre sur le REZO : plusieurs {\'e}tudes et preuves montrent que certains ph{\'e}nom{\`e}nes <<magiques>> sont li{\'e}s {\`a} la pr{\'e}sences de plusieurs I.A.C. (au moins une), l'ajout de Zentak~\texttrademark  provoquerait un \emph{CRASH} en-de\c{c}{\`a} de la singularit{\'e} (un retour {\`a} l'{\`e}re pr{\'e}-r{\'e}seaux informatiques), et obligerait {\`a} d{\'e}couper en mini-r{\'e}seaux informatiques voire {\`a} uniquement des terminaux informtiques isol{\'e}s. Dans une ambiance tr{\`e}s <<IV{\`e}me Reich>>, Miss Green retrouve les PJ au Mus{\'e}e Pergame (elle y est officiellement conservatrice et o{\`u} se trouve la porte d'Ishtar) et les invite {\`a} monter {\`a} bord du train \emph{RheinGold} de la ligne BBB (\emph{Berlin-Byzance-Bagdad}, joyau du <<Reich>>) o{\`u} va se tenir une succession de conf{\'e}rences et r{\'e}unions de la ligue des Corporations MultiContinentales (avec entre autres sujets, le maintien du \emph{statu quo} des I.A.C. sur le REZO (les affaires sont les affaires).     
+
+\end{document}

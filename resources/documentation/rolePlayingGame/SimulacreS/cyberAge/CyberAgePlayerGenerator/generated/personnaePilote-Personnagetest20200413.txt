@@ -1,0 +1,48 @@
+BEGIN personnae
+CONCEPT Pilote
+NAME Personnage test 20200413
+IMAGE img/personnageAnonymous.jpg
+TITLE Pilote
+PV 11
+IMPACT 2
+SAN 50
+APP 10
+CON 10
+DEX 12
+FOR 16
+TAI 11
+EDU 12
+INT 12
+POU 10
+BEGIN cyberequipement
+C{\^a}blage de combat --- Proth{\`e}se ou membre blind{\'e}. 
+OEil artificiel --- Radar. 
+END cyberequipement
+BEGIN cailloux
+END cailloux
+AGE 50
+SEXE Ind{\'e}termin{\'e}-e
+PARRAIN Yakuza
+ARGENT 40000
+DIVERS Dette de Yakuza. Dette de Yakuza. 
+METIER CyberTek
+BEGIN talents
+Connaissance d'un milieu[*]	50
+Informatique	110
+Recherche dans HyperNet	60
+END talents
+BEGIN lightbio
+[Gangs] Vous devenez l'ami d'un chef de Gang. 
+[Jackeur] Sans le vouloir, vous aidez une Intelligence Artificielle. Elle vous contacte et dit qu'elle pourra vous aider une fois, lorsque vous le d{\'e}sirerez, dans la Matrice / le REZO. 
+[Espace-Venise] Vous {\^e}tes engag{\'e}(e) pour un travail temporaire dans une Venise. 
+[Network] Vous r{\'e}alisez une vid{\'e}o sur un attentat terroriste qui est diffus{\'e} sur un Network. 
+[Yakuza] Un Yakuza a une dette vis-{\`a}-vis de vous. Vous pouvez lui demander un service. 
+[Yakuza] Un Yakuza a une dette vis-{\`a}-vis de vous. Vous pouvez lui demander un service. 
+For Job, max was [240] (EDU*20), used [160], remain [80]
+For Perso, max was [120] (INT*10), used [20], remain [100]
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+
