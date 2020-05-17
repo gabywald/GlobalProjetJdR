@@ -1,0 +1,39 @@
+http://www.reocities.com/area51/rampart/1349/seccode.htm -- 
+
+Intel Sources:
+HUMINT	Human Intelligence - Spies, eh?
+SIGINT	Signal Intel - 2 branches: COMINT & ELINT
+COMINT	Radio Interceptions
+ELINT	Electronic Intel - deciphering patterns from radars, computers, etc...
+IMINT	Imagery Intel - Satellite/Aerial Photo's
+CI	Counter Intel - Spy Hunters
+ARCHINT	Archaeology Intel
+
+Classifications:
+Unclassified	99% of paperwork.
+Confidential	Detrimental to nat'l security (troop movements)
+Secret	Key Scientific Developements, Military Plans, intel ops.
+Top Secret	Release could result in exceptionally grave damage to nat'l security. Could spark hostilities. Compromise codes, etc...
+
+Secondary Classifications:
+CNWDI:	Critical Nuclear Weapons Design Info
+COMSEC:	Communications Security - Cryptology systems
+NOCONTRACT:	Not Releasable to Contractors/Consultants
+NOFORN:	Not Releasable to Foreign Nationals
+ORCON:	Dissemination & Extraction Controlled by Originator. 
+IE:	Ya gotta get Aegis Primes permission to release data
+RD:	Restricted Data - Info related to Atomic Energy. Power Production, research, etc...
+REL:	Authorized for Release to __________, ie: RELNATO, RELCANUKAUS (canada, UK, Australia)
+SCI:	Sensitive Compartmentalized Info. (like how only NRO knows the capabilities of its satellites.
+WNINTEL:	Warning Notice INTEL sources or methods involved. ie: Agent Buddy is really Clintons Dawg...
+
+
+COVER SHEETS (Colors)
+Top Secret	Orange
+Secret	Red
+Confidential	Blue
+Unclassified	Green
+
+=====================================
+
+
