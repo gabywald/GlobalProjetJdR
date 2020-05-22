@@ -31,6 +31,7 @@ mrproper : $(LATEXFILE).aux $(LATEXFILE).log $(LATEXFILE).toc $(LATEXFILE).idx $
 	rm $(LATEXFILE).ind
 	rm $(LATEXFILE).bbl
 	rm $(LATEXFILE).blg
+	rm $(LATEXFILE).out
 
 $(LATEXFILE).dvi : $(LATEXFILE).tex
 	$(CCLATEX) $(LATEXFILE).tex
