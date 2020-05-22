@@ -19,7 +19,7 @@ New Haven, CONNECTICUT
 
 Cher Harold, 
 
-Le temps m'est déosrmais compté et je n'ai pas la force de tout t'expliquer. J'espère seulement que tu pourras m'aider à porter mon fardeau. Qu'il me suffise de te dire que j'ai été confronté à des périls que personne ne devrait jamais avoir à affronter et que je suis toujours en vie. 
+Le temps m'est désormais compté et je n'ai pas la force de tout t'expliquer. J'espère seulement que tu pourras m'aider à porter mon fardeau. Qu'il me suffise de te dire que j'ai été confronté à des périls que personne ne devrait jamais avoir à affronter et que je suis toujours en vie. 
 
 Je ne peux cependant jurer aujourd'hui de ma santé mentale et mon unique but désormais est de rester caché jusqu'à ce que ma vie retrouve un semblant de normalité. Les horreurs auxquelles j'ai dû faire face consumeront mon âme pour toujours, mais je trouverai peut-être un jour la grâce d'accepter enfin ce que j'ai vu, même si je sais ne pouvoir jamais le comprendre réellement. 
 
@@ -27,7 +27,7 @@ Comme tu peux le constater, je joins à cette lettre un certain nombre de docume
 
 En toute honnêteté, je te les fais parvenir parce que tu es la seule personne en qui je pense pouvoir avoir vraiment confiance. Je fais peut-être une erreur, mais je ne peux garder plus longtemps ces secrets pour moi seul. De toute façon, même si tu es l'un des leurs, je n'ai plus rien à perdre -- je ne peux être plus en danger que je ne le suis déjà. 
 
-Ce que tu feras de ces documents ne me regerde pas. Je les ai examinés au mieux de mes pauvres connaissances, mais tu es bien plus compétent que moi et je suis sûr que tu pourras conclure à leur authenticité. J'espère seulement, si tu décides de révéler ces informations, que tu le feras avec suffisemment de prudence. Si tu restes discret et anonyme, tu n'auraspas, commme moi, à te soustraire au funeste interêt dont je suis l'objet. 
+Ce que tu feras de ces documents ne me regarde pas. Je les ai examinés au mieux de mes pauvres connaissances, mais tu es bien plus compétent que moi et je suis sûr que tu pourras conclure à leur authenticité. J'espère seulement, si tu décides de révéler ces informations, que tu le feras avec suffisamment de prudence. Si tu restes discret et anonyme, tu n'auras pas, comme moi, à te soustraire au funeste intérêt dont je suis l'objet. 
 
 Je ne cherche pas, en t'envoyant ces documents, à t'exposer à un quelconque danger. Tu peux parfaitement, si tu le désires, les détruire et continuer à vivre comme si tu ne les avais jamais reçus. Souviens-toi cependant, si c'est ce que tu décides de faire, que tu devras porter pour le restant de tes jours le fardeau de cette incroyable découverte. 
 
@@ -66,16 +66,16 @@ Nom> Sebastian
 Clef>	******
 Mot de passe> ******
 
-Vous êtes Sebastian [#687] [Grangrel]. Vous êtes connecté pour une durée de 30 minutes. Ne tardez pas. Nous sommes le 12 mars. Vous vous êtes déjà connecté 5 fois. Votre dernier passage remonte au 10 mars. Vous vaez un message. Dois-je vous le lire, maitre? [O/n] Oui
+Vous êtes Sebastian [#687] [Grangrel]. Vous êtes connecté pour une durée de 30 minutes. Ne tardez pas. Nous sommes le 12 mars. Vous vous êtes déjà connecté 5 fois. Votre dernier passage remonte au 10 mars. Vous avez un message. Dois-je vous le lire, maitre? [O/n] Oui
 ----------------------------
 Date: 03-11-93	02:33
 De: Djihâd [#24] [Ventrue]
 Pour Sebastian [#687] [Gangrel]
 Sujet: Je suis inquiet. 
 ----------------------------
-Je ne sais que penser de ta réponse à propos des Lupins. Toujours est-ilque je ne peux plus te faire confiance Gangrel. J'ai informé Lord X de mes soupçons et je suis sûr que vous vous rencontrerez bientôt. D'une façon ou d'une autre. Et il ne fait pas bon croiser son chemin -- il est plus âgé que mon grand-créateur. 
+Je ne sais que penser de ta réponse à propos des Lupins. Toujours est-il que je ne peux plus te faire confiance Gangrel. J'ai informé Lord X de mes soupçons et je suis sûr que vous vous rencontrerez bientôt. D'une façon ou d'une autre. Et il ne fait pas bon croiser son chemin -- il est plus âgé que mon grand-créateur. 
 
-Si tu es bien ce que tu prétend être, alors tu n'a rien à craindre. Mais si tel n'était pasle cas, que Dieu te vienne en aide, tu souhaiteras n'avoir jamais découvert cet endroit. Et tu ne serais pas le premier à entrer où il n'est pas le bienvenu. 
+Si tu es bien ce que tu prétends être, alors tu n'a rien à craindre. Mais si tel n'était pas le cas, que Dieu te vienne en aide, tu souhaiteras n'avoir jamais découvert cet endroit. Et tu ne serais pas le premier à entrer où il n'est pas le bienvenu. 
 
 J'ai apprécié nos dialogues et j'espère donc que mes craintes sont sans fondement, mais on n'est jamais trop prudent. La Mascarade ne doit pas prendre fin. 
 
@@ -118,7 +118,7 @@ De: Tattoo [#165] [Brujah]
 Pour: Jacques le Fripon [#21] [Malkavian]
 Sujet: Mortels
 ---------------------------
-Tout ce que tu pourras dire ne me convaïncra jamais que les mortels ne nous sont pas inférieurs. Ne me sert pas cette connerie, en plus de celles que tu ponds régulièrement. Personne n'y croit. 
+Tout ce que tu pourras dire ne me convaincra jamais que les mortels ne nous sont pas inférieurs. Ne me sert pas cette connerie, en plus de celles que tu ponds régulièrement. Personne n'y croit. 
 @])¿ SI JE ME NOURRIS et laisse une pauvre larve en vie, je ne peux boire qu'un tiers de son jus, d'accord? Une gorgée de plus et il file aux urgences. Ça veut dire que si je veux vraiment me remplir, je dois partir trois fois en chasse. OU ALORS, je pourrais me nourrir une première fois et en profiter pour me rassasier. C'est mieux pour tout le monde, sauf pour le mortel. Rester discret, n'est-ce pas un peu plus important que la vir d'un mortel INFÉRIEUR?
 
 Tattoo ;:;:;:=
@@ -132,8 +132,8 @@ De: Caine's Brain [#84] [Nosferatu]
 Pour: Tattoo [#165] [Brujah]
 Sujet: REF: Mortels
 ---------------------------
-Ce que tu ne prens pas en compte, espèce de petit malin, c'est que le meurtre est considéré qu'un évènement plus grave qu'une fille saoule racontant dans son club d'étudiant qu'on l'a mordue dans le cou. Oui, tu te nourris plus rarement, mais tu attires l'attention de tout le système. Bien sûr nous contrôllons la police, mais tous les journalistes ne nous mangent pas dans la main. Et beaucoup d'entre eux sont plein de ressources. 
-Ton attitude est irresponsable et immorale. Tu es aussi paresseux qu'ingnorant. Je pense que ton pauvre argument n'est qu'une excuse à ton incapacité à controler la bête qui dort en toi. Tous les Brujah sont comme toi. Accepte-le, mais ne nous ressert pas le mauvais argument selon lequel l'infériorité des mortels justifierait leur meurtre. 
+Ce que tu ne prens pas en compte, espèce de petit malin, c'est que le meurtre est considéré qu'un évènement plus grave qu'une fille saoule racontant dans son club d'étudiant qu'on l'a mordue dans le cou. Oui, tu te nourris plus rarement, mais tu attires l'attention de tout le système. Bien sûr nous controlons la police, mais tous les journalistes ne nous mangent pas dans la main. Et beaucoup d'entre eux sont plein de ressources. 
+Ton attitude est irresponsable et immorale. Tu es aussi paresseux qu'ignorant. Je pense que ton pauvre argument n'est qu'une excuse à ton incapacité à controler la bête qui dort en toi. Tous les Brujah sont comme toi. Accepte-le, mais ne nous ressert pas le mauvais argument selon lequel l'infériorité des mortels justifierait leur meurtre. 
 
 				-= Vaine's Brain =-
 Fin du Message
@@ -148,7 +148,7 @@ Sujet: Toi, espèce de poseur
 Qu'est-ce que tu peux bien connaître putain&¿] à l'infériorité des mortels, toi qui te TERRES au fond des égouts à longueur de nuit, espèce d'ignoble animal. Sache que les Brujah contrôlent leur soif aussi bien, voire MEIUX que les rats d'égout, et que pour finir je ne sup por[7&te pas d'être dans la même pièce que l'un de vous. 
 
 Les autorités ne prennent que les sombres crétins qui sont incapables de maquiller le "meurtre" EN VÉRITABLE MEURTRE! Je ne laisse bien évidemment pas de morsures sur le cou des gens -- personne ne me voit, personne ne me soupçonne et putain personne ne retrouve le corps avant des semaines. 
-Tu peux dire ce que tu veux, face de rat, mais tu te caches derrière TA faiblesse. Vous autres traditionnalistes m'exaspérez. Comme vous êtres trop troiuillard pour tuer, vous en déduisez que tuer est une faute, alors qu'au contraire c'est un véritable art. 
+Tu peux dire ce que tu veux, face de rat, mais tu te caches derrière TA faiblesse. Vous autres traditionnalistes m'exaspérez. Comme vous êtes trop trouillard pour tuer, vous en déduisez que tuer est une faute, alors qu'au contraire c'est un véritable art. 
 
 Tattoo ;:;:;:=
 Fin du Message
@@ -177,8 +177,8 @@ De: Faux Pas [#288] [Toreador]
 Pour: Sebastian [#687] [Gangrel]
 Sujet: Qui t'a donné la vie, Étranger?
 ---------------------------
-Je n'arrive pas à croire que tu considères vraiment les Lipins comme un mythe. Personne ne croit cela, particulièrement chez les Gangrels. Tu dois plaisanter. 
-Je sais qu'ils ne sont pas un mtyhe car j'en ait rencontré une leute alors que je voyageais de Boston à Washington. Ils ne m'ont pas tué, mais j'ai eu de la chance. L'un des rares artistes dans leurs rangs, un mâle nommé Gregor, apprécia mes poèmes. Son influence parmi eux est grande et l'avoir comme connaissance m'a été très utile. 
+Je n'arrive pas à croire que tu considères vraiment les Lupins comme un mythe. Personne ne croit cela, particulièrement chez les Gangrels. Tu dois plaisanter. 
+Je sais qu'ils ne sont pas un mythe car j'en ait rencontré une meute alors que je voyageais de Boston à Washington. Ils ne m'ont pas tué, mais j'ai eu de la chance. L'un des rares artistes dans leurs rangs, un mâle nommé Gregor, apprécia mes poèmes. Son influence parmi eux est grande et l'avoir comme connaissance m'a été très utile. 
 
 Ce qui me ramène à notre point de départ. Si nous pouvions nous allier aux autres créatures -- hé oui, et mêmes aux magiciens --, nous pourrions conquérir le monde et il nous appartiendrait totalement. Nous pourrions abandonner cette mascarade infernale et sortir au grand jour. Tous les hommes seraient nos serviteurs et nous n'aurions plus jamais à chasser. Penses-y. Plus de gouvernement conservateur pour étouffer la création, plus de droité tyrannique pour décider quelles chansons sont convenables. Nous pourrions anticiper la Géhenne pour toujours. 
 
@@ -197,7 +197,7 @@ Sujet: Et les gens *me* traitent de fou
 ---------------------------
 Aloons, tête vide. Tu n'es pas sérieux. Faire ami-ami avec les loups et les magiciens?
 
-Réfléchit un instant. Faex Pez, d'où nous viens notre pouvoir sur le monde? PAs de la force à l'état brut. Certainement pas. Il réside dans le contrôle subtil, mec, que nous exerçons sur les bonnes personnes et que nous utilisons à bon escient. Nous sommes des créatures tout en doigté et en ruse, pas de celles qui dirigent le monde d'une façon maladroite. Ouais, nous avons des crocs et des griffes, mais nous ne nous en servons que lorsque c'est nécessaire, quand la nuit est douce et capricieuse. 
+Réfléchit un instant. Faex Pez, d'où nous viens notre pouvoir sur le monde ? Pas de la force à l'état brut. Certainement pas. Il réside dans le contrôle subtil, mec, que nous exerçons sur les bonnes personnes et que nous utilisons à bon escient. Nous sommes des créatures tout en doigté et en ruse, pas de celles qui dirigent le monde d'une façon maladroite. Ouais, nous avons des crocs et des griffes, mais nous ne nous en servons que lorsque c'est nécessaire, quand la nuit est douce et capricieuse. 
 
 Mec, nous ne pourrions jamais faire confiance aux Lupins ou à ces démens de mages -- ils nous tueraient dans notre sommeil à la première occasion. 
 
@@ -224,7 +224,7 @@ Hello,
 
 Hé oui, j'ai fait quelques recherches sur ton identité depuis que Djihâd m'a fait part de ce que tu lui avait dit. Et j'ai découvert des choses bien intéressantes, mortel. 
 
-Et que va-tu faire maintenant?
+Et que vas-tu faire maintenant?
 
 Allons, Taylor, le chat dit-il à la souris ce qu'il va faire d'elle? Non, prépare-toit juste à quelque chose de très, très douloureux. Tu n'aurais jamais dû venir ici. 
 
