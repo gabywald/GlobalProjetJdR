@@ -126,7 +126,6 @@
 \def\barreCyberAgeHalf{\includegraphics[width=0.50\textwidth]{img/Filet_CA.png}}
 \def\barreCyberAgeThird{\includegraphics[width=0.33\textwidth]{img/Filet_CA.png}}
 
-
 %% some footnotes...
 \def\pageREFtoAgentPixie{~\footnote{\textbf{Agent / Pixie} : \emph{Voir page~\pageref{AgentsPixies}}}}
 \def\pageREFtoBladeRunner{~\footnote{\textbf{BladeRunner} : \emph{Voir page~\pageref{BladeRunner}}}}
@@ -178,6 +177,24 @@
 \date{ --- }
 
 \newcommand{\dateToday}{\today}
+
+\def\motsClefs{JdR;Jeu de R{\^o}le;CyberPunk;CyberAge;Encyclopedie;encyclopaedia;%
+2080;CyberPunk2077;TheSprawl;TechNoir;2103;%
+}
+
+\usepackage{hyperref}
+%% http://www.andy-roberts.net/writing/latex/pdfs -- for some properties...
+%% https://tex.stackexchange.com/questions/26529/how-can-i-generate-pdf-metadata-from-latex
+\hypersetup{
+			pdfauthor={Pierre Rosenthal, Jean-Pierre P{\'e}cau, ..., Gabriel Chandesris},
+			pdftitle={\txtTITLE },
+			pdfsubject={txtTITLE },
+			pdfkeywords={\motsClefs},
+			pdfproducer={PDFLaTeX (production)},
+			pdfcreator={PDFLaTeX (creation)}
+			%% urlcolor=green,
+}
+%% https://tex.stackexchange.com/questions/79395/option-clash-for-hyperref-package
 
 %============================= Corps =================================
 \begin{document}
@@ -251,7 +268,7 @@ Une version t{\'e}l{\'e}chargeable de cette encyclop{\'e}die est {\'e}galement d
 
 Un index est pr{\'e}sent dans ce document page~\pageref{index}, notamment pour les termes not{\'e}s \texttt{comme ceci}. ~\\
 
-Nouvelle mise en page (\LaTeX) / collation documentaire par Gabriel Chandesris, 01/08/2012-07/09/2012. ~\\
+Nouvelle mise en page (\LaTeX) / collation documentaire par Gabriel Chandesris, 01/08/2012-07/09/2012 ; avril-mai 2020. ~\\
 
 \barreCyberAge
 
