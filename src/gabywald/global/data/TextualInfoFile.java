@@ -71,21 +71,11 @@ public class TextualInfoFile extends Fichier {
 	public static TextualInfoFile getFrameServerContext() 
 		{ return TextualInfoFile.getContext(4); }
 	
-	public static TextualInfoFile getDSCatiaContext()
-		{ return TextualInfoFile.getContext(5); }
 	public static TextualInfoFile getFrameworkContext()
-		{ return TextualInfoFile.getContext(6); }
-	
-	public static TextualInfoFile getSDFFileContext() 
-		{ return TextualInfoFile.getContext(7); }
-	
-	public static TextualInfoFile getNCBIContext()
-		{ return TextualInfoFile.getContext(8); }
+		{ return TextualInfoFile.getContext(5); }
 	
 	public static TextualInfoFile getRPGpersonnaeBuilder()
-		{ return TextualInfoFile.getContext(9); }
-	
-
+		{ return TextualInfoFile.getContext(6); }
 	
 	public String getValueOf(String key) { 
 		if (this.hash.get(key) == null) 
