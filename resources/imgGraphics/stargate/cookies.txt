@@ -1,0 +1,4 @@
+#LWP-Cookies-1.0
+Set-Cookie3: Geo="{\"city\":\"Beaufort\",\"country\":\"FR\",\"continent\":\"EU\"}"; path="/"; domain=stargate.wikia.com; path_spec; discard; version=0
+Set-Cookie3: loadtime="S1297849512.032933235,VS0,VE0"; path="/"; domain=stargate.wikia.com; path_spec; discard; version=0
+Set-Cookie3: varnish-stat="/server/LON/varnish-l9-LON/HIT/"; path="/"; domain=stargate.wikia.com; path_spec; discard; version=0
