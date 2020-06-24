@@ -1,0 +1,260 @@
+		"resources/imgGraphics/retrofutur/affiches/afficheCatacombes.jpg", 		/** 000 */
+		"resources/imgGraphics/retrofutur/affiches/afficheComiteMondial.jpg", 		
+		"resources/imgGraphics/retrofutur/affiches/rf_administre.jpg", 		
+		"resources/imgGraphics/retrofutur/affiches/rf_agencepaix.jpg", 		
+		"resources/imgGraphics/retrofutur/affiches/rf_agences.jpg", 		
+		"resources/imgGraphics/retrofutur/affiches/rf_concours.jpg", 		/** 005 */
+		"resources/imgGraphics/retrofutur/affiches/rf_enseignement.jpg", 		
+		"resources/imgGraphics/retrofutur/affiches/rf_famille.jpg", 		
+		"resources/imgGraphics/retrofutur/affiches/rf_indiscretion.jpg", 		
+		"resources/imgGraphics/retrofutur/affiches/rf_marchenoir.jpg", 		
+		"resources/imgGraphics/retrofutur/affiches/rf_sermentagent.jpg", 		/** 010 */
+		"resources/imgGraphics/retrofutur/affiches/rf_urbanisme.jpg", 		
+		"resources/imgGraphics/retrofutur/agenceTransverse.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-atelier-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-bloc-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-cave-c.jpg", 		/** 015 */
+		"resources/imgGraphics/retrofutur/bannieres/ab-cave2-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-cloche-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-cond-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-cpt-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-cpt2-c.jpg", 		/** 020 */
+		"resources/imgGraphics/retrofutur/bannieres/ab-gare-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-hall-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-hall2-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-hall3-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-machine-c.jpg", 		/** 025 */
+		"resources/imgGraphics/retrofutur/bannieres/ab-passerelles-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-roues-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-tel-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-train-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-tubes-c.jpg", 		/** 030 */
+		"resources/imgGraphics/retrofutur/bannieres/ab-tunnel-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-usine-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ab-usine2-c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ad-Scientists-Radiat.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-bill.jpg", 		/** 035 */
+		"resources/imgGraphics/retrofutur/bannieres/bf-bodysn.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-bord.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-city.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-city2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-city3.jpg", 		/** 040 */
+		"resources/imgGraphics/retrofutur/bannieres/bf-cover.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-hamster.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-lucy.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-machines.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-mafieuse.jpg", 		/** 045 */
+		"resources/imgGraphics/retrofutur/bannieres/bf-sarah.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-simon.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-skull.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/bf-talent.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/br-agent.jpg", 		/** 050 */
+		"resources/imgGraphics/retrofutur/bannieres/br-buro.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/br-hall.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/br-jouet.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/br-plat.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/br-porte.jpg", 		/** 055 */
+		"resources/imgGraphics/retrofutur/bannieres/br-portier.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-CabineTel.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-alien.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-apparition-porte.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-batiment.jpg", 		/** 060 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-ceremonie.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-cinema.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-city.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-city2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-city3.jpg", 		/** 065 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-city4.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-couloir-ascenseur.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-couloir-cabinet.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-couloir.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-fastfood.jpg", 		/** 070 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-grue.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-hotel-reception.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-hotel-reception2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-hotel.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-interieur-commiss.jpg", 		/** 075 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-interieur-commiss_002.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-interieur-resto.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-interieur-resto2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-interieur-resto3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-la-ville.jpg", 		/** 080 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-labo.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-metro.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-mur-mer.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-piscine.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-piscine2.jpg", 		/** 085 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-river.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-river2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-river3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-riverbank.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-riverbank2.jpg", 		/** 090 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-rue-avec-voitures.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-rue-avec-voitures_002.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-rue-avec-voitures_003.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-rue.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-rue2.jpg", 		/** 095 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-rue3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-seringue.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-seringues.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-space-city.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-space.jpg", 		/** 100 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-sunrise.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-train-aerien.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-train-aerien2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-train-aerien3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/dc-ubik.jpg", 		/** 105 */
+		"resources/imgGraphics/retrofutur/bannieres/dc-vehicule.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-attentat.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-city1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-city2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-city3.jpg", 		/** 110 */
+		"resources/imgGraphics/retrofutur/bannieres/jr-city4.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-city5.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-city6.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-city7.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-city8.jpg", 		/** 115 */
+		"resources/imgGraphics/retrofutur/bannieres/jr-construct.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-construct2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-construct3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-construct4.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-construct5.jpg", 		/** 120 */
+		"resources/imgGraphics/retrofutur/bannieres/jr-crs.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-crs2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-egout1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-egout2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-mercedes.jpg", 		/** 125 */
+		"resources/imgGraphics/retrofutur/bannieres/jr-moon.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-soldier1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-soldier2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/jr-soldier3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-blow.jpg", 		/** 130 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-building-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-building-2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-building-2b.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-building-3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-building-4.jpg", 		/** 135 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-bureau-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-city-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-city-2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-city-3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-city10.jpg", 		/** 140 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-escalator.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-foule-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-hall-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-labo-2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-labo-3.jpg", 		/** 145 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-labo-entrance.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine3.jpg", 		/** 150 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine4.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine5.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine6.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine7.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine8.jpg", 		/** 155 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-machine9.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-projo.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-radio-house.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-road-snow.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-snow.jpg", 		/** 160 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-statue.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-tour.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-tower-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-tower-3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-tower-5.jpg", 		/** 165 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-tower-6.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-tower11.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-tower12.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-tower13.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-traffic-2.jpg", 		/** 170 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-trainhotel.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-trame.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-usine1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-usine2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-usine3.jpg", 		/** 175 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-ville-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-ville-2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-ville-3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zone-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zone-1b.jpg", 		/** 180 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-zone-1c.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zone-1d.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zone-2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zone-2b.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zone-2c.jpg", 		/** 185 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-zone-3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zone2d.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zoomout-1.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zoomout-3.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/mp-zoomout-4.jpg", 		/** 190 */
+		"resources/imgGraphics/retrofutur/bannieres/mp-zoomout-5.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ob-cadran.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ob-console.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ob-console2.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/ob-console3.jpg", 		/** 195 */
+		"resources/imgGraphics/retrofutur/bannieres/rf-aff.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/rf-resist.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/sig-angel-of-rust.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/sig-astacus.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/sub-connieuberfemme.jpg", 		/** 200 */
+		"resources/imgGraphics/retrofutur/bannieres/vi-LeSabre.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/vi-atelier.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/vi-bal.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/vi-lit.jpg", 		
+		"resources/imgGraphics/retrofutur/bannieres/vi-magasin.jpg", 		/** 205 */
+		"resources/imgGraphics/retrofutur/bannieres/vi-prison.jpg", 		
+		"resources/imgGraphics/retrofutur/cartemonde2qe.jpg", 		
+		"resources/imgGraphics/retrofutur/conseils19dt.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/bluebalcony.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/bluebase.jpg", 		/** 210 */
+		"resources/imgGraphics/retrofutur/decors/blueentrance.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/blueentrytop.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/blueflag.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/blueramp.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/redbase.jpg", 		/** 215 */
+		"resources/imgGraphics/retrofutur/decors/redcomp.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/redentrance.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/redentrytop.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/redflag.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/redramp.jpg", 		/** 220 */
+		"resources/imgGraphics/retrofutur/decors/rf_pic1.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic10.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic11.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic12.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic13.jpg", 		/** 225 */
+		"resources/imgGraphics/retrofutur/decors/rf_pic14.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic15.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic16.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic17.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic18.jpg", 		/** 230 */
+		"resources/imgGraphics/retrofutur/decors/rf_pic19.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic2.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic20.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic21.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic22.jpg", 		/** 235 */
+		"resources/imgGraphics/retrofutur/decors/rf_pic23.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic24.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic3.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic4.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic5.jpg", 		/** 240 */
+		"resources/imgGraphics/retrofutur/decors/rf_pic6.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic7.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic8.jpg", 		
+		"resources/imgGraphics/retrofutur/decors/rf_pic9.jpg", 		
+		"resources/imgGraphics/retrofutur/ghma2noy.jpg", 		/** 245 */
+		"resources/imgGraphics/retrofutur/logos/agence_bien_logo.gif", 		
+		"resources/imgGraphics/retrofutur/logos/agence_comm_logo.gif", 		
+		"resources/imgGraphics/retrofutur/logos/agence_concours_logo.gif", 		
+		"resources/imgGraphics/retrofutur/logos/agence_eau_logo.gif", 		
+		"resources/imgGraphics/retrofutur/logos/agence_etrangers_logo.gif", 		/** 250 */
+		"resources/imgGraphics/retrofutur/logos/agence_gouv_logo.gif", 		
+		"resources/imgGraphics/retrofutur/logos/agence_hygiene_logo.gif", 		
+		"resources/imgGraphics/retrofutur/logos/agence_paix_logo.gif", 		
+		"resources/imgGraphics/retrofutur/logos/agence_pharma_logo.gif", 		
+		"resources/imgGraphics/retrofutur/logos/agence_rehab_logo.gif", 		/** 255 */
+		"resources/imgGraphics/retrofutur/logos/agence_techno_logo.gif", 		
+		"resources/imgGraphics/retrofutur/logos/agence_urb_logo.gif", 		
+		"resources/imgGraphics/retrofutur/metro.jpg", 		
+		"resources/imgGraphics/retrofutur/systeme.jpg", 		
