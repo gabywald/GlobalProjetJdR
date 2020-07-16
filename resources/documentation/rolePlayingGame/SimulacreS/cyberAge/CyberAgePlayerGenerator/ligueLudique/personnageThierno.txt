@@ -1,0 +1,59 @@
+BEGIN personnae
+CONCEPT Thierno
+NAME Jan Natalis
+IMAGE img/personnageAnonymous.jpg
+TITLE Jan Natalis
+PV 14
+IMPACT 0
+SAN 40
+APP 10
+CON 14
+DEX 12
+FOR 14
+TAI 15
+EDU 12
+INT 13
+POU 10
+BEGIN cyberequipement
+G.O.S.T. de combat
+Câblage nerveux
+Cuirasse Céramique
+Vibrodague + Pile
+Pistolet lourd
+500c de drogues de combat diverses
+END cyberequipement
+BEGIN cailloux
+END cailloux
+AGE 26
+SEXE Homme
+PARRAIN Jadwiga, amante et chef de la mafia de Vienne ; Dimitar Teodorov Zheliasko, capitaine dans la Légion Cerbère
+ARGENT 1800
+DIVERS 
+METIER Combattant
+BEGIN talents
+Armes lourdes	50
+Explosifs	50
+Conduite d'engins lourds	50
+Connaissance du milieu (mercs) 	65
+Armes normales	80
+Médecine	50
+Discrétion	50
+Arts Martiaux	65
+Interview/Animation	50
+Entregent	50
+Gravité zéro	30
+END talents
+BEGIN lightbio
+[CyberTek] Vous passez plusieurs mois sur une base spatiale. 
+[Gang] Vous tombez amoureux(se) d’un membre de Gang. (Romance 4)
+[Jackeur] Un Jackeur a essayé de vous entuber. Vous essayerez de vous venger de lui.
+[Mercenaire] Vous devenez Mercenaire pendant quelques mois dans une Force très côtée. 
+[...] Vous gagnez lors d’un concours, n’importe quel type de cablage (sauf cablage total).
+[...] Vous êtes la cible d’une Chasse. Vous tuez votre Chasseur.
+END lightbio 
+BEGIN biography
+Jan Natalis est né en 2055 à Vienne dans un ghetto où ont été regroupés les descendants des émigrés polonais ayant fui la BAPO et la guerre Polono-Ukrainienne il y a 50 ans. Fils de médecin, personne très précieuse dans les communautés précaires, il a passé sa jeunesse entre les études qu'essayaient de lui inculquer ses parents et les gangs de rue qui infestent les bas-quartiers de Vienne. Il tombe amoureux de Jadwiga, jeune punk membre de gang, d'un an sa cadette (B) et vit une relation passionnée avec elle. Cette vie dure jusqu'à ce qu'il devienne la cible d'une Chasse dont le Chasseur est un chef de gang expérimenté (en fait l'oncle et tuteur/responsable de Jadwiga) ; mais contre toute attente, Jan parvient non seulement à échapper à la Chasse, mais la retourne contre son agresseur et le tue (F). Cela lui aliène les gangs de Vienne, mais attire l'attention de la Légion Cerbère, qui à 19 ans le recrute et le forme sur une station spatiale pendant six mois (A), avant de l'intégrer dans ses forces spéciales (D). Il y passe quatre ans, au cours desquels lors d'un concours d'officiers il remporte une augmentation de câblage nerveux (E), jusqu'à ce qu'une opération au-delà de la Ceinture de la Faim de la Mer Noire, impliquant l'assistance d'un jacker civil, Balthabek Kedryuk, tourne mal à cause de la trahison de ce dernier et qu'il soit abandonné et laissé pour mort (C). Il est sauvé par des membres de la Compagnie Catalane, une célèbre compagnie mercenaire connue notamment pour plusieurs guerres privées en Méditerranée contre les branches grecques du TechnoBloc BPCE-ParisBas qui furent un désastre pour cette dernière, au point que le TechnoBloc dut céder plusieurs holdings d'armement à la Compagnie Catalane.  Il la rejoint (D) et en grimpe rapidement les échelons pour devenir officier Almogavar. Il parvient à rentrer en contact avec Jadwiga (B) qui a repris le gang de son oncle et le dirige à présent avec beaucoup d'habileté, ayant des liens et des contacts bien au delà de Vienne, mais qui ne l'a pas oublié et l'attend. Ils entretiennent la relation de ceux que les circonstances éloignent mais qui se retrouvent quand ils peuvent, et n'hésitent pas à s'aider mutuellement quand c'est nécessaire. Il a également gardé contact avec un capitaine de la Légion Cerbère, Dimitar Teodorov Zheliasko, ayant servi avec lui dans les forces spéciales, et sont bons amis.
+
+Jan Natalis est un bon combattant et un officier capable (D). Bien que sachant comment s'adresser aussi bien à ses hommes qu'à ses égaux, il est en général peu bavard, mais ceux qui le connaissent bien savent que deux noms cristallisent ses pensées : Jadwiga (B) et Balthabek (C) ; prononcer l'un de ces deux noms, c'est s'attirer son intérêt immédiat. Depuis les trahisons et tentatives de meurtres à son égard (C, F), il est toujours vigilant et sur ses gardes. Il a peu d'amis et s'attache peu. Il déteste les jackers et la Matrice en général (C), se méfie des broches et des cailloux comme la peste, mais apprécie la camaraderie des groupes mercenaires et des corps d'armée (D). Il prend soin de ceux qui sont sous sa responsabilité et fait son possible pour accomplir les missions qui lui sont confiées, sans pour autant prendre de risques inutiles pour ses hommes.
+END biography
+END personnae
