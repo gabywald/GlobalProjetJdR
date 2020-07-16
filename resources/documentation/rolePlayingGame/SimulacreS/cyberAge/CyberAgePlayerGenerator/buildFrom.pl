@@ -2,6 +2,7 @@
 
 use strict;
 
+use lib '.';
 use Personnae;
 
 if (@ARGV < 1) {
