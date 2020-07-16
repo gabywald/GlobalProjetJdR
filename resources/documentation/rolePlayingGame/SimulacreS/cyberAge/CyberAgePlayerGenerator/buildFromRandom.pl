@@ -3,6 +3,8 @@
 use strict;
 
 ## use Switch;
+
+use lib '.';
 use Personnae;
 
 my $toShowAllParse = ( (@ARGV >= 1) && ($ARGV[0] eq "show") );

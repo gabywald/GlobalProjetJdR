@@ -1,0 +1,49 @@
+BEGIN personnae
+CONCEPT Gang
+NAME Test
+IMAGE img/personnageAnonymous.jpg
+TITLE Gang
+PV 12
+IMPACT 0
+SAN 73
+APP 10
+CON 12
+DEX 11
+FOR 9
+TAI 11
+EDU 20
+INT 15
+POU 16
+BEGIN cyberequipement
+END cyberequipement
+BEGIN cailloux
+END cailloux
+AGE 30
+SEXE Indéterminé-e
+PARRAIN BladeRunner
+ARGENT 15000
+DIVERS Dette de Jackeur. Dette de Gang. 
+METIER BladeRunner
+BEGIN talents
+Arme normale	50
+Connaissance du milieu de la rue	85
+Discrétion	60
+Droit mondial	50
+Electronique	25
+Filature	80
+END talents
+BEGIN lightbio
+[Jackeur] Un Jackeur a une dette vis-à-vis de vous. Vous pouvez lui demander un service. 
+[BladeRunner] Vous avez une liaison avec un(e) BladeRunner.  --- Votre liaison meurt. --- Suite à une overdose. Vous détestez les dealers. 
+[Gangs] Un chef de Gang a une dette vis-à-vis de vous. Vous pouvez lui demander un service. 
+[Divers] Vous gagnez un séjour d'un mois sur les Îles de la Lune. 
+[BladeRunner] Vous faites équipe plusieurs mois avec un(e) BladeRunner.  --- Votre liaison meurt. --- Assassiné(e) par un gang. Vous préparez une vengeance. 
+[Jackeur] Vous échappez de justesse à un logiciel tueur. 
+For Job, max was [400] (EDU*20), used [260], remain [140]
+For Perso, max was [150] (INT*10), used [30], remain [120]
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+
