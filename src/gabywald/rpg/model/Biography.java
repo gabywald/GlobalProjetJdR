@@ -1,7 +1,7 @@
 package gabywald.rpg.model;
 
 import gabywald.global.data.Utils;
-import gabywald.global.data.samples.RPGDataFile;
+import gabywald.rpg.data.samples.RPGDataFile;
 
 import java.util.HashMap;
 import java.util.Iterator;
