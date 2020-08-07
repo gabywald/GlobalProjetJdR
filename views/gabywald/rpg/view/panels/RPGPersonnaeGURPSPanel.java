@@ -3,7 +3,7 @@ package gabywald.rpg.view.panels;
 import java.awt.Rectangle;
 import javax.swing.JComboBox;
 import gabywald.global.data.Utils;
-import gabywald.global.data.samples.RPGDataFile;
+import gabywald.rpg.data.samples.RPGDataFile;
 import gabywald.rpg.model.PersonnaeOfGURPS;
 import gabywald.rpg.view.BuildPersonnaeFrame;
 

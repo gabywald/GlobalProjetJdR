@@ -1,4 +1,6 @@
-package gabywald.global.data.samples;
+package gabywald.rpg.data.samples;
+
+import gabywald.global.data.DataFile;
 
 /**
  * 

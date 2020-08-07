@@ -1,6 +1,6 @@
 package gabywald.rpg.model;
 
-import gabywald.global.data.samples.RPGDataFile;
+import gabywald.rpg.data.samples.RPGDataFile;
 
 /**
  * Inheritant class to generate biographies for Cyber Age. 

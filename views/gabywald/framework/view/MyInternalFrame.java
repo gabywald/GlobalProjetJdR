@@ -13,8 +13,8 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import gabywald.framework.controller.MyInternalFrameActionListener;
 import gabywald.framework.controller.MyMenuActionListener;
+import gabywald.global.data.FrameworkDataFile;
 import gabywald.global.data.Utils;
-import gabywald.global.data.samples.FrameworkDataFile;
 
 /**
  * 

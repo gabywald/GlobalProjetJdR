@@ -3,8 +3,8 @@ package gabywald.rpg.controller;
 import java.awt.event.ActionEvent;
 
 import gabywald.global.controller.BooleanActionListener;
-import gabywald.global.data.samples.RPGDataFile;
 import gabywald.global.view.dialog.GenericAskingDialog;
+import gabywald.rpg.data.samples.RPGDataFile;
 import gabywald.rpg.view.BuildPersonnaeFrame;
 import gabywald.rpg.view.panels.RPGDataPanel;
 

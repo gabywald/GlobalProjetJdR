@@ -3,7 +3,7 @@ package gabywald.rpg.model;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import gabywald.global.data.samples.RPGDataFile;
+import gabywald.rpg.data.samples.RPGDataFile;
 
 /**
  * This table describes a list of CyberSoftware.

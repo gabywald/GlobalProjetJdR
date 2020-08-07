@@ -1,7 +1,7 @@
 package gabywald.rpg.model;
 
 import gabywald.global.data.TextualInfoFile;
-import gabywald.global.data.samples.RPGDataFile;
+import gabywald.rpg.data.samples.RPGDataFile;
 
 /**
  * This (abstract) class describe generic properties for a RPC (Role-Playing game Character). 
