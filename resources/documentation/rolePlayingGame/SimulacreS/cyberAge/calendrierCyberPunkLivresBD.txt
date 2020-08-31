@@ -66,3 +66,9 @@ Dallas Barr
 2085 : Dallas Barr remporte le grand prix de Miami ; emploi d'armes nucléaires tactiques sur Novi Sad
 15 juillet 2086 : station AdAstra opérationnelle, mur de Sava est tombé un an auparavant, disparitions d'immortels...
 2096 : début de la colonisation de Mars (après quelques décennies de terraformation) ; réveil éthique au sommet, stimulé par le Consortium (HabibAl Shar'a et Ricardo Garibaldi), qui met à mal Stileman Entreprises (et indirectement LME).
+
+
+Ajout calendrier et références dans bibliographie (BDs, romans, film...)
+
+Ajout éléments technologiques (puce corticale / Exocortex / Reno, combats télévisés, mondes virtuels, traitement Stileman, Ascenseur Spatial, cryptomonnaies, "réseaux informatiques évolués" : WAN + PAN, ...)
+
