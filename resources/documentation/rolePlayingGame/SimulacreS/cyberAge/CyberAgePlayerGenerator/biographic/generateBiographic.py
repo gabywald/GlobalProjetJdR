@@ -19,6 +19,8 @@ from BiographicSelection import selectRandomBiographic
 from BiographicSelection import selectBiographicElements
 from BiographicDataLoad import BiographicDataLoad
 
+from Person import Person
+
 ## from BiographicTable import BiographicTable
 biotables = BiographicDataLoad.loadBiographicsTables()
 ## from BiographicJob import BiographicJob
@@ -53,18 +55,13 @@ for elt in res :
                 skill = None
                 if (val == "all") : 
                     for skill in skills : 
-                        print( "\t%s\t%s\t%s" %( skill.name, level, skill.possibilities ) )
+                        print( "\t%s\t%s\t%s" %( skill.name, skill.level, skill.possibilities ) )
                 elif (val != "*") : 
                     skill = skills[ job ]
                 else : 
                     jobSkill = jobs[ job ]
                     skill = skills[ random.choice( jobSkill.skills ) ]
-                level = skill.level
-                if (val != '*'):
-                    level = val
-                    ## NOTE value here !!
-                print( "\t%s\t%s\t%s" %( skill.name, level, skill.possibilities ) )
+            print( "\t%s\t%s\t%s" %( skill.name, skill.level, skill.possibilities ) )
         else :
             print( "\t%s" %( item ) )
-
 

@@ -23,8 +23,6 @@ public class OldIntegrationActionListenerEquipments extends BooleanActionListene
 	private static final RPGDataFile[] TALENTS_FILES_SETS		= {
 		RPGDataFile.getSimulacreSProtections(), 
 		RPGDataFile.getSimulacreSMagiques(), 
-		RPGDataFile.getCyberAgeHardware(), 
-		RPGDataFile.getCyberAgeSoftware(), 
 		RPGDataFile.getGURPSCyberSoftware(), 
 	};
 	
