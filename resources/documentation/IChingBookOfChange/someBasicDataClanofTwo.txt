@@ -1,0 +1,199 @@
+10s	Upper	1s	Lower	Descriptor	#
+1 Heaven	1
+1 Heaven	2
+1 Heaven	3
+1 Heaven	4
+1 Heaven	5
+1 Heaven	6
+1 Heaven	7
+1 Heaven	8
+2 Earth	1
+2 Earth	2
+2 Earth	3
+2 Earth	4
+2 Earth	5
+2 Earth	6
+2 Earth	7
+2 Earth	8
+3 Thunder	1
+3 Thunder	2
+3 Thunder	3
+3 Thunder	4
+3 Thunder	5
+3 Thunder	6
+3 Thunder	7
+3 Thunder	8
+4 Water	1
+4 Water	2
+4 Water	3
+4 Water	4
+4 Water	5
+4 Water	6
+4 Water	7
+4 Water	8
+Heaven	Force; strong action, the key, god
+Earth	Obstruction; standstill (stagnation); selfish person
+Thunder	Without embroiling; innocence (the unexpected); pestilence
+Water	Arguing; conflict; laws
+Mountain	Retiring; retreat; yielding
+Wind	Coupling;coming to meet; meetiNG
+Flame	Concording People;fellowship with men; gathering men
+Lake	Treading; treading; continuing
+Heaven	Pervading; peace; greatneSS
+Earth	Field; receptive; acquiescence; fl ow
+Thunder	Returning; return (the turning point)
+Water	Leading; the army; the troOPS
+Mountain	Humbling; modesty
+Wind	Ascending; pushing upwaRDS
+Flame	Darkening of the Light; intelligence hidden;brilliance injured
+Lake	Nearing; approach; the fore
+Heaven	Great Invigorating; the power of the great; greatmaturity
+Earth	Providing For; enthusiasm; excess
+Thunder	Shake; the arousing (shock, thunder); thunder
+Water	Taking-Apart; deliverance, untangled
+Mountain	Small Exceeding; preponderance of the small; small surpassing
+Wind	Persevering; duration; constancy
+Flame	Abounding; abundance; fullness
+Lake	Converting the Maiden; the marrying maiden;
+returning maiden
+Heaven	Attending; waiting; moistened; arriving
+Earth	Grouping; holding together; alliance
+Thunder	Sprouting; diffi culty at the beginning; gathering
+support; hoarding
+Water	Gorge; the abyss; entrapment
+Mountain	Limping; obstruction; afoot
+Wind	Welling; the well
+Flame	Already Fording; after completion; already completed; already done
+Lake	Articulating; limitation; moderation
+#
+1
+12
+25
+6
+33
+44
+13
+10
+11
+2
+24
+7
+15
+46
+36
+19
+34
+16
+51
+40
+62
+32
+55
+54
+5
+8
+3
+29
+39
+48
+63
+60
+10s	Upper	1s	Lower	Descriptor	#
+5 Mountain	1
+5 Mountain	2
+5 Mountain	3
+5 Mountain	4
+5 Mountain	5
+5 Mountain	6
+5 Mountain	7
+5 Mountain	8
+6 Wind	1
+6 Wind	2
+6 Wind	3
+6 Wind	4
+6 Wind	5
+6 Wind	6
+6 Wind	7
+6 Wind	8
+7 Flame	1
+7 Flame	2
+7 Flame	3
+7 Flame	4
+7 Flame	5
+7 Flame	6
+7 Flame	7
+7 Flame	8
+8 Lake	1
+8 Lake	2
+8 Lake	3
+8 Lake	4
+8 Lake	5
+8 Lake	6
+8 Lake	7
+8 Lake	8
+Heaven	Great Accumulating; the taming power of the great; great storage; potential energy
+Earth	Stripping; splitting apart; flaying
+Thunder	Swallowing; the corners of the mouth; jaws; comfort/ security
+Water	Enveloping; youthful folly; the young shoot; discovering
+Mountain	Bound; keeping still, mountain; stilling
+Wind	Correcting; work on what has been spoiled (decay); branch
+Flame	Adorning; grace; luxuriance
+Lake	Diminishing; decrease
+Heaven	Small Accumulating; the taming power of the small; small harvest
+Earth	Viewing; contemplation (view); looking up
+Thunder	Augmenting; increase
+Water	Dispersing; dispersion (dissolution); disperse
+Mountain	Infiltrating; development; advancement
+Wind	Ground; the gentle (the penetrating, wind); calculation
+Flame	Dwelling People; the family (the clan); family members
+Lake	Center Returning; inner truth, central return
+Heaven	Great Possessing; possession in great measure; the great possession
+Earth	Prospering; progress; aquas
+Thunder	Gnawing Bite; biting through; chewing
+Water	Not Yet Fording; before completion; not yet completed
+Mountain	Sojourning; the wanderer; traveling
+Wind	Holding; the cauldron
+Flame	Radiance; the clinging, fire; the net
+Lake	Polarising; opposition; perversion
+Heaven	Displacement; resoluteness; breakthrough
+Earth	Clustering; gathering together (massing); finish
+Thunder	Following
+Water	Confi ning; oppression (exhaustion); entangled
+Mountain	Conjoining; infl uence (wooing); feelings
+Wind	Great Exceeding; preponderance of the great;
+Flame	Skinning; revolution (molting); the brid
+Lake	Open; the joyous, lake; usurpation
+#
+26
+23
+27
+4
+52
+18
+22
+41
+9
+20
+42
+59
+53
+57
+37
+61
+14
+35
+21
+64
+56
+50
+30
+38
+43
+45
+17
+47
+31
+28
+49
+58
+11
