@@ -1,0 +1,8 @@
+*.aux
+*.log
+*.pdf
+*.dvi
+iching60.600pk
+iching60.mf
+iching60.tfm
+Iching.tex

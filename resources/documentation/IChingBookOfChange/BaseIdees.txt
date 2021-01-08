@@ -1,0 +1,16 @@
+Utilisation des 64 hexagrammes pour les situations à résoudre
+
+Univers Générique
+
+Tirage ? 
+	2d8 ?
+	Cartes ?
+	Pièces ?
+
+Pour LaTeX : 
+	https://tex.stackexchange.com/questions/132437/displaying-the-64-hexagrams-of-the-yi-jing-using-unicode-range-4dc0-up-4dff
+	https://www.latex4technics.com/?note=1NU0
+	
+	=> https://ctan.org/tex-archive/fonts/iching <= 
+	
+	Chercher une police de caractère qui permette affichage hexagrammes ??
