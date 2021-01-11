@@ -14,3 +14,17 @@ Pour LaTeX :
 	=> https://ctan.org/tex-archive/fonts/iching <= 
 	
 	Chercher une police de caractère qui permette affichage hexagrammes ??
+
+Tirage hexagramme
+	http://cercle-yijing.net/wp/methodes-de-tirages/
+	https://marip.com/le-grand-guide-des-arts-traditionnels-chinois/la-divination-l-art-de-developper-une-strategie/le-guide-complet-du-yi-king/comment-faire-un-tirage-de-yi-king/
+	Les pièces de monnaie
+		Si vous utilisez des pièces de monnaie, il vous en faudra 3. Il peut s'agir de fac simile de pièces chinoise anciennes (cf. photo ci-contre) ou des pièces courantes. Nous vous suggérons de conserver ces 3 pièces et de ne les utiliser qu'à cet usage.
+		Pour faire un tirage avec les pièces, le procédé est simple :
+		    Jetez les 3 pièces simultanément sur une surface plate.
+		    Calculez la valeur obtenue : pile vaut 2, face vaut 3. Vous obtiendrez donc l'une des valeurs suivantes : 6, 7, 8 ou 9.
+		    Si vous obtenez 7, le trait est yang, si vous obtenez 8 le trait est yin, si vous obtenez 6 le trait est yin mutant, si vous obtenez 9 le trait est yang mutant.
+	Yao fixes et mutants	
+		Félicitations, vous venez d'obtenir votre premier trait (celui du bas, car souvenez-vous que l'hexagramme se trace de bas en haut).
+		Vous lancerez au total les pièces 6 fois de suite jusqu'à obtenir un ensemble de 6 traits. Ces 6 traits constituent l'hexagramme.
+ 
