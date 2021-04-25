@@ -18,7 +18,6 @@ public class RPGDataFile extends DataFile {
 		"tableDesArmesDistMuscGURPSlite.txt", 	"tableDesArmesDistEnerGURPSlite.txt",
 		"listOfGURPSsoftwareWithoutDescr.txt",	"listOfGURPSsoftwareDescriptionIcon.txt",
 		"tableEquipementsProtections.txt",		"tableEquipementsMagiques.txt",
-		"tableEquipementsHardware.txt",			"tableEquipementsSoftware.txt",
 		"listOfGURPSsoftware.txt",				"pouvoirsPsySimulacreS.txt",
 		"pouvoirsForceGeneric.txt",				"barbarismeScientifique.txt", 
 		"", 	"",
@@ -88,21 +87,15 @@ public class RPGDataFile extends DataFile {
 	public static RPGDataFile getSimulacreSMagiques() 
 		{ return new RPGDataFile(RPGDataFile.FILENAMES_SET[17]); }
 	
-	public static RPGDataFile getCyberAgeHardware() 
+	public static RPGDataFile getGURPSCyberSoftware()
 		{ return new RPGDataFile(RPGDataFile.FILENAMES_SET[18]); }
 	
-	public static RPGDataFile getCyberAgeSoftware() 
+	public static RPGDataFile getSimulacreSpouvoirsPsy()
 		{ return new RPGDataFile(RPGDataFile.FILENAMES_SET[19]); }
 	
-	public static RPGDataFile getGURPSCyberSoftware()
+	public static RPGDataFile getGenericPouvoirsForce()
 		{ return new RPGDataFile(RPGDataFile.FILENAMES_SET[20]); }
 	
-	public static RPGDataFile getSimulacreSpouvoirsPsy()
-		{ return new RPGDataFile(RPGDataFile.FILENAMES_SET[21]); }
-	
-	public static RPGDataFile getGenericPouvoirsForce()
-		{ return new RPGDataFile(RPGDataFile.FILENAMES_SET[22]); }
-	
 	public static RPGDataFile getBarbarismeScientifique()
-		{ return new RPGDataFile(RPGDataFile.FILENAMES_SET[23]); }
+		{ return new RPGDataFile(RPGDataFile.FILENAMES_SET[21]); }
 }

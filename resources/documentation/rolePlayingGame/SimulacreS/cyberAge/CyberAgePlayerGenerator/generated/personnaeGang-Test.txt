@@ -25,7 +25,7 @@ ARGENT 15000
 DIVERS Dette de Jackeur. Dette de Gang. 
 METIER BladeRunner
 BEGIN talents
-Arme normale	50
+Armes normales	50
 Connaissance du milieu de la rue	85
 Discrétion	60
 Droit mondial	50

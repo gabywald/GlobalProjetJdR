@@ -184,7 +184,7 @@ ARGENT 30000000
 DIVERS ---
 METIER BladeRunner
 BEGIN talents
-Arme normale	50
+Armes normales	50
 Connaissance des M{\'e}dias	30
 Connaissance du milieu de la rue	50
 Discr{\'e}tion	50

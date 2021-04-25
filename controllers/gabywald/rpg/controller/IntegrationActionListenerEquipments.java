@@ -19,8 +19,6 @@ public class IntegrationActionListenerEquipments extends IntegrationActionListen
 	private static final RPGDataFile[] TALENTS_FILES_SETS		= {
 		RPGDataFile.getSimulacreSProtections(), 
 		RPGDataFile.getSimulacreSMagiques(), 
-		RPGDataFile.getCyberAgeHardware(), 
-		RPGDataFile.getCyberAgeSoftware(), 
 		RPGDataFile.getGURPSCyberSoftware(), 
 	};
 	
