@@ -1,4 +1,4 @@
-10s	Upper	1s	Lower	Descriptor	#
+# 10s	Upper	1s	Lower	Descriptor	#
 1 Heaven	1
 1 Heaven	2
 1 Heaven	3
@@ -54,12 +54,10 @@ Water	Taking-Apart; deliverance, untangled
 Mountain	Small Exceeding; preponderance of the small; small surpassing
 Wind	Persevering; duration; constancy
 Flame	Abounding; abundance; fullness
-Lake	Converting the Maiden; the marrying maiden;
-returning maiden
+Lake	Converting the Maiden; the marrying maiden; returning maiden
 Heaven	Attending; waiting; moistened; arriving
 Earth	Grouping; holding together; alliance
-Thunder	Sprouting; diffi culty at the beginning; gathering
-support; hoarding
+Thunder	Sprouting; difficulty at the beginning; gathering support; hoarding
 Water	Gorge; the abyss; entrapment
 Mountain	Limping; obstruction; afoot
 Wind	Welling; the well
@@ -98,7 +96,7 @@ Lake	Articulating; limitation; moderation
 48
 63
 60
-10s	Upper	1s	Lower	Descriptor	#
+# 10s	Upper	1s	Lower	Descriptor	#
 5 Mountain	1
 5 Mountain	2
 5 Mountain	3
@@ -158,8 +156,8 @@ Lake	Polarising; opposition; perversion
 Heaven	Displacement; resoluteness; breakthrough
 Earth	Clustering; gathering together (massing); finish
 Thunder	Following
-Water	Confi ning; oppression (exhaustion); entangled
-Mountain	Conjoining; infl uence (wooing); feelings
+Water	Confining; oppression (exhaustion); entangled
+Mountain	Conjoining; influence (wooing); feelings
 Wind	Great Exceeding; preponderance of the great;
 Flame	Skinning; revolution (molting); the brid
 Lake	Open; the joyous, lake; usurpation
@@ -183,8 +181,8 @@ Lake	Open; the joyous, lake; usurpation
 14
 35
 21
-64
 56
+64
 50
 30
 38
@@ -196,4 +194,3 @@ Lake	Open; the joyous, lake; usurpation
 28
 49
 58
-11

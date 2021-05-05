@@ -1,0 +1,35 @@
+		iching.tex
+
+
+   Iching.tex is a latex program to print out divinations
+from the I Ching.
+
+   The counter \hexagram has a value in the range 1 - 64,
+and is used to select a call to the macro \interpret.
+
+   \interpret takes 9 arguments:
+
+1)   Transliteration of the chinese name of the hexagram,
+2)   English translation of the chinese name,
+3)   Interpretation of the hexagram according to King Wen,
+4-9) Interpretation of the 6 change lines, according to
+	Tan, Duke of Chou.
+
+   The \interpret macro given is based on the simplified
+Pa Ch'ien method, where special significance is accorded
+only to one line in the hexagram, selected via the counter
+\changeline. The more complex systems, involving moving
+lines and alternate hexagrams, etc, could be simulated by
+replacing \interpret with a more complex version.
+
+   The package uses the font iching60, a metafont source
+for which is in iching.mf. In order to find the appropriate
+characters from this font, two further counters are used,
+hexachar (which is set to 64 + \hexagram) and clchar
+(200 + \changeline).
+
+----------------------------------------------------------
+
+   Alan M Stanier, Computing Service, Essex Univerity
+(alan@essex.ac.uk)
+

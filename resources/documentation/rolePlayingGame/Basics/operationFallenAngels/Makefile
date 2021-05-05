@@ -1,6 +1,6 @@
 
 ## naming WITHOUT the extensions [.tex] or [.bib]
-LATEXFILE=personnae
+LATEXFILE=operationFallenAngels
 
 ## the local software...
 CCPDFLA=pdflatex

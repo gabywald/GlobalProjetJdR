@@ -1,5 +1,8 @@
 # GlobalProjetJdR
+
 Outil(s) pour du JdR / Jeu de Rôle
+
+## Ressources initiales
 
 Code Java pour une application avec des générateurs et ressources documentaires (GURPS, SimulacreS, encyclopédie CyberAge...), documents LaTeX, un générateur de cartes de tarot... 
 
@@ -10,6 +13,28 @@ Une partie des ressources vient de Casus Belli première itération (années 199
 Dans les ressources : 
   * La campagne du "Réseau Divin" : resources > documentation > rolePlayingGame > divnet ; https://github.com/gabywald/GlobalProjetJdR/tree/master/resources/documentation/rolePlayingGame/divnet
   * L'encyclopédie CyberAge : resources > documentation > rolePlayingGame > SimulacreS > cyberage > encyclopaedia ; https://github.com/gabywald/GlobalProjetJdR/tree/master/resources/documentation/rolePlayingGame/SimulacreS/cyberAge
-  * quelques articles Casus Belli : resources > documentation > rolePlayingGame > background > casusbelli ; https://github.com/gabywald/GlobalProjetJdR/tree/master/resources/documentation/rolePlayingGame/background/casusbelli
+  * Quelques articles Casus Belli : resources > documentation > rolePlayingGame > background > casusbelli ; https://github.com/gabywald/GlobalProjetJdR/tree/master/resources/documentation/rolePlayingGame/background/casusbelli
+  * Documentation : 
+    * Tarot : pour générer des cartes de tarot (utile pour certains jeux : tirages aléatoires, inspiration de scénarios, génération de personnages...) ; 
+    * IChing : idem (utilisé pour "clan of two") ; 
+    * Resources pour fiches de personnages GURPS, Basic RPG, SimulacreS... ; 
+    * Resources de basckground (?) et idées de scénarios ; 
+    * Conversions entre systèmes de jeu ; 
   * ... 
-  * ... 
+
+## Autres inspirations et projets sur ces bases
+
+Idée(s) de logiciel(s) utilitaire(s) pour du JdR / Jeu de Rôle : 
+  * GTC : Gestionnaire de Table de Convention
+    * Gestion des tables de jeux (MJ / Meneur de Jeu) + (Jeu et description) + (nombre de joueurs) ; 
+    * Gestion des inscriptions (système de messagerie / middleware ou inscription manuelle ?) ; 
+    * ... 
+  * Outil préparation de partie / en cours de partie
+    * => IHM avec Onglets (Tabs) et appels de fonctions ; (graphique ou ligne de commande) ; 
+    * Inspiration "à la volée" (évènement, PNJ, lieu, ...) ; 
+    * Tâches / Quêtes en cours ; 
+    * Ajout de données (étapes, scénarios, campagnes, PJ, PNJ, documents de jeu...) ; 
+    * Gestion PBtA (?) ou similaire (actions pré-définies ou catégories) ; 
+    * Diagramme du scénario / Diagramme campagne en cours ; 
+  * Génération de personnages (à préciser)
+

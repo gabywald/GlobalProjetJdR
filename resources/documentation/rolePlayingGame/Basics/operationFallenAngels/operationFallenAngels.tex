@@ -1,0 +1,1869 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}				 % pour la taille   
+\usepackage[T1]{fontenc}	 % pour les font postscript
+\usepackage{epsfig}		  % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}		   % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+\usepackage{multirow}
+
+\usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{0.50cm}{0.50cm}{0.50cm}{0.50cm}{22pt}{5pt}{22pt}{10pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{empty}
+
+
+%%%%%%%%%%% SOME VALUES IN ENGLISH %%%%%%%%%%%%%%%%%%%%%
+\def\ENdefCharacterSheetHeaderTitle{Standard Sample BRP Character Sheet -- \emph{Name, First Name}}
+\def\ENdefCharacterSheetFooterTitle{Basic Role-Playing -- Character Sheet}
+
+\def\ENdefBOXTITLECharacteristics{ {\large \textbf{Characteristic and Rolls}} }
+\def\ENdefBOXTITLEPersonalInforma{ {\large \textbf{Personnal Information}} }
+\def\ENdefBOXTITLESkillsSkillsSki{ {\large \textbf{Skills}} }
+\def\ENdefBOXTITLEPowerPointsPowe{ {\large \textbf{Power Points}} }
+\def\ENdefBOXTITLEFatiguePointsFa{ {\large \textbf{Fatique Points}} }
+\def\ENdefBOXTITLEHitPointsHitPoi{ {\large \textbf{Hit Points}} }
+\def\ENdefBOXTITLEHitLocationsHit{ {\large \textbf{Hit Locations}} }
+\def\ENdefBOXTITLEMagicSpellAndPo{ {\large \textbf{Magic Spells and Powers}} }
+\def\ENdefBOXTITLECharacterPoints{ {\large \textbf{Character Points and Failings}} }
+\def\ENdefBOXTITLESanitySanitySan{ {\large \textbf{Sanity}} }
+\def\ENdefBOXTITLEEquipmentEquipm{ {\large \textbf{Equipment}} }
+\def\ENdefBOXTITLEArmorArmorArmor{ {\large \textbf{Armor}} }
+\def\ENdefBOXTITLEWeaponsWeaponsW{ {\large \textbf{Weapons}} }
+\def\ENdefBOXTITLENotesNotesNotes{ {\large \textbf{Notes}} }
+
+\def\ENdefCharacterSkillsORIGINA{\bfseries \emph{original}}
+\def\ENdefCharacterSkillsCURRENT{\bfseries \emph{current}}
+\def\ENdefCharacterSkillsSTR{\bfseries STRength}
+\def\ENdefCharacterSkillsCON{\bfseries CONstitution}
+\def\ENdefCharacterSkillsTAI{\bfseries Size}
+\def\ENdefCharacterSkillsINT{\bfseries INTelligence}
+\def\ENdefCharacterSkillsPOW{\bfseries POWer}
+\def\ENdefCharacterSkillsDEX{\bfseries DEXterity}
+\def\ENdefCharacterSkillsAPP{\bfseries APPearance}
+\def\ENdefCharacterSkillsEDU{\bfseries EDUcation}
+\def\ENdefCharacterSkillsSAN{\bfseries SANity}
+
+\def\ENdefCharacterSkillsEFF{\bfseries Effort}
+\def\ENdefCharacterSkillsSTA{\bfseries Stamina}
+\def\ENdefCharacterSkillsIDE{\bfseries Idea}
+\def\ENdefCharacterSkillsLUC{\bfseries Luck}
+\def\ENdefCharacterSkillsAGI{\bfseries Agility}
+\def\ENdefCharacterSkillsCHA{\bfseries Charisma}
+\def\ENdefCharacterSkillsKNO{\bfseries Knowledge}
+
+\def\ENdefPersonnalInfosNAM{\bfseries Name}
+\def\ENdefPersonnalInfosRAC{\bfseries Race}
+\def\ENdefPersonnalInfosGEN{\bfseries Gender}
+\def\ENdefPersonnalInfosAGE{\bfseries Age}
+\def\ENdefPersonnalInfosMOV{\bfseries Mov}
+\def\ENdefPersonnalInfosHEI{\bfseries Height}
+\def\ENdefPersonnalInfosWEI{\bfseries Weight}
+\def\ENdefPersonnalInfosNAT{\bfseries Nationality/Homeland}
+\def\ENdefPersonnalInfosPRO{\bfseries Profession}
+\def\ENdefPersonnalInfosALL{\bfseries Allegiance}
+\def\ENdefPersonnalInfosDIS{\bfseries Distinctive Features}
+
+\def\ENdefPowerPointsPersonnal{\textbf{Personnal} }
+\def\ENdefPowerPointsExternalS{External Source}
+\def\ENdefFatigPointsExhausted{Exhausted:}
+\def\ENdefFatigPointsTotalEncu{Total Encumbrance}
+\def\ENdefHitPointsMajorWounds{Major Wound}
+\def\ENdefHitPointsDeadDeadDea{Dead}
+
+\def\ENdefHitLocationsMeleeMel{ {\footnotesize \emph{Melee} } }
+\def\ENdefHitLocationsLocation{ {\footnotesize \emph{Location} } }
+\def\ENdefHitLocationsMissileM{ {\footnotesize \emph{Missile} } }
+\def\ENdefHitLocationsRightLeg{\bfseries \textsc{Right Leg}}
+\def\ENdefHitLocationsLeftLegL{\bfseries \textsc{Left  Leg}}
+\def\ENdefHitLocationsAbdomenA{\bfseries \textsc{Abdomen}}
+\def\ENdefHitLocationsChestChe{\bfseries \textsc{Chest}}
+\def\ENdefHitLocationsRightArm{\bfseries \textsc{Right Arm}}
+\def\ENdefHitLocationsLeftArmL{\bfseries \textsc{Left Arm}}
+\def\ENdefHitLocationsHeadHead{\bfseries \textsc{Head}}
+
+\def\ENdefMagicSpellsPowerName{ {\footnotesize \emph{Spell/Power} } }
+\def\ENdefMagicSpellsPowerPerc{ {\footnotesize \emph{\%} } }
+\def\ENdefMagicSpellsPowerLeve{ {\footnotesize \emph{Levels} } }
+\def\ENdefMagicSpellsPowerDama{ {\footnotesize \emph{Damage} } }
+\def\ENdefMagicSpellsPowerRang{ {\footnotesize \emph{Range} } }
+\def\ENdefMagicSpellsPowerPPpp{ {\footnotesize \emph{PP} } }
+\def\ENdefMagicSpellsPowerDura{ {\footnotesize \emph{Duration} } }
+\def\ENdefMagicSpellsPowerCost{ {\footnotesize \emph{Cost} } }
+\def\ENdefMagicSpellsPowerFree{Free \textsc{Int}}
+\def\ENdefMagicSpellsPowerTota{Total Cost}
+
+\def\ENdefCharacterPointsPower{ \textbf{Power Level} }
+\def\ENdefCharacterPointsPoint{ Character Points }
+\def\ENdefCharacterPointsFaili{ \textbf{Character Failings} }
+\def\ENdefCharacterPointsFDesc{ {\footnotesize \emph{Failing} } }
+\def\ENdefCharacterPointsFCoun{ {\footnotesize \emph{Points} } }
+\def\ENdefCharacterPointsTotal{ Total }
+
+\def\ENdefSanityInsane{ \textbf{Insane} }
+\def\ENdefSanityMental{ \textbf{Mental Disorder} }
+\def\ENdefSanityDisord{ {\footnotesize \emph{Disorder} } }
+\def\ENdefSanitySeveri{ {\footnotesize \emph{Severity} } }
+
+\def\ENdefEquipmentItems{ {\footnotesize \emph{Item} } }
+\def\ENdefEquipmentEncEn{ {\footnotesize \emph{Enc.} } }
+\def\ENdefEquipmentTotal{ Total \textsc{Enc.} }
+
+\def\ENdefArmorTypeType{ {\footnotesize \emph{Type} } }
+\def\ENdefArmorLocation{ {\footnotesize \emph{Location} } }
+
+\def\ENdefWeaponsDamBon{ \textbf{Damage Bonus:} }
+\def\ENdefWeaponsDamDex{ Dex SR }
+\def\ENdefWeaponsDamSiz{ Siz SR }
+\def\ENdefWeaponsDamBas{ Base SR }
+\def\ENdefWeaponsWeapon{ {\footnotesize \emph{Weapon} } }
+\def\ENdefWeaponsAttack{ {\footnotesize \emph{Attack SR} } }
+\def\ENdefWeaponsPercen{ {\footnotesize \emph{\%} } }
+\def\ENdefWeaponsDamage{ {\footnotesize \emph{Damage} } }
+\def\ENdefWeaponsAPRang{ {\footnotesize \emph{AP/Range} } }
+
+
+%%%%%%%%%%% QUELQUES VALEURS EN FRANCAIS %%%%%%%%%%%%%%%%%%%%%
+\def\FRdefCharacterSheetHeaderTitle{Feuille de Personnage Delta Green -- \emph{Nom, Prenom} }
+\def\FRdefCharacterSheetFooterTitle{Delta Green -- Feuille de personnage}
+
+\def\FRdefBOXTITLECharacteristics{ {\large \textbf{Caract{\'e}ristiques \& Attributs}} }
+\def\FRdefBOXTITLEPersonalInforma{ {\large \textbf{{\'E}tat civil}} }
+\def\FRdefBOXTITLESkillsSkillsSki{ {\large \textbf{Comp{\'e}tences}} }
+\def\FRdefBOXTITLEPowerPointsPowe{ {\large \textbf{Points d'{\'e}nergies}} }
+\def\FRdefBOXTITLEFatiguePointsFa{ {\large \textbf{Points de fatigue}} }
+\def\FRdefBOXTITLEHitPointsHitPoi{ {\large \textbf{Points de touche}} }
+\def\FRdefBOXTITLEHitLocationsHit{ {\large \textbf{Localisation de touche}} }
+\def\FRdefBOXTITLEMagicSpellAndPo{ {\large \textbf{Sorts et pouvoirs}} }
+\def\FRdefBOXTITLECharacterPoints{ {\large \textbf{Character Points and Failings}} }
+\def\FRdefBOXTITLESanitySanitySan{ {\large \textbf{Sant{\'e} mentale}} }
+\def\FRdefBOXTITLEEquipmentEquipm{ {\large \textbf{{\'E}quipement}} }
+\def\FRdefBOXTITLEArmorArmorArmor{ {\large \textbf{Armure}} }
+\def\FRdefBOXTITLEWeaponsWeaponsW{ {\large \textbf{Armes}} }
+\def\FRdefBOXTITLENotesNotesNotes{ {\large \textbf{Notes}} }
+
+\def\FRdefCharacterSkillsORIGINA{\bfseries \emph{original}}
+\def\FRdefCharacterSkillsCURRENT{\bfseries \emph{courant}}
+\def\FRdefCharacterSkillsSTR{\bfseries FORce}
+\def\FRdefCharacterSkillsCON{\bfseries CONstitution}
+\def\FRdefCharacterSkillsTAI{\bfseries TAIlle}
+\def\FRdefCharacterSkillsINT{\bfseries INTelligence}
+\def\FRdefCharacterSkillsPOW{\bfseries FORce}
+\def\FRdefCharacterSkillsDEX{\bfseries DEXterit{\'e}}
+\def\FRdefCharacterSkillsAPP{\bfseries APParence}
+\def\FRdefCharacterSkillsEDU{\bfseries EDUcation}
+\def\FRdefCharacterSkillsSAN{\bfseries SANt{\'e}}
+\def\FRdefCharacterSkillsPOU{\bfseries POUvoir}
+
+\def\FRdefCharacterSkillsEFF{\bfseries Effort}
+\def\FRdefCharacterSkillsSTA{\bfseries Endurance}
+\def\FRdefCharacterSkillsIDE{\bfseries Intuition}
+\def\FRdefCharacterSkillsLUC{\bfseries Chance}
+\def\FRdefCharacterSkillsAGI{\bfseries Agilit{\'e}}
+\def\FRdefCharacterSkillsCHA{\bfseries Charisme}
+\def\FRdefCharacterSkillsKNO{\bfseries Connaissance}
+\def\FRdefCharacterSkillsPES{\bfseries Prestance}
+\def\FRdefCharacterSkillsPUI{\bfseries Puissance}
+\def\FRdefCharacterSkillsCOR{\bfseries Corpulence}
+\def\FRdefCharacterSkillsIUI{\bfseries Intuition}
+\def\FRdefCharacterSkillsVOL{\bfseries Volont{\'e}}
+
+\def\FRdefPersonnalInfosNAM{\bfseries Nom}
+\def\FRdefPersonnalInfosFNA{\bfseries Pr{\'e}nom}
+\def\FRdefPersonnalInfosSEX{\bfseries Sexe}
+\def\FRdefPersonnalInfosOCC{\bfseries Occupation}
+\def\FRdefPersonnalInfosPER{\bfseries Personnalit{\'e}}
+\def\FRdefPersonnalInfosRAC{\bfseries Race}
+\def\FRdefPersonnalInfosGEN{\bfseries Genre}
+\def\FRdefPersonnalInfosAGE{\bfseries {\^A}ge}
+\def\FRdefPersonnalInfosMOV{\bfseries Movt}
+\def\FRdefPersonnalInfosHEI{\bfseries Taille}
+\def\FRdefPersonnalInfosWEI{\bfseries Poid}
+\def\FRdefPersonnalInfosNAT{\bfseries Nationalit{\'e}}
+\def\FRdefPersonnalInfosPRO{\bfseries Profession}
+\def\FRdefPersonnalInfosALL{\bfseries All{\'e}geance}
+\def\FRdefPersonnalInfosDIS{\bfseries {\'E}l{\'e}ments distinctifs}
+
+\def\FRdefPowerPointsPersonnal{\textbf{Personnel} }
+\def\FRdefPowerPointsExternalS{Source externe}
+\def\FRdefFatigPointsExhausted{{\'E}puis{\'e} : }
+\def\FRdefFatigPointsTotalEncu{Encombrement total}
+\def\FRdefHitPointsMajorWounds{Blessure majeure}
+\def\FRdefHitPointsDeadDeadDea{Mort}
+
+\def\FRdefHitLocationsMeleeMel{ {\footnotesize \emph{Mel{\'e}e} } }
+\def\FRdefHitLocationsLocation{ {\footnotesize \emph{Localisation} } }
+\def\FRdefHitLocationsMissileM{ {\footnotesize \emph{Missile} } }
+\def\FRdefHitLocationsRightLeg{\bfseries \textsc{Jambe droite}}
+\def\FRdefHitLocationsLeftLegL{\bfseries \textsc{Jambe gauche}}
+\def\FRdefHitLocationsAbdomenA{\bfseries \textsc{Abdomen}}
+\def\FRdefHitLocationsChestChe{\bfseries \textsc{Chest}}
+\def\FRdefHitLocationsRightArm{\bfseries \textsc{Bras droit}}
+\def\FRdefHitLocationsLeftArmL{\bfseries \textsc{Bras gauche}}
+\def\FRdefHitLocationsHeadHead{\bfseries \textsc{T{\^e}te}}
+
+\def\FRdefMagicSpellsPowerName{ {\footnotesize \emph{Sort/Pouvoir} } }
+\def\FRdefMagicSpellsPowerPerc{ {\footnotesize \emph{\%} } }
+\def\FRdefMagicSpellsPowerLeve{ {\footnotesize \emph{Niveaux} } }
+\def\FRdefMagicSpellsPowerDama{ {\footnotesize \emph{Dommage} } }
+\def\FRdefMagicSpellsPowerRang{ {\footnotesize \emph{Distance} } }
+\def\FRdefMagicSpellsPowerPPpp{ {\footnotesize \emph{PP} } }
+\def\FRdefMagicSpellsPowerDura{ {\footnotesize \emph{Dur{\'e}e} } }
+\def\FRdefMagicSpellsPowerCost{ {\footnotesize \emph{Co{\^u}t} } }
+\def\FRdefMagicSpellsPowerFree{Free \textsc{Int}}
+\def\FRdefMagicSpellsPowerTota{Total Cost}
+
+\def\FRdefCharacterPointsPower{ \textbf{Niveau de pouvoir} }
+\def\FRdefCharacterPointsPoint{ Points de personnage }
+\def\FRdefCharacterPointsFaili{ \textbf{Faiblesses ...} }
+\def\FRdefCharacterPointsFDesc{ {\footnotesize \emph{Faiblesses} } }
+\def\FRdefCharacterPointsFCoun{ {\footnotesize \emph{Avantages} } }
+\def\FRdefCharacterPointsTotal{ Total }
+
+\def\FRdefSanityInsane{ \textbf{Fou} }
+\def\FRdefSanityMental{ \textbf{D{\'e}sordre mental} }
+\def\FRdefSanityDisord{ {\footnotesize \emph{D{\'e}sordre} } }
+\def\FRdefSanitySeveri{ {\footnotesize \emph{S{\'e}v{\'e}rit{\'e}} } }
+
+\def\FRdefEquipmentItems{ {\footnotesize \emph{Objet} } }
+\def\FRdefEquipmentEncEn{ {\footnotesize \emph{Enc.} } }
+\def\FRdefEquipmentTotal{ Total \textsc{Enc.} }
+
+\def\FRdefArmorTypeType{ {\footnotesize \emph{Type} } }
+\def\FRdefArmorLocation{ {\footnotesize \emph{Localisation} } }
+
+\def\FRdefWeaponsDamBon{ \textbf{Bonus Dommages:} }
+\def\FRdefWeaponsDamDex{ Dex SR }
+\def\FRdefWeaponsDamSiz{ Tai SR }
+\def\FRdefWeaponsDamBas{ Base SR }
+\def\FRdefWeaponsWeapon{ {\footnotesize \emph{Arme} } }
+\def\FRdefWeaponsAttack{ {\footnotesize \emph{Attaque SR} } }
+\def\FRdefWeaponsPercen{ {\footnotesize \emph{\%} } }
+\def\FRdefWeaponsDamage{ {\footnotesize \emph{Dommage} } }
+\def\FRdefWeaponsAPRang{ {\footnotesize \emph{AP/Range} } }
+
+%%%%% exchange (find & replace) between 'ENdef' end 'FRdef' from here to forward (XXX occurences) %%%%%
+
+%% \usepackage{frcursive} %% cursive
+
+% mettre du texte en diagonale sur le fond : tikz
+\usepackage{tikz} 
+\def\confidentialTIKZ{%
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[rotate=60,scale=15,text opacity=0.1] at (current page.center) {Confidentiel};
+	\end{tikzpicture}
+}%
+
+\def\confidentialDGTIKZ{%
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[rotate=60,scale=7.5,text opacity=0.1] at (current page.center) {Confidential -- Delta Green};
+	\end{tikzpicture}
+}%
+
+\def\confidentialDGopeFallAngelsTIKZ{%
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[rotate=60,scale=5.5,text opacity=0.1] at (current page.center) 
+		{DG Restreint -- Op. Fallen Angels}; %%  Op{\'e}ration Fallen Angels
+	\end{tikzpicture}
+}%
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+% http://www.trustonme.net/didactels/250.html
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+ \pagestyle{fancy}
+% % \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LO, RE]{\includegraphics[width=0.5cm]{DeltaGreenLogo.png} \hfill 
+	Delta Green --- Operation Fallen Angels --- Confidentiel Restreint
+	\confidentialDGopeFallAngelsTIKZ 
+	%% \FRdefCharacterSheetHeaderTitle 
+	\hfill \thepage /\pageref{LastPage}}
+\fancyfoot[LE, RO]{  }
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+
+
+\usepackage{fancybox}
+
+%--- Definitions de nouvelles couleurs ---
+\definecolor{verylightgrey}{rgb}{0.8,0.8,0.8}
+\definecolor{verylightgray}{gray}{0.80}
+\definecolor{lightgrey}{rgb}{0.6,0.6,0.6}
+\definecolor{lightgray}{gray}{0.6}
+
+%============================= Corps =================================
+\begin{document}
+
+%% \textbf{\Large UNE CONSPIRATION : une description et une lettre...}~\\
+
+\textbf{\Large OP{\'E}RATION FALLEN ANGELS}~\\
+
+Avec la multiplication des signaux d'origine extra-terrestre capt{\'e}s par les radiot{\'e}lescopes fran\c{c}ais et am{\'e}ricains depuis une trentaine d'ann{\'e}es, les gouvernements ont pris conscience de l'imminence d'un contact avec une forme de vie extraterrestre. Dans l'{\'e}tat actuel des choses, il leur est impossible de savoir sur quel type de relation cette rencontre peut d{\'e}boucher. Il leur faut donc se parer {\`a} toute {\'e}ventualit{\'e}. ~\\
+
+Le 12 octobre 2011, les repr{\'e}sentants des arm{\'e}es fran\c{c}aises, anglaises et am{\'e}ricaines, signent un accord secret pour autoriser la production en s{\'e}rie de cr{\'e}atures clon{\'e}es baptis{\'e}es <<Tasmans>> et parachut{\'e}es au hasard dans le monde entier. ~\\
+
+Les premiers exemplaires de ces cr{\'e}atures sont sortis des laboratoires en f{\'e}vrier 2012. Leur r{\^o}le ? R{\'e}pandre dans le monde entier une psychose <<mill{\'e}nariste>> / d'invasion extra-terrestre contr{\^o}l{\'e}e (syst{\`e}me de surveillance des t{\'e}moins, puce {\'e}lectronique de rep{\'e}rage pour localiser les sp{\'e}cimens) qui culminera en 2015 avec une multiplication du nombre d'apparitions. ~\\
+
+Le but ? {\'E}tudier les r{\'e}percussions d'une d{\'e}couverte de forme de vie extra-terrestre sur les populations (et accessoirement, justifier un programme d'armement biologique des pays concern{\'e}s). On sait le vent de panique qu'avait provoqu{\'e} en son temps Orson Welles en annon\c{c}ant {\`a} la radio une invasion extraterrestre sur les Etats-Unis. Soucieux d'{\'e}viter tout mouvement similaire en cas d'invasion r{\'e}elle, les {\'e}tats-majors des trois pays concern{\'e}s pensent que cette p{\'e}riode agit{\'e}e, troubl{\'e}e par les psychoses pr{\'e}-mill{\'e}naristes et la multiplication d'apparitions d'OVNI est le meilleur moment pour mener {\`a} son terme une exp{\'e}rience de simulation. ~\\
+
+Tout cela ne va pas bien s{\^u}r sans quelques accrocs. Lorsqu'une personne trop proche de l'organisation risque par inadvertance d'enrayer le belle m{\'e}canique, l'exp{\'e}rience se poursuit sur son cas particulier. Au lieu de la rassurer ou de le mettre dans le secret, on {\'e}tudie ses r{\'e}actions face {\`a} l'{\'e}ventualit{\'e} d'une conspiration gouvernement / extraterrestre. ~\\
+
+Qui sait en effet si cette possibilit{\'e} ne deviendra pas un jour r{\'e}alit{\'e} ? ~\\
+
+\vfill
+
+\begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+\vfill
+
+\clearpage
+
+\begin{minipage}[ht]{0.75\textwidth}
+	\begin{ttfamily}	\footnotesize %% \scriptsize
+		Au r{\'e}dacteur en chef de <<\emph{Enqu{\^e}tes-investigation : surnaturel et inexplicable}>>~\\
+
+Monsieur, ~\\
+
+Je ne sais pas s'il vous arrive souvent de lire les journaux {\`a} scandale. Moi oui : quand je suis un peu fatigu{\'e} !~\\
+
+Fin juillet 2012, je suis tomb{\'e} par hasard sur un article assez curieux, alors que je prenais des vacances dans le sud de la France. On y parlait d'un brave paysan sans histoire qui s'{\'e}tait mis brusquement {\`a} disjoncter, {\`a} parler d'une cr{\'e}ature tomb{\'e}e du ciel et d'apocalypse prochaine. Le journaliste concluait sur les ravages de l'alcool et les th{\'e}ories mill{\'e}naristes qui n'allaient pas tarder {\`a} nous submerger d'ici {\`a} la fin du si{\`e}cle sur le th{\`e}me <<la fin du monde est pour bient{\^o}t>>. ~\\ 
+
+Ne r{\'e}sidant pas tr{\`e}s loin du petit village en question, je r{\'e}solus d'aller rendre visite {\`a} notre paysan en me faisant passer pour un journaliste. Je m'{\'e}tais imagin{\'e} un vieux type un peu arri{\'e}r{\'e}, port{\'e} sur la bouteille : je tombais sur un quinquag{\'e}naire isol{\'e} et instruit, qui refusa tout d'abord de me recevoir, {\'e}chaud{\'e} par ses r{\'e}centes exp{\'e}riences avec la presse(<<un tissu de mensonges, cet article>>). Je lui avouais rapidement que je n'{\'e}tais pas journaliste, que je m'int{\'e}ressais {\`a} ce qui lui {\'e}tait arriv{\'e} et que je voulais juste discuter. Il me laissa entrer. Nous parl{\^a}mes pendant deux heures. Il me raconta comment cette {\'e}trange cr{\'e}ature {\'e}tait entr{\'e}e dans sa vie, comment il l'avait recueillie, soign{\'e}e deux semaines durant {\`a} l'insu des autres habitants du village, comment cette cr{\'e}ature difforme et muette, avec laquelle il avait tiss{\'e} des rapports tr{\`e}s intenses, {\'e}tait finalement repartie une nuit, sans qu'il ait jamais pu {\'e}tablir sur sa venue la moindre conjecture. Il me montra une {\'e}trange puce {\'e}lectronique que la chose avait perdue en se tra{\^i}nant dans le champs voisin, et qu'il avait gard{\'e}e sans en rien dire {\`a} personne. Je le quittai stup{\'e}fait. ~\\
+
+Trois mois plus tard, je d{\'e}couvrais dans le bureau de mon sup{\'e}rieur hi{\'e}rarchique (je travaille au minist{\`e}re de la D{\'e}fense) un composant {\'e}lectronique en tout point semblable {\`a} celui que m'avait montr{\'e} mon {\'e}trange paysan. Il avait {\'e}t{\'e} serti d'argent, comme une sorte de bijou. Tout me revint en m{\'e}moire. Je demandai innocemment {\`a} mon chef de service o{\`u} il avait trouv{\'e} cet objet. <<Oh, c'est un cadeau, me r{\'e}pondit-il (absurde, pensai-je). Il vous int{\'e}resse ?>> Je lui expliquai confus{\'e}ment que j'avais d{\'e}j{\`a} vu le m{\^e}me ailleurs, sans rentrer dans les d{\'e}tails. ~\\
+
+Deux semaines plus tard, je recevais ma lettre de licenciement pour <<faute professionnelle grave>>. J'attaquai en justice et perdis le proc{\`e}s. Ma femme me quitta peu de temps apr{\`e}s. Je me retrouvai isol{\'e}, sans ressource, incapable de comprendre ce qui m'arrivait. Des types en noir me suivaient en pleine rue. On surveillait mes all{\'e}es et venues. En Europe et au Maghreb, une bonne dizaine de cr{\'e}atures semblables {\`a} celle que m'avait d{\'e}crite le paysan venaient d'{\^e}tre retrouv{\'e}es. ~\\
+
+Et mes ennuis ne faisaient alors que commencer... Alors que [...] ~\\
+	\end{ttfamily}
+\end{minipage} \hfill \begin{minipage}[ht]{0.20\textwidth}
+	\footnotesize	\bfseries
+		Note au secr{\'e}tariat :~\\ 
+		Il manque la premi{\`e}re page de ce courrier avec les coordonn{\'e}es de l'exp{\'e}diteur. ~\\
+		Merci de la retourner~\\
+			H.G.~\\
+\end{minipage}
+
+	% \emph{Portrait}~\\
+	% \textbf{\Large Nom, titre...}~\\
+	% 
+	% \begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+	% 	\FRdefCharacterSkillsAPP	& \dotfill & \FRdefCharacterSkillsPES & \dotfill \%	\\
+	% 	\FRdefCharacterSkillsCON	& \dotfill & \FRdefCharacterSkillsSTA & \dotfill \%	\\
+	% 	\FRdefCharacterSkillsDEX	& \dotfill & \FRdefCharacterSkillsAGI & \dotfill \%	\\
+	% 	\FRdefCharacterSkillsPOW	& \dotfill & \FRdefCharacterSkillsPUI & \dotfill \%	\\
+	% 	\FRdefCharacterSkillsTAI	& \dotfill & \FRdefCharacterSkillsCOR & \dotfill \%	\\
+	% 	\FRdefCharacterSkillsEDU	& \dotfill & \FRdefCharacterSkillsKNO & \dotfill \%	\\
+	% 	\FRdefCharacterSkillsINT	& \dotfill & \FRdefCharacterSkillsIUI & \dotfill \%	\\
+	% 	\FRdefCharacterSkillsPOU	& \dotfill & \FRdefCharacterSkillsVOL & \dotfill \%	\\
+	% \end{tabular}~\\
+	% 
+	% Aplomb : ~\\
+	% SAN : ~\\
+	% Points de Vie : ~\\
+	% Seuil Blessure : ~\\
+	% Points de Magie : ~\\
+	% Impact :  ~\\
+	% 
+	% \textbf{Comp{\'e}tences}~\\
+	% 
+	% 
+	% 
+	% \textbf{Langues}~\\
+	% 
+	% 
+	% \textbf{Description}~\\
+	% 
+	% 
+	% \vfill
+	% \columnbreak
+
+\dotfill 
+~\\
+
+\setlength\parindent{0pt} % \noindent for all document
+\footnotesize
+
+\textbf{\large Les investigateurs, le groupe et un peu de contexte...} %% ~\\
+
+\begin{minipage}[ht]{0.50\textwidth}
+	\begin{itemize}
+		\item Elisabeth Zalachenko, stagiaire et hacker. 
+		\item Noah Peterson, secr{\'e}taire / assistant. 
+		\item Ernest Georges, gringalet fils du patron et <<apprenti-journaliste>>. 
+		\item Annah Carlsen, journalistE. 
+		\item Hubert Georges, r{\'e}(d)ac'-chef. 
+		\item <<Vodka>>, baroudeur. 
+	\end{itemize}
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	Une obscure filiale de TF1 / Endemol, \emph{Enqu{\^e}tes-investigation : surnaturel et inexplicable}, est charg{\'e}e de recueillir / enqu{\^e}ter sur des {\'e}v{\`e}nements bizarres, sortant de la page <<fait divers>> (un peu comme le bureau des <<affaires non-class{\'e}es>> du FBI {\`a} une {\'e}poque) ; l'objectif avou{\'e} de TF1 est de cr{\'e}er une t{\'e}l{\'e}-r{\'e}alit{\'e} ; {\`a} moins que nos investigateurs en fassent partie sans le savoir (test pour une future {\'e}mission) ?~\\
+\end{minipage}
+
+	Quelques pages de publicit{\'e}s et annonces ont suffit {\`a} faire arriver quelques courriers ({\'e}lectroniques et papier) au bureau de ce qui est actuellement un magazine en projet, dont le courrier ci-dessus, annot{\'e} par le r{\'e}dac-chef puis oubli{\'e} sans suite, jusqu'{\`a} ce qu'il se retrouve sur le <<bureau>> de l'un des investigateurs dans une enveloppe comportant un seul sigle (un triangle vert) et une note compl{\'e}mentaire ({\'e}crite {\`a} l'ordinateur et imprim{\'e}e, sur une feuille sans en-t{\^e}te ni signature) : <<<\emph{\c{C}a ferait un excellent sujet pour vous a{\'e}rer l'esprit et sortir de vos locaux... Amicalement. }>>. ~\\
+	
+	\textbf{Note pour le MJ / Gardien : }Effet Zentak\texttrademark  ~(dans des circonstances compliqu{\'e}es, les personnages sont sauv{\'e}s {\`a} la derni{\`e}re minute : un h{\'e}lico, une voiture ou n'importe qui voire quoi arrive {\`a} leur rescousse ; voire ils re\c{c}oivent un courrier {\'e}lectronique, un coup de t{\'e}l{\'e}phone...) ; en r{\'e}alit{\'e}, ils sont suivis par DEUX {\'e}quipes : une {\'e}quipe de t{\'e}l{\'e}vision qui les filme et enregistre de loin (hors de vue) et une {\'e}quipe de Delta Green (ou son {\'e}quivalent local), {\`a} votre choix et selon les circonstances de savoir qui vient {\`a} leur rescousse et selon la motivation des deux {\'e}quipes. {\`A} leur demande (contact de TF1 par exemple), une {\'e}quipe peut rejoindre les personnages pour filmer leur enqu{\^e}te (et cela peut {\^e}tre <<une {\'e}quipe de reporter qui travaille pas loin>>). Pays potentiellement visit{\'e}s : France (profonde), Allemagne, Suisse, Tunisie, Maroc...~\\
+	
+	{\`A} prendre comme un sc{\'e}nario d'introduction. ~\\
+
+%% \clearpage
+
+\begin{multicols}{2}
+
+\textbf{\huge Caract{\'e}ristiques des PNJ : }~\\
+
+	\textbf{\Large <<Tasman>>}~\\
+	\textbf{Petit animal tra\c{c}able sans importance. }~\\
+	Petit animal ressemblant {\`a} un mammif{\`e}re un peu b{\^a}tard entre un chat, un fennec et un chien apparent{\'e} au diable de tasmanie ; en r{\'e}sum{\'e} : un animal d'apparence assez sympathique, au poil roux, aux gros yeux, des moustaches et un nez pointu ; produit en s{\'e}rie (une cohorte / clone d'individus g{\'e}n{\'e}tiquement identiques, dont les embryons ont {\'e}t{\'e} implant{\'e}s dans des truies), mais st{\'e}rile. Comportement assez simple (b{\'e}b{\'e} animal), dont aucun n'est fait pour survivre plus d'un an, et sera enlev{\'e} {\`a} son <<d{\'e}couvreur>> syst{\'e}matiquement au bout de quelques mois ; le suivit est assez simple : une puce identificable et rep{\'e}rable via le r{\'e}seau de t{\'e}l{\'e}phone portable et satellite. ~\\
+
+	Animal trop faible pour avoir des caract{\'e}ristiques jouables... Mignon comme un pok{\'e}mon, c'est en fait un nouveau projet des Mi-Go (Fungi de Yuggoth), qui appliquent en Europe et en Afrique (avec l'interpr{\'e}tation des autorit{\'e}s locales) leur exp{\'e}rience des \emph{Greys} en Am{\'e}rique du Nord. La probabilit{\'e} de rencontre d'un Mi-Go au cours de ce sc{\'e}nario {\'e}tant tr{\`e}s faible, les investigateurs peuvent tout de m{\^e}me croiser quelques agents de Majestic-12. ~\\
+
+	%% \begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+	\textbf{\large Un agent <<standard>> de Majestic-12}~\\
+	\textbf{Int{\'e}ressant pour pimenter l'action : course-poursuite, pr{\'e}sence dans une zone {\`a} indices...} ~\\
+	
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& \dotfill 10 & \FRdefCharacterSkillsPES & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsCON	& \dotfill 14 & \FRdefCharacterSkillsSTA & \dotfill 70 \%	\\
+		\FRdefCharacterSkillsDEX	& \dotfill 14 & \FRdefCharacterSkillsAGI & \dotfill 70 \%	\\
+		\FRdefCharacterSkillsPOW	& \dotfill 12 & \FRdefCharacterSkillsPUI & \dotfill 60 \%	\\
+		\FRdefCharacterSkillsTAI	& \dotfill 12 & \FRdefCharacterSkillsCOR & \dotfill 60 \%	\\
+		\FRdefCharacterSkillsEDU	& \dotfill 18 & \FRdefCharacterSkillsKNO & \dotfill 90 \%	\\
+		\FRdefCharacterSkillsINT	& \dotfill 15 & \FRdefCharacterSkillsIUI & \dotfill 75 \%	\\
+		\FRdefCharacterSkillsPOU	& \dotfill 11 & \FRdefCharacterSkillsVOL & \dotfill 55 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 47~\\
+	 Points de Vie : 13~\\
+	 Seuil Blessure : 7~\\
+	 Points de Magie : 11~\\
+	 Impact :  0~\\
+
+	\textbf{Comp{\'e}tences}~\\
+		Athl{\'e}tisme 35\%, 
+		Conduire (Automobile) 61\%, 
+		Discr{\'e}tion 56\%, 
+		Dissimulation 52\%, 
+		{\'E}couter 46\%, 
+		M{\'e}tier ({\'E}lectronique) 34\%, 
+		M{\'e}tier (Serrurerie) 47\%, 
+		Psychologie 53\%, 
+		Se cacher 43\%, 
+		Trouver Objet Cach{\'e} 47\%. ~\\
+
+	\textbf{Langues}~\\
+	Anglais 60\%. ~\\
+	
+	\textbf{Combat}~\\
+	Petit r{\'e}volver (d{\'e}g{\^a}ts 1D6) 50\%. ~\\
+	Bagarre (d{\'e}g{\^a}ts 1d3) 48\%. ~\\
+
+\begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+	Pour les investigateurs un peu curieux ou fan d'actions et de poursuites, un petit d{\'e}tour dans un espace local de Majestic-12 est possible (un entrep{\^o}t, une maison anodine ou un appartement), mais ils ne trouverons pas grand-chose {\`a} se mettre sous la dent pour leur enqu{\^e}te (Majestic-12 ne sait pas grand-chose, mais y a particip{\'e} {\`a} l'origine du projet vers 2000-2003), mais un agent de Majestic-12 peut leur parler des Greys... 
+
+	\vfill
+	\columnbreak
+
+	\textbf{\Large Dans les {\'e}quipes qui suivent...}~\\
+	\textbf{\large Un journaliste porteur de cam{\'e}ra ou assistant}~\\
+	Une petite {\'e}quipe de 6 journalistes dont trois cam{\'e}raman qui se relaient en permanence pour enregistrer le maximum de ce que font les investigateurs, en g{\'e}n{\'e}ral plut{\^o}t de loin, mais rien ne leur interdit de s'approcher un peu plus si il y a du monde (hall de gare ou d'a{\'e}roport, terrasse de caf{\'e}...) au risuqe d{\^e}tre reconnus quand les circonstances se r{\'e}p{\`e}tent. Lorsque les investigateurs le demande, un duo cam{\'e}raman et un assistant de ce groupe viennent rejoindre les investigateurs si il n'est pas possible qu'une autre {\'e}quipe vienne en moins de 12 heures. ~\\
+	
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& \dotfill 10 & \FRdefCharacterSkillsPES & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsCON	& \dotfill 10 & \FRdefCharacterSkillsSTA & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsDEX	& \dotfill 10 & \FRdefCharacterSkillsAGI & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsPOW	& \dotfill 10 & \FRdefCharacterSkillsPUI & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsTAI	& \dotfill 10 & \FRdefCharacterSkillsCOR & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsEDU	& \dotfill 10 & \FRdefCharacterSkillsKNO & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsINT	& \dotfill 14 & \FRdefCharacterSkillsIUI & \dotfill 70 \%	\\
+		\FRdefCharacterSkillsPOU	& \dotfill 10 & \FRdefCharacterSkillsVOL & \dotfill 50 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 50~\\
+	 Points de Vie : 10~\\
+	 Seuil Blessure : 5~\\
+	 Points de Magie : 10~\\
+	 Impact :  0~\\
+
+	\textbf{Comp{\'e}tences}~\\
+		Informatique 10 {\`a} 40\%, 
+		Biblioth{\`e}que 60\%, 
+		Contact \& Ressources 50\%, 
+		Dissimulation 60\%, 
+		Premiers Soins 30 {\`a} 70\%, 
+		Pister 50\%, 
+		Orientation 50\%, 
+		Se cacher 50\%, 
+		Discretion 50\%. ~\\
+
+	\textbf{Langues}~\\
+	(Fran\c{c}ais, 70\%). Anglais 50\%. ~\\
+
+	%% \dotfill
+
+	\textbf{\large Un agent standard de Delta Green}~\\
+	Ils surveillent de loin les investigateurs, en intervenant le moins possible ; car m{\^e}me si l'enqu{\^e}te les int{\'e}resse, ils ne doivent pas se montrer. ~\\
+	
+	Ce sont potentiellement des membres am{\'e}ricains d'une cellule DG, mais pas obligatoirement. Plut{\^o}t des contacts europ{\'e}ens ou d'honorables correspondants, potentiellement internationaux (membres d'\emph{Interpol} ou de services locaux <<en d{\'e}placement>>). 
+	
+	Parfois un peu plus en avance sur <<l'enqu{\^e}te>>, ils h{\'e}siteront moins {\`a} aiguiller les investigateurs pour agir {\`a} leur place (interroger un paysan, obtenir une information sans potentiellement laisser de trace eux-m{\^e}me et surtout utiliser la couverture m{\'e}diatique dont disposent les investigateurs pour obtenir des informations). 
+
+	Les comp{\'e}tences sont assimilables {\`a} celles des journalistes pr{\'e}c{\'e}dents (major{\'e}e en informatique et en investigation, disposant de contacts et de ressources plus ais{\'e}ment disponibles), ils sont simplement un peu plus <<costauds>> (15 en CON, en DEX et en EDU), voire assimil{\'e}s {\`a} ceux de <<Miss Green>>, ci-dessous. ~\\
+
+\begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+	De temps en temps, un test d'intuition par les joueurs / investigateurs leur indiquera qu'ils sont suivis. Mais ils d{\'e}tecterons alternativement l'un ou l'autre groupe, le plus souvent les journalistes. Un visage ou une posture qui dit quelque chose : co{\"i}ncidence ou ... ?
+
+	\vfill
+	%% \columnbreak
+\clearpage
+
+	\textbf{\large <<Miss Green>>}~\\
+	34 ans, Agent de Delta Green, Afro-Am{\'e}ricaine. ~\\
+	
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& \dotfill 15 & \FRdefCharacterSkillsPES & \dotfill 75 \%	\\
+		\FRdefCharacterSkillsCON	& \dotfill 12 & \FRdefCharacterSkillsSTA & \dotfill 60 \%	\\
+		\FRdefCharacterSkillsDEX	& \dotfill 13 & \FRdefCharacterSkillsAGI & \dotfill 65 \%	\\
+		\FRdefCharacterSkillsPOW	& \dotfill 10 & \FRdefCharacterSkillsPUI & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsTAI	& \dotfill 12 & \FRdefCharacterSkillsCOR & \dotfill 60 \%	\\
+		\FRdefCharacterSkillsEDU	& \dotfill 21 & \FRdefCharacterSkillsKNO & \dotfill 99 \%	\\
+		\FRdefCharacterSkillsINT	& \dotfill 18 & \FRdefCharacterSkillsIUI & \dotfill 90 \%	\\
+		\FRdefCharacterSkillsPOU	& \dotfill 15 & \FRdefCharacterSkillsVOL & \dotfill 75 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 70~\\
+	 Points de Vie : 12~\\
+	 Seuil Blessure : 6~\\
+	 Points de Magie : 15~\\
+	 Impact :  0~\\
+
+	\textbf{Comp{\'e}tences}~\\
+		Baratin 44\%, 
+		Conduire (Automobile) 51\%, 
+		Discr{\'e}tion 71\%, 
+		Dissimulation 32\%, 
+		{\'E}couter 53\%, 
+		Imposture 92\%, 
+		M{\'e}tier (Informatique) 63\%, 
+		Mythe de Cthullu 05\%, 
+		N{\'e}gociation 47\%, 
+		Persuasion 66\%, 
+		Psychologie 46\%, 
+		Se cacher 72\%, 
+		Trouver Objet Cach{\'e} 56\%. ~\\
+
+	\textbf{Langues}~\\
+	Anglais 95\%. ~\\
+	
+	\textbf{Combat}~\\
+	Armes de poing 70\% (Tauris PT940, d{\'e}g{\^a}ts 1D10+1). ~\\
+	
+	\textbf{\textsc{NOTE : }}
+	{\`A} priori, Miss Green n'est pas amen{\'e}e {\`a} intervenir avant la fin du sc{\'e}nario, tout comme les autres agents de Delta Green, mais les investigateurs peuvent la croiser au d{\'e}tour de leur enqu{\^e}te. 
+
+\begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+	\vfill
+	\columnbreak
+
+	\textbf{\Large Et le reste ?}~\\
+	\textbf{\large Locaux du journal}~\\
+	En r{\'e}gion parisienne, dans un b{\^a}timent un peu d{\'e}cr{\'e}pi en proche banlieue de l'est parisien. ~\\
+	
+	
+	\textbf{\large Coordonn{\'e}es de quelques <<Tasman>>. }~\\
+	Vall{\'e}e de Chevreuse (sud de Paris), et n'importe quel r{\'e}gion agricole de <<France Profonde>>, mais pas trop loin de moyens de transports. ~\\
+	Bavi{\`e}re et Baden-Wurttenberg (sud-ouest de l'Allemagne, r{\'e}gions dont les capitales sont Stuttgart et Munich). ~\\
+	Canton de Berne (Suisse). ~\\
+	Oasis en Tunisie, au Maroc, et en Alg{\'e}rie. ~\\
+	
+	
+	\textbf{\large Mener les investigateurs par le bout du nez. }~\\
+	L'id{\'e}e est de sensibiliser les joueurs {\`a} l'univers de Delta Green, sans forc{\'e}ment trop rentrer dans les d{\'e}tails. Un peu d'improvisation peu s'av{\'e}rer n{\'e}cessaire. 
+
+
+\begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+\end{multicols}
+
+\clearpage
+
+\begin{multicols}{3}
+	\textbf{\emph{Investigateur pr{\'e}-tir{\'e}}}~\\
+	
+	\includegraphics[width=0.15\textwidth]{DeltaGreenLogo.png} \emph{Portrait}~\\
+	
+	\textbf{\Large {\'E}lisabeth Zalachenko}, stagiaire {\`a} \emph{Enqu{\^e}tes-investigation : surnaturel et inexplicable}~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& \dotfill 10 & \FRdefCharacterSkillsPES & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsCON	& \dotfill 10 & \FRdefCharacterSkillsSTA & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsDEX	& \dotfill 6 & \FRdefCharacterSkillsAGI & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsPOW	& \dotfill 8 & \FRdefCharacterSkillsPUI & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsTAI	& \dotfill 10 & \FRdefCharacterSkillsCOR & \dotfill 65 \%	\\
+		\FRdefCharacterSkillsEDU	& \dotfill 20 & \FRdefCharacterSkillsKNO & \dotfill 99 \%	\\
+		\FRdefCharacterSkillsINT	& \dotfill 14 & \FRdefCharacterSkillsIUI & \dotfill 70 \%	\\
+		\FRdefCharacterSkillsPOU	& \dotfill 10 & \FRdefCharacterSkillsVOL & \dotfill 50 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 50~\\
+	 Points de Vie : 10~\\
+	 Seuil Blessure : 5~\\
+	 Points de Magie : 10~\\
+	 Impact :  0~\\
+
+	\textbf{Comp{\'e}tences}~\\
+		%% repartir 400 dans les competences metiers (une {\`a} 60\% et +)~\\
+		%% repartir 140 dans les competences interet personnel~\\
+		Informatique 80\%, 
+		Biblioth{\`e}que 60\%, 
+		Dissimulation 60\%, 
+		Premiers Soins 80\%, 
+		Pister 60\%, 
+		Orientation 60\%, 
+		Se cacher 50\%, 
+		Discretion 40\%. ~\\
+
+	\textbf{Langues}~\\
+	(Fran\c{c}ais, 80\%). ~\\
+	Allemand 40\%, Su{\'e}dois 50\%. ~\\
+
+	\textbf{Description}~\\
+	Brune discr{\`e}te, gothique, asociale... Passionn{\'e}e d'informatique, passant de petits boulots {\`a} des stages et de l'int{\'e}rim...
+
+	%% \vfill
+	
+	%% \begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+	\vfill
+	\columnbreak
+
+	\textbf{\emph{Investigateur pr{\'e}-tir{\'e}}}~\\
+
+	\includegraphics[width=0.15\textwidth]{DeltaGreenLogo.png} \emph{Portrait}~\\
+	
+	\textbf{\Large Noah Peterson}, secr{\'e}taire / assistant {\`a} \emph{Enqu{\^e}tes-investigation : surnaturel et inexplicable}. ~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& \dotfill 15 & \FRdefCharacterSkillsPES & \dotfill 75 \%	\\
+		\FRdefCharacterSkillsCON	& \dotfill 8 & \FRdefCharacterSkillsSTA & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsDEX	& \dotfill 8 & \FRdefCharacterSkillsAGI & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsPOW	& \dotfill 8 & \FRdefCharacterSkillsPUI & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsTAI	& \dotfill 10 & \FRdefCharacterSkillsCOR & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsEDU	& \dotfill 20 & \FRdefCharacterSkillsKNO & \dotfill 99 \%	\\
+		\FRdefCharacterSkillsINT	& \dotfill 10 & \FRdefCharacterSkillsIUI & \dotfill 50 \%	\\
+		\FRdefCharacterSkillsPOU	& \dotfill 8 & \FRdefCharacterSkillsVOL & \dotfill 40 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 40~\\
+	 Points de Vie : 8~\\
+	 Seuil Blessure : 4~\\
+	 Points de Magie : 8~\\
+	 Impact :  0~\\
+
+	\textbf{Comp{\'e}tences}~\\
+		%% repartir 400 dans les competences metiers (une {\`a} 60\% et +)~\\
+		%% repartir 100 dans les competences interet personnel~\\
+		{\'E}lectronique 80\%, 
+		Informatique 80\%, 
+		Imposture 80\%, 
+		Comptabilit{\'e} 60\%, 
+		Bureaucratie 60\%, 
+		Persuasion 65\%, 
+		Cr{\'e}dit 65\%, 
+		{\'E}couter 75\%, 
+		Savoir-vivre 40\%. ~\\
+
+	\textbf{Langues}~\\
+	(Fran\c{c}ais 80 \%). ~\\
+	Anglais 50 \%, Allemand 40 \%. ~\\
+
+	\textbf{Description}~\\
+	Discret, efficace, beau gar\c{c}on intelligent et touche-{\`a}-tout aux objectifs ind{\'e}termin{\'e}s...
+
+	%% \vfill
+	
+	%% \begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+		
+	\vfill
+	\columnbreak
+
+	\textbf{\emph{Investigateur pr{\'e}-tir{\'e}}}~\\
+
+	\includegraphics[width=0.15\textwidth]{DeltaGreenLogo.png} \emph{Portrait}~\\
+	
+	\textbf{\Large Ernest Georges}, gringalet et fils du patron de \emph{Enqu{\^e}tes-investigation : surnaturel et inexplicable}. ~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& \dotfill 6 & \FRdefCharacterSkillsPES & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsCON	& \dotfill 8 & \FRdefCharacterSkillsSTA & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsDEX	& \dotfill 11 & \FRdefCharacterSkillsAGI & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsPOW	& \dotfill 6 & \FRdefCharacterSkillsPUI & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsTAI	& \dotfill 11 & \FRdefCharacterSkillsCOR & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsEDU	& \dotfill 12 & \FRdefCharacterSkillsKNO & \dotfill 60 \%	\\
+		\FRdefCharacterSkillsINT	& \dotfill 15 & \FRdefCharacterSkillsIUI & \dotfill 75 \%	\\
+		\FRdefCharacterSkillsPOU	& \dotfill 10 & \FRdefCharacterSkillsVOL & \dotfill 50 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 50~\\
+	 Points de Vie : 10~\\
+	 Seuil Blessure : 5~\\
+	 Points de Magie : 10~\\
+	 Impact :  0~\\
+
+
+	\textbf{Comp{\'e}tences}~\\
+		%% repartir 240 dans les competences metiers (une {\`a} 60\% et +)~\\
+		%% repartir 150 dans les competences interet personnel~\\
+		{\'E}lectronique 60\%, 
+		Trouver Object Cach{\'e} 65\%, 
+		Biblioth{\`e}que 50\%, 
+		Bricolage 60\%, 
+		Orientation 20\%, 
+		Katana 60\% (d{\'e}g{\^a}ts : 1D10), 
+		Kendo 70\% (\emph{d{\'e}g{\^a}ts : 1D4}). ~\\
+
+	\textbf{Langues}~\\
+	(Fran\c{c}ais 70\%). ~\\
+	Anglais 50\%. ~\\
+
+	\textbf{Description}~\\
+	Passionn{\'e} d'{\'e}lectronique et d'arts martiaux, disposant de la compr{\'e}hension paternelle. 
+
+	%% \vfill
+	
+	%% \begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+	\vfill
+	%% \columnbreak
+	\clearpage
+	
+	\textbf{\emph{Investigateur pr{\'e}-tir{\'e}}}~\\
+
+	\includegraphics[width=0.15\textwidth]{DeltaGreenLogo.png} \emph{Portrait}~\\
+	
+	\textbf{\Large Annah Carlsen}, journaliste investigation chez \emph{Enqu{\^e}tes-investigation : surnaturel et inexplicable}. ~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& \dotfill 11 & \FRdefCharacterSkillsPES & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsCON	& \dotfill 8 & \FRdefCharacterSkillsSTA & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsDEX	& \dotfill 8 & \FRdefCharacterSkillsAGI & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsPOW	& \dotfill 8 & \FRdefCharacterSkillsPUI & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsTAI	& \dotfill 8 & \FRdefCharacterSkillsCOR & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsEDU	& \dotfill 8 & \FRdefCharacterSkillsKNO & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsINT	& \dotfill 12 & \FRdefCharacterSkillsIUI & \dotfill 60 \%	\\
+		\FRdefCharacterSkillsPOU	& \dotfill 6 & \FRdefCharacterSkillsVOL & \dotfill 30 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 30~\\
+	 Points de Vie : 8~\\
+	 Seuil Blessure : 4~\\
+	 Points de Magie : 6~\\
+	 Impact : -2~\\
+
+	\textbf{Comp{\'e}tences}~\\
+		%% repartir 160 dans les competences metiers (une {\`a} 60\% et +)~\\
+		%% repartir 120 dans les competences interet personnel~\\
+		Contacts \& Ressources 70 \%, 
+		Baratin 60\%, 
+		Interroger 55\%, 
+		Sciences de la Vie : Biologie 50\%, 
+		Plong{\'e}e sous-marine 50\%, 
+		Premiers soins 50\%. ~\\
+
+	\textbf{Langues}~\\
+	(Fran\c{c}ais 40 \%). ~\\
+	Anglais 40 \%, Su{\'e}dois 40 \%. ~\\
+
+	\textbf{Description}~\\
+	Brune de taille moyenne au carnet d'adresse impresionnant, un peu baroudeuse et n{\'e}gociatrice pour trouver un acc{\`e}s o{\`u} elle veut se rendre. ~\\
+
+	%% \vfill
+	
+	%% \begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+	\vfill
+	\columnbreak
+
+	\textbf{\emph{Investigateur pr{\'e}-tir{\'e}}}~\\
+
+	\includegraphics[width=0.15\textwidth]{DeltaGreenLogo.png} \emph{Portrait}~\\
+	
+	\textbf{\Large Hubert Georges}, redac' chef et patron de  \emph{Enqu{\^e}tes-investigation : surnaturel et inexplicable}. ~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& \dotfill 6 & \FRdefCharacterSkillsPES & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsCON	& \dotfill 8 & \FRdefCharacterSkillsSTA & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsDEX	& \dotfill 6 & \FRdefCharacterSkillsAGI & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsPOW	& \dotfill 13 & \FRdefCharacterSkillsPUI & \dotfill 65 \%	\\
+		\FRdefCharacterSkillsTAI	& \dotfill 11 & \FRdefCharacterSkillsCOR & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsEDU	& \dotfill 15 & \FRdefCharacterSkillsKNO & \dotfill 75 \%	\\
+		\FRdefCharacterSkillsINT	& \dotfill 14 & \FRdefCharacterSkillsIUI & \dotfill 70 \%	\\
+		\FRdefCharacterSkillsPOU	& \dotfill 6 & \FRdefCharacterSkillsVOL & \dotfill 30 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 30~\\
+	 Points de Vie : 10~\\
+	 Seuil Blessure : 5~\\
+	 Points de Magie : 6~\\
+	 Impact :  0~\\
+
+	\textbf{Comp{\'e}tences}~\\
+		%% repartir 300 dans les competences metiers (une {\`a} 60\% et +)~\\
+		%% repartir 140 dans les competences interet personnel~\\
+		Contacts \& Ressources 70 \%, 
+		Trouver Object Cach{\'e} 80\%, 
+		Vigilance 80\%, 
+		Discr{\'e}tion 70 \%, 
+		Pister 70\%, 
+		Bricolage 60\%, 
+		Plong{\'e}e sous-marine 40\%, 
+		Criminalistique 40\%, 
+		Premiers soins 30\%. ~\\
+
+	\textbf{Langues}~\\
+	(Fran\c{c}ais 75\%). ~\\
+	Allemand 40\%, Anglais 40\%. ~\\
+
+	\textbf{Description}~\\
+	Plus un homme de contacts que de terrain, mis {\`a} la t{\^e}te de ce <<\emph{pseudo-magazine m{\'e}diatico-truc-muche}>> plut{\^o}t que de se faire mettre directement {\`a} la porte, il se retrouve selon lui, {\`a} la t{\^e}te d'une <<\emph{bande d'{\'e}clop{\'e}s dont on ne sait pas quoi faire, {\`a} part d{\'e}penser de l'argent pour {\'e}viter que les imp{\^o}ts ne le r{\'e}cup{\`e}re. }>>. ~\\
+
+	%% \vfill
+	
+	%% \begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+	\vfill
+	\columnbreak
+
+	\textbf{\emph{Investigateur pr{\'e}-tir{\'e}}}~\\
+
+	\includegraphics[width=0.15\textwidth]{DeltaGreenLogo.png} \emph{Portrait}~\\
+	
+	\textbf{\Large <<Vodka>>}, baroudeur et homme {\`a} tout faire. ~\\
+
+	\begin{tabular}[c]{ p{1.75cm} p{0.75cm} p{1.75cm} p{0.75cm} }
+		\FRdefCharacterSkillsAPP	& \dotfill 6 & \FRdefCharacterSkillsPES & \dotfill 30 \%	\\
+		\FRdefCharacterSkillsCON	& \dotfill 15 & \FRdefCharacterSkillsSTA & \dotfill 75 \%	\\
+		\FRdefCharacterSkillsDEX	& \dotfill 11 & \FRdefCharacterSkillsAGI & \dotfill 55 \%	\\
+		\FRdefCharacterSkillsPOW	& \dotfill 17 & \FRdefCharacterSkillsPUI & \dotfill 85 \%	\\
+		\FRdefCharacterSkillsTAI	& \dotfill 17 & \FRdefCharacterSkillsCOR & \dotfill 85 \%	\\
+		\FRdefCharacterSkillsEDU	& \dotfill 8 & \FRdefCharacterSkillsKNO & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsINT	& \dotfill 8 & \FRdefCharacterSkillsIUI & \dotfill 40 \%	\\
+		\FRdefCharacterSkillsPOU	& \dotfill 14 & \FRdefCharacterSkillsVOL & \dotfill 70 \%	\\
+	\end{tabular}~\\
+
+	 Aplomb : 0~\\
+	 SAN : 70~\\
+	 Points de Vie : 16~\\
+	 Seuil Blessure : 8~\\
+	 Points de Magie : 14~\\
+	 Impact : +2~\\
+
+	\textbf{Comp{\'e}tences}~\\
+		%% repartir 160 dans les competences metiers (une {\`a} 60\% et +)~\\
+		%% repartir 80 dans les competences interet personnel~\\
+		Explosifs 65 \%, 
+		Corps {\`a} Corps 60\%, 
+		Pilotage (avion l{\'e}ger / moyen) 70 \%, 
+		Bricolage 50\%, 
+		Interroger 50\%, 
+		Premiers soins 30\%. ~\\
+
+	\textbf{Langues}~\\
+	(Fran\c{c}ais 40\%). ~\\
+	Anglais 30\%, Arabe 30\%. ~\\
+
+	\textbf{Description}~\\
+	Le costaud de la bande, un ancien baroudeur pas trop idiot, avec quelques cicatrices sur le visage. Ancien candidat {\`a} une {\'e}mission de t{\'e}l{\'e}-r{\'e}alit{\'e} orient{\'e} action dans les mers du sud, et qui a {\'e}t{\'e} r{\'e}cemment annul{\'e}e. ~\\
+
+	%% \vfill
+	
+	%% \begin{center} \includegraphics[width=0.25\textwidth]{logo_DG.jpg} \end{center}
+
+	%% \vfill
+	%% \columnbreak
+	
+\end{multicols}
+
+\clearpage
+
+	\setlength\parindent{20pt}
+	
+	\normalsize
+
+\texttt{http://sans-detour.com/index.php/Forum/77-Inspirations-ressources/6561-Feuille-de-Perso-Delta-Green.html -- Belles fiches perso DG}~\\
+\texttt{http://sans-detour.com/index.php/Forum/76-Inspirations-ressources/6575-Feuille-de-Perso-AdC-30eme.html\#6575 -- idem AdC}~\\
+
+\texttt{http://forum.crazy-orc.org/index.php?topic=1099.0 -- }~\\
+
+Vous trouverez des feuilles de personnages ici, dont une {\'e}ditable : ~\\
+\texttt{http://www.sans-detour.com/index.php?option=com\_docman\&Itemid=36}~\\
+
+\textbf{\Large Cr{\'e}ation de personnages d'investigateurs pour \emph{L'Appel de Cthullu}}~\\
+
+\begin{multicols*}{2}
+
+Etape 1: Imaginer un concept~\\
+Un professeur passionn{\'e} par le folklore, un officier de l'arm{\'e}e qui a servi dans les colonies, un enqu{\^e}teur priv{\'e} qui s'occupe des affaires dont personne ne veut entendre parler, un dilettante qui passe ses journ{\'e}es {\`a} jouer au polo et parier sur des courses de chevaux, etc.~\\
+
+Etape 2: Scores de caract{\'e}ristiques %% ~\\
+\begin{center}
+	\begin{tabular}[c]{ p{2.30cm} p{0.95cm} p{4.35cm} }
+		\rowcolor{lightgray} 
+		Caract{\'e}ristiques	&	Score	&	D{\'e}riv{\'e}e				\\
+		APParence				&	3D6 	&	Prestance		= APP x5\%	\\
+		CONstitution			&	3D6 	&	Endurance		= CON x5\%	\\
+		DEXt{\'e}rit{\'e}		&	3D6 	&	Agilit{\'e}		= DEX x5\%	\\
+		FORce					&	3D6 	&	Puissance		= FOR x5\%	\\
+		TAIlle					&	2D6+6 	&	Corpulence		= TAI x5\%	\\
+		{\'E}DUcation			&	3D6+6 	&	Connaissance	= EDU x5\%	\\
+		INTelligence			&	2D6+6 	&	Intuition		= INT x5\%	\\
+		POUvoir					&	3D6 	&	Volont{\'e}		= POU x5\%	\\
+	\end{tabular}
+\end{center}
+
+Si le tirage ne vous convient pas... %% ~\\
+\begin{itemize}
+	\item \emph{Composer avec le hasard} : avant d'envisager de modifier les caract{\'e}ristiques d'un personnage, essayez de voir si ces caract{\'e}ristiques hors normes ne peuvent pas donner une certaine originalit{\'e}, un cachet particulier au personnage. Par exemple un professeur d'universit{\'e} ayant une EDU limit{\'e}e mais une APP {\'e}lev{\'e}e pourrait avoir fait carri{\`e}re en faisant jouer ses relations et son charisme plut{\^o}t que ses comp{\'e}tences personnelles. Un joueur souhaitant incarner un militaire et obtenant des valeurs de DEX et CON inf{\'e}rieures {\`a} la moyenne pourrait consid{\'e}rer que son personnage est un v{\'e}t{\'e}ran de la Premi{\`e}re Guerre Mondiale souffrant d'importantes s{\'e}quelles physiques.
+	\item \emph{Moduler les caract{\'e}ristiques} : un joueur peut transf{\'e}rer 10 points entre ses diff{\'e}rentes caract{\'e}ristiques principales. Cela permet de corriger le hasard afin d'adapter les caract{\'e}ristiques au concept du personnage. Cette m{\'e}thode ne permet pas de diminuer une caract{\'e}ristique en dessous de 6 ou de l'augmenter au-del{\`a} de 18, {\`a} l'exception de l'EDU qui peut aller jusqu'{\`a} 21 et du POU qui ne peut d{\'e}passer 15 (le POU peut d{\'e}passer 15 si c'est le hasard qui l'a d{\'e}cid{\'e}).
+	\item \emph{Recommencer} : Si les scores sont vraiment trop bas, avec l'autorisation du Gardien (MJ) vous pouvez tout retirer en esp{\'e}rant tomber sur des scores meilleurs.
+\end{itemize}~\\
+
+Etape 3: Autres valeurs %% ~\\
+\begin{center}
+	\begin{tabular}[c]{ p{3.00cm} p{5.00cm} }
+		Aplomb					&	= 0							\\
+		Sant{\'e} Mentale		&	(SAN)		= POU x5\%					\\
+		Points de Vie			&	= (CON + TAI) / 2, arrondi {\`a} l'entier sup{\'e}rieur	\\
+		Seuil de Blessure		&	= Points de Vie / 2, arrondi {\`a} l'entier inf{\'e}rieur	\\
+		Points de Magie			&	= POU						\\
+		Impact					&	= voir la table ci-dessous	\\
+						&			\\
+		FOR+TAI			&	Impact	\\
+		02 {\`a} 12		&	-4		\\
+		13 {\`a} 16		&	-2		\\
+		17 {\`a} 24		&	0		\\
+		25 {\`a} 32		&	+2		\\
+		33 {\`a} 40		&	+4		\\
+	\end{tabular}
+\end{center}
+
+Etape 4: Choisir une occupation~\\
+	Choisissez une occupation qui corresponde au concept de votre personnage parmi celles d{\'e}crites ci-dessous.~\\
+
+	R{\'e}partissez EDUx20 points dans les comp{\'e}tences indiqu{\'e}es, en choisissant l'une d'elle comme {\'e}tant la comp{\'e}tence phare de votre profession et qui doit {\^e}tre {\`a} 60\% minimum. Une {\'e}toile apr{\`e}s une comp{\'e}tence indique qu'il faut r{\'e}partir les points dans une ou plusieurs sous-cat{\'e}gories de cette comp{\'e}tence (voir plus loin la liste des sous-cat{\'e}gories par comp{\'e}tence).~\\
+	Vous devez choisir UNE particularit{\'e} parmi les trois propos{\'e}es. Le premier choix est toujours une comp{\'e}tence qui "parle d'elle-m{\^e}me" au niveau 50+1D20\% et qu'il est possible d'augmenter avec les points donn{\'e}s ci-dessus. Le bonus du second choix ne permet pas d'obtenir plus de 99\% dans une comp{\'e}tence. Si le troisi{\`e}me choix est choisi et qu'il donne un bonus {\`a} une caract{\'e}ristique, il faut recalculer les valeurs d{\'e}riv{\'e}es et les points de comp{\'e}tences.~\\
+	Les cercles d'influence sont not{\'e}s dans cet ordre: Proche, {\'E}loign{\'e}, Oppos{\'e}.~\\
+
+\vfill	
+\columnbreak
+	
+\begin{itemize}
+
+	\item[\textbf{Artiste}] {\'E}crivain, peintre, sculpteur, {\'e}crivain voyageur, photographe, ...
+	
+	Comp{\'e}tences d'occupation~\\
+	Biblioth{\`e}que, Contacts \& Ressources, Culture artistique*, Langues*, M{\'e}tier* (Contrefa\c{c}on, Taxidermie,...), N{\'e}gociation, Persuasion, Photographie, Pratique artistique*, Psychologie, Sciences de la terre*, Sciences de la vie*, Sciences formelles*, Sciences humaines*
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: Interpr{\'e}ter diff{\'e}remment les faits OU
+	- +10\% {\`a} la comp{\'e}tence Culture artistique OU
+	- +1 en {\'E}DUcation
+	
+	Cercles d'influence~\\
+	Culturel, Gotha (M{\'e}c{\`e}nes), Business
+	
+	{\'E}quipement f{\'e}tiche~\\
+	Son atelier d'artiste ou bureau, avec son mat{\'e}riel, ses ouvrages de r{\'e}f{\'e}rence, ses {\'e}tudes et ses notes, qui lui procurent un bonus de 10% en Pratique artistique
+	
+	Niveau de vie : 
+	Indigent {\`a} Riche
+
+
+	\item[\textbf{Baroudeur}] Aviateur, marin, globe-trotter, chasseur, plongeur/scaphandrier, convoyeur, ...
+	
+	Comp{\'e}tences d'occupation~\\
+	Armes {\`a} feu*, Armes blanches*, Armes exotiques*, Baratin, Bricolage, Bureaucratie, Corps {\`a} Corps*, Jeu*, Langues*, Orientation, Psychologie, Survie, Vigilance, et une comp{\'e}tence {\`a} d{\'e}finir en fonction de son activit{\'e} principale (Conduite*, Navigation, Piloter*, ...)
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: Parler avec les mains OU
+	- +10\% {\`a} la comp{\'e}tence Bricolage OU
+	- +1 point d'Aplomb
+	
+	Cercles d'influence~\\
+	Globe-trotters, Fonctionnaires, Forces de l'Ordre
+	
+	{\'E}quipement f{\'e}tiche~\\
+	Son couteau multifonctions qui lui procure un bonus de 10% en Bricolage
+	
+	Niveau de vie : 
+	Pauvre {\`a} Ais{\'e}
+
+
+	\item[\textbf{D{\'e}tective}] Policier, d{\'e}tective priv{\'e}, enqu{\^e}teur d'assurances, inspecteur, agent f{\'e}d{\'e}ral,...
+	
+	Comp{\'e}tences d'occupation~\\
+	Armes {\`a} feu*, Baratin, Bureaucratie, Contacts \& Ressources, Corps {\`a} Corps*, Criminalistique, Discr{\'e}tion, {\'E}couter, Imposture, Interroger, M{\'e}tier (Serrurier), Photographie, Pister, Se cacher, Trouver Objet Cach{\'e}, Vigilance
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: Noter les petits d{\'e}tails insignifiants OU
+	- +10\% {\`a} la comp{\'e}tence Contacts \& Ressources OU
+	- +1 point d'Aplomb
+	
+	Cercles d'influence~\\
+	Forces de l'Ordre, P{\`e}gre, Notables
+	
+	{\'E}quipement f{\'e}tiche~\\
+	Une plaque officielle (ou plus ou moins officielle), qui lui procure un bonus ou un malus de 10% aux comp{\'e}tences d'influence, en fonction de la perception que l'interlocuteur a des "officiels"
+	
+	Niveau de vie : 
+	Pauvre {\`a} Ais{\'e}
+
+\columnbreak
+
+	\item[\textbf{Dilettante}] Riche oisif, homme d'affaires, diplomate, n{\'e}gociateur, ...
+	
+	Comp{\'e}tences d'occupation~\\
+	Contacts \& Ressources, Cr{\'e}dit, {\'E}quitation, Jeu*, Sciences humaines* (Droit, Loi, Comptabilit{\'e},...), et des comp{\'e}tence au choix selon les envies et loisirs de l'investigateur.
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: Plaire {\`a} la gent du sexe oppos{\'e} OU
+	- +10\% {\`a} la comp{\'e}tence Cr{\'e}dit OU
+	- +1 point d'APParence
+	
+	Cercles d'influence~\\
+	Gotha, Business, M{\'e}dias
+	
+	{\'E}quipement f{\'e}tiche~\\
+	Son ch{\'e}quier, qui lui procure un bonus de 10\% dans les comp{\'e}tences d'influence, {\`a} condition qu'il puisse l'utiliser.
+	
+	Niveau de vie : 
+	Ais{\'e} {\`a} Riche
+
+	\item[\textbf{Explorateur}] Arch{\'e}ologue, cartographe, ethnologue, anthropologue, scientifique, chasseur de tr{\'e}sors, ...
+	
+	Comp{\'e}tences d'occupation~\\
+	Armes {\`a} feu*, Athl{\'e}tisme, Bureaucratie, Langues*, Orientation, Premiers soins, Savoir-vire, Sciences de la Terre*, Sciences de la vie*, Sciences humaines*, Survie, Trouver Objet Cach{\'e}, Vigilance
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: Donner des ordre aux porteurs OU
+	- +10\% {\`a} la comp{\'e}tence Survie OU
+	- +1 en CONstitution
+	
+	Cercles d'influence~\\
+	Universitaires, Mus{\'e}es \& Instituts, Fonctionnaires
+	
+	{\'E}quipement f{\'e}tiche~\\
+	Son mat{\'e}riel d'orientation (sextant, boussole, cartes) qui lui procure un bonus de 10% en Orientation.
+	
+	Niveau de vie : 
+	Classe Moyenne
+
+	\item[\textbf{Homme de foi}] Spirite, m{\'e}dium, pr{\^e}tre, missionnaire, pr{\'e}dicateur, ...
+	
+	Comp{\'e}tences d'occupation~\\
+	Baratin, Contacts \& Ressources, Cr{\'e}dit, Imposture, Langues* (Anciennes, Mortes, Cryptiques,...) , Persuasion, Psychologie, Sciences de la vie*, Sciences formelles*, Sciences occultes.
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: Inspirer la confiance {\`a} son interlocuteur OU
+	- +10\% {\`a} la comp{\'e}tence Sciences occultes OU
+	- +1 en POUvoir
+	
+	Cercles d'influence~\\
+	Cultes, Sans-abri, Forces de l'ordre
+	
+	{\'E}quipement f{\'e}tiche~\\
+	L'habit de sa charge (collerette pour le pr{\^e}tre, robe pour le m{\'e}dium, ...) qui lui procure 10% en persuasion.
+	
+	Niveau de vie : 
+	Indigent {\`a} Ais{\'e}, voire Riche
+
+\columnbreak
+
+	\item[\textbf{Journaliste}] Reporter, photographe, journaliste mondain, journaliste financier, ...
+	
+	Comp{\'e}tences d'occupation~\\
+	Baratin, Biblioth{\`e}que, Contacts \& Ressources, Discr{\'e}tion, {\'E}couter, Imposture, Interroger, Photographie, Pister, Pratique Artistique ({\'E}criture), Se cacher, Trouver Objet Cach{\'e}, Vigilance.
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: Au fait des rumeurs et comm{\'e}rages OU
+	- +10\% {\`a} la comp{\'e}tence Langue Maternelle OU
+	- +1 en INTelligence
+	
+	Cercles d'influence~\\
+	Un cercle {\`a} d{\'e}finir en fonction de la sp{\'e}cialit{\'e} du journaliste (Gotha pour un journaliste mondain, Finances pour un journaliste financier,...) un second {\`a} d{\'e}finir en fonction du premier, M{\'e}dias (les concurrents)
+	
+	{\'E}quipement f{\'e}tiche~\\
+	Ses calepins, dossiers et ses notes diverses, qui lui procurent un bonus de 10% en Biblioth{\`e}que.
+	
+	Niveau de vie : 
+	Pauvre {\`a} Ais{\'e}
+
+	\item[\textbf{M{\'e}decin}] M{\'e}decin g{\'e}n{\'e}raliste, infirmier, m{\'e}decin l{\'e}giste, psychologue,...
+	
+	Comp{\'e}tences d'occupation~\\
+	Biblioth{\`e}que, Contacts \& Ressources, Cr{\'e}dit, Hypnose, Langues (Latin), M{\'e}decine, Premiers Soins, Psychanalyse, Psychologie, Sciences de la vie*, Trouver Objet Cach{\'e}
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: R{\'e}conforter autrui OU
+	- +10\% {\`a} la comp{\'e}tence pour r{\'e}sister {\`a} toutes les maladies, microbes, et autres vecteurs contagieux OU
+	- +1 point d'Aplomb
+	
+	Cercles d'influence~\\
+	Sant{\'e}, Notables, Anarchistes
+	
+	{\'E}quipement f{\'e}tiche~\\
+	Son cabinet personnel avec son {\'e}quipement et ses ouvrages de r{\'e}f{\'e}rence qui lui procurent un bonus de 10% en M{\'e}decine
+	
+	Niveau de vie : 
+	Ais{\'e} {\`a} Riche
+
+	\item[\textbf{Militaire}] Officier, v{\'e}t{\'e}ran, mercenaire, ...
+	
+	Comp{\'e}tences d'occupation~\\
+	Armes {\`a} feu*, Armes blanches*, Artillerie*, Athl{\'e}tisme, Corps {\`a} corps*, Discr{\'e}tion*, M{\'e}tier* (Armurerie, Explosifs, ...), Orientation, Premiers soins, Se cacher, Vigilance, et une comp{\'e}tence au choix en fonction du corps d'arm{\'e}e (Bureaucratie pour la logistique, {\'E}quitation pour la cavalerie, M{\'e}tier: m{\'e}canique pour le g{\'e}nie, Navigation pour la marine, Piloter pour l'aviation, ...)
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: Tactique et strat{\'e}gie militaire OU
+	- +10\% {\`a} toutes les comp{\'e}tences relationnelles, mais seulement aupr{\`e}s des militaires OU
+	- +1 point d'Aplomb
+	
+	Cercles d'influence~\\
+	Militaires, Forces de l'Ordre, Anarchistes
+	
+	{\'E}quipement f{\'e}tiche~\\
+	Ses m{\'e}dailles et d{\'e}corations, qui lui procurent un bonus de 10% aux comp{\'e}tences relationnelles, en fonction de la perception que l'interlocuteur a des "officiels"
+	
+	Niveau de vie : 
+	Classe moyenne {\`a} Riche
+
+	\item[\textbf{Universitaire}] Professeur, {\'e}tudiant, scientifique, chercheur, ...
+	
+	Comp{\'e}tences d'occupation~\\
+	Biblioth{\`e}que, Bureaucratie, Contacts \& Ressources, Cr{\'e}dit, Langues*, Savoir-vivre, Sciences de la terre*, Sciences de la vie*, Sciences formelles*, Sciences humaines*
+	
+	Particularit{\'e}s~\\
+	- Comp{\'e}tence: Comprendre les discours abscons OU
+	- +10\% {\`a} la comp{\'e}tence Biblioth{\`e}que OU
+	- +1 en {\'E}DUcation
+	
+	Cercles d'influence~\\
+	Universitaires, Culturel, Business
+	
+	{\'E}quipement f{\'e}tiche~\\
+	Son cabinet de curiosit{\'e}s qui lui procure un bonus de 10\% aux comp{\'e}tences de Sciences
+	
+	Niveau de vie : 
+	Pauvre {\`a} Ais{\'e}
+
+\end{itemize} ~\\ %% ~\\
+
+Etape 5: Les Comp{\'e}tences d'int{\'e}r{\^e}ts personnels~\\
+	Vous avez INTx10\% points {\`a} r{\'e}partir dans les comp{\'e}tences qui ne sont pas list{\'e}es dans votre occupation (ou que vous n'avez pas choisies comme comp{\'e}tences d'occupation). Vous ne pouvez pas prendre la comp{\'e}tence Mythe de Cthulhu (sauf accord du Gardien) et aucune comp{\'e}tence ne peut d{\'e}passer 99\%. ~\\
+	Pr{\'e}f{\'e}rez quelques comp{\'e}tences avec un bon niveau plut{\^o}t qu'une myriade avec un faible niveau. Privil{\'e}giez les chiffres ronds plut{\^o}t que les comptes d'apothicaire. ~\\
+
+Etape 6: Finitions~\\
+	Choisissez librement la personnalit{\'e}. ~\\
+	
+	D{\'e}finissez l'{\'e}tat civil en trouvant un nom, une nationalit{\'e}, un sexe. ~\\
+	
+	L'{\^a}ge doit {\^e}tre au moins {\'e}gal {\`a} l'EDU+6. Si vous voulez que le personnage soit bien plus vieux, pour chaque tranche de 10 ans au dessus de ce minimum, ajouter 1 point en EDU et repartir 20 points de comp{\'e}tences suppl{\'e}mentaires dans celles relatives {\`a} l'occupation. En contrepartie, pour tenir compte du vieillissement, retirer {\'e}galement 1 point en FOR, CON, DEX ou APP, au choix, par d{\'e}cennie additionnelle. ~\\
+	
+	Choisir librement l'{\'e}quipement en respectant le niveau de vie et avec l'accord du gardien. ~\\
+	
+	L'histoire personnelle, dans les grandes lignes, est {\`a} indiquer au verso de la fiche. ~\\
+
+\dotfill
+
+\vfill
+\columnbreak
+
+Niveau de vie (ann{\'e}es 20)~\\
+	{\`A} choisir parmi :
+	\begin{itemize}
+		\item Indigent 5\% (0 {\`a} 500 \$ annuels)
+		\item Pauvre 25\% (500 {\`a} 2500 \$ annuels)
+		\item Classe moyenne 50\% (2500 {\`a} 6000 \$ annuels)
+		\item Ais{\'e} 75\% (6000 {\`a} 25000 \$ annuels)
+		\item Riche 95\% (25000 \$ et plus annuels)
+	\end{itemize}
+		
+L'{\^a}ge doit {\^e}tre au moins {\'e}gal {\`a} EDU+6. ~\\
+	Pour tenir compte du vieillissement, appliquez les modificateurs suivants : %% ~\\
+\begin{center}
+	\begin{tabular}[c]{ p{0.95cm} p{7.75cm} }
+		\rowcolor{lightgray} 
+		Age		&	Modificateurs	\\
+		30-34	&	10 points de comp{\'e}tences {\`a} ajouter et 1 point {\`a} enlever parmi FOR, CON, DEX ou APP	\\
+		35-39	&	20 points de comp{\'e}tences {\`a} ajouter et 2 point {\`a} enlever parmi FOR, CON, DEX ou APP	\\
+		40-44	&	30 points de comp{\'e}tences {\`a} ajouter et 3 point {\`a} enlever parmi FOR, CON, DEX ou APP	\\
+		45-49	&	40 points de comp{\'e}tences {\`a} ajouter et 4 point {\`a} enlever parmi FOR, CON, DEX ou APP	\\
+		50-54	&	50 points de comp{\'e}tences {\`a} ajouter et 5 point {\`a} enlever parmi FOR, CON, DEX ou APP	\\
+		55-59	&	60 points de comp{\'e}tences {\`a} ajouter et 6 point {\`a} enlever parmi FOR, CON, DEX ou APP	\\
+		60-64	&	70 points de comp{\'e}tences {\`a} ajouter et 7 point {\`a} enlever parmi FOR, CON, DEX ou APP	\\
+		67-70	&	80 points de comp{\'e}tences {\`a} ajouter et 8 point {\`a} enlever parmi FOR, CON, DEX ou APP	\\
+		Etc.	&	Etc. 			\\
+	\end{tabular}
+\end{center}
+
+\dotfill
+
+%% \vfill
+%% \columnbreak
+
+\textbf{\large Les comp{\'e}tences en r{\'e}sum{\'e}}
+
+\textsc{Connaissance}
+
+	Bureaucratie (10 \%)
+	G{\'e}rer les papiers et obtenir des autorisations
+	
+	Culture artistique* (10 \%)
+	Reconna{\^i}tre et {\'e}valuer les oeuvres artistiques
+	Choix possibles : Litt{\'e}rature, Peinture, Sculpture, Musique, Th{\'e}{\^a}tre, Cin{\'e}ma, Architecture, Orf{\`e}vrerie...
+	
+	Langue maternelle (EDU x5 \%)
+	Savoir s'exprimer correctement
+	
+	Langues* (00 \%)
+	Pratiquer une langue {\'e}trang{\`e}re
+	Choix possibles : L'ensemble des langues vivantes ou mortes, ainsi que les argots, les jargons et langues cryptiques, alchimiques, morse, langue des signes...
+	
+	Mythe de Cthulhu (00 \%)
+	La connaissance des savoirs impies
+	
+	Sciences humaines* (00 \%)
+	Connaissances en histoire, g{\'e}ographie, arch{\'e}ologie,...
+	Choix possibles : Administration et {\'E}conomie, Anthropologie, Arch{\'e}ologie, Droit, Histoire, G{\'e}ographie, Science politique, Sociologie...
+	
+	Sciences de la terre* (00 \%)
+	Connaissances en g{\'e}ologie, oc{\'e}anographie, sismologie, ...
+	Choix possibles : G{\'e}ologie, Glaciologie, Hydrologie, M{\'e}t{\'e}orologie, Min{\'e}ralogie, Oc{\'e}anographie, Sismologie, Volcanologie...
+	
+	Sciences de la vie* (00 \%)
+	Connaissances en biologie, botanique, zoologie, ...
+	Choix possibles : Biochimie, Biologie, Botanique, Pal{\'e}ontologie, Zoologie, Pharmacologie...
+	
+	Sciences formelles* (00 \%)
+	Connaissances en physique, math{\'e}matiques, chimie, ...
+	Choix possibles : Astronomie, Chimie, Cryptographie, Math{\'e}matiques, Physique...
+	
+	Sciences occultes (05 \%)
+	Connaissances et pratique des rituels occultes
+	
+	Exemples de comp{\'e}tences {\`a} cr{\'e}er soi-m{\^e}me : 
+	Comptabilit{\'e}, Strat{\'e}gie Militaire, Cartomancie, ... ~\\
+
+\textsc{Savoir-faire}
+
+	Bricolage (20 \%)
+	R{\'e}parer ou construire des choses simples
+	
+	Criminalistique (00 \%)
+	Connaissance des techniques d'investigation
+	
+	Hypnose (05 \%)
+	Pratique de l'hypnose et de la r{\'e}gression
+	
+	M{\'e}decine (05 \%)
+	Soigner les maladies et effectuer des actes chirurgicaux
+	
+	M{\'e}tier* (05 \%)
+	Pratiquer un m{\'e}tier pr{\'e}cis et technique
+	Choix possibles : {\'E}lectricit{\'e}, {\'E}lectronique, Serrurerie, Syst{\`e}me de s{\'e}curit{\'e}, Explosifs, Armurerie, Contrefa\c{c}on, M{\'e}canique, Menuiserie, Plomberie, Taxidermie, Dressage...
+	
+	Photographie (10 \%)
+	Prendre des photos et les d{\'e}velopper
+	
+	Pratique artistique* (05 \%)
+	Pratiquer une activit{\'e} artistique
+	Choix possibles : Chant, Danse, Peinture, {\'E}criture, Sculpture, Musique, Imposture, Com{\'e}die..
+	
+	Premiers Soins (30 \%)
+	Prodiguer les premiers secours
+	
+	Psychanalyse (00 \%)
+	Diagnostiquer et soigner les troubles mentaux
+	
+	Survie (05 \%)
+	Ma{\^i}triser les techniques de survie
+	
+	Exemples de comp{\'e}tences {\`a} cr{\'e}er soi-m{\^e}me : 
+	Op{\'e}rateur TSF, Lasso, Cartographie, Informatique, Cuisinier, Origami, ... ~\\
+
+\textsc{Sensorielle}
+
+	Biblioth{\`e}que (25 \%)
+	Effectuer des recherches dans des documents
+	
+	Discr{\'e}tion (10 \%)
+	Eviter de se faire rep{\'e}rer
+	
+	Dissimulation (15 \%)
+	Cacher des indices ou soi-m{\^e}me
+	
+	{\'E}couter(25 \%)
+	Espionner une conversation ou identifier des bruits
+	
+	Orientation (10 \%)
+	S'orienter et se rep{\'e}rer, ainsi que lire ou dessiner une carte
+	
+	Pister (10 \%)
+	Suivre une piste physique
+	
+	Psychologie (05 \%)
+	Analyser le comportement d'un individu
+	
+	Se Cacher (10 \%)
+	Se fondre dans le d{\'e}cor
+	
+	Trouver Objet Cach{\'e} (25 \%)
+	Rechercher quelque chose de pr{\'e}cis quelque part
+	
+	Vigilance (25 \%)
+	Rep{\'e}rer un d{\'e}tail, {\^e}tre sur ses gardes
+	
+	Exemples de comp{\'e}tences {\`a} cr{\'e}er soi-m{\^e}me : 
+	Lecture sur les l{\`e}vres, lire {\`a} l'envers, Oenologie, ... ~\\
+
+\vfill
+\columnbreak
+
+\textsc{Influence}
+
+	Baratin (05 \%)
+	Embobiner quelqu'un, le mener en bateau
+	
+	Contacts \& ressources (10 \%)
+	Mettre {\`a} profit son cercle relationnel
+	
+	Cr{\'e}dit (15 \%)
+	Jouer de son statut social
+	
+	Imposture (00 \%)
+	Se faire passer pour quelqu'un d'autre
+	
+	Interroger (10 \%)
+	Obtenir des renseignements ou aveux d'un individu
+	
+	Jeu* (10 \%)
+	Pratiquer un jeu de soci{\'e}t{\'e}
+	Choix possibles : Un type de jeu: hasard, strat{\'e}gie, cartes, etc.
+	
+	N{\'e}gociation (05 \%)
+	Marchander, passer un accord
+	
+	Perspicacit{\'e} (INT x2 \%)
+	D{\'e}celer les mensonges ou baratins
+	
+	Persuasion (15 \%)
+	Ranger quelqu'un {\`a} son point de vue
+	
+	Savoir-vivre (EDU x2 \%)
+	Faire preuve de biens{\'e}ance, respecter les us
+	
+	Exemples de comp{\'e}tences {\`a} cr{\'e}er soi-m{\^e}me : 
+	Meneur d'hommes, S{\'e}duction, ... ~\\
+
+\textsc{Action}
+
+	Armes {\`a} feu* (20 \%)
+	Se servir d'une arme {\`a} feu
+	Choix possibles : Armes de poing, Armes d'{\'e}paule, Armes automatiques, Armes anciennes, ...
+	
+	Armes blanches* (20 \%)
+	Se servir d'une arme blanche
+	Choix possibles : Armes de m{\^e}l{\'e}e, Armes de jet, Armes {\`a} propulsion, Armes de lancer, ...
+	
+	Armes exotiques* (00 \%)
+	Utiliser des armes particuli{\`e}res
+	Choix possibles : Toutes les armes non usuelles, chaque arme {\'e}tant consid{\'e}r{\'e}e comme une comp{\'e}tence {\`a} part enti{\`e}re
+	
+	Artillerie* (15 \%)
+	Se servir d'armes militaires lourdes
+	Choix possibles : Mortier, Mitrailleuse lourde, Canons, ...
+	
+	Athl{\'e}tisme (15 \%)
+	Crapahuter, sauter, nager, ...
+	
+	Conduite* (20 \%)
+	Conduire diff{\'e}rents engins
+	Choix possibles : Automobile, Hippomobile, Deux roues, V{\'e}hicules chenill{\'e}s, ...
+	
+	Corps {\`a} corps* (DEX x2 \%)
+	Se battre avec ses poings et pieds
+	Choix possibles : Bagarre, un art martial (Box, Boxe Anglaise, Lutte, Judo, Jujitsu, Box Fran\c{c}aise ou Savate, Canne de combat)
+	
+	{\'E}quitation (05 \%)
+	Utiliser un animal de monte
+	
+	Navigation (00 \%)
+	Piloter les engins maritimes
+	
+	Piloter* (00 \%)
+	Piloter les engins a{\'e}riens
+	Choix possibles : Avion, H{\'e}licopt{\`e}re, Montgolfi{\`e}re, Dirigeable
+
+	Exemples de comp{\'e}tences {\`a} cr{\'e}er soi-m{\^e}me : 
+	Plong{\'e}e, Saut en parachute, tous les sports: golf, football, baseball, ...
+
+\vfill
+\columnbreak
+
+\textbf{\large Gestion sant{\'e} mentale} %% ~\\
+\begin{itemize}
+	\item[] \textbf{Quantification de l'horreur}
+	\begin{itemize}
+		\item[] 1 ou 1D2	Inconfort ou l{\'e}g{\`e}re confusion
+		\item[] 1D3	Frayeur, confusion ou d{\'e}go{\^u}t
+		\item[] 1D4	Panique, d{\'e}sorientation ou {\'e}coeurement
+		\item[] 1D6 ou 1D6+1	Naus{\'e}e ou stupeur <\emph{moyenne}>
+		\item[] 1D8, 1D6+2, 2D4	Choc nerveux
+		\item[] 1D10	Choc important
+		\item[] 2D6 ou 2D8	Horreur traumatisante
+		\item[] 1D20, 2D10, 3D6	Horreur extr{\^e}me
+		\item[] 3D10	Abomination absolue
+		\item[] 1D100	Mal Cosmique Ultime
+	\end{itemize}
+	
+	\item[] \textbf{Aplomb} : utilit{\'e} comme bouclier mental, pour chaque <<niveau>> de points, l'investigateur...
+	\begin{itemize}
+		\item[] 1	... a d{\'e}j{\`a} {\'e}t{\'e} confront{\'e} {\`a} des situations horribles. 
+		\item[] 2	... a l'habitude des situations stressantes, comme un m{\'e}decin ou un ancien combattant. 
+		\item[] 4	... a souvent {\'e}t{\'e} confront{\'e} {\`a} l'horreur, est habitu{\'e}, il a peut-{\^e}tre fait la guerre. 
+		\item[] 6	... est d{\'e}tach{\'e} ; pour lui, l'horreur est banale, la r{\'e}alit{\'e} quotidienne lui semble banale. 
+		\item[] 8 et +	... est blas{\'e}, il en a trop vu ; il en faut beaucoup pour le faire r{\'e}agir !
+	\end{itemize}
+	
+	\item[] \textbf{Tests de SAN}
+	\begin{itemize}
+		\item[] L'{\'e}l{\'e}ment perturbateur a deux valeurs s{\'e}par{\'e}s par un "/", en g{\'e}n{\'e}ral un nombre simple puis un jet de d{\'e}s (cf. \emph{Quantification}). 
+		\item[] Pour l'investigateur : test simple sous sa SAN actuelle : 
+		\begin{itemize}
+			\item R{\'e}ussite critique : aucune perte, 
+			\item R{\'e}ussite : perte mineure (nombre indiqu{\'e} en premier), 
+			\item {\'E}chec : perte majeure (jet de d{\'e} indiqu{\'e}), 
+			\item Maladresse : perte maximis{\'e}e (r{\'e}sultat maximal qui oeut {\^e}tre obtenu avec le jet de d{\'e}). 
+		\end{itemize}
+		\item[] => Moins le score d'Aplomb, {\`a} retrancher de la perte en SAN ! Sacrifice de points d'Aplomb pour modifier le d{\'e}gr{\'e} de r{\'e}ussite du test (un point par degr{\'e}). 
+	\end{itemize}
+	
+	\item[] \textbf{Chocs psychologiques} (1D100), si pert de plus de 5 points de SAN, plus s{\'e}quelles si plus de 1/5{\`e}me (apparition troubles mentaux, voir en fin sc{\'e}nario) : 
+	\begin{itemize}
+		\item[] 01-05	Prostration. 
+		\item[] 06-15	{\'E}vanouissement. 
+		\item[] 16-30	Amn{\'e}sie partielle. 
+		\item[] 31-50	Perte de coordination. 	\emph{-20\% {\`a} toutes actions}
+		\item[] 51-70	Panique. 	\emph{-10\% {\`a} toutes actions}
+		\item[] 71-85	Crise hyst{\'e}rique. 	\emph{-20\% {\`a} toutes actions}
+		\item[] 86-95	Fuite irrationnelle. 
+		\item[] 96-00	Crise de d{\'e}mence. 	\emph{Coups Furieux}
+	\end{itemize}
+\end{itemize}
+
+\end{multicols*}
+
+\clearpage
+
+	\setlength\parindent{0pt}
+
+	\small
+
+Style de jeu \dotfill Guardien \dotfill Campagne \dotfill ~\\
+
+\begin{minipage}[ht]{2.50cm}
+	\includegraphics[width=2.45cm]{DeltaGreenLogo.png}
+\end{minipage} \hfill \begin{minipage}[ht]{14cm}
+	\fbox{\begin{minipage}{0.975\textwidth}
+		\FRdefBOXTITLEPersonalInforma~\\ %% ~\\
+		%% 
+		\begin{tabular}[c]{ p{0.15\textwidth} p{0.30\textwidth} p{0.15\textwidth} p{0.30\textwidth} }
+			\FRdefPersonnalInfosNAM	& \dotfill					& \FRdefPersonnalInfosFNA & \dotfill	\\
+			\FRdefPersonnalInfosOCC	& \dotfill					&		\FRdefPersonnalInfosAGE & \dotfill	\\
+			\FRdefPersonnalInfosPRO	& \dotfill					& 			\FRdefPersonnalInfosSEX	& \dotfill	\\
+			\FRdefPersonnalInfosPER	& \dotfill					& \FRdefPersonnalInfosNAT & \dotfill	\\
+			Niveau de vie		& \dotfill	& 		\dotfill & \%	\\
+		\end{tabular}
+	\end{minipage}} % end fbox
+\end{minipage} \hfill \begin{minipage}[ht]{2.00cm}
+	\fbox{\begin{minipage}{0,80\textwidth}
+		~\\
+		~\\
+		\emph{Portrait}~\\
+		~\\
+		~\\
+	\end{minipage}} % end fbox
+\end{minipage}~\\
+
+\begin{minipage}[ht]{0.55\textwidth}
+	\fbox{\begin{minipage}{0.975\textwidth }
+		\FRdefBOXTITLECharacteristics~\\~\\
+		%% 
+		\begin{tabular}[c]{ p{2.50cm} p{2.00cm} p{2.50cm} p{2.00cm} }
+			\FRdefCharacterSkillsAPP	& \dotfill & \FRdefCharacterSkillsPES & \dotfill \%	\\
+			\FRdefCharacterSkillsCON	& \dotfill & \FRdefCharacterSkillsSTA & \dotfill \%	\\
+			\FRdefCharacterSkillsDEX	& \dotfill & \FRdefCharacterSkillsAGI & \dotfill \%	\\
+			\FRdefCharacterSkillsPOW	& \dotfill & \FRdefCharacterSkillsPUI & \dotfill \%	\\
+			\FRdefCharacterSkillsTAI	& \dotfill & \FRdefCharacterSkillsCOR & \dotfill \%	\\
+			\FRdefCharacterSkillsEDU	& \dotfill & \FRdefCharacterSkillsKNO & \dotfill \%	\\
+			\FRdefCharacterSkillsINT	& \dotfill & \FRdefCharacterSkillsIUI & \dotfill \%	\\
+			\FRdefCharacterSkillsPOU	& \dotfill & \FRdefCharacterSkillsVOL & \dotfill \%	\\
+		\end{tabular}			
+	\end{minipage}} % end fbox
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\fbox{\begin{minipage}[ht]{0.975\textwidth}
+		\textbf{Cercles d'influence...} ~\\
+		\begin{tabular}[c]{ p{1.50cm} p{1.50cm} p{1.50cm} p{1.50cm} }
+			Proches			&	\dotfill	& Oppos{\'e}s	&	\dotfill	\\
+			{\'E}loign{\'e}s	&	\dotfill	& Ennemi	&	\dotfill	\\
+		\end{tabular}
+			\rule{0.975\textwidth}{0.01cm}
+		\textbf{Sant{\'e}} ~\\
+		Seuil de blessure \dotfill ~\\
+		{ \footnotesize \begin{tabular}[c]{ p{1.00cm} c c c c c c c c c }
+			Points	& 1  & 2  & 3  & 4  & 5  & 6  & 7  & 8  & 9  \\
+			de Vie	& 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
+		\end{tabular} }
+		Protections \dotfill ~\\
+		Blessures \dotfill ~\\
+		---	\dotfill
+	\end{minipage}} % end fbox
+	~\hrulefill %% \rule{0.40\textwidth}{0.01cm}
+\end{minipage} %% ~\\
+
+\begin{multicols}{3}
+	\textbf{Connaissance} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Bureaucratie (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Culture Artistique* (10\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Langue Maternelle* (EDUx5\%)	& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Langues* (00\%)			& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Mythe de Cthullu (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences de la Terre* (00\%)	& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences de la Vie* (00\%)	& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences Formelle* (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences Humaines (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Sciences Occultes (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} }~\\
+	
+	\begin{center}
+		\includegraphics[width=2.50cm]{../../../../imgGraphics/artsDecos/ornement06whiteBG.png}
+	\end{center}
+	
+	\vfill
+	\columnbreak
+	
+	\textbf{Savoir-Faire} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Bricolage (20\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Comptabilit{\'e} (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Criminalistique (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Explosifs (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Hypnose (00\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		M{\'e}decine (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		M{\'e}tier* (05\%)		& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Photographie (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Plong{\'e}e sous-marine (00\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Pratique Artistique* (05\%)	& --- ---	 & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Premiers Soins (30\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Psychanalyse (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Survie (00\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\textbf{Sensorielles} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Biblioth{\`e}que (25\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Discr{\'e}tion (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Dissimulation (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		{\'E}couter (25\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Orientation (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Pister (10\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Psychologie (05\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Se cacher (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Trouver Objet Cach{\'e} (25\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Vigilance (25\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\vfill
+	\columnbreak
+	
+	\textbf{Influence} \hrulefill ~\\	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Baratin (05\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Contact \& Ressources (10\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Cr{\'e}dit (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Imposture (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Interroger (10\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Jeu* (10\%)			& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		N{\'e}gociation (05\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Perspicacit{\'e} (INTx2\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Persuasion (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Savoir-Vivre (EDUx2\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\textbf{Action} \hrulefill ~\\  	%% ~\\
+	%% \rule{0.25\textwidth}{0.02cm}	%% ~\\
+	{\scriptsize \begin{tabular}[c]{ p{4.00cm} p{1.00cm}|c|}
+		\cline{3-3}
+		Armes {\`a} feu* (20\%)		& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Armes blanches* (20\%)		& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Armes exotiques* (00\%)		& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Athl{\'e}tisme (15\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Conduite* (20\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Corps {\`a} corps (DEXx2\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill				& \dotfill \% & ~ \\
+		\cline{3-3}
+		{\'E}quitation (05\%)	& \dotfill \% & ~ \\
+		\cline{3-3}
+		Nager (20\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Navigation (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Parachutisme (00\%)		& \dotfill \% & ~ \\
+		\cline{3-3}
+		Nager (00\%)			& \dotfill \% & ~ \\
+		\cline{3-3}
+		Piloter (00\%)			& --- ---	 & -- \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+		\dotfill			& \dotfill \% & ~ \\
+		\cline{3-3}
+	\end{tabular} } %% ~\\
+	
+	\vfill
+	
+\end{multicols}
+
+\begin{minipage}[ht]{1.00\textwidth}
+	\fbox{ \begin{minipage}[ht]{0,975\textwidth} % 
+		\FRdefBOXTITLESanitySanitySan ~\\~\\ %
+		{\footnotesize Modificateur social \dotfill \% Aplomb \dotfill SAN initiale \dotfill SAN Max ({\scriptsize 99 - Mythe de Cthullu}) \dotfill } %% ~\\ %
+		{\scriptsize \begin{tabular}[c]{ c c c c c c c c c c c c c c c c c c c c }
+			01$_{01}$ &	02$_{01}$ &	03$_{01}$ &	04$_{01}$ &	05$_{01}$ &
+			06$_{02}$ &	07$_{02}$ &	08$_{02}$ &	09$_{02}$ &	10$_{02}$ &
+			11$_{03}$ &	12$_{03}$ &	13$_{03}$ &	14$_{03}$ &	15$_{03}$ &
+			16$_{04}$ &	17$_{04}$ &	18$_{04}$ &	19$_{04}$ &	20$_{04}$ \\
+			21$_{05}$ &	22$_{05}$ &	23$_{05}$ &	24$_{05}$ &	25$_{05}$ &
+			26$_{06}$ &	27$_{06}$ &	28$_{06}$ &	29$_{06}$ &	30$_{06}$ &
+			31$_{07}$ &	32$_{07}$ &	33$_{07}$ &	34$_{07}$ &	35$_{07}$ &
+			36$_{08}$ &	37$_{08}$ &	38$_{08}$ &	39$_{08}$ &	40$_{08}$ \\
+			41$_{09}$ &	42$_{09}$ &	43$_{09}$ &	44$_{09}$ &	45$_{09}$ &
+			46$_{10}$ &	47$_{10}$ &	48$_{10}$ &	49$_{10}$ &	50$_{10}$ &
+			51$_{11}$ &	52$_{11}$ &	53$_{11}$ &	54$_{11}$ &	55$_{11}$ &
+			56$_{12}$ &	57$_{12}$ &	58$_{12}$ &	59$_{12}$ &	60$_{12}$ \\
+			61$_{13}$ &	62$_{13}$ &	63$_{13}$ &	64$_{13}$ &	65$_{13}$ &
+			66$_{14}$ &	67$_{14}$ &	68$_{14}$ &	69$_{14}$ &	70$_{14}$ &
+			71$_{15}$ &	72$_{15}$ &	73$_{15}$ &	74$_{15}$ &	75$_{15}$ &
+			76$_{16}$ &	77$_{16}$ &	78$_{16}$ &	79$_{16}$ &	80$_{16}$ \\
+			81$_{17}$ &	82$_{17}$ &	83$_{17}$ &	84$_{17}$ &	85$_{17}$ &
+			86$_{18}$ &	87$_{18}$ &	88$_{18}$ &	89$_{18}$ &	90$_{18}$ &
+			91$_{19}$ &	92$_{19}$ &	93$_{19}$ &	94$_{19}$ &	95$_{10}$ &
+			96$_{20}$ &	97$_{20}$ &	98$_{20}$ &	99$_{20}$ &	00$_{20}$ \\
+		\end{tabular} } %% ~\\ % 
+	\end{minipage} } % end fbox
+\end{minipage} %% ~\\
+
+\begin{minipage}[ht]{0.60\textwidth}
+	\fbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLEEquipmentEquipm %~\\
+		\begin{center} \begin{tabular}[c]{ p{0.2\textwidth} p{0.7\textwidth} }
+			<<F{\'e}tiche>>		&	\dotfill	\\
+			\dotfill		&	\dotfill	\\
+			\dotfill		&	\dotfill	\\
+		\end{tabular} \end{center}
+		%% \rule{0.90\textwidth}{0.01cm}~\\
+		Points de Magie	\emph{[1-18]} \dotfill
+	\end{minipage}} % end fbox
+\end{minipage} \hfill \begin{minipage}[ht]{0.40\textwidth}
+	\fbox{\begin{minipage}{0.95\textwidth}
+		\FRdefBOXTITLEWeaponsWeaponsW % ~\\
+		{\footnotesize \begin{center} \begin{tabular}[c]
+			{ p{0.30\textwidth} p{0.10\textwidth} p{0.10\textwidth} p{0.10\textwidth} p{0.10\textwidth} }
+			Arme		&	D{\'e}gats	& Port.		& Cad.		& Charg.	\\
+			\dotfill	&	\dotfill	& \dotfill	& \dotfill	& \dotfill	\\
+			\dotfill	&	\dotfill	& \dotfill	& \dotfill	& \dotfill	\\
+		\end{tabular} \end{center} ~\\
+		Impact \dotfill -- Pieds 1D6 -- Poings 1D3 -- T{\^e}te 1D4
+		} %%
+	\end{minipage}} % end fbox
+\end{minipage}
+
+\end{document}

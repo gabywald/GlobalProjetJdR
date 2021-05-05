@@ -10,8 +10,8 @@ public class RPGDataFile extends DataFile {
 	private static final String DEFAULT_DIRECTORY	= "dataRPG/";
 	private static final String[] FILENAMES_SET		= {
 		"headerFichePerso.tex",					"bottomFichePerso.tex",				
-		"biographyCyberAge.txt", 				"metiersEtTalentsCyberAge.txt", 	
-		"talentsCyberAge.txt", 					"talentsSimulacreS.txt", 			
+		"CyberAgeBiography.txt", 				"CyberAgeMetiersEtTalents.txt", 	
+		"CyberAgeTalents.txt", 					"talentsSimulacreS.txt", 			
 		"sousLesDesLidee.txt", 					"talentsGURPS.txt", 				
 		"niveauxTechnologiquesV01.txt", 		"niveauxTechnologiquesV02.txt", 	
 		"tableDesArmesGURPSlite.txt", 			"tableDesArmesMeleeGURPSlite.txt",
@@ -29,6 +29,7 @@ public class RPGDataFile extends DataFile {
 	@Override
 	public String getDefaultDirectory() 
 		{ return RPGDataFile.DEFAULT_DIRECTORY; }
+	
 	@Override
 	public String[] getFileNamesSet() 
 		{ return RPGDataFile.FILENAMES_SET; }
