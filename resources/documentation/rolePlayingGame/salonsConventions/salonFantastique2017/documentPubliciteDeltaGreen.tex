@@ -29,9 +29,9 @@
 \pagestyle{headings}
 
 
-\def\logoCreativeCommon{img/CreativeCommonLogo.jpeg}
+\def\logoCreativeCommon{../img/CreativeCommonLogo.jpeg}
 \def\includeLogoCC{\includegraphics[width=0.25cm]{\logoCreativeCommon }}
-\def\MainTitle{Cyber Age / Cyberpunk -- Geekopolis 2014 -- \emph{AmaelAssour} \includegraphics[width=0.30cm]{\logoCreativeCommon } \today }
+\def\MainTitle{Delta Green -- Salon Fantastique 5.1 (2017) -- \emph{AmaelAssour} \includegraphics[width=0.30cm]{\logoCreativeCommon } \today }
 
 % mettre du texte en diagonale sur le fond : tikz
 \usepackage{tikz} 
@@ -43,7 +43,7 @@
 
 \def\confidentialDGTIKZ{%
 	\begin{tikzpicture}[remember picture,overlay]
-	\node[rotate=60,scale=7.5,text opacity=0.2] at (current page.center) {Confidential -- Delta Green};
+	\node[rotate=60,scale=7.0,text opacity=0.2] at (current page.center) { -- Confidential -- Delta Green};
 	\end{tikzpicture}
 }%
 
@@ -51,12 +51,6 @@
 	\begin{tikzpicture}[remember picture,overlay]
 	\node[rotate=60,scale=5.5,text opacity=0.2] at (current page.center) 
 		{DG Restreint -- Op. Fallen Angels}; %%  Op{\'e}ration Fallen Angels
-	\end{tikzpicture}
-}%
-
-\def\cyberAge2080TIKZ{%
-	\begin{tikzpicture}[remember picture,overlay]
-	\node[rotate=60,scale=7.5,text opacity=0.2] at (current page.center) {Cyber Age -- Cyberpunk 2080};
 	\end{tikzpicture}
 }%
 
@@ -70,20 +64,20 @@
 % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 \fancyhf{}
 \fancyhead[LE,RO]{
-	\cyberAge2080TIKZ
-	\includegraphics[width=0.5cm]{img/logo_glider.png} 
+	\confidentialDGTIKZ
+	\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} 
 	\hfill \MainTitle \hfill
-	\includegraphics[width=0.5cm]{img/logo_glider.png} 
+	\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} 
 	} %% {\bfseries\thepage}
-\fancyfoot[LE,RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} 
+\fancyfoot[LE,RO]{\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} 
 	\hfill \MainTitle \hfill
-	\includegraphics[width=0.5cm]{img/logo_glider.png} } %% {\bfseries\thepage}
+	\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} } %% {\bfseries\thepage}
 %% \fancyhead[LO]{\bfseries\rightmark}
 %% \fancyhead[RE]{\bfseries\leftmark}
 %% \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
 %% 	\MainTitle 
-%% \hfill \includegraphics[width=0.5cm]{img/DeltaGreenLogo.png} }
-%% \fancyfoot[RO]{\includegraphics[width=0.5cm]{img/DeltaGreenLogo.png} \hfill
+%% \hfill \includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} }
+%% \fancyfoot[RO]{\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} \hfill
 %% 	\MainTitle 
 %% \hfill \thepage /\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.25pt}
@@ -106,48 +100,39 @@
 %============================= Corps =================================
 \begin{document}
 
-\setlength\parindent{0pt}
+\begin{landscape}
+	\setlength\parindent{0pt}
 
-%% \confidentialDGTIKZ
+	\confidentialDGTIKZ ~\\
 
-\begin{center} 
-	\includegraphics[width=0.90\textwidth]{img/CyberAgeBienvenue.jpeg} %\hfill
-\end{center}
+	\begin{tabular}{ p{0.25\textwidth} p{0.75\textwidth} }
+		%% \includegraphics[width=0.45\textwidth]{../img/logo_DG.jpg} \newline
+		%% \includegraphics[width=0.45\textwidth]{../img/logo_DG.jpg} \newline
+		\includegraphics[width=0.25\textwidth]{../img/logo_DG.jpg}
+		\includegraphics[width=0.25\textwidth]{../img/logo_DG.jpg}
+		\includegraphics[width=0.25\textwidth]{../img/logo_DG.jpg}
+			& \textbf{\huge Delta Green -- Cthulhu maintenant !} \\
+			&					\\ 
+			&	\textsc{\LARGE Vous pensez que X-Files n'{\'e}tait qu'un divertissement t{\'e}l{\'e}vis{\'e} ?} \\
+			&	\textsc{\LARGE Que les <<petits gris>>  n'existent pas ?} \\
+			&	\textsc{\Large Que les agents secrets ne s'habillent jamais en costard ?} \\
+			&	\textsc{\LARGE Que vos cauchemars n'avaient aucune r{\'e}alit{\'e} ?} \\
+			&					\\ 
+			& \Large Visitez notre monde du d{\'e}but du XXI{\`e}me si{\`e}cle comme vous ne l'avez jamais r{\'e}ellement vu ! \\
+			& \Large Laissez le fantastique, voire l'horreur s'insinuer dans votre voyage ! \\
+			& \Large Rencontrez des membres de conspirations myst{\'e}rieuses, dialoguez avec des petits gris, voire rencontrez l'\emph{<<indicible>>} ! \\
+	\\
+	\end{tabular}
 
-\begin{minipage}[ht]{0.15\textwidth}
-	\includegraphics[width=0.95\textwidth]{img/personnagePaulMorgan.jpg} ~\\~\\
-	\includegraphics[width=0.95\textwidth]{img/personnageIrinaToss.jpg} ~\\~\\
-\end{minipage} \hfill \begin{minipage}[ht]{0.65\textwidth}
-	\textbf{\LARGE Cyber Age -- Explorez les ann{\'e}es 2080 !} ~\\~\\
-	
-	\begin{center}
-		\textsc{\LARGE Connectez-vous {\`a} HyperNet !~\\ 
-			$\Longrightarrow$ Le cyberespace en 3D ! $\Longleftarrow$}
+	\hrule
+
+	\begin{center} 
+		\includegraphics[width=0.20\textwidth]{../img/DeltaGreenLogo.png} \hfill
+		\includegraphics[width=0.20\textwidth]{../img/DeltaGreenLogo.png} \hfill
+		\includegraphics[width=0.20\textwidth]{../img/DeltaGreenLogo.png} %\hfill
 	\end{center}
-	~\\~\\
-	
-	\textsc{\LARGE Visitez les Jungles Urbaines !}~\\~\\
-	\textsc{\LARGE Investissez dans les {\^I}les de la Lune !}~\\~\\
-	
-	{\Large
-		Bienvenue dans les ann{\'e}es 2080 : un univers de folie cybern{\'e}tique o{\`u} la conqu{\^e}te spatiale est devenue r{\'e}alit{\'e} !~\\~\\
-		Le cyberespace est {\'e}galement de la partie : la virtualit{\'e} est d{\'e}sormais r{\'e}alit{\'e} !~\\~\\
-		Visitez des centres urbains de qualit{\'e} avec des moyens de transport ultr-rapides terrestres a{\'e}riens et spatiaux !~\\~\\
-		Assistez en direct {\`a} une guerre priv{\'e}e entre M{\'e}ga-Corporations !~\\~\\
-		Faites un Tour dans une Arcologie de Euro/Matsushita : Nouvelle Babylone !~\\~\\
-	}
 
-\end{minipage} \hfill \begin{minipage}[ht]{0.15\textwidth}
-	\includegraphics[width=0.95\textwidth]{img/personnageSandraVitteker.jpg} ~\\~\\
-	\includegraphics[width=0.95\textwidth]{img/personnageJeremiahSteel.jpg} ~\\~\\
-\end{minipage} ~\\
-
-\hrule
-
-
-
-\hrule
-
-~\\
+	\hrule ~\\
+\end{landscape}
 
 \end{document}

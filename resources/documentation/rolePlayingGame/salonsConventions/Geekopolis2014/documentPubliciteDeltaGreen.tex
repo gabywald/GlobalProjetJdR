@@ -29,9 +29,9 @@
 \pagestyle{headings}
 
 
-\def\logoCreativeCommon{img/CreativeCommonLogo.jpeg}
+\def\logoCreativeCommon{../img/CreativeCommonLogo.jpeg}
 \def\includeLogoCC{\includegraphics[width=0.25cm]{\logoCreativeCommon }}
-\def\MainTitle{Cyber Age / Cyberpunk -- Salon Fantastique 5.1 (2017) -- \emph{AmaelAssour} \includegraphics[width=0.30cm]{\logoCreativeCommon } \today }
+\def\MainTitle{Delta Green -- Geekopolis 2014 -- \emph{AmaelAssour} \includegraphics[width=0.30cm]{\logoCreativeCommon } \today }
 
 % mettre du texte en diagonale sur le fond : tikz
 \usepackage{tikz} 
@@ -54,12 +54,6 @@
 	\end{tikzpicture}
 }%
 
-\def\cyberAge2080TIKZ{%
-	\begin{tikzpicture}[remember picture,overlay]
-	\node[rotate=60,scale=6.0,text opacity=0.2] at (current page.center) { -- Cyber Age -- Cyberpunk 2080};
-	\end{tikzpicture}
-}%
-
 % % % en-tete et pieds de page configurables : fancyhdr.sty
 % http://www.trustonme.net/didactels/250.html
 % http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
@@ -70,20 +64,20 @@
 % \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 \fancyhf{}
 \fancyhead[LE,RO]{
-	\cyberAge2080TIKZ
-	\includegraphics[width=0.5cm]{img/logo_glider.png} 
+	\confidentialDGTIKZ
+	\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} 
 	\hfill \MainTitle \hfill
-	\includegraphics[width=0.5cm]{img/logo_glider.png} 
+	\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} 
 	} %% {\bfseries\thepage}
-\fancyfoot[LE,RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} 
+\fancyfoot[LE,RO]{\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} 
 	\hfill \MainTitle \hfill
-	\includegraphics[width=0.5cm]{img/logo_glider.png} } %% {\bfseries\thepage}
+	\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} } %% {\bfseries\thepage}
 %% \fancyhead[LO]{\bfseries\rightmark}
 %% \fancyhead[RE]{\bfseries\leftmark}
 %% \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
 %% 	\MainTitle 
-%% \hfill \includegraphics[width=0.5cm]{img/DeltaGreenLogo.png} }
-%% \fancyfoot[RO]{\includegraphics[width=0.5cm]{img/DeltaGreenLogo.png} \hfill
+%% \hfill \includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} }
+%% \fancyfoot[RO]{\includegraphics[width=0.5cm]{../img/DeltaGreenLogo.png} \hfill
 %% 	\MainTitle 
 %% \hfill \thepage /\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.25pt}
@@ -110,45 +104,60 @@
 
 %% \confidentialDGTIKZ
 
-\begin{landscape}
-		%% \begin{tabular}{ p{11.00cm} p{2.0cm} p{11.00cm} p{2.0cm} }
-			% \multirow{2}{*}{ \includegraphics[width=0.70\textwidth]{img/CyberAgeBienvenue.jpeg} }
-			%% & \includegraphics[width=1.95cm]{img/personnageErnstKobel.jpg} 
-			%% & \includegraphics[width=1.95cm]{img/personnageJenelAstaki.jpg} \\
-		\begin{tabular}{ p{12.00cm} p{12.00cm} } 
-			%% \includegraphics[width=10.95cm]{img/CyberAgeBienvenue.jpeg}
-			\multirow{9}{*}{ \includegraphics[width=10.95cm]{img/CyberAgeBienvenue.jpeg} }
-				&					\\
-				&	\textbf{\Large Cyber Age -- Explorez les ann{\'e}es 2080 !}							\\
-				&					\\
-				&	\textsc{\LARGE Connectez-vous {\`a} HyperNet ! }									\\
-				&	\textsc{\LARGE $\Longrightarrow$ Le cyberespace en 3D ! $\Longleftarrow$}			\\
-				
-				&	\textsc{\LARGE Visitez les Jungles Urbaines !}										\\
-				
-				&	\textsc{\LARGE Investissez dans les {\^I}les de la Lune !}							\\
-				&					\\
-				&	\textsc{\emph{\centering \Large Passeports Corporatistes ou ONG accept{\'e}s ! }}	\\
-		\end{tabular} ~\\ ~\\ ~\\
-		
-		 ~\\ ~\\ ~\\
-		
-		\begin{minipage}[ht]{0.10\textwidth}
-			\includegraphics[width=0.95\textwidth]{img/personnagePaulMorgan.jpg} ~\\~\\
-			\includegraphics[width=0.95\textwidth]{img/personnageIrinaToss.jpg} ~\\~\\
-		\end{minipage} \hfill \begin{minipage}[ht]{0.90\textwidth}
-			{\Large
-				Bienvenue dans les ann{\'e}es 2080 : un univers de folie cybern{\'e}tique o{\`u} la conqu{\^e}te spatiale est devenue r{\'e}alit{\'e} !~\\~\\
-				Le cyberespace est {\'e}galement de la partie : ~\\ la virtualit{\'e} est d{\'e}sormais r{\'e}alit{\'e} !~\\~\\
-				Visitez des centres urbains de qualit{\'e} avec des moyens de transport ultra-rapides terrestres a{\'e}riens et spatiaux !~\\~\\
-				Assistez en direct {\`a} une guerre priv{\'e}e entre M{\'e}ga-Corporations !~\\~\\
-				Faites un Tour dans une Arcologie de Euro/Matsushita : Nouvelle Babylone !~\\~\\
-			}
-		\end{minipage} \hfill \begin{minipage}[ht]{0.10\textwidth}
-			\includegraphics[width=0.95\textwidth]{img/personnageSandraVitteker.jpg} ~\\~\\
-			\includegraphics[width=0.95\textwidth]{img/personnageJeremiahSteel.jpg} ~\\~\\
-		\end{minipage} ~\\
+~\\
 
-\end{landscape}
+\begin{minipage}[ht]{0.30\textwidth}
+	\includegraphics[width=0.95\textwidth]{../img/logo_DG.jpg} ~\\~\\
+	\includegraphics[width=0.95\textwidth]{../img/logo_DG.jpg} ~\\~\\
+	\includegraphics[width=0.95\textwidth]{../img/logo_DG.jpg} ~\\~\\
+\end{minipage} \hfill \begin{minipage}[ht]{0.65\textwidth}
+	\textbf{\huge Delta Green -- Cthullu maintenant !} ~\\~\\
+	\textsc{\LARGE Vous pensez que X-Files n'{\'e}tait qu'un divertissement t{\'e}l{\'e}vis{\'e} ?}~\\~\\
+	\textsc{\LARGE Que les <<petits gris>>  n'existent pas ?}~\\~\\
+	%% \textsc{\Large Que les agents secrets ne s'habillent jamais en costard ?}~\\
+	\textsc{\LARGE Que vos cauchemars n'avaient aucune r{\'e}alit{\'e} ?}~\\~\\
+	
+	{\Large
+		Visitez notre monde du d{\'e}but du XXI{\`e}me si{\`e}cle comme vous ne l'avez jamais r{\'e}ellement vu !~\\~\\
+		Laissez le fantastique, voire l'horreur s'insinuer dans votre voyage !~\\~\\
+		Rencontrez des membres de conspirations myst{\'e}rieuses, dialoguez avec des petits gris, voire rencontrez l'\emph{<<indicible>>} !~\\~\\
+	}
+
+\end{minipage} ~\\
+
+\hrule
+
+\begin{center} 
+	\includegraphics[width=0.20\textwidth]{../img/DeltaGreenLogo.png} \hfill
+	\includegraphics[width=0.20\textwidth]{../img/DeltaGreenLogo.png} \hfill
+	\includegraphics[width=0.20\textwidth]{../img/DeltaGreenLogo.png} %\hfill
+\end{center}
+
+\hrule
+
+~\\
+
+\begin{minipage}[ht]{0.65\textwidth}
+	\textbf{\huge Delta Green -- Cthullu maintenant !} ~\\~\\
+	\textsc{\LARGE Vous pensez que X-Files n'{\'e}tait qu'un divertissement t{\'e}l{\'e}vis{\'e} ?}~\\~\\
+	\textsc{\LARGE Que les <<petits gris>>  n'existent pas ?}~\\~\\
+	%% \textsc{\Large Que les agents secrets ne s'habillent jamais en costard ?}~\\
+	\textsc{\LARGE Que vos cauchemars n'avaient aucune r{\'e}alit{\'e} ?}~\\~\\
+	
+	{\Large
+		Visitez notre monde du d{\'e}but du XXI{\`e}me si{\`e}cle comme vous ne l'avez jamais r{\'e}ellement vu !~\\~\\
+		Laissez le fantastique, voire l'horreur s'insinuer dans votre voyage !~\\~\\
+		Rencontrez des membres de conspirations myst{\'e}rieuses, dialoguez avec des petits gris, voire rencontrez l'\emph{<<indicible>>} !~\\~\\
+	}
+
+\end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
+	\includegraphics[width=0.95\textwidth]{../img/logo_DG.jpg} ~\\~\\
+	\includegraphics[width=0.95\textwidth]{../img/logo_DG.jpg} ~\\~\\
+	\includegraphics[width=0.95\textwidth]{../img/logo_DG.jpg} ~\\~\\
+\end{minipage} ~\\
+
+\hrule
+
+~\\
 
 \end{document}

@@ -24,3 +24,6 @@ hs_err_pid*
 
 # compilation for java project (locally)
 bin/
+
+**/*.pdf
+**/*.aux
