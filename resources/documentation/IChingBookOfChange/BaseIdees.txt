@@ -1,6 +1,16 @@
 Utilisation des 64 hexagrammes pour les situations à résoudre
 
 Univers Générique
+	Contemporain
+	CyberPunk / Anticipation
+	Fantastique / Fantasy ?
+
+Fiche Personnage
+	8 caractéristiques (Eau, Feu, Air, Terre, Ciel, Éclair, Montagne, Lac) qui changent le tirage
+	Choix totalement aléatoire ou sur première / deuxième partie ; 
+	{ Heaven ; Earth ; Thunder ; Water ; Mountain ; Wind ; Flame ; Lake }
+	TODO préciser idée(s)
+	TODO préciser tirage (facile ?!)
 
 Tirage ? 
 	2d8 ?
