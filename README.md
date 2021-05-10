@@ -27,8 +27,14 @@ Dans les ressources :
 Idée(s) de logiciel(s) utilitaire(s) pour du JdR / Jeu de Rôle : 
   * GTC : Gestionnaire de Table de Convention
     * Gestion des tables de jeux (MJ / Meneur de Jeu) + (Jeu et description) + (nombre de joueurs) ; 
-    * Gestion des inscriptions (système de messagerie / middleware ou inscription manuelle ?) ; 
+    * Gestion des inscriptions (système de messagerie / middleware ou inscription manuelle ?) : utilisation "Apache Kafka" ?! ; 
     * ... 
+  * Génération de personnages (à préciser)
+  * Génération cartographique (génération procédurale)
+  * Génération de scénarios "sur-le-pouce"
+
+## "DM Digital ToolBox" / "Boite à Outils Numérique du MJ"
+
   * Outil préparation de partie / en cours de partie
     * => IHM avec Onglets (Tabs) et appels de fonctions ; (graphique ou ligne de commande) ; 
     * Inspiration "à la volée" (évènement, PNJ, lieu, ...) ; 
@@ -36,5 +42,4 @@ Idée(s) de logiciel(s) utilitaire(s) pour du JdR / Jeu de Rôle :
     * Ajout de données (étapes, scénarios, campagnes, PJ, PNJ, documents de jeu...) ; 
     * Gestion PBtA (?) ou similaire (actions pré-définies ou catégories) ; 
     * Diagramme du scénario / Diagramme campagne en cours ; 
-  * Génération de personnages (à préciser)
 
