@@ -6,7 +6,6 @@ LATEXFILECA=documentPubliciteCyberAge
 ## the local software...
 CCPDFLA=pdflatex
 CCLATEX=latex
-CCBIBTE=bibtex
 CCPDFTE=dvipdf
 CCPSTEX=dvips
 

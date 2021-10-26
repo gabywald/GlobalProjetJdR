@@ -883,48 +883,95 @@ SENTIMENTS MUTUELS - TABLE 6D
 PROFESSION DES AMIS, ENNEMIS ET CONTACTS (TABLE AE&C 1.0)
 
 La table qui suit peut être utilisée par le MJ pour générer des professions aléatoires pour des PNJs et pour étoffer les amis, ennemis et contacts. Suivez les instructions de lancer ou choisissez une entrée et consultez la sous-table comme indiqué. Pour déterminer le sexe du PNJ, tirez 1D10. Résultat impair = masculin, résultat pair = féminin.
-01 - 20 : Emploi légal (Lancer 1D100) :	01 - 06 : Comptable	07 - 13 : Employé (vente ou autre)
-	14 - 19 : Ouvrier du bâtiment	20 - 25 : Coursier
-	26 - 31 : Médecin/Infirmière	32 - 37 : Ingénieur/Technicien
-	38 - 44 : Concierge	45 - 50 : Pilote
-	51 - 56 : Secrétaire	57 - 61 : Scientifique
-	62 - 68 : Travailleur social	69 - 75 : Lycéen
-	76 - 80 : Étudiant	81 - 87 : Professeur, lycée
-	88 - 93 : Professeur, université	94 - 00 : Chauffeur de bus/camion
-21 - 35 : Street Trash (Lancer 1D100) :	01 - 02 : Assassin	03 - 07 : Barman
-	08 - 11 : Garde du corps	12 - 15 : Videur
-	16 - 20 : Chauffeur de taxi	21 - 23 : Escroc
-	24 - 26 : Détenu	27 - 28 : Faussaire
-	29 - 30 : Producteur de drogue	31 - 36 : Dealer
-	37 - 40 : Ex-détenu	41 - 44 : Fixer/Receleur
-	45 - 49 : Membre de gang	50 - 53 : Prostitué(e) (sans licence)
-	54 - 58 : Junkie	59 - 62 : Mercenaire
-	63 - 65 : Netrunner	66 - 69 : Nomade
-	70 - 72 : Prostitué(e) (avec licence)	73 - 74 : Charcudoc
-	75 - 78 : Ronin	79 - 82 : Contrebandier
-	83 - 88 : Vendeur ambulant	89 - 90 : Techie
-	91 - 94 : Voleur/Cambrioleur	95 - 00 : Vagabond
-36 - 50 : Loi/Secours (Lancer 1D100) :	01 - 05 : Chasseur de primes	06 - 20 : Flic (voir sous-table 1.1)
-	21 - 36 : Pompier	37 - 40 : Avocat
-	41 - 55 : Ambulancier	56 - 61 : Gardien de prison
-	62 - 75 : Détective privé	76 - 90 : Vigile
-	91 - 95 : Flic à la retraite (voir sous-table 1.1)	96 - 00 : Milicien
-51 - 65 : Crime Organisé (Lancer 1D10) :	1 : Assassin	2 - 3 : Garde du corps
-	4 : Bookmaker	5 : Faussaire
-	6 - 8 : Homme de main	9 : Petit caïd
+01 - 20 : Emploi légal (Lancer 1D100) :	
+	01 - 06 : Comptable
+	07 - 13 : Employé (vente ou autre)
+	14 - 19 : Ouvrier du bâtiment
+	20 - 25 : Coursier
+	26 - 31 : Médecin/Infirmière
+	32 - 37 : Ingénieur/Technicien
+	38 - 44 : Concierge
+	45 - 50 : Pilote
+	51 - 56 : Secrétaire
+	57 - 61 : Scientifique
+	62 - 68 : Travailleur social
+	69 - 75 : Lycéen
+	76 - 80 : Étudiant
+	81 - 87 : Professeur, lycée
+	88 - 93 : Professeur, université
+	94 - 00 : Chauffeur de bus/camion
+21 - 35 : Street Trash (Lancer 1D100) :	
+	01 - 02 : Assassin
+	03 - 07 : Barman
+	08 - 11 : Garde du corps
+	12 - 15 : Videur
+	16 - 20 : Chauffeur de taxi
+	21 - 23 : Escroc
+	24 - 26 : Détenu
+	27 - 28 : Faussaire
+	29 - 30 : Producteur de drogue
+	31 - 36 : Dealer
+	37 - 40 : Ex-détenu
+	41 - 44 : Fixer/Receleur
+	45 - 49 : Membre de gang
+	50 - 53 : Prostitué(e) (sans licence)
+	54 - 58 : Junkie
+	59 - 62 : Mercenaire
+	63 - 65 : Netrunner
+	66 - 69 : Nomade
+	70 - 72 : Prostitué(e) (avec licence)
+	73 - 74 : Charcudoc
+	75 - 78 : Ronin
+	79 - 82 : Contrebandier
+	83 - 88 : Vendeur ambulant
+	89 - 90 : Techie
+	91 - 94 : Voleur/Cambrioleur
+	95 - 00 : Vagabond
+36 - 50 : Loi/Secours (Lancer 1D100) :
+	01 - 05 : Chasseur de primes
+	06 - 20 : Flic (voir sous-table 1.1)
+	21 - 36 : Pompier
+	37 - 40 : Avocat
+	41 - 55 : Ambulancier
+	56 - 61 : Gardien de prison
+	62 - 75 : Détective privé
+	76 - 90 : Vigile
+	91 - 95 : Flic à la retraite (voir sous-table 1.1)
+	96 - 00 : Milicien
+51 - 65 : Crime Organisé (Lancer 1D10) :
+	1 : Assassin
+	2 - 3 : Garde du corps
+	4 : Bookmaker
+	5 : Faussaire
+	6 - 8 : Homme de main
+	9 : Petit caïd
 	0 : Netrunner (voir sous-table 1.2)	
-66 - 79 : Corporatiste (Lancer 1D10) :	1 : Assassin/Ninja	2 : Police corpo/sécurité
-	3 : Médecin/MedTech	4 - 5 : Employé (de bureau, secrétaire, etc)
-	6 : Cadre intermédiaire	7 : Cadre supérieur
-	8 : Netrunner	9 : Samuraï
+66 - 79 : Corporatiste (Lancer 1D10) :
+	1 : Assassin/Ninja
+	2 : Police corpo/sécurité
+	3 : Médecin/MedTech
+	4 - 5 : Employé (de bureau, secrétaire, etc)
+	6 : Cadre intermédiaire
+	7 : Cadre supérieur
+	8 : Netrunner
+	9 : Samuraï
 	0 : Technicien (voir sous-table 1.3)	
-80 - 89 : Divertissement (Lancer 1D10) :	1 : Acteur	2 - 3 : Artiste
-	4 : Athlète	5 : Disk Jockey
-	6 : Média (voir sous-table 1.4)	7 - 8 : Rocker
-	9 : Danseur	0 : Écrivain
-90 - 00 : Gouvernement (Lancer 1D10) :	1 : Agent du LEDiv (voir sous-table 1.5)	2 : Assassin
-	3 - 6 : Militaire (voir sous-table 1.6)	7 : Netrunner
-	8 : Officiel/Politicien	9 - 0 : Techie
+80 - 89 : Divertissement (Lancer 1D10) :
+	1 : Acteur
+	2 - 3 : Artiste
+	4 : Athlète
+	5 : Disk Jockey
+	6 : Média (voir sous-table 1.4)
+	7 - 8 : Rocker
+	9 : Danseur
+	0 : Écrivain
+90 - 00 : Gouvernement (Lancer 1D10) :
+	1 : Agent du LEDiv (voir sous-table 1.5)
+	2 : Assassin
+	3 - 6 : Militaire (voir sous-table 1.6)
+	7 : Netrunner
+	8 : Officiel/Politicien
+	9 - 0 : Techie
 
 AE&C Sous-table 1.1 - Types de Police
 

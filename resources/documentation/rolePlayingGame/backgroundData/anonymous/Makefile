@@ -2,12 +2,10 @@
 ## naming WITHOUT the extensions [.tex] or [.bib]
 LATEXFILEONE=anonymousTract1
 LATEXFILETWO=anonymousTract2
-# BIBTEFILE=globalnotes
 
 ## the local software...
 CCPDFLA=pdflatex
 CCLATEX=latex
-CCBIBTE=bibtex
 CCPDFTE=dvipdf
 CCPSTEX=dvips
 
@@ -24,41 +22,26 @@ ps : $(LATEXFILEONE).dvi $(LATEXFILETWO).dvi
 clean : mrproper
 	rm $(LATEXFILEONE).log
 	rm $(LATEXFILETWO).log
-	# rm $(LATEXFILEONE).lot
-	# rm $(LATEXFILEONE).lof
-	# rm $(LATEXFILEONE).dvi
-	# rm $(LATEXFILEONE).pdf
 
-mrproper : $(LATEXFILEONE).aux $(LATEXFILETWO).aux # $(LATEXFILE).bbl $(LATEXFILE).blg $(LATEXFILE).toc
+mrproper : $(LATEXFILEONE).aux $(LATEXFILETWO).aux
 	rm $(LATEXFILEONE).aux
 	rm $(LATEXFILETWO).aux
-	# rm $(LATEXFILEONE).toc
-	# rm $(LATEXFILEONE).bbl
-	# rm $(LATEXFILEONE).blg
 	
 
-$(LATEXFILEONE).dvi : $(LATEXFILEONE).tex # $(BIBTEFILE).bib
-	$(CCLATEX) $(LATEXFILEONE).tex
-	# $(CCBIBTE) $(BIBTEFILE)
+$(LATEXFILEONE).dvi : $(LATEXFILEONE).tex
 	$(CCLATEX) $(LATEXFILEONE).tex
 	$(CCLATEX) $(LATEXFILEONE).tex
 	$(CCLATEX) $(LATEXFILEONE).tex
 	
-$(LATEXFILETWO).dvi : $(LATEXFILETWO).tex # $(BIBTEFILE).bib
-	$(CCLATEX) $(LATEXFILETWO).tex
-	# $(CCBIBTE) $(BIBTEFILE)
+$(LATEXFILETWO).dvi : $(LATEXFILETWO).tex
 	$(CCLATEX) $(LATEXFILETWO).tex
 	$(CCLATEX) $(LATEXFILETWO).tex
 	$(CCLATEX) $(LATEXFILETWO).tex
 
-pdflatex : $(LATEXFILEONE).tex $(LATEXFILETWO).tex # $(BIBTEFILE).bib
-	$(CCPDFLA) $(LATEXFILEONE).tex
-	# $(CCBIBTE) $(BIBTEFILE)
+pdflatex : $(LATEXFILEONE).tex $(LATEXFILETWO).tex
 	$(CCPDFLA) $(LATEXFILEONE).tex
 	$(CCPDFLA) $(LATEXFILEONE).tex
 	$(CCPDFLA) $(LATEXFILEONE).tex
-	$(CCPDFLA) $(LATEXFILETWO).tex
-	# $(CCBIBTE) $(BIBTEFILE)
 	$(CCPDFLA) $(LATEXFILETWO).tex
 	$(CCPDFLA) $(LATEXFILETWO).tex
 	$(CCPDFLA) $(LATEXFILETWO).tex
