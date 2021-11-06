@@ -1,0 +1,49 @@
+BEGIN personnae
+CONCEPT Jeune personnage
+NAME Ain Konnu
+IMAGE img/personnageAnonymous.jpg
+TITLE Ain Konnu -- Jeune personnage
+PV 13
+IMPACT 2
+SAN 75
+APP 14
+CON 14
+DEX 9
+FOR 15
+TAI 12
+EDU 19
+INT 11
+POU 15
+BEGIN cyberequipement
+Câblage auditif --- Scanner Radio. 
+END cyberequipement
+BEGIN cailloux
+END cailloux
+AGE 17
+SEXE Indéterminé-e
+PARRAIN BladeRunner
+ARGENT 13000
+DIVERS Dette de Jackeur. 
+METIER BladeRunner
+BEGIN talents
+Armes normales	80
+Connaissance du milieu de la rue	115
+Discrétion	65
+Droit mondial	50
+Filature	80
+END talents
+BEGIN lightbio
+[Gangs] Vous tombez amoureux(se) d'un membre de Gang.  --- Vous trahissez votre liaison. Elle (Il) vous hait. 
+[Divers] Vous participez à une course d'hovertanks. 
+[Yakuza] Un Yakuza a failli vous tuer. Vous essayez de vous venger et tenterez de le tuer s'il croise votre chemin. 
+[Gangs] Vous devenez chef de Gang pendant quelques mois. Vous pouvez faire appel aux anciens membres du Gang. 
+[BladeRunner] Vous faites équipe plusieurs mois avec un(e) BladeRunner.  --- Vous vous fâchez. Vous vous quittez en bons termes. 
+[Jackeur] Un Jackeur a une dette vis-à-vis de vous. Vous pouvez lui demander un service. 
+For Job, max was [380] (EDU*20), used [260], remain [120]
+For Perso, max was [110] (INT*10), used [40], remain [70]
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+

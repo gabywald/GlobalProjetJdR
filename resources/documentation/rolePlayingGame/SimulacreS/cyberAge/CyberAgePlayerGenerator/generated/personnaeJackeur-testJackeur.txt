@@ -1,0 +1,47 @@
+BEGIN personnae
+CONCEPT Jackeur
+NAME test Jackeur
+IMAGE img/personnageAnonymous.jpg
+TITLE Jackeur
+PV 13
+IMPACT 2
+SAN 55
+APP 9
+CON 11
+DEX 13
+FOR 11
+TAI 15
+EDU 15
+INT 10
+POU 11
+BEGIN cyberequipement
+END cyberequipement
+BEGIN cailloux
+END cailloux
+AGE 50
+SEXE Indéterminé-e
+PARRAIN Yakuza
+ARGENT 40000
+DIVERS Dette de Yakuza. Dette de BladeRunner. Dette de Wampire. Dette de Terrorisme Publicitaire. 
+METIER Jackeur
+BEGIN talents
+Connaissance du milieu des Jackeurs	65
+Informatique	50
+Piratage	60
+Recherche sur HyperNet	80
+END talents
+BEGIN lightbio
+[TechnoBloc] Vous vous faites des relations dans votre TechnoBloc. 
+[Rônin] Vous êtes trahi(e) par une Mercenaire. Vous cherchez à vous venger.  --- Cicatrice : Jambe droite. Perte d'une partie ou totalité du membre. Pose d'une prothèse de remplacement. 
+[Yakuza] Un Yakuza a une dette vis-à-vis de vous. Vous pouvez lui demander un service. 
+[BladeRunner] Un BladeRunner a une dette vis-à-vis de vous. Vous pouvez lui demander un service. 
+[Wampire-Rêveur] Un Wampire a une dette vis-à-vis de vous. Vous pouvez lui demander un service. 
+[Network] Un groupe terroriste a une dette vis-à-vis de vous. Vous pouvez lui demander un service. 
+For Job, max was [300] (EDU*20), used [210], remain [90]
+For Perso, max was [100] (INT*10), used [0], remain [100]
+END lightbio 
+BEGIN biography
+END biography
+END personnae
+
+

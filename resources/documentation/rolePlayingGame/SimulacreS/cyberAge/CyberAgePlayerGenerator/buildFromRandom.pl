@@ -11,10 +11,10 @@ my $toShowAllParse = ( (@ARGV >= 1) && ($ARGV[0] eq "show") );
 
 ## ## conf/dataRPG/biographyCyberAge.txt et autres docs du meme répertoire...
 my $dirToRSCfiles	= "../../../../../conf/dataRPG/";
-my $fileTalentsCA	= $dirToRSCfiles."talentsCyberAge.txt";
-my $fileBiograpCA	= $dirToRSCfiles."biographyCyberAge.txt";
-my $fileMetiersCA	= $dirToRSCfiles."metiersEtTalentsCyberAge.txt";
-my $fileEquipmeCA	= $dirToRSCfiles."tableEquipementsCyberAge.txt";
+my $fileTalentsCA	= $dirToRSCfiles."CyberAgeTalents.txt";
+my $fileBiograpCA	= $dirToRSCfiles."CyberAgeBiography.txt";
+my $fileMetiersCA	= $dirToRSCfiles."CyberAgeMetiersEtTalents.txt";
+my $fileEquipmeCA	= $dirToRSCfiles."CyberAgeTableEquipements.txt";
 
 ## open (INPUT, "<".$fileTalentsCA ) or die "File [".$fileTalentsCA."] not found !";
 ## while (my $line = <INPUT>) {
@@ -923,4 +923,4 @@ open (OUTPUT, ">".$outputFile);
 print OUTPUT $personnaeToOuput->toStringPersonnae();
 close OUTPUT;
 
-system( "convertLaTeXChars.pl ".$outputFile);
+system( "./convertLaTeXChars.pl ".$outputFile);
