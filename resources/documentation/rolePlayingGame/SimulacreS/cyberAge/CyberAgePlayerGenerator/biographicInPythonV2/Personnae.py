@@ -86,6 +86,9 @@ class Personnae( object ) :
     str += "END biography" + "\n";
     str += "END personnae" + "\n";
     return str
+  
+  def toStringPersonnae(self):
+    return self.__str__()
 
   def addLightBiography( self, content ):
     self.lightbio.append( content )
