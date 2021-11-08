@@ -86,3 +86,14 @@ class Personnae( object ) :
     str += "END biography" + "\n";
     str += "END personnae" + "\n";
     return str
+
+  def addLightBiography( self, content ):
+    self.lightbio.append( content )
+
+
+
+
+
+
+
+
