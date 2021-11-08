@@ -63,7 +63,7 @@ class Personnae( object ) :
       str += item + "\n"
     str += "END cyberequipement" + "\n";
     str += "BEGIN cailloux" + "\n"
-    for item in cailloux:
+    for item in self.cailloux:
       str += item + "\n"
     str += "END cailloux" + "\n";
     str += "AGE " + self.age + "\n";

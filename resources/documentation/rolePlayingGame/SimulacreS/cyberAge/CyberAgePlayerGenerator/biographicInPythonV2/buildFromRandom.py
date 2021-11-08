@@ -185,15 +185,14 @@ while (validateAttributes == None):
                 elif (secon == "POU"):
                     POU += value
 
-personnaeToOuput.app = APP
-personnaeToOuput.com = CON
-personnaeToOuput.dex = DEX
-personnaeToOuput.force = FOR
-personnaeToOuput.tai = TAI
-personnaeToOuput.edu = EDU
-personnaeToOuput.int = INT
-personnaeToOuput.pou = POU
-
+personnaeToOuput.app = str(APP)
+personnaeToOuput.con = str(CON)
+personnaeToOuput.dex = str(DEX)
+personnaeToOuput.force = str(FOR)
+personnaeToOuput.tai = str(TAI)
+personnaeToOuput.edu = str(EDU)
+personnaeToOuput.int = str(INT)
+personnaeToOuput.pou = str(POU)
 
 ## Etape 3: Autres valeurs
 ## ## Aplomb                = 0
@@ -209,6 +208,35 @@ personnaeToOuput.pou = POU
 ## ## ## ## 25 à 32         +2
 ## ## ## ## 33 à 40         +4
 
+aplomb  = 0;
+SAN     = POU*5;
+print("\t\t SAN: {", SAN, "}")
+PV      = int( (CON + TAI) / 2 );
+if ( (CON + TAI) % 2 == 1):
+    PV += 1
+print("\t\t PV-: {", PV, "}")
+seuilBL   = int( PV / 2 )
+print("\t\t sBL: {", seuilBL, "}")
+impact    = (FOR + TAI);
+
+if ( (impact >=  2) and (impact <= 12) ):
+    impact = "-4"
+elif ( (impact >= 13) and (impact <= 16) ):
+    impact = "-2"
+elif ( (impact >= 17) and (impact <= 24) ):
+    impact = "0"
+elif ( (impact >= 25) and (impact <= 32) ):
+    impact = "+2"
+elif ( (impact >= 33) and (impact <= 40) ):
+    impact = "+4"
+print("\t\t imp: {", impact, "}")
+
+personnaeToOuput.san = str(SAN)
+personnaeToOuput.pv = str(PV)
+personnaeToOuput.impact = impact
+## TODO ++ aplomb 
+## TODO ++ seuil de blessure ?
+
 ## ## ## Competences Métier : EDU*20 (%)
 countJobTalent    = 0;
 countJobMaxims    = EDU*20;
@@ -221,6 +249,20 @@ countPersoMaxims    = INT*10;
 ## ... preparing and function for biographic details
 ## Etape 4: Choisir une occupation : choix métier + répartir EDU*20 (et au moins une à 60%)
 
+
+print("\t **** Sexe ***** "); ## TODO externalize sexes in a configuration file !
+sexes = ( "Indéterminé-e", "Femme", "Homme" );
+for count, elem in enumerate(sexes):
+    print(count, elem)
+
+choice = -1;
+while( not ( (choice >= 0) and (choice <= len(sexes)) ) ):
+	choice = int(input())
+	print("\t\t => [", choice, "]"); 
+					
+selection = sexes[choice];
+print("\t\t Selected {", selection, "}")
+personnaeToOuput.sexe = selection
 
 name = None
 while( (name == None) or (name == "") ):
