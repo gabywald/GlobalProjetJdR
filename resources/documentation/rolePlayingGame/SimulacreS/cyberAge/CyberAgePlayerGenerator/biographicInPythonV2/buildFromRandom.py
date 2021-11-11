@@ -21,12 +21,10 @@ biotables = BiographicDataLoad.loadBiographicsTables()
 jobs = BiographicDataLoad.loadJobsToSkills()
 skills = BiographicDataLoad.loadSkills()
 
-numberOfResults = 10
-
-res = selectBiographicElements( numberOfResults )
-
-for elt in res : 
-    print( "%s " %( elt.contents[1] ) )
+## numberOfResults = 10
+## res = selectBiographicElements( numberOfResults )
+## for elt in res : 
+##     print( "%s " %( elt.contents[1] ) )
 
 ## Créer personnae + comparer avec script initial en Perl
 personnaeToOuput = Personnae()
@@ -40,6 +38,32 @@ while( (concept == None) or (concept == "") ):
 
 personnaeToOuput.concept = concept
 personnaeToOuput.title = concept
+
+## Sexe / genre  
+print("\t **** Sexe ***** "); ## TODO externalize sexes in a configuration file !
+sexes = ( "Indéterminé-e", "Femme", "Homme" );
+for count, elem in enumerate(sexes):
+    print(count, elem)
+
+choice = -1;
+while( not ( (choice >= 0) and (choice <= len(sexes)) ) ):
+    choice = int(input())
+    print("\t\t => [", choice, "]"); 
+
+selection = sexes[choice];
+print("\t\t Selected {", selection, "}")
+personnaeToOuput.sexe = selection
+
+## Nom
+name = None
+while( (name == None) or (name == "") ):
+    print("\t **** Nom ***** ")
+    name = str(input())
+    name = name.strip()
+    print("\t\t Nom: {", name, "}")
+
+personnaeToOuput.name = name
+
 ## Etape 2: Scores de caractéristiques
 ## ## Caractéristiques    Score     Dérivée
 ## ## Apparence           3D6       Prestance       = APP x5%
@@ -97,10 +121,15 @@ while (validateAttributes == None):
     print( "\t Valider ? [y/N]")
     validateAttributes = str(input());
     validateAttributes = validateAttributes.strip()
+    if ( (validateAttributes == "Y") or (validateAttributes == "y") ):
+        validateAttributes = "y"
+    else:
+        validateAttributes = "N"
     print("\t\t Validation: {" + validateAttributes + "}")
     
     attributesDetection = "(APP|CON|DEX|FOR|TAI|EDU|INT|POU)";
-    if ( (validateAttributes != "Y") and (validateAttributes != "y") ):
+    if ( validateAttributes != "y" ):
+        validateAttributes = None
         print("\t Nouveau tirage ? [All|XXX|n]")
         newTirage = str(input());
         newTirage = newTirage.strip()
@@ -249,29 +278,42 @@ countPersoMaxims    = INT*10;
 ## ... preparing and function for biographic details
 ## Etape 4: Choisir une occupation : choix métier + répartir EDU*20 (et au moins une à 60%)
 
+print("\t **** Age de base ***** ")
+validateAge = None;
+while ( validateAge == None ):
+    tirageAge = random.randint(1, 6)
+    if (tirageAge == 1):
+        age           = 12 + random.randint(1, 16-12+1);
+        argent        = random.randint(1, 6)*2000;
+        count4biog    = 3;
+    elif ( (tirageAge == 2) or (tirageAge == 3) ):
+        age           = 17 + random.randint(1, 30-17+1);
+        argent        = random.randint(1, 6)*1000 + 10000;
+        count4biog    = 6; 
+    elif ( (tirageAge == 4) or (tirageAge == 5) ):
+        age           = 30 + random.randint(1, 50-30+1);
+        argent        = random.randint(1, 6)*2000 + 30000;
+        count4biog    = 6;
+    elif (tirageAge == 6):
+        age           = 50 + random.randint(1, 20);
+        argent        = random.randint(1, 6)*2000 + 5000;
+        count4biog    = 8;
+    
+    print("\t\t Age: ", age, " ans. ")
+    print("\t\t Fortune: ", argent, " euros. ")
+    
+    if (age < (EDU+6)):
+        print("\t WARN \"Age < (EDU+6)\" ! => [", age, "] < [", (EDU+6), "] WARN !")
+    
+    print("\t Valider ? [y/N]")
+    validateAge = str(input()).strip()
+    if ( (validateAge == "Y") or (validateAge == "y") ):
+        validateAge = "Y"
+    else:
+        validateAge = None
 
-print("\t **** Sexe ***** "); ## TODO externalize sexes in a configuration file !
-sexes = ( "Indéterminé-e", "Femme", "Homme" );
-for count, elem in enumerate(sexes):
-    print(count, elem)
-
-choice = -1;
-while( not ( (choice >= 0) and (choice <= len(sexes)) ) ):
-	choice = int(input())
-	print("\t\t => [", choice, "]"); 
-					
-selection = sexes[choice];
-print("\t\t Selected {", selection, "}")
-personnaeToOuput.sexe = selection
-
-name = None
-while( (name == None) or (name == "") ):
-    print("\t **** Nom ***** ")
-    name = str(input())
-    name = name.strip()
-    print("\t\t Nom: {", name, "}")
-
-personnaeToOuput.name = name
+personnaeToOuput.age = str(age)
+personnaeToOuput.argent = str(argent) ## NOTE : can be modified later !!
 
 ## Etape 5: Les Compétences d'intérêts personnels (INT*10% ailleurs) => indiquer valeur
 remain4job = "For Job, max was [" + str(countJobMaxims) + "] (EDU*20), used [" + str(countJobTalent) + "], remain [" + str(countJobMaxims - countJobTalent) + "]";
