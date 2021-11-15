@@ -78,10 +78,10 @@ class Personnae( object ) :
     str += "END talents" + "\n";
     str += "BEGIN lightbio" + "\n";
     for item in self.lightbio:
-      str += item.toString() + "\n"
+      str += item + "\n"
     str += "END lightbio " + "\n";
     str += "BEGIN biography" + "\n";
-    for item in biography:
+    for item in self.biography:
       str += item + "\n"
     str += "END biography" + "\n";
     str += "END personnae" + "\n";

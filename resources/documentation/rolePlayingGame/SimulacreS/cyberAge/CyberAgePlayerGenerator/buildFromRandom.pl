@@ -414,7 +414,7 @@ for my $metier (keys %metiers) {
 ## my %moreEquCom	= (); ## ajout équipement ; ajout talent lié à un métier ; ...
 my @debtsFrom	= (); ## dettes redevables
 my @debtsToTo	= (); ## dettes que l'on doit
-my @equipments	= ();
+my @cyberequips	= ();
 my @cailloux	= ();
 my @programmes	= ();
 my $argent		= 0;  ## DONE argent de base ?
@@ -586,10 +586,10 @@ for my $bioELT (@biographicElements) {
 					$validateBE = <STDIN>;
 					chomp($validateBE);
 				} while( ($validateBE eq "N") || ($validateBE eq "n") );
-				push (@equipments, $be->toString());
+				push (@cyberequips, $be->toString());
 			} ## END "elsif ($first eq "EquipementCybernetique=*")"
 			elsif ($addin eq "EquipementCybernetique=BrocheTypeC") 
-				{ push (@equipments, "Broche de Type C"); }
+				{ push (@cyberequips, "Broche de Type C"); }
 			elsif ($addin eq "cablage=*[except total]") {
 				my @cablages = ();
 				push (@cablages, $equipments{"Cablage-de-combat"}->getCONTENTS() );
@@ -611,7 +611,7 @@ for my $bioELT (@biographicElements) {
 				} while( ! ( ($choice > 0) && ($choice <= $i) ) );				
 				my $selection = $cablages[$choice-1];
 				print "\t\t Selected {".$selection."}\n";
-				push (@equipments, $selection);
+				push (@cyberequips, $selection);
 			} ## END "elsif ($first eq "cablage=*[except total]")"
 
 			elsif ($addin eq "Cailloux=Onirogramme[6]") 
@@ -652,7 +652,7 @@ for my $bioELT (@biographicElements) {
 	} ## END "for my $addin (@addins)"
 } ## for my $bioELT (@biographicElements)
 
-$personnaeToOuput->addCyberEquipments( @equipments );
+$personnaeToOuput->addCyberEquipments( @cyberequips );
 $personnaeToOuput->addCailloux( @cailloux );
 $personnaeToOuput->addProgrammes( @programmes );
 my $divers = "";

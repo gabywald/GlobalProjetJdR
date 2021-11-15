@@ -91,6 +91,7 @@ class BiographicSkill( object ) :
         self.name = name
         self.level = level
         self.possibilities = possibilities
+        self.__percentValues__()
     
     def __str__(self) : 
         """BiographicSkill to str. """
@@ -99,7 +100,12 @@ class BiographicSkill( object ) :
         str += "\t level: %s \n" % (self.level)
         str += "\t possibilities: %s \n" % (self.possibilities)
         return str
-
+    
+    def __percentValues__(self):
+        replacer = {"X" : 0, "-4" : 15, "-2" : 30, "0" : 50, "1" : 60, "2" : 80 }
+        for elt in replacer.keys():
+            if (self.level == elt):
+                self.level = replacer[ elt ]
 
 def choiceWithIn(i: int):
     choice = 0
@@ -116,9 +122,10 @@ def choiceWithIn(i: int):
 
 
 def addToGreatTalent(talents: dict, greatTales: dict, selection, initValue, addValues, jobOrPerso = 0):
+    ## print ( selection, ":", initValue, ":", addValues, ":", jobOrPerso )
     if ( (selection in talents) or ( not selection in greatTales) ):
         values        = talents[ selection ]
-        initValDef    = values[0].level
+        initValDef    = values.level
         greatTales[ selection ] = initValDef
         print("\t\t Selected {", selection, "} setted at ", initValDef, "\% (initial / base)")
     ## ... 

@@ -42,12 +42,13 @@ personnaeToOuput.title = concept
 ## Sexe / genre  
 print("\t **** Sexe ***** "); ## TODO externalize sexes in a configuration file !
 sexes = ( "Indéterminé-e", "Femme", "Homme" );
-for count, elem in enumerate(sexes):
-    print(count, elem)
+i = 0;
+for sex in sexes:
+    print("\t\t (", (i+1), ")-{", sex, "}")
+    i += 1
+choice = BiographicDataLoadAndSelect.choiceWithIn(i)
 
-choice = BiographicDataLoadAndSelect.choiceWithIn(len(sexes))
-
-selection = sexes[choice];
+selection = sexes[choice-1];
 print("\t\t Selected {", selection, "}")
 personnaeToOuput.sexe = selection
 
@@ -326,20 +327,26 @@ while (len(biographicElements) < count4biog):
 
 bdl = BiographicDataLoad()
 
-allowedJob = {}
-metiers    = bdl.loadJobsToSkills() ## {}
-talents    = bdl.loadSkills() ## {}
-godfathers = {}
-greatTales = {}
-equipments = []
-cailloux   = []
-programmes = []
-debtsToTo  = []
-debtsFrom  = []
+allowedJob  = {}
+metiers     = bdl.loadJobsToSkills() ## {}
+talents     = bdl.loadSkills() ## {}
+equipments  = bdl.loadEquipmentTables() ## {}
+godfathers  = {}
+greatTales  = {}
+cyberequips = []
+cailloux    = []
+programmes  = []
+debtsToTo   = []
+debtsFrom   = []
+
+for metier in metiers.keys():
+    allowedJob[ metier ] = 0
+    godfathers[ metier ] = 0
+
 print("\t **** Biographie ++ processing ***** ");
 for bioELT in biographicElements:
     print("\t\t ", bioELT.toString() )
-    personnaeToOuput.lightbio.append( bioELT );
+    personnaeToOuput.lightbio.append( bioELT.toString() );
     addins = bioELT.addins
     for addin in addins:
         print("\t\t\t [", addin, "]" )
@@ -427,13 +434,13 @@ for bioELT in biographicElements:
                     print("\t Gain équipement: {", be.toString(), "}")
                     print("\t Conserver ? [Y/n]")
                     validateBE = str(input())
-                equipments.append( be )
+                cyberequips.append( be )
             elif (addin == "EquipementCybernetique=BrocheTypeC"): 
-                equipments.append( "Broche de Type C" )
+                cyberequips.append( "Broche de Type C" )
             elif (addin == "cablage=*[except total]"):
                 cablages = []
-                cablages.append( equipments[ "Cablage-de-combat" ].contents )
-                cablages.append( equipments[ "Cablage-auditif"].contents )
+                cablages.extend( equipments[ "Cablage-de-combat" ].contents )
+                cablages.extend( equipments[ "Cablage-auditif"].contents )
                 print("\t\t ***** Choix parmi : ")
                 i = 0;
                 for comp in cablages: 
@@ -442,7 +449,7 @@ for bioELT in biographicElements:
                 choice = BiographicDataLoadAndSelect.choiceWithIn(i)
                 selection = cablages[ choice - 1 ];
                 print("\t\t Selected {", selection, "}")
-                equipments.append( selection )
+                cyberequips.append( selection )
             elif (addin == "Cailloux=Onirogramme[6]"): 
                 cailloux.append("Onirogramme[6]")
             elif (addin == "EquilibrePsychique-=1"):
@@ -483,15 +490,15 @@ for debtFr in debtsFrom:
     divers += "Dette de " + debtFr + ". "
 if (divers == ""):
     divers = "---"
-personnaeToOuput;divers = divers
+personnaeToOuput.divers = divers
 personnaeToOuput.argent = str(argent)
 
 print("\t **** Choix Parrain ***** ")
 possibleGDs = [];
 for keyGD in (sorted(godfathers.keys())):
-    print("\t\t {", keyGD, "}\t(", godfathers[ keyGD], ")")
     localCount = godfathers[ keyGD ]
     if (localCount > 0): 
+        print("\t\t {", keyGD, "}\t(", godfathers[ keyGD], ")")
         possibleGDs.append( keyGD )
 
 if (len(possibleGDs) > 0):
@@ -508,13 +515,83 @@ else:
     print("\t Pas de choix possible !")
     personnaeToOuput.parrain = "---"
 
-print("\t **** Compilation talents / compétences ***** ")
-talentsProjection = ();
-for talentName in (sorted(greatTales.keys())): 
-	talentsProjection.append(talentName + "\t" + greatTales[ talentName ])
-	
-personnaeToOuput.talents.append( talentsProjection )
+## METIER
+print("\t **** Choix métier + talents / compétences ***** ")
+possibleJOBs = []
+for keyJOB in (sorted(allowedJob.keys())):
+    localCount = allowedJob[ keyJOB ]
+    if (localCount > 0):
+        print("\t\t {", keyJOB, "} recommended (", localCount, "). ")
+        possibleJOBs.append( keyJOB ) 
+    elif (localCount < 0): 
+        print("\t\t {", keyJOB, "} not permitted (", localCount, "). ")
 
+if (len(possibleJOBs) == 0):
+    for keyJOB in (sorted(allowedJob.keys())):
+        localCount = allowedJob[ keyJOB ]
+        if (localCount >= 0): 
+            possibleJOBs.append( keyJOB ) 
+
+if (len(possibleJOBs) >= 0):
+    i = 0
+    for job in possibleJOBs:
+        print("\t\t (", (i+1), ")-{", job, "}")
+        i += 1
+    choice = BiographicDataLoadAndSelect.choiceWithIn(i)               
+    selection = possibleJOBs[choice-1];
+    print("\t\t Selected {", selection, "}")
+    personnaeToOuput.metier = selection 
+    
+    ## appliquer talents (!! CyberTek : choisir compétences) choix de la compétence à 70% !
+    CTcomps = []
+    if (selection == "CyberTek"):
+        tmpComps = metiers[ selection ].skills
+        CTcomps = []
+        while (len(CTcomps) < 4):
+            print("\t **** CyberTek : Choisir quatre compétences ! (", len(CTcomps), "/4)")
+            i = 0;
+            for comp in tmpComps: 
+                print("\t\t (", (i+1), ")-{", comp, "}")
+                i += 1
+            choice = BiographicDataLoadAndSelect.choiceWithIn(i)                 
+            selectedComp = tmpComps[choice-1];
+            print("\t\t Selected {", selectedComp, "}")
+            CTcomps.append( selectedComp )
+    
+    competences = []
+    if (selection == "CyberTek"):
+        competences = CTcomps
+    else:
+        competences = metiers[ selection ].skills
+    print("\t **** Compétence majeure ? ")
+    i = 0;
+    for comp in competences: 
+        print("\t\t (", (i+1), ")-{", comp, "}")
+        i += 1
+    choice = BiographicDataLoadAndSelect.choiceWithIn(i)               
+    selectedComp = competences[choice-1];
+    print("\t\t Selected {", selectedComp, "}")
+    
+    BiographicDataLoadAndSelect.addToGreatTalent(talents, greatTales, selectedComp, 60, 60, 1) ## +20%
+    countJobTalent += 60;
+    ## 'majeure' à 60% : autres à 50%
+    for comp in competences:
+        if (comp != selectedComp):
+            BiographicDataLoadAndSelect.addToGreatTalent(talents, greatTales, selectedComp, 50, 50, 1) ## +10%
+            countJobTalent += 50;
+        else:
+            print("...")
+        
+else:
+    print("\t Pas de choix possible !")
+    personnaeToOuput.metier( "--- ??" )
+
+print("\t **** Compilation talents / compétences ***** ")
+talentsProjection = []
+for talentName in (sorted(greatTales.keys())): 
+    talentsProjection.append(talentName + "\t" + str(greatTales[ talentName ]))
+    
+personnaeToOuput.talents.extend( talentsProjection )
 
 ## Etape 5: Les Compétences d'intérêts personnels (INT*10% ailleurs) => indiquer valeur
 remain4job = "For Job, max was [" + str(countJobMaxims) + "] (EDU*20), used [" + str(countJobTalent) + "], remain [" + str(countJobMaxims - countJobTalent) + "]";
@@ -528,16 +605,16 @@ print( remain4per )
 
 ## Etape 6: Finitions
 import os
-if not os.path.exists("generated"):
-    os.makedirs("generated")
+if not os.path.exists("../generated"):
+    os.makedirs("../generated")
 
 outputFile = concept + "-" + name;
 outputFile = re.sub(" ", "", outputFile)
-outputFile = "generated/personnae" + outputFile + ".txt";
+outputFile = "../generated/personnae" + outputFile + ".txt";
 with open(outputFile, "w", encoding = "utf-8") as file:
     file.write( personnaeToOuput.toStringPersonnae() )
 
-os.system( "./convertLaTeXChars.pl " + outputFile);
+os.system( "../convertLaTeXChars.pl " + outputFile);
 
 ## ## ## ...
 
