@@ -181,6 +181,7 @@ if ($toShowAllParse) {
 	getc();
 } ## "if ($toShowAllParse)"
 
+
 my $personnaeToOuput = new Personnae();
 
 ## Etape 1: Imaginer un concept
@@ -196,6 +197,35 @@ do {
 } while ( (defined $concept) && ($concept eq "") ); 
 $personnaeToOuput->setConcept( $concept );
 $personnaeToOuput->setTitle( $concept );
+
+my $name = undef;
+do {
+	print "\t **** Nom ***** \n";
+	$name = <STDIN>;
+	chomp($name);
+	print "\t\t NOM: {".$name."}\n";
+} while ( (defined $name) && ($name eq "") ); 
+$personnaeToOuput->setName( $name );
+
+print "\t **** Sexe ***** \n";
+my @sexes = ( "Indéterminé-e", "Femme", "Homme" );
+my $i = 0;
+for my $sexe (@sexes) 
+	{ print "\t\t (".($i+1).")-{".$sexe."}\n";$i++; }
+my $choice = 0;
+do { 
+	print "\t\t [1-".($i)."]?";
+	$choice = <STDIN>;
+	chomp($choice);
+	if ( ($choice eq '0') || ($choice eq '') ) { $choice = '0'; }
+	$choice = int($choice) or $choice = -1;
+	## print "\t\t => [".$choice."] => {".$select."}\n";
+	print "\t\t => [".$choice."]\n"; 
+} while( ! ( ($choice > 0) && ($choice <= $i) ) );				
+my $selection = $sexes[$choice-1];
+print "\t\t Selected {".$selection."}\n";
+$personnaeToOuput->setSexe( $selection );
+
 ## Etape 2: Scores de caractéristiques
 ## ## Caractéristiques	Score 	Dérivée
 ## ## Apparence			3D6 	Prestance		= APP x5%
@@ -384,7 +414,7 @@ for my $metier (keys %metiers) {
 ## my %moreEquCom	= (); ## ajout équipement ; ajout talent lié à un métier ; ...
 my @debtsFrom	= (); ## dettes redevables
 my @debtsToTo	= (); ## dettes que l'on doit
-my @equipments	= ();
+my @cyberequips	= ();
 my @cailloux	= ();
 my @programmes	= ();
 my $argent		= 0;  ## DONE argent de base ?
@@ -424,107 +454,6 @@ do {
 } while( ($validateAge ne "Y") && ($validateAge ne "y") );
 
 ## my @moreTalents = ();
-sub getARandomElementBIOGRAPHIC {
-	my $orientation	= $biographics{"d'Orientation"};
-	my $be			= undef;
-	do {
-		my @content	= $orientation->getCONTENTS();
-		my @addins	= $orientation->getADDINS();
-		my @links	= $orientation->getLINKSTO();
-		my $rand	= int(rand(@content));
-		my $content	= $content[$rand];
-		my $addin	= $addins[$rand];
-		my $link	= $links[$rand];
-		
-		## print "\t'".$content."'\t'".$link."'\t'".$addin."'\n";
-		
-		if ( ! defined $be) { 
-			$be = new BiographicElement();
-			$be->setCONTENT( $content );
-			if ($addin ne "") { $be->addADDINS( split(';', $addin) ); }
-		} else {
-			$be->addCONTENT( $content );
-			if ($addin ne "") { $be->addADDINS( split(';', $addin) ); }
-		}
-		
-		if ($link ne "") {
-			if ($link eq "Cicatrices") {
-				$orientation	= $biographics{ "Cicatrices-localisation" };
-				@content		= $orientation->getCONTENTS();
-				$rand			= int(rand(@content));
-				$content		= "Cicatrice : ".$content[$rand];
-				
-				$orientation	= $biographics{ "Cicatrices-gravité" };
-				@content		= $orientation->getCONTENTS();
-				$rand			= int(rand(@content));
-				$content		.= $content[$rand];
-				
-				$be->addCONTENT( $content );
-				$orientation = undef;
-			} else { $orientation = $biographics{ $link }; }
-		} ## END "if ($link ne "")"
-		else { $orientation = undef; }
-	} while (defined $orientation);
-	return $be;
-}
-
-sub getARandomElementEQUIPMENT {
-	my $orientation	= $equipments{"Equipement"};
-	my $be			= undef;
-	do {
-		my @content	= $orientation->getCONTENTS();
-		my @addins	= $orientation->getADDINS();
-		my @links	= $orientation->getLINKSTO();
-		my $rand	= int(rand(@content));
-		my $content	= $content[$rand];
-		my $addin	= $addins[$rand];
-		my $link	= $links[$rand];
-		
-		## print "\t'".$content."'\t'".$link."'\t'".$addin."'\n";
-		
-		if ( ! defined $be) { 
-			$be = new BiographicElement();
-			$be->setCONTENT( $content );
-			if ($addin ne "") { $be->addADDINS( split(';', $addin) ); }
-		} else {
-			$be->addCONTENT( $content );
-			if ($addin ne "") { $be->addADDINS( split(';', $addin) ); }
-		}
-		
-		if ($link ne "") 
-			{ $orientation = $equipments{ $link }; }
-		else { $orientation = undef; }
-	} while (defined $orientation);
-	return $be;
-}
-
-sub addToGreatTalent {
-	my $selection	= shift;
-	my $initValue	= shift;
-	my $addValues	= shift;
-	my $jobOrPerso	= shift;
-	
-	if ( (defined $talents{$selection}) 
-			&& ( ! defined $greatTales{$selection}) ) {
-		my @values		= @{$talents{$selection}};
-		my $initValDef	= $values[0];
-		$greatTales{$selection} = $initValDef;
-		print "\t\t Selected {".$selection."} setted at ".$initValDef."% (initial / base)\n";
-	} ## END "if (defined $talents{$talent})"
-	
-	if (defined $greatTales{$selection}) {
-		print "\t\t Selected {".$selection."} +".$addValues."%\n";
-		$greatTales{$selection} += $addValues;
-	} else { 
-		print "\t\t Selected {".$selection."} setted at ".$initValue."%\n";
-		$greatTales{$selection} = $initValue;
-	}
-	
-	if ( (defined $jobOrPerso) && ($jobOrPerso == 1) )
-		{ $countJobTalent += $addValues; }
-	else
-		{ $countPersoTalent += $addValues; }
-}
 
 print "\t **** Biographie ***** \n";
 ## my $limit = $count4biog; ## 10; ## TODO fct(age) cf. plus haut / bas
@@ -532,7 +461,7 @@ print "\t **** Biographie ***** \n";
 ## 	{ print &getARandomElement(); }
 my @biographicElements = ();
 do {
-	my $beToShowKeep = &getARandomElementBIOGRAPHIC();
+	my $beToShowKeep = &BiographicElement::getARandomElementBIOGRAPHIC(\%biographics);
 	print "\t\t ".$beToShowKeep->toString()."\n";
 	print "\t Conserver ? [Y/n]";
 	my $validateBio = <STDIN>;
@@ -589,7 +518,7 @@ for my $bioELT (@biographicElements) {
 						print "\t\t [1-".($i)."]?";
 						$choice = <STDIN>;
 						chomp($choice);
-						if ($choice eq '0') { $choice = 0; }
+						if ( ($choice eq '0') || ($choice eq '') ) { $choice = '0'; }
 						$choice = int($choice) or $choice = -1;
 						## print "\t\t => [".$choice."] => {".$select."}\n";
 						print "\t\t => [".$choice."]\n"; 
@@ -601,7 +530,8 @@ for my $bioELT (@biographicElements) {
 					} while( ! ( ($choice > 0) && ($choice <= $i) ) );				
 					my $selection = $competences[$choice-1];
 					
-					&addToGreatTalent($selection, 50, 10);
+					&BiographicElement::addToGreatTalent(\%talents, \%greatTales, $selection, 50, 10);
+					$countPersoTalent += 50;
 				} ## END "if (@competences > 0)"
 			} ## END "if ($first eq "talent")"
 			elsif ($first eq "debtTo") {
@@ -650,20 +580,20 @@ for my $bioELT (@biographicElements) {
 				my $be			= undef;
 				my $validateBE	= undef;
 				do {
-					$be = &getARandomElementEQUIPMENT();
+					$be = &BiographicElement::getARandomElementEQUIPMENT(\%equipments);
 					print "\t Gain équipement: {".$be->toString()."}\n";
 					print "\t Conserver ? [Y/n]";
 					$validateBE = <STDIN>;
 					chomp($validateBE);
 				} while( ($validateBE eq "N") || ($validateBE eq "n") );
-				push (@equipments, $be->toString());
+				push (@cyberequips, $be->toString());
 			} ## END "elsif ($first eq "EquipementCybernetique=*")"
 			elsif ($addin eq "EquipementCybernetique=BrocheTypeC") 
-				{ push (@equipments, "Broche de Type C"); }
+				{ push (@cyberequips, "Broche de Type C"); }
 			elsif ($addin eq "cablage=*[except total]") {
 				my @cablages = ();
-				push (@cablages, @{$equipments{"Cablage-de-combat"}});
-				push (@cablages, @{$equipments{"Cablage-auditif"}});
+				push (@cablages, $equipments{"Cablage-de-combat"}->getCONTENTS() );
+				push (@cablages, $equipments{"Cablage-auditif"}->getCONTENTS() );
 				
 				print "\t\t ***** Choix parmi : \n";
 				my $i = 0;
@@ -674,14 +604,14 @@ for my $bioELT (@biographicElements) {
 					print "\t\t [1-".($i)."]?";
 					$choice = <STDIN>;
 					chomp($choice);
-					if ($choice eq '0') { $choice = 0; }
+					if ( ($choice eq '0') || ($choice eq '') ) { $choice = '0'; }
 					$choice = int($choice) or $choice = -1;
 					## print "\t\t => [".$choice."] => {".$select."}\n";
 					print "\t\t => [".$choice."]\n"; 
 				} while( ! ( ($choice > 0) && ($choice <= $i) ) );				
 				my $selection = $cablages[$choice-1];
 				print "\t\t Selected {".$selection."}\n";
-				push (@equipments, $selection);
+				push (@cyberequips, $selection);
 			} ## END "elsif ($first eq "cablage=*[except total]")"
 
 			elsif ($addin eq "Cailloux=Onirogramme[6]") 
@@ -703,27 +633,26 @@ for my $bioELT (@biographicElements) {
 			} ## END "elsif ($addin eq "Esprit-=1")"
 			elsif ($addin eq "ConnaissanceMedias=+1") { 
 				my $compet = "Connaissance des Médias";
-				&addToGreatTalent($compet, 30, 30);
+				&BiographicElement::addToGreatTalent(\%talents, \%greatTales, $compet, 30, 30);
+				$countPersoTalent += 30;
 			} ## END "elsif ($addin eq "ConnaissanceMedias=+1")"
 			elsif ($addin eq "Onirisme=+1") { 
 				my $compet = "Onirisme";
-				&addToGreatTalent($compet, 30, 30);
+				&BiographicElement::addToGreatTalent(\%talents, \%greatTales, $compet, 30, 30);
+				$countPersoTalent += 30;
 			} ## END "elsif ($addin eq "Onirisme=+1")"
 			elsif ($addin eq "Onirisme=+2") { 
 				my $compet = "Onirisme";
-				&addToGreatTalent($compet, 60, 60);
+				&BiographicElement::addToGreatTalent(\%talents, \%greatTales, $compet, 60, 60);
+				$countPersoTalent += 60;
 			} ## END "elsif ($addin eq "Onirisme=+2")"
-			elsif ($addin eq "Cailloux=Onirogramme[6]") 
-				{ push (@cailloux, "6 cailloux d'Onirogramme. "); }
-			## ## DONE "EquilibrePsychique-=1"
-			## ## TODO "Onirisme=+1"
 			else 
 				{ print "TODO PARSE {[".$addin."]} !!!!! \n"; }
 		}
 	} ## END "for my $addin (@addins)"
 } ## for my $bioELT (@biographicElements)
 
-$personnaeToOuput->addCyberEquipments( @equipments );
+$personnaeToOuput->addCyberEquipments( @cyberequips );
 $personnaeToOuput->addCailloux( @cailloux );
 $personnaeToOuput->addProgrammes( @programmes );
 my $divers = "";
@@ -755,7 +684,7 @@ if (@possibleGDs > 0) {
 		print "\t\t [1-".($i)."]?";
 		$choice = <STDIN>;
 		chomp($choice);
-		if ($choice eq '0') { $choice = 0; }
+		if ( ($choice eq '0') || ($choice eq '') ) { $choice = '0'; }
 		$choice = int($choice) or $choice = -1;
 		## print "\t\t => [".$choice."] => {".$select."}\n";
 		print "\t\t => [".$choice."]\n"; 
@@ -800,7 +729,7 @@ if (@possibleJOBs > 0) {
 		print "\t\t [1-".($i)."]?";
 		$choice = <STDIN>;
 		chomp($choice);
-		if ($choice eq '0') { $choice = 0; }
+		if ( ($choice eq '0') || ($choice eq '') ) { $choice = '0'; }
 		$choice = int($choice) or $choice = -1;
 		## print "\t\t => [".$choice."] => {".$select."}\n";
 		print "\t\t => [".$choice."]\n"; 
@@ -823,7 +752,7 @@ if (@possibleJOBs > 0) {
 				print "\t\t [1-".($i)."]?";
 				$choice = <STDIN>;
 				chomp($choice);
-				if ($choice eq '0') { $choice = 0; }
+				if ( ($choice eq '0') || ($choice eq '') ) { $choice = '0'; }
 				$choice = int($choice) or $choice = -1;
 				## print "\t\t => [".$choice."] => {".$select."}\n";
 				print "\t\t => [".$choice."]\n"; 
@@ -844,7 +773,7 @@ if (@possibleJOBs > 0) {
 		print "\t\t [1-".($i)."]?";
 		$choice = <STDIN>;
 		chomp($choice);
-		if ($choice eq '0') { $choice = 0; }
+		if ( ($choice eq '0') || ($choice eq '') ) { $choice = '0'; }
 		$choice = int($choice) or $choice = -1;
 		## print "\t\t => [".$choice."] => {".$select."}\n";
 		print "\t\t => [".$choice."]\n"; 
@@ -852,11 +781,13 @@ if (@possibleJOBs > 0) {
 	my $selectedComp = $competences[$choice-1];
 	print "\t\t Selected {".$selectedComp."}\n";
 	
-	&addToGreatTalent($selectedComp, 60, 60, 1); ## +20%
+	&BiographicElement::addToGreatTalent(\%talents, \%greatTales, $selectedComp, 60, 60, 1); ## +20%
+	$countJobTalent += 60;
 	## 'majeure' à 60% : autres à 50%
 	for my $comp (@competences) {
 		if ($comp ne $selectedComp) {
-			&addToGreatTalent($comp, 50, 50, 1); ## +10%
+			&BiographicElement::addToGreatTalent(\%talents, \%greatTales, $comp, 50, 50, 1); ## +10%
+			$countJobTalent += 50;
 		} ## END "if ($comp ne $selectedComp)"
 		else { print "..."; }
 	} ## END "for my $comp (@competences)"
@@ -871,34 +802,6 @@ my @talentsProjection = ();
 for my $talentName (sort(keys(%greatTales))) 
 	{ push(@talentsProjection, $talentName."\t".$greatTales{$talentName}); }
 $personnaeToOuput->addTalents( @talentsProjection );
-
-print "\t **** Sexe ***** \n";
-my @sexes = ( "Indéterminé-e", "Femme", "Homme" );
-my $i = 0;
-for my $sexe (@sexes) 
-	{ print "\t\t (".($i+1).")-{".$sexe."}\n";$i++; }
-my $choice = 0;
-do { 
-	print "\t\t [1-".($i)."]?";
-	$choice = <STDIN>;
-	chomp($choice);
-	if ($choice eq '0') { $choice = 0; }
-	$choice = int($choice) or $choice = -1;
-	## print "\t\t => [".$choice."] => {".$select."}\n";
-	print "\t\t => [".$choice."]\n"; 
-} while( ! ( ($choice > 0) && ($choice <= $i) ) );				
-my $selection = $sexes[$choice-1];
-print "\t\t Selected {".$selection."}\n";
-$personnaeToOuput->setSexe( $selection );
-
-my $name = undef;
-do {
-	print "\t **** Nom ***** \n";
-	$name = <STDIN>;
-	chomp($name);
-	print "\t\t NOM: {".$name."}\n";
-} while ( (defined $name) && ($name eq "") ); 
-$personnaeToOuput->setName( $name );
 
 ## Etape 5: Les Compétences d'intérêts personnels (INT*10% ailleurs) => indiquer valeur
 my $remain4job = "For Job, max was [".$countJobMaxims."] (EDU*20), used [".$countJobTalent."], remain [".($countJobMaxims - $countJobTalent)."]";

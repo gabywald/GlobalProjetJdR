@@ -63,7 +63,7 @@ class Personnae( object ) :
       str += item + "\n"
     str += "END cyberequipement" + "\n";
     str += "BEGIN cailloux" + "\n"
-    for item in cailloux:
+    for item in self.cailloux:
       str += item + "\n"
     str += "END cailloux" + "\n";
     str += "AGE " + self.age + "\n";
@@ -81,8 +81,15 @@ class Personnae( object ) :
       str += item + "\n"
     str += "END lightbio " + "\n";
     str += "BEGIN biography" + "\n";
-    for item in biography:
+    for item in self.biography:
       str += item + "\n"
     str += "END biography" + "\n";
     str += "END personnae" + "\n";
     return str
+  
+  def toStringPersonnae(self):
+    return self.__str__()
+
+  def addLightBiography( self, content ):
+    self.lightbio.append( content )
+
