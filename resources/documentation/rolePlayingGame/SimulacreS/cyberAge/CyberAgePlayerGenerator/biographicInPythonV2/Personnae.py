@@ -78,7 +78,7 @@ class Personnae( object ) :
     str += "END talents" + "\n";
     str += "BEGIN lightbio" + "\n";
     for item in self.lightbio:
-      str += item + "\n"
+      str += item.toString() + "\n"
     str += "END lightbio " + "\n";
     str += "BEGIN biography" + "\n";
     for item in biography:
@@ -92,11 +92,4 @@ class Personnae( object ) :
 
   def addLightBiography( self, content ):
     self.lightbio.append( content )
-
-
-
-
-
-
-
 

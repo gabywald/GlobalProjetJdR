@@ -27,6 +27,17 @@ class BiographicElement( object ) :
         str += "\t contents: %s \n" % (self.contents)
         str += "\t addins: %s \n" % (self.addins)
         return str
+    
+    def toString(self) : 
+        """BiographicElement to str. """
+        str = ""
+        for elt in self.contents:
+            result = re.match("^Table (.*)$", elt)
+            if ( ("Table " in elt) and (result != None) ):
+                str += "[" + result.group(1) + "]"
+            else:
+                str += elt + " --- "
+        return str
 
 
 class BiographicTable( object ) : 
@@ -88,6 +99,40 @@ class BiographicSkill( object ) :
         str += "\t level: %s \n" % (self.level)
         str += "\t possibilities: %s \n" % (self.possibilities)
         return str
+
+
+def choiceWithIn(i: int):
+    choice = 0
+    while( not ( (choice > 0) and (choice <= i) ) ):
+        print("\t\t [1-", (i), "]?")
+        try:
+            choice = int(input())
+        except:
+            choice = -1
+        if ( (choice == 0) or (choice > i) ):
+            choice = -1
+        print("\t\t => [", choice, "]") 
+    return choice
+
+
+def addToGreatTalent(talents: dict, greatTales: dict, selection, initValue, addValues, jobOrPerso = 0):
+    if ( (selection in talents) or ( not selection in greatTales) ):
+        values        = talents[ selection ]
+        initValDef    = values[0].level
+        greatTales[ selection ] = initValDef
+        print("\t\t Selected {", selection, "} setted at ", initValDef, "\% (initial / base)")
+    ## ... 
+    if (selection in greatTales):
+        print("\t\t Selected {", selection, "} +", addValues, "\%")
+        greatTales[ selection ] += addValues
+    else:
+        print("\t\t Selected {", selection, "} setted at ", initValue, "\%")
+        greatTales[ selection ] = initValue
+    ## ... 
+    ## if ( (defined $jobOrPerso) && ($jobOrPerso == 1) )
+    ##     { $countJobTalent += $addValues; }
+    ## else
+    ##     { $countPersoTalent += $addValues; }
 
 
 def selectRandomBiographic( tables ) : 
@@ -169,6 +214,7 @@ class BiographicDataLoad( object ) :
                 nextTable.appendAddin( resultTableContent.groups()[4] );
         if (nextTable != None) : 
             tables[ nextTable.name ] = nextTable 
+        ## print( tables )
         return tables
     
     @classmethod
@@ -220,5 +266,90 @@ class BiographicDataLoad( object ) :
         if (nextTable != None) : 
             self._skills[ nextTable.name ] = nextTable 
         return self._skills
-
+    
+    @classmethod
+    def getARandomElementBIOGRAPHIC( self ):
+        """Choose randomly an element from a randomly choosen BiographicTable. """
+        orientation = tables[ "d'Orientation" ]
+        ## print( orientation )
+        bioELT = None
+        while (orientation != None) : 
+            contents = orientation.contents
+            links = orientation.linksTo
+            addins = orientation.addins
+            index = random.randint(0, len(contents) - 1 )
+            ## print( "%d (%d, %d, %d)" %( index, len(contents), len(links), len(addins) ) )
+            content = contents[index]
+            link = links[index]
+            addin = addins[index]
+            ## ## ## Generate / complete a BiographicElement 
+            if (bioELT == None) : 
+                bioELT = BiographicElement( content )
+            else : 
+                bioELT.contents.append( content )
+            if (addin != None) : 
+                bioELT.addins = addin.split( ";" )
+            if (link != None) : 
+                if (link == "Cicatrices") : 
+                    orientation = tables[ "Cicatrices-localisation" ]
+                    bioELT.contents.append( "Cicatrice : %s" %( random.choice( orientation.contents ) ) )
+                    orientation = tables[ "Cicatrices-gravité" ]
+                    bioELT.contents.append( "Cicatrice : %s" %( random.choice( orientation.contents ) ) )
+                    orientation = None;
+                else:
+                    orientation = tables[ link ];
+            else : 
+                orientation = None
+        ## print( bioELT )
+        return bioELT
+    
+    @classmethod
+    def getARandomElementBIOGRAPHICrenew( self ):
+        if (self._tables == None):
+            self.loadBiographicsTables()
+        return selectRandomBiographic( self._tables )
+        biographics = self._tables
+        
+        print( biographics )
+        
+        orientation = biographics[ "d'Orientation" ]
+        be          = None;
+        
+        content  = orientation.contents
+        addins   = orientation.addins
+        links    = orientation.linksTo
+        rand     = random.randint(0, len(contents) - 1 ) ## int(rand(@content));
+        content  = content[rand];
+        addin    = addins[rand];
+        link     = links[rand];
+        
+        while (orientation != None):
+            print("\t'", content, "'\t'", link, "'\t'", addin, "'");
+            
+            if ( be == None ):
+                be = BiographicElement();
+            
+            be.contents = content 
+            if (addin != ""):
+                be.addins.append( addin.aplit(";") )
+            
+            if (link != ""):
+                if (link == "Cicatrices"):
+                    orientation    = biographics[ "Cicatrices-localisation" ]
+                    content        = orientation.contents
+                    rand           = random.randint(0, len(contents) - 1 ) ## int(rand(@content));
+                    content        = "Cicatrice : " + content[rand]
+                    
+                    orientation    = biographics[ "Cicatrices-gravité" ]
+                    content        = orientation.contents
+                    rand           = random.randint(0, len(contents) - 1 ) ## int(rand(@content));
+                    content        += content[rand]
+                    
+                    be.contents.append( content )
+                    orientation = None
+                else:
+                    orientation = biographics[ link ]
+            else:
+                orientation = None
+        return be
 

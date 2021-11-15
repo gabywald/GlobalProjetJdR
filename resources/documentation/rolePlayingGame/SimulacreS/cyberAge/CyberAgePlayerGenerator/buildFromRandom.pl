@@ -646,10 +646,6 @@ for my $bioELT (@biographicElements) {
 				&BiographicElement::addToGreatTalent(\%talents, \%greatTales, $compet, 60, 60);
 				$countPersoTalent += 60;
 			} ## END "elsif ($addin eq "Onirisme=+2")"
-			elsif ($addin eq "Cailloux=Onirogramme[6]") 
-				{ push (@cailloux, "6 cailloux d'Onirogramme. "); }
-			## ## DONE "EquilibrePsychique-=1"
-			## ## TODO "Onirisme=+1"
 			else 
 				{ print "TODO PARSE {[".$addin."]} !!!!! \n"; }
 		}

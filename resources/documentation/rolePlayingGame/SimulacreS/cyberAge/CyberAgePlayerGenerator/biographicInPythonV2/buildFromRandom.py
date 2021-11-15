@@ -12,7 +12,7 @@ __status__ = "Development"
 
 from Personnae import Personnae
 
-## import BiographicDataLoadAndSelect
+import BiographicDataLoadAndSelect
 from BiographicDataLoadAndSelect import BiographicDataLoad
 from BiographicDataLoadAndSelect import selectRandomBiographic
 from BiographicDataLoadAndSelect import selectBiographicElements
@@ -45,10 +45,7 @@ sexes = ( "Indéterminé-e", "Femme", "Homme" );
 for count, elem in enumerate(sexes):
     print(count, elem)
 
-choice = -1;
-while( not ( (choice >= 0) and (choice <= len(sexes)) ) ):
-    choice = int(input())
-    print("\t\t => [", choice, "]"); 
+choice = BiographicDataLoadAndSelect.choiceWithIn(len(sexes))
 
 selection = sexes[choice];
 print("\t\t Selected {", selection, "}")
@@ -314,6 +311,210 @@ while ( validateAge == None ):
 
 personnaeToOuput.age = str(age)
 personnaeToOuput.argent = str(argent) ## NOTE : can be modified later !!
+
+print("\t **** Biographie ***** ");
+biographicElements = [];
+while (len(biographicElements) < count4biog):
+    tables = BiographicDataLoad.loadBiographicsTables()
+    beToShowKeep = selectRandomBiographic( tables ) ## BiographicDataLoad.getARandomElementBIOGRAPHIC()
+    print("\t\t ", beToShowKeep.toString() )
+    print("\t Conserver ? [Y/n]")
+    validateBio = str(input())
+    validateBio.strip()
+    if ( (validateBio != "N") and (validateBio != "n") ):
+        biographicElements.append( beToShowKeep )
+
+bdl = BiographicDataLoad()
+
+allowedJob = {}
+metiers    = bdl.loadJobsToSkills() ## {}
+talents    = bdl.loadSkills() ## {}
+godfathers = {}
+greatTales = {}
+equipments = []
+cailloux   = []
+programmes = []
+debtsToTo  = []
+debtsFrom  = []
+print("\t **** Biographie ++ processing ***** ");
+for bioELT in biographicElements:
+    print("\t\t ", bioELT.toString() )
+    personnaeToOuput.lightbio.append( bioELT );
+    addins = bioELT.addins
+    for addin in addins:
+        print("\t\t\t [", addin, "]" )
+        splitColon = addin.split(':')
+        if (len(splitColon) > 1):
+            first     = splitColon[0];
+            second    = splitColon[1];
+            if (first == "talent"):
+                competences = []
+                if (second == "*"):
+                    competences = sorted(talents.keys()) 
+                else:
+                    parse     = second.split('=')
+                    metier    = parse[0];
+                    select    = parse[1];
+                    print("\t\t => [", metier, "]")
+                    if (metier in metiers.keys()):
+                        if (select == "*"):
+                            competences = metiers[ metier ].skills
+                        elif (select == "all"):
+                            for comp in competences:
+                                greatTales[ comp ] = 50
+                        ## TODO affiner selection ?
+                        else:
+                            competences = metiers[ metier ]
+                    else: 
+                        print("\t\t JOB [", metier, "] has NO talents DEFINED !!!!!" )
+                        competences.append( "Connaissance du milleu -" + metier + "-" )
+                if (len(competences) > 0):
+                    ## Choix de compétence / talent...
+                    print("\t\t ***** Choix parmi : ")
+                    i = 0;
+                    for comp in competences:
+                        print("\t\t (", (i+1), ")-{", comp, "}")
+                        i += 1
+                    choice = BiographicDataLoadAndSelect.choiceWithIn(i)
+                    selection = competences[choice-1];
+                    BiographicDataLoadAndSelect.addToGreatTalent(talents, greatTales, selection, 50, 10)
+                    countPersoTalent += 50
+            elif (first == "debtTo"):
+                print("\t\t Debt TO {", second, "} added. ")
+                debtsToTo.append( second )
+            elif (first == "debtFrom"):
+                print("\t\t Debt FROM {", second, "} added. ")
+                debtsFrom.append( second )
+            elif (first == "credit"):
+                resSecond = re.match("^([+-]?)(\d+)$", second)
+                if (resSecond != None):
+                    sum = int( resSecond.group(2) );
+                    if (resSecond.group(1) == ""): 
+                        argent  = sum
+                    elif (resSecond.group(1) == "-"): 
+                        argent -= sum
+                    elif (resSecond.group(1) == "+"): 
+                        argent += sum
+                    print("\t\t Money is now [", argent, "]")
+                else: 
+                    print("\n\nUNKNOWN CREDIT FORM={[", second, "]}\n")
+            elif (first == "Parrain"):
+                print("\t\t Parrain {", second, "} added. ")
+                if (second in godfathers.keys()): 
+                    godfathers[ second ] += 1
+                else:
+                    godfathers[ second ] = 1
+            elif (first == "logiciel"):
+                print("\t\t software {", second, "} added. ")
+                programmes.append( second )
+            elif (first == "métier"):
+                parse     = second.split('=')
+                metier    = parse[0]
+                if (metier in allowedJob.keys()): 
+                    allowedJob[ metier ] += int(parse[1])
+                else:
+                    allowedJob[ metier ]  = int(parse[1])
+                print("\t\t Job {", metier, "} at level [", allowedJob[ metier ], "]. ")
+            else:
+                print("\n\nUNKNOWN FIRST={[", first, "]}\n")
+        else:
+            if (addin == "EquipementCybernetique=*"):
+                be            = None;
+                validateBE    = None;
+                while( (validateBE == "N") or (validateBE == "n") ):
+                    tables = BiographicDataLoad.loadEquipmentTables()
+                    be = selectBiographicElements( tables ) ## BiographicDataLoad.getARandomElementBIOGRAPHIC()
+                    print("\t Gain équipement: {", be.toString(), "}")
+                    print("\t Conserver ? [Y/n]")
+                    validateBE = str(input())
+                equipments.append( be )
+            elif (addin == "EquipementCybernetique=BrocheTypeC"): 
+                equipments.append( "Broche de Type C" )
+            elif (addin == "cablage=*[except total]"):
+                cablages = []
+                cablages.append( equipments[ "Cablage-de-combat" ].contents )
+                cablages.append( equipments[ "Cablage-auditif"].contents )
+                print("\t\t ***** Choix parmi : ")
+                i = 0;
+                for comp in cablages: 
+                    print("\t\t (", (i+1), ")-{", comp, "}")
+                    i += 1
+                choice = BiographicDataLoadAndSelect.choiceWithIn(i)
+                selection = cablages[ choice - 1 ];
+                print("\t\t Selected {", selection, "}")
+                equipments.append( selection )
+            elif (addin == "Cailloux=Onirogramme[6]"): 
+                cailloux.append("Onirogramme[6]")
+            elif (addin == "EquilibrePsychique-=1"):
+                SAN -= random.randint(1, 10)
+                personnaeToOuput.san = SAN
+                ## TODO changer aplomb ?! => +1
+            elif (addin == "EquilibrePsychique=1"): 
+                SAN  = random.randint(1, 20)
+                personnaeToOuput.san = SAN
+                ## TODO changer aplomb ?! => +2
+            elif (addin == "Esprit-=1"):
+                POU -= random.randint(1, 10);
+                personnaeToOuput.pou = pou
+                ## TODO changer aplomb ?! => +2
+            elif (addin == "ConnaissanceMedias=+1"):
+                compet = "Connaissance des Médias";
+                BiographicDataLoadAndSelect.addToGreatTalent(talents, greatTales, compet, 30, 30)
+                countPersoTalent += 30;
+            elif (addin == "Onirisme=+1"): 
+                compet = "Onirisme";
+                BiographicDataLoadAndSelect.addToGreatTalent(talents, greatTales, compet, 30, 30)
+                countPersoTalent += 30;
+            elif (addin == "Onirisme=+2"): 
+                compet = "Onirisme";
+                BiographicDataLoadAndSelect.addToGreatTalent(talents, greatTales, compet, 60, 60)
+                countPersoTalent += 60;
+            else:
+                print("TODO PARSE {[", addin, "]} !!!!! ")
+
+personnaeToOuput.cyberequipement = equipments
+personnaeToOuput.cailloux = cailloux
+personnaeToOuput.programs = programmes
+
+divers = ""
+for debtTo in debtsToTo: 
+    divers += "Dette envers " + debtTo + ". "
+for debtFr in debtsFrom:
+    divers += "Dette de " + debtFr + ". "
+if (divers == ""):
+    divers = "---"
+personnaeToOuput;divers = divers
+personnaeToOuput.argent = str(argent)
+
+print("\t **** Choix Parrain ***** ")
+possibleGDs = [];
+for keyGD in (sorted(godfathers.keys())):
+    print("\t\t {", keyGD, "}\t(", godfathers[ keyGD], ")")
+    localCount = godfathers[ keyGD ]
+    if (localCount > 0): 
+        possibleGDs.append( keyGD )
+
+if (len(possibleGDs) > 0):
+    possibleGDs.append("---")
+    i = 0;
+    for parrain in possibleGDs: 
+        print("\t\t (", (i+1), ")-{", parrain, "}")
+        i += 1
+    choice = BiographicDataLoadAndSelect.choiceWithIn(i)
+    selection = possibleGDs[ choice-1 ];
+    print("\t\t Selected {", selection, "}")
+    personnaeToOuput.parrain = selection 
+else: 
+    print("\t Pas de choix possible !")
+    personnaeToOuput.parrain = "---"
+
+print("\t **** Compilation talents / compétences ***** ")
+talentsProjection = ();
+for talentName in (sorted(greatTales.keys())): 
+	talentsProjection.append(talentName + "\t" + greatTales[ talentName ])
+	
+personnaeToOuput.talents.append( talentsProjection )
+
 
 ## Etape 5: Les Compétences d'intérêts personnels (INT*10% ailleurs) => indiquer valeur
 remain4job = "For Job, max was [" + str(countJobMaxims) + "] (EDU*20), used [" + str(countJobTalent) + "], remain [" + str(countJobMaxims - countJobTalent) + "]";
