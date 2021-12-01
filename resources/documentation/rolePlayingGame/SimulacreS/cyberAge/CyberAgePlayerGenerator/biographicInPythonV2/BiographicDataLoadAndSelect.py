@@ -43,7 +43,7 @@ class BiographicElement( object ) :
 class BiographicTable( object ) : 
     """This class defines Tables Definitions for 'biographic' elements for Curriculum generation. """
     
-    def __init__(self, name = None, comments = None ):
+    def __init__( self, name = None, comments = None ):
         """BiographicTable Constructor. """
         self.name = name
         self.comments = comments
@@ -51,7 +51,7 @@ class BiographicTable( object ) :
         self.linksTo  = []
         self.addins   = []
     
-    def __str__(self) : 
+    def __str__( self ) : 
         """BiographicTable to str. """
         str = "BiographicTable ( % s , % s ) \n"  % (self.name, self.comments)
         str += "\t contents: %s \n" % (self.contents)
@@ -59,13 +59,13 @@ class BiographicTable( object ) :
         str += "\t addins: %s \n" % (self.addins)
         return str
     
-    def appendContent( self, content) : 
+    def appendContent( self, content ) : 
         self.contents.append( content )
     
-    def appendLinks( self, link) : 
+    def appendLinks( self, link ) : 
         self.linksTo.append( link )
     
-    def appendAddin( self, addin) : 
+    def appendAddin( self, addin ) : 
         self.addins.append( addin )
 
 
@@ -273,90 +273,4 @@ class BiographicDataLoad( object ) :
         if (nextTable != None) : 
             self._skills[ nextTable.name ] = nextTable 
         return self._skills
-    
-    @classmethod
-    def getARandomElementBIOGRAPHIC( self ):
-        """Choose randomly an element from a randomly choosen BiographicTable. """
-        orientation = tables[ "d'Orientation" ]
-        ## print( orientation )
-        bioELT = None
-        while (orientation != None) : 
-            contents = orientation.contents
-            links = orientation.linksTo
-            addins = orientation.addins
-            index = random.randint(0, len(contents) - 1 )
-            ## print( "%d (%d, %d, %d)" %( index, len(contents), len(links), len(addins) ) )
-            content = contents[index]
-            link = links[index]
-            addin = addins[index]
-            ## ## ## Generate / complete a BiographicElement 
-            if (bioELT == None) : 
-                bioELT = BiographicElement( content )
-            else : 
-                bioELT.contents.append( content )
-            if (addin != None) : 
-                bioELT.addins = addin.split( ";" )
-            if (link != None) : 
-                if (link == "Cicatrices") : 
-                    orientation = tables[ "Cicatrices-localisation" ]
-                    bioELT.contents.append( "Cicatrice : %s" %( random.choice( orientation.contents ) ) )
-                    orientation = tables[ "Cicatrices-gravité" ]
-                    bioELT.contents.append( "Cicatrice : %s" %( random.choice( orientation.contents ) ) )
-                    orientation = None;
-                else:
-                    orientation = tables[ link ];
-            else : 
-                orientation = None
-        ## print( bioELT )
-        return bioELT
-    
-    @classmethod
-    def getARandomElementBIOGRAPHICrenew( self ):
-        if (self._tables == None):
-            self.loadBiographicsTables()
-        return selectRandomBiographic( self._tables )
-        biographics = self._tables
-        
-        print( biographics )
-        
-        orientation = biographics[ "d'Orientation" ]
-        be          = None;
-        
-        content  = orientation.contents
-        addins   = orientation.addins
-        links    = orientation.linksTo
-        rand     = random.randint(0, len(contents) - 1 ) ## int(rand(@content));
-        content  = content[rand];
-        addin    = addins[rand];
-        link     = links[rand];
-        
-        while (orientation != None):
-            print("\t'", content, "'\t'", link, "'\t'", addin, "'");
-            
-            if ( be == None ):
-                be = BiographicElement();
-            
-            be.contents = content 
-            if (addin != ""):
-                be.addins.append( addin.aplit(";") )
-            
-            if (link != ""):
-                if (link == "Cicatrices"):
-                    orientation    = biographics[ "Cicatrices-localisation" ]
-                    content        = orientation.contents
-                    rand           = random.randint(0, len(contents) - 1 ) ## int(rand(@content));
-                    content        = "Cicatrice : " + content[rand]
-                    
-                    orientation    = biographics[ "Cicatrices-gravité" ]
-                    content        = orientation.contents
-                    rand           = random.randint(0, len(contents) - 1 ) ## int(rand(@content));
-                    content        += content[rand]
-                    
-                    be.contents.append( content )
-                    orientation = None
-                else:
-                    orientation = biographics[ link ]
-            else:
-                orientation = None
-        return be
 
