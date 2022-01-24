@@ -18,7 +18,7 @@ Dans les ressources :
     * Tarot : pour générer des cartes de tarot (utile pour certains jeux : tirages aléatoires, inspiration de scénarios, génération de personnages...) ; 
     * IChing : idem (utilisé pour "clan of two") ; 
     * Resources pour fiches de personnages GURPS, Basic RPG, SimulacreS... ; 
-    * Resources de basckground (?) et idées de scénarios ; 
+    * Resources de background (?) et idées de scénarios ; 
     * Conversions entre systèmes de jeu ; 
   * ... 
 
@@ -43,3 +43,4 @@ Idée(s) de logiciel(s) utilitaire(s) pour du JdR / Jeu de Rôle :
     * Gestion PBtA (?) ou similaire (actions pré-définies ou catégories) ; 
     * Diagramme du scénario / Diagramme campagne en cours ; 
 
+Voir notamment [Boîte à outils numériques du MJ](https://github.com/gabywald/BoiteAOutilsNumeriqueDuMJ)
