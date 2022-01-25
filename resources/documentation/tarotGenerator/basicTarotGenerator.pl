@@ -2,6 +2,7 @@
 
 use strict;
 
+use lib '.';
 use TarotElement;
 
 my $dataDir				= "tarotData/";
@@ -134,8 +135,8 @@ $headerLaTeX .= "% \\newcommand{\\sectionmark}[1]{\\markright{\\thesection\\ #1}
 $headerLaTeX .= "\\fancyhf{}\n";
 $headerLaTeX .= "\\fancyhead[LE,RO]{\\thepage /\\pageref{LastPage} \\hfill\n";
 $headerLaTeX .= "	\\MainTitle \n";
-$headerLaTeX .= "\\hfill \\includegraphics[width=0.5cm]{img/logo_glider.png} }\n";
-$headerLaTeX .= "\\fancyfoot[LE,RO]{\\includegraphics[width=0.5cm]{img/logo_glider.png} \\hfill\n";
+$headerLaTeX .= "\\hfill \\includegraphics[width=0.5cm]{../../tarotData/img/logo_glider.png} }\n";
+$headerLaTeX .= "\\fancyfoot[LE,RO]{\\includegraphics[width=0.5cm]{../../tarotData/img/logo_glider.png} \\hfill\n";
 $headerLaTeX .= "	\\MainTitle \n";
 $headerLaTeX .= "\\hfill \\thepage /\\pageref{LastPage}}\n";
 $headerLaTeX .= "\\renewcommand{\\headrulewidth}{0.25pt}\n";
@@ -187,6 +188,6 @@ close (OUTPUT);
 system("./convertLaTeXChars.pl output.tex");
 system("cp -v output.tex tarotTests/generated/output.tex");
 system("cp -v output.tex tarotTests/generated/document.tex");
+system("rm -v output.tex");
 chdir("tarotTests/generated/");
-system("make");
-system("make clean");
+system("make && make clean");
