@@ -3,7 +3,7 @@
 use strict;
 
 use lib '.';
-use Personnae;
+use PersonnaeCyberAge;
 
 if (@ARGV < 1) {
 	print "NOT enough arguments";
@@ -28,7 +28,7 @@ while (my $line = <INPUT>) {
 	$line =~ s/[\n\r]//;
 	if ($line =~ /BEGIN personnae/) { 
 		$flagPersonnae = 1;
-		$currentPersonnae = Personnae->new();
+		$currentPersonnae = PersonnaeCyberAge->new();
 	} ## END "if ($line =~ /BEGIN personnae/)"
 	if ($line =~ /END personnae/) { 
 		$flagPersonnae = 0;

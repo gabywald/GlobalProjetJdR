@@ -2,7 +2,8 @@
 
 use strict;
 
-use Personnae;
+use lib '.';
+use PersonnaeCyberAge;
 
 my $fileToLoad			= "personnaeBase.txt";
 
@@ -22,7 +23,7 @@ while (my $line = <INPUT>) {
 	$line =~ s/[\n\r]//;
 	if ($line =~ /BEGIN personnae/) { 
 		$flagPersonnae = 1;
-		$currentPersonnae = Personnae->new();
+		$currentPersonnae = PersonnaeCyberAge->new();
 	} ## END "if ($line =~ /BEGIN personnae/)"
 	if ($line =~ /END personnae/) { 
 		$flagPersonnae = 0;
