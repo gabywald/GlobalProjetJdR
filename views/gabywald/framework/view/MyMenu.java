@@ -6,7 +6,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import gabywald.framework.controller.MyMenuActionListener;
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 
 /**
  * Window Menu Bar. 
@@ -52,7 +52,7 @@ public class MyMenu extends JMenuBar {
 		
 		String currLine		= conf.getLine(indexOfLine);
 		/** For current-level menu items. */
-		Pattern ppp			= Pattern.compile("^"+Utils.repeat("\t", 0)
+		Pattern ppp			= Pattern.compile("^"+StringUtils.repeat("\t", 0)
 								+MyMenu.BASE_MENU_RECOGNITION);
 		Matcher mmm			= ppp.matcher(currLine);
 		
@@ -88,11 +88,11 @@ public class MyMenu extends JMenuBar {
 		String currLine		= conf.getLine(indexOfLine);
 		// System.out.println("\tnextLvls\t"+indexOfLine+"\t'"+currLine+"'");
 		/** For current-level menu items. */
-		Pattern ppp			= Pattern.compile("^"+Utils.repeat("\t", lvl)
+		Pattern ppp			= Pattern.compile("^"+StringUtils.repeat("\t", lvl)
 								+MyMenu.BASE_MENU_RECOGNITION);
 		Matcher mmm			= ppp.matcher(currLine);
 		/** For next-level menu items. */
-		Pattern pppNext		= Pattern.compile("^"+Utils.repeat("\t", lvl+1)
+		Pattern pppNext		= Pattern.compile("^"+StringUtils.repeat("\t", lvl+1)
 								+MyMenu.BASE_MENU_RECOGNITION);
 		Matcher mmmNext		= pppNext.matcher(currLine);
 		

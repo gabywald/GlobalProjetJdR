@@ -1,8 +1,11 @@
 package gabywald.rpg.model;
 
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 import gabywald.rpg.data.samples.RPGDataFile;
+import gabywald.utilities.logger.Logger;
+import gabywald.utilities.logger.Logger.LoggerLevel;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.regex.Matcher;
@@ -11,7 +14,7 @@ import java.util.regex.Pattern;
 /**
  * This (abstract) class describes a generic item for biography and its generation. 
  * <br>Contains hash of tables needed for generation. 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2022)
  * @see Biography#getARandomElement()
  */
 public abstract class Biography implements Generator {
@@ -33,7 +36,13 @@ public abstract class Biography implements Generator {
 		
 		BiographicTable bioTab = null;
 		
-		String[] content = file.getTable();
+		try {
+			file.load();
+		} catch (IOException e) {
+			Logger.printlnLog(LoggerLevel.LL_ERROR, "Biography file [" + file.getName() + "] cannot be loaded !");
+		}
+		
+		String[] content = file.getChampsAsTable();
 		for (int i = 0 ; i < content.length ; i++) {
 			String line = content[i];
 			Matcher tableName = Biography.BIOGRAPHIC_TABLES_PATTERNS[0].matcher(line);
@@ -87,7 +96,7 @@ public abstract class Biography implements Generator {
 		else {
 			BiographicElement be = null;
 			do {
-				int rand = Utils.randomValue(orientation.size());
+				int rand = StringUtils.randomValue(orientation.size());
 				String content	= orientation.getContent(rand);
 				String[] specs	= orientation.getAddins(rand);
 				String next		= orientation.getLinkTo(rand);
@@ -98,10 +107,10 @@ public abstract class Biography implements Generator {
 				}
 				if ( (next != null) && (next.equals("Cicatrices")) ) {
 					orientation = this.tables.get("Cicatrices-localisation");
-					rand		= Utils.randomValue(orientation.size());
+					rand		= StringUtils.randomValue(orientation.size());
 					content 	= "Cicatrice : "+orientation.getContent(rand);
 					orientation = this.tables.get("Cicatrices-gravité");
-					rand		= Utils.randomValue(orientation.size());
+					rand		= StringUtils.randomValue(orientation.size());
 					content		+= orientation.getContent(rand);
 					be.addContent(content);
 					orientation = null;

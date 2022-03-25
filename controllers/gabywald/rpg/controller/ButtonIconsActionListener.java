@@ -1,6 +1,6 @@
 package gabywald.rpg.controller;
 
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 import gabywald.rpg.view.panels.RPGPersonnaeAnyPanel;
 
 import java.awt.event.ActionEvent;
@@ -20,7 +20,7 @@ public class ButtonIconsActionListener implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		RPGPersonnaeAnyPanel panel = ConvertRecordActionListener.SOURCE_PANELS[this.rpgpap];
-		panel.setFieldValueAt(this.ij, Utils.randomValue(42));
+		panel.setFieldValueAt(this.ij, StringUtils.randomValue(42));
 		// System.out.println(panel);
 	}
 

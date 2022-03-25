@@ -1,16 +1,19 @@
 package gabywald.rpg.controller;
 
 import java.awt.event.ActionEvent;
+import java.io.IOException;
 
 import gabywald.global.controller.BooleanActionListener;
 import gabywald.global.view.dialog.GenericAskingDialog;
 import gabywald.rpg.data.samples.RPGDataFile;
 import gabywald.rpg.view.BuildPersonnaeFrame;
 import gabywald.rpg.view.panels.RPGDataPanel;
+import gabywald.utilities.logger.Logger;
+import gabywald.utilities.logger.Logger.LoggerLevel;
 
 /**
  * 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2022)
  */
 public abstract class IntegrationActionListener extends BooleanActionListener {
 	private RPGDataPanel spInstance;
@@ -39,8 +42,16 @@ public abstract class IntegrationActionListener extends BooleanActionListener {
 	protected void setMainDomains(String[] mains) 
 		{ this.mainDomains = mains; }
 	
-	protected void setTalentsFileSets(RPGDataFile[] files)
-		{ this.talentsFileSets = files; }
+	protected void setTalentsFileSets(RPGDataFile[] files) { 
+		this.talentsFileSets = files;
+		for (RPGDataFile file : files) {
+			try {
+				file.load();
+			} catch (IOException e) {
+				Logger.printlnLog(LoggerLevel.LL_ERROR, "setTalentsFileSets cannot load [" + file.getName() + "]");
+			}
+		}
+	}
 	
 	protected void setElement(String elt) 
 		{ this.elementOfMsgTitle = elt; }
@@ -65,7 +76,7 @@ public abstract class IntegrationActionListener extends BooleanActionListener {
 			String[][] subChoices		= null;
 			if ( (number < this.mainDomains.length) 
 					&& (number >= 0) ) 
-				{ completeElements	= this.talentsFileSets[number].getTable(); }
+				{ completeElements	= this.talentsFileSets[number].getChampsAsTable(); }
 			else { completeElements = null; }
 			
 			if (completeElements != null) {

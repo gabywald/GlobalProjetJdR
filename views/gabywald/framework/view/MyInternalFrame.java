@@ -3,6 +3,7 @@ package gabywald.framework.view;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,7 +15,9 @@ import javax.swing.SwingConstants;
 import gabywald.framework.controller.MyInternalFrameActionListener;
 import gabywald.framework.controller.MyMenuActionListener;
 import gabywald.global.data.FrameworkDataFile;
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
+import gabywald.utilities.logger.Logger;
+import gabywald.utilities.logger.Logger.LoggerLevel;
 
 /**
  * 
@@ -173,21 +176,26 @@ public class MyInternalFrame extends JInternalFrameWithBackgroundImage {
 	
 	public static HashMap<String, String> readFWFile(String wizardFileName) {
 		FrameworkDataFile fdf			= MyInternalFrame.getDataFile(wizardFileName);
+		try {
+			fdf.load();
+		} catch (IOException e) {
+			Logger.printlnLog(LoggerLevel.LL_ERROR, "FrameworkDataFile file [" + wizardFileName + "] cannot be loaded !" + e.getMessage());
+		}
 		HashMap<String, String> datas	= new HashMap<String, String>();
 		datas.put(MyMenuActionListener.OTHERSKEY, "");
 		Pattern keyValue				= Pattern.compile("^([^\t]+?)\t([^\t]+?)$");
-		for (int i = 0 ; i < fdf.getNbLines() ; i++) {
-			System.out.println("\t* '"+wizardFileName+"'\t'"+fdf.getLine(i)+"'");
-			Matcher keyValM	= keyValue.matcher(fdf.getLine(i));
+		for (String line : fdf.getChampsAsTable()) {
+			System.out.println("\t* '"+wizardFileName+"'\t'" + line + "'");
+			Matcher keyValM	= keyValue.matcher( line );
 			if (keyValM.matches()) { 
 				datas.put(keyValM.group(1), keyValM.group(2)); 
 				/** System.out.println("\t**'"+keyValM.group(1)+"'\t'"+keyValM.group(2)+"'"); */
 			} else {
-				System.out.println("\t  '"+wizardFileName+"'\t'"+fdf.getLine(i)+"'");
+				System.out.println("\t  '"+wizardFileName+"'\t'" + line + "'");
 				String others	= datas.get(MyMenuActionListener.OTHERSKEY);
-				others			+= fdf.getLine(i)+"\n";
+				others			+=  line + "\n";
 				
-				System.out.println(Utils.repeat("*", 25)+"\n"+others+""+Utils.repeat("*", 25));
+				System.out.println(StringUtils.repeat("*", 25) + "\n" + others + "" + StringUtils.repeat("*", 25));
 				
 				datas.put(MyMenuActionListener.OTHERSKEY, others);
 			}

@@ -1,14 +1,15 @@
 package gabywald.rpg.view.panels;
 
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 import gabywald.rpg.model.PersonnaeOfSimulacreS;
 import gabywald.rpg.view.BuildPersonnaeFrame;
 
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2022)
  */
+@SuppressWarnings("serial")
 public class RPGPersonnaeSimulacreSPanel extends RPGPersonnaeAnyPanel {
 	private static RPGPersonnaeSimulacreSPanel instance;
 	
@@ -39,7 +40,7 @@ public class RPGPersonnaeSimulacreSPanel extends RPGPersonnaeAnyPanel {
 		while (sum != total) {
 			sum = 0;
 			for (int i = 0 ; i < compTable.length ; i++) {
-				int value		= Utils.randomValue(4) + 3;
+				int value		= StringUtils.randomValue(4) + 3;
 				compTable[i]	= value;
 				sum				+= value;
 			}
@@ -49,20 +50,20 @@ public class RPGPersonnaeSimulacreSPanel extends RPGPersonnaeAnyPanel {
 		while (sum != total) {
 			sum = 0;
 			for (int i = 0 ; i < moyeTable.length ; i++) {
-				int value		= Utils.randomValue(5);
+				int value		= StringUtils.randomValue(5);
 				moyeTable[i]	= value;
 				sum				+= value;
 			}
 		}
 		/** SimulacreS (alternate) : Domaines [0-2 points each ; total of 7 for domaines and energies] */
 		/** SimulacreS (alternate) : Energies [0-2 points each ; total of 7 for domaines and energies] ; !! max for 'Pouvoir' is 1 !! */
-		boolean pouvoir = (Utils.randomValue(100)%3 == 0);
+		boolean pouvoir = (StringUtils.randomValue(100)%3 == 0);
 		total = 10;sum = 0;int[] doenTable = new int[10];
 		int[] specTable = new int[4];
 		if (pouvoir) { 
 			total--;
 			doenTable[9] = 1;
-			int which = Utils.randomValue(specTable.length);
+			int which = StringUtils.randomValue(specTable.length);
 			for (int i = 0 ; i < specTable.length ; i++) {
 				if (i == which) { specTable[i] = 5; }
 				else { specTable[i] = 0; }
@@ -71,7 +72,7 @@ public class RPGPersonnaeSimulacreSPanel extends RPGPersonnaeAnyPanel {
 		while (sum != total) {
 			sum = 0;
 			for (int i = 0 ; i < doenTable.length-1 ; i++) {
-				int value		= Utils.randomValue(3);
+				int value		= StringUtils.randomValue(3);
 				doenTable[i]	= value;
 				sum				+= value;
 			}

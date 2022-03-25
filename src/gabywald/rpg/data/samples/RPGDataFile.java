@@ -4,8 +4,9 @@ import gabywald.global.data.DataFile;
 
 /**
  * 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2022)
  */
+@SuppressWarnings("serial")
 public class RPGDataFile extends DataFile {
 	private static final String DEFAULT_DIRECTORY	= "dataRPG/";
 	private static final String[] FILENAMES_SET		= {
@@ -24,7 +25,7 @@ public class RPGDataFile extends DataFile {
 	};
 
 	private RPGDataFile(String name) 
-		{ super(RPGDataFile.DEFAULT_DIRECTORY+name); }
+		{ super(RPGDataFile.DEFAULT_DIRECTORY + name, true); }
 	
 	@Override
 	public String getDefaultDirectory() 

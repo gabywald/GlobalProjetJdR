@@ -5,7 +5,7 @@ import gabywald.rpg.data.samples.RPGDataFile;
 
 /**
  * This (abstract) class describe generic properties for a RPC (Role-Playing game Character). 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2022)
  */
 public abstract class Personnae {
 	public static final TextualInfoFile confRPG	= TextualInfoFile.getRPGpersonnaeBuilder();
@@ -51,9 +51,9 @@ public abstract class Personnae {
 	public abstract String toLaTeX();
 	
 	protected static String getLaTeXbegin() 
-		{ return RPGDataFile.getLaTeXheaderPersonnae().getChaine(); }
+		{ return RPGDataFile.getLaTeXheaderPersonnae().getChampsToString(); }
 	
 	protected static String getLaTeXend() 
-		{ return RPGDataFile.getLaTeXbottomPersonnae().getChaine(); }
+		{ return RPGDataFile.getLaTeXbottomPersonnae().getChampsToString(); }
 	
 }

@@ -2,7 +2,7 @@ package gabywald.rpg.controller;
 
 import java.awt.event.ActionEvent;
 import gabywald.global.controller.BooleanActionListener;
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 import gabywald.rpg.view.panels.RPGPersonnaeAnyPanel;
 import gabywald.rpg.view.panels.RPGPersonnaeBasicsPanel;
 import gabywald.rpg.view.panels.RPGPersonnaeGURPSPanel;
@@ -64,11 +64,11 @@ public class ConvertRecordActionListener extends BooleanActionListener {
 					desPane.setFieldValueAt(0, FO); // FOR
 					desPane.setFieldValueAt(1, DX); // DEX
 					desPane.setFieldValueAt(2, QI); // INT
-					desPane.setFieldValueAt(3, Utils.randomValue(11) + 8);
+					desPane.setFieldValueAt(3, StringUtils.randomValue(11) + 8);
 					desPane.setFieldValueAt(4, SA);
-					desPane.setFieldValueAt(5, Utils.randomValue(11) + 8);
+					desPane.setFieldValueAt(5, StringUtils.randomValue(11) + 8);
 					desPane.setFieldValueAt(6, SA);
-					desPane.setFieldValueAt(7, Utils.randomValue(11) + 8);
+					desPane.setFieldValueAt(7, StringUtils.randomValue(11) + 8);
 					
 					System.out.println("CONVERSION GURPS TO BASICS DONE !!!");
 				

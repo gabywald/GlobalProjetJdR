@@ -1,16 +1,20 @@
 package gabywald.rpg.model;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import gabywald.rpg.data.samples.RPGDataFile;
+import gabywald.utilities.logger.Logger;
+import gabywald.utilities.logger.Logger.LoggerLevel;
 
 /**
  * This table describes a list of CyberSoftware.
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2022)
  * @see CyberSoftware
  */
+@SuppressWarnings("serial")
 public class CyberSoftwareListe extends ArrayList<CyberSoftware> {
 	private static CyberSoftwareListe instance;
 
@@ -19,7 +23,17 @@ public class CyberSoftwareListe extends ArrayList<CyberSoftware> {
 	private CyberSoftwareListe() {
 		/** Implicit initialization... */
 		/** ************************** */
-		String[] descriptDatas = RPGDataFile.getGURPSCyberSoftwareOnlyDesc().getTable();
+		
+		RPGDataFile rdfGURPSsoftwareWithOUTdesc = RPGDataFile.getGURPSCyberSoftwareNotDesc();
+		RPGDataFile rdfGURPSsoftwareWithdesc = RPGDataFile.getGURPSCyberSoftwareOnlyDesc();
+		try {
+			rdfGURPSsoftwareWithOUTdesc.load();
+			rdfGURPSsoftwareWithdesc.load();
+		} catch (IOException e) {
+			Logger.printlnLog(LoggerLevel.LL_ERROR, "IdeesSousLesDes file cannot be loaded !");
+		}
+		
+		String[] descriptDatas = rdfGURPSsoftwareWithdesc.getChampsAsTable();
 		
 		this.hashOfDescriptions = new HashMap<String, String>();
 		for (int i = 0 ; i < descriptDatas.length ; i++) {
@@ -29,7 +43,8 @@ public class CyberSoftwareListe extends ArrayList<CyberSoftware> {
 			/** System.out.println("\t"+this.hashOfDescriptions.size()+" : "+cutter[0]+"\t"+cutter[1]); */
 		}
 		/** System.out.println("\t'"+this.hashOfDescriptions.keySet().size()+"' names and descriptions..."); */
-		String[] softwareDatas = RPGDataFile.getGURPSCyberSoftwareNotDesc().getTable();
+		
+		String[] softwareDatas = rdfGURPSsoftwareWithOUTdesc.getChampsAsTable();
 		for (int i = 0 ; i < softwareDatas.length ; i++) {
 			String[] splitter = softwareDatas[i].split("\t");
 			if (splitter.length == 7) {
@@ -59,17 +74,13 @@ public class CyberSoftwareListe extends ArrayList<CyberSoftware> {
 	}
 	
 	public String toString() {
-		String toReturn = new String("");
-		for (int i = 0 ; i< this.size() ; i++) 
-			{ toReturn += this.get(i).toString()+"\n"; }
-		return toReturn;
+		StringBuilder sbToReturn = new StringBuilder();
+		this.stream().forEach( line -> sbToReturn.append(line).append( "\n" ));
+		return sbToReturn.toString();
 	}
 	
 	public String[] getNames() {
-		String[] toReturn = new String[this.size()];
-		for (int i = 0 ; i < this.size() ; i++) 
-			{ toReturn[i] = this.get(i).getName(); }
-		return toReturn;
+		return this.stream().map( line -> line.getName() ).toArray(String[]::new);
 	}
 	
 }

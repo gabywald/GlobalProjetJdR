@@ -2,7 +2,7 @@ package gabywald.rpg.view;
 
 import javax.swing.ImageIcon;
 
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 import gabywald.global.view.AvailableImages;
 
 public abstract class RetroFuturAvailableImages extends AvailableImages {
@@ -309,18 +309,18 @@ public abstract class RetroFuturAvailableImages extends AvailableImages {
 	}
 	
 	public static ImageIcon getRandom() { 
-		int select	= Utils.randomValue(RetroFuturAvailableImages.pathToImages.length);
+		int select	= StringUtils.randomValue(RetroFuturAvailableImages.pathToImages.length);
 		return new ImageIcon(RetroFuturAvailableImages.pathToImages[select]); 
 	}
 	
 	public static ImageIcon getRandom(int start, int endin) {
-		int select	= Utils.randomValue(endin-start);
+		int select	= StringUtils.randomValue(endin-start);
 		select 		+= start;
 		return RetroFuturAvailableImages.getImageIcon(select);
 	}
 	
 	public static ImageIcon getRandom(int[] possibles) {
-		int select	= Utils.randomValue(possibles.length);
+		int select	= StringUtils.randomValue(possibles.length);
 		return RetroFuturAvailableImages.getImageIcon(select); 
 	}
 	

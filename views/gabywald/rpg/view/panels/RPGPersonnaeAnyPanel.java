@@ -15,13 +15,14 @@ import gabywald.rpg.view.SpecificityPanel;
 
 /**
  * Intermediate abstract class for determining attributes of Personnae. 
- * @author Gabriel Chandesris (2011, 2015)
+ * @author Gabriel Chandesris (2011, 2015, 2022)
  * @see GeneralInfoPanel
  * @see RPGPersonnaeBasicsPanel
  * @see RPGPersonnaeGURPSPanel
  * @see RPGPersonnaeSimulacreSPanel
  * @see RPGPersonnaeCyberAgePanel
  */
+@SuppressWarnings("serial")
 public abstract class RPGPersonnaeAnyPanel extends SpecificityPanel {
 	/** Attributes names... */
 	protected JLabel[] labels;

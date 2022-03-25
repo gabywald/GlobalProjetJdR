@@ -1,17 +1,20 @@
 package gabywald.rpg.model;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 import gabywald.rpg.data.samples.RPGDataFile;
+import gabywald.utilities.logger.Logger;
+import gabywald.utilities.logger.Logger.LoggerLevel;
 
 /**
  * Specific generator for ideas for Scenarii. 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2022)
  */
 public class IdeesSousLesDes implements Generator {
 	private static IdeesSousLesDes instance			= null;
@@ -34,7 +37,12 @@ public class IdeesSousLesDes implements Generator {
 	private IdeesSousLesDes() {
 		this.tables			= new HashMap<String, String>();
 		RPGDataFile file	= RPGDataFile.getSousLesDesLidee();
-		String[] content 	= file.getTable();
+		try {
+			file.load();
+		} catch (IOException e) {
+			Logger.printlnLog(LoggerLevel.LL_ERROR, "IdeesSousLesDes file cannot be loaded !");
+		}
+		String[] content 	= file.getChampsAsTable();
 		String currentTable	= null;
 		String currentConte	= new String("");
 		for (int i = 0 ; i < content.length ; i++) {
@@ -135,7 +143,7 @@ public class IdeesSousLesDes implements Generator {
 	}
 	
 	public String getARandomElement() {
-		int mainSelector	= Utils.randomValue(IdeesSousLesDes.ENVIRONMENTS.length);
+		int mainSelector	= StringUtils.randomValue(IdeesSousLesDes.ENVIRONMENTS.length);
 		return this.getAnElement(mainSelector);
 	}
 	
@@ -152,32 +160,32 @@ public class IdeesSousLesDes implements Generator {
 	
 	private String getAnElement(String mainSelection) {
 		String[] persos		= this.persos.get(mainSelection).split(";");
-		int firstSelector	= Utils.randomValue(persos.length);
+		int firstSelector	= StringUtils.randomValue(persos.length);
 		String firstResult	= persos[firstSelector];
 		
 		String actionResult	= null;
 		String secondResult	= null;
-		boolean toLocation	= (Utils.randomValue(100)%3 == 0);
+		boolean toLocation	= (StringUtils.randomValue(100)%3 == 0);
 		if (toLocation) {
 			String[] actions		= this.actions.get("Personnages et lieux").split(";");
-			int actionSelector		= Utils.randomValue(actions.length);
+			int actionSelector		= StringUtils.randomValue(actions.length);
 			actionResult			= actions[actionSelector];
 		
 			String[] lieux			= this.lieux.get(mainSelection).split(";");
-			int secondarySelector	= Utils.randomValue(lieux.length);
+			int secondarySelector	= StringUtils.randomValue(lieux.length);
 			secondResult			= lieux[secondarySelector];
 		} else {
 			String[] actions		= this.actions.get("Entre personnages").split(";");
-			int actionSelector		= Utils.randomValue(actions.length);
+			int actionSelector		= StringUtils.randomValue(actions.length);
 			actionResult			= actions[actionSelector];
 			
-			int secondarySelector	= Utils.randomValue(persos.length);
+			int secondarySelector	= StringUtils.randomValue(persos.length);
 			secondResult			= persos[secondarySelector];
 		}
 		
 		if (actionResult.split(" / ").length > 0) {
 			String[] toChoose	= actionResult.split(" / ");
-			int choice			= Utils.randomValue(toChoose.length);
+			int choice			= StringUtils.randomValue(toChoose.length);
 			actionResult		= toChoose[choice];
 		}
 		

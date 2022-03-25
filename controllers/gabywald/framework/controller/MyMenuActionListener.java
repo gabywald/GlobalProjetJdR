@@ -9,7 +9,7 @@ import gabywald.framework.view.MyDesktop;
 import gabywald.framework.view.MyFrame;
 import gabywald.framework.view.MyInternalFrame;
 import gabywald.framework.view.MyMenu;
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 
 /**
  * 
@@ -53,7 +53,7 @@ public class MyMenuActionListener implements ActionListener {
 					HashMap<String, String> datas	= MyInternalFrame.readFWFile(acts);
 					if (acts.startsWith("wizard"))	{ ; } 
 					else if (acts.startsWith("panel"))	{
-						datas.put(MyMenuActionListener.OTHERSKEY, "0\t"+acts+Utils.repeat("\tfalse", 8)+"\n");
+						datas.put(MyMenuActionListener.OTHERSKEY, "0\t"+acts+StringUtils.repeat("\tfalse", 8)+"\n");
 					} /** END 'if (acts.startsWith("panel"))' */
 					
 					String title	= datas.get("title");

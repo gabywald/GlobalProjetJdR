@@ -1,8 +1,11 @@
 package gabywald.rpg.model;
 
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 import gabywald.rpg.data.samples.RPGDataFile;
+import gabywald.utilities.logger.Logger;
+import gabywald.utilities.logger.Logger.LoggerLevel;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.regex.Matcher;
@@ -11,7 +14,7 @@ import java.util.regex.Matcher;
  * 
  * <br>Re-se some elemnts of Biography
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2012)
+ * @author Gabriel Chandesris (2012, 2022)
  * @see Biography#BIOGRAPHIC_TABLES_PATTERNS
  * @see BiographicTable
  */
@@ -23,11 +26,17 @@ public class BarbarismScientific implements Generator {
 	private BarbarismScientific() {
 		RPGDataFile file		= RPGDataFile.getBarbarismeScientifique();
 		
+		try {
+			file.load();
+		} catch (IOException e) {
+			Logger.printlnLog(LoggerLevel.LL_ERROR, "BarbarismScientific file cannot be loaded !");
+		}
+		
 		this.tables				= new HashMap<String, BiographicTable>();
 		
 		BiographicTable barSciTab	= null;
 		
-		String[] content = file.getTable();
+		String[] content = file.getChampsAsTable();
 		for (int i = 0 ; i < content.length ; i++) {
 			String line = content[i];
 			Matcher tableName = Biography.BIOGRAPHIC_TABLES_PATTERNS[0].matcher(line);
@@ -88,17 +97,17 @@ public class BarbarismScientific implements Generator {
 		
 		toReturn += "[Le|La|L'] "; // TODO choix de l'article de début...
 		
-		int randPrefixe = Utils.randomValue(prefixe.size());
+		int randPrefixe = StringUtils.randomValue(prefixe.size());
 		toReturn += prefixe.getContent(randPrefixe)+"-";
-		int randObjects = Utils.randomValue(objects.size());
+		int randObjects = StringUtils.randomValue(objects.size());
 		toReturn += objects.getContent(randObjects)+" à ";
-		int randNatures = Utils.randomValue(natures.size());
+		int randNatures = StringUtils.randomValue(natures.size());
 		toReturn += natures.getContent(randNatures)+" ";
-		int randFonctio = Utils.randomValue(fonctio.size());
+		int randFonctio = StringUtils.randomValue(fonctio.size());
 		toReturn += fonctio.getContent(randFonctio)+" ";
-		int randPositio = Utils.randomValue(positio.size());
+		int randPositio = StringUtils.randomValue(positio.size());
 		toReturn += positio.getContent(randPositio)+" ";
-		int randPannes	= Utils.randomValue(pannes.size());
+		int randPannes	= StringUtils.randomValue(pannes.size());
 		toReturn += pannes.getContent(randPannes)+". ";
 		
 		

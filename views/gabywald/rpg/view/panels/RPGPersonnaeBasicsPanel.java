@@ -1,14 +1,15 @@
 package gabywald.rpg.view.panels;
 
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 import gabywald.rpg.model.PersonnaeOfBasics;
 import gabywald.rpg.view.BuildPersonnaeFrame;
 
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2022)
  */
+@SuppressWarnings("serial")
 public class RPGPersonnaeBasicsPanel extends RPGPersonnaeAnyPanel {
 	private static RPGPersonnaeBasicsPanel instance;
 	
@@ -33,7 +34,7 @@ public class RPGPersonnaeBasicsPanel extends RPGPersonnaeAnyPanel {
 	@Override
 	public void generateRandomData() {
 		for (int i = 0 ; i < this.fields.length ; i++) 
-			{ this.setFieldValueAt(i, Utils.randomValue(11) + 8); }
+			{ this.setFieldValueAt(i, StringUtils.randomValue(11) + 8); }
 	}
 	
 }

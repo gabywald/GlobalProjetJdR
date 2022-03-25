@@ -1,17 +1,22 @@
 package gabywald.rpg.view.panels;
 
 import java.awt.Rectangle;
+import java.io.IOException;
+
 import javax.swing.JComboBox;
-import gabywald.global.data.Utils;
+import gabywald.global.data.StringUtils;
 import gabywald.rpg.data.samples.RPGDataFile;
 import gabywald.rpg.model.PersonnaeOfGURPS;
 import gabywald.rpg.view.BuildPersonnaeFrame;
+import gabywald.utilities.logger.Logger;
+import gabywald.utilities.logger.Logger.LoggerLevel;
 
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2022)
  */
+@SuppressWarnings("serial")
 public class RPGPersonnaeGURPSPanel extends RPGPersonnaeAnyPanel {
 	private static RPGPersonnaeGURPSPanel instance;
 	
@@ -30,13 +35,18 @@ public class RPGPersonnaeGURPSPanel extends RPGPersonnaeAnyPanel {
 		Rectangle bounds	= this.fields[this.fields.length-1].getBounds();
 		bounds.setSize(bounds.width*3/2, bounds.height);
 		RPGDataFile nt02	= RPGDataFile.getNTv01();
-		String[] setOfLines	= new String[nt02.getNbLines()];
+		try {
+			nt02.load();
+		} catch (IOException e) {
+			Logger.printlnLog(LoggerLevel.LL_ERROR, "RPGPersonnaeGURPSPanel file cannot be loaded !");
+		}
+		String[] setOfLines	= new String[nt02.nbLines()];
 		for (int i = 0 ; i < setOfLines.length ; i++) {
-			String line		= nt02.getLine(i);
+			String line		= nt02.getChamp(i);
 			String[] tab	= line.split("\t");
 			setOfLines[i]	= tab[0]; // +" -- "+tab[1];
 		}
-		JComboBox selector	= new JComboBox(setOfLines);
+		JComboBox<String> selector	= new JComboBox<String>(setOfLines);
 		selector.setBounds(bounds);
 		selector.setSelectedIndex(7);
 		this.remove(this.fields[this.fields.length-1]);
@@ -54,10 +64,10 @@ public class RPGPersonnaeGURPSPanel extends RPGPersonnaeAnyPanel {
 	
 	@Override
 	public void generateRandomData() {
-		int FOR = Utils.randomValue(12) + 8;
-		int DEX = Utils.randomValue(12) + 8;
-		int INT = Utils.randomValue(12) + 8;
-		int SAN = Utils.randomValue(12) + 8;
+		int FOR = StringUtils.randomValue(12) + 8;
+		int DEX = StringUtils.randomValue(12) + 8;
+		int INT = StringUtils.randomValue(12) + 8;
+		int SAN = StringUtils.randomValue(12) + 8;
 		this.setFieldValueAt(0, FOR);
 		this.setFieldValueAt(1, DEX);
 		this.setFieldValueAt(2, INT);

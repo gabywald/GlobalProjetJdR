@@ -41,9 +41,9 @@ public class BiographicElement {
 		String[] nextAddins	= new String[this.addins.length+specs.length];
 		for (int i = 0 ; i < this.addins.length ; i++) 
 			{ nextAddins[i]	= this.addins[i]; }
-		for (int i = this.addins.length ; 
-				i < this.addins.length+specs.length ; i++) 
-			{ nextAddins[i] = specs[i]; }
+		
+		for (int i = this.addins.length ; i < (this.addins.length + specs.length) ; i++) 
+			{ nextAddins[i] = specs[i - this.addins.length]; }
 		this.addins	= nextAddins;
 	}
 	
