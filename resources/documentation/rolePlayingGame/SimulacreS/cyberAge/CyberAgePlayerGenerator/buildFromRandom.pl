@@ -5,7 +5,7 @@ use strict;
 ## use Switch;
 
 use lib '.';
-use Personnae;
+use PersonnaeCyberAge;
 
 my $toShowAllParse = ( (@ARGV >= 1) && ($ARGV[0] eq "show") );
 
@@ -182,7 +182,7 @@ if ($toShowAllParse) {
 } ## "if ($toShowAllParse)"
 
 
-my $personnaeToOuput = new Personnae();
+my $personnaeToOuput = new PersonnaeCyberAge();
 
 ## Etape 1: Imaginer un concept
 my $concept = undef;
