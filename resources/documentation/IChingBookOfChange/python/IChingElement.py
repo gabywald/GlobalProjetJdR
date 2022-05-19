@@ -11,6 +11,7 @@ class IChingElement( object ) :
         self.number = number
     
     def __str__(self) : 
-        str = "%s\t%s\t%s\t%s\t%s\t%s" % ( self.ten, self.upper, self.unit, \
-                                          self.lower, self.descriptor, self.number)
+        str = "%s\t%s\t%s\t%s\t%s\t%s" % ( self.ten, self.upper, \
+                                           self.unit, self.lower, \
+                                           self.number, self.descriptor)
         return str

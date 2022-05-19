@@ -1,64 +1,64 @@
-1	Heaven	1	Heaven	Force; strong action, the key, god	1
-1	Heaven	2	Earth	Obstruction; standstill (stagnation); selfish person	12
-1	Heaven	3	Thunder	Without embroiling; innocence (the unexpected); pestilence	25
-1	Heaven	4	Water	Arguing; conflict; laws	6
-1	Heaven	5	Mountain	Retiring; retreat; yielding	33
-1	Heaven	6	Wind	Coupling;coming to meet; meetiNG	44
-1	Heaven	7	Flame	Concording People;fellowship with men; gathering men	13
-1	Heaven	8	Lake	Treading; treading; continuing	10
-2	Earth	1	Heaven	Pervading; peace; greatneSS	11
-2	Earth	2	Earth	Field; receptive; acquiescence; fl ow	2
-2	Earth	3	Thunder	Returning; return (the turning point)	24
-2	Earth	4	Water	Leading; the army; the troOPS	7
-2	Earth	5	Mountain	Humbling; modesty	15
-2	Earth	6	Wind	Ascending; pushing upwaRDS	46
-2	Earth	7	Flame	Darkening of the Light; intelligence hidden;brilliance injured	36
-2	Earth	8	Lake	Nearing; approach; the fore	19
-3	Thunder	1	Heaven	Great Invigorating; the power of the great; greatmaturity	34
-3	Thunder	2	Earth	Providing For; enthusiasm; excess	16
-3	Thunder	3	Thunder	Shake; the arousing (shock, thunder); thunder	51
-3	Thunder	4	Water	Taking-Apart; deliverance, untangled	40
-3	Thunder	5	Mountain	Small Exceeding; preponderance of the small; small surpassing	62
-3	Thunder	6	Wind	Persevering; duration; constancy	32
-3	Thunder	7	Flame	Abounding; abundance; fullness	55
-3	Thunder	8	Lake	Converting the Maiden; the marrying maiden; returning maiden	54
-4	Water	1	Heaven	Attending; waiting; moistened; arriving	5
-4	Water	2	Earth	Grouping; holding together; alliance	8
-4	Water	3	Thunder	Sprouting; difficulty at the beginning; gathering support; hoarding	3
-4	Water	4	Water	Gorge; the abyss; entrapment	29
-4	Water	5	Mountain	Limping; obstruction; afoot	39
-4	Water	6	Wind	Welling; the well	48
-4	Water	7	Flame	Already Fording; after completion; already completed; already done	63
-4	Water	8	Lake	Articulating; limitation; moderation	60
-5	Mountain	1	Heaven	Great Accumulating; the taming power of the great; great storage; potential energy	26
-5	Mountain	2	Earth	Stripping; splitting apart; flaying	23
-5	Mountain	3	Thunder	Swallowing; the corners of the mouth; jaws; comfort/ security	27
-5	Mountain	4	Water	Enveloping; youthful folly; the young shoot; discovering	4
-5	Mountain	5	Mountain	Bound; keeping still, mountain; stilling	52
-5	Mountain	6	Wind	Correcting; work on what has been spoiled (decay); branch	18
-5	Mountain	7	Flame	Adorning; grace; luxuriance	22
-5	Mountain	8	Lake	Diminishing; decrease	41
-6	Wind	1	Heaven	Small Accumulating; the taming power of the small; small harvest	9
-6	Wind	2	Earth	Viewing; contemplation (view); looking up	20
-6	Wind	3	Thunder	Augmenting; increase	42
-6	Wind	4	Water	Dispersing; dispersion (dissolution); disperse	59
-6	Wind	5	Mountain	Infiltrating; development; advancement	53
-6	Wind	6	Wind	Ground; the gentle (the penetrating, wind); calculation	57
-6	Wind	7	Flame	Dwelling People; the family (the clan); family members	37
-6	Wind	8	Lake	Center Returning; inner truth, central return	61
-7	Flame	1	Heaven	Great Possessing; possession in great measure; the great possession	14
-7	Flame	2	Earth	Prospering; progress; aquas	35
-7	Flame	3	Thunder	Gnawing Bite; biting through; chewing	21
-7	Flame	4	Water	Not Yet Fording; before completion; not yet completed	56
-7	Flame	5	Mountain	Sojourning; the wanderer; traveling	64
-7	Flame	6	Wind	Holding; the cauldron	50
-7	Flame	7	Flame	Radiance; the clinging, fire; the net	30
-7	Flame	8	Lake	Polarising; opposition; perversion	38
-8	Lake	1	Heaven	Displacement; resoluteness; breakthrough	43
-8	Lake	2	Earth	Clustering; gathering together (massing); finish	45
-8	Lake	3	Thunder	Following	17
-8	Lake	4	Water	Confining; oppression (exhaustion); entangled	47
-8	Lake	5	Mountain	Conjoining; influence (wooing); feelings	31
-8	Lake	6	Wind	Great Exceeding; preponderance of the great;	28
-8	Lake	7	Flame	Skinning; revolution (molting); the brid	49
-8	Lake	8	Lake	Open; the joyous, lake; usurpation	58
+1	Heaven	1	Heaven	1	Force; strong action, the key, god
+1	Heaven	2	Earth	12	Obstruction; standstill (stagnation); selfish person
+1	Heaven	3	Thunder	25	Without embroiling; innocence (the unexpected); pestilence
+1	Heaven	4	Water	6	Arguing; conflict; laws
+1	Heaven	5	Mountain	33	Retiring; retreat; yielding
+1	Heaven	6	Wind	44	Coupling;coming to meet; meeting
+1	Heaven	7	Flame	13	Concording People;fellowship with men; gathering men
+1	Heaven	8	Lake	10	Treading; treading; continuing
+2	Earth	1	Heaven	11	Pervading; peace; greatneSS
+2	Earth	2	Earth	2	Field; receptive; acquiescence; flow
+2	Earth	3	Thunder	24	Returning; return (the turning point)
+2	Earth	4	Water	7	Leading; the army; the troops
+2	Earth	5	Mountain	15	Humbling; modesty
+2	Earth	6	Wind	46	Ascending; pushing upwards
+2	Earth	7	Flame	36	Darkening of the Light; intelligence hidden;brilliance injured
+2	Earth	8	Lake	19	Nearing; approach; the force
+3	Thunder	1	Heaven	34	Great Invigorating; the power of the great; greatmaturity
+3	Thunder	2	Earth	16	Providing For; enthusiasm; excess
+3	Thunder	3	Thunder	51	Shake; the arousing (shock, thunder); thunder
+3	Thunder	4	Water	40	Taking-Apart; deliverance, untangled
+3	Thunder	5	Mountain	62	Small Exceeding; preponderance of the small; small surpassing
+3	Thunder	6	Wind	32	Persevering; duration; constancy
+3	Thunder	7	Flame	55	Abounding; abundance; fullness
+3	Thunder	8	Lake	54	Converting the Maiden; the marrying maiden; returning maiden
+4	Water	1	Heaven	5	Attending; waiting; moistened; arriving
+4	Water	2	Earth	8	Grouping; holding together; alliance
+4	Water	3	Thunder	3	Sprouting; difficulty at the beginning; gathering support; hoarding
+4	Water	4	Water	29	Gorge; the abyss; entrapment
+4	Water	5	Mountain	39	Limping; obstruction; afoot
+4	Water	6	Wind	48	Welling; the well
+4	Water	7	Flame	63	Already Fording; after completion; already completed; already done
+4	Water	8	Lake	60	Articulating; limitation; moderation
+5	Mountain	1	Heaven	26	Great Accumulating; the taming power of the great; great storage; potential energy
+5	Mountain	2	Earth	23	Stripping; splitting apart; flaying
+5	Mountain	3	Thunder	27	Swallowing; the corners of the mouth; jaws; comfort/ security
+5	Mountain	4	Water	4	Enveloping; youthful folly; the young shoot; discovering
+5	Mountain	5	Mountain	52	Bound; keeping still, mountain; stilling
+5	Mountain	6	Wind	18	Correcting; work on what has been spoiled (decay); branch
+5	Mountain	7	Flame	22	Adorning; grace; luxuriance
+5	Mountain	8	Lake	41	Diminishing; decrease
+6	Wind	1	Heaven	9	Small Accumulating; the taming power of the small; small harvest
+6	Wind	2	Earth	20	Viewing; contemplation (view); looking up
+6	Wind	3	Thunder	42	Augmenting; increase
+6	Wind	4	Water	59	Dispersing; dispersion (dissolution); disperse
+6	Wind	5	Mountain	53	Infiltrating; development; advancement
+6	Wind	6	Wind	57	Ground; the gentle (the penetrating, wind); calculation
+6	Wind	7	Flame	37	Dwelling People; the family (the clan); family members
+6	Wind	8	Lake	61	Center Returning; inner truth, central return
+7	Flame	1	Heaven	14	Great Possessing; possession in great measure; the great possession
+7	Flame	2	Earth	35	Prospering; progress; aquas
+7	Flame	3	Thunder	21	Gnawing Bite; biting through; chewing
+7	Flame	4	Water	56	Not Yet Fording; before completion; not yet completed
+7	Flame	5	Mountain	64	Sojourning; the wanderer; traveling
+7	Flame	6	Wind	50	Holding; the cauldron
+7	Flame	7	Flame	30	Radiance; the clinging, fire; the net
+7	Flame	8	Lake	38	Polarising; opposition; perversion
+8	Lake	1	Heaven	43	Displacement; resoluteness; breakthrough
+8	Lake	2	Earth	45	Clustering; gathering together (massing); finish
+8	Lake	3	Thunder	17	Following
+8	Lake	4	Water	47	Confining; oppression (exhaustion); entangled
+8	Lake	5	Mountain	31	Conjoining; influence (wooing); feelings
+8	Lake	6	Wind	28	Great Exceeding; preponderance of the great;
+8	Lake	7	Flame	49	Skinning; revolution (molting); the brid
+8	Lake	8	Lake	58	Open; the joyous, lake; usurpation

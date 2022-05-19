@@ -23,8 +23,8 @@ for line in dataBaseInitial :
                                               lineDetectionHeader.groups()[2], \
                                               lineDetectionHeader.groups()[1] ) )
             ## print( IChingElement( lineDetectionHeader.groups()[0], \
-            ##                                   lineDetectionHeader.groups()[2], \
-            ##                                   lineDetectionHeader.groups()[1] ) )
+            ##                       lineDetectionHeader.groups()[2], \
+            ##                       lineDetectionHeader.groups()[1] ) )
         elif (lineDetectionDescri != None) :
             ## print( "%d / %d :: %s" % (descrIndex, len(listOfElts), lineDetectionDescri.groups()[1] ) )
             listOfElts[ descrIndex ].lower = lineDetectionDescri.groups()[0]
@@ -41,3 +41,5 @@ for line in dataBaseInitial :
 
 for elt in listOfElts : 
     print( elt )
+
+
