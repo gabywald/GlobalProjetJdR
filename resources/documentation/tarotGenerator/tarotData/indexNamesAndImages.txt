@@ -13,8 +13,8 @@ XI		COUPE_COEUR_EAU	La Force	11_LaForce_military.png
 XII		COUPE_COEUR_EAU	Le Pendu	12_LePendu_padlock.png
 XIII	COUPE_COEUR_EAU	<Sans Nom>	color_none.jpg
 XIV		COUPE_COEUR_EAU	Tempérance	14_Temperance_gatewaynet.png
-XVI		DENIER_PIQUE_TERRE	La Maison Dieu	16_LaMaisonDieu_privatesystem.png
 XV		NONE_NONE_NONE	Le Diable	15_LeDiable_researchetdev.png
+XVI		DENIER_PIQUE_TERRE	La Maison Dieu	16_LaMaisonDieu_privatesystem.png
 XVII	DENIER_PIQUE_TERRE	L'Étoile	17_LEtoile.jpg
 XVIII	DENIER_PIQUE_TERRE	La Lune	18_symbole_lune.jpg
 XIX		DENIER_PIQUE_TERRE	Le Soleil	19_symbole_soleil.jpg

@@ -1,0 +1,96 @@
+
+78 cartes réparties comme suit : 
+	(trois fois sept plus un et quatre fois deux fois sept)
+	22 arcanes majeures, numérotées de 0 à 21 inclus : 
+		0	Mat	(Excuse)
+		1	Le Bateleur	(Le Mage)
+		2	La Papesse
+		3	L'Impératrice
+		4	L'Empereur
+		5	Le Pape
+		6	L'Amoureux
+		7	Le Chariot
+		8	La Justice
+		9	L'Ermite (L'Hermite)
+		10	La Roue de Fortune
+		11	La Force
+		12	Le Pendu
+		13	<Sans Nom>	(La Mort)
+		14	La Tempérance
+		15	Le Diable
+		16	La Maison-Dieu
+		17	L'Étoile
+		18	La Lune
+		19	Le Soleil
+		20	Le Jugement
+		21	Le Monde
+	56 arcanes mineures, réparties en quatres séries (Épées, Coupes, Deniers, Batons) comme suit
+		As, 2, 3, 4, 5, 6, 7, 8, 9, 10, Valet, Cavalier, Dame, Roi
+		As a pour valeur 1 ; Valet, 11 ; Cavalier 12 ; Dame 13 ; Roi 14. 
+		Dans certains cas Cavalier supérieur au Roi (au lieu d'être entre Valet et Dame). 
+
+		Associations et significations (?) des séries, et arcanes majeures associées :
+			Bâtons	Air		Carreaux	1;2;3;4
+			Épées	Feu		Trêfles		6;7;8;9
+			Coupes	Eau		Coeurs		11;12;13;14
+		 	Deniers	Terre	Piques		16;17;18;19
+		 
+		Arcanes majeures non associées à des arcanes mineures : 0;5;10;15;20;21
+	
+	Alternative "Tarot Égyptien" / Grand Jeu Etteila des arcanes majeures (et correspondance avec ordre précédent)
+		1	Idéal (consultant)			4	L'Empereur
+		2	Éclaircissement				19	Le Soleil
+		3	Discussion					18	La Lune
+		4	Révélation					17	L'Étoile
+		5	Voyage						21	Le Monde
+		6	Secrets						1	Le Bateleur
+		7	Appui						2	La Papesse
+		8	Ténacité (consultante)		3	L'Impératrice
+		9	Justice						8	La Justice
+		10	Tempérance					14	La Tempérance
+		11	Force						11	La Force
+		12	Prudence					12	L'Hermite
+		13	Mariage						6	L'Amoureux
+		14	Violence (force majeure)	15	Le Diable
+		15	Chagrins					5	Le Pape
+		16	Opinion						20	Le Jugement
+		17	Décès						13	<Sans Nom>
+		18	Trahison					12	Le Pendu
+		19	Misère						16	La Maison-Dieu
+		20	Fortune						10	La Roue de Fortune
+		21	Procès						7	Le Chariot
+		78	Folie						0	Le Mat
+		Numérotation "inversée" des arcanes mineures depuis les Rois (22-36-50-64) jusqu'aux As (35-49-63-77), avec ordre Roi, Reine, Cavalier, Valet...As
+	Autre dénomination Etteilla (aspects humains : arcanes 13 à 17, peut-être suivants jusqu'à 21, et 78, 4 vertues cardinales : 9, 10, 11, 12
+		1	Etteilla (consultant)		4	L'Empereur
+		2	Éclaircissement				19	Le Soleil
+		3	Propos						18	La Lune
+		4	Dépouillement				17	L'Étoile
+		5	Voyage						21	Le Monde
+		6	Nuit						1	Le Bateleur
+		7	Appui						2	La Papesse
+		8	Etteilla (consultante)		3	L'Impératrice
+		9	Justice						8	La Justice
+		10	Tempérance					14	La Tempérance
+		11	Force						11	La Force
+		12	Prudence					12	L'Hermite
+		13	Mariage						6	L'Amoureux
+		14	Maladie						15	Le Diable
+		15	Jugement					5	Le Pape
+		16	Mortalité					20	Le Jugement
+		17	Décès						13	<Sans Nom>
+		18	Traitre						12	Le Pendu
+		19	Misère						16	La Maison-Dieu
+		20	Fortune						10	La Roue de Fortune
+		21	Dimension					7	Le Chariot
+		78	Folie						0	Le Mat
+		
+"Indications ésotériques sur les solides platoniciens"
+	Tétraèdre (d4) : biologie / vital ; projets et intentions
+	Hexaèdre (d6) : stabilité / précision de pensée
+	Octaèdre (d8) : aura / psychique (?)
+	Icosaèdre (d20) : enlever les blocages (?)
+	Dodécaèdre (d12) : canal central (?)
+		
+		
+	
