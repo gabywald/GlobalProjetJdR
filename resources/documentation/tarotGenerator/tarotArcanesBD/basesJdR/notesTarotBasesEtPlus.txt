@@ -89,8 +89,8 @@
 	Tétraèdre (d4) : biologie / vital ; projets et intentions
 	Hexaèdre (d6) : stabilité / précision de pensée
 	Octaèdre (d8) : aura / psychique (?)
-	Icosaèdre (d20) : enlever les blocages (?)
 	Dodécaèdre (d12) : canal central (?)
+	Icosaèdre (d20) : enlever les blocages (?)
 		
 		
 	

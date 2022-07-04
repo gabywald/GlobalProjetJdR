@@ -1,0 +1,307 @@
+\documentclass[11pt,twoside,a4paper]{article}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figure
+\usepackage{verbatim}
+
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{lastpage}
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{57pt}{3pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{headings}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+
+% http://www.trustonme.net/didactels/250.html
+
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	Arcanes -- \emph{Un JdR de Tarot}
+\hfill \includegraphics[width=0.5cm]{img/logo_glider.png} }
+\fancyfoot[RO]{\includegraphics[width=0.5cm]{img/logo_glider.png} \hfill
+	\emph{Un JdR de Tarot} -- Arcanes
+\hfill \thepage /\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+\renewcommand{\headrulewidth}{0.25pt}
+\renewcommand{\footrulewidth}{0.5pt}
+%% \setlength{\headheight}{85pt}
+% \addtolength{\headheight}{0.5pt}
+% \fancypagestyle{plain}{
+% 	\fancyhead{}
+% 	\fancyfoot{}
+% 	\renewcommand{\headrulewidth}{0pt}
+% }
+
+%--- Definitions de nouvelles commandes ---
+\newcommand{\N}{\mathbb{N}} % les entiers naturels
+
+
+%--- Pour le titre ---
+\def\maketitle{%
+	\begin{center}
+		\begin{tabular}[c]{c|c}
+			\textsc{\textbf{...}}~\\[\baselineskip]~\\[\baselineskip]
+			\emph{\textbf{Version \today}}~\\[\baselineskip]~\\[\baselineskip]
+			\emph{\textbf{JdR inspiré des BD \emph{Arcanes} / \emph{L'Histoire Secrète}}}~\\[\baselineskip]~\\[\baselineskip]
+			\textsc{Auteur inestimable}~\\[\baselineskip]~\\[\baselineskip]
+			& 
+			\includegraphics[width=3cm]{img/logo_glider.png}~\\[\baselineskip]
+		\end{tabular}
+		% \\ \hline
+		 	% % if more than one logo
+			% \includegraphics[width=5cm]{img/logo_glider.png}
+		% \\ \hline
+		% \end{tabular}
+			~\\[\baselineskip]~\\[\baselineskip]
+			\Huge{Arcanes}~\\[\baselineskip]
+			\Large{Un JdR de tarot}~\\[\baselineskip]
+		
+		~\\[\baselineskip]
+		~\\[\baselineskip]
+	%% \large{
+	%% 	\textsc{\textbf{...}}
+	%% 	~\\[\baselineskip]
+	%% 	<<titre personne>> : \texttt{Anne ONYME}~\\[\baselineskip]
+	%% 	<<titre personne>> : \texttt{Jocelyn CONNU}~\\[\baselineskip]
+	%% 	~\\[\baselineskip]
+	%% 	\textit{Pr{\'e}cisions du contexte de r{\'e}daction de l'article}
+	%% }
+
+	\end{center}
+
+}%
+
+
+
+%--- Pour le glossaire --- a defaut de \makeglossary ou d'utilisation d'index latex
+
+\definecolor{verylightgray}{rgb}{0.8,0.8,0.8}
+\def\makeglossaire{%
+	\begin{center}
+
+	\begin{tabular}{|>{\columncolor{verylightgray}} p{0.20\textwidth}|p{0.70\textwidth}|}
+
+		\hline
+
+		\textbf{Carte RS} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Au début des années 80, on trouva un catalyseur de l'effet RS en l'espèce de curieuses cartes, dont on ignore à peu près tout. les premières cartes firent leur apparition dans la région de Seattle, USA. On cherche encore à percer l'identité du ou des créateurs des premiers paquets. 
+				La C.I.A., comprenant rapidement l'immense potentiel tactique que recelaient les cartes, créa Stargate, un groupe de scientifiques chargé d'anakyser le phénomène et de former des agents capables de le contrôler : les agents RS.
+			 \end{tabular} \\
+		\hline
+		\textbf{Agent RS} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Dès le début, les premiers agents RS remportèrent des succès impresionnants, accomplissant des missions alors que toutes les chances de réussites étaient contre eux. 
+				Les différentes opérations Stargate sont encore classées "secret défense" mais les chercheurs pointent le doigt sur un certain nombre d'évènements, comme la mort du Président panaméen en 82 ou le putsch raté des généraux russes. 
+				Certains affirment que les cartes existent de toute éternité, et que nos cartes à jouer en seraient des formes simplifiées. 
+			\end{tabular} \\
+		\hline
+		\textbf{Grade Stargate} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				On a pris l'habitude de classer les agents Stargate à partir des figures des cartes à jouer classiques : 6, 8, 9, 10, Valet, Cavalier, etc. Ainsi, un 6 n'est sans doute capable que d'influer sur de petits évènements ayant peu de possibilités statistiques, comme le lancement d'une pièce de monnaie par exemple. Les grades supérieurs peuvent agir beaucoup plus en profondeur sur la trame du hasard.
+			\end{tabular} \\
+		\hline
+		\textbf{DEA (Drug Enforcement Administration)} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Agence gouvernementale américaine chargée de la lutte anti-drogue dans le monde.
+			\end{tabular} \\
+		\hline  
+		\textbf{Nagual} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Esprit, double de l'esprit humain.
+			\end{tabular} \\
+		\hline 
+		\textbf{Comité Magic} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Organisme Ultra-secret mis en place par les Alliés durant la Seconde Guerre Mondiale pour étudier, utiliser les cartes et manipuler le hasard. Il n'avait de compte à rendre qu'à Churchill et Roosevelt. Magic fut dissous en 1946. 
+				Magic travailla en étroite collaboration avec Ultra, le programma de décodage des messages secrets allemands [Enigma] puis avec Manhattan, le programme de réalisation de la première bombe atomique américaine à Los Alamos. 
+				Les bras armés de Magic étaient, du côté anglais : le SOE (Special Operation Executive), et côté américain l'OSS (ancêtre de la CIA), comme Magic, ces deux entités furent dissoutes au lendemain de la guerre, du moins officiellement.
+			\end{tabular} \\
+		\hline 
+		\textbf{Fondation Vane} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Agence gouvernementale américaine qui prit la suite de Magic. Les anglais refusèrent d'en faire partie. Au départ, il s'agissait d'un simple programme détude des phénomènes RS.
+			\end{tabular} \\
+		\hline 
+		\textbf{Stargate} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Successeur de la Fondation Vane dans les années 60. Doté d'un budget beaucoup plus important, et plus tourné vers l'utilisation des cartes que vers leur étude.
+				Programme de la C.I.A. qui cherche depuis plusieurs années à percer le secret des cartes RS et qui, dans le même temps, les utilise pour former des agents RS capables de manipuler le hasard. Ces agents, très rares et très fragiles psychologiquement ont un immense potentiel tactique. Ils peuvent, à la lettre, accomplir des miracles, gagner contre toutes les probailités, mlais qui sont-ils vraiment, et en dernière analyse, qui les contrôle ?
+			\end{tabular} \\
+		\hline 
+		\textbf{Rétro-Synchronicité (RS)} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Théorie selon laquelle le hasard n'existe pas. Elle suppose qu'on peut orienter les évènements et le futur à condition de disposer d'un catalyseur qui déclenche et accélère la réaction. ces catalyseurs seraient en l'occurrence des cartes qui seraient les ancêtres de nos jeux de cartes.
+			\end{tabular} \\
+		\hline
+		\textbf{Singularité ou effet RS} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Moment où l'action des cartes se déclenche. Le sujet est alors devant les possibilités offertes par le futur, à lui de choisir les plus intéressantes. Plus une singularité est profonde, plus les possibilités sont nombreuses et plongent plus loin dans le futur. 
+			\end{tabular} \\
+		\hline
+
+	\end{tabular}
+
+\end{center}
+
+}%
+
+%============================= Corps =================================
+\begin{document}
+%ecrire le titre...
+\maketitle
+\setcounter{page}{0}
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{0}
+\thispagestyle{empty}
+
+~\\
+
+\clearpage
+\setcounter{page}{0}
+\thispagestyle{empty}
+% ecrire la table des mati{\'e}res...
+\tableofcontents
+
+% \clearpage
+
+% \setcounter{page}{0}
+% \thispagestyle{empty}
+
+% ecrire la table des figures et celle des tableaux
+
+\setcounter{page}{0}
+\thispagestyle{empty}
+~\\ \rule{10cm}{1mm}~\\
+\listoffigures
+~\\ \rule{10cm}{1mm}~\\
+\listoftables
+\clearpage
+
+
+\setcounter{page}{1}
+
+\section*{Introduction\markboth{Introduction}{Introduction}}
+
+\addcontentsline{toc}{section}{Introduction}
+
+
+[...]~\\
+
+\rule{10cm}{0.5mm}~\\
+
+
+\clearpage
+
+
+
+\section{Section}
+
+
+
+\subsection{Sous-section}
+
+
+
+\subsubsection{sous sous sous section}
+
+[...]~\\
+
+\subsubsection{sous sous sous section}
+
+
+\begin{table}[ht]
+
+	\begin{center}
+
+		\begin{tabular}{|p{0.1\textwidth}|p{0.7\textwidth}|}
+
+		\hline
+
+			\includegraphics[width=1cm]{img/logo_glider.png}
+			& 
+			\textbf{GLIDER} est le logo des hacker, symbole repris du jeu de la vie (cavalier). \\
+
+		\hline
+
+		\end{tabular}
+
+	\end{center}
+
+	\caption{Un tableau r{\'e}f{\'e}renc{\'e}}
+
+	\label{tab:TabReference01}
+
+\end{table}~\\
+
+
+
+\clearpage
+
+\subsection{Encore une sous-section}
+
+
+\begin{figure}[H]
+	\centerline {\epsfig {file=img/logo_glider.png,width=15cm}}
+	\caption{Une belle image}
+	\label{fig:FigReference01}
+\end{figure}
+
+
+\clearpage
+
+\section*{Abbr{\'e}viations\markboth{Glossaire}{Glossaire}}
+
+\addcontentsline{toc}{section}{Glossaire}
+
+%% voir en haut : sous la definition du titre : glossaire
+
+\makeglossaire
+
+\clearpage
+
+\section*{Bibliographie\markboth{Bibliographie}{Bibliographie}}
+
+\addcontentsline{toc}{section}{Bibliographie}
+\nocite{*}
+%toutes references biblio : 6 lettres + 2 chiffres
+\bibliography{arcanesJdR}
+\bibliographystyle{frplain} % plain or frplain
+\end{document}

@@ -1,5 +1,5 @@
 
-Arcanes Tome 1 - Le Baron Fantôme ; Jean-Pierre Pécau (Scénario), Frédéric Campoy et Roland Pignault (Dessin), Isabelle Rabarot (Couleurs), Sergio Layout (toryboard), Ron Crob' (Design), Schelle & Rosa (Mise en couleurs de la couverture) ; 1998, ISBN 978-2-84055-210-8 ; Éditions Delcourt, Label SérieB
+Arcanes Tome 1 - Le Baron Fantôme ; Jean-Pierre Pécau (Scénario), Frédéric Campoy et Roland Pignault (Dessin), Isabelle Rabarot (Couleurs), Sergio Layout (Storyboard), Ron Crob' (Design), Schelle & Rosa (Mise en couleurs de la couverture) ; 1998, ISBN 978-2-84055-210-8 ; Éditions Delcourt, Label SérieB
 Arcanes Tome 2 - La Dame De Prague ; Jean-Pierre Pécau (Scénario), Roland Pignault (Dessin), Isabelle Rabarot (Couleurs), Sergio Layout (Storyboard), Ron Crob' (Design), Schelle & Rosa (Mise en couleurs de la couverture) ; 2001, ISBN 978-2-84055-415-1 ; Éditions Delcourt, Label SérieB
 Arcanes Tome 3 - Le Dossier Karadine ; Jean-Pierre Pécau (Scénario), Bojan KovaCeviC (Dessin), Damour (Storyboard), Isabelle Rabarot (Couleurs), Fred Blanchard (Design des cartes), Schelle & Rosa (Mise en couleurs de la couverture) ; 2004, ISBN 978-2-84055-895-5 ; Éditions Delcourt, Label SérieB
 
@@ -28,7 +28,7 @@ Lexique Tome 3
 	Fondation Vane
 		Agence gouvernementale américaine qui prit la suite de Magic. Les anglais refusèrent d'en faire partie. Au départ, il s'agissait d'un simple programme détude des phénomènes RS. 
 	Stargate
-		Successeur de la Fondation Vane dans les années 60. Doté d'un budget beaucoup plus important, et plus trouné vers l'utilisation des cartes que vers leur étude. 
+		Successeur de la Fondation Vane dans les années 60. Doté d'un budget beaucoup plus important, et plus tourné vers l'utilisation des cartes que vers leur étude. 
 	Rétro-Synchronicité (RS)
 		Théorie selon laquelle le hasard n'existe pas. Elle suppose que l'on peut orienter les évènements futurs à l'aide d'un catalyseur, en l'occurence des cartes qui seraient les ancêtres de nos jeux de cartes. 
 	Singularité ou effet RS

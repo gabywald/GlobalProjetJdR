@@ -1,22 +1,17 @@
 Source:http://philippe.tromeur.free.fr/53/arcanes.pdf
 
 Arcanes
-
-jeu de rôle générique de Philippe Tromeur,jeu de rôle générique de Philippe Tromeur,
-publié le mardi 10 juin 2008.
+	jeu de rôle générique de Philippe Tromeur,jeu de rôle générique de Philippe Tromeur,
+	publié le mardi 10 juin 2008.
 
 Le matériel
-Ce jeu de rôle se joue avec un jeu de tarots normal, mais vous pouvez également utiliser un
-jeu de tarot divinatoire, si ça vous amuse.
-Durant la partie, chaque joueur a une main de cinq cartes, renouvellées au fur et à mesure
-du jeu. Les autres cartes sont disposées dansune pioche tournée contre la table.
+Ce jeu de rôle se joue avec un jeu de tarots normal, mais vous pouvez également utiliser un jeu de tarot divinatoire, si ça vous amuse.
+Durant la partie, chaque joueur a une main de cinq cartes, renouvellées au fur et à mesure du jeu. Les autres cartes sont disposées dansune pioche tournée contre la table.
 Papier, crayons et victuailles sont utiles...
 
 Les personnages
-Les personnages sont définis par 5 Couleurs
-notées A, B, C, D et E : Arcane, Bâtons, Coupes, Deniers et Épées.
-Le joueur peut répartir 22 points entre ses 5 caractéristiques, sachant que l'Arcane coûte
-deux fois plus cher que les autres Couleurs. 
+Les personnages sont définis par 5 Couleurs notées A, B, C, D et E : Arcane, Bâtons, Coupes, Deniers et Épées.
+Le joueur peut répartir 22 points entre ses 5 caractéristiques, sachant que l'Arcane coûte deux fois plus cher que les autres Couleurs. 
 Pour chaque Couleur, choisir une spécialité.
 
 Tirage de cartes
@@ -38,9 +33,9 @@ Le maître du jeu a une seule main utilisée pour l'ensemble des personnages non
 
 Combat
 Un combat consiste en des oppositions en Epée : le vainqueur a blessé l'adversaire. Ce dernier doit faire une opposition contre une difficulté dépendant de l'arme (et souvent du score de Bâtons de l'attaquant) :
-Poings	2xBâtons	Pistolet	20
-Couteau	5+Bâtons	Fusil	30
-Epée	10+Bâtons	Lance-Pierre	5
+	Poings	2xBâtons	Pistolet	20
+	Couteau	5+Bâtons	Fusil	30
+	Epée	10+Bâtons	Lance-Pierre	5
 En cas d'échec (résultat inférieur à la difficulté), c'est une blessure grave, sinon c'est une blessure légère. En cas d'échec critique (résul tat inférieur à la moitié de la difficulté), c'est une blessure critique (et le coma).
 Avec une blessure légère, on n'a plus que 3 cartes en main. Avec une blessure grave, on n'en a plus qu'une en main. On récupère un niveau de blessure par jour de soins appropriés.
 
@@ -48,12 +43,11 @@ Spécialités
 Les spécialités autorisent les personnages à rajouter +5 à leur Résultat, si jamais l'action est liée au champ de cette spécialité. 
 
 Magie
-Pour utiliser la magie, il faut posséder la
-spécialité adéquate :
-nécromancie pour discuter avec des fantômes,
-démonisme pour appeler des démons,
-divination pour savoir des choses,
-télékinésie pour déplacer des objets...
+Pour utiliser la magie, il faut posséder la spécialité adéquate :
+	nécromancie pour discuter avec des fantômes,
+	démonisme pour appeler des démons,
+	divination pour savoir des choses,
+	télékinésie pour déplacer des objets...
 La difficulté d'Arcane, incluant le bonus de +5 pour la spécialité, est généralement élevée, de 20 pour une divination mineure, à 40 pour la destruction d'un immeuble par la foudre.
 Plusieurs tentatives successives sont possibles, mais en cas d'échec critique (Résultat inférieur à la moitié de la difficulté), le résultat est catastrophique, par exemple une blessure.
 En prenant son temps (une heure par jet d'Arcane), on évite le risque d'échec critique.
@@ -64,3 +58,4 @@ Après une aventure, un personage gagne de 1 à 5 points d'expérience, qui se d
 Aventures
 Oup's, nous arrivons déjà en fin de page et je n'ai pas l'espace de vous présenter un univers et un exemple de scénario...
 Débrouillez-vous, je vous fais confiance !
+
