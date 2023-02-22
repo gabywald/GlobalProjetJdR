@@ -25,5 +25,11 @@ hs_err_pid*
 # compilation for java project (locally)
 bin/
 
+# compilation for tex / latex project (locally)
 **/*.pdf
 **/*.aux
+**/*.bbl
+**/*.blg
+**/*.lof
+**/*.lot
+**/*.toc

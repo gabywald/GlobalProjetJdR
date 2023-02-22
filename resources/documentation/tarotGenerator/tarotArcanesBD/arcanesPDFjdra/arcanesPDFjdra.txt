@@ -1,12 +1,12 @@
 Source:http://philippe.tromeur.free.fr/53/arcanes.pdf
 
 Arcanes
-	jeu de rôle générique de Philippe Tromeur,jeu de rôle générique de Philippe Tromeur,
+	jeu de rôle générique de Philippe Tromeur,
 	publié le mardi 10 juin 2008.
 
 Le matériel
 Ce jeu de rôle se joue avec un jeu de tarots normal, mais vous pouvez également utiliser un jeu de tarot divinatoire, si ça vous amuse.
-Durant la partie, chaque joueur a une main de cinq cartes, renouvellées au fur et à mesure du jeu. Les autres cartes sont disposées dansune pioche tournée contre la table.
+Durant la partie, chaque joueur a une main de cinq cartes, renouvellées au fur et à mesure du jeu. Les autres cartes sont disposées dans une pioche tournée contre la table.
 Papier, crayons et victuailles sont utiles...
 
 Les personnages
@@ -53,7 +53,7 @@ Plusieurs tentatives successives sont possibles, mais en cas d'échec critique (
 En prenant son temps (une heure par jet d'Arcane), on évite le risque d'échec critique.
 
 Expérience
-Après une aventure, un personage gagne de 1 à 5 points d'expérience, qui se dépensent pour acheter de nouveaux points dans les 5 Couleurs (l'Arcane coûte toujours deux fois plus cher). Une spécialité coûte 3 points, sauf les spécialités Arcanes qui coûtent 5 points.
+Après une aventure, un personnage gagne de 1 à 5 points d'expérience, qui se dépensent pour acheter de nouveaux points dans les 5 Couleurs (l'Arcane coûte toujours deux fois plus cher). Une spécialité coûte 3 points, sauf les spécialités Arcanes qui coûtent 5 points.
 
 Aventures
 Oup's, nous arrivons déjà en fin de page et je n'ai pas l'espace de vous présenter un univers et un exemple de scénario...

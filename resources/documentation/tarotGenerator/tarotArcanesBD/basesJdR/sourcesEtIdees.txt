@@ -7,7 +7,7 @@
 	https://www.legrog.org/jeux/chateau-falkenstein/tarot-variation-en
 	
 
-Tarot des Ombres des lames du Cardinal ; les vingt deux arcanes sont, dans l'ordre de 0 à 21 :
+Tarot des Ombres des Lames du Cardinal ; les vingt deux arcanes sont, dans l'ordre de 0 à 21 :
     l'astrologue en prière
     la tisserande oubliée
     le voleur sans mémoire
@@ -23,7 +23,7 @@ Tarot des Ombres des lames du Cardinal ; les vingt deux arcanes sont, dans l'ord
     l'architecte des mondes
     la courtisane amoureuse
     l'assassin sans visage
-    l'holorger des chimères
+    l'horloger des chimères
     la gardienne derrière le miroir
     la magicienne sous le voile
     l'achimiste des ombres
