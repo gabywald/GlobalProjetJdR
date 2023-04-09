@@ -1,6 +1,6 @@
 Calendrier CyberPunk / CyberAge
 
-The Sprawl trilogy / Trilogie de la Conurb : Neuromancien + Comte Zéro + Mona Lisa s'éclate : ?
+The Sprawl trilogy / Trilogie de la Conurb : Neuromancien + Comte Zéro + Mona Lisa s'éclate : années 2040 ?
 
 Convoi™ :
 2048 : isolation des premières colonies face au Monde Uni (union des nations terrestres et Lune et Mars)
@@ -8,13 +8,14 @@ Convoi™ :
 2069, premier semestre ; centenaire premiers pas sur la lune ; Noël 2069
 ...
 
-Zentak : Argonautes ?
-Little Blade : 10-15 ans avant Zentak (vers 2015/2020 ?)
+Zentak : Affaire de la passe des Argonautes ?
+Little Blade : 10-15 ans avant Zentak (vers 2015/2020 ?), uchronique dans le sens ouù les villes de la côte chinoise sont devenues indépendantes dans les années 2010, et l'usage de bombes nucléaires tactiques par un général l'armée populaire chinoise. 
 
 Carmen McCallum
 2029 : IRA renaissante, attentats contre corporations multinationales / multicontinentales ; amendement krenkel voté en Australie (cryogénisation des personnes prises sur le fait d'un crime ou délit suffisamment grave, en l'attente d'un jugement)
 2 juillet 2038 : Naoko Sonoda mise en détention préventive
-Février 2040 : accords de paix de l'IRA renaissante (...) ; 16 février 2040 : Carmen McCallum mise en caisson amniotique par le MI6
+Février 2040 : accords de paix de l'IRA renaissante (...) ; mise en place d'un mouvement des multicontinentales pour relancer la course à l'espace par l'Union Européenne
+16 février 2040 : Carmen McCallum mise en caisson amniotique par le MI6
 10 septembre 2043 : réveil inopiné de Carmen McCallum
 25 septembre 2043 : Saint-Tropez, première rencontre avec Bugg
 Septembre 2047 : "incident" au château d'Azay le rideau (...)
@@ -29,7 +30,7 @@ Dossier EGM
 28 septembre 2054 : derniers préparatifs pour le départ du cargo spatial "Pierre le Grand" (1er octobre 2054) pour un trajet de six mois
 Arrivée sur zone au bout de six mois ; 450+ jours de blocus localement
 ...
-Avril 2055 : opération visage Carmen McCallum sur Mars
+Avril 2055 : opération de récparation du visage de Carmen McCallum sur Mars
 Février 2056 : vendetta, mort de Dario Fulci
 4 mars 2056 : ouragan en Corse (de cambre)
 Suite 2056 : Jérusalem, Gazdrom, Dommy
@@ -52,7 +53,7 @@ Novembre 2053 : affaire des eaux lunaires,  New-York et Jérusalem (Dommy), Jér
 ...
 
 Dallas Barr
-2028 : convention des immortels à Singapour,  une partie en profite pour disparaître
+2028 : convention des immortels à Singapour, une partie en profite pour disparaître
 2047 : construction du mur de Sava (nouvelles frontières pour l'Union Européenne)
 17 juin 2047 : incident chimique / test gaz viral à Burntside Lake, Nebraska ; aucun survivant.
 2063 : le cardinal Matekoni (Botswana) deviens pape (Rohlilala Ier), combats contre le Sida-X, les mafias de Rome et de Palerme ; survie à un attentat en 2065 (réforme de la garde suisse en corps militaire d'élite) ; 2066 : un commando hétérodoxe prend 380 pèlerins en otage en la basilique Saint Jean de Latran, 164 morts.
@@ -60,7 +61,7 @@ Dallas Barr
 7 août 2075 : troubles en Floride (indépendance) ;
 6 octobre 2075 : proclamation de la constitution de la "République Conche"
 2076 : apparition et disparition de la Shéroïne ; les différentes mafias font leur nettoyage.
-2078-2080 : activisme du mouvement "Earth First" ("La Terre d'abord") dirigé par Lyndon Harper. Indépendance de la Lune, obtenue par l'accord de raison entre LME (Lunar Mining & Engineering, Simon Frey) et Stileman Entreprises.
+2078-2080 : activisme du mouvement "Earth First" ("La Terre d'abord") dirigé par Lyndon Harper. Indépendance de la Lune, obtenue par l'accord de raison entre LME (Lunar Mining & Engineering, Simon Grey) et Stileman Entreprises.
 30 septembre 2078 : The Fran Van Buren Show, interview simultanée de Lord Stileman, de l'image Turing du professeur Brigitte Harrison et de Lyndon Harper.
 2081 : explosion du Puy de Dôme (525km^2 ; 12860 victimes)
 2085 : Dallas Barr remporte le grand prix de Miami ; emploi d'armes nucléaires tactiques sur Novi Sad
