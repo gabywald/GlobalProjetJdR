@@ -34,6 +34,12 @@
 			Épées	Feu		Trêfles		6;7;8;9
 			Coupes	Eau		Coeurs		11;12;13;14
 		 	Deniers	Terre	Piques		16;17;18;19
+		 	
+		 Astrologie (signes et saisons)
+		 	Feu : Bélier, Lion, Sagittaire (été)
+		 	Eau : Cancer, Scorpion, Poissons (automne)
+		 	Air : Gémeaux, Balanes, Verseau (printemps)
+		 	Terre : Taureau, Vierge, Capricorne (hiver)
 		 
 		Arcanes majeures non associées à des arcanes mineures : 0;5;10;15;20;21
 	
