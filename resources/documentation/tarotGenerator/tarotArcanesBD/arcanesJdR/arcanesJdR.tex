@@ -22,7 +22,7 @@
 % \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
 % gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
 \usepackage{vmargin}
-\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{57pt}{3pt}
+\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{60pt}{3pt}
 
 \usepackage{lscape} % changement orientation page
 %\usepackage{frbib} % enlever pour obtenir references en anglais
@@ -134,16 +134,16 @@
 				On a pris l'habitude de classer les agents Stargate {\`a} partir des figures des cartes {\`a} jouer classiques : 6, 8, 9, 10, Valet, Cavalier, etc. Ainsi, un 6 n'est sans doute capable que d'influer sur de petits {\'e}v{\`e}nements ayant peu de possibilit{\'e}s statistiques, comme le lancement d'une pi{\`e}ce de monnaie par exemple. Les grades sup{\'e}rieurs peuvent agir beaucoup plus en profondeur sur la trame du hasard.
 			\end{tabular} \\
 		\hline
-		\textbf{DEA (Drug Enforcement Administration)} & 
-			\begin{tabular}{p{0.68\textwidth}}
-				Agence gouvernementale am{\'e}ricaine charg{\'e}e de la lutte anti-drogue dans le monde.
-			\end{tabular} \\
-		\hline  
-		\textbf{Nagual} & 
-			\begin{tabular}{p{0.68\textwidth}}
-				Esprit, double de l'esprit humain.
-			\end{tabular} \\
-		\hline 
+%% 		\textbf{DEA (Drug Enforcement Administration)} & 
+%% 			\begin{tabular}{p{0.68\textwidth}}
+%% 				Agence gouvernementale am{\'e}ricaine charg{\'e}e de la lutte anti-drogue dans le monde.
+%% 			\end{tabular} \\
+%% 		\hline  
+%% 		\textbf{Nagual} & 
+%% 			\begin{tabular}{p{0.68\textwidth}}
+%% 				Esprit, double de l'esprit humain.
+%% 			\end{tabular} \\
+%% 		\hline 
 		\textbf{Comit{\'e} Magic} & 
 			\begin{tabular}{p{0.68\textwidth}}
 				Organisme Ultra-secret mis en place par les Alli{\'e}s durant la Seconde Guerre Mondiale pour {\'e}tudier, utiliser les cartes et manipuler le hasard. Il n'avait de compte {\`a} rendre qu'{\`a} Churchill et Roosevelt. Magic fut dissous en 1946. 
@@ -301,38 +301,81 @@ Apr{\`e}s une aventure, un personnage gagne de 1 {\`a} 5 points d'exp{\'e}rience
 
 \begin{itemize}
 	\item \emph{Les Lames du Cardinal} (Tarot des Ombres) ; 
-	\item Tarot d'inspiration pour \emph{R{\^e}ves de Dragon}
-	\item \emph{Ambre}
-	\item \emph{Mage}
-	\item \emph{Mal{\'e}fices}
+	\item Tarot d'inspiration pour \emph{R{\^e}ves de Dragon}, \emph{Mal{\'e}fices}
+	\item \emph{Ambre}, \emph{Mage}...
 	\item ...
+	\item Cas {\`a} part et m{\'e}ritant d'{\^e}tre cit{\'e} ici : \emph{Ch{\^a}teau FalkenStein}, o{\`u} plusieurs jeux de 54 cartes sont utilis{\'e}s {\`a} la place des d{\'e}s en cours de partie afin de r{\'e}soudre les actions des personnages de joueurs.
 \end{itemize}
-
-Cas {\`a} part et m{\'e}ritant d'{\^e}tre cit{\'e} ici : \emph{Ch{\^a}teau FalkenStein}, o{\`u} plusieurs jeux de 54 cartes sont utilis{\'e}s {\`a} la place des d{\'e}s en cours de partie afin de r{\'e}soudre les actions des personnages de joueurs. 
 
 \section{{\'E}l{\'e}ments de base, id{\'e}es...}
 
+\subsection{R{\^o}le des cartes}
+
+{ \setlength\parindent{0pt}
 \begin{tabular}[c]{c c c c c c}
-	Famille		&	Symbole			&	{\'E}l{\'e}ment	& 	Groupe... ou Id{\'e}al (?)				& Famille "CyberPunk" (?)		& "Pouvoirs"			\\
-	Arcanes		&	Nb et Nom		&	-- selon --		&	Magie								& Magie (?) ; Hasard ... 		& ... 					\\
-	Batons		&	Carreaux		&	Air				&	Sociabilit{\'e}, charisme ; Sant{\'e}	& Gangs, Nomades...				& Social 				\\
-	Coupes		&	C\oe ur			&	Eau				& 	Vie, Gu{\'e}rison ; Charisme		& Tech, MedTech... 				& Mat{\'e}riel			\\
-	Deniers		&	Tr{\`e}fles		&	Feu				& 	Protection ; Fortune				& Solos, Fixers, Hackers...		& Virtuel				\\
-	Ep{\'e}e	&	Piques			&	Terre			& 	Pouvoir, unification ; Action		& Corporations, {\'E}tats...	& Temporel / Religieux	\\
-\end{tabular}~\\
+	Famille			&	Symbole			&	{\'E}l{\'e}ment	& 	Type / Groupe... ou Id{\'e}al (?)		& Famille "CyberPunk" (?)		& "Pouvoirs"			\\
+	Arcanes			&	Nb et Nom		&	-- selon --		&	Magie (?) ...							& Magie (?) ; Hasard ... 		& ... 					\\
+	Batons			&	Carreaux		&	Air				&	Sociabilit{\'e}, Charisme ; Sant{\'e}	& Gangs, Nomades...				& Social / Relation 	\\
+	Coupes			&	C\oe ur			&	Eau				& 	Vie, Gu{\'e}rison ; Ing{\'e}nierie			& Tech, MedTech... 				& Mat{\'e}riel			\\
+	Deniers			&	Tr{\`e}fles		&	Feu				& 	Protection, R{\'e}flexion ; Fortune			& Solos, Fixers, Hackers...		& Virtuel / Intellect	\\
+	{\'E}p{\'e}es	&	Piques			&	Terre			& 	Pouvoir, Unification ; Action			& Corporations, {\'E}tats...	& Temporel / Religieux	\\
+\end{tabular} }~\\
 
-Tirage des PJ : 5 {\`a} 10 cartes classiques ; d{\'e}termination puissance (si t{\^e}te), appartenance {\`a} une maison (ou deux ?). ~\\
+Tirage des PJ : 5 {\`a} 10 cartes classiques ; d{\'e}termination puissance dans chaque caract{\'e}ristique, si t{\^e}te : cela permet de d{\'e}terminer une appartenance {\`a} une maison (ou deux ?) et un niveau au sein ce celle(s)-ci. ~\\
 
-Pendant une partie : un jeu de tarot complet (une campagne ?) ou un jeu classique de 54 cartes (ou deux, selon les besoins).~\\
+Pendant une partie : un jeu de tarot complet (une campagne ?) ou un jeu classique de 54 cartes (ou deux, selon les besoins ou la variante utilis{\'e}e), symbolisant jeu(x) construit(s) "dans le jeu" (intra-di{\'e}g{\'e}tique) "{\`a} la demande", ou apparus voire d{\'e}couverts selon les cirsconstances... ~\\
 
-Effet RS : poser une carte sur la table en pr{\'e}vision utilisation future ; pour utiliser un {\'e}l{\'e}ment utile par la suite et que le joeuur peut ainsi faire appara{\^i}tre / dispara{\^i}tre (v{\'e}hicule, {\'e}l{\'e}ment de d{\'e}cor). Selon puissance et typologie de la carte concern{\'e}e. 
-Destructions de cartes ? (carte du tirage de personnage ou tir{\'e}e pendant la partie) => si n{\'e}cessaire on subtitue par un carton solide (carte bristol) avec annotations.~\\
+\subsection{R{\'e}solution des actions des PJ / Phase d'Action}
 
-Jeux construits ("dans le jeu" / intra-di{\'e}g{\'e}tique) "{\`a} la demande"... Ou apparut selon les cirsconstances... ~\\
+Rappel / R{\`e}gle d'or : une action triviale r{\'e}ussit toujours !~\\
+
+Initiative par tirage d'une carte dans un jeu sp{\'e}cifique m{\'e}lang{\'e} ({\`a} moins que le premier intervenant ne prenne les autres par surprise) : cela peut {\^e}tre dans la pile de cartes restantes, une r{\'e}serve de cartes du MJ.~\\
+
+Chaque joueur dispose d'une main de cinq (5) cartes, renouvelable au fur et {\`a} mesure de son utilisation apr{\`e}s chaque usage d'une ou pluseurs cartes dans une pile de tirage d{\'e}di{\'e}e, en compl{\'e}tion {\`a} 5 (sauf sp{\'e}cificit{\'e}s).~\\
+Une action se r{\'e}sout par le d{\'e}p{\^o}t d'une ou plusieurs cartes par chaque joueur pour son PJ, le d{\'e}compte du "score" s'effectue de la fa\c{c}on suivante (hors Atouts / Arcanes) : 
+\begin{itemize}
+	\item Valeur faciale des cartes li{\'e}es au type ou au groupe utilis{\'e} (de l'as qui vaut 1 au 14 pour la plus haute t{\^e}te) ; 
+	\item Un demi point par autres cartes non li{\'e}es au type ou au groupe utilis{\'e} ; 
+	\item Un Joker (ou Excuse) vaut toujours 7 ; 
+	\item Dans les combinaisons sp{\'e}ciales (paire, brelan, suite...), multipliez le score pr{\'e}c{\'e}demment obtenu par le nombre de cartes de la combinatoire ; 
+	\item \emph{Optionnel : }Un Atout ou une Arcane (ou un Joker) permet une action sp{\'e}ciale (contr{\'e} par un Atout de valeur sup{\'e}rieure) : 
+	\begin{itemize}
+		\item Tirage de cartes suppl{\'e}mentaires (valeur de l'Atout divis{\'e} par trois (3), arrondi au sup{\'e}rieur ; ou 1d6) ; 
+		\item Rejouer imm{\'e}diatement (apr{\`e}s compl{\'e}tion de la main) ; 
+		\item Action h{\'e}ro{\"i}que (dont la r{\'e}ussite d{\'e}pend du reste des cartes jou{\'e}es avec celle-ci). 
+	\end{itemize}
+	\item \emph{Optionnel : }Utilisation d'une Carte Sp{\'e}ciale d{\'e}finissant le PJ : {\`a} d{\'e}finir {\`a} l'avance entre le MJ et le joueur (valeur de la carte), mise en jeu de la vie du PJ et : ou du pouvoir associ{\'e} {\`a} cette carte. 
+\end{itemize} %% ~\\
+
+Les cartes jou{\'e}es rejoignent une d{\'e}fausse en attendant d'{\^e}tre rem{\'e}lang{\'e}es pour cr{\'e}er une nouvelle pile de tirage quand celle-ci est vide.~\\
+
+\clearpage 
+
+En dehors d'un Phase d'Action, on peut utiliser un "Effet R{\'e}troSynchronicit{\'e}" (RS) : un joueur pose une carte sur la table en pr{\'e}vision d'une utilisation future (avec une annotation ou un post-it) ; cela permet d'avoir un {\'e}l{\'e}ment utile par la suite et que le joueur peut ainsi faire appara{\^i}tre par la suite (v{\'e}hicule, {\'e}l{\'e}ment de d{\'e}cor...). Cette carte est ensuite int{\'e}gr{\'e}e {\`a} la pile de tirage : quand cette carte est tir{\'e}e, elle est forc{\'e}ment en faveur du joueur l'ayant d{\'e}pos{\'e}e (int{\'e}gration {\`a} sa main courante). Cela peut {\^e}tre utile selon puissance et typologie de la carte concern{\'e}e, et l'objet concern{\'e}.~\\
+
+\subsection{Ressorts pour le MJ}
+
+Quelques {\'e}l{\'e}ments {\`a} utiliser par le MJ comme ressorts d'action, {\`a} communiquer ou {\`a} faire d{\'e}couvrir : 
+\begin{itemize}
+	\item Les cartes, leurs utilisations et les porteurs de cartes sont rep{\'e}rables {\`a} distance par d'autres (adversaires ou non) : bruit blanc / color{\'e} perceptible, cartes qui chauffent (pour les joueurs)... ; 
+	\item Certains mat{\'e}riaux peuvent servir d'isolants : eau, tissus (soie ou autres mat{\'e}riaux sp{\'e}cifiques)...
+	\item Il est possible de marquer des lieux par des glyphes, de m{\^e}me pour les gens (tatouages) ou certains objets : cela peut servir de protection, dans un sens comme dans l'autre (bloquer {\`a} l'int{\'e}rieur ou {\`a} l'ext{\'e}rieur) ; 
+	\item Lois physiques modifiées en certains lieux (géométrie non euclidienne : on entre dans un bâtiment, la sortie abouti ailleurs...) ; 
+	\item ... 
+\end{itemize}~\\
+
+\subsection{Variantes de jeu (jeu en campgane)}
+
+Ces variantes peuvent compl{\'e}ter ou remplacer les r{\`e}gles d{\'e}crites pr{\'e}c{\'e}dentes.~\\
+
+Variante (jeu en campagne) : chaque joueur dispose au d{\'e}part de la campagne d'un jeu complet (54 ou 78 cartes) et peut utiliser ses cartes comme bon lui semble ; les cartes tir{\'e}es pour d{\'e}finir son personnage sont consid{\'e}r{\'e}es comme maitresses et peuvent n'{\^e}tre actives qu'en certaines circonstances.~\\
+
+Destructions de cartes ? Annotations sp{\'e}cifiques ? Par exemple les cartes du tirage du personnage du joueur ou tir{\'e}es pendant la partie ; si n{\'e}cessaire on subtitue par un carton solide (carte bristol) avec annotations.~\\
+
+\subsection{Modalit{\'e}s particuli{\`e}res}
 
 Modalit{\'e}s CyberPunk : magie limit{\'e} au monde virtuel (matrice / cyberespace) et classiquement reli{\'e} {\`a} la mythologie vaudoue (at autres {\'e}l{\'e}ments cultures Cara{\"i}bes). 
 Relier {\`a} une autre mythologie dans un autre univers (de jeu) : romain, grec, sum{\'e}rien, {\'e}gyptien, nordique, inca... (NOTE : tableau de correspondances {\`a} faire !)
-
 
 %% utilisation packages latex tikz / tikzpeople pour figures et dessins de fonds
 %% tikz-3dplot ?
@@ -397,23 +440,19 @@ Relier {\`a} une autre mythologie dans un autre univers (de jeu) : romain, grec,
 
 \end{table}~\\
 
-
-
-\clearpage
+%% \clearpage
 
 \subsection{Encore une sous-section}
 
-
 \begin{figure}[H]
-	\centerline {\epsfig {file=img/logo_glider.png,width=15cm}}
+	\centerline {\epsfig {file=img/logo_glider.png,width=0.5\textwidth}}
 	\caption{Une belle image}
 	\label{fig:FigReference01}
 \end{figure}
 
-
 \clearpage
 
-\section*{Abbr{\'e}viations\markboth{Glossaire}{Glossaire}}
+\section*{Glossaire\markboth{Glossaire}{Glossaire}}
 
 \addcontentsline{toc}{section}{Glossaire}
 
