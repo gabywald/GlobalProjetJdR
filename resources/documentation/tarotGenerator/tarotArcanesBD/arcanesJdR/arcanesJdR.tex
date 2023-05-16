@@ -7,7 +7,7 @@
 \usepackage{a4}	             % pour la taille   
 \usepackage[T1]{fontenc}     % pour les font postscript
 \usepackage{epsfig}          % pour gerer les images
-%\usepackage{psfig}
+
 \usepackage{amsmath, amsthm} % tres bon mode mathematique
 \usepackage{amsfonts,amssymb}% permet la definition des ensembles
 \usepackage{float}           % pour le placement des figure
@@ -16,6 +16,8 @@
 \usepackage{longtable} % pour les tableaux de plusieurs pages
 
 \usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{tikz}
 
 \usepackage{lastpage}
 
@@ -364,7 +366,7 @@ Quelques {\'e}l{\'e}ments {\`a} utiliser par le MJ comme ressorts d'action, {\`a
 	\item ... 
 \end{itemize}~\\
 
-\subsection{Variantes de jeu (jeu en campgane)}
+\subsection{Variantes et modes de jeu (jeu en campagne)}
 
 Ces variantes peuvent compl{\'e}ter ou remplacer les r{\`e}gles d{\'e}crites pr{\'e}c{\'e}dentes.~\\
 
@@ -376,6 +378,26 @@ Destructions de cartes ? Annotations sp{\'e}cifiques ? Par exemple les cartes du
 
 Modalit{\'e}s CyberPunk : magie limit{\'e} au monde virtuel (matrice / cyberespace) et classiquement reli{\'e} {\`a} la mythologie vaudoue (at autres {\'e}l{\'e}ments cultures Cara{\"i}bes). 
 Relier {\`a} une autre mythologie dans un autre univers (de jeu) : romain, grec, sum{\'e}rien, {\'e}gyptien, nordique, inca... (NOTE : tableau de correspondances {\`a} faire !)
+
+\subsection{Symboles et design / dessin des cartes}
+
+N'importe quel jeu de cartes ou de tarot peut faire l'affaire ; ceux à petit prix peuvent faire l'affaire (selon le mode de jeu), ou de votre propre dessin. L'essentiel est de pouvoir les utiliser facilement pendant la ou les parties.~\\
+
+\begin{minipage}[ht]{0.45\textwidth}
+	FEU / AIR / EAU / TERRE
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\def\triangle{--++(120:1)--++(240:1)--cycle}
+	\def\triangleReverse{--++(240:1)--cycle}
+	\begin{tikzpicture}
+		\tikz\draw[red,thick](0,0)\triangle; %% FEU
+		
+		\tikz\draw[blue,thick](2,0)\triangle (1,0.40)--(2,0.40); %% AIR
+		
+		\tikz\draw[orange,thick](3,1)--(4,1)\triangleReverse; %% EAU
+		
+		\tikz\draw[green,thick](5,1)--(6,1)\triangleReverse (5,0.60)--(6,0.60); %% TERRE
+	\end{tikzpicture}
+\end{minipage}
 
 %% utilisation packages latex tikz / tikzpeople pour figures et dessins de fonds
 %% tikz-3dplot ?
