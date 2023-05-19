@@ -1,0 +1,73 @@
+\documentclass[11pt,oneside,a4paper]{article} %% oneside and NOT twoside here !!
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{epsfig}          % pour gerer les images
+%\usepackage{psfig} 
+
+% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+\usepackage{vmargin}
+\setmarginsrb{1.00cm}{1.00cm}{1.00cm}{1.00cm}{15pt}{3pt}{60pt}{25pt}
+
+\usepackage{lscape} % changement orientation page
+%\usepackage{frbib} % enlever pour obtenir references en anglais
+% --- style de page (pour les en-tete) ---
+\pagestyle{empty}
+
+\usepackage{tikz}
+
+%============================= Corps =================================
+\begin{document}
+
+\setlength\parindent{0pt} % \noindent for all document
+
+\begin{minipage}[ht]{0.30\textwidth}
+	%% color 		white, black, red, green, blue, cyan, magenta, yellow 
+	%% thickness 	ultra thin, very thin, thin, thick, very thick, ultra thick 
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,11);
+		
+	\end{tikzpicture}~\\
+\end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
+
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,11);
+
+	\end{tikzpicture}~\\
+\end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,11);
+
+	\end{tikzpicture}~\\
+\end{minipage}~\\
+
+\begin{minipage}[ht]{0.30\textwidth}
+	%% color 		white, black, red, green, blue, cyan, magenta, yellow 
+	%% thickness 	ultra thin, very thin, thin, thick, very thick, ultra thick 
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,11);
+		
+	\end{tikzpicture}~\\
+\end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
+
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,11);
+
+	\end{tikzpicture}~\\
+\end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,11);
+
+	\end{tikzpicture}~\\
+\end{minipage}~\\
+
+\clearpage
+
+Next page !
+
+\end{document}
