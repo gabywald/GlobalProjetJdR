@@ -216,16 +216,60 @@ Next page ! Draft Part !~\\
 		\draw [very thin, gray] (0,0) grid (6,11);
 		
 		\draw [very thick, blue] (5.75,10.75) -- (5.75,3) -- (5.07,1.07);
-		\draw [very thick, blue] (5.75, 3)    -- (5.07,2.07);
-		\draw [very thick, blue] (5.75, 3)    -- (5.07,3.00);
+		\draw [very thick, blue] (5.75, 3.00) -- (5.07,2.07);
+		\draw [very thick, blue] (5.75, 3.00) -- (5.07,3.00);
 		\draw [very thick, blue] (5   , 1) circle (0.1);
 		\draw [very thick, blue] (5   , 2) circle (0.1);
 		\draw [very thick, blue] (5   , 3) circle (0.1);
 		% \draw [very thin, cyan]    (5.75,10.75) circle (0.1);
-		% \draw [very thin, cyan]    (5.75, 3) circle (0.1);
+		% \draw [very thin, cyan]    (5.75, 3.00) circle (0.1);
 		% \draw [very thin, cyan]    (5.10, 1.10) circle (0.1);
 		\draw [thick, blue] (5.65,10.75) -- (5.65,3.5);
 		\draw [blue]        (5.55,10.75) -- (5.55,4.0);
+		
+		%% above, below, right, left,
+		%% above left, above right, below left, below right
+		\draw ( 1.00, 0.50) node[right]{$0/I - Cartouche Bas$} ;
+		\draw ( 1.00,10.50) node[right]{$0/I - Cartouche Haut$} ;
+		\draw ( 1.00, 5.50) node[right]{$0/I - Cartouche Milieu$} ;
+		%% \draw (1,0) node[right]{$A$} ;
+		%% \draw (0,1) node[above]{$B$} ;
+		
+		\draw [very thick, magenta] ( 1.00, 0.20) -- ( 1.00, 0.80) 
+							 	 -- ( 1.20, 1.00) -- ( 4.80, 1.00)
+								 -- ( 5.00, 0.80) -- ( 5.00, 0.20)
+								 -- ( 4.80, 0.00) -- ( 1.20, 0.00)
+								 -- ( 1.00, 0.20);
+								 
+		\draw [very thick, cyan] 	( 1.00,10.20) -- ( 1.00,10.80) 
+							 	 -- ( 1.20,11.00) -- ( 4.80,11.00)
+								 -- ( 5.00,10.80) -- ( 5.00,10.20)
+								 -- ( 4.80,10.00) -- ( 1.20,10.00)
+								 -- ( 1.00,10.20);
+								 
+		\draw [very thick, yellow] 	( 1.00, 5.20) -- ( 1.00, 5.80) 
+							 	 -- ( 1.20, 6.00) -- ( 4.80, 6.00)
+								 -- ( 5.00, 5.80) -- ( 5.00, 5.20)
+								 -- ( 4.80, 5.00) -- ( 1.20, 5.00)
+								 -- ( 1.00, 5.20);
+								 
+		%%%%% 
+		
+		\foreach \y in {0,1,...,11} \draw(0,\y)node[left]{\y};
+		\foreach \x in {0,1,...,6} \draw(\x,0)node[below]{\x};
+		
+		%% \foreach \x/\y in {0/0,1/1,2/2} \draw(\x,\y)--(5,11);
+		%% \foreach \a/\b in {2.00/1.00, 2.00/1.25, 2.00/1.50} \draw [very thick, blue] ( \a , 2.00) -- ( \b , 2.00 );
+		
+		\foreach \a/\b/\c/\d/\e/\f/\g in {
+			2.00/2.00/1.00/2.00/1.03/2.00/0.1,
+			2.00/2.00/1.00/3.00/1.00/3.00/0.1, 
+			2.00/2.00/2.25/2.75/2.25/2.75/0.1
+		}
+		{
+			\draw [very thick, blue] ( \a , \b) -- ( \c , \d );
+			\draw [very thick, blue, fill=blue] ( \e , \f) circle (\g);
+		}
 		
 	\end{tikzpicture}~\\
 \end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
