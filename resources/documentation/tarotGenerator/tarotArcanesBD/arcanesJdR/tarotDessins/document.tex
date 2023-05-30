@@ -271,6 +271,35 @@ Next page ! Draft Part !~\\
 			\draw [very thick, blue, fill=blue] ( \e , \f) circle (\g);
 		}
 		
+		%%%%%
+		
+		\def\triangleReverse{--cycle}
+		
+		\draw[blue,thick](3+1.000,7.000) arc (000:180:1.000);
+		\draw[blue,thick](3.000,7.000)--++(000:2.000);
+		\draw[blue,thick](3.000,7.000)--++(030:1.800);
+		\draw[blue,thick](3.000,7.000)--++(060:1.600);
+		\draw[blue,thick](3.000,7.000)--++(090:1.400);
+		\draw[blue,thick](3.000,7.000)--++(120:1.200);
+		\draw[blue,thick](3.000,7.000)--++(150:1.100);
+		\draw[blue,thick](3.000,7.000)--++(180:1.000);
+		
+		\draw[blue,thick,fill=blue] (3+2.00,7+0.00) circle (0.100);
+		\draw[blue,thick,fill=blue] (3+1.75,7+1.00) circle (0.100);
+		\draw[blue,thick,fill=blue] (3+1.00,7+1.75) circle (0.100);
+		\draw[blue,thick,fill=blue] (3+0.00,7+2.00) circle (0.100);
+		\draw[blue,thick,fill=blue] (3-1.00,7+1.75) circle (0.100);
+		\draw[blue,thick,fill=blue] (3-1.75,7+1.00) circle (0.100);
+		\draw[blue,thick,fill=blue] (3-2.00,7+0.00) circle (0.100);
+		
+		\draw[blue,thick,fill=cyan] (3+2.00,7+0.00) circle (0.100);
+		\draw[blue,thick,fill=cyan] (3+1.65,7+0.95) circle (0.100);
+		\draw[blue,thick,fill=cyan] (3+0.85,7+1.45) circle (0.100);
+		\draw[blue,thick,fill=cyan] (3+0.00,7+1.50) circle (0.100);
+		\draw[blue,thick,fill=cyan] (3-0.60,7+1.05) circle (0.100);
+		\draw[blue,thick,fill=cyan] (3-0.95,7+0.55) circle (0.100);
+		\draw[blue,thick,fill=cyan] (3-1.00,7+0.00) circle (0.100);
+		
 	\end{tikzpicture}~\\
 \end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
 	\def\triangle{--++(120:1)--++(240:1)--cycle}
@@ -293,8 +322,8 @@ Next page ! Draft Part !~\\
 		\draw [very thin, gray] (0,0) grid (8,1);
 		
 		%% COEUR
-		\draw[fill,red,thick] (0.500, 0.700) arc (000:180:0.270);
-		\draw[fill,red,thick] (1.000, 0.700) arc (000:180:0.270);
+		\draw[fill,red,thick] (0.500, 0.700) arc (000:180:0.250);
+		\draw[fill,red,thick] (1.000, 0.700) arc (000:180:0.250);
 		\draw[fill,red,thick] (0.000, 0.700) -- (0.500, 0.000) -- (1.000, 0.700);
 		
 		%% COEUR
@@ -316,10 +345,11 @@ Next page ! Draft Part !~\\
 		\draw [very thin, gray] (0,0) grid (8,1);
 		
 		%% TREFLE
-		\draw[fill, black] (0.470, 0.000) rectangle (0.520, 0.500);
-		\draw[fill, black] (0.250, 0.500) circle (0.225);
-		\draw[fill, black] (0.500, 0.750) circle (0.225);
-		\draw[fill, black] (0.750, 0.500) circle (0.225);
+		\draw[fill, black] (0.480, 0.000) rectangle (0.520, 0.520);
+		\draw[fill, black] (0.400, 0.450) rectangle (0.600, 0.480);
+		\draw[fill, black] (0.250, 0.500) circle (0.215);
+		\draw[fill, black] (0.500, 0.750) circle (0.215);
+		\draw[fill, black] (0.750, 0.500) circle (0.215);
 		
 		%% PIQUE
 	\end{tikzpicture}~\\
@@ -329,8 +359,8 @@ Next page ! Draft Part !~\\
 		
 		%% PIQUE
 		\draw[fill, black] (0.470, 0.000) rectangle (0.520, 0.500);
-		\draw[fill, black,thick] (0.500, 0.350) arc (000:-180:0.270);
-		\draw[fill, black,thick] (1.000, 0.350) arc (000:-180:0.270);
+		\draw[fill, black,thick] (0.500, 0.350) arc (000:-180:0.250);
+		\draw[fill, black,thick] (1.000, 0.350) arc (000:-180:0.250);
 		\draw[fill, black,thick] (0.000, 0.350) -- (0.500, 1.000) -- (1.000, 0.350);
 	\end{tikzpicture}~\\
 \end{minipage} ~\\ 
