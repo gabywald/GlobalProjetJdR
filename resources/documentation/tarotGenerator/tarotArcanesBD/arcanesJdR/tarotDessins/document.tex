@@ -284,21 +284,37 @@ Next page ! Draft Part !~\\
 		\draw[blue,thick](3.000,7.000)--++(150:1.100);
 		\draw[blue,thick](3.000,7.000)--++(180:1.000);
 		
-		\draw[blue,thick,fill=blue] (3+2.00,7+0.00) circle (0.100);
-		\draw[blue,thick,fill=blue] (3+1.75,7+1.00) circle (0.100);
-		\draw[blue,thick,fill=blue] (3+1.00,7+1.75) circle (0.100);
-		\draw[blue,thick,fill=blue] (3+0.00,7+2.00) circle (0.100);
-		\draw[blue,thick,fill=blue] (3-1.00,7+1.75) circle (0.100);
-		\draw[blue,thick,fill=blue] (3-1.75,7+1.00) circle (0.100);
-		\draw[blue,thick,fill=blue] (3-2.00,7+0.00) circle (0.100);
+		\draw[blue,thick,fill=blue] (3+2.00,7+0.00) circle (0.125);
+		\draw[blue,thick,fill=blue] (3+1.75,7+1.00) circle (0.125);
+		\draw[blue,thick,fill=blue] (3+1.00,7+1.75) circle (0.125);
+		\draw[blue,thick,fill=blue] (3+0.00,7+2.00) circle (0.125);
+		\draw[blue,thick,fill=blue] (3-1.00,7+1.75) circle (0.125);
+		\draw[blue,thick,fill=blue] (3-1.75,7+1.00) circle (0.125);
+		\draw[blue,thick,fill=blue] (3-2.00,7+0.00) circle (0.125);
 		
-		\draw[blue,thick,fill=cyan] (3+2.00,7+0.00) circle (0.100);
-		\draw[blue,thick,fill=cyan] (3+1.65,7+0.95) circle (0.100);
-		\draw[blue,thick,fill=cyan] (3+0.85,7+1.45) circle (0.100);
-		\draw[blue,thick,fill=cyan] (3+0.00,7+1.50) circle (0.100);
-		\draw[blue,thick,fill=cyan] (3-0.60,7+1.05) circle (0.100);
-		\draw[blue,thick,fill=cyan] (3-0.95,7+0.55) circle (0.100);
-		\draw[blue,thick,fill=cyan] (3-1.00,7+0.00) circle (0.100);
+		\draw[cyan,thick,fill=cyan] (3+2.00,7+0.00) circle (0.100);
+		\draw[cyan,thick,fill=cyan] (3+1.65,7+0.95) circle (0.100);
+		\draw[cyan,thick,fill=cyan] (3+0.85,7+1.45) circle (0.100);
+		\draw[cyan,thick,fill=cyan] (3+0.00,7+1.50) circle (0.100);
+		\draw[cyan,thick,fill=cyan] (3-0.60,7+1.05) circle (0.100);
+		\draw[cyan,thick,fill=cyan] (3-0.95,7+0.55) circle (0.100);
+		\draw[cyan,thick,fill=cyan] (3-1.00,7+0.00) circle (0.100);
+		
+		\foreach \x/\y in {
+			% -1.00/0.00,-0.95/0.55,-0.60/1.05,0.00/1.50,0.85/1.45,1.65/0.95,2.00/0.00
+			-2.00/0.00,-1.65/0.95,-0.85/1.45,0.00/1.50,0.60/1.05,0.95/0.55,1.00/0.00
+		}
+		{
+			\draw[orange,thick,fill=orange] (3+\x,7+\y) circle (0.075);
+		}
+		
+		\foreach \x/\y in {
+			-1.00/0.00,-0.95/0.55,-0.60/1.05,0.00/1.50,0.85/1.45,1.65/0.95,2.00/0.00
+			% -2.00/0.00,-1.65/0.95,-0.85/1.45,0.00/1.50,0.60/1.05,0.95/0.55,1.00/0.00
+		}
+		{
+			\draw[magenta,thick,fill=magenta] (3+\x,7+\y) circle (0.050);
+		}
 		
 	\end{tikzpicture}~\\
 \end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
