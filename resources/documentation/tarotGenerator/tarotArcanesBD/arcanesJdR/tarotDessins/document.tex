@@ -41,7 +41,7 @@
 
 Draft Part !~\\
 
-\begin{minipage}[ht]{0.45\textwidth}
+\begin{minipage}[ht]{0.30\textwidth}
 	%% color 		white, black, red, green, blue, cyan, magenta, yellow 
 	%% thickness 	ultra thin, very thin, thin, thick, very thick, ultra thick 
 	\begin{tikzpicture}
@@ -132,25 +132,25 @@ Draft Part !~\\
 		{ \draw[magenta,thick,fill=magenta] (3+\x,7+\y) circle (0.050); }
 		
 	\end{tikzpicture}~\\
-\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+\end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
 	\def\triangle{--++(120:1)--++(240:1)--cycle}
 	\def\triangleReverse{--++(240:1)--cycle}
 	\begin{tikzpicture}
-		\draw [very thin, gray] (0,0) grid (8,1);
+		\draw [very thin, gray] (0,0) grid (6,1);
 		
-		\draw[red,thick](1,0)\triangle; %% FEU
+		\draw[red,thick](1,0)\triangle; %% FEU : triangle vers haut
 		
-		\draw[blue,thick](3,0)\triangle (2,0.40)--(3,0.40); %% AIR
+		\draw[blue,thick](2,0)\triangle (1,0.40)--(2,0.40); %% AIR : triangle vers haut, barré
 		
-		\draw[orange,thick](4,1)--(5,1)\triangleReverse; %% EAU
+		\draw[orange,thick](3,1)--(4,1)\triangleReverse; %% EAU : triangle vers bas
 		
-		\draw[green,thick](6,1)--(7,1)\triangleReverse (6,0.60)--(7,0.60); %% TERRE
+		\draw[green,thick](4,1)--(5,1)\triangleReverse (4,0.60)--(5,0.60); %% TERRE : triangle vers bas, barré
 	\end{tikzpicture}~\\
 	
 	$\heartsuit \varheart \diamondsuit \vardiamond \clubsuit \spadesuit$ ~\\
 	
 	\begin{tikzpicture}
-		\draw [very thin, gray] (0,0) grid (8,1);
+		\draw [very thin, gray] (0,0) grid (6,1);
 		
 		%% COEUR
 		\draw[fill,red,thick] (0.500, 0.700) arc (000:180:0.250);
@@ -165,7 +165,7 @@ Draft Part !~\\
 	\end{tikzpicture}~\\
 	
 	\begin{tikzpicture}
-		\draw [very thin, gray] (0,0) grid (8,1);
+		\draw [very thin, gray] (0,0) grid (6,1);
 	
 		%% CARREAU
 		\draw[fill, red,thick] (0.000, 0.500) -- (0.500, 1.000) -- (1.000, 0.500) -- (0.500, 0.000) -- cycle;
@@ -173,7 +173,7 @@ Draft Part !~\\
 	\end{tikzpicture}~\\
 	
 	\begin{tikzpicture}
-		\draw [very thin, gray] (0,0) grid (8,1);
+		\draw [very thin, gray] (0,0) grid (6,1);
 		
 		%% TREFLE
 		\draw[fill, black] (0.480, 0.000) rectangle (0.520, 0.520);
@@ -186,7 +186,7 @@ Draft Part !~\\
 	\end{tikzpicture}~\\
 	
 	\begin{tikzpicture}
-		\draw [very thin, gray] (0,0) grid (8,1);
+		\draw [very thin, gray] (0,0) grid (6,1);
 		
 		%% PIQUE
 		\draw[fill, black] (0.470, 0.000) rectangle (0.520, 0.500);
@@ -194,7 +194,7 @@ Draft Part !~\\
 		\draw[fill, black,thick] (1.000, 0.350) arc (000:-180:0.250);
 		\draw[fill, black,thick] (0.000, 0.350) -- (0.500, 1.000) -- (1.000, 0.350);
 	\end{tikzpicture}~\\
-\end{minipage} ~\\ 
+\end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
 
 \newcommand{\cartoucheBase}[5]{% (x, y, texte, couleur, nothing)
 		\draw ( #1+1.00, #2+0.50) node[right]{$#3$} ;%
@@ -213,6 +213,24 @@ Draft Part !~\\
 								 -- ( #1+4.80, #2+0.00) -- ( #1+3.15, #2+0.00) -- ( #1+3.00, #2-0.20) -- ( #1+2.85, #2+0.00) -- ( #1+1.20, #2+0.00)%
 								 -- ( #1+1.00, #2+0.20);%
 }%
+
+	\begin{tikzpicture}
+		\draw [very thin, gray] (0,0) grid (6,11);
+		
+		%% \cartoucheBase{0}{0}{Test~Cartouche~0}{cyan}{CMD}
+		\foreach \a/\b/\c in %% beware the last character (in color name) in list below !
+		{0/0/cyan,0/1/magenta,0/2/yellow,0/3/blue,0/4/red,0/5/green}
+		{ \cartoucheBase{\a}{\b}{Test~Cartouche~\a}{\c}{CMD} }
+		
+		\cartoucheGatsby{0}{7}{Test~Cartouche~TGG~7}{black}{CMD}
+		
+		\cartoucheGatsby{0}{9}{Test~Cartouche~TGG~9}{black}{CMD}
+		
+	\end{tikzpicture}
+
+\end{minipage}~\\
+
+%% \clearpage
 
 \newcommand{\mainCircuitWithTiks}[5]{% (x, y, xwith, ywidth, color)
 		\draw[#5, very thick] (#1, #2) rectangle (#1+#3,#2+#4);%
@@ -240,14 +258,7 @@ Draft Part !~\\
 	\begin{tikzpicture}
 		\draw [very thin, gray] (0,0) grid (6,11);
 	
-	%% \cartoucheBase{0}{0}{Test~Cartouche~0}{cyan}{CMD}
-	\foreach \a/\b/\c in %% beware the last character (in color name) in list below !
-	{0/0/cyan,0/1/magenta,0/2/yellow,0/3/blue,0/4/red,0/5/green}
-	{ \cartoucheBase{\a}{\b}{Test~Cartouche~\a}{\c}{CMD} }
-	
-	\cartoucheGatsby{0}{7}{Test~Cartouche~TGG~7}{black}{CMD}
-	
-	\cartoucheGatsby{0}{9}{Test~Cartouche~TGG~9}{black}{CMD}
+		%% PORTRAITS
 		
 	\end{tikzpicture}~\\
 \end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
