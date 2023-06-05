@@ -34,6 +34,8 @@
 \DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
 \DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
 
+\usepackage{tikzpeople}
+
 %============================= Corps =================================
 \begin{document}
 
@@ -58,6 +60,9 @@ Draft Part !~\\
 		% \draw [very thin, cyan]    (5.10, 1.10) circle (0.1);
 		\draw [thick, blue] (5.65,10.75) -- (5.65,3.5);
 		\draw [blue]        (5.55,10.75) -- (5.55,4.0);
+		
+		\draw (3.50,3.00) node[nun, mirrored, saturated, good, minimum size=1.25cm]{Nonne};
+		\draw (2.00,4.00) node[nurse, mirrored, badgetext=Molly, shirt=green, minimum size=1.25cm]{Nurse};
 		
 		%% above, below, right, left,
 		%% above left, above right, below left, below right
@@ -193,6 +198,14 @@ Draft Part !~\\
 		\draw[fill, black,thick] (0.500, 0.350) arc (000:-180:0.250);
 		\draw[fill, black,thick] (1.000, 0.350) arc (000:-180:0.250);
 		\draw[fill, black,thick] (0.000, 0.350) -- (0.500, 1.000) -- (1.000, 0.350);
+	\end{tikzpicture}~\\
+	
+	\begin{tikzpicture}
+		\draw (1.00,0.50) node[priest, minimum size=1.5cm]{Priest};
+		
+		\draw (3.00,0.50) node[priest, shirt=red, hat=red, hair=gray, minimum size=1.5cm]{Cardinal};
+		
+		\draw (5.00,0.50) node[priest, shirt=brown, hat=skin, cross=gray, collar=brown, minimum size=1.5cm]{Monk};
 	\end{tikzpicture}~\\
 \end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
 
@@ -440,7 +453,7 @@ Draft Part !~\\
 	%% thickness 	ultra thin, very thin, thin, thick, very thick, ultra thick 
 	\begin{tikzpicture}
 		\draw [very thin, gray] (0,0) grid (6,11);
-		
+
 	\end{tikzpicture}~\\
 \end{minipage} \hfill \begin{minipage}[ht]{0.30\textwidth}
 
