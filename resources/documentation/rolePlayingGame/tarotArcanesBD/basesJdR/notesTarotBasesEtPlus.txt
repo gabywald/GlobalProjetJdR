@@ -24,7 +24,7 @@
 		19	Le Soleil
 		20	Le Jugement
 		21	Le Monde
-	56 arcanes mineures, réparties en quatres séries (Épées, Coupes, Deniers, Batons) comme suit
+	56 arcanes mineures, réparties en quatres séries (Épées, Coupes, Deniers, Bâtons) comme suit
 		As, 2, 3, 4, 5, 6, 7, 8, 9, 10, Valet, Cavalier, Dame, Roi
 		As a pour valeur 1 ; Valet, 11 ; Cavalier 12 ; Dame 13 ; Roi 14. 
 		Dans certains cas Cavalier supérieur au Roi (au lieu d'être entre Valet et Dame). 
@@ -91,6 +91,36 @@
 		21	Dimension					7	Le Chariot
 		78	Folie						0	Le Mat
 		
+	Tarot Égyptien, illustrations de Silvania Alasta, Instruction de Riccardo Minetti, Copyright 2022 Intuitive Éditions, ISBN 978-2-38297-067-6
+		0.	Le Fou - Le Châtiment			11.	La Force - La Puissance
+		1.	Le Bateleur - La Volonté		12. Le Pendu - L'Expiation
+		2.	La Papesse - La Science			13. La Mort - La Transformation
+		3.	L'Impératrice - L'Action		14. La Tempérance - L'initiative
+		4.	L'Empereur - La Réalisation		15. Le Diable - La Fatalité
+		5.	Le Pape - L'Inspiration			16. La Pyramide - La Ruine
+		6.	Les Amoureux - L'Épreuve		17. L'Étoile - L'Espoir
+		7.	Le Chariot - La Victoire		18. La Lune - La Déception
+		8.	La Justice - L'Équilibre		19. Le Soleil - Le Bonheur
+		9.	L'Ermite - La Prudence			20. Le Jugement - Le Renouvellement
+		10.	La Roue de Fortune - Le Destin	21. Le Monde - La Récompense
+
+	Tarot de Mage, Édition 20ème anniversaire, 2021 Arkhane Asylum Publishing, ISBN 978-2-37255-049-9
+		0.	Le Fou - Les Possibilités				11.	La Justice - La Justice
+		1.	Le Mage - La Volonté					12. Le Pendu - Les Perspectives
+		2.	La Grande Prétresse - L'Illumination	13. La Mort - Le Renouveau
+		3.	L'Impératrice - La Fertilité			14. La Tempérance - L'Adaptation
+		4.	L'Empereur - Le Gouvernement			15. Le Diable - Les Entraves
+		5.	L'Hiérophante - La Morale				16. La Tour - La Purification
+		6.	Les Amoureux - L'Attirance				17. L'Étoile - L'Inspiration
+		7.	Le Chariot - Le Triomphe				18. Luna - L'Intuition
+		8.	La Force - La Puissance					19. Le Soleil - La Libération
+		9.	L'Ermite - Le Conseil					20. Le Jugement - La Réunion
+		10.	La Roue de Fortune - Le Destin			21. Gaia - L'Accomplissement
+		Questivisme - Traditions - Feu - Bâtons
+		Primordialisme - Nephandi - Eau - Coupes
+		Dynamisme - Maraudeurs - Air - Épées
+		Motivalisme - Technixratie - Terre - Deniers (Pentacles)
+
 "Indications ésotériques sur les solides platoniciens"
 	Tétraèdre (d4) : biologie / vital ; projets et intentions
 	Hexaèdre (d6) : stabilité / précision de pensée
