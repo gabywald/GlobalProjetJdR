@@ -29,6 +29,7 @@
 		As a pour valeur 1 ; Valet, 11 ; Cavalier 12 ; Dame 13 ; Roi 14. 
 		Dans certains cas Cavalier supérieur au Roi (au lieu d'être entre Valet et Dame). 
 
+		Arcanes majeures non associées à des arcanes mineures : 0;5;10;15;20;21
 		Associations et significations (?) des séries, et arcanes majeures associées :
 			Bâtons	Air		Carreaux	1;2;3;4
 			Épées	Feu		Trêfles		6;7;8;9
@@ -41,8 +42,6 @@
 		 	Air : Gémeaux, Balanes, Verseau (printemps)
 		 	Terre : Taureau, Vierge, Capricorne (hiver)
 		 
-		Arcanes majeures non associées à des arcanes mineures : 0;5;10;15;20;21
-	
 	Alternative "Tarot Égyptien" / Grand Jeu Etteila des arcanes majeures (et correspondance avec ordre précédent)
 		1	Idéal (consultant)			4	L'Empereur
 		2	Éclaircissement				19	Le Soleil
@@ -119,7 +118,7 @@
 		Questivisme - Traditions - Feu - Bâtons
 		Primordialisme - Nephandi - Eau - Coupes
 		Dynamisme - Maraudeurs - Air - Épées
-		Motivalisme - Technixratie - Terre - Deniers (Pentacles)
+		Motivalisme - Technocratie - Terre - Deniers (Pentacles)
 
 "Indications ésotériques sur les solides platoniciens"
 	Tétraèdre (d4) : biologie / vital ; projets et intentions
