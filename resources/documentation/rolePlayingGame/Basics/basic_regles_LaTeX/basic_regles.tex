@@ -1,13 +1,13 @@
-\documentclass{article}
+\documentclass[10pt,twoside,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
 \usepackage{geometry}
 \geometry{a4paper, margin=1.5cm}
 \usepackage{array}
+%% \usepackage{amsfonts,amssymb,amsmath,amsthm}
 
-\title{BaSIC : Le jeu de rôle de base}
-\author{Tristan Lhomme, Didier Guiserix}
-\date{1997}
+%% \title{BaSIC : Le jeu de rôle de base}
+%% \author{BaSIC \copyright Casus Belli/Multisim sous licence Chaosium}
 
 \usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols}
 
@@ -15,7 +15,9 @@
 
 \setlength\parindent{0pt} % \noindent for all document
 
-\maketitle
+%% \maketitle
+\Large{\textbf{BaSIC : Le jeu de rôle de base}}~\\
+\large{BaSIC \copyright Casus Belli/Multisim sous licence Chaosium}~\\
 
 \begin{multicols}{2}
 
@@ -35,15 +37,19 @@ Un personnage est défini par deux séries de chiffres : ses caractéristiques e
 
 Elles sont au nombre de sept. Pour un être normal, leur valeur varie entre 3 et 18. Les personnages des joueurs étant des héros, donc par définition un peu meilleurs que la moyenne, leurs caractéristiques iront de 8 à 18.
 
-\begin{itemize}
-    \item \textbf{FORce} : C'est une mesure de la puissance musculaire du personnage. Cette caractéristique donne une idée de ce qu'il peut soulever, porter, pousser ou tirer. À titre indicatif, un personnage avec une FORce de 8 est un quidam moyen, qui n'a plus fait de sport après le lycée. Avec une FORce de 18, c'est un athlète qui joue dans la même cour qu'Arnold Schwarzenegger.
-    \item \textbf{CONstitution} : Cette caractéristique rend compte de la vitalité et de la santé du personnage. Plus sa CONstitution est élevée, mieux le personnage résistera à la fatigue, aux coups, à la maladie, etc. Avec une CONstitution de 8, c'est un individu normal, peut-être un peu plus sujet aux rhumes que la moyenne. Avec une CONstitution de 18, il n'a probablement jamais été malade de sa vie.
-    \item \textbf{TAIlle} : En fait, cette caractéristique englobe la taille et le poids. Être grand et massif vous permet de faire plus mal lors des combats, mais peut poser problème dans d'autres circonstances, par exemple lorsqu'il faut se faufiler par un passage étroit. Pour un personnage masculin, une TAIlle de 8 est légèrement inférieure à la moyenne (dans les 1,65 m pour 60 kg). Une TAIlle de 18 peut indiquer un géant très maigre, ou un individu de taille moyenne mais avec un embonpoint.
-    \item \textbf{DEXtérité} : Comme son nom l'indique, cette caractéristique mesure la vivacité et la rapidité physique du personnage. Elle joue un rôle primordial dans les combats. En effet, les personnages dotés d'une DEXtérité élevée agissent plus souvent en premier. Avec une DEXtérité de 8, un personnage est très moyen, et sera bien avisé de ne pas se risquer, par exemple, dans une bagarre de café. Avec une DEXtérité de 18, il est extrêmement rapide et, potentiellement, pourrait jongler avec cinq couteaux et autant de torches enflammées.
-    \item \textbf{APParence} : Votre personnage est-il beau ou pas ? S'habille-t-il avec élégance ? Sait-il faire bonne impression au premier contact ? L'APParence mesure tous ces facteurs. Un personnage doté d'une APParence de 8 est le genre d'individu que peu de gens remarquent au milieu d'une foule (ce qui peut, parfois, être un avantage). En revanche, avec une APParence de 18, il attirera l'attention partout où il passe.
-    \item \textbf{INTelligence} : Elle décrit les capacités d'apprentissage, de mémorisation et d'analyse de votre personnage. Elle ne remplace pas l'intelligence du joueur, mais gère, à sa place, un certain nombre de tâches fastidieuses. Si votre personnage se retrouve en possession d'un message codé, par exemple, c'est son INTelligence qui servira à déterminer s'il parvient à le déchiffrer. Avec une INTelligence de 8, un personnage n'est pas très malin. À 18, c'est un génie.
-    \item \textbf{POUvoir} : Cette caractéristique mesure la volonté du personnage, sa force d'âme et, dans certains univers de jeu, sa capacité à utiliser d'éventuels pouvoirs mentaux (magie ou pouvoirs psioniques). Il sert également à calculer sa Chance (voir plus bas). Avec un POUvoir de 8, votre personnage sera quelqu'un de relativement effacé, sans grandes dispositions pour le paranormal. Avec un POUvoir de 18, au contraire, il sera très impressionnant, et/ou aura un grand potentiel magique.
-\end{itemize}
+\textbf{FORce} : C'est une mesure de la puissance musculaire du personnage. Cette caractéristique donne une idée de ce qu'il peut soulever, porter, pousser ou tirer. À titre indicatif, un personnage avec une FORce de 8 est un quidam moyen, qui n'a plus fait de sport après le lycée. Avec une FORce de 18, c'est un athlète qui joue dans la même cour qu'Arnold Schwarzenegger.~\\
+
+\textbf{CONstitution} : Cette caractéristique rend compte de la vitalité et de la santé du personnage. Plus sa CONstitution est élevée, mieux le personnage résistera à la fatigue, aux coups, à la maladie, etc. Avec une CONstitution de 8, c'est un individu normal, peut-être un peu plus sujet aux rhumes que la moyenne. Avec une CONstitution de 18, il n'a probablement jamais été malade de sa vie.~\\
+
+\textbf{TAIlle} : En fait, cette caractéristique englobe la taille et le poids. Être grand et massif vous permet de faire plus mal lors des combats, mais peut poser problème dans d'autres circonstances, par exemple lorsqu'il faut se faufiler par un passage étroit. Pour un personnage masculin, une TAIlle de 8 est légèrement inférieure à la moyenne (dans les 1,65 m pour 60 kg). Une TAIlle de 18 peut indiquer un géant très maigre, ou un individu de taille moyenne mais avec un embonpoint.~\\
+
+\textbf{DEXtérité} : Comme son nom l'indique, cette caractéristique mesure la vivacité et la rapidité physique du personnage. Elle joue un rôle primordial dans les combats. En effet, les personnages dotés d'une DEXtérité élevée agissent plus souvent en premier. Avec une DEXtérité de 8, un personnage est très moyen, et sera bien avisé de ne pas se risquer, par exemple, dans une bagarre de café. Avec une DEXtérité de 18, il est extrêmement rapide et, potentiellement, pourrait jongler avec cinq couteaux et autant de torches enflammées.~\\
+
+\textbf{APParence} : Votre personnage est-il beau ou pas ? S'habille-t-il avec élégance ? Sait-il faire bonne impression au premier contact ? L'APParence mesure tous ces facteurs. Un personnage doté d'une APParence de 8 est le genre d'individu que peu de gens remarquent au milieu d'une foule (ce qui peut, parfois, être un avantage). En revanche, avec une APParence de 18, il attirera l'attention partout où il passe.~\\
+
+\textbf{INTelligence} : Elle décrit les capacités d'apprentissage, de mémorisation et d'analyse de votre personnage. Elle ne remplace pas l'intelligence du joueur, mais gère, à sa place, un certain nombre de tâches fastidieuses. Si votre personnage se retrouve en possession d'un message codé, par exemple, c'est son INTelligence qui servira à déterminer s'il parvient à le déchiffrer. Avec une INTelligence de 8, un personnage n'est pas très malin. À 18, c'est un génie.~\\
+
+\textbf{POUvoir} : Cette caractéristique mesure la volonté du personnage, sa force d'âme et, dans certains univers de jeu, sa capacité à utiliser d'éventuels pouvoirs mentaux (magie ou pouvoirs psioniques). Il sert également à calculer sa Chance (voir plus bas). Avec un POUvoir de 8, votre personnage sera quelqu'un de relativement effacé, sans grandes dispositions pour le paranormal. Avec un POUvoir de 18, au contraire, il sera très impressionnant, et/ou aura un grand potentiel magique.~\\
 
 \subsection*{Les compétences}
 
@@ -63,30 +69,32 @@ Munissez-vous d'une feuille de personnage, d'un bout de brouillon, d'un crayon e
 
 Les caractéristiques servent à calculer cinq valeurs dérivées. Suivez les instructions ci-dessous et reportez les résultats sur votre feuille de personnage.
 
-\begin{itemize}
-    \item \textbf{Points de vie (PV)} : Ils mesurent l'état physique du personnage. Lorsqu'il est blessé, il perd des points de vie. S'il tombe à 0 point de vie, il est mort! Faites la somme de la TAIlle et de la CONstitution, divisez le résultat par deux (en arrondissant à l'entier supérieur, si besoin est).
-    \item \textbf{Points d'énergie (PE)} : Ils servent, si l'univers de jeu le permet, à faire de la magie (ou à utiliser des pouvoirs psioniques). Votre capital de points d'énergie est égal à votre POUvoir.
-    \item \textbf{Bonus aux dommages} : Plus un personnage est grand et fort, plus il fera mal lors des combats au corps à corps. Additionnez la TAIlle et la FORce de votre personnage, et reportez-vous à la table des bonus aux dommages.
-    \item \textbf{Le jet d'Idée} : Etes-vous sûr qu'il soit opportun d'engager votre personnage dans ce tunnel empli de fumée rougeâtre, d'où sortent des ricanements démoniaques ? Le jet d'Idée est un jet de dés qui, s'il est réussi, permet au meneur de jeu de vous souffler une information oubliée ou de vous suggérer un plan d'action. Pour connaître sa valeur, multipliez l'INTelligence du personnage par 5.
-    \item \textbf{Le jet de Chance} : Votre personnage est en équilibre précaire au bord d'une falaise. Va-t-il tomber ? Cela dépend s'il a ou non de la chance. Cette valeur est souvent très utile pour simuler le "mouvement du monde" autour des personnages. Comme le jet d'Idée, le jet de Chance est un pourcentage, noté sur 100. Il se calcule en multipliant le POUvoir par 5.
-\end{itemize}
+\textbf{Points de vie (PV)} : Ils mesurent l'état physique du personnage. Lorsqu'il est blessé, il perd des points de vie. S'il tombe à 0 point de vie, il est mort! Faites la somme de la TAIlle et de la CONstitution, divisez le résultat par deux (en arrondissant à l'entier supérieur, si besoin est).~\\
 
-\section*{TABLE DES BONUS AUX DOMMAGES}
+\textbf{Points d'énergie (PE)} : Ils servent, si l'univers de jeu le permet, à faire de la magie (ou à utiliser des pouvoirs psioniques). Votre capital de points d'énergie est égal à votre POUvoir.~\\
+
+\textbf{Bonus aux dommages} : Plus un personnage est grand et fort, plus il fera mal lors des combats au corps à corps. Additionnez la TAIlle et la FORce de votre personnage, et reportez-vous à la table des bonus aux dommages.~\\
+
+\textbf{Le jet d'Idée} : Etes-vous sûr qu'il soit opportun d'engager votre personnage dans ce tunnel empli de fumée rougeâtre, d'où sortent des ricanements démoniaques ? Le jet d'Idée est un jet de dés qui, s'il est réussi, permet au meneur de jeu de vous souffler une information oubliée ou de vous suggérer un plan d'action. Pour connaître sa valeur, multipliez l'INTelligence du personnage par 5.~\\
+
+\textbf{Le jet de Chance} : Votre personnage est en équilibre précaire au bord d'une falaise. Va-t-il tomber ? Cela dépend s'il a ou non de la chance. Cette valeur est souvent très utile pour simuler le "mouvement du monde" autour des personnages. Comme le jet d'Idée, le jet de Chance est un pourcentage, noté sur 100. Il se calcule en multipliant le POUvoir par 5.~\\
 
 \begin{center}
-\begin{tabular}{|c|c|}
-\hline
-FORce + TAIlle & Bonus \\
-\hline
-02 à 24 & Aucun \\
-25 à 32 & +1d3 \\
-33 à 40 & +1d6 \\
-41 à 60 & +2d6 \\
-\hline
-\end{tabular}
+	\begin{tabular}{ c c }
+		%% \multicolumn{2}{c}{\textbf{TABLE DES BONUS AUX DOMMAGES}}	\\
+		\multicolumn{2}{c}{\textbf{TABLE DES BONUS}}	\\
+		\multicolumn{2}{c}{\textbf{AUX DOMMAGES}}	\\
+		\hline
+		\textbf{FORce + TAIlle} & \textbf{Bonus} \\
+		02 à 24 & Aucun \\
+		25 à 32 & +1d3 \\
+		33 à 40 & +1d6 \\
+		41 à 60 & +2d6 \\
+		\hline
+	\end{tabular}
 \end{center}
 
-\section*{Quatrième étape : les compétences}
+\subsection*{Quatrième étape : les compétences}
 
 Regardez la liste des professions disponibles dans votre univers de jeu et choisissez-en une. Vous avez 300 points à répartir dans les compétences qui en découlent (sans obligation de les prendre toutes). Ensuite, vous pourrez répartir 150 points parmi toutes les autres compétences de la feuille de personnage, à votre guise.
 
@@ -95,24 +103,28 @@ Regardez la liste des professions disponibles dans votre univers de jeu et chois
 \subsection*{Exemples pour un univers médiéval-fantastique}
 
 \begin{itemize}
-    \item \textbf{Chasseur} : Athlétisme, Armes d'hast, Armes de jet, Artisanat, Connaissance de la nature, Orientation, Secourisme, Survie.
-    \item \textbf{Chevalier} : Athlétisme, Equitation, Droit et usages, Armes de mêlée, Armes d'hast, Esquive, Vigilance, Lire et écrire.
-    \item \textbf{Erudit} : Alchimie, Connaissance de la nature, Connaissance des peuples, Droit et usages, Légendes, Lire et écrire, Potions et herbes, Sagacité.
-    \item \textbf{Fermier} : Armes d'hast, Armes de lancer, Artisanat, Commerce, Connaissance de la nature, Orientation, Potions et herbes, Secourisme.
-    \item \textbf{Magicien} : Alchimie, Droit et usages, Légendes, Lire et écrire, Persuasion, Sagacité, Vigilance, 3 sortilèges au choix.
-    \item \textbf{Soldat} : Athlétisme, Armes de mêlée, Armes d'hast, Armes de tir, Esquive, Discrétion, Vigilance, Secourisme.
-    \item \textbf{Troubadour} : Artisanat (musique), Connaissance des peuples ou des religions, Culture générale, Droit et usages, Légendes, Lire et écrire, Persuasion, Sagacité.
-    \item \textbf{Voleur} : Armes de lancer, Armes de mêlée, Cascade, Discrétion, Esquive, Persuasion, Sagacité, Serrurerie.
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
+    \item[$\bullet$] \textbf{Chasseur} : Athlétisme, Armes d'hast, Armes de jet, Artisanat, Connaissance de la nature, Orientation, Secourisme, Survie.
+    \item[$\bullet$] \textbf{Chevalier} : Athlétisme, Equitation, Droit et usages, Armes de mêlée, Armes d'hast, Esquive, Vigilance, Lire et écrire.
+    \item[$\bullet$] \textbf{Erudit} : Alchimie, Connaissance de la nature, Connaissance des peuples, Droit et usages, Légendes, Lire et écrire, Potions et herbes, Sagacité.
+    \item[$\bullet$] \textbf{Fermier} : Armes d'hast, Armes de lancer, Artisanat, Commerce, Connaissance de la nature, Orientation, Potions et herbes, Secourisme.
+    \item[$\bullet$] \textbf{Magicien} : Alchimie, Droit et usages, Légendes, Lire et écrire, Persuasion, Sagacité, Vigilance, 3 sortilèges au choix.
+    \item[$\bullet$] \textbf{Soldat} : Athlétisme, Armes de mêlée, Armes d'hast, Armes de tir, Esquive, Discrétion, Vigilance, Secourisme.
+    \item[$\bullet$] \textbf{Troubadour} : Artisanat (musique), Connaissance des peuples ou des religions, Culture générale, Droit et usages, Légendes, Lire et écrire, Persuasion, Sagacité.
+    \item[$\bullet$] \textbf{Voleur} : Armes de lancer, Armes de mêlée, Cascade, Discrétion, Esquive, Persuasion, Sagacité, Serrurerie.
 \end{itemize}
 
 \subsection*{Exemples pour un univers contemporain}
 
 \begin{itemize}
-    \item \textbf{Agent de renseignement} : Cascade, Déguisement, Droit et usages, Histoire et géographie, Informatique, Lutte, Renseignement, Sciences appliquées, Serrurerie.
-    \item \textbf{Journaliste} : Bibliothèque, Conduire (auto ou moto), Connaissance de la rue, Culture générale, Langue étrangère, Persuasion, Sagacité, Vigilance.
-    \item \textbf{Homme d'affaire} : Commerce, Comptabilité, Droit, Informatique, Langue étrangère, Persuasion, Sagacité, (plus une autre au choix).
-    \item \textbf{Militaire} : Cascade, Conduire (au choix), Leadership, Navigation, Pilotage (au choix), Sabotage, Lutte, Armes de poing, Fusil.
-    \item \textbf{Spécialiste en sciences humaines} : Bibliothèque, Culture générale, Droit et usages, Langue étrangère, Histoire et géographie, Orientation, Sciences sociales, Survie.
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
+    \item[$\bullet$] \textbf{Agent de renseignement} : Cascade, Déguisement, Droit et usages, Histoire et géographie, Informatique, Lutte, Renseignement, Sciences appliquées, Serrurerie.
+    \item[$\bullet$] \textbf{Journaliste} : Bibliothèque, Conduire (auto ou moto), Connaissance de la rue, Culture générale, Langue étrangère, Persuasion, Sagacité, Vigilance.
+    \item[$\bullet$] \textbf{Homme d'affaire} : Commerce, Comptabilité, Droit, Informatique, Langue étrangère, Persuasion, Sagacité, (plus une autre au choix).
+    \item[$\bullet$] \textbf{Militaire} : Cascade, Conduire (au choix), Leadership, Navigation, Pilotage (au choix), Sabotage, Lutte, Armes de poing, Fusil.
+    \item[$\bullet$] \textbf{Spécialiste en sciences humaines} : Bibliothèque, Culture générale, Droit et usages, Langue étrangère, Histoire et géographie, Orientation, Sciences sociales, Survie.
 \end{itemize}
 
 \section*{Cinquième étape : les finitions}
@@ -120,10 +132,12 @@ Regardez la liste des professions disponibles dans votre univers de jeu et chois
 Le jeu de rôle est un moyen de raconter des histoires, comme les romans ou le cinéma, et les histoires sont toujours meilleures lorsqu'elles ont des héros crédibles. Pour l'instant, votre personnage est un tas de chiffres gribouillés au crayon sur un formulaire abscons. Pour lui insuffler un peu de vie, la première chose à faire est de remplir son "état civil".
 
 \begin{itemize}
-    \item \textbf{La description} : il existe une foule de détails qu'aucun jet de dés ne définira à votre place. Quelle est la couleur des yeux de votre personnage ? Celle de ses cheveux ? Est-il droitier ou gaucher ? Comment s'habille-t-il ?
-    \item \textbf{Le comportement} : Pensez à votre personnage comme à une vraie personne. A-t-il des goûts particuliers ? Des choses dont il a horreur ?
-    \item \textbf{L'histoire personnelle} : Maintenant que vous avez une assez bonne image de lui dans le présent, remontez un peu dans son passé.
-    \item \textbf{La motivation} : Idéalement, il faudrait que votre personnage ait une bonne raison de se jeter dans l'aventure.
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
+    \item[$\bullet$] \textbf{La description} : il existe une foule de détails qu'aucun jet de dés ne définira à votre place. Quelle est la couleur des yeux de votre personnage ? Celle de ses cheveux ? Est-il droitier ou gaucher ? Comment s'habille-t-il ?
+    \item[$\bullet$] \textbf{Le comportement} : Pensez à votre personnage comme à une vraie personne. A-t-il des goûts particuliers ? Des choses dont il a horreur ?
+    \item[$\bullet$] \textbf{L'histoire personnelle} : Maintenant que vous avez une assez bonne image de lui dans le présent, remontez un peu dans son passé.
+    \item[$\bullet$] \textbf{La motivation} : Idéalement, il faudrait que votre personnage ait une bonne raison de se jeter dans l'aventure.
 \end{itemize}
 
 \section*{LES RÈGLES DE BASE}
@@ -131,6 +145,8 @@ Le jeu de rôle est un moyen de raconter des histoires, comme les romans ou le c
 \section*{Question de bon sens}
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item \textbf{Première règle} : Une action impossible à rater réussit toujours.
     \item \textbf{Deuxième règle} : Une action impossible à réussir échoue toujours.
     \item \textbf{Troisième règle} : Pour tous les autres cas, faites un jet de compétence.
@@ -150,6 +166,8 @@ Les actions absurdes et irréalisables échouent toujours.
 La plupart des situations à résoudre se situent entre ces deux extrêmes, dans des circonstances où l'échec et la réussite sont tous deux possibles.
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item \textbf{Maladresse} : Lorsque le résultat est compris entre 96 et 00, non seulement l'action est manquée, mais en plus, l'échec est particulièrement grave.
     \item \textbf{Réussite critique} : En revanche, avec un résultat compris entre 01 et 05, l'action est réussie de manière particulièrement brillante.
 \end{itemize}
@@ -157,17 +175,26 @@ La plupart des situations à résoudre se situent entre ces deux extrêmes, dans
 \section*{Bonus et malus}
 
 \begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-Modif & Circonstance & Exemple \\
-\hline
--20\% & Très difficile & Tirer de nuit sur cible mobile, ou désamorcer une bombe qui va sauter d'une seconde à l'autre. \\
--10\% & Difficile & Tirer sur cible mobile ou de petite taille, crocheter une serrure particulièrement bien conçue. \\
-+10\% & Facile & Tirer sur cible immobile et de grande taille, escalader un mur avec de nombreuses prises. \\
-+20\% & Plus que facile & Suivre un flâneur qui ne se méfie pas, se souvenir que la bastille a été prise un 14 juillet. \\
-\hline
-\end{tabular}
+	\begin{tabular}{ c c c }
+		\multicolumn{3}{c}{\textbf{TABLE DE CIRCONSTANCES}}	\\
+		\hline
+		\textbf{Modif} & \textbf{Circonstance} & \textbf{Exemple} \\
+		-20\% & Très difficile & A \\
+		-10\% & Difficile & B \\
+		+10\% & Facile & C \\
+		+20\% & Plus que facile & D \\
+		\hline
+	\end{tabular}
 \end{center}
+
+\begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
+	\item[A] Tirer de nuit sur cible mobile, ou désamorcer une bombe qui va sauter d'une seconde à l'autre.
+	\item[B] Tirer sur cible mobile ou de petite taille, crocheter une serrure particulièrement bien conçue.
+	\item[C] Tirer sur cible immobile et de grande taille, escalader un mur avec de nombreuses prises.
+	\item[D] Suivre un flâneur qui ne se méfie pas, se souvenir que la bastille a été prise un 14 juillet. 
+\end{itemize}
 
 \section*{Expérience}
 
@@ -185,38 +212,35 @@ Parfois, vous aurez besoin de savoir ce qui se passe lorsqu'un personnage lutte 
 
 \end{multicols}
 
-\section*{TABLE DE RÉSISTANCE}
-
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
- & \multicolumn{20}{c|}{Caractéristique active} \\
-\cline{2-21}
- & 01 & 02 & 03 & 04 & 05 & 06 & 07 & 08 & 09 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 \\
-\hline
-01 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - & - & - & - & - \\
-02 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - & - & - & - \\
-03 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - & - & - \\
-04 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - & - \\
-05 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - \\
-06 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - \\
-07 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - \\
-08 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - \\
-09 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - \\
-10 & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - \\
-11 & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - \\
-12 & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 \\
-13 & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 \\
-14 & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 \\
-15 & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 \\
-16 & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 \\
-17 & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 \\
-18 & - & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 \\
-19 & - & - & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 \\
-20 & - & - & - & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 \\
-21 & - & - & - & - & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\
-\hline
-\end{tabular}
+\begin{tabular}{ c c c c c c c c c c c c c c c c c c c c c c }
+		\multicolumn{21}{c}{\textbf{TABLE DE RÉSISTANCE}}		\\
+		\hline
+ 		\multicolumn{21}{c}{\textbf{Caractéristique active}}	\\
+		   & 01 & 02 & 03 & 04 & 05 & 06 & 07 & 08 & 09 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 \\
+		01 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - & - & - & - & - \\
+		02 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - & - & - & - \\
+		03 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - & - & - \\
+		04 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - & - \\
+		05 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - & - \\
+		06 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - & - \\
+		07 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - & - \\
+		08 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - & - \\
+		09 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - & - \\
+		10 & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - & - \\
+		11 & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & - \\
+		12 & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 \\
+		13 & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 \\
+		14 & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 \\
+		15 & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 \\
+		16 & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 \\
+		17 & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 \\
+		18 & - & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 \\
+		19 & - & - & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 \\
+		20 & - & - & - & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 \\
+		21 & - & - & - & - & - & - & - & - & - & - & - & 05 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\
+		\hline
+	\end{tabular}
 \end{center}
 
 \section*{Un peu de calcul}
@@ -236,6 +260,8 @@ Les personnages (et tous les autres êtres humains) se déplacent en moyenne de 
 Les points de vie mesurent l'état physique du personnage. Lorsqu'il est blessé, il subit des dommages.
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item \textbf{Blessures graves} : Si un personnage perd en une seule fois la moitié du nombre actuel de ses points de vie, il est blessé grièvement.
     \item \textbf{Agonie} : Un personnage qui se trouve à 1, 2 ou 3 points de vie doit faire un jet de CON x 3 par round.
     \item \textbf{Mort} : Un personnage qui tombe à 0 point de vie ou moins meurt instantanément.
@@ -244,6 +270,8 @@ Les points de vie mesurent l'état physique du personnage. Lorsqu'il est blessé
 \section*{Causes de blessures}
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item \textbf{Chutes} : Retirez 1d6 points de vie par tranche de 3 mètres de chute.
     \item \textbf{Feux} : Si l'on s'en sert comme arme, une torche enflammée inflige 1d6 points de dommages par round.
     \item \textbf{Asphyxie/noyade} : Lorsqu'un personnage est exposé à des gaz toxiques, immergé dans un liquide, ou étranglé par un individu mal intentionné, on commence à découper le temps en rounds.
@@ -263,6 +291,8 @@ Les compétences représentent les domaines de connaissance que le personnage a 
 \section*{Liste universelle}
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item \textbf{Art/Artisanat (05\%)} : Il s'agit en fait d'une famille de compétences, permettant de fabriquer des objets de première nécessité et/ou des œuvres d'art.
     \item \textbf{Athlétisme (15\%)} : Cette compétence regroupe toutes les activités physiques : course, nage, saut, escalade.
     \item \textbf{Bricolage (10\%)} : Le contenu de cette compétence change selon les univers de jeu.
@@ -291,6 +321,8 @@ Les compétences représentent les domaines de connaissance que le personnage a 
 \section*{Liste spécifique (fantastique-contemporain)}
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item \textbf{Bibliothèque (25\%)} : Cette compétence permet d'utiliser une bibliothèque publique.
     \item \textbf{Comptabilité (00\%)} : La compétence Comptabilité permet de se repérer dans les comptes d'un particulier ou d'une entreprise.
     \item \textbf{Conduire... (20\%)} : La compétence Conduire est, en fait, triple.
@@ -311,6 +343,8 @@ Les compétences représentent les domaines de connaissance que le personnage a 
 \section*{Liste spécifique (médiéval-fantastique)}
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item \textbf{Alchimie (00\%)} : Cette compétence correspond à une connaissance primitive de la chimie.
     \item \textbf{Art de la guerre (00\%)} : Cette compétence permet de dresser un plan de bataille.
     \item \textbf{Civilisations anciennes (10\%)} : Cette compétence donne des informations sur les peuples qui ont précédé les cultures actuelles.
@@ -365,6 +399,8 @@ Il suffit de réussir un jet sous la compétence qui régit l'arme utilisée.
 Un combattant désireux de vivre vieux ne se lance pas dans la mêlée sans protections.
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item Les armures.
     \item Les boucliers.
     \item Le terrain.
@@ -379,6 +415,8 @@ Pour presque toutes les compétences de combat, un résultat compris entre 01 et
 On peut distinguer deux cas : celui où les combattants ne sont pas armés, et celui où ils le sont.
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item \textbf{Combat à mains nues} : Le combat à mains nues dépend de deux compétences : Bagarre et Lutte.
     \item \textbf{Combat aux armes blanches} : Le combat au corps à corps dépend de deux compétences : armes de mêlée et armes d'hast.
 \end{itemize}
@@ -388,6 +426,8 @@ On peut distinguer deux cas : celui où les combattants ne sont pas armés, et c
 Là encore, le combat à distance peut être divisé en deux grandes catégories : les armes de jet et les armes à feu.
 
 \begin{itemize}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 1pt}
     \item \textbf{Armes de jet} : Les armes de jet ne peuvent être utilisées qu'une fois par round.
     \item \textbf{Armes à feu} : Comme les armes de jet, les armes à feu tirent à la première ou à la troisième passe de chaque round.
 \end{itemize}
