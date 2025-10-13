@@ -1,8 +1,9 @@
 \documentclass[10pt,twoside,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
+\usepackage[T1]{fontenc}
 \usepackage{geometry}
-\geometry{a4paper, margin=1.5cm}
+\geometry{a4paper, margin=1.0cm}
 \usepackage{array}
 %% \usepackage{amsfonts,amssymb,amsmath,amsthm}
 
@@ -10,6 +11,21 @@
 %% \author{BaSIC \copyright Casus Belli/Multisim sous licence Chaosium}
 
 \usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols}
+
+%% \renewcommand\section%
+%% 		{\@startsection {section}{1}{\z@}%
+%% 		{\hline}%
+%% 		{\hline}%
+%% 		{\reset@font\Large\bfseries}}
+
+\usepackage{titlesec}	% in preamble
+\titleformat{\section}
+  { \centering \normalfont\Large\bfseries }	% format of title
+  { \makebox[1pc][c]{\thesection\hspace{1pc}} } % label
+  { 0pt }				% length of separation between label and title
+  { \hrule }			% before-code hook
+  [ \hrule ]
+\titlespacing*{\section}{0pc}{36pt}{18pt}[10pc]
 
 \begin{document}
 
@@ -127,7 +143,7 @@ Regardez la liste des professions disponibles dans votre univers de jeu et chois
     \item[$\bullet$] \textbf{Spécialiste en sciences humaines} : Bibliothèque, Culture générale, Droit et usages, Langue étrangère, Histoire et géographie, Orientation, Sciences sociales, Survie.
 \end{itemize}
 
-\section*{Cinquième étape : les finitions}
+\subsection*{Cinquième étape : les finitions}
 
 Le jeu de rôle est un moyen de raconter des histoires, comme les romans ou le cinéma, et les histoires sont toujours meilleures lorsqu'elles ont des héros crédibles. Pour l'instant, votre personnage est un tas de chiffres gribouillés au crayon sur un formulaire abscons. Pour lui insuffler un peu de vie, la première chose à faire est de remplir son "état civil".
 
@@ -142,7 +158,7 @@ Le jeu de rôle est un moyen de raconter des histoires, comme les romans ou le c
 
 \section*{LES RÈGLES DE BASE}
 
-\section*{Question de bon sens}
+\subsection*{Question de bon sens}
 
 \begin{itemize}
 	\setlength{\parskip}{0pt}
@@ -153,15 +169,15 @@ Le jeu de rôle est un moyen de raconter des histoires, comme les romans ou le c
     \item \textbf{Quatrième règle} : Lorsqu'il est impossible de faire un jet de compétence, utilisez un jet de caractéristique ou un jet d'opposition.
 \end{itemize}
 
-\section*{Action immanquables}
+\subsection*{Action immanquables}
 
 Les actions physiques et intellectuelles tentées dans des situations banales réussissent toujours.
 
-\section*{Actions impossibles}
+\subsection*{Actions impossibles}
 
 Les actions absurdes et irréalisables échouent toujours.
 
-\section*{Jets de compétence}
+\subsection*{Jets de compétence}
 
 La plupart des situations à résoudre se situent entre ces deux extrêmes, dans des circonstances où l'échec et la réussite sont tous deux possibles.
 
@@ -172,7 +188,7 @@ La plupart des situations à résoudre se situent entre ces deux extrêmes, dans
     \item \textbf{Réussite critique} : En revanche, avec un résultat compris entre 01 et 05, l'action est réussie de manière particulièrement brillante.
 \end{itemize}
 
-\section*{Bonus et malus}
+\subsection*{Bonus et malus}
 
 \begin{center}
 	\begin{tabular}{ c c c }
@@ -196,7 +212,7 @@ La plupart des situations à résoudre se situent entre ces deux extrêmes, dans
 	\item[D] Suivre un flâneur qui ne se méfie pas, se souvenir que la bastille a été prise un 14 juillet. 
 \end{itemize}
 
-\section*{Expérience}
+\subsection*{Expérience}
 
 Les sept caractéristiques ne peuvent pas augmenter, pas plus que leurs dérivées. Les scores de Chance ou Idée ne bougeront jamais, pas plus que le total des points de vie ou le bonus aux dommages. En revanche, les compétences peuvent augmenter.
 
@@ -243,19 +259,23 @@ Parfois, vous aurez besoin de savoir ce qui se passe lorsqu'un personnage lutte 
 	\end{tabular}
 \end{center}
 
-\section*{Un peu de calcul}
+%% \clearpage
+
+\begin{multicols}{2}
+
+\subsection*{Un peu de calcul}
 
 Si vous devez confronter des valeurs qui ne se trouvent pas sur la table de résistance, utilisez la formule suivante : Le pourcentage de chance de base est de 50\% - (carac. passive x 5) + (carac. active x 5).
 
-\section*{Temps de jeu}
+\subsection*{Temps de jeu}
 
 Le temps de jeu et le temps réel sont deux notions différentes, qui ont peu de rapport l'une avec l'autre. Un personnage peut passer plusieurs jours penché sur un grimoire ardu à déchiffrer, mais il ne faudra que quelques secondes au meneur de jeu pour résumer aux joueurs ce qu'il contient.
 
-\section*{Mouvement et poursuites}
+\subsection*{Mouvement et poursuites}
 
 Les personnages (et tous les autres êtres humains) se déplacent en moyenne de 8 mètres par round. C'est leur valeur de Mouvement.
 
-\section*{Blessures}
+\subsection*{Blessures}
 
 Les points de vie mesurent l'état physique du personnage. Lorsqu'il est blessé, il subit des dommages.
 
@@ -267,7 +287,7 @@ Les points de vie mesurent l'état physique du personnage. Lorsqu'il est blessé
     \item \textbf{Mort} : Un personnage qui tombe à 0 point de vie ou moins meurt instantanément.
 \end{itemize}
 
-\section*{Causes de blessures}
+\subsection*{Causes de blessures}
 
 \begin{itemize}
 	\setlength{\parskip}{0pt}
@@ -280,7 +300,7 @@ Les points de vie mesurent l'état physique du personnage. Lorsqu'il est blessé
     \item \textbf{Maladie} : Les règles sur les maladies sont très proches de celles sur les poisons.
 \end{itemize}
 
-\section*{Guérison}
+\subsection*{Guérison}
 
 Bien entendu, un personnage blessé finira par guérir. Ce n'est qu'une question de temps...
 
@@ -288,7 +308,7 @@ Bien entendu, un personnage blessé finira par guérir. Ce n'est qu'une question
 
 Les compétences représentent les domaines de connaissance que le personnage a appris. Elles peuvent varier d'un univers de jeu à l'autre et sont sujettes à amélioration.
 
-\section*{Liste universelle}
+\subsection*{Liste universelle}
 
 \begin{itemize}
 	\setlength{\parskip}{0pt}
@@ -318,7 +338,7 @@ Les compétences représentent les domaines de connaissance que le personnage a 
     \item \textbf{Vigilance (20\%)} : Utilisez cette compétence lorsqu'un personnage file un suspect, essaye d'écouter une conversation ou de remarquer un indice.
 \end{itemize}
 
-\section*{Liste spécifique (fantastique-contemporain)}
+\subsection*{Liste spécifique (fantastique-contemporain)}
 
 \begin{itemize}
 	\setlength{\parskip}{0pt}
@@ -340,7 +360,7 @@ Les compétences représentent les domaines de connaissance que le personnage a 
     \item \textbf{Serrurerie (15\%)} : C'est l'art et la manière d'ouvrir une serrure sans laisser de traces.
 \end{itemize}
 
-\section*{Liste spécifique (médiéval-fantastique)}
+\subsection*{Liste spécifique (médiéval-fantastique)}
 
 \begin{itemize}
 	\setlength{\parskip}{0pt}
@@ -364,19 +384,19 @@ Les compétences représentent les domaines de connaissance que le personnage a 
 
 Les règles sur le combat peuvent paraître compliquées. Elles reposent sur des principes simples, mais à la première lecture, vous risquez d'être noyé sous le flot de petits détails qui les rendent plus réalistes, mais moins intelligibles.
 
-\section*{Round}
+\subsection*{Round}
 
 Le round sert à découper le combat de manière à ce qu'il soit jouable. C'est une unité de temps au cours de laquelle tous les participants du combat ont l'occasion d'agir au moins une fois.
 
-\section*{Initiative}
+\subsection*{Initiative}
 
 Au début de chaque round, chaque participant au combat lance 1d6 et y ajoute la valeur de sa DEXtérité, puis annonce le résultat.
 
-\section*{Déclaration d'intention}
+\subsection*{Déclaration d'intention}
 
 Le meneur de jeu procède à un tour de table, demandant à chaque joueur ce qu'il compte faire pendant ce round.
 
-\section*{Ordre des attaques}
+\subsection*{Ordre des attaques}
 
 À l'intérieur du round, on distingue trois passes, qui se succèdent toujours dans le même ordre.
 
@@ -386,15 +406,15 @@ Le meneur de jeu procède à un tour de table, demandant à chaque joueur ce qu'
     \item Troisième passe : les personnages qui ont des armes à feu pouvant tirer deux fois par round ont droit à leur deuxième tir.
 \end{itemize}
 
-\section*{Esquiver et parer}
+\subsection*{Esquiver et parer}
 
 En plus de l'attaque et du déplacement, les personnages ont deux autres possibilités : l'esquive et la parade.
 
-\section*{Blesser l'adversaire}
+\subsection*{Blesser l'adversaire}
 
 Il suffit de réussir un jet sous la compétence qui régit l'arme utilisée.
 
-\section*{Protections}
+\subsection*{Protections}
 
 Un combattant désireux de vivre vieux ne se lance pas dans la mêlée sans protections.
 
@@ -406,11 +426,11 @@ Un combattant désireux de vivre vieux ne se lance pas dans la mêlée sans prot
     \item Le terrain.
 \end{itemize}
 
-\section*{Réussite critique et maladresse en combat}
+\subsection*{Réussite critique et maladresse en combat}
 
 Pour presque toutes les compétences de combat, un résultat compris entre 01 et 05 signifie que les dommages infligés par l'attaque sont plus importants que prévu.
 
-\section*{Combat au corps à corps}
+\subsection*{Combat au corps à corps}
 
 On peut distinguer deux cas : celui où les combattants ne sont pas armés, et celui où ils le sont.
 
@@ -421,7 +441,7 @@ On peut distinguer deux cas : celui où les combattants ne sont pas armés, et c
     \item \textbf{Combat aux armes blanches} : Le combat au corps à corps dépend de deux compétences : armes de mêlée et armes d'hast.
 \end{itemize}
 
-\section*{Combat à distance}
+\subsection*{Combat à distance}
 
 Là encore, le combat à distance peut être divisé en deux grandes catégories : les armes de jet et les armes à feu.
 
@@ -432,100 +452,104 @@ Là encore, le combat à distance peut être divisé en deux grandes catégories
     \item \textbf{Armes à feu} : Comme les armes de jet, les armes à feu tirent à la première ou à la troisième passe de chaque round.
 \end{itemize}
 
+\end{multicols}
+
+%% \clearpage
+
 \section*{TABLE DES ARMURES}
 
 \begin{center}
-\begin{tabular}{|l|c|}
-\hline
-Type & Protection \\
-\hline
-Cuir souple (blouson) & 1 \\
-Cuir rigide (armure) & 2 \\
-Cuir et métal & 4 \\
-Cotte de mailles (gilet pare-balles) & 6 \\
-Armure de plaques* & 8 \\
-\hline
-\end{tabular}
+	\begin{tabular}{|l|c|}
+		\hline
+		Type & Protection \\
+		\hline
+		Cuir souple (blouson) & 1 \\
+		Cuir rigide (armure) & 2 \\
+		Cuir et métal & 4 \\
+		Cotte de mailles (gilet pare-balles) & 6 \\
+		Armure de plaques* & 8 \\
+		\hline
+	\end{tabular}
 \end{center}
 
 \section*{TABLE DES ARMES D'HAST ET DE MÊLÉE}
 
 \begin{center}
-\begin{tabular}{|l|l|c|}
-\hline
-Arme & Compétence & Dommages \\
-\hline
-Dague / poignard & Mêlée & 1d3+2 \\
-Épée / rapière & Mêlée & 1d6+2 \\
-Épieu / pique & Hast & 2d6 \\
-Espadon* & Mêlée & 2d6 \\
-Gourdin & Mêlée & 1d6 \\
-Hache de bataille & Mêlée & 2d6 \\
-Hachette & Mêlée & 1d6+1 \\
-Hallebarde* & Hast & 3d6 \\
-Javelot / lance courte & Hast & 1d6+1 \\
-Masse / fléau d'armes & Mêlée & 1d6+2 \\
-Coup de poing, de tête, etc. & Bagarre & 1d3 \\
-Bouclier & Celle de l'arme principale & - \\
-\hline
-\end{tabular}
+	\begin{tabular}{|l|l|c|}
+		\hline
+		Arme & Compétence & Dommages \\
+		\hline
+		Dague / poignard & Mêlée & 1d3+2 \\
+		Épée / rapière & Mêlée & 1d6+2 \\
+		Épieu / pique & Hast & 2d6 \\
+		Espadon* & Mêlée & 2d6 \\
+		Gourdin & Mêlée & 1d6 \\
+		Hache de bataille & Mêlée & 2d6 \\
+		Hachette & Mêlée & 1d6+1 \\
+		Hallebarde* & Hast & 3d6 \\
+		Javelot / lance courte & Hast & 1d6+1 \\
+		Masse / fléau d'armes & Mêlée & 1d6+2 \\
+		Coup de poing, de tête, etc. & Bagarre & 1d3 \\
+		Bouclier & Celle de l'arme principale & - \\
+		\hline
+	\end{tabular}
 \end{center}
 
 \section*{TABLE DES ARMES DE TIR ET DE LANCER}
 
 \begin{center}
-\begin{tabular}{|l|l|c|c|c|}
-\hline
-Arme & Compétence & Portée efficace & Portée maximale & Dommages \\
-\hline
-Arbalète & Tir & 20 m & 50 m & 2d6 \\
-Arc & Tir & 50 m & 150 m & 1d6+2 \\
-Dague & Lancer & FOR en m & FOR x 2 m & 1d3+2 \\
-Fronde & Tir & 50 m & 100 m & 1d6 \\
-Javelot & Lancer & FOR en m & FOR x 3 m & 1d6+1 \\
-\hline
-\end{tabular}
+	\begin{tabular}{|l|l|c|c|c|}
+		\hline
+		Arme & Compétence & Portée efficace & Portée maximale & Dommages \\
+		\hline
+		Arbalète & Tir & 20 m & 50 m & 2d6 \\
+		Arc & Tir & 50 m & 150 m & 1d6+2 \\
+		Dague & Lancer & FOR en m & FOR x 2 m & 1d3+2 \\
+		Fronde & Tir & 50 m & 100 m & 1d6 \\
+		Javelot & Lancer & FOR en m & FOR x 3 m & 1d6+1 \\
+		\hline
+	\end{tabular}
 \end{center}
 
 \section*{TABLE DES ARMES À FEU}
 
 \begin{center}
-\begin{tabular}{|l|c|c|c|c|}
-\hline
-Arme & Dommages & Portée & Tirs & Munitions \\
-\hline
-\multicolumn{5}{|c|}{Armes de poing} \\
-\hline
-Calibre 22 & 1d6 & 10 m & 2 & 6 \\
-Calibre 32 & 1d6+2 & 15 m & 2 & 8 \\
-Calibre 38 & 1d10 & 15 m & 2 & 8 \\
-Calibre 44 Magnum & 2d6+2 & 20 m & 1 & 6 \\
-Calibre 45 & 1d10+2 & 15 m & 1 & 6 \\
-\hline
-\multicolumn{5}{|c|}{Fusils} \\
-\hline
-Carabine 22 long rifle & 1d6+2 & 30 m & 1 & 6 \\
-Carabine 30 & 2d6 & 50 m & 1 & 6 \\
-Fusil 30-06 & 2d6+4 & 100 m & 1/2 & 5 \\
-\hline
-\multicolumn{5}{|c|}{Fusil de chasse} \\
-\hline
-Calibre 12 & 4d6 / 2d6 / 1d6 & 10 / 20 / 50 m & 1 & 5 \\
-Calibre 12 (canon scié) & 4d6 / 1d6 & 5 / 10 m & 1 & 5 \\
-\hline
-\multicolumn{5}{|c|}{Mitraillettes} \\
-\hline
-Kalachnikov & 2d6+1 & 100 m & 2 ou rafale & 30 \\
-M-16 & 2d6 & 120 m & 2 ou rafale & 30 \\
-Uzi & 1d10 & 50 m & 2 ou rafale & 30 \\
-\hline
-\multicolumn{5}{|c|}{Armes anciennes} \\
-\hline
-Arquebuse & 1d10 & 15 m & 1 / 1d6+3 & 1 \\
-Mousquet & 1d6+3 & 15 m & 1 / 1d6+3 & 1 \\
-Pistolet & 1d6+2 & 10 m & 1 / 1d6+3 & 1 \\
-\hline
-\end{tabular}
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		Arme & Dommages & Portée & Tirs & Munitions \\
+		\hline
+		\multicolumn{5}{|c|}{Armes de poing} \\
+		\hline
+		Calibre 22 & 1d6 & 10 m & 2 & 6 \\
+		Calibre 32 & 1d6+2 & 15 m & 2 & 8 \\
+		Calibre 38 & 1d10 & 15 m & 2 & 8 \\
+		Calibre 44 Magnum & 2d6+2 & 20 m & 1 & 6 \\
+		Calibre 45 & 1d10+2 & 15 m & 1 & 6 \\
+		\hline
+		\multicolumn{5}{|c|}{Fusils} \\
+		\hline
+		Carabine 22 long rifle & 1d6+2 & 30 m & 1 & 6 \\
+		Carabine 30 & 2d6 & 50 m & 1 & 6 \\
+		Fusil 30-06 & 2d6+4 & 100 m & 1/2 & 5 \\
+		\hline
+		\multicolumn{5}{|c|}{Fusil de chasse} \\
+		\hline
+		Calibre 12 & 4d6 / 2d6 / 1d6 & 10 / 20 / 50 m & 1 & 5 \\
+		Calibre 12 (canon scié) & 4d6 / 1d6 & 5 / 10 m & 1 & 5 \\
+		\hline
+		\multicolumn{5}{|c|}{Mitraillettes} \\
+		\hline
+		Kalachnikov & 2d6+1 & 100 m & 2 ou rafale & 30 \\
+		M-16 & 2d6 & 120 m & 2 ou rafale & 30 \\
+		Uzi & 1d10 & 50 m & 2 ou rafale & 30 \\
+		\hline
+		\multicolumn{5}{|c|}{Armes anciennes} \\
+		\hline
+		Arquebuse & 1d10 & 15 m & 1 / 1d6+3 & 1 \\
+		Mousquet & 1d6+3 & 15 m & 1 / 1d6+3 & 1 \\
+		Pistolet & 1d6+2 & 10 m & 1 / 1d6+3 & 1 \\
+		\hline
+	\end{tabular}
 \end{center}
 
 \end{document}
