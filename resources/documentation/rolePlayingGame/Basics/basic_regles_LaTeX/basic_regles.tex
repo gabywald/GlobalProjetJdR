@@ -1,9 +1,9 @@
-\documentclass[10pt,twoside,a4paper]{article}
+\documentclass[9pt,twoside,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{geometry}
-\geometry{a4paper, margin=1.0cm}
+\geometry{a4paper, margin=1.35cm}
 \usepackage{array}
 %% \usepackage{amsfonts,amssymb,amsmath,amsthm}
 
@@ -11,6 +11,19 @@
 %% \author{BaSIC \copyright Casus Belli/Multisim sous licence Chaosium}
 
 \usepackage{multicol} % pour {\'e}crire dans certaines zones en colonnes : \begin{multicols}{nb colonnes}...\end{multicols}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO, RE]{  }
+\fancyfoot[LE, RO]{ \hfill \textbf{\emph{BaSIC}} le jeu de rôle de base \textbf{Page \thepage} }
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
 
 %% \renewcommand\section%
 %% 		{\@startsection {section}{1}{\z@}%
@@ -33,13 +46,13 @@
 
 %% \maketitle
 \Large{\textbf{BaSIC : Le jeu de rôle de base}}~\\
-\large{BaSIC \copyright Casus Belli/Multisim sous licence Chaosium}~\\
+\large{BaSIC \copyright Casus Belli/Multisim sous licence Chaosium} %% ~\\
 
 \begin{multicols}{2}
 
 \section*{INTRODUCTION}
 
-S'il y a un système de jeu de rôle dont on connaît les qualités et les défauts, les possibilités et les limites, c'est bien le Basic Role Playing, le système de l'éditeur américain Chaosium. Il fut mis au point à l'aube du jeu de rôle par Steve Perrin et Lynn Willis pour le jeu RuneQuest, puis adapté pour les autres jeux de Chaosium (Elric, Hawkinson, L'appel de Cthulhu, Ellquest) et plus tard Multisim en acquit les droits en France pour son jeu Nephilim. BaSIC est la version la plus épurée du système Chaosium. Un système qui n'est pas forcément le plus réaliste, mais en tout cas le plus intuitif, le plus facile à intégrer, à jouer et à faire jouer, et le plus couramment pratiqué par un vaste nombre de joueurs !
+S'il y a un système de jeu de rôle dont on connaît les qualités et les défauts, les possibilités et les limites, c'est bien le Basic Role Playing, le système de l'éditeur américain Chaosium. Il fut mis au point à l'aube du jeu de rôle par Steve Perrin et Lynn Willis pour le jeu RuneQuest, puis adapté pour les autres jeux de Chaosium (Elric, Hawkinson, L'appel de Cthulhu, Ellquest) et plus tard Multisim en acquit les droits en France pour son jeu Nephilim. BaSIC est la version la plus épurée du système Chaosium. Un système qui n'est pas forcément le plus réaliste, mais en tout cas le plus intuitif, le plus facile à intégrer, à jouer et à faire jouer, et le plus couramment pratiqué par un vaste nombre de joueurs !~\\
 
 Cette version a été coordonnée par Tristan Lhomme. Introduction extraite d'un préambule de Didier Guiserix paru dans le hors-série Casus Belli n$^{\circ}$19 "BaSIC, le jeu de rôle de base" (1997).
 
@@ -51,7 +64,7 @@ Un personnage est défini par deux séries de chiffres : ses caractéristiques e
 
 \subsection*{Les caractéristiques}
 
-Elles sont au nombre de sept. Pour un être normal, leur valeur varie entre 3 et 18. Les personnages des joueurs étant des héros, donc par définition un peu meilleurs que la moyenne, leurs caractéristiques iront de 8 à 18.
+Elles sont au nombre de sept. Pour un être normal, leur valeur varie entre 3 et 18. Les personnages des joueurs étant des héros, donc par définition un peu meilleurs que la moyenne, leurs caractéristiques iront de 8 à 18.~\\
 
 \textbf{FORce} : C'est une mesure de la puissance musculaire du personnage. Cette caractéristique donne une idée de ce qu'il peut soulever, porter, pousser ou tirer. À titre indicatif, un personnage avec une FORce de 8 est un quidam moyen, qui n'a plus fait de sport après le lycée. Avec une FORce de 18, c'est un athlète qui joue dans la même cour qu'Arnold Schwarzenegger.~\\
 
@@ -83,7 +96,7 @@ Munissez-vous d'une feuille de personnage, d'un bout de brouillon, d'un crayon e
 
 \subsection*{Troisième étape : les valeurs dérivées}
 
-Les caractéristiques servent à calculer cinq valeurs dérivées. Suivez les instructions ci-dessous et reportez les résultats sur votre feuille de personnage.
+Les caractéristiques servent à calculer cinq valeurs dérivées. Suivez les instructions ci-dessous et reportez les résultats sur votre feuille de personnage.~\\
 
 \textbf{Points de vie (PV)} : Ils mesurent l'état physique du personnage. Lorsqu'il est blessé, il perd des points de vie. S'il tombe à 0 point de vie, il est mort! Faites la somme de la TAIlle et de la CONstitution, divisez le résultat par deux (en arrondissant à l'entier supérieur, si besoin est).~\\
 
@@ -99,9 +112,9 @@ Les caractéristiques servent à calculer cinq valeurs dérivées. Suivez les in
 	\begin{tabular}{ c c }
 		%% \multicolumn{2}{c}{\textbf{TABLE DES BONUS AUX DOMMAGES}}	\\
 		\multicolumn{2}{c}{\textbf{TABLE DES BONUS}}	\\
-		\multicolumn{2}{c}{\textbf{AUX DOMMAGES}}	\\
+		\multicolumn{2}{c}{\textbf{AUX DOMMAGES}}		\\
 		\hline
-		\textbf{FORce + TAIlle} & \textbf{Bonus} \\
+		\textbf{FORce + TAIlle} & \textbf{Bonus} 		\\
 		02 à 24 & Aucun \\
 		25 à 32 & +1d3 \\
 		33 à 40 & +1d6 \\
@@ -112,11 +125,13 @@ Les caractéristiques servent à calculer cinq valeurs dérivées. Suivez les in
 
 \subsection*{Quatrième étape : les compétences}
 
-Regardez la liste des professions disponibles dans votre univers de jeu et choisissez-en une. Vous avez 300 points à répartir dans les compétences qui en découlent (sans obligation de les prendre toutes). Ensuite, vous pourrez répartir 150 points parmi toutes les autres compétences de la feuille de personnage, à votre guise.
+Regardez la liste des professions disponible dans votre univers de jeu et choisissez-en une. Vous avez 300 points à répartir dans les compétences qui en découlent (sans obligation de les prendre toutes). Ensuite, vous pourrez répartir 150 points parmi toutes les autres compétences de la feuille de personnage, à votre guise (même dans celles que vous avez déjà prises).~\\
+Comment répartir ces points ? Il suffit de décider du nombre de points que vous allouez à une compétence, de l'ajouter à la base de cette dernière (la valeur entre parenthèses qui se trouve à côté de son nom sur la feuille de personnage). Ainsi, si vous décidez d'allouer 50 points à l'Esquive, qui a un score de base de 25, vous dépensez 50 points, et votre personnage se trouve doté d'une Esquive ayant un score de 75. 1 point signifie 1 \% de chance de réussite dans la compétence. A sa création, un personnage ne peut pas avoir plus de 90 dans un compétence, quelle qu'elle soit. Par ailleurs, il est inutile de le doter de scores supérieurs à 75 \%; un score aussi élevé signifie qu'il réussira une action trois fois sur quatre, ce qui devrait largement suffire... Il vaut mieux être un <<généraliste>> capable de faire moyennement bien un grand nombre de choses, qu'un "spécialiste" hyper compétent, ne sachant rien faire en dehors de son domaine de compétence très étroit. Si, après quelques parties, ce choix ne vous convient plus, créez un autre type de personnage.~\\
+\emph{Conseil aux débutants : }C'est le moment de discuter avec les autres joueurs. Essayez de créer des personnages complémentaires, par exemple l'un sera bagarreur, l'autre plutôt diplomate; le groupe gagnera en efficacité.
 
-\section*{Liste des professions avec compétences}
+\subsubsection*{Liste des professions avec compétences}
 
-\subsection*{Exemples pour un univers médiéval-fantastique}
+\textbf{Exemples pour un univers médiéval-fantastique}
 
 \begin{itemize}
 	\setlength{\parskip}{0pt}
@@ -131,7 +146,7 @@ Regardez la liste des professions disponibles dans votre univers de jeu et chois
     \item[$\bullet$] \textbf{Voleur} : Armes de lancer, Armes de mêlée, Cascade, Discrétion, Esquive, Persuasion, Sagacité, Serrurerie.
 \end{itemize}
 
-\subsection*{Exemples pour un univers contemporain}
+\textbf{Exemples pour un univers contemporain}
 
 \begin{itemize}
 	\setlength{\parskip}{0pt}
@@ -143,7 +158,7 @@ Regardez la liste des professions disponibles dans votre univers de jeu et chois
     \item[$\bullet$] \textbf{Spécialiste en sciences humaines} : Bibliothèque, Culture générale, Droit et usages, Langue étrangère, Histoire et géographie, Orientation, Sciences sociales, Survie.
 \end{itemize}
 
-\subsection*{Cinquième étape : les finitions}
+\textbf{Cinquième étape : les finitions}
 
 Le jeu de rôle est un moyen de raconter des histoires, comme les romans ou le cinéma, et les histoires sont toujours meilleures lorsqu'elles ont des héros crédibles. Pour l'instant, votre personnage est un tas de chiffres gribouillés au crayon sur un formulaire abscons. Pour lui insuffler un peu de vie, la première chose à faire est de remplir son "état civil".
 
@@ -166,29 +181,27 @@ Le jeu de rôle est un moyen de raconter des histoires, comme les romans ou le c
     \item \textbf{Première règle} : Une action impossible à rater réussit toujours.
     \item \textbf{Deuxième règle} : Une action impossible à réussir échoue toujours.
     \item \textbf{Troisième règle} : Pour tous les autres cas, faites un jet de compétence.
-    \item \textbf{Quatrième règle} : Lorsqu'il est impossible de faire un jet de compétence, utilisez un jet de caractéristique ou un jet d'opposition.
+    \item \textbf{Quatrième règle} : Lorsqu'il est impossible de faire un jet de compétence, utilisez un jets de caractéristique ou un jet d'opposition. Tout ce qui suit se contente de développer ces principes.
 \end{itemize}
 
-\subsection*{Action immanquables}
+\textbf{Action immanquables}~\\
+Les actions physiques et intellectuelles tentées dans des situations banales réussissent toujours. Inutile de lancer les dés pour savoir si un personnage arrive à mettre un pied devant l'autre pour sortir de chez lui et aller acheter du pain !
 
-Les actions physiques et intellectuelles tentées dans des situations banales réussissent toujours.
+\textbf{Actions impossibles}~\\
+Les actions absurdes et irréalisables échouent toujours. Si un personnage saute d'un avion sans parachute et tente de rester en l'air en battant des bras, ce n'est pas la peine de chercher le point de règle qui lui permettra de s'en sortir: il va finir sa vie beaucoup plus bas, sous forme de flaque. Le meneur de jeu dispose d'une certaine latitude dans l'interprétation de ce qui est "absurde", et cela peut varier d'un univers à l'autre. Par exemple, dans le cas d'une aventure à la James Bond où le spectaculaire prime sur le réalisme, il est parfaitement possible de décider que notre aéronaute pourra, peut-être, avec un jet de Chance, s'accrocher à la queue de l'avion...
 
-\subsection*{Actions impossibles}
-
-Les actions absurdes et irréalisables échouent toujours.
-
-\subsection*{Jets de compétence}
-
-La plupart des situations à résoudre se situent entre ces deux extrêmes, dans des circonstances où l'échec et la réussite sont tous deux possibles.
-
+\subsection*{Jets de compétence}~\\
+La plupart des situations à résoudre se situent entre ces deux extrêmes, dans des circonstances où l'échec et la réussite sont tous deux possibles, et dont leurs résultats vont avoir des conséquences sur le reste de l'aventure. Pour simuler cette incertitude, on a recours à un jet de dés. Comme nous l'avons vu au chapitre précédent, les compétences sont mesurées sur 100. 
+Un personnage avec 40 dans une compétence a en fait 40 % de chance de réussir à l'utiliser. Pour utiliser une compétence, il faut lancer 1d100. Si le résultat obtenu est inférieur ou égal au score de la compétence, l'action est réussie (c'est pourquoi on dit faire un jet sous une compétence). Sinon, c'est un échec.
 \begin{itemize}
 	\setlength{\parskip}{0pt}
 	\setlength{\itemsep}{0pt plus 1pt}
-    \item \textbf{Maladresse} : Lorsque le résultat est compris entre 96 et 00, non seulement l'action est manquée, mais en plus, l'échec est particulièrement grave.
-    \item \textbf{Réussite critique} : En revanche, avec un résultat compris entre 01 et 05, l'action est réussie de manière particulièrement brillante.
+    \item \textbf{Maladresse.} Lorsque le résultat est compris entre 96 et 00, non seulement l'action est manquée, mais en plus, l'échec est particulièrement grave (par exemple: au cours d'une poursuite en voiture non seulement le poursuivant ne rattrape pas sa cible, mais en plus il tombe dans un fossé). Cela s'appelle une maladresse.
+    \item \textbf{Réussite critique.} En revanche, avec un résultat compris entre 01 et 05, l'action est réussie de manière particulièrement brillante (non seulement vous rattrapez le poursuivi mais, en plus, vous avez évité le chien qui traversait la route). Cela s'appelle une réussite critique.
 \end{itemize}
 
-\subsection*{Bonus et malus}
+\textbf{Bonus et malus}~\\
+En règle générale, le jet de dés se fait "sous" la valeur de la compétence mais, parfois, le meneur de jeu peut décider que la situation mérite un ajustement dans un sens ou dans l'autre. Dans ce cas, il fixe un bonus ou un malus, qui vient s'ajouter (ou se soustraire) à la compétence du personnage. Le jet de dés est réussi s'il est inférieur ou égal à la valeur modifiée de la compétence. Le meneur de jeu peut fixer des bonus ou des malus supérieurs à + ou - 20 \%, mais ce n'est pas conseillé. Si l'action est vraiment très facile (ou très difficile), elle rentre probablement dans la catégorie des actions immanquables ou impossibles.
 
 \begin{center}
 	\begin{tabular}{ c c c }
@@ -214,17 +227,21 @@ La plupart des situations à résoudre se situent entre ces deux extrêmes, dans
 
 \subsection*{Expérience}
 
-Les sept caractéristiques ne peuvent pas augmenter, pas plus que leurs dérivées. Les scores de Chance ou Idée ne bougeront jamais, pas plus que le total des points de vie ou le bonus aux dommages. En revanche, les compétences peuvent augmenter.
+Les sept caractéristiques ne peuvent pas augmenter, pas plus que leurs dérivées. Les scores de Chance ou Idée ne bougeront jamais, pas plus que le total des points de vie ou le bonus aux dommages. En revanche, les compétences peuvent augmenter, selon le principe: c'est en forgeant qu'on devient forgeron... Si, au cours d'une aventure, un personnage a réussi une action importante, le meneur de jeu peut l'autoriser à cocher la petite case qui se trouve à côté de la compétence correspondante.
+
+À la fin de l'aventure, le personnage peut tenter de l'améliorer. Pour cela, le joueur lance ldl00. S'il obtient un score supérieur à la valeur de la compétence, le personnage a retiré quelque chose de l'expérience, et la compétence augmente d'ldl0 points. S'il obtient un score inférieur ou égal à la valeur de la compétence, la situation ne lui a rien appris... À partir de 90 \% dans une compétence, les règles changent un peu. Le personnage a une chance égale à son score d'INTelligence de s'améliorer et, même s'il réussit, il ne progressera que d'1 point. 
 
 \section*{Astuces}
 
 \subsection*{Les jets de caractéristique}
 
-Il existe parfois des situations où aucune compétence ne s'applique. Dans ce cas, la caractéristique concernée est multipliée par un nombre entre 1 et 5.
+Il existe parfois des situations où aucune compétence ne s'applique. Supposons, par exemple, qu'un personnage (masculin) soit face à une charmante jeune fille, et qu'il désire qu'elle le remarque. Il n'existe aucune compétence Faire bonne impression aux jolies filles. En revanche, la caractéristique APParence est là pour ça ! Dans ce genre de cas, la caractéristique concernée est multipliée par un nombre (le multiplicateur) entre 1 et 5. Faites un jet d'1d100 sous cette valeur, comme si c'était une compétence. Le multiplicateur dépend de la difficulté de l'action: de x 5 (facile) à x 1 (très difficile), la plupart du temps ce sera x 3. Si la jeune fille de l'exemple est seule et cherche quelqu'un à qui parler, le jet d'APParence du personnage se fera sous son APP x 5. En revanche, si elle est avec son petit ami, le meneur de jeu demandera un jet sous l'APP x 1 (et peut décider que le petit ami manifeste sa jalousie, en cas de réussite !).
 
 \subsection*{Les jets en opposition}
 
-Parfois, vous aurez besoin de savoir ce qui se passe lorsqu'un personnage lutte contre quelque chose qui lui résiste.
+Parfois, vous aurez besoin de savoir ce qui se passe lorsqu'un personnage lutte contre quelque chose qui lui résiste. Arrivera-t-il à enfoncer cette porte ? Parviendra-t-il à se libérer de l'étreinte de la pieuvre géante ? La table de résistance est un outil multi-usage, qui sert à chaque fois qu'il est nécessaire d'opposer deux caractéristiques, une "active" (celle du personnage ou de la chose qui agit) et une "passive" (celle du personnage ou de la chose qui tente de résister à l'action). Il suffit de chercher dans cette table la colonne correspondant à la valeur de la caractéristique "active" et la ligne correspondant à la valeur de la caractéristique "passive".
+
+À l'intersection, figure le nombre maximum qu'il faut obtenir avec 1d100 pour que l'action entreprise avec la caractéristique active soit réussie (exactement comme si c'était une compétence, à ceci près que les notions de réussite critique et de maladresse ne s'appliquent pas). Toutes les caractéristiques ou presque peuvent être opposées les unes aux autres. En général, cette table sert surtout aux duels FOR/FOR ou POU/POU, mais la pratique en fait découvrir beaucoup d'autres utilisations. Supposons par exemple que votre personnage veuille déchiffrer un message codé particulièrement compliqué. Le meneur de jeu peut décider d'opposer le score en INT du personnage à un nombre représentant la difficulté du document. Supposons que l'INT du personnage soit de 14, et que le meneur de jeu estime la difficulté du document à 18. Un coup d'oeil à la table montre que les chances de déchiffrer le document sont de 30 \%.
 
 \end{multicols}
 
