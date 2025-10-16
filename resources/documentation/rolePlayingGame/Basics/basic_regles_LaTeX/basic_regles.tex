@@ -403,7 +403,7 @@ Les règles sur le combat peuvent paraître compliquées. Ellesreposent sur des 
 
 Le round sert à découper le combat de manière à ce qu'il soit jouable. C'est une unité de temps au cours de laquelle tous les participants du combat ont l'occasion d'agir au moins une fois. En temps de jeu sa durée est variable et correspond à peu près à une dizaine de secondes. En temps réel, il dure généralement quelques minutes. Chaque round se divise en plusieurs étapes :~\\
 1 - Détermination de l'initiative ; ~\\
-2 - Déclaration d'intention des joueurs et des PNJ ; ~\\
+2 - Déclaration d'intention des PJ et des PNJ ; ~\\
 3 - Résolution des actions, selon les règles détaillées au paragraphe "Ordre des attaques".~\\
 Lorsque tout le monde a agi, le round suivant peut commencer, et l'on revient à l'étape 1.
 
@@ -415,162 +415,213 @@ Au début de chaque round, chaque participant au combat lance 1d6 et y ajoute la
 
 Le meneur de jeu procède à un tour de table, demandant à chaque joueur ce qu'il compte faire pendant ce round. Les actions possibles sont nombreuses : attaquer, parer, esquiver, se déplacer…~\\
 Inutile de donner des réponses trop détaillées. Il suffit d'annoncer quelque chose du genre "je tape sur le gros PNJ tatoué" ou "je me cache sous la table". En fait, se lancer dans des récits détaillés comme "je tape sur le gros tatoué et alors je le touche à la tête et je l'assomme et quand on le réveille il nous dit tout et on résout le scénario" fait perdre du temps à tout le monde car, de toute façon, ça ne se passera pas comme ça…~\\
-De son côté, le meneur de jeu annonce aux joueurs ce que semblent vouloir faire les personnages qu'il contrôle. Là encore, il n'y a pas besoin d'être très précis. Dire "le magicien retrousse ses manches et commence à gesticuler" est préférable à "le magicien se prépare à lancer un sort de Boule de feu géante qui va tous vous carboniser". Les personnages seront peut-être très content que le magicien les laisse tranquille ce round-ci et ils se concentreront sur d'autres personnages non-joueurs… Au round suivant ils le regretteront amèrement, mais ils n'ont aucun moyen de le savoir.~\\
+De son côté, le meneur de jeu annonce aux joueurs ce que semblent vouloir faire les personnages qu'il contrôle. Là encore, il n'y a pas besoin d'être très précis. Dire "le magicien retrousse ses manches et commence à gesticuler" est préférable à "le magicien se prépare à lancer un sort de Boule de feu géante qui va tous vous carboniser". Les personnages seront peut-être très content que le magicien les laisse tranquille ce round-ci et ils se concentreront sur d'autres personnages non-joueurs… Au round suivant ils le regretteront amèrement, mais ils n'ont aucun moyen de le savoir. %% ~\\
 
 \subsection*{Ordre des attaques}
 
-À l'intérieur du round, on distingue trois passes, qui se succèdent toujours dans le même ordre.
+À l'intérieur du round, on distingue trois passes, qui se succèdent toujours dans le même ordre. Parfois, personne ne pourra agir au cours d'une passe. Dans ce cas, ignorez-la et passez à la suivante.
 
-\begin{itemize}
-	\item Première passe : les personnages (PJ et PNJ) qui ont des armes à feu ou des armes à projectiles prêtes à servir agissent en premier.
-	\item Deuxième passe : une fois que ces premiers tirs ont eu lieu, on prend les personnages qui n'ont pas encore agi.
-	\item Troisième passe : les personnages qui ont des armes à feu pouvant tirer deux fois par round ont droit à leur deuxième tir.
-\end{itemize}
+$\bullet$ \textbf{Première passe :} les personnages (PJ et PNJ) qui ont des armes à feu ou des armes à projectiles prêtes à servir agissent en premier, par ordre décroissant d'initiative. Appuyer sur une gâchette ou lâcher la corde d'un arc prend nettement moins longtemps que de donner un coup de couteau...~\\
+$\bullet$ \textbf{Deuxième passe :} une fois que ces premiers tirs ont eu lieu, on prend les personnages qui n'ont pas encore agi, toujours par ordre décroissant d'initiative. Ils peuvent attaquer, parer, se déplacer... Procédez aux jets de compétence appropriés au fur et à mesure.
+$\bullet$ \textbf{Troisième passe :} les personnages qui ont des armes à feu pouvant tirer deux fois par round ont droit à leur deuxième tir, toujours par ordre d'initiative décroissante. Les personnages qui devaient dégainer leur arme ou encocher une flèche agissent à ce moment (dans le cas des armes à feu, ils perdent leur second tir).~\\
+Cette troisième passe terminée, le round s'achève.
 
 \subsection*{Esquiver et parer}
 
-En plus de l'attaque et du déplacement, les personnages ont deux autres possibilités : l'esquive et la parade.
+En plus de l'attaque et du déplacement, les personnages ont deux autres possibilités: l'esquive et la parade.~\\
+$\bullet$ \textbf{L'Esquive} est une compétence à part entière. Lors des déclarations d'intention, un personnage qui désire esquiver une attaque l'annonce, et précise quel adversaire il souhaite esquiver. Un personnage qui esquive ne peut pas attaquer. En revanche, il peut parer l'attaque. L'Esquive peut également servir à rompre le combat: dans ce cas, le personnage fait un jet d'Esquive au début du round et, s'il le réussit, on considère qu'il s'est désengagé et n'est plus en danger (sauf, bien sûr, d'éventuels tireurs).~\\ 
+$\bullet$ \textbf{La parade}, quant à elle, n'est pas vraiment une compétence, c'est seulement une autre manière d'utiliser les compétences d'attaque. Lors d'un corps à corps, un personnage qui est la cible d'une attaque peut parer avec son arme (épée, bâton ... ). Il fait un jet de compétence, comme pour une attaque. S'il est réussi, le coup est arrêté par l'arme, et le personnage ne subit pas de dommages. Il est possible de parer le coup d'un adversaire plus rapide que soi, puis d'attaquer le moment venu, ou le contraire. En revanche, on ne peut pas parer plusieurs fois par round. Attention : on ne peut ni parer, ni esquiver les balles.
 
 \subsection*{Blesser l'adversaire}
 
-Il suffit de réussir un jet sous la compétence qui régit l'arme utilisée.
+Il suffit de réussir un jet sous la compétence qui régit l'arme utilisée. Si l'adversaire n'esquive pas ou rate sa parade, il est blessé et perd des points de vie. Pour savoir combien, on lance un certain nombre de dés, en fonction de l'arme. Chaque arme fait un certain nombre de dés de dommages (voir la table des armes). S'il s'agit d'une arme de corps à corps, on y ajoute le bonus aux dommages de l'attaquant. Bien sûr, s'il s'agit d'une arme à distance ce bonus ne joue pas. On lance les dés pour calculer le nombre de points de dommages infligés, on y soustrait l'éventuelle protection de l'adversaire, et on retire ce qui reste de ses points de vie.
 
 \subsection*{Protections}
 
-Un combattant désireux de vivre vieux ne se lance pas dans la mêlée sans protections.
-
-\begin{itemize}
-	\setlength{\parskip}{0pt}
-	\setlength{\itemsep}{0pt plus 1pt}
-	\item Les armures.
-	\item Les boucliers.
-	\item Le terrain.
-\end{itemize}
+Un combattant désireux de vivre vieux ne se lance pas dans la mêlée sans protections. Celles-ci sont de trois types: les armures, les boucliers et le terrain lui-même.~\\
+$\bullet$ \textbf{Les armures.} La nature des armures change d'un univers à l'autre (cotte de mailles, gilet pare-balles... ), mais leur fonction ne varie pas : elles absorbent une partie des dommages infligés par une attaque. Soustrayez le chiffre indiqué dans la table des armures aux points de dommages infligés au personnage. Seul l'éventuel excédent lui est infligé. Cette protection est efficace à chaque attaque et ne "s'use" jamais.~\\
+$\bullet$ \textbf{Les boucliers.} Ils apportent un bonus au jet de parade, au prix d'un malus équivalent au jet d'attaque. Un grand écu ajuste le jet de compétence de +/-20 \%, un petit bouclier rond (ou un couvercle de poubelle) se contente de le modifier de +/-10 \%.~\\
+$\bullet$ \textbf{Le terrain.} Un tireur qui s'abrite derrière un arbre, par exemple, est plus difficile à toucher qu'un homme qui se trouve à découvert. Le meneur de jeu peut donner un malus à la compétence (voir Bonus et malus, plus haut).
 
 \subsection*{Réussite critique et maladresse en combat}
 
-Pour presque toutes les compétences de combat, un résultat compris entre 01 et 05 signifie que les dommages infligés par l'attaque sont plus importants que prévu.
+Pour presque toutes les compétences de combat, un résultat compris entre 01 et 05 signifie que les dommages infligés par l'attaque sont plus importants que prévu. Lancez deux fois les dés de dommages de l'arme, additionnez les résultats obtenus et soustrayez le résultat aux points de vie de la cible. De plus, les attaques portées avec des armes tranchantes (épée, dague, etc.) ou des armes à feu arrivent à trouver le défaut de l'armure. La protection de cette dernière est annulée. Les conséquences d'une maladresse sont potentiellement plus variées. En voici une petite liste non limitative :~\\
+$\bullet$ \textbf{Bagarre :} la cible s'écarte à la dernière seconde. Le personnage fonce dans le mur et se blesse.~\\
+$\bullet$ \textbf{Toutes les compétences d'armes :} l'arme se brise, elle reste coincée, le personnage perd l'équilibre (et ne pourra pas attaquer au prochain round), l'attaque touche un ami au lieu de la cible...~\\
+$\bullet$ \textbf{Compétences d'armes à feu :} l'arme s'enraye, elle est inutilisable pour ld6 rounds, un ricochet touche un ami au lieu de la cible (dommages divisés par deux), les détonations attirent l'attention du voisinage qui prévient la police...~\\
 
 \subsection*{Combat au corps à corps}
 
 On peut distinguer deux cas : celui où les combattants ne sont pas armés, et celui où ils le sont.
 
-\begin{itemize}
-	\setlength{\parskip}{0pt}
-	\setlength{\itemsep}{0pt plus 1pt}
-	\item \textbf{Combat à mains nues} : Le combat à mains nues dépend de deux compétences : Bagarre et Lutte.
-	\item \textbf{Combat aux armes blanches} : Le combat au corps à corps dépend de deux compétences : armes de mêlée et armes d'hast.
-\end{itemize}
+$\bullet$ \textbf{Combat à mains nues :} Le combat à mains nues dépend de deux compétences : Bagarre et Lutte.~\\
+$\bullet$ \emph{Bagarre.} La Bagarre consiste à cogner à coups de pied, de tête ou de poing, de manière instinctive. N'importe qui peut le faire avec des chances de succès raisonnables, mais ce n'est pas une attaque très efficace. Comme vous pouvez le voir sur la feuille de personnage, elle n'inflige qu'1d3 points de dommages (plus, bien sûr, le bonus aux dommages de l'attaquant). On ne peut utiliser cette compétence que pour parer une attaque de Bagarre, pour des raisons évidentes: essayez de parer un coup de hache avec votre main, vous m'en direz des nouvelles !~\\
+Pourcentage de base: 50 \%.~\\
+Rappel : Le pourcentage de base est le score d'un individu non entraîné (plus de précisions au chapitre Les compétences).~\\
+$\bullet$ \emph{Lutte.} Les personnages qui ont investi dans la compétence
+Lutte sont mieux entraînés que les simples bagarreurs, et savent comment être efficaces. Si, au cours d'un combat, le personnage réussit un jet de Bagarre qui est également inférieur à son score en Lutte, il inflige 2d3 points de dommages. La compétence Lutte a d'autres intérêts. Utilisée seule, elle permet d'immobiliser un adversaire (grâce à un jet FOR/FOR sur la table de résistance, à renouveler à chaque round); de le jeter à terre (réussite automatique); de l'étrangler (appliquez les règles sur l'asphyxie. La victime peut faire un jet de FOR/FOR à chaque round pour se dégager).~\\
+Pourcentage de base: 20 \%.~\\
+
+$\bullet$ \textbf{Combat aux armes blanches :} Le combat au corps à corps dépend de deux compétences : armes de mêlée et armes d'hast.~\\
+Le combat au corps à corps dépend de deux compétences : armes de mêlée et armes d'hast. Toutes deux peuvent servir à parer.~\\
+$\bullet$ \emph{Armes de mêlée} recouvre la plupart des armes tranchantes ou contondantes qui s'utilisent à une main. Cela va du gourdin à l'épée longue en passant par la dague ou la hache.~\\
+Pourcentage de base: 25\%.~\\
+Le fouet est un cas particulier, même s'il dépend aussi de cette compétence. Une attaque réussie avec un fouet n'inflige qu'1d3 points de dommages, mais la mèche du fouet est enroulée autour de l'adversaire. Il est possible de le faire tomber en réussissant un jet de FOR/TAI ou de le désarmer en réussissant un jet de DEX x3 \%. Si le résultat du jet d'attaque est compris entre 01 et 05, l'attaquant peut appliquer directement l'un de ces effets, sans avoir à faire de deuxième jet. La victime peut tenter de se dégager à chaque round avec un jet de FOR/FOR (elle arrache le fouet des mains de l'attaquant) ou de DEX/FOR (elle se dégage en souplesse).~\\
+$\bullet$ \emph{Armes d'hast} concerne toutes les armes longues, qui s'utilisent généralement à deux mains, comme les hallebardes, les piques, les lances, etc.~\\
+Pourcentage de base 20\%.~\\
+
+~\columnbreak
+
+\subsection*{Assommer un adversaire}
+
+Pour assommer un adversaire, un personnage doit annoncer son intention en début de round, puis réussir une attaque de Bagarre, de Lutte ou d'une arme de mêlée non tranchante (un gourdin par exemple). Les dommages sont soustraits aus points de vie de la victime, puis on les oppose aux points de vie restants à cette dernière sur la table de résistance. Si le jet est un succès, la victime perd connaissance pour sa CON x heures. A son réveil, elle aura une grosse bosse, mais n'aura perdu qu'1/3 des points de vie de l'attaque.
 
 \subsection*{Combat à distance}
 
 Là encore, le combat à distance peut être divisé en deux grandes catégories : les armes de jet et les armes à feu.
 
-\begin{itemize}
-	\setlength{\parskip}{0pt}
-	\setlength{\itemsep}{0pt plus 1pt}
-	\item \textbf{Armes de jet} : Les armes de jet ne peuvent être utilisées qu'une fois par round.
-	\item \textbf{Armes à feu} : Comme les armes de jet, les armes à feu tirent à la première ou à la troisième passe de chaque round.
-\end{itemize}
+$\bullet$ \textbf{Armes de jet :} Les armes de jet ne peuvent être utilisées qu'une fois par round. Lors du premier round de combat, elles ne tirent qu'à la troisième et dernière passe (le temps d'armer); aux rounds suivants, elles tirent lors de la première. Les deux compétences en armes de jet sont :~\\
+$\bullet$ \emph{Les armes de tir.} Cette compétence permet d'utiliser arcs, arbalètes, frondes, sarbacanes... Bref, toutes les armes "balistiques".~\\
+Pourcentage de base: 25 \%.~\\
+$\bullet$ \emph{Les armes de lancer.} Cette compétence concerne les couteaux de lancer, les javelots, mais aussi les armes improvisées, comme un bête caillou ramassé au hasard d'un chemin.~\\
+Pourcentage de base: 20 \%.~\\
+$\bullet$ \textbf{Armes à feu :} Comme les armes de jet, les armes à feu tirent à la première ou à la troisième passe de chaque round. Mais contrairement aux arcs et autres arbalètes, la plupart sont assez rapides pour être utilisées à la première et à la troisième passe du round. Contrairement à la plupart des autres types d'armes, les armes à feu recouvrent un grand nombre de compétences. Leurs noms mêmes expliquent assez clairement à quoi elles correspondent.~\\
+$\bullet$ \emph{Armes de poing} permet d'utiliser les pistolets et les revolvers, quel que soit leur calibre. Il est impossible de parer avec une arme de poing.~\\
+Pourcentage de base: 20 \%.~\\
+$\bullet$ \emph{Fusils} est utilisé pour tout ce qui est carabines ou fusils de guerre non automatiques.~\\
+Pourcentage de base: 15 \%.~\\
+$\bullet$ \emph{Fusils de chasse} sert pour les armes qui tirent des plombs ou des chevrotines, et non des balles. Particularité : les dommages dépendent de la distance; ces armes sont terribles à courte portée, et beaucoup moins efficaces si la cible est loin. Ce sont les seules armes à feu pour lesquelles la compétence de tir n'est pas doublée à bout portant. De plus, elles ne doublent pas les dommages sur un succès critique.~\\
+Pourcentagede base: 20 \%.~\\
+$\bullet$ \emph{Mitraillettes} regroupe toutes les armes automatiques capables de tirer en rafale, que ce soit les mitrailleuses lourdes ou les Uzis.~\\
+Pourcentage de base: 10 \%.
+
+\subsection*{Tir en rafale}
+
+Le tir en rafale a ses propres règles. On ne peut tirer une rafale qu'à la troisième passe d'un round. Une "rafale" comprend de 6 à 20 balles. Chaque balle tirée ajoute 5 % à la compétence du tireur, à concurrence du double de sa compétence. Si le jet sous la compétence est réussi, lancez un dé ayant autant de faces qu'il y a de balles dans la rafale, soit ld6 pour une rafale de 6 balles, 1d10 pour une rafale de 10 balles, 2d10 pour une rafale de 20 balles...
+
+Le résultat indique le nombre de balles qui touchent leur cible. 
+
+Calculez ensuite les dommages infligés à la cible, balle par balle, en soustrayant l'armure à chaque fois. Si le résultat du jet d'attaque était compris entre 01 et 05, la première balle inflige double dommage. Si le tireur vise plusieurs cibles, ses chances toucher ne sont pas modifiées. Une fois la rafale tirée, on lance le ou les dés pour savoir combien de balles ont touché, et le tireur les répartit entre les différentes cibles. Si le résultat du jet d'attaque était compris entre 01 et 05, l'une des balles inflige double dommage, et le tireur décide alors quelle cible est concernée.
+
+\subsection*{Recharger}
+
+La plupart des armes modernes sont des automatiques, avec des chargeurs. Il faut un round entier pour expulser le chargeur vide et le remplacer par un neuf. Au round suivant, le personnage tirera une fois, à la troisième passe, puis tout rentrera dans l'ordre. Dans le cas des revolvers, il faut un round entier pour glisser deux balles dans le barillet.
+
+\subsection*{Tirer à bout portant}
+
+Lorsque le tireur est très proche de la cible, ses chances de la toucher sont doublées. Le "bout portant" est une distance égale à la DEXtérité du tireur exprimée en mètres. Ce bonus ne vaut que pour la compétence, pas pour les dommages. Cette règle ne s'applique pas au tir en rafale. Si un personnage vide un chargeur de mitraillette à bout portant sur quelqu'un, ce n'est pas vraiment la peine de lancer les dés. Considérez que ce quelqu'un est mort, ou bon pour un très long séjour à l'hôpital.
 
 \end{multicols}
 
 %% \clearpage
 
-\section*{TABLE DES ARMURES}
-
 \begin{center}
-	\begin{tabular}{|l|c|}
+	\begin{tabular}{ l c }
+		\multicolumn{2}{c}{\textbf{TABLE DES ARMURES}}	\\
 		\hline
-		Type & Protection \\
-		\hline
-		Cuir souple (blouson) & 1 \\
-		Cuir rigide (armure) & 2 \\
-		Cuir et métal & 4 \\
-		Cotte de mailles (gilet pare-balles) & 6 \\
-		Armure de plaques* & 8 \\
+		\textbf{Type}							& \textbf{Protection} \\
+		%% \hline
+		Cuir souple (blouson) 					& 1 \\
+		Cuir rigide (armure) 					& 2 \\
+		Cuir et métal 							& 4 \\
+		Cotte de mailles (gilet pare-balles) 	& 6 \\
+		Armure de plaques* 						& 8 \\
 		\hline
 	\end{tabular}
 \end{center}
 
-\section*{TABLE DES ARMES D'HAST ET DE MÊLÉE}
+* Ce type d'armure, très lourde, inflige un malus de 10% aux compétences de combat et ne permet pas d'Esquiver.
 
 \begin{center}
-	\begin{tabular}{|l|l|c|}
+	\begin{tabular}{ l l c }
+		\multicolumn{3}{c}{\textbf{TABLE DES ARMES D'HAST ET DE MÊLÉE}}	\\
 		\hline
-		Arme & Compétence & Dommages \\
-		\hline
-		Dague / poignard & Mêlée & 1d3+2 \\
-		Épée / rapière & Mêlée & 1d6+2 \\
-		Épieu / pique & Hast & 2d6 \\
-		Espadon* & Mêlée & 2d6 \\
-		Gourdin & Mêlée & 1d6 \\
-		Hache de bataille & Mêlée & 2d6 \\
-		Hachette & Mêlée & 1d6+1 \\
-		Hallebarde* & Hast & 3d6 \\
-		Javelot / lance courte & Hast & 1d6+1 \\
-		Masse / fléau d'armes & Mêlée & 1d6+2 \\
-		Coup de poing, de tête, etc. & Bagarre & 1d3 \\
-		Bouclier & Celle de l'arme principale & - \\
+		\textbf{Arme} 							& \textbf{Compétence} 	& \textbf{Dommages} \\
+		%% \hline
+		Dague / poignard 				& Mêlée 		& 1d3+2 \\
+		Épée / rapière 					& Mêlée 		& 1d6+2 \\
+		Épieu / pique 					& Hast 			& 2d6 \\
+		Espadon* 						& Mêlée 		& 2d6 \\
+		Gourdin 						& Mêlée 		& 1d6 \\
+		Hache de bataille 				& Mêlée 		& 2d6 \\
+		Hachette						& Mêlée 		& 1d6+1 \\
+		Hallebarde* 					& Hast 			& 3d6 \\
+		Javelot / lance courte 			& Hast 			& 1d6+1 \\
+		Masse / fléau d'armes 			& Mêlée 		& 1d6+2 \\
+		Coup de poing, de tête, etc. 	& Bagarre 		& 1d3 \\
+		Bouclier 						& Celle de l'arme principale 	& - \\
 		\hline
 	\end{tabular}
 \end{center}
 
-\section*{TABLE DES ARMES DE TIR ET DE LANCER}
+* Ces armes s'utilisent à deux mains et sont trop encombrantes pour que l'on puisse parer efficacement avec.
 
 \begin{center}
-	\begin{tabular}{|l|l|c|c|c|}
+	\begin{tabular}{ l l c c c }
+		\multicolumn{5}{c}{\textbf{TABLE DES ARMES D'HAST ET DE MÊLÉE}}	\\
 		\hline
-		Arme & Compétence & Portée efficace & Portée maximale & Dommages \\
-		\hline
-		Arbalète & Tir & 20 m & 50 m & 2d6 \\
-		Arc & Tir & 50 m & 150 m & 1d6+2 \\
-		Dague & Lancer & FOR en m & FOR x 2 m & 1d3+2 \\
-		Fronde & Tir & 50 m & 100 m & 1d6 \\
-		Javelot & Lancer & FOR en m & FOR x 3 m & 1d6+1 \\
+		\textbf{Arme} 		& \textbf{Compétence}	& \textbf{Portée efficace} 	& \textbf{Portée maximale} 	& \textbf{Dommages} \\
+		%% \hline
+		Arbalète 	& Tir 			& 20 m 				& 50 m 				& 2d6 \\
+		Arc 		& Tir 			& 50 m 				& 150 m 			& 1d6+2 \\
+		Dague 		& Lancer 		& FOR en m 			& FOR x 2 m 		& 1d3+2 \\
+		Fronde 		& Tir 			& 50 m 				& 100 m 			& 1d6 \\
+		Javelot 	& Lancer 		& FOR en m 			& FOR x 3 m 		& 1d6+1 \\
 		\hline
 	\end{tabular}
 \end{center}
 
-\section*{TABLE DES ARMES À FEU}
+* 1 tir par round à la 3e passe.
+
+\clearpage
 
 \begin{center}
-	\begin{tabular}{|l|c|c|c|c|}
+	\begin{tabular}{ l c c c c }
+		\multicolumn{5}{c}{\textbf{TABLE DES ARMES À FEU}}	\\
 		\hline
-		Arme & Dommages & Portée & Tirs & Munitions \\
+		\textbf{Arme} 			& \textbf{Dommages} 	& \textbf{Portée} 	& \textbf{Tirs} 	& \textbf{Munitions} \\
 		\hline
-		\multicolumn{5}{|c|}{Armes de poing} \\
+		\multicolumn{5}{ l }{\textbf{Armes de poing*}} \\
 		\hline
-		Calibre 22 & 1d6 & 10 m & 2 & 6 \\
-		Calibre 32 & 1d6+2 & 15 m & 2 & 8 \\
-		Calibre 38 & 1d10 & 15 m & 2 & 8 \\
-		Calibre 44 Magnum & 2d6+2 & 20 m & 1 & 6 \\
-		Calibre 45 & 1d10+2 & 15 m & 1 & 6 \\
+		Calibre 22 				& 1d6 		& 10 m 		& 2 	& 6 \\
+		Calibre 32 				& 1d6+2 	& 15 m 		& 2 	& 8 \\
+		Calibre 38 				& 1d10 		& 15 m 		& 2 	& 8 \\
+		Calibre 44 Magnum 		& 2d6+2 	& 20 m 		& 1 	& 6 \\
+		Calibre 45 				& 1d10+2 	& 15 m 		& 1 	& 6 \\
 		\hline
-		\multicolumn{5}{|c|}{Fusils} \\
+		\multicolumn{5}{ l }{\textbf{Fusils}} \\
 		\hline
-		Carabine 22 long rifle & 1d6+2 & 30 m & 1 & 6 \\
-		Carabine 30 & 2d6 & 50 m & 1 & 6 \\
-		Fusil 30-06 & 2d6+4 & 100 m & 1/2 & 5 \\
+		Carabine 22 long rifle 	& 1d6+2 	& 30 m 		& 1 	& 6 \\
+		Carabine 30 			& 2d6 		& 50 m 		& 1 	& 6 \\
+		Fusil 30-06 			& 2d6+4 	& 100 m 	& 1/2 	& 5 \\
 		\hline
-		\multicolumn{5}{|c|}{Fusil de chasse} \\
+		\multicolumn{5}{ l }{\textbf{Fusil de chasse}} \\
 		\hline
-		Calibre 12 & 4d6 / 2d6 / 1d6 & 10 / 20 / 50 m & 1 & 5 \\
-		Calibre 12 (canon scié) & 4d6 / 1d6 & 5 / 10 m & 1 & 5 \\
+		Calibre 12 				& 4d6 / 2d6 / 1d6 	& 10 / 20 / 50 m 	& 1 & 5 \\
+		Calibre 12 (canon scié) & 4d6 / 1d6 		& 5 / 10 m 			& 1 & 5 \\
 		\hline
-		\multicolumn{5}{|c|}{Mitraillettes} \\
+		\multicolumn{5}{ l }{\textbf{Mitraillettes}} \\
 		\hline
-		Kalachnikov & 2d6+1 & 100 m & 2 ou rafale & 30 \\
-		M-16 & 2d6 & 120 m & 2 ou rafale & 30 \\
-		Uzi & 1d10 & 50 m & 2 ou rafale & 30 \\
+		Kalachnikov 			& 2d6+1 	& 100 m 	& 2 ou rafale 	& 30 \\
+		M-16 					& 2d6 		& 120 m 	& 2 ou rafale 	& 30 \\
+		Uzi 					& 1d10 		& 50 m 		& 2 ou rafale 	& 30 \\
 		\hline
-		\multicolumn{5}{|c|}{Armes anciennes} \\
+		\multicolumn{5}{ l }{\textbf{Armes anciennes}} \\
 		\hline
-		Arquebuse & 1d10 & 15 m & 1 / 1d6+3 & 1 \\
-		Mousquet & 1d6+3 & 15 m & 1 / 1d6+3 & 1 \\
-		Pistolet & 1d6+2 & 10 m & 1 / 1d6+3 & 1 \\
+		Arquebuse**				& 1d10 		& 15 m 		& 1 / 1d6+3 	& 1 \\
+		Mousquet 				& 1d6+3 	& 15 m 		& 1 / 1d6+3 	& 1 \\
+		Pistolet 				& 1d6+2 	& 10 m 		& 1 / 1d6+3 	& 1 \\
 		\hline
 	\end{tabular}
 \end{center}
+
+* Toutes ces armes existent en version automatique et revolver.~\\
+$**$ Impossible à manier seul. Nécessite d'être fixée au sol ou à l'harnachement d'un cheval.~\\
+
+\textbf{Notes}~\\
+\emph{Dommages} : nombre de dés à lancer si le jet d'attaque est réussi.~\\
+\emph{Portée} : distance en mètres à laquelle l'arme est efficace. Au delà elle est moins précise et la compétence du tireur/lanceur est divisée par deux.~\\
+\emph{Tirs par round} : nombre de fois que l'arme peut tirer à chaque round.~\\
+\emph{Munitions} : nombre de balles dans le magasin. N'oubliez pas de les décompter. Arrivé à 0, il faut recharger.~\\
 
 \end{document}

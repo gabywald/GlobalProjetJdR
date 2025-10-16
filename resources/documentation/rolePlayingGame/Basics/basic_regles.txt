@@ -1397,6 +1397,13 @@ aurez compris la structure du round, l'initiative et, pour les armes
 blanches, la notion de parade, vous aurez l'essentiel. Le reste
 viendra petit à petit, sur le tas, au fur et à mesure de vos besoins.
 
+Ordre des attaques
+A l'intérieur du round, on distingue trois passes, qui se succèdent
+toujours dans le même ordre. Parfois, personne ne pourra agir au
+cours d'une passe. Dans ce cas, ignorez-la et passez à la suivante.
+- Première passe : les personnages (PJ et PNJ) qui ont des armes
+à feu ou des armes à projectiles prêtes à servir agissent en
+premier, par ordre décroissant d'initiative. Appuyer sur une
 gâchette ou lâcher la corde d'un arc prend nettement moins
 longtemps que de donner un coup de couteau...
 - Deuxième passe : une fois que ces premiers tirs ont eu lieu, on
@@ -1411,6 +1418,27 @@ moment (dans le cas des armes à feu, ils perdent leur second tir).
 Cette troisième passe terminée, le round s'achève.
 
 Esquiver et parer
+En plus de l'attaque et du déplacement, les personnages ont deux
+autres possibilités: l'esquive et la parade.
+- L'Esquive est une compétence à part entière. Lors des
+déclarations d'intention, un personnage qui désire esquiver une
+attaque l'annonce, et précise quel adversaire il souhaite esquiver.
+Un personnage qui esquive ne peut pas attaquer. En revanche, il
+peut parer l'attaque. L'Esquive peut également servir à rompre le
+combat: dans ce cas, le personnage fait un jet d'Esquive au début
+du round et, s'il le réussit, on considère qu'il s'est désengagé et
+n'est plus en danger (sauf, bien sûr, d'éventuels tireurs).
+- La parade, quant à elle, n'est pas vraiment une compétence,
+c'est seulement une autre manière d'utiliser les compétences
+d'attaque. Lors d'un corps à corps, un personnage qui est la cible
+d'une attaque peut parer avec son arme (épée, bâton ... ). Il fait un
+jet de compétence, comme pour une attaque. S'il est réussi, le
+coup est arrêté par l'arme, et le personnage ne subit pas de
+dommages. Il est possible de parer le coup d'un adversaire plus
+rapide que soi, puis d'attaquer le moment venu, ou le contraire.
+En revanche, on ne peut pas parer plusieurs fois par round.
+Attention : on ne peut ni parer, ni esquiver les balles.
+
 Round
 Le round sert à découper le combat de manière à ce qu'il soit
 jouable. C'est une unité de temps au cours de laquelle tous les
@@ -1457,35 +1485,6 @@ content que le magicien les laisse tranquille ce round-ci et ils se
 concentreront sur d'autres personnages non-joueurs… Au round
 suivant ils le regretteront amèrement, mais ils n'ont aucun moyen
 de le savoir.
-
-Ordre des attaques
-A l'intérieur du round, on distingue trois passes, qui se succèdent
-toujours dans le même ordre. Parfois, personne ne pourra agir au
-cours d'une passe. Dans ce cas, ignorez-la et passez à la suivante.
-- Première passe : les personnages (PJ et PNJ) qui ont des armes
-à feu ou des armes à projectiles prêtes à servir agissent en
-premier, par ordre décroissant d'initiative. Appuyer sur une
-
-En plus de l'attaque et du déplacement, les personnages ont deux
-autres possibilités: l'esquive et la parade.
-- L'Esquive est une compétence à part entière. Lors des
-déclarations d'intention, un personnage qui désire esquiver une
-attaque l'annonce, et précise quel adversaire il souhaite esquiver.
-Un personnage qui esquive ne peut pas attaquer. En revanche, il
-peut parer l'attaque. L'Esquive peut également servir à rompre le
-combat: dans ce cas, le personnage fait un jet d'Esquive au début
-du round et, s'il le réussit, on considère qu'il s'est désengagé et
-n'est plus en danger (sauf, bien sûr, d'éventuels tireurs).
-- La parade, quant à elle, n'est pas vraiment une compétence,
-c'est seulement une autre manière d'utiliser les compétences
-d'attaque. Lors d'un corps à corps, un personnage qui est la cible
-d'une attaque peut parer avec son arme (épée, bâton ... ). Il fait un
-jet de compétence, comme pour une attaque. S'il est réussi, le
-coup est arrêté par l'arme, et le personnage ne subit pas de
-dommages. Il est possible de parer le coup d'un adversaire plus
-rapide que soi, puis d'attaquer le moment venu, ou le contraire.
-En revanche, on ne peut pas parer plusieurs fois par round.
-Attention : on ne peut ni parer, ni esquiver les balles.
 
 Blesser l'adversaire
 Il suffit de réussir un jet sous la compétence qui régit l'arme
@@ -1589,7 +1588,6 @@ x3 %. Si le résultat du jet d'attaque est compris entre 01 et 05,
 l'attaquant peut appliquer directement l'un de ces effets, sans
 avoir à faire de deuxième jet. La victime peut tenter de se
 dégager à chaque round avec un jet de FOR/FOR (elle arrache le
-
 fouet des mains de l'attaquant) ou de DEX/FOR (elle se dégage
 en souplesse).
 - Armes d'hast concerne toutes les armes longues, qui s'utilisent
