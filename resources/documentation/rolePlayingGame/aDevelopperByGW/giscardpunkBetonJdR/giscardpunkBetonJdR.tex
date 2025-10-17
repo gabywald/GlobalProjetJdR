@@ -6,14 +6,9 @@
 \usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
 \usepackage{a4}	             % pour la taille   
 \usepackage[T1]{fontenc}     % pour les font postscript
-\usepackage{epsfig}          % pour gerer les images
 
 \usepackage{amsmath, amsthm} % tres bon mode mathematique
 \usepackage{amsfonts,amssymb}% permet la definition des ensembles
-\usepackage{float}           % pour le placement des figure
-\usepackage{verbatim}
-
-\usepackage{longtable} % pour les tableaux de plusieurs pages
 
 \usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
 
@@ -21,20 +16,15 @@
 
 \usepackage{lastpage}
 
-% \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[top=1.80cm, bottom=1.70cm, left=1.0cm, right=1.0cm]{geometry}
 % gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
-\usepackage{vmargin}
-\setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{60pt}{3pt}
+% \usepackage{vmargin}
+% \setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{60pt}{3pt}
 
-\usepackage{lscape} % changement orientation page
 %\usepackage{frbib} % enlever pour obtenir references en anglais
-% --- style de page (pour les en-tete) ---
-\pagestyle{headings}
 
 % % % en-tete et pieds de page configurables : fancyhdr.sty
-
 % http://www.trustonme.net/didactels/250.html
-
 % http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
 % http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
 \usepackage{fancyhdr}
@@ -51,61 +41,35 @@
 \fancyfoot[RO]{\includegraphics[width=0.5cm]{../../../../imgGraphics/logos/glider/logo-glider.png} \hfill
 	\emph{Un JdR de B{\'e}ton} -- GiscardPunk
 \hfill \thepage /\pageref{LastPage}}
-\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrulewidth}{0.25pt}
 \renewcommand{\footrulewidth}{0.5pt}
 \addtolength{\headheight}{0.5pt}
+\setlength{\headheight}{13.64296pt}
 \fancypagestyle{plain}{
 	\fancyhead{}
 	\renewcommand{\headrulewidth}{0pt}
 }
 
-\renewcommand{\headrulewidth}{0.25pt}
-\renewcommand{\footrulewidth}{0.5pt}
-%% \setlength{\headheight}{85pt}
-% \addtolength{\headheight}{0.5pt}
-% \fancypagestyle{plain}{
-% 	\fancyhead{}
-% 	\fancyfoot{}
-% 	\renewcommand{\headrulewidth}{0pt}
-% }
-
-%--- Definitions de nouvelles commandes ---
-\newcommand{\N}{\mathbb{N}} % les entiers naturels
-
-
 %--- Pour le titre ---
 \def\maketitle{%
 	\begin{center}
-		\begin{tabular}[c]{c|c}
-			\textsc{\textbf{...}}~\\[\baselineskip]~\\[\baselineskip]
-			\emph{\textbf{Version \today}}~\\[\baselineskip]~\\[\baselineskip]
-			\emph{\textbf{JdR inspir{\'e} des Villes nouvelles Futuristes des ann{\'e}es 1970's et 1980's}}~\\[\baselineskip]~\\[\baselineskip]
-			\textsc{Gaby Wald \& Amael Assour}~\\[\baselineskip]~\\[\baselineskip]
-			& 
-			\includegraphics[width=3cm]{../../../../imgGraphics/logos/glider/logo-glider.png}~\\[\baselineskip]
-		\end{tabular}
-		% \\ \hline
-		 	% % if more than one logo
-			% \includegraphics[width=5cm]{../../../../imgGraphics/logos/glider/logo-glider.png}
-		% \\ \hline
-		% \end{tabular}
-			~\\[\baselineskip]~\\[\baselineskip]
-			\Huge{1980's GiscardPunk}~\\[\baselineskip]
-			\Large{Un JdR de B{\'e}ton}~\\[\baselineskip]
+	
+		\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/banniereGiscardPunk.jpeg}~\\
 		
-		~\\[\baselineskip]
-		~\\[\baselineskip]
-	%% \large{
-	%% 	\textsc{\textbf{...}}
-	%% 	~\\[\baselineskip]
-	%% 	<<titre personne>> : \texttt{Anne ONYME}~\\[\baselineskip]
-	%% 	<<titre personne>> : \texttt{Jocelyn CONNU}~\\[\baselineskip]
-	%% 	~\\[\baselineskip]
-	%% 	\textit{Pr{\'e}cisions du contexte de r{\'e}daction de l'article}
-	%% }
+		~\vfill %% \textsc{\textbf{...}}~\\[\baselineskip]~\\[\baselineskip]
+		
+		\emph{\textbf{Version \today}}~\\[\baselineskip]~\\[\baselineskip]
+		\emph{\textbf{JdR inspir{\'e} des Villes nouvelles Futuristes des ann{\'e}es 1970's et 1980's}}~\\[\baselineskip]~\\[\baselineskip]
+		\textsc{Gaby Wald \& Amael Assour}~\\[\baselineskip]~\\[\baselineskip]
 
+		\Huge{1980's GiscardPunk}~\\[\baselineskip]
+		\Large{Un JdR de B{\'e}ton et de technologies rétrofutristes !}~\\[\baselineskip]
+		
+		~\vfill %% \textsc{\textbf{...}}~\\[\baselineskip]~\\[\baselineskip]
+		
+		\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/Giscardpunk3.jpeg}~\\
+		
 	\end{center}
-
 }%
 
 %--- Pour le glossaire --- a defaut de \makeglossary ou d'utilisation d'index latex
@@ -138,24 +102,14 @@
 \setcounter{page}{0}
 \thispagestyle{empty}
 \clearpage
-
 \setcounter{page}{0}
 \thispagestyle{empty}
-
 ~\\
-
 \clearpage
 \setcounter{page}{0}
 \thispagestyle{empty}
 % ecrire la table des mati{\'e}res...
 \tableofcontents
-
-% \clearpage
-
-% \setcounter{page}{0}
-% \thispagestyle{empty}
-
-% ecrire la table des figures et celle des tableaux
 
 %% \setcounter{page}{0}
 %% \thispagestyle{empty}
@@ -228,7 +182,7 @@ Tout d'abord, quelques images d'illustration :~\\
 	\item[$\bigstar$] Une technologie omnipr{\'e}sente d{\'e}pass{\'e}e, tout de m{\^e}me r{\'e}trofuturiste ?
 \end{itemize}~\\
 
-Ce n'est pas CyberPunk 2020 ni m{\^e}me CyberPunk 2077 : c'est du \textbf{GiscardPunk} !~\\
+Ce n'est pas CyberPunk 2020 ni m{\^e}me CyberPunk 2077 : c'est du \textbf{GiscardPunk}, et ça se passe en 1977 !~\\
 
 Bienvenue dans un R{\'e}troPunk qui fonctionne au Diesel, au Minitel et {\`a} la poussi{\`e}re de B{\'e}ton !~\\
 
@@ -238,10 +192,9 @@ Bienvenue dans un R{\'e}troPunk qui fonctionne au Diesel, au Minitel et {\`a} la
 
 \clearpage
 
-
 \section{Dans le B{\'e}ton}
 
-\begin{minipage}{0.30\linewidth}
+\begin{minipage}{0.28\linewidth}
 	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/clemensgritl/_no0906009005.jpeg}~\\
 \end{minipage} \hfill \begin{minipage}{0.68\linewidth}
 
@@ -251,13 +204,13 @@ Bienvenue dans un R{\'e}troPunk qui fonctionne au Diesel, au Minitel et {\`a} la
 	
 	C'{\'e}tait avant tout dans la continuit{\'e} des plans de construction centrales nucl{\'e}aires, la construction des villes nouvelles en b{\'e}ton ({\'E}vry-Courcouronnes, Cr{\'e}teil, Champs-Sur-Marne...) aux alentours de Paris et centr{\'e}e sur l'automobile roulant au Diesel, des autoroutes pour les relier, des voies ferr{\'e}es rapides avec le TGV (<<Train Grande Vitesse>>) et ses airs de Concorde Orange restant au sol, le RER (<<R{\'e}seau Express R{\'e}gional>>) et ses tunnels carrel{\'e}s aux tonalit{\'e}s color{\'e}es blanches-oranges-rouges de la d{\'e}cennie 1970, des services t{\'e}l{\'e}matiques et de t{\'e}l{\'e}texte qui pointent leur nez avec le Minitel : vous pouvez r{\'e}server vos billets AirFrance ou SNCF, ou acheter "en ligne" avec des services comme LaRedoute ou Les3Suisses et vous faire livrer chez vous !~\\
 	
-	Du CyberPunk 50 ans trop t{\^o}t : avec des technologies d'avance comme le TGV, le Minitel, les villes nouvelles !~\\ 
-	
-	\c{C}a, c'{\'e}tait l'avenir, c'{\'e}tait avant !
-	
 \end{minipage}
 
 \begin{minipage}{0.68\linewidth}
+
+	Du CyberPunk 50 ans (ou 100 ans) trop t{\^o}t : avec des technologies d'avance comme le TGV, le Minitel, les villes nouvelles !~\\ 
+	
+	\c{C}a, c'{\'e}tait l'avenir, c'{\'e}tait avant !
 
 	\subsection{C'est le Pr{\'e}sent}
 	
@@ -265,8 +218,14 @@ Bienvenue dans un R{\'e}troPunk qui fonctionne au Diesel, au Minitel et {\`a} la
 	
 	Pas ou peu d'innovations ici : c'est une "soci{\'e}t{\'e} glorieuse" qui continue dans sa lanc{\'e}e ! L'administration et les entreprises s'occupent de vos emplois et de besoins en biens de consommation !~\\
 	
-	Qui se soucie r{\'e}ellement d'aller au-del{\`a} de la maintenance ? <<Cela a toujours fonctionn{\'e} ainsi !>>
+	Qui se soucie r{\'e}ellement d'aller au-del{\`a} de la maintenance ?~\\
+	<<Cela a toujours fonctionn{\'e} ainsi !>>
 	
+\end{minipage} \hfill \begin{minipage}{0.28\linewidth}
+	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/clemensgritl/_no1005007530.jpeg}~\\
+	\vfill
+\end{minipage}
+
 	\subsection{Ce sera le Pass{\'e}}
 	
 	Des personnes s'organisent pour que cela change, {\`a} leur niveau !~\\
@@ -279,14 +238,33 @@ Bienvenue dans un R{\'e}troPunk qui fonctionne au Diesel, au Minitel et {\`a} la
 	
 	{\`A} vous de voir !
 
-\end{minipage} \hfill \begin{minipage}{0.30\linewidth}
-	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/clemensgritl/_no1005007530.jpeg}~\\
-\end{minipage}
+\clearpage
+
+\section{Villes et Cités}
+
+Les centres historiques des villes sont devenus des musées pour les nombreux touristes : surtout les façades y sont conservées, avec les bars et restaurants classiques de la vie paisible de ces lieux. Les habitants s'y font discrets, parfois on se demandent si ils existent : mais il faut bien que des gens travaillent dans les commerces de proximités accessibles aux touristes, que ce soit comme serveurs, chargés de clientèles ou simplement figurants et avatars d'une vie urbaine paisible.~\\
+
+L'autre aspect de l'Urbanisme \emph{GiscardPunk} : les monuments en béton dédiés aux Habitats, Entreprises, Ministères et longue liste de noms à la gloire du Béton des Villes Nouvelles ! Cités Dortoirs, Cités Adminstratives, Centres Commerciaux, Pôles de Transports...~\\
+
+\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/ParisMatch_1967_Architecture.jpeg}~\\
+
+\clearpage
+ 
+\section{Technologies}
+
+Transports : Grande Vitesse (le fameux TGV), le métro, le RER et ses gares monumentales !~\\
+
+Télécommunications : complémentaire au téléphone, le fameux et incomparable \textsc{Minitel}, avec affichage en couleurs !~\\
+
+\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/Annuaire_lectroniqueSaintMalo980.jpeg}~\\
+
+\clearpage
 
 \section{Sc{\'e}narios}
 
 \begin{itemize}
-	\item[$\bigstar$] S.O.S. Bonheur Saison 1 : la Compagnie d'Analyse G{\'e}n{\'e}rale recrute ! Une occasion en or de sortir du ch{\^o}mage et / ou d'avoir une carrière ! Mais que fait r{\'e}ellement cette soci{\'e}t{\'e} dont personne n'a jamais vu les dirigeants, {\`a} part le Directeur des Ressources Humaines; Qui donc occupe les {\'e}tages sup{\'e}rieurs au num{\'e}ro 11 ?
+	\item[$\bigstar$] S.O.S. Bonheur Saison 1 : la Compagnie d'Analyse G{\'e}n{\'e}rale recrute ! Une occasion en or de sortir du ch{\^o}mage et / ou d'avoir une carrière !~\newline
+	Mais que fait r{\'e}ellement cette soci{\'e}t{\'e} dont personne n'a jamais vu les dirigeants, {\`a} part le Directeur des Ressources Humaines. Qui donc occupe les {\'e}tages sup{\'e}rieurs au num{\'e}ro 11 ?
 	\item[$\bigstar$] S.O.S. Bonheur Saison 1 : des cr{\'e}ations non homologu{\'e}es se distribuent sous le manteau, au d{\'e}triment des v{\'e}ritables artistes reconnus par l'{\'E}tat ; qui diffuse ces \oe uvres (livres, films...), et pourquoi ?  
 	\item[$\bigstar$] S.O.S. Bonheur Saison 1 : de plus en plus de personnes prétendent avoir rencontrées des "non-enregistrés" ou des \emph{deregs} ("de-registrés"), l'État nie pourtant toujours leur existence ? Qui sont ces exclus du systèmes ? Pourquoi sont-ils ou elles présent(e)s sur le terrotoire national ?
 \end{itemize}~\\
