@@ -1,0 +1,21 @@
+Nom: Neuro-link "Phantom X"
+Description: Un implant cérébral de dernière génération, capable de se connecter à n’importe quel réseau sans laisser de trace. Utilisé par les hackers d’élite, il permet aussi de manipuler des drones à distance par la pensée. Effet secondaire : certains utilisateurs rapportent des hallucinations auditives après une utilisation prolongée.
+Rareté: Très rare (protégé par NeoDyne)
+
+---
+
+Nom: Pistolet "Écho-9"
+Description: Une arme à énergie sonique, tirant des impulsions capables de désintégrer les implants électroniques et de neutraliser les cibles sans laisser de traces de balles. Silencieux et mortel, il est prisé des assassins corporatistes. Rechargeable via une batterie à plasma.
+Rareté: Rare (fabriqué par "ArmaTech")
+
+---
+
+Nom: Masque "Spectre"
+Description: Un masque facial en nano-fibres, capable de brouiller les caméras de surveillance et de modifier la voix de son porteur. Certains modèles haut de gamme intègrent un mini-projecteur holographique pour afficher de fausses identités biométriques.
+Rareté: Courant (disponible sur les marchés noirs)
+
+---
+
+Nom: "Sérum Oubli"
+Description: Une drogue synthétique qui efface les souvenirs des dernières 24 heures. Utilisée par les espions pour éviter d’être interrogés, ou par les criminels pour faire oublier leurs crimes à leurs victimes. Overdose : perte permanente de la mémoire à long terme.
+Rareté: Illégal (vendu par les trafiquants de tech)

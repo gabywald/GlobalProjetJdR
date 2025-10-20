@@ -1,0 +1,17 @@
+Nom: Night City - Sector 7 (Les Bas-Fonds Électriques)
+Description: Un dédale de ruelles étroites baignées par la lueur bleutée des néons défectueux. Les murs sont couverts de graffitis luminescents et de publicités holographiques pour des augmentations bon marché. C’est ici que se trouvent les marchés noirs de données, les cliniques clandestines d’implants, et les repaire des gangs comme les "Lueurs" ou les "Dents de Chrome". L’air sent l’ozone et la graisse de synthèse.
+
+---
+
+Nom: NeoDyne Tower - Siège social
+Description: Une tour de verre et d’acier qui perce les nuages, symbole de la toute-puissance de la corporation NeoDyne. Les étages supérieurs abritent les bureaux des dirigeants, protégés par des systèmes de sécurité biométriques et des IA de surveillance. Les employés de bas niveau ne montent jamais au-dessus du 50ème étage. La rumeur dit que le dernier étage cache un laboratoire secret où sont menées des expériences sur l’immortalité numérique.
+
+---
+
+Nom: Le "Circuit Brisé" - Bar clandestin
+Description: Un bar enfoui sous les fondations d’un ancien centre commercial, accessible seulement par un ascenseur rouillé caché derrière une porte blindée. L’intérieur est éclairé par des écrans cathodiques recyclés, diffusant en boucle des images de l’ancienne ère numérique. On y trouve des hackers, des mercenaires, et des informateurs prêts à vendre des secrets pour un verre de "Blue Spark", un cocktail à base de stimulants neuronaux.
+
+---
+
+Nom: Les Docks de Blackwater - Zone portuaire
+Description: Une étendue de métal rouillé et de conteneurs abandonnés, où accostent les cargos transportant des marchandises légales… et illégales. Les docks sont contrôlés par le syndicat des "Rouilles", qui facture un droit de passage à quiconque veut y faire des affaires. La nuit, des drones de surveillance survolent la zone, mais ils sont souvent piratés par les gangs locaux.

@@ -1,0 +1,25 @@
+Nom: Kira "Neon" Vex
+Rôle: Hackeuse renégate
+Description: Yeux augmentés avec des implants rétiniens capables de voir à travers les pare-feu numériques. Ses cheveux sont teints en violet néon, signature de son passage dans le gang des "Lueurs". Elle traîne une réputation de fantôme des réseaux, capable de s’infiltrer dans les mainframes les plus sécurisés. Son bras droit est remplacé par un prototype de membre bionique volé à la corp "NeoDyne".
+Motivation: Trouver les responsables de la mort de son frère, un ancien ingénieur de NeoDyne, et faire exploser leurs secrets au grand jour.
+
+---
+
+Nom: Rook "Le Fantôme"
+Rôle: Mercenaire et passeur
+Description: Ancien soldat d’élite reconverti dans le trafic d’armes et de données. Il porte une armure légère en fibre de carbone et un masque facial qui brouille les caméras de surveillance. Spécialiste des extractions en zone hostile, il ne pose jamais de questions sur les missions qu’on lui confie, tant que les crédits tombent.
+Motivation: Accumuler assez d’argent pour disparaître dans une colonie martienne, loin des corporations et des guerres urbaines.
+
+---
+
+Nom: Dr. Elias Voss
+Rôle: Scientifique déchu / Trafiquant de tech interdite
+Description: Ancien chercheur en neurotechnologie pour "BioSynth", viré après avoir mené des expériences illégales sur des cobayes humains. Il vit maintenant dans un laboratoire clandestin sous le Sector 13, où il vend des implants expérimentaux à ceux qui osent frapper à sa porte. Ses mains tremblent en permanence, effet secondaire d’un de ses propres implants défectueux.
+Motivation: Terminer son projet ultime : une IA capable de fusionner avec un cerveau humain, quitte à utiliser des sujets non consentants.
+
+---
+
+Nom: Lina "Static" Kova
+Rôle: DJ et pirate des ondes
+Description: Elle contrôle les fréquences radio piratées de Night City, diffusant des messages codés pour la résistance anti-corp. Ses implants auditifs lui permettent d’entendre les conversations à des kilomètres de distance, et elle utilise cette capacité pour espionner les élites. Toujours vêtue de cuir noir et de circuits imprimés cousus sur ses vêtements.
+Motivation: Faire tomber le monopole de "MediaGlow" sur l’information, en révélant leurs mensonges à travers ses émissions clandestines.
