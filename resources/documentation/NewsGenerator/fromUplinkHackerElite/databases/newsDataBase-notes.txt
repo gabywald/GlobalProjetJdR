@@ -3,11 +3,16 @@ SOME NOTES:
 	To Replace Dynamically (detect then replace) : 
 		- PERSONNAME (generate one name) ; 
 		- PERSONHANDLE (generate / find alias) ; 
-		- COMPANYNAME ; 
+		- COMPANYNAME (generate one name) ; 
 		- REASON (conviction / "hacks into the ..." / "refuses to ...") ; 
 		- TOTALFILESIZE (for Gigaquads) ; 
+		
+TODO :
+	- data for names, companies... ;  
+	- main scripts (Perl, then Python) ; 
+	- generate simple news ; then LaTeX (use journal templates) ; 
 
-Globally GROUPED by fillowind lines : 
+Globally GROUPED by following lines and categories : 
 
 	// ================================================================================================================
 	// Social Security database
