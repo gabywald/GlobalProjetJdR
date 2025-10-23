@@ -47,6 +47,39 @@ sub generateNews {
 	return $completeBuildNews;
 }
 
+sub generateNewsToLaTeX {
+	my ($DBnews) = @_;
+	my @newsHashArray = @{$DBnews};
+	my $newsHash = @newsHashArray[int(rand(@newsHashArray))];
+	
+	my $toReturn = "";
+	
+	$toReturn .= "\\input{../latexTemplates/template_journal_header.tex}\n\n";
+	$toReturn .= "\\large{\\centering \\setmainfont{Sprawl} ".selectELTinNews($newsHash, "titles")."}\n\n";
+	$toReturn .= "\\begin{multicols}{2}\n\n";
+	$toReturn .= "\\small\n\n";
+	$toReturn .= "{\\centering \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{Q+\\_9\\_+q} }~\\\\\n\n";
+	$toReturn .= "\\textbf{".selectELTinNews($newsHash, "head")."}~\\\\\n\n";
+	$toReturn .= "\\emph{".selectELTinNews($newsHash, "content1")."}~\\\\\n\n";
+	$toReturn .= "".selectELTinNews($newsHash, "content2")."\n\n";
+	$toReturn .= "".selectELTinNews($newsHash, "content3")."\n\n";
+	$toReturn .= "".selectELTinNews($newsHash, "content4")."\n\n";
+	$toReturn .= "".selectELTinNews($newsHash, "content5")."\n\n";
+	$toReturn .= "\\vfill~\\columnbreak\n\n";
+	$toReturn .= "%% {\\small \\lipsum[1-3] }~\\\\\n\n";
+	$toReturn .= "{\\centering \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{\\{1=:=!\\}} }~\\\\\n\n";
+	$toReturn .= "\\begin{multicols}{2}\n\n";
+	$toReturn .= "\\textbf{Specific Article 1}~\\\\\n\n";
+	$toReturn .= "\\emph{Some Catch about Lorem Ipsum}~\\\\\n\n";
+	$toReturn .= "\\lipsum[5-7]~\\\\\n\n";
+	$toReturn .= "\\end{multicols}\n\n";
+	$toReturn .= "{\\centering \\rule{0.34\textwidth}{1pt} }~\\\\\n\n";
+	$toReturn .= "\\end{multicols}\n\n";
+	$toReturn .= "\\input{../latexTemplates/template_journal_footer.tex}\n\n";
+	
+	return $toReturn;
+}
+
 sub selectELTinNews {
 	my ($newsHash, $keyToGet) = @_;
 	return ( (exists $newsHash->{$keyToGet}) ? 
@@ -57,6 +90,12 @@ sub selectELTinNews {
 ## Usage example
 my $DBnews = loadNewsDatabase('../databases/newsDataBase-starting.json');
 print generateNews( $DBnews );
+
+my $outputDIR = "generatedOutputs";
+my $fileTEXname = "filetobuild.tex"; ## TODO generate UUID / ID with date !
+open (OUTPUT, ">../".$outputDIR."/".$fileTEXname) or die "file cannot be created";
+print OUTPUT generateNewsToLaTeX( $DBnews );
+close OUTPUT;
 
 
 ## Some tests to show data !
@@ -85,6 +124,3 @@ print generateNews( $DBnews );
 ## 			{ print "\t launcher/'uplinkrating' [".$news->{"launcher"}->{"uplinkrating"}."] \n"; } 
 ## 	}
 ## }
-
-
-
