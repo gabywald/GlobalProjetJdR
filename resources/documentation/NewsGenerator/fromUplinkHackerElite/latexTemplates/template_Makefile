@@ -1,4 +1,4 @@
-LATEXFILE=filetobuild
+
 ## naming WITHOUT the extensions [.tex] or [.bib]
 # LATEXFILE=filetobuild
 # BIBTEFILE=filetobuild
