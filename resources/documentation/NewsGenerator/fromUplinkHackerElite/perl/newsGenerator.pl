@@ -46,7 +46,58 @@ sub generateNews {
 	$completeBuildNews .= selectELTinNews($newsHash, "content4")."\n";
 	$completeBuildNews .= selectELTinNews($newsHash, "content5")."\n";
 	
-	return $completeBuildNews;
+	return replacingUpperCAseElements( $completeBuildNews );
+}
+
+sub replacingUpperCAseElements {
+	my $newsTXT = shift;
+	if ($newsTXT =~ /PERSONNAME/) { 
+		open (INPUTT, "<../dataUplink/fornamesMore.txt") or die $!;
+		chomp(my @fornames = <INPUTT>);
+		close INPUTT;
+		## foreach my $line (@fornames) { print $line."\n"; }
+		
+		open (INPUTT, "<../dataUplink/surnames.txt") or die $!;
+		chomp(my @surnames = <INPUTT>);
+		close INPUTT;
+		## foreach my $line (@surnames) { print $line."\n"; }
+		
+		my $completename = @surnames[int(rand(@surnames))]." ".@fornames[int(rand(@fornames))];
+		print $newsTXT;
+		$newsTXT =~ s/PERSONNAME/$completename/g;
+		print "*****".$completename."*****\n";
+	}
+	if ($newsTXT =~ /PERSONHANDLE/) {
+		open (INPUTT, "<../dataUplink/agentaliases.txt") or die $!;
+		chomp(my @agentaliases = <INPUTT>);
+		close INPUTT;
+		foreach my $line (@agentaliases) { print $line."'''\n"; }
+		
+		my $agentalias = "\'".@agentaliases[int(rand(@agentaliases))]."\'";
+		$newsTXT =~ s/PERSONHANDLE/$agentalias/g;
+		print "*****".$agentalias."*****\n";
+	}
+	if ($newsTXT =~ /COMPANYNAME/) {
+		open (INPUTT, "<../dataUplink/companya.txt") or die $!;
+		chomp(my @companynameA = <INPUTT>);
+		close INPUTT;
+		## foreach my $line (@companynameA) { print $line."'''\n"; }
+		
+		open (INPUTT, "<../dataUplink/companyb.txt") or die $!;
+		chomp(my @companynameB = <INPUTT>);
+		close INPUTT;
+		## foreach my $line (@companynameB) { print $line."'''\n"; }
+		
+		my $companyname = @companynameA[int(rand(@companynameA))]." ".@companynameB[int(rand(@companynameB))];
+		$newsTXT =~ s/COMPANYNAME/$companyname/g;
+		print "*****".$companyname."*****\n";
+	}
+	if ($newsTXT =~ /REASON/)			{ $newsTXT =~ s/REASON/\'NO REASON\'/g; }
+	if ($newsTXT =~ /TOTALFILESIZE/)	{ 
+		my $value = int(rand(1000));
+		$newsTXT =~ s/TOTALFILESIZE/$value/g;
+	}
+	return $newsTXT;
 }
 
 sub generateNewsToLaTeX {
@@ -92,7 +143,7 @@ sub generateNewsToLaTeX {
 	$toReturn .= "%% {\\small \\lipsum[1-3] }~\\\\\n\n";
 	$toReturn .= "{\\centering \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{\\{1=:=!\\}} }~\\\\\n\n";
 	$toReturn .= "\\begin{multicols}{2}\n\n";
-	$toReturn .= "\\textbf{Specific Article 1}~\\\\\n\n";
+	$toReturn .= "\\textbf{Specific Article Next}~\\\\\n\n";
 	$toReturn .= "\\emph{Catchphrase Lorem Ipsum}~\\\\\n\n";
 	$toReturn .= "\\lipsum[5-7]~\\\\\n\n";
 	$toReturn .= "\\end{multicols}\n\n";
@@ -101,7 +152,7 @@ sub generateNewsToLaTeX {
 	$toReturn .= "\\end{multicols}\n\n";
 	$toReturn .= "\\input{../latexTemplates/template_journal_footer.tex}\n\n";
 	
-	return $toReturn;
+	return replacingUpperCAseElements( $toReturn );
 }
 
 sub selectELTinNews {
@@ -127,14 +178,14 @@ my $DBnews = loadNewsDatabase('../databases/newsDataBase-starting.json');
 print generateNews( $DBnews );
 
 my $outputDIR = "generatedOutputs";
-## TODO generate UUID / ID with date !
-## TODO use later : my $fileTEXname = "filetobuild".generateDateYYYMMDDHHMMSS();
+## DONE generate UUID / ID with date !
+## DONE use later : my $fileTEXname = "filetobuild".generateDateYYYMMDDHHMMSS();
 my $fileTEXname = "filetobuild";
 open (OUTPUT, ">../".$outputDIR."/".$fileTEXname.".tex") or die "file cannot be created";
 print OUTPUT generateNewsToLaTeX( $DBnews );
 close OUTPUT;
 
-## TODO Makefile && make !
+## DONE Makefile && make !
 open (INPUTT, "<../latexTemplates/template_Makefile") or die $!;
 open (OUTPUT, ">../".$outputDIR."/Makefile") or die $!; # "file cannot be created";
 print OUTPUT "LATEXFILE=".$fileTEXname;
