@@ -49,18 +49,28 @@ sub generateNews {
 	return replacingUpperCAseElements( $completeBuildNews );
 }
 
+sub readFileToArray {
+	my $filePath = shift;
+	open (INPUTT, "<".$filePath) or die "cannot access '".$filePath."' ? "; ## die $!;
+	# chomp(my @array2return = <INPUTT>);
+	my @array2return = ();
+	while (my $line = <INPUTT>) {
+		$line =~ s/[\r\n]//g;
+		push (@array2return, $line);
+	}
+	close INPUTT;
+	
+	## foreach my $line (@array2return) { print $line." -- \n"; }
+	## print "\n";
+		
+	return \@array2return;
+}
+
 sub replacingUpperCAseElements {
 	my $newsTXT = shift;
-	if ($newsTXT =~ /PERSONNAME/) { 
-		open (INPUTT, "<../dataUplink/fornamesMore.txt") or die $!;
-		chomp(my @fornames = <INPUTT>);
-		close INPUTT;
-		## foreach my $line (@fornames) { print $line."\n"; }
-		
-		open (INPUTT, "<../dataUplink/surnames.txt") or die $!;
-		chomp(my @surnames = <INPUTT>);
-		close INPUTT;
-		## foreach my $line (@surnames) { print $line."\n"; }
+	if ($newsTXT =~ /PERSONNAME/) {
+		my @fornames = @{readFileToArray( "../dataUplink/fornamesMore.txt" )};
+		my @surnames = @{readFileToArray( "../dataUplink/fornamesMore.txt" )};
 		
 		my $completename = @surnames[int(rand(@surnames))]." ".@fornames[int(rand(@fornames))];
 		print $newsTXT;
@@ -68,25 +78,15 @@ sub replacingUpperCAseElements {
 		print "*****".$completename."*****\n";
 	}
 	if ($newsTXT =~ /PERSONHANDLE/) {
-		open (INPUTT, "<../dataUplink/agentaliases.txt") or die $!;
-		chomp(my @agentaliases = <INPUTT>);
-		close INPUTT;
-		foreach my $line (@agentaliases) { print $line."'''\n"; }
+		my @agentaliases = @{readFileToArray( "../dataUplink/agentaliases.txt" )};
 		
 		my $agentalias = "\'".@agentaliases[int(rand(@agentaliases))]."\'";
 		$newsTXT =~ s/PERSONHANDLE/$agentalias/g;
 		print "*****".$agentalias."*****\n";
 	}
 	if ($newsTXT =~ /COMPANYNAME/) {
-		open (INPUTT, "<../dataUplink/companya.txt") or die $!;
-		chomp(my @companynameA = <INPUTT>);
-		close INPUTT;
-		## foreach my $line (@companynameA) { print $line."'''\n"; }
-		
-		open (INPUTT, "<../dataUplink/companyb.txt") or die $!;
-		chomp(my @companynameB = <INPUTT>);
-		close INPUTT;
-		## foreach my $line (@companynameB) { print $line."'''\n"; }
+		my @companynameA = @{readFileToArray( "../dataUplink/companya.txt" )};
+		my @companynameB = @{readFileToArray( "../dataUplink/companyb.txt" )};
 		
 		my $companyname = @companynameA[int(rand(@companynameA))]." ".@companynameB[int(rand(@companynameB))];
 		$newsTXT =~ s/COMPANYNAME/$companyname/g;
@@ -116,7 +116,7 @@ sub generateNewsToLaTeX {
 	$toReturn .= "\\LARGE{\\centering \\setmainfont{Sprawl} ".selectELTinNews($newsHashMAIN, "titles")."}\n\n";
 	$toReturn .= "\\begin{multicols}{2}\n\n";
 	$toReturn .= "\\small\n\n";
-	$toReturn .= "{\\centering \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{Q+\\_9\\_+q} }~\\\\\n\n";
+	$toReturn .= "\\begin{center} { \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{Q+\\_9\\_+q} } \\end{center} %% ~\\\\\n\n";
 	$toReturn .= "\\textbf{".selectELTinNews($newsHashMAIN, "head")."}~\\\\\n";
 	$toReturn .= "\\emph{".selectELTinNews($newsHashMAIN, "content1")."}~\\\\\n";
 	$toReturn .= "".selectELTinNews($newsHashMAIN, "content2")."\n";
@@ -139,9 +139,14 @@ sub generateNewsToLaTeX {
 	$toReturn .= "".selectELTinNews($newsHash0002, "content3")."\n";
 	$toReturn .= "".selectELTinNews($newsHash0002, "content4")."\n";
 	$toReturn .= "".selectELTinNews($newsHash0002, "content5")."~\\\\\n\n";
+	
+	$toReturn .= "\\textbf{".selectELTinNews($newsHash0003, "titles")."}~\\\\\n";
+	$toReturn .= "\\textbf{".selectELTinNews($newsHash0004, "titles")."}~\\\\\n";
+	$toReturn .= "\\textbf{".selectELTinNews($newsHash0005, "titles")."}~\\\\\n";
+	
 	$toReturn .= "\\vfill~\\columnbreak\n\n";
 	$toReturn .= "%% {\\small \\lipsum[1-3] }~\\\\\n\n";
-	$toReturn .= "{\\centering \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{\\{1=:=!\\}} }~\\\\\n\n";
+	$toReturn .= "\\begin{center} { \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{\\{1=:=!\\}} } \\end{center} %% ~\\\\\n\n";
 	$toReturn .= "\\begin{multicols}{2}\n\n";
 	$toReturn .= "\\textbf{Specific Article Next}~\\\\\n\n";
 	$toReturn .= "\\emph{Catchphrase Lorem Ipsum}~\\\\\n\n";
