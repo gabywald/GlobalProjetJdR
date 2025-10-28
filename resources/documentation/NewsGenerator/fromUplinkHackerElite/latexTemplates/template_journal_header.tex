@@ -28,6 +28,8 @@
 
 \usepackage{multicol}
 
+\usepackage{tikzpeople}
+
 % % % en-tete et pieds de page configurables : fancyhdr.sty
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -50,13 +52,26 @@
 
 %--- Definitions de nouvelles commandes ---
 
+\def\peopleOnRight{% 
+	\begin{tikzpicture}
+		\node[criminal,evil,saturated,shield,sword,minimum size=0.75cm]{};
+	\end{tikzpicture}
+}
+
+\def\peopleOnLeft{% 
+	\begin{tikzpicture}
+		\node[nun,female,good,mirrored,monitor,saturated,shield,sword,minimum size=0.75cm]{};
+	\end{tikzpicture}
+}
+
+
 %--- Pour le titre ---
 \def\date{\today}
 \def\maketitle{%
 	\setlength{\parindent}{0em}
 	\begin{center}
 		\begin{tabular}[c]{c|c|c}
-												& \setmainfont{Chomsky} \Huge{ \magazineTitle }				&											\\
+			\peopleOnRight						& \setmainfont{Chomsky} \Huge{ \magazineTitle }				&	\peopleOnLeft							\\
 												& 															&											\\
 			Issue 0, Volume 0 					& \setmainfont{DS Zierschrift} \Large{Neo-Paris News}		& \date										\\
 												& 															&											\\

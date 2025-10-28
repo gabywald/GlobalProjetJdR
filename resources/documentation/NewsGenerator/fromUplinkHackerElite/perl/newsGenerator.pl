@@ -6,9 +6,9 @@ use JSON;
 use POSIX qw(strftime);
 
 ## TODO get arguments from user
-## TODO replacing the uppercase elements (if present) : 
+## DONE replacing the uppercase elements (if present) : 
 ##    - PERSONNAME (generate one name) ; 
-##    - PERSONHANDLE (generate / find alias) ; 
+##    - PERSONHANDLE (generate / find alias) ; (NOTE / TODO bug when used (show LaTeX output in console ?)
 ##    - COMPANYNAME (generate one name) ; 
 ##    - REASON (conviction / "hacks into the ..." / "refuses to ...") ; 
 ##    - TOTALFILESIZE (for Gigaquads) ; 
@@ -116,7 +116,7 @@ sub generateNewsToLaTeX {
 	$toReturn .= "\\LARGE{\\centering \\setmainfont{Sprawl} ".selectELTinNews($newsHashMAIN, "titles")."}\n\n";
 	$toReturn .= "\\begin{multicols}{2}\n\n";
 	$toReturn .= "\\small\n\n";
-	$toReturn .= "\\begin{center} { \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{Q+\\_9\\_+q} } \\end{center} %% ~\\\\\n\n";
+	$toReturn .= " %% \\begin{center} { \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{Q+\\_9\\_+q} } \\end{center} %% ~\\\\\n\n";
 	$toReturn .= "\\textbf{".selectELTinNews($newsHashMAIN, "head")."}~\\\\\n";
 	$toReturn .= "\\emph{".selectELTinNews($newsHashMAIN, "content1")."}~\\\\\n";
 	$toReturn .= "".selectELTinNews($newsHashMAIN, "content2")."\n";
@@ -139,14 +139,13 @@ sub generateNewsToLaTeX {
 	$toReturn .= "".selectELTinNews($newsHash0002, "content3")."\n";
 	$toReturn .= "".selectELTinNews($newsHash0002, "content4")."\n";
 	$toReturn .= "".selectELTinNews($newsHash0002, "content5")."~\\\\\n\n";
-	
 	$toReturn .= "\\textbf{".selectELTinNews($newsHash0003, "titles")."}~\\\\\n";
 	$toReturn .= "\\textbf{".selectELTinNews($newsHash0004, "titles")."}~\\\\\n";
 	$toReturn .= "\\textbf{".selectELTinNews($newsHash0005, "titles")."}~\\\\\n";
-	
 	$toReturn .= "\\vfill~\\columnbreak\n\n";
 	$toReturn .= "%% {\\small \\lipsum[1-3] }~\\\\\n\n";
 	$toReturn .= "\\begin{center} { \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{\\{1=:=!\\}} } \\end{center} %% ~\\\\\n\n";
+	$toReturn .= "\\begin{center} { \\Huge \\setmainfont{FoglihtenDeH02} \\textbf{Q+\\_9\\_+q} } \\end{center} %% ~\\\\\n\n";
 	$toReturn .= "\\begin{multicols}{2}\n\n";
 	$toReturn .= "\\textbf{Specific Article Next}~\\\\\n\n";
 	$toReturn .= "\\emph{Catchphrase Lorem Ipsum}~\\\\\n\n";
