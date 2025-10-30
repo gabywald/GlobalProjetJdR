@@ -64,7 +64,6 @@
 	\end{tikzpicture}
 }
 
-
 %--- Pour le titre ---
 \def\date{\today}
 \def\maketitle{%
@@ -91,7 +90,27 @@
 			\includegraphics[width=\paperwidth]{../../../../imgGraphics/cyberpunk/CyberPunkRedBandeauHaut.jpg}%
 			\vfill
 		}}}
-    %% \includegraphics[width=\paperwidth]{../../../../imgGraphics/cyberpunk/CyberPunkRedBandeauHaut.jpg}
+    
+    %% \AtPageCenter{ AtPageCenter }
+    %% \AtTextCenter{ AtTextCenter }
+    %% \AtStockCenter{ AtStockCenter }
+    
+    \AtTextCenter{ \begin{tikzpicture}[opacity=0.35, scale=1.65,rotate=-90] 
+    	%% ,xshift=-12]
+    	%% ,xshift=-12,yshift=-12]
+    	%% ,shift={(12,12)}]
+		%% \draw [very thin, gray] (0,0) grid (6,6);
+		\draw [very thick, blue   ] (1.50,3.00) ..controls +(0, 2) and +(0, 2).. (4.50,3.00);
+		\draw [very thick, red    ] (1.50,3.00) ..controls +(0,-2) and +(0,-2).. (4.50,3.00);
+		\draw [very thick, green  ] (1.50,3.00) ..controls +(0, 2) and +(0,-2).. (4.50,3.00);
+		\draw [very thick, magenta] (2.00,4.00) ..controls +(0, 2) and +(0,-2).. (4.00,2.00);
+		\draw [very thick, yellow ] (3.00,4.50) ..controls +(0, 2) and +(0,-2).. (3.00,1.50);
+		\draw [very thick, yellow ] (1.50,3.00) ..controls +(0,-2) and +(0, 2).. (4.50,3.00);
+		\draw [very thick, cyan   ] (4.00,4.00) ..controls +(0, 2) and +(0,-2).. (2.00,2.00);
+		\draw [very thick, gray, fill=white] (3.00,3.00) circle (0.75);
+		\draw [very thick, white, fill=gray] (3.00,3.00) circle (0.25);
+	\end{tikzpicture} }
+    
     \AtPageLowerLeft{1cm}{\includegraphics[width=\paperwidth]{../../../../imgGraphics/cyberpunk/CyberPunkRedBandeauBas.jpg}}
 }
 
