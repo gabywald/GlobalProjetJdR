@@ -80,6 +80,20 @@
 	\setlength{\parindent}{2\parskip}
 }%
 
+\usepackage{hyperref}
+%% http://www.andy-roberts.net/writing/latex/pdfs -- for some properties...
+%% https://tex.stackexchange.com/questions/26529/how-can-i-generate-pdf-metadata-from-latex
+\hypersetup{
+	pdfauthor={Gaby Wald / Gabriel Chandesris},
+	pdftitle={\magazineTitle "News Generator" \today},
+	pdfsubject={\magazineTitle "News Generator" \today},
+	pdfkeywords={\magazineTitle "News Generator" \today},
+	pdfproducer={PDFLaTeX (production)},
+	pdfcreator={PDFLaTeX (creation)}
+	%% urlcolor=green,
+}
+%% https://tex.stackexchange.com/questions/79395/option-clash-for-hyperref-package
+
 %============================= Corps =================================
 \begin{document}
 
@@ -95,20 +109,20 @@
     %% \AtTextCenter{ AtTextCenter }
     %% \AtStockCenter{ AtStockCenter }
     
-    \AtTextCenter{ \begin{tikzpicture}[opacity=0.35, scale=1.65,rotate=-90] 
+    \AtTextCenter{ \begin{tikzpicture}[opacity=0.35, scale=2.00] %% ,shift={(0.00,-5.00)}] %% ,rotate=-90] 
     	%% ,xshift=-12]
     	%% ,xshift=-12,yshift=-12]
     	%% ,shift={(12,12)}]
-		%% \draw [very thin, gray] (0,0) grid (6,6);
-		\draw [very thick, blue   ] (1.50,3.00) ..controls +(0, 2) and +(0, 2).. (4.50,3.00);
-		\draw [very thick, red    ] (1.50,3.00) ..controls +(0,-2) and +(0,-2).. (4.50,3.00);
-		\draw [very thick, green  ] (1.50,3.00) ..controls +(0, 2) and +(0,-2).. (4.50,3.00);
-		\draw [very thick, magenta] (2.00,4.00) ..controls +(0, 2) and +(0,-2).. (4.00,2.00);
-		\draw [very thick, yellow ] (3.00,4.50) ..controls +(0, 2) and +(0,-2).. (3.00,1.50);
-		\draw [very thick, yellow ] (1.50,3.00) ..controls +(0,-2) and +(0, 2).. (4.50,3.00);
-		\draw [very thick, cyan   ] (4.00,4.00) ..controls +(0, 2) and +(0,-2).. (2.00,2.00);
-		\draw [very thick, gray, fill=white] (3.00,3.00) circle (0.75);
-		\draw [very thick, white, fill=gray] (3.00,3.00) circle (0.25);
+		%% \draw [very thin, gray] (-3,-3) grid (3,3);
+		\draw [very thick, blue   ] (-1.50, 0.00) ..controls +(0, 2) and +(0, 2).. ( 1.50, 0.00);
+		\draw [very thick, red    ] (-1.50, 0.00) ..controls +(0,-2) and +(0,-2).. ( 1.50, 0.00);
+		\draw [very thick, green  ] (-1.50, 0.00) ..controls +(0, 2) and +(0,-2).. ( 1.50, 0.00);
+		\draw [very thick, magenta] (-1.00, 1.00) ..controls +(0, 2) and +(0,-2).. ( 1.00,-1.00);
+		\draw [very thick, yellow ] ( 0.00, 1.50) ..controls +(0, 2) and +(0,-2).. ( 0.00,-1.50);
+		\draw [very thick, yellow ] (-1.50, 0.00) ..controls +(0,-2) and +(0, 2).. ( 1.50, 0.00);
+		\draw [very thick, cyan   ] ( 1.00, 1.00) ..controls +(0, 2) and +(0,-2).. (-1.00,-1.00);
+		\draw [very thick, gray, fill=white] (0.00,0.00) circle (0.75);
+		\draw [very thick, white, fill=gray] (0.00,0.00) circle (0.25);
 	\end{tikzpicture} }
     
     \AtPageLowerLeft{1cm}{\includegraphics[width=\paperwidth]{../../../../imgGraphics/cyberpunk/CyberPunkRedBandeauBas.jpg}}
