@@ -1,9 +1,14 @@
 
 ## naming WITHOUT the extensions [.tex] or [.bib]
-LATEXFILE=agenceTownsendJdR
-BIBTEFILE=agenceTownsendJdR
+LATEXFILE=GrandLivreJdRparGW
+BIBTEFILE=GrandLivreJdRparGW
+# BIBTEFILE1=agenceTownsendJdR
+# BIBTEFILE2=arcanesJdR
+# BIBTEFILE3=giscardpunkBetonJdR
 
 ## the local software...
+CCLUAXE=xelatex
+CCLUALA=lualatex
 CCPDFLA=pdflatex
 CCLATEX=latex
 CCBIBTE=bibtex
@@ -31,14 +36,14 @@ mrproper : $(LATEXFILE).aux $(LATEXFILE).bbl $(LATEXFILE).blg $(LATEXFILE).toc
 	rm $(LATEXFILE).blg
 	rm $(LATEXFILE).toc
 
-$(LATEXFILE).dvi : $(LATEXFILE).tex $(BIBTEFILE).bib
+$(LATEXFILE).dvi : $(LATEXFILE).tex $(BIBTEFILE).bib # $(BIBTEFILE1).bib $(BIBTEFILE2).bib $(BIBTEFILE3).bib
 	$(CCLATEX) $(LATEXFILE).tex
-	$(CCBIBTE) $(LATEXFILE)
+	$(CCBIBTE) $(BIBTEFILE)
 	$(CCLATEX) $(LATEXFILE).tex
 	$(CCLATEX) $(LATEXFILE).tex
 	$(CCLATEX) $(LATEXFILE).tex
 
-pdflatex : $(LATEXFILE).tex $(BIBTEFILE).bib
+pdflatex : $(LATEXFILE).tex $(BIBTEFILE).bib # $(BIBTEFILE1).bib $(BIBTEFILE2).bib $(BIBTEFILE3).bib
 	$(CCPDFLA) $(LATEXFILE).tex
 	$(CCBIBTE) $(BIBTEFILE)
 	$(CCPDFLA) $(LATEXFILE).tex
