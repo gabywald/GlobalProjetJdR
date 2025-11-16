@@ -46,7 +46,7 @@ sub generateNews {
 	$completeBuildNews .= selectELTinNews($newsHash, "content4")."\n";
 	$completeBuildNews .= selectELTinNews($newsHash, "content5")."\n";
 	
-	return replacingUpperCAseElements( $completeBuildNews );
+	return replacingUpperCaseElements( $completeBuildNews );
 }
 
 sub readFileToArray {
@@ -66,7 +66,7 @@ sub readFileToArray {
 	return \@array2return;
 }
 
-sub replacingUpperCAseElements {
+sub replacingUpperCaseElements {
 	my $newsTXT = shift;
 	if ($newsTXT =~ /PERSONNAME/) {
 		my @fornames = @{readFileToArray( "../dataUplink/fornamesMore.txt" )};
@@ -156,7 +156,7 @@ sub generateNewsToLaTeX {
 	$toReturn .= "\\end{multicols}\n\n";
 	$toReturn .= "\\input{../latexTemplates/template_journal_footer.tex}\n\n";
 	
-	return replacingUpperCAseElements( $toReturn );
+	return replacingUpperCaseElements( $toReturn );
 }
 
 sub selectELTinNews {

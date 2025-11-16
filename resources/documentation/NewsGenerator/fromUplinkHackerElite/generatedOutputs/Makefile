@@ -27,9 +27,8 @@ clean : $(LATEXFILE).log mrproper
 	# rm $(LATEXFILE).dvi
 	# rm $(LATEXFILE).pdf
 
-mrproper : $(LATEXFILE).aux $(LATEXFILE).out ## $(LATEXFILE).bbl $(LATEXFILE).blg $(LATEXFILE).toc
+mrproper : $(LATEXFILE).aux ## $(LATEXFILE).bbl $(LATEXFILE).blg $(LATEXFILE).toc
 	rm $(LATEXFILE).aux
-	rm $(LATEXFILE).out
 	## rm $(LATEXFILE).bbl
 	## rm $(LATEXFILE).blg
 	## rm $(LATEXFILE).toc
