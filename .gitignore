@@ -33,3 +33,4 @@ bin/
 **/*.lof
 **/*.lot
 **/*.toc
+**/*.bib.bak

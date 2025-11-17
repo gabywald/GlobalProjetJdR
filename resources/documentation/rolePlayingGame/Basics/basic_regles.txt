@@ -1,0 +1,1929 @@
+BaSIC : Le jeu de rôle de base
+BaSIC © Casus Belli/Multisim sous licence Chaosium
+
+INTRODUCTION
+S'il y a un système de jeu de rôle dont on connaît les qualités et
+les défauts, les possibilités et les limites, c'est bien le Basic Role
+Playing, le système de l'éditeur américain Chaosium. Il fut mis au
+point à l'aube du jeu de rôle par Steve Perrin et Lynn Willis pour
+le jeu RuneQuest, puis adapté pour les autres jeux de Chaosium
+(Elric, Hawkmoon, L'appel de Cthulhu, Elfquest) et plus tard
+Multisim en acquit les droits en France pour son jeu Nephilim.
+BaSIC est la version la plus épurée du système Chaosium. Un
+système qui n'est pas forcément le plus réaliste, mais en tout cas
+le plus intuitif, le plus facile à intégrer, à jouer et à faire jouer, et
+le plus couramment pratiqué par un vaste nombre de joueurs !
+Cette version a été coordonnée par Tristan Lhomme. Introduction
+extraite d'un préambule de Didier Guiserix paru dans le hors-série
+Casus Belli n°19 "BaSIC, le jeu de rôle de base" (1997).
+
+CREER UN PERSONNAGE
+Définitions
+
+exemple lorsqu'il faut se faufiler par un passage étroit. Pour un
+personnage masculin, une TAIlle de 8 est légèrement inférieure à
+la moyenne (dans les 1,65 m pour 60 kg). Une TAIlle de 18 peut
+indiquer un géant très maigre, ou un individu de taille moyenne
+mais avec un embonpoint.
+DEXtérité
+Comme son nom l'indique, cette caractéristique mesure la
+vivacité et la rapidité physique du personnage. Elle joue un rôle
+primordial dans les combats. En effet, les personnages dotés
+d'une DEXtérité élevée agissent plus souvent en premier. Avec
+une DEXtérité de 8, un personnage est très moyen, et sera bien
+avisé de ne pas se risquer, par exemple, dans une bagarre de café.
+Avec une DEXtérité de 18, il est extrêmement rapide et,
+potentiellement, pourrait jongler avec cinq couteaux et autant de
+torches enflammées (à condition, bien sûr, d'avoir appris à le
+faire - voir la compétence Cascade).
+APParence
+Votre personnage est-il beau ou pas ? S’habille-t- il avec
+élégance ? Sait-il faire bonne impression au premier contact ?
+L’APParence mesure tous ces facteurs. Un personnage doté d'une
+APParence de 8 est le genre d'individu que peu de gens
+remarquent au milieu d'une foule (ce qui peut, parfois, être un
+avantage). En revanche, avec une APParence de 18, il attirera
+l'attention partout où il passe.
+
+Un personnage est défini par deux séries de chiffres : ses
+caractéristiques et ses compétences. Les caractéristiques
+définissent ce qu’est le personnage, et les compétences ce qu’il
+sait. Votre personnage sera plus ou moins fort, plus ou moins
+intelligent, plus ou moins adroit, et cela dépend largement du
+hasard. En revanche, c’est vous qui choisirez si, au cours de sa
+vie, il a appris à se battre ou s'il a préféré se tourner vers
+l'érudition, la médecine...
+
+INTelligence
+Elle décrit les capacités d'apprentissage, de mémorisation et
+d'analyse de votre personnage. Elle ne remplace pas l'intelligence
+du joueur, mais gère, à sa place, un certain nombre de tâches
+fastidieuses. Si votre personnage se retrouve en possession d'un
+message codé, par exemple, c'est son INTelligence qui servira à
+déterminer s'il parvient à le déchiffrer. Avec une INTelligence de
+8, un personnage n'est pas très malin. A 18, c'est un génie.
+
+Les caractéristiques
+Elles sont au nombre de sept. Pour un être normal, leur valeur
+varie entre 3 et 18. Les personnages des joueurs étant des héros,
+donc par définition un peu meilleurs que la moyenne, leurs
+caractéristiques iront de 8 à 18.
+
+POUvoir
+Cette caractéristique mesure la volonté du personnage, sa force
+d'âme et, dans certains univers de jeu, sa capacité à utiliser
+d'éventuels pouvoirs mentaux (magie ou pouvoirs psioniques). Il
+sert également à calculer sa Chance (voir plus bas). Avec un
+POUvoir de 8, votre personnage sera quelqu'un de relativement
+effacé, sans grandes dispositions pour le paranormal. Avec un
+POUvoir de 18, au contraire, il sera très impressionnant, et/ou
+aura un grand potentiel magique.
+
+FORce
+C’est une mesure de la puissance musculaire du personnage.
+Cette caractéristique donne une idée de ce qu'il peut soulever,
+porter, pousser ou tirer. A titre indicatif, un personnage avec une
+FORce de 8 est un quidam moyen, qui n'a plus fait de sport après
+le lycée. Avec une FORce de 18, c'est un athlète qui joue dans la
+même cour qu'Arnold Schwarzenegger. Comme vous le verrez
+plus loin , la FORce influe un peu sur le combat à mains nues ou
+avec armes blanches, sans y jouer toutefois un rôle déterminant.
+CONstitution
+Cette caractéristique rend compte de la vitalité et de la santé du
+personnage. Plus sa CONstitution est élevée, mieux le
+personnage résistera à la fatigue, aux coups, à la maladie, etc.
+Avec une CONstitution de 8, c'est un individu normal, peut-être
+un peu plus sujet aux rhumes que la moyenne. Avec une
+CONstitution de 18, il n'a probablement jamais été malade de sa
+vie.
+TAIlle
+En fait, cette caractéristique englobe la taille et le poids. Être
+grand et massif vous permet de faire plus mal lors des combats,
+mais peut poser problème dans d'autres circonstances, par
+
+Les compétences
+Les compétences sont des domaines de connaissance que votre
+personnage a eu l'occasion d'étudier au cours de sa vie. Elles sont
+différentes d'un univers de jeu à l'autre. Exemples: se servir d'une
+épée, parler une langue étrangère, conduire une automobile... Les
+compétences se mesurent sur 100. Elles sont détaillées au
+chapitre "Les compétences".
+
+La création pas à pas
+Première étape : le héros
+Demandez au meneur de jeu quel "genre de héros" serait à l'aise
+dans l'histoire qu'il va vous faire jouer. Cela vous donnera une
+idée des personnages dont il a besoin. Si son scénario est une
+intrigue compliquée à la cour d'un roi, évitez de créer un clone de
+Conan le Barbare, il n'aurait rien à y faire !
+
+BaSIC le jeu de rôle de base Page 1
+
+Deuxième étape : les caractéristiques
+Munissez-vous d'une feuille de personnage, d'un bout de
+brouillon, d'un crayon et d'une gomme. Lancez sept fois de suite
+2d6+6. Notez les sept résultats sur votre brouillon, puis
+répartissez-les à votre guise entre les caractéristiques. Toutes les
+caractéristiques sont utiles, mais elles ne
+servent pas toutes à la même chose. Si vous avez envie d'un
+personnage très physique, plutôt combattant, favorisez la FORce
+et la DEXtérité. Si vous avez plutôt envie de jouer un magicien,
+le POUvoir est plus important.
+Troisième étape : les valeurs dérivées
+Les caractéristiques servent à calculer cinq valeurs dérivées.
+Suivez les instructions ci-dessous et reportez les résultats sur
+votre feuille de personnage.
+Les points de vie (PV)
+Ils mesurent l'état physique du personnage. Lorsqu'il est blessé, il
+perd des points de vie. S'il tombe à 0 point de vie, il est mort! Il
+faut créer alors un autre personnage... Faites la somme de la
+TAIlle et de la CONstitution, divisez le résultat par deux (en
+arrondissant à l'entier supérieur, si besoin est).
+Exemple: TAI = 10 et CON = 13, (10 +13)/ 2 = 11,5, nombre de
+points de vie = 12. Entourez la valeur correspondante dans la
+case "points de vie" de votre feuille de personnage.
+Les points d'énergie (PE)
+Ils servent, si l'univers de jeu le permet, a faire de la magie (ou à
+utiliser des pouvoirs psioniques). Les règles détaillées se trouvent
+dans la description des univers correspondants. Votre capital de
+points d'énergie est égal à votre POUvoir. Entourez la valeur
+correspondante dans la case "points d'énergie" de votre feuille de
+personnage.
+
+du monde" autour des personnages. Comme le jet d'Idée, le jet de
+Chance est un pourcentage, noté sur 100. Il se calcule en
+multipliant le POUvoir par 5.
+Quatrième étape : les compétences
+Regardez la liste des professions disponible dans votre univers de
+jeu et choisissez-en une. Vous avez 300 points à répartir dans les
+compétences qui en découlent (sans obligation de les prendre
+toutes). Ensuite, vous pourrez répartir 150 points parmi toutes les
+autres compétences de la feuille de personnage, à votre guise
+(même dans celles que vous avez déjà prises). Comment répartir
+ces points ? Il suffit de décider du nombre de points que vous
+allouez à une compétence, de l'ajouter à la base de cette dernière
+(la valeur entre parenthèses qui se trouve à côté de son nom sur la
+feuille de personnage). Ainsi, si vous décidez d'allouer 50 points
+à l'Esquive, qui a un score de base de 25, vous dépensez 50
+points, et votre personnage se trouve doté d'une Esquive ayant un
+score de 75. 1 point signifie 1 % de chance de réussite dans la
+compétence. A sa création, un personnage ne peut pas avoir plus
+de 90 dans un compétence, quelle qu'elle soit. Par ailleurs, il est
+inutile de le doter de scores supérieurs à 75 %; un score aussi
+élevé signifie qu'il réussira une action trois fois sur quatre, ce qui
+devrait largement suffire... Il vaut mieux être un « généraliste »
+capable de faire moyennement bien un grand nombre de choses,
+qu'un "spécialiste" hyper compétent, ne sachant rien faire en
+dehors de son domaine de compétence
+très étroit. Si, après quelques parties, ce choix ne vous convient
+plus, créez un autre type de personnage.
+Conseil aux débutants : C'est le moment de discuter avec les
+autres joueurs. Essayez de créer des personnages
+complémentaires, par exemple l'un sera bagarreur, l'autre plutôt
+diplomate; le groupe gagnera en efficacité.
+Liste des professions avec compétences
+
+Le bonus aux dommages
+Plus un personnage est grand et fort, plus il fera mal lors des
+combats au corps à corps. Additionnez la TAIlle et la FORce de
+votre personnage, et reportez-vous à la table des bonus aux
+dommages. Notez le résultat sur la ligne correspondante.
+TABLE DES BONUS
+AUX DOMMAGES
+FORce + TAIlle
+02 à 24
+25 à 32
+33 à 40
+41 à 60
+
+Bonus
+Aucun
++ 1d3
++ 1d6
++ 2d6
+
+Le jet d'Idée
+Etes-vous sûr qu'il soit opportun d'engager votre personnage dans
+ce tunnel empli de fumée rougeâtre, d'où sortent des ricanements
+démoniaques ? Quel est ce petit détail que vous avez oublié, et
+qui était visiblement d'une importance capitale pour le scénario ?
+Le jet d'Idée est un jet de dés qui, s'il est réussi, permet au
+meneur de jeu de vous souffler une information oubliée ou de
+vous suggérer un plan d'action, si vous êtes perdu. Contrairement
+à la plupart des valeurs figurant dans le cadre des
+caractéristiques, le jet d'Idée est noté sur 100, comme une
+compétence. Pour connaître sa valeur, multipliez l'INTelligence
+du personnage par 5 et reportez le résultat dans la case
+correspondante.
+Le jet de Chance
+Votre personnage est en équilibre précaire au bord d'une falaise.
+Va-t-il tomber ? Perdu dans la foule, va-t-il trouver son contact ?
+Cela dépend s'il a ou non de la chance. Cette valeur est souvent
+très utile pour simuler le "mouvement
+
+Exemples pour un univers médiéval-fantastique
+- Chasseur : Athlétisme, Armes d'hast, Armes de jet, Artisanat,
+Connaissance de la nature, Orientation, Secourisme, Survie.
+- Chevalier : Athlétisme, Equitation, Droit et usages, Armes de
+mêlée, Armes d'hast, Esquive, Vigilance, Lire et écrire.
+- Erudit : Alchimie, Connaissance de la nature, Connaissance
+des peuples, Droit et usages, Légendes, Lire et écrire, Potions et
+herbes, Sagacité.
+- Fermier : Armes d'hast, Armes de lancer, Artisanat,
+Commerce, Connaissance de la nature, Orientation, Potions et
+herbes, Secourisme.
+- Magicien : Alchimie, Droit et usages, Légendes, Lire et écrire,
+Persuasion, Sagacité, Vigilance, 3 sortilèges au choix.
+- Soldat : Athlétisme, Armes de mêlée, Armes d'hast, Armes de
+tir, Esquive, Discrétion, Vigilance, Secourisme.
+- Troubadour : Artisanat (musique), Connaissance des peuples
+ou des religions, Culture générale, Droit et usages, Légendes,
+Lire et écrire, Persuasion, Sagacité.
+- Voleur : Armes de lancer, Armes de mêlée, Cascade,
+Discrétion, Esquive, Persuasion, Sagacité, Serrurerie.
+Exemples pour un univers contemporain
+- Agent de renseignement : Cascade, Déguisement, Droit et
+usages, Histoire et géographie, Informatique, Lutte,
+Renseignement, Sciences appliquées, Serrurerie.
+- Journaliste : Bibliothèque, Conduire (auto ou moto),
+Connaissance de la rue, Culture générale, Langue étrangère,
+Persuasion, Sagacité, Vigilance.
+- Homme d'affaire : Commerce, Comptabilité, Droit,
+Informatique, Langue étrangère, Persuasion, Sagacité, (plus une
+autre au choix).
+- Militaire : Cascade, Conduire (au choix), Leadership,
+Navigation, Pilotage (au choix), Sabotage, Lutte, Armes de
+poing, Fusil.
+BaSIC le jeu de rôle de base Page 2
+
+- Spécialiste en sciences humaines (ex : archéologue baroudeur)
+: Bibliothèque, Culture générale, Droit et usages, Langue
+étrangère, Histoire et géographie, Orientation, Sciences sociales,
+Survie.
+Cinquième étape : les finitions
+Le jeu de rôle est un moyen de raconter des histoires, comme les
+romans ou le cinéma, et les histoires sont toujours meilleures
+lorsqu'elles ont des héros crédibles. Pour l'instant, votre
+personnage est un tas de chiffres gribouillés au crayon sur un
+formulaire abscons. Pour lui insuffler un peu de vie, la première
+chose à faire est de remplir son "d'état civil". Comment s'appelle
+votre personnage ? Le choix d'un nom est toujours un moment
+délicat. Évitez les noms ridicules ou connotés - cela peut sembler
+très drôle, au début, de jouer un gangster nommé Averell ou un
+chevalier baptisé Lancelot, mais le gag s'use très vite et, au bout
+de quelques parties, il ne fera plus rire personne. Éventuellement,
+trouvez-lui un diminutif ou un surnom usuel, par exemple Jimmy
+pour lord William James Ashley. Une fois baptisé, il reste à lui
+donner un peu de relief. Si le coeur vous en dit, prenez quelques
+minutes pour réfléchir aux points suivants. Notez le résultat de
+vos cogitations sur une feuille de papier libre, ou au verso de
+votre feuille de personnage.
+- La description. il existe une foule de détails qu'aucun jet de dés
+ne définira à votre place. Quelle est la couleur des yeux de votre
+personnage ? Celle de ses cheveux? Est-il droitier ou gaucher?
+Comment s'habille-t-il ? A-t- il des expressions favorites ? Un
+accent ? Prenez un moment pour regarder comment ses
+caractéristiques interagissent. S'il a une TAIlle élevée et une
+faible FORce, par exemple, sa masse est probablement due à de
+la graisse, et pas à du muscle. En revanche, un individu avec une
+TAIlle faible, une bonne CONstitution et une DEXtérité élevée
+sera sûrement un petit bonhomme nerveux, avec des réflexes
+rapides.
+- Le comportement. Pensez à votre personnage comme à une
+vraie personne. A-t-il des goûts particuliers? Des choses dont il a
+horreur? Une passion pour les rousses ? L'habitude de
+commander un poulet rôti et de la tarte au citron dans toutes les
+auberges où il déjeune ? Essayez de trouver un ou deux détails
+qui le caractériseront, mais limitez-vous à cela. Sinon
+votre personnage risque d'être une collection de tics.
+- L'histoire Personnelle. Maintenant que vous avez une assez
+bonne image de lui dans le présent, remontez un peu dans son
+passé (vous pouvez aussi partir de son passé et construire son
+apparence présente à partir de là. Les deux méthodes marchent
+aussi bien l'une que l'autre, l'essentiel est que vous vous sentiez à
+l'aise avec celle que vous choisirez). Où a-t-il grandi ? A-t-il
+encore ses parents ? Des frères et des soeurs ? Quelles sont ses
+relations avec eux ? Pourquoi ?
+- La motivation. Idéalement, il faudrait que votre personnage ait
+une bonne raison de se jeter dans l'aventure. Des motivations
+aussi passe-partout que "accumuler de l'or et de la gloire" ou
+"sauver le monde du méchant sorcier/démon/savant fou"
+fonctionnent toujours parfaitement, même si elles ont beaucoup
+servi, mais vous pourrez peut-être en trouver une autre dans le
+passé du personnage (du genre "retrouver sa soeur, enlevée par
+des extraterrestres il y a dix ans").
+
+LES REGLES DE BASE
+Question de bon sens
+- Première règle
+Une action impossible à rater réussit toujours.
+- Deuxième règle
+Une action impossible à réussir échoue toujours.
+- Troisième règle
+Pour tous les autres cas, faites un jet de compétence.
+- Quatrième règle
+Lorsqu'il est impossible de faire un jet de compétence, utilisez un
+jets de caractéristique ou un jet d'opposition. Tout ce qui suit se
+contente de développer ces principes.
+Action immanquables
+Les actions physiques et intellectuelles tentées dans des situations
+banales réussissent toujours. Inutile de lancer les dés pour savoir
+si un personnage arrive à mettre un pied devant l'autre pour sortir
+de chez lui et aller acheter du pain !
+Actions impossibles
+Les actions absurdes et irréalisables échouent toujours. Si un
+personnage saute d'un avion sans parachute et tente de rester en
+l'air en battant des bras, ce n'est pas la peine de chercher le point
+de règle qui lui permettra de s'en sortir: il va finir sa vie beaucoup
+plus bas, sous forme de flaque. Le meneur de jeu dispose d'une
+certaine latitude dans l'interprétation de ce qui est "absurde", et
+cela peut varier d'un univers à l'autre. Par exemple, dans le cas
+d'une aventure à la James Bond où le spectaculaire prime sur le
+réalisme, il est parfaitement possible de décider que notre
+aéronaute pourra, peut-être, avec un jet de Chance, s'accrocher à
+la queue de l'avion...
+
+Jets de compétence
+La plupart des situations à résoudre se situent entre ces deux
+extrêmes, dans des circonstances où l'échec et la réussite sont
+tous deux possibles, et dont leurs résultats vont avoir des
+conséquences sur le reste de l'aventure. Pour simuler cette
+incertitude, on a recours à un jet de dés. Comme nous l'avons vu
+au chapitre précédent, les compétences sont mesurées sur 100.
+Un personnage avec 40 dans une compétence a en fait 40 % de
+chance de réussir à l'utiliser. Pour utiliser une compétence, il faut
+lancer 1d100. Si le résultat obtenu est inférieur ou égal au score
+de la compétence, l'action est réussie (c'est pourquoi on dit faire
+un jet sous une compétence). Sinon, c'est un échec.
+- Maladresse. Lorsque le résultat est compris entre 96 et 00, non
+seulement l'action est manquée, mais en plus, l'échec est
+particulièrement grave (par exemple: au cours d'une poursuite en
+voiture non seulement le poursuivant ne rattrape pas sa cible,
+mais en plus il tombe dans un fossé). Cela s'appelle une
+maladresse.
+- Réussite critique. En revanche, avec un résultat compris entre
+01 et 05, l'action est réussie de manière particulièrement brillante
+(non seulement vous rattrapez le poursuivi mais, en plus, vous
+avez évité le chien qui traversait la route). Cela s'appelle une
+réussite critique.
+Bonus et malus
+En règle générale, le jet de dés se fait "sous" la valeur de la
+compétence mais, parfois, le meneur de jeu peut décider que la
+situation mérite un ajustement dans un sens ou dans l'autre. Dans
+ce cas, il fixe un bonus ou un malus, qui vient s'ajouter (ou se
+soustraire) à la compétence du personnage. Le jet de dés est
+réussi s'il est inférieur ou égal à la valeur modifiée de la
+compétence. Le meneur de jeu peut fixer des bonus ou des malus
+supérieurs à + ou - 20 %, mais ce n'est pas conseillé. Si l'action
+BaSIC le jeu de rôle de base Page 3
+
+est vraiment très facile (ou très difficile), elle rentre probablement
+dans la catégorie des actions immanquables ou
+impossibles.
+TABLE DE CIRCONSTANCES
+Modif Circonstance Exemple
+-20%
+Très difficile
+A
+-10%
+Difficile
+B
++10%
+Facile
+C
++20% Plus que facile
+D
+A. Tirer de nuit sur cible mobile, ou désamorcer une bombe qui
+va sauter d'une seconde à l'autre.
+B. Tirer sur cible mobile ou de petite taille, crocheter une serrure
+particulièrement bien conçue.
+C. Tirer sur cible immobile et de grande taille, escalader un mur
+avec de nombreuses prises.
+D. Suivre un flâneur qui ne se méfie pas, se souvenir que la
+bastille a été prise un 14 juillet.
+
+Expérience
+Les sept caractéristiques ne peuvent pas augmenter, pas plus que
+leurs dérivées. Les scores de Chance ou Idée ne bougeront
+jamais, pas plus que le total des points de vie ou le bonus aux
+dommages. En revanche, les compétences peuvent augmenter,
+selon le principe: c'est en forgeant qu'on devient forgeron... Si, au
+cours d'une aventure, un personnage a réussi une action
+importante, le meneur de jeu peut l'autoriser à cocher la petite
+case qui se trouve à côté de la compétence correspondante.
+A la fin de l'aventure, le personnage peut tenter de l'améliorer.
+Pour cela, le joueur lance ldl00. S'il obtient un score supérieur à
+la valeur de la compétence, le personnage a retiré quelque chose
+de l'expérience, et la compétence augmente d'ldl0 points. S'il
+obtient un score inférieur ou égal à la valeur de la compétence, la
+situation ne lui a rien appris... A partir de 90 % dans une
+compétence, les règles changent un peu. Le personnage a une
+chance égale à son score d'INTelligence de s'améliorer et, même
+s'il réussit, il ne progressera que d'l point.
+
+Astuces
+
+Les jets de caractéristique
+Il existe parfois des situations où aucune compétence ne
+s'applique. Supposons, par exemple, qu'un personnage (masculin)
+soit face à une charmante jeune fille, et qu'il désire qu'elle le
+remarque. Il n'existe aucune compétence Faire bonne impression
+aux jolies filles. En revanche, la caractéristique APParence est là
+pour ça ! Dans ce genre de cas, la caractéristique concernée est
+multipliée par un nombre (le multiplicateur) entre 1 et 5. Faites
+un jet d'1d100 sous cette valeur, comme si c'était une
+compétence. Le multiplicateur dépend de la difficulté de l'action:
+de x 5 (facile) à x 1 (très difficile), la plupart du temps ce sera x
+3. Si la jeune fille de l'exemple est seule et cherche quelqu'un à
+qui parler, le jet d'APParence du personnage se fera sous son
+APP x 5. En revanche, si elle est avec son petit ami, le meneur de
+jeu demandera un jet sous l'APP x 1 (et peut décider que le petit
+ami manifeste sa jalousie, en cas de réussite !).
+Les jets en opposition
+Parfois, vous aurez besoin de savoir ce qui se passe lorsqu'un
+personnage lutte contre quelque chose qui lui résiste. Arrivera-t-il
+à enfoncer cette porte ? Parviendra-t-il à se libérer de l'étreinte de
+la pieuvre géante ? La table de résistance est un outil multi-usage,
+qui sert à chaque fois qu'il est nécessaire d'opposer deux
+caractéristiques, une "active" (celle du personnage ou de la chose
+qui agit) et une "passive" (celle du personnage ou de la chose qui
+tente de résister à l'action). Il suffit de chercher dans cette table la
+colonne correspondant à la valeur de la caractéristique "active" et
+la ligne correspondant à la valeur de la caractéristique "passive".
+A l'intersection, figure le nombre maximum qu'il faut obtenir
+avec 1d100 pour que l'action entreprise avec la caractéristique
+active soit réussie (exactement comme si c'était une compétence,
+à ceci près que les notions de réussite critique et de maladresse ne
+s'appliquent pas). Toutes les caractéristiques ou presque peuvent
+être opposées les unes aux autres. En général, cette table sert
+surtout aux duels FOR/FOR ou POU/POU, mais la pratique en
+fait découvrir beaucoup d'autres utilisations. Supposons par
+exemple que votre personnage veuille déchiffrer un message codé
+particulièrement compliqué. Le meneur de jeu peut décider
+d'opposer le score en INT du personnage à un nombre
+représentant la difficulté du document. Supposons que l'INT du
+personnage soit de 14, et que le meneur de jeu estime la difficulté
+du document à 18. Un coup d'oeil à la table montre que les
+chances de déchiffrer le document sont de 30 %.
+
+TABLE DE RESISTANCE
+
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+
+01
+50
+45
+40
+35
+30
+25
+20
+15
+10
+05
+-
+
+02
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+05
+-
+
+03
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+05
+-
+
+04
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+05
+-
+
+05
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+05
+-
+
+06
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+05
+-
+
+07
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+05
+-
+
+08
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+05
+-
+
+Caractéristique active
+09 10 11 12 13
+90 95 85 90 95 80 85 90 95 75 80 85 90 95
+70 75 80 85 90
+65 70 75 80 85
+60 65 70 75 80
+55 60 65 70 75
+50 55 60 65 70
+45 50 55 60 65
+40 45 50 55 60
+35 40 45 50 55
+30 35 40 45 50
+25 30 35 40 45
+20 25 30 35 40
+15 20 25 30 35
+10 15 20 25 30
+05 10 15 20 25
+05 10 15 20
+05 10 15
+05 10
+
+14
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+
+15
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+
+16
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+
+17
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+
+18
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+
+19
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+
+20
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+
+21
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+
+BaSIC le jeu de rôle de base Page 4
+
+Un peu de calcul
+Si vous devez confronter des valeurs qui ne se trouvent pas sur la
+table de résistance, utilisez la formule suivante :
+Le pourcentage de chance de base est de 50 % - (carac. passive x
+5) + (carac. active x 5). Ainsi, pour une valeur passive de 53 et
+une valeur active de 45, la chance de base de l'action sera de 50 (53 x 5) + (45 x 5), soit 50 - 265 + 225, soit un malheureux 10 %.
+La plupart du temps, vous aurez aussi vite fait de ramener les
+valeurs en cause à des nombres figurant sur la table, en y
+soustrayant un même nombre. Ainsi, dans l'exemple précédent, il
+suffit de soustraire 40 à 53 et 45, et de faire la confrontation avec
+13 et 5.
+
+Temps de jeu
+Le temps de jeu et le temps réel sont deux notions différentes, qui
+ont peu de rapport l'une avec l'autre. Un personnage peut passer
+plusieurs jours penché sur un grimoire ardu à déchiffrer, mais il
+ne faudra que quelques secondes au meneur de jeu pour résumer
+aux joueurs ce qu'il contient. Le temps de jeu est presque toujours
+une notion fluide. C'est au meneur de jeu, en tant que narrateur,
+de le faire avancer plus ou moins rapidement, en fonction des
+actions des joueurs et des besoins de son scénario. Pour utiliser
+une compétence, il faut de quelques secondes à quelques heures,
+en moyenne quelques minutes. Par exemple, un jet de
+Bibliothèque correspondra à plusieurs heures, alors qu'un jet de
+Cascade correspondra à quelques secondes. Servez-vous de votre
+bon sens pour déterminer la durée de chaque tentative, si cela
+devait devenir important. C'est rarement le cas et, lorsque ça l'est,
+la véritable durée d'un jet de dés est "ce qui arrange le meneur de
+jeu pour que l'histoire reste intéressante et crédible". Il existe
+cependant un cas où le temps est géré de manière beaucoup plus
+rigide : le combat. Pendant un combat, le temps est découpé en
+rounds de quelques secondes, au cours desquels les actions
+s'enchaînent dans un ordre précis. Vous trouverez tous les détails
+au chapitre "Le combat".
+Mouvement et poursuites
+Les personnages (et tous les autres êtres humains) se déplacent en
+moyenne de 8 mètres par round. C'est leur valeur de Mouvement.
+Lorsque que vous mettez en scène un combat entre humains, ne
+vous occupez pas de cette valeur, sauf pour rappeler aux
+personnages qu'ils ne peuvent pas accomplir des actions
+impossibles du genre courir jusqu'à leur voiture, prendre un fusil
+de chasse et revenir, le tout en un round.
+Les animaux et les monstres ont une valeur de Mouvement
+diférente des humains. Elle est là pour vous donner un ordre
+d'idée : un loup court nettement plus vite qu'un humain, alors que
+celui-ci n'a pas trop de mal à distancer un escargot.
+En cas de poursuite (des personnages par un monstre ou le
+contraire), estimez l'avance dont dispose le poursuivi. Soustrayez
+le mouvement du poursuivi de celui du poursuivant. Vous
+obtenez un nombre qui représente la distance en mètres que
+gagne le poursuivant à chaque round (si cette valeur est négative,
+le poursuivant gagne du terrain). La plupart des créatures ne
+peuvent pas courir à fond de train pendant plus que leur CON en
+round.
+Exemple : Un personnage (Mouvement 8) est poursuivi par un
+cavalier (Mouvement du cheval : 12). Il a 20 mètres d'avance.
+Son poursuivant gagne 4 mètres par round, et le rattrapera en 5
+rounds.
+
+Blessures
+Les points de vie mesurent l'état physique du personnage.
+Lorsque ce compteur est à son maximum, le personnage est en
+pleine forme. Lorsqu'il est blessé, il subit des dommages autrement dit il perd des points de vie. Lorsqu'il blesse un
+adversaire, il lui inflige des dommages. Les points de dommages
+sont donc simplement les points de vie perdus. Ainsi, un
+
+personnage qui subit trois points de dommages perd trois points
+de vie.
+- Blessures graves
+Si un personnage perd en une seule fois la moitié du nombre
+actuel de ses points de vie, il est blessé grièvement. Faites un jet
+d'1d100 sous sa CON x 5 pour voir s'il supporte le choc. En cas
+de réussite, le personnage peut continuer à agir normalement. Si
+le jet est raté, le personnage perd connaissance pour un laps de
+temps égal à (21 - CON) en minutes. A son réveil, il sera très
+faible, et le restera jusqu'à ce qu'il ait été soigné.
+- Agonie
+Un personnage qui se trouve à 1, 2 ou 3 points de vie doit faire
+un jet de CON x 3 par round. S'il le rate, il perd connaissance
+pour un laps de temps égal à (21 - CON) en heures. Il est plus
+que temps de le transporter à l'hôpital !
+- Mort
+Un personnage qui tombe à 0 point de vie ou moins meurt
+instantanément. La médecine conventionnelle ne peut plus rien
+pour lui (en revanche, la magie reste une possibilité... parfois). La
+mort est définitive. Il n'y a plus qu'à créer un autre personnage, en
+souhaitant qu'il ait plus de chance que son prédécesseur.
+
+Causes de blessures
+En dehors du combat, qui est suffisamment important pour
+mériter un chapitre entier, de nombreuses autres causes peuvent
+faire perdre des points de vie aux personnages. Voici un petit
+échantillonnage des sources possibles de blessures. Notez que
+cette liste n'est pas limitative, même si elle devrait suffire à vous
+occuper pendant un bon moment (et à vous donner des idées !).
+- Chutes
+Retirez ld6 points de vie par tranche de 3 mètres de chute. Un jet
+d'Athlétisme ou de Cascade réussi permet d'annuler la perte d'1d6
+points. Notez qu'une chute vraiment importante est presque
+toujours mortelle pour un personnage. Mais en tant que meneur
+de jeu, essayez de ne pas en arriver là trop souvent (les jets de
+Chance sont bien utiles pour se raccrocher aux branches à la
+dernière seconde !).
+- Feux
+- Si l'on s'en sert comme arme, une torche enflammée inflige ld6
+points de dommages par round. Un personnage touché par une
+torche doit faire un jet de Chance. S'il le rate, ses vêtements
+prennent feu, et il subit ld6 points de dommages par round (voir
+cette notion dans le chapitre "Le combat"), jusqu'à ce qu'il ait
+réussi un nouveau jet de Chance (pour éteindre les flammes), ou
+qu'il se soit jeté à l'eau, ou qu'on l'ait enroulé dans une
+couverture, etc.
+- Tomber dans un feu de camp inflige ld6 +2 points de
+dommages. En dehors de ça, suivez la même règle que pour les
+torches.
+- Un personnage pris dans un incendie doit réussir un jet de
+Chance par round pour que ses vêtements ne s'enflamment pas.
+S'il le rate, il perd 1d6 points de vie par round. Par ailleurs, il
+risque de mourir asphyxié (voir plus bas).
+- Un personnage qui a perdu plus de la moitié de ses points de vie
+à cause du feu perd également ld3 points d'APParence.
+- Asphyxie/noyade
+Lorsqu'un personnage est exposé à des gaz toxiques, immergé
+dans un liquide, ou étranglé par un individu mal intentionné, on
+commence à découper le temps en rounds. Au premier round, le
+personnage doit réussir un jet de CON x l0 avec ldl00. Au
+deuxième round, le jet est sous CON x 9. Au troisième, de CON
+x 8, et ainsi de suite jusqu'au dixième round, où le jet se fait sous
+CON x l (pour les rounds suivants, on ne descend pas en dessous
+BaSIC le jeu de rôle de base Page 5
+
+de la CON x l). Dès qu'un de ces jets est raté, le personnage subit
+ld6 points de dommages. Il continuera à perdre 1d6 points de vie
+par round tant qu'il ne sera pas sorti de la zone dangereuse ou
+secouru.
+- Explosions
+Dans les univers où ils existent, les explosifs infligent des
+dommages dans un certain rayon. De nos jours, une bombe
+artisanale fera 10d6 points de dommages là où elle explose, 9d6
+de dommages dans un rayon de 3 mètres autour d'elle, 8d6 de
+dommages entre 3 et 6 mètres, 7d6 entre 6 et 9 mètres, et ainsi de
+suite. 10d6 de dommages sont une bonne base de travail, mais ce
+chiffre change selon la nature exacte de la bombe. Un bricolage
+artisanal avec de la poudre noire ne fera que 5d6 de dommages au
+point d'explosion; en revanche, un missile ou un obus moderne
+peut infliger jusqu'à 20d6 points de dommages à l'endroit où il
+frappe.
+- Poison
+Les poisons en tout genre sont définis par une seule
+caractéristique : leur VIRulence, qui est généralement comprise
+entre 5 et 20. Si un personnage est en contact avec un poison
+(parce qu'il a été mordu par une vipère, qu'il a respiré des gaz
+toxiques ou mangé un plat assaisonné par quelqu'un qui lui veut
+du mal), opposez la VIR du produit à la CON du personnage sur
+la table de résistance. La VIR est la caractéristique active et, si
+elle triomphe de la CON, le personnage perd un nombre de points
+de vie égal à la VIR du poison. Si le personnage résiste, il perd
+quand même des points de vie (la moitié de la VIR, en général,
+parfois moins). Notez que la plupart des poisons n'agissent pas
+instantanément. Leur effet se déclare au bout d'ld6 rounds
+minimum, et les plus insidieux mettent des heures. Un jet réussi
+de Médecine (ou son équivalent, selon les univers) permet de
+diviser les dommages par deux, ou les supprimer complètement
+si le soigneur fait une réussite critique.
+Quelques exemples de VIRulences: arsenic 15, curare 20, venin
+de cobra 16, champignons vénéneux 6 à 15, somnifères modernes
+13 (n'infligent pas de dommages, mais plongent dans un profond
+sommeil pour 2d6 heures).Maladie
+Les règles sur les maladies sont très proches de celles sur les
+poisons. Les maladies ont également une VIRulence, et
+s'attaquent également à la CONstitution. La principale différence
+est le rythme auquel elles infligent des dommages. Un
+personnage malade perd ld3 points de vie par jour, à concurrence
+de la VIRulence de la maladie. S'il a survécu, son organisme a
+triomphé des microbes, et il commence à récupérer les points de
+vie perdus. La compétence Secourisme n'a aucune incidence
+sur les maladies, pas plus que sur les empoisonnements.
+Quelques exemples de VIRulence: rhume 3 à 5, grippe 4 à 8,
+pneumonie 6 à 10, choléra 12 à 15, peste 14 à 20.
+
+Guérison
+Bien entendu, un personnage blessé finira par guérir. Ce n'est
+qu'une question de temps... Livré à lui-même, un personnage
+récupère 1d3 points de vie par semaine de temps de jeu. S'il reste
+au lit et ne se livre à aucune activité fatigante, il récupère 1d6
+points de vie par semaine. Dans un hôpital moderne, ce chiffre
+monte à 2d3 points de vie par semaine. Les effets des
+compétences Secourisme et Médecine sont développés dans le
+chapitre sur les compétences. La seule règle importante sur la
+guérison est la suivante: en aucune circonstance il n'est possible
+de dépasser son total initial de points de vie.
+
+LES COMPETENCES
+Les compétences représentent les domaines de connaissance que
+le personnage a appris. Elles peuvent varier d'un univers de jeu à
+l'autre et sont sujettes à amélioration. Dans la liste ci-dessous, la
+valeur entre parenthèses, à côté du nom de la compétence,
+correspond à son pourcentage de base, autrement dit la valeur
+"sous" laquelle vous faites un jet de dés si vous n'avez dépensé
+aucun point pour cette compétence lors de la création de
+personnage. Un personnage qui n'a rien investi en Athlétisme, par
+exemple, a quand même 15 % de chances de réussir une action
+physique simple : effectuer un rétablissement, escalader un arbre,
+sauter un fossé... Les compétences dont le nom est suivi d'une
+astérisque (*) ont une particularité : c'est le meneur de jeu qui
+lance les dés à la place du joueur, de manière à ce que ce dernier
+ne voie pas le résultat. Par exemple, un personnage cherche un
+indice dans une maison cambriolée. Le MJ fait le jet de Chercher.
+Réussi, il annonce au personnage qu'il trouve quelque chose; raté,
+il annonce que le personnage n'a rien trouvé (ce qui ne veut pas
+dire qu'il n'y avait rien à trouver!).
+
+Liste universelle
+Ces compétences peuvent être utilisées dans n'importe quel
+univers de jeu, car elles sont universelles.
+Art/Artisanat (05 %)
+Il s'agit en fait d'une famille de compétences, permettant de
+fabriquer des objets de première nécessité et/ou des oeuvres d'art.
+Quelques exemples: charpenterie, maçonnerie, poterie, sculpture,
+archerie, forge, cordonnerie... Une maladresse produit un objet
+qui semble solide mais se brisera à la première utilisation; un
+succès critique donne un objet d'une qualité exceptionnelle.
+Athlétisme (15 %)
+Cette compétence regroupe toutes les activités physiques: course,
+nage, saut, escalade. Ne l'utilisez que lorsque les circonstances s'y
+prêtent. Inutile de lancer les dés pour faire son jogging matinal.
+En revanche, lorsqu'un personnage est poursuivi par un tueur
+brandissant une tronçonneuse, il peut être utile de savoir s'il court
+vite...
+Bricolage (10 %)
+Le contenu de cette compétence change selon les univers de jeu.
+Dans un monde médiéval, elle recouvre des connaissances de
+base en menuiserie et en travail du métal. Dans un monde
+contemporain, des notions en électricité viennent s'y ajouter. Elle
+permet de réparer des mécanismes simples. Pour certaines tâches,
+il faudra avoir un atelier et du temps mais, en général, quelques
+minutes et une boîte à outils suffisent.
+Cascade (10 %)
+Cette compétence combine l'agilité et la souplesse du personnage.
+Elle recouvre tout ce qui est acrobatie, jonglage ou marcher sur
+un fil. C'est, par exemple, l'art d'amortir ses chutes, de se déplacer
+sur un toit glissant par une nuit sans lune, de sauter dans un
+camion en marche ou de jongler avec des torches enflammées.
+Chercher* (20 %)
+On utilise Chercher pour fouiller un endroit. Un jet réussi permet
+de trouver un détail, un indice... en supposant que le scénario
+précise qu'il y ait quelque chose à trouver, bien entendu !
+Culture générale (20 %)
+Cette compétence simule une connaissance superficielle d'un
+grand nombre de sujets historiques, culturels ou scientifiques.
+Toutefois, les informations qu'elle livre ne sont jamais complètes.
+Elle permet, par exemple, de savoir
+que l'empire carolingien a été partagé entre les petits-fils de
+Charlemagne en 843, à Verdun. En revanche, le nom des
+BaSIC le jeu de rôle de base Page 6
+
+bénéficiaires et le détail des territoires qu'ils ont récupérés restent
+dans le vague...
+Commerce (20 %)
+La version médiévale permet de savoir où acheter et vendre
+quelles marchandises, et de marchander de manière efficace. La
+version moderne comporte, en plus, une certaine connaissance
+des flux économiques. Lorsqu'elle est utilisée pour marchander,
+le MJ est invité à "jouer" la scène de manière théâtrale, puis à
+assortir le jet de dé d'un bonus ou d'un malus en fonction de la
+performance du joueur.
+Connaissance de la rue (10 %)
+Cette compétence permet de savoir où trouver des contacts:
+indics, tenanciers de bars louches, fabricants de faux papiers, etc.
+Elle donne aussi une idée des rapports entre les différents gangs,
+leurs territoires, leurs chefs...
+Déguisement (10 %)
+Grâce à Déguisement, un personnage peut modifier son
+apparence. Elle a généralement deux utilités : passer inaperçu
+dans une foule, ou se "faire la tête"d'un individu précis. Dans le
+second cas, le MJ peut imposer des malus aux je de dés, si la
+tentative est vraiment trop improbable (un petit japonais qui
+essaye de se déguiser en gros irlandais rouquin aura facilement
+50 % de malus, si le MJ ne décide pas tout simplement qu'il n'a
+aucune chance d'y parvenir).
+Discrétion (15 %)
+Demandez un jet de Discrétion lorsque les personnages ont
+besoin de se déplacer silencieusement (par exemple pour passer
+non loi d'une sentinelle). Si le jet est réussi, tout va bien. S'il est
+manqué, ils ont fait du bruit ou projeté une ombre voyante contre
+le mur...
+Droit, administration, usages (10 %)
+Cette compétence est un mélange de politesse, de questions
+posées aux bonnes personnes et de connaissances livresques. Elle
+a plusieurs utilités. Elle permet de connaître les lois ou les usages
+en vigueur dans la région où se trouve le personnage; de se
+repérer dans la bureaucratie locale; et de ne pas se faire
+remarquer comme "étranger" lorsqu'il est loin de chez lui.
+Équitation (20 %)
+Cette compétence permet d'utiliser les animaux de monte - les
+chevaux dans la plupart des uni vers, mais parfois d'autres
+créatures. En temps normal, ce n'est pas difficile. Ne demandez
+un jet d'Équitation que lors des poursuites et autres activité
+sortant de l'ordinaire, pour vous assurer qui les personnages
+restent en selle. L'Équitation recouvre aussi les soins routiniers à
+donner aux bêtes.
+Esquiver (25 %)
+L'Esquive est une compétence précieuse en combat. Son
+utilisation est détaillée dans la section "le combat".
+Langue natale (80 %)
+Dans les univers où l'instruction est obligatoire, cette compétence
+recouvre la lecture, l'écriture et la communication orale. Dans un
+monde médiéval-fantastique, la lecture et l'écriture dépendent
+d'une autre compétence. Ne demandez un jet de Langue natale
+que dans des circonstances vraiment exceptionnelles : grimoire à
+déchiffrer, code à percer, nécessité de s'exprimer de manière
+châtiée...
+Langue étrangère (00 %)
+Chaque langue étrangère est une compétence distincte, et doit
+être achetée séparément (par exemple, pour connaître l'anglais et
+l'arabe il faut investir des points dans Langue étrangère - Anglais
+et Langue étrangère - Arabe). Comme Langue natale, Langue
+étrangère permet de parler, de lire et d'écrire (ou seulement de
+
+parler dans un univers médiéval-fantastique). Un score de 10 %
+indique un touriste. A 30 %, on peut soutenir une conversation
+courante, avec un accent abominable. A 50 %, on comprend
+l'argot et à 80 %, on parle sans accent.
+Leadership (15 %)
+Leadership permet de commander un groupe, de l'organiser, de le
+motiver, de choisir les individus les plus adaptés à une tâche, de
+veiller aux détails d'intendance. Selon les besoins et les univers,
+elle peut s'appliquer à une armée ou à une entreprise... Elle ne
+fonctionne que sur les personnages non-joueurs. Grâce à elle, les
+personnages seront sûrs que leurs plans de bataille seront suivis
+par leurs hommes. En revanche, elle ne garantit pas que les plans
+soient bons...
+Navigation (00 %)
+La Navigation est l'art de s'orienter sur l'eau, de manoeuvrer un
+navire (petit ou gros) et de donner des ordres à l'équipage.
+Orientation* (15 %)
+L'Orientation sert à ne pas se perdre dans un environnement peu
+familier. C'est un mélange d'inné (sens de l'orientation, savoir lire
+- et éventuellement dessiner - des cartes) et d'acquis (savoir se
+repérer aux étoiles). Un groupe de personnages évoluant dans une
+jungle épaisse, ou dans un désert, devra faire régulièrement des
+jets d'Orientation pour ne pas aller dans une mauvaise direction.
+Persuasion (15 %)
+Cette compétence sert à convaincre autrui du bien-fondé de ses
+arguments. Elle permet de simuler des discussions qui seraient
+trop longues à jouer vraiment, ou peu intéressantes. C'est
+également elle qu'il faut utiliser si les personnages tentent de
+plaider leur cause devant un tribunal, de baratiner un garde pour
+qu'il les laisse passer, etc.
+Note au MJ : Attention, cette compétence doit être utilisée avec
+doigté ! Si vous n'imposez pas de garde-fous, les joueurs peuvent
+aisément en abuser. Notez qu'elle ne fonctionne pas sur les autres
+personnages-joueurs. Par ailleurs, ses effets sont limités. on peut
+convaincre un aubergiste de baisser ses tarifs, un groupe de
+personnes de s'intéresser aux personnages pendant quelques
+minutes ou un quidam d'acheter des brosses dont il n'a pas
+besoin. En revanche, on ne peut pas Persuader le grand méchant
+du scénario de renoncer à ses projets. Utilisez votre bon sens, et
+n'hésitez pas à vous montrer ferme si les joueurs abusent.
+Sagacité (20 %)
+Cette compétence permet au personnage qui l'utilise d'avoir une
+idée de l'humeur et des motivations d'un personnage non-joueur.
+Le meneur de jeu n'est pas obligé d'être très précis, mais il doit
+donner une indication ("il a peur" suffit. Inutile de dire "il a peur
+parce qu'il craint que vous ne découvriez qu'il est l'assassin").
+Secourisme (30 %)
+Grâce à Secourisme, on peut ranimer les personnages
+inconscients, et surtout soigner les blessés. Un jet réussi de
+Secourisme permet de faire récupérer 1d6 points de vie (1d6+2,
+en cas de succès critique). En cas de maladresse, en revanche, le
+blessé perd ld3 points de vie de plus. Si le jet est réussi une fois,
+on ne peut pas le retenter afin de parfaire le résultat. S'il est raté,
+le soigneur peut refaire une tentative le lendemain.
+Survie (10 %)
+Faites faire des jets de Survie lorsqu'un personnage se trouve
+dans un environnement hostile. Cette compétence permet de
+chasser, de construire un abri, de trouver un point d'eau, de savoir
+quelles plantes sont comestibles, etc. Chaque jet réussi fournit
+grosso modo une journée de vivres et d'eau potable, et une nuit de
+repos. Les conséquences d'un échec, ou pire d'une maladresse,
+peuvent être dramatiques.
+
+BaSIC le jeu de rôle de base Page 7
+
+Note au MJ : Si vous le désirez, la Survie peut être divisée en
+plusieurs compétences spécialisées, comme la Survie en forêt, la
+Survie dans le désert, la Survie en milieu polaire, etc.
+Vigilance (20 %)
+Utilisez cette compétence lorsqu'un personnage file un suspect,
+essaye d'écouter une conversation ou de remarquer un indice,
+monte la garde, est sur le point de tomber dans une embuscade...
+C'est une combinaison d'attention, d'ouïe aiguisée et de sixième
+sens.
+
+Liste spécifique
+(fantastique-contemporain)
+Bibliothèque (25 %)
+Cette compétence permet d'utiliser une bibliothèque publique (ou
+les archives d'un Journal), de se repérer dans son catalogue, de
+retrouver les livres sur les rayons et d'y découvrir les
+informations pertinentes en les parcourant rapidement. Un jet
+équivaut à quatre heures de recherche et permet de découvrir une
+information. Bien sûr, s'il n'y a rien à trouver, le MJ n'est pas
+obligé de sortir quelque chose de son chapeau... L'expérience le
+montre : Bibliothèque est l'une des compétences les plus utiles
+dans les scénarios d'enquête.
+Comptabilité (00 % )
+La compétence Comptabilité permet de se repérer dans les
+comptes d'un particulier ou d'une entreprise, de voir à quoi il
+dépense son argent et, éventuellement, de repérer des bizarreries
+("Tiens, notre gars possède un entrepôt sur les docks, dont
+personne ne nous a jamais parlé. Qu'est-ce qu'il y cache?").
+Conduire… (20 %)
+La compétence Conduire est, en fait, triple. Un personnage peut
+savoir conduire une voiture, une moto ou, très
+exceptionnellement, un "engin lourd" (camion, bulldozer, char
+d'assaut...). Choisissez le véhicule qui vous intéresse, et notez-le
+dans l'espace libre à côté de Conduire. Dans des circonstances
+normales, il n'est pas nécessaire de faire de jet de dés, mais cela
+devient indispensable dans des conditions extrêmes (poursuite,
+pneu qui éclate ...).
+Histoire et géographie (10 %)
+Cette compétence fournit des informations dans ces deux
+domaines. Contrairement à celles apportées par la Culture
+générale, ces données sont généralement exactes et précises.
+Informatique (20 %)
+De nos jours, n'importe qui peut allumer un ordinateur et
+apprendre à se servir d'un logiciel. La compétence Informatique
+n'entre en jeu que si le personnage veut écrire un programme,
+créer ou détruire des virus, utiliser sa machine pour se promener
+sur les réseaux mondiaux ou pirater des données à distance. Le
+meneur de jeu est invité à se souvenir que toutes les informations
+du monde ne se trouvent pas sur Internet, que tous les ordinateurs
+du monde ne sont pas raccordés à un réseau, et que ceux qui le
+sont disposent généralement de protections contre les intrus.
+Autrement dit, on ne peut pas détourner des millions de dollars
+avec un PC et un jet d'Informatique...
+Note au MJ : N'hésitez pas à fixer des malus importants aux
+actions les plus "improbables" des personnages, ou à décider
+purement et simplement qu'elles sont irréalisables.
+Médecine (00 %)
+Un jet réussi dans cette compétence permet de redonner ld6
+points de vie à un blessé, ou de diminuer la VIRulence d'une
+maladie ou d'un poison (voir le chapitre sur les dommages).
+Comme pour Secourisme, on ne peut faire qu'un seul jet réussi.
+S'il est raté, il est possible de réessayer le lendemain. Cette
+
+compétence recouvre également l'aspect médecine légale:
+procéder à une autopsie, à des examens de sang et de tissus...
+Paranormal (20 %)
+Cette compétence regroupe des informations sur une foule de
+sujets, depuis des "contacts" avec les extraterrestres jusqu'au
+monstre du loch Ness, en passant par l'histoire des principales
+sectes en activité à notre époque. C'est à la fois une connaissance
+livresque de ces sujets, et une mesure de l'expérience d'un
+personnage dans ce domaine. Un jet réussi ne veut pas forcément
+dire que l'on identifie la cause d'un phénomène ou les
+caractéristiques d'une entité. Il signifie plutôt que l'on relie le cas
+étudié à d'autres éléments, ou que l'on connaît la signification
+d'un mot ou l'origine d'un objet. Exemple : "Tu te souviens d'un
+cas de poltergeist en Bavière en 1987, où la victime portait
+exactement les traces trouvées sur ce cadavre", "Tu as déjà
+entendu
+parler du projet STIX: c'était une série d'expériences sur l'au-delà
+menées par les Anglais dans les années 92-95", "Ce pentacle est
+un truc bidon, copié dans un bouquin pour gogos".
+Note au MJ : Vous pouvez attribuer automatiquement 1 ou 2 %
+de plus dans cette compétence aux personnages à la fin d'un
+scénario tournant autour du paranormal.
+Piloter… (00 %)
+Comme la conduite, le pilotage est en fait un groupe de
+compétences. Un personnage peut savoir piloter un avion de
+tourisme ou un hélicoptère, plus rarement un chasseur de combat
+ou un long-courrier. Comme toujours, ne faites faire un jet de dés
+que dans des circonstances exceptionnelles. Cette compétence à
+40 % correspond à une licence de vol accordée par les autorités.
+Avec un score inférieur, le personnage suivra peut-être des cours,
+mais il n'aura certainement pas la permission de voler seul.
+Plongée (00 %)
+Cette compétence permet de savoir se débrouiller avec des
+bouteilles, de connaître les paliers de décompression à respecter
+pour les plongées profondes, de savoir quels gestes faire en cas
+de pépin...
+Renseignements (20 %)
+Cette compétence concerne tout ce qui a trait au monde de
+l'espionnage et du crime organisé. Exemple : identifier un
+membre des Yakusas à certains tatouages, reconnaître un tueur à
+gages célèbre, connaître le nom du chef des services secrets
+albanais...
+Sabotage (05 %)
+Le Sabotage permet de manier des explosifs, fabriquer des
+cocktails Molotov ou des bombes artisanales, de les poser sans
+sauter avec et d'identifier le matériel utilisé par l'ennemi ("Ce
+type de plastic n'est fabriqué que par une usine en Ukraine.
+Contactons-la, elle a sûrement la liste de ses clients !").
+Science appliquée (00 %)
+Permet d'identifier et d'utiliser du matériel de haute technologie,
+et de trouver les solutions possibles à une question technique
+("Tu penses qu'on pourrait neutraliser l'énergie dégagée par cet
+objet en le refroidissant près du zéro absolu"). Cette compétence
+ne donne pas les moyens de fabriquer des objets de haute
+technologie, qui sont plutôt du ressort des personnages nonjoueurs disposant de beaucoup de temps et d'un laboratoire.
+Science pure (00 %)
+Cette compétence regroupe la plupart des sciences "dures"
+comme l'astrophysique, la génétique, la physique théorique... Elle
+n'est utile que dans des cas extrêmement pointus, et est plutôt du
+ressort d'experts PNJ.
+
+BaSIC le jeu de rôle de base Page 8
+
+Sciences sociales (00 %)
+Cette compétence regroupe tout ce qui concerne les sciences
+humaines, de l'anthropologie à la sociologie en passant par
+l'ethnologie et la criminologie. Elle permet de prédire les
+comportements d'un groupe, de connaître les raisons derrière des
+coutumes apparemment absurdes et, parfois, de faire des
+déductions à partir d'une bribe d'information. Exemple :
+comprendre que les méthodes d'un tueur sont inspirées des rites
+sacrificiels aztèques, ou reconstituer son profil psychologique à
+partir de ses crimes.
+Serrurerie (15 %)
+C'est l'art et la manière d'ouvrir une serrure sans laisser de traces.
+Cette compétence englobe la fabrication de clés, le perçage de
+coffres forts et pour les serrures ultra-modernes, des
+connaissances de base en électronique. Les systèmes de sécurité
+peuvent être cassés avec cette compétence.
+
+Liste spécifique
+(médieval-fantastique)
+Alchimie (00 %)
+Cette compétence correspond à une connaissance primitive de la
+chimie, de la physique et de l'astrologie. Elle ne permet pas de
+faire des découvertes révolutionnaires, juste de reproduire des
+découvertes déjà bien connues par les "scientifiques" locaux.
+Autrement dit, à moins que la poudre n'ait déjà été inventée dans
+votre univers de jeu, un personnage ne saura pas en fabriquer.
+Art de la guerre (00 %)
+Cette compétence permet de dresser un plan de bataille, d'utiliser
+des machines de guerre (catapultes, balistes). Combinée avec
+Leadership, elle permet de diriger une armée et de la mener à la
+victoire... si les jets de dés sont réussis.
+Civilisations anciennes (10 %)
+Cette compétence donne des informations sur les peuples qui ont
+précédé les cultures actuelles. Selon les besoins du meneur de
+jeu, un jet de Civilisations anciennes peut donner des
+informations très vagues, ou au contraire extrêmement précises.
+Conduite d'attelage (15 %)
+L'art et la manière d'atteler un chariot, un carrosse ou tout autre
+véhicule à traction animale, et de le conduire. Ne demandez de
+jets que dans des circonstances exceptionnelles (hors piste,
+poursuite, animaux emballés...).
+
+Démolition/sape (00 %)
+Démolition est l'art et la manière de creuser des galeries sous un
+rempart pour le faire s'effondrer; de savoir où attaquer un
+bâtiment pour qu'il s'effondre rapidement, où braquer des
+machines de guerre pour qu'elles aient une efficacité maximale.
+Cette compétence sert peu, sauf dans les scénarios axés
+"campagne militaire".
+Dressage (15 %)
+Le Dressage permet de mater un animal sauvage ou de
+l'apprivoiser. Son utilisation la plus fréquente est de dresser des
+montures, mais il est tout à fait possible de l'appliquer à d'autres
+animaux (oiseaux, singes, chiens ... ). Notez que le dressage est
+un processus qui prend du temps. On ne peut pas transformer un
+singe en espion furtif en l'espace de quelques heures. Il faut des
+mois d'efforts, beaucoup de patience (et des kilos de bananes !).
+Héraldique (00 %)
+Cette compétence permet de reconnaître les blasons des familles
+nobles, des guildes marchandes, des ordres chevaleresques ou des
+groupes de magiciens...
+Légendes* (05 %)
+La possession de cette compétence indique que le personnage
+connaît de nombreuses légendes et sait les raconter agréablement.
+La plupart sont de simples contes, mais certaines contiennent un
+fond de vérité... Un jet de Légendes réussi permet de se souvenir
+d'un fait important pour le scénario ("et dans les histoires, les
+minotaures ne sont jamais très intelligents. Si c'est vrai, on
+devrait pouvoir trouver une ruse pour se débarrasser de celui qui
+a ravagé le village"). Une maladresse indique que le "fait"
+remémoré est faux, mais le personnage croit dur comme fer qu'il
+est vrai ("les minotaures ont une peur mortelle de la couleur
+bleue. On va tous se peindre en bleu et lui flanquer la trouille de
+sa vie").
+Lire et écrire (00 %)
+Dans les mondes où la plupart des gens n'ont pas accès à
+l'instruction, la lecture et l'écriture sont une compétence à part
+entière. A moins que le personnage ait un score très faible (moins
+de 30%), ne demandez de jets que pour les textes importants, par
+exemple le grimoire qui contient le sort indispensable à la
+résolution du scénario...
+Potions et herbes (10 %)
+En dehors de son nom, Potions et herbes est exactement identique
+à Médecine (voir plus haut).
+
+Connaissance de la nature (10 %)
+Cette compétence regroupe des connaissances de base sur les
+animaux, les plantes, la météo... Elle permet de prévoir le
+comportement d'un animal, d'avoir une idée du temps du jour, de
+savoir si un champignon est comestible ou pas... Notez qu'elle ne
+se substitue pas à la compétence Survie. Ce n'est pas parce qu'on
+sait tout des moeurs du lapin de garenne que l'on sait poser un
+collet!
+Connaissance des peuples (20 %)
+La Connaissance des peuples donne des informations plus ou
+moins précises sur "l'étranger", les royaumes proches ou lointains
+et les coutumes de leurs habitants. Notez qu'elles ne sont pas
+toujours justes ! Les Européens du Moyen Âge étaient persuadés
+que les musulmans adoraient un diable nommé Appolyon, et il
+faillait être très érudit (ou y être allé voir) pour savoir qu'un
+certain "Mahom" avait écrit leur livre sacré.
+Connaissance des religions (10 %)
+Comme la précédente, cette compétence fournit des informations,
+mais sur un domaine plus restreint.
+
+BaSIC le jeu de rôle de base Page 9
+
+LE COMBAT
+Les règles sur le combat peuvent paraître compliquées. Elles
+reposent sur des principes simples, mais à la première lecture,
+vous risquez d'être noyé sous le flot de petits détails qui les
+rendent plus réalistes, mais moins intelligibles. Ne vous
+découragez pas, et relisez-les deux ou trois fois, en mettant en
+scène un simulacre de combat si besoin est. Une fois que vous
+aurez compris la structure du round, l'initiative et, pour les armes
+blanches, la notion de parade, vous aurez l'essentiel. Le reste
+viendra petit à petit, sur le tas, au fur et à mesure de vos besoins.
+
+Ordre des attaques
+A l'intérieur du round, on distingue trois passes, qui se succèdent
+toujours dans le même ordre. Parfois, personne ne pourra agir au
+cours d'une passe. Dans ce cas, ignorez-la et passez à la suivante.
+- Première passe : les personnages (PJ et PNJ) qui ont des armes
+à feu ou des armes à projectiles prêtes à servir agissent en
+premier, par ordre décroissant d'initiative. Appuyer sur une
+gâchette ou lâcher la corde d'un arc prend nettement moins
+longtemps que de donner un coup de couteau...
+- Deuxième passe : une fois que ces premiers tirs ont eu lieu, on
+prend les personnages qui n'ont pas encore agi, toujours par ordre
+décroissant d'initiative. Ils peuvent attaquer, parer, se déplacer...
+Procédez aux jets de compétence appropriés au fur et à mesure.
+- Troisième passe : les personnages qui ont des armes à feu
+pouvant tirer deux fois par round ont droit à leur deuxième tir,
+toujours par ordre d'initiative décroissante. Les personnages qui
+devaient dégainer leur arme ou encocher une flèche agissent à ce
+moment (dans le cas des armes à feu, ils perdent leur second tir).
+Cette troisième passe terminée, le round s'achève.
+
+Esquiver et parer
+En plus de l'attaque et du déplacement, les personnages ont deux
+autres possibilités: l'esquive et la parade.
+- L'Esquive est une compétence à part entière. Lors des
+déclarations d'intention, un personnage qui désire esquiver une
+attaque l'annonce, et précise quel adversaire il souhaite esquiver.
+Un personnage qui esquive ne peut pas attaquer. En revanche, il
+peut parer l'attaque. L'Esquive peut également servir à rompre le
+combat: dans ce cas, le personnage fait un jet d'Esquive au début
+du round et, s'il le réussit, on considère qu'il s'est désengagé et
+n'est plus en danger (sauf, bien sûr, d'éventuels tireurs).
+- La parade, quant à elle, n'est pas vraiment une compétence,
+c'est seulement une autre manière d'utiliser les compétences
+d'attaque. Lors d'un corps à corps, un personnage qui est la cible
+d'une attaque peut parer avec son arme (épée, bâton ... ). Il fait un
+jet de compétence, comme pour une attaque. S'il est réussi, le
+coup est arrêté par l'arme, et le personnage ne subit pas de
+dommages. Il est possible de parer le coup d'un adversaire plus
+rapide que soi, puis d'attaquer le moment venu, ou le contraire.
+En revanche, on ne peut pas parer plusieurs fois par round.
+Attention : on ne peut ni parer, ni esquiver les balles.
+
+Round
+Le round sert à découper le combat de manière à ce qu'il soit
+jouable. C'est une unité de temps au cours de laquelle tous les
+participants du combat ont l'occasion d'agir au moins une fois. En
+temps de jeu sa durée est variable et correspond à peu près à une
+dizaine de secondes. En temps réel, il dure généralement
+quelques minutes. Chaque round se divise en plusieurs étapes :
+1 - Détermination de l'initiative
+2 - Déclaration d'intention des joueurs et des PNJ
+3 - Résolution des actions, selon les règles détaillées au
+paragraphe "Ordre des attaques".
+Lorsque tout le monde a agi, le round suivant peut commencer, et
+l'on revient à l'étape 1.
+
+Initiative
+Au début de chaque round, chaque participant au combat lance
+ld6 et y ajoute la valeur de sa DEXtérité, puis annonce le résultat.
+Celui qui a obtenu le total le plus élevé agit en premier, puis c'est
+le tour du deuxième, du troisième, etc, jusqu'à celui qui a obtenu
+le plus mauvais total. Si deux joueurs ont obtenu le même total,
+ils lancent ld6 pour se départager. Celui qui fait le meilleur score
+agit avant l'autre. Si un joueur et un personnage contrôlé par le
+meneur de jeu font le même total, c'est le joueur qui a l'initiative.
+
+Déclaration d'intention
+Le meneur de jeu procède à un tour de table, demandant à chaque
+joueur ce qu'il compte faire pendant ce round.
+Les actions possibles sont nombreuses : attaquer, parer, esquiver,
+se déplacer...
+Inutile de donner des réponses trop détaillées. Il suffit d'annoncer
+quelque chose du genre "je tape sur le gros PNJ tatoué" ou "je me
+cache sous la table". En fait, se lancer dans des récits détaillés
+comme "je tape sur le gros tatoué et alors je le touche à la tête et
+je l'assomme et quand on le réveille il nous dit tout et on résout le
+scénario" fait perdre du temps à tout le monde car, de toute façon,
+ça ne se passera pas comme ça…
+De son côté, le meneur de jeu annonce aux joueurs ce que
+semblent vouloir faire les personnages qu'il contrôle. Là encore,
+il n'y a pas besoin d'être très précis. Dire "le magicien retrousse
+ses manches et commence à gesticuler" est préférable à "le
+magicien se prépare à lancer un sort de Boule de feu géante qui
+va tous vous carboniser". Les personnages seront peut-être très
+content que le magicien les laisse tranquille ce round-ci et ils se
+concentreront sur d'autres personnages non-joueurs… Au round
+suivant ils le regretteront amèrement, mais ils n'ont aucun moyen
+de le savoir.
+
+Blesser l'adversaire
+Il suffit de réussir un jet sous la compétence qui régit l'arme
+utilisée. Si l'adversaire n'esquive pas ou rate sa parade, il est
+blessé et perd des points de vie. Pour savoir combien, on lance un
+certain nombre de dés, en fonction de l'arme. Chaque arme fait un
+certain nombre de dés de dommages (voir la table des armes). S'il
+s'agit d'une arme de corps à corps, on y ajoute le bonus aux
+dommages de l'attaquant. Bien sûr, s'il s'agit d'une arme à
+distance ce bonus ne joue pas. On lance les dés pour calculer le
+nombre de points de dommages infligés, on y soustrait
+l'éventuelle protection de l'adversaire, et on retire ce qui reste de
+ses points de vie.
+
+Protections
+Un combattant désireux de vivre vieux ne se lance pas dans la
+mêlée sans protections. Celles-ci sont de trois types: les armures,
+les boucliers et le terrain lui-même.
+- Les armures. La nature des armures change d'un univers à
+l'autre (cotte de mailles, gilet pare-balles... ), mais leur fonction
+ne varie pas : elles absorbent une partie des dommages infligés
+par une attaque. Soustrayez le chiffre indiqué dans la table des
+armures aux points de dommages infligés au personnage. Seul
+l'éventuel excédent lui est infligé. Cette protection est efficace à
+chaque attaque et ne "s'use" jamais.
+- Les boucliers. Ils apportent un bonus au jet de parade, au prix
+d'un malus équivalent au jet d'attaque. Un grand écu ajuste le jet
+de compétence de +/-20 %, un petit bouclier rond (ou un
+couvercle de poubelle) se contente de le modifier de +/- 10 %.
+- Le terrain. Un tireur qui s'abrite derrière un arbre, par exemple,
+est plus difficile à toucher qu'un homme qui se trouve à
+découvert. Le meneur de jeu peut donner un malus à la
+compétence (voir Bonus et malus, plus haut).
+
+BaSIC le jeu de rôle de base Page 10
+
+Réussite critique et maladresse en combat
+Pour presque toutes les compétences de combat, un résultat
+compris entre 01 et 05 signifie que les dommages infligés par
+l'attaque sont plus importants que prévu. Lancez deux fois les dés
+de dommages de l'arme, additionnez les résultats obtenus et
+soustrayez le résultat aux points de vie de la cible. De plus, les
+attaques portées avec des armes tranchantes (épée, dague, etc.) ou
+des armes à feu arrivent à trouver le défaut de l'armure. La
+protection de cette dernière est annulée. Les conséquences d'une
+maladresse sont potentiellement plus variées. En voici une petite
+liste non limitative :
+- Bagarre : la cible s'écarte à la dernière seconde. Le personnage
+fonce dans le mur et se blesse.
+- Toutes les compétences d'armes : l'arme se brise, elle reste
+coincée, le personnage perd l'équilibre (et ne pourra pas attaquer
+au prochain round), l'attaque touche un ami au lieu de la cible...
+- Compétences d'armes à feu : l'arme s'enraye, elle est
+inutilisable pour ld6 rounds, un ricochet touche un ami au lieu de
+la cible (dommages divisés par deux), les détonations attirent
+l'attention du voisinage qui prévient la police...
+
+Combat au corps à corps
+On peut distinguer deux cas : celui où les combattants ne sont pas
+armés, et celui où ils le sont.
+Combat à mains nues
+Le combat à mains nues dépend de deux compétences: Bagarre et
+Lutte.
+- Bagarre. La Bagarre consiste à cogner à coups de pied, de tête
+ou de poing, de manière instinctive. N'importe qui peut le faire
+avec des chances de succès raisonnables, mais ce n'est pas une
+attaque très efficace. Comme vous pouvez le voir sur la feuille de
+personnage, elle n'inflige qu'1d3 points de dommages (plus, bien
+sûr, le bonus aux dommages de l'attaquant). On ne peut utiliser
+cette compétence que pour parer une attaque de Bagarre, pour des
+raisons évidentes: essayez de parer un coup de hache avec votre
+main, vous m'en direz des nouvelles !
+Pourcentage de base: 50 %.
+Rappel : Le pourcentage de base est le score d'un individu non
+entraîné (plus de précisions au chapitre Les compétences).
+- Lutte. Les personnages qui ont investi dans la compétence
+Lutte sont mieux entraînés que les simples bagarreurs, et savent
+comment être efficaces. Si, au cours d'un combat, le personnage
+réussit un jet de Bagarre qui est également inférieur à son score
+en Lutte, il inflige 2d3 points de dommages. La compétence
+Lutte a d'autres intérêts. Utilisée seule, elle permet d'immobiliser
+un adversaire (grâce à un jet FOR/FOR sur la table de résistance,
+à renouveler à chaque round); de le jeter à terre (réussite
+automatique); de l'étrangler (appliquez les règles sur l'asphyxie.
+La victime peut faire un jet de FOR/FOR à chaque round pour se
+dégager).
+Pourcentage de base: 20 %.
+Combat aux armes blanches
+Le combat au corps à corps dépend de deux compétences : armes
+de mêlée et armes d'hast. Toutes deux peuvent servir à parer.
+- Armes de mêlée recouvre la plupart des armes tranchantes ou
+contondantes qui s'utilisent à une main. Cela va du gourdin à
+l'épée longue en passant par la dague ou la hache.
+Pourcentage de base: 25%.
+Le fouet est un cas particulier, même s'il dépend aussi de cette
+compétence. Une attaque réussie avec un fouet n'inflige qu'1d3
+points de dommages, mais la mèche du fouet est enroulée autour
+de l'adversaire. Il est possible de le faire tomber en réussissant un
+jet de FOR/TAI ou de le désarmer en réussissant un jet de DEX
+x3 %. Si le résultat du jet d'attaque est compris entre 01 et 05,
+l'attaquant peut appliquer directement l'un de ces effets, sans
+avoir à faire de deuxième jet. La victime peut tenter de se
+dégager à chaque round avec un jet de FOR/FOR (elle arrache le
+fouet des mains de l'attaquant) ou de DEX/FOR (elle se dégage
+en souplesse).
+- Armes d'hast concerne toutes les armes longues, qui s'utilisent
+généralement à deux mains, comme les hallebardes, les piques,
+les lances, etc.
+Pourcentage de base 20%.
+Assommer un adversaire
+Pour assommer un adversaire, un personnage doit annoncer son
+intention en début de round, puis réussir une attaque de Bagarre,
+de Lutte ou d'une arme de mêlée non tranchante (un gourdin par
+exemple). Les dommages sont soustraits aus points de vie de la
+victime, puis on les oppose aux points de vie restants à cette
+dernière sur la table de résistance. Si le jet est un succès, la
+victime perd connaissance pour sa CON x heures. A son réveil,
+elle aura une grosse bosse, mais n'aura perdu qu'1/3 des points de
+vie de l'attaque.
+
+Combat à distance
+Là encore, le combat à distance peut être divisé en deux grandes
+catégories : les armes de jet et les armes à feu.
+Armes de jet
+Les armes de jet ne peuvent être utilisées qu'une fois par round.
+Lors du premier round de combat, elles ne tirent qu'à la troisième
+et dernière passe (le temps d'armer); aux rounds suivants, elles
+tirent lors de la première. Les deux compétences en armes de jet
+sont :
+- Les armes de tir. Cette compétence permet d'utiliser arcs,
+arbalètes, frondes, sarbacanes... Bref, toutes les armes
+"balistiques".
+Pourcentage de base: 25 %.
+- Les armes de lancer. Cette compétence concerne les couteaux
+de lancer, les javelots, mais aussi les armes improvisées, comme
+un bête caillou ramassé au hasard d'un chemin.
+Pourcentage de base: 20 %.
+Armes à feu
+Comme les armes de jet, les armes à feu tirent à la première ou à
+la troisième passe de chaque round. Mais contrairement aux arcs
+et autres arbalètes, la plupart sont assez rapides pour être utilisées
+à la première et à la troisième passe du round. Contrairement à la
+plupart des autres types d'armes, les armes à feu recouvrent un
+grand nombre de compétences. Leurs noms mêmes expliquent
+assez clairement à quoi elles correspondent.
+- Armes de poing permet d'utiliser les pistolets et les revolvers,
+quel que soit leur calibre. Il est impossible de parer avec une
+arme de poing.
+Pourcentage de base: 20 %.
+- Fusils est utilisé pour tout ce qui est carabines ou fusils de
+guerre non automatiques.
+Pourcentage de base: 15 %.
+- Fusils de chasse sert pour les armes qui tirent des plombs ou
+des chevrotines, et non des balles. Particularité : les dommages
+dépendent de la distance; ces armes sont terribles à courte portée,
+et beaucoup moins efficaces si la cible est loin. Ce sont les seules
+armes à feu pour lesquelles la compétence de tir n'est pas doublée
+à bout portant. De plus, elles ne doublent pas les dommages sur
+un succès critique.
+Pourcentagede base: 20 %.
+- Mitraillettes regroupe toutes les armes automatiques capables
+de tirer en rafale, que ce soit les mitrailleuses lourdes ou les Uzis.
+Pourcentage de base: 10 %.
+Tir en rafale
+Le tir en rafale a ses propres règles. On ne peut tirer une rafale
+qu'à la troisième passe d'un round. Une "rafale" comprend de 6 à
+20 balles. Chaque balle tirée ajoute 5 % à la compétence du
+tireur, à concurrence du double de sa compétence. Si le jet sous la
+compétence est réussi, lancez un dé ayant autant de faces qu'il y a
+BaSIC le jeu de rôle de base Page 11
+
+de balles dans la rafale, soit ld6 pour une rafale de 6 balles, 1d10
+pour une rafale de 10 balles, 2d10 pour une rafale de 20 balles...
+Le résultat indique le nombre de balles qui touchent leur cible.
+Calculez ensuite les dommages infligés à la cible, balle par balle,
+en soustrayant l'armure à chaque fois. Si le résultat du jet
+d'attaque était compris entre 01 et 05, la première balle inflige
+double dommage. Si le tireur vise plusieurs cibles, ses chances
+toucher ne sont pas modifiées. Une fois la rafale tirée, on lance le
+ou les dés pour savoir combien de balles ont touché, et le tireur
+les répartit entre les différentes cibles. Si le résultat du jet
+d'attaque était compris entre 01 et 05, l'une des balles inflige
+double dommage, et le tireur décide alors quelle cible est
+concernée.
+
+Recharger
+La plupart des armes modernes sont des automatiques, avec des
+chargeurs. Il faut un round entier pour expulser le chargeur vide
+et le remplacer par un neuf. Au round suivant, le personnage
+tirera une fois, à la troisième passe, puis tout rentrera dans l'ordre.
+Dans le cas des revolvers, il faut un round entier pour glisser
+deux balles dans le barillet.
+Tirer à bout portant
+Lorsque le tireur est très proche de la cible, ses chances de la
+toucher sont doublées. Le "bout portant" est une distance égale à
+la DEXtérité du tireur exprimée en mètres. Ce bonus ne vaut que
+pour la compétence, pas pour les dommages. Cette règle ne
+s'applique pas au tir en rafale. Si un personnage vide un chargeur
+de mitraillette à bout portant sur quelqu'un, ce n'est pas vraiment
+la peine de lancer les dés. Considérez que ce quelqu'un est mort,
+ou bon pour un très long séjour à l'hôpital.
+
+QUELQUES ARMURES
+Type
+
+Protection
+
+Cuir souple (blouson)
+Cuir rigide (armure)
+Cuir et métal
+Cotte de mailles (gilet pare-balles)
+Armure de plaques*
+
+1
+2
+4
+6
+8
+
+* Ce type d'armure, très lourde, inflige un malus de 10% aux compétences de combat et ne permet pas d'Esquiver.
+TABLE DES ARMES D'HAST ET DE MELEE
+Arme
+
+Compétence
+
+Dague / poignard
+Epée / rapière
+Epieu / pique
+Espadon*
+Gourdin
+Hache de bataille
+Hachette
+Hallebarde*
+Javelot / lance courte
+Masse / fléau d'armes
+Coup de poing, de tête, etc.
+Bouclier
+
+Mêlée
+Mêlée
+Hast
+Mêlée
+Mêlée
+Mêlée
+Mêlée
+Hast
+Hast
+Mêlée
+Bagarre
+Celle de l'arme principale
+
+Dommages
+1d3+2
+1d6+2
+2d6
+2d6
+1d6
+2d6
+1d6+1
+3d6
+1d6+1
+1d6+2
+1d3
+-
+
+* Ces armes s'utilisent à deux mains et sont trop encombrantes pour que l'on puisse parer efficacement avec.
+TABLE DES ARMES DE TIR ET DE LANCER
+Arme
+
+Compétence
+
+Portée
+efficace
+
+Portée
+Dommages
+maximale
+
+Arbalète
+Arc
+Dague
+Fronde
+Javelot
+
+Tir
+Tir
+Lancer
+Tir
+Lancer
+
+20 m
+50 m
+50 m
+150 m
+FOR en m FOR x 2 m
+50 m
+100 m
+FOR en m FOR x 3 m
+
+2d6*
+1d6+2
+1d3+2
+1d6
+1d6+1
+
+* 1 tir par round à la 3e passe.
+
+BaSIC le jeu de rôle de base Page 12
+
+TABLE DES ARMES A FEU
+Arme
+
+Dommages
+
+Portée
+
+Tirs
+
+Munitions
+
+Armes de poing*
+Calibre 22
+Calibre 32
+Calibre 38
+Calibre 44 Magnum
+Calibre 45
+
+1d6
+1d6+2
+1d10
+2d6+2
+1d10+2
+
+10 m
+15 m
+15 m
+20 m
+15 m
+
+2
+2
+2
+1
+1
+
+6
+8
+8
+6
+6
+
+Fusils
+Carabine 22 long rifle
+Cabine 30
+Fusil 30-06
+
+1d6+2
+2d6
+2d6+4
+
+30 m
+50 m
+100 m
+
+1
+1
+1/2
+
+6
+6
+5
+
+Fusil de chasse
+Calibre 12
+Calibre 12 (canon scié)
+
+4d6/2d6/1d6
+4d6/1d6
+
+10/20/50 m
+5/10 m
+
+1
+1
+
+5
+5
+
+Mitraillettes
+Kalachnikov
+M-16
+Uzi
+
+2d6+1
+2d6
+1d10
+
+100 m
+120 m
+50 m
+
+2 ou rafale
+2 ou rafale
+2 ou rafale
+
+30
+30
+30
+
+Armes anciennes
+Arquebuse**
+Mousquet
+Pistolet
+
+1d10
+1d6+3
+1d6+2
+
+15 m
+15 m
+10 m
+
+1/1d6+3
+1/1d6+3
+1/1d6+3
+
+1
+1
+1
+
+* Toutes ces armes existent en version automatique et revolver.
+** Impossible à manier seul. Nécessite d'être fixée au sol ou à l'harnachement d'un cheval.
+Notes
+Dommages : nombre de dés à lancer si le jet d'attaque est réussi.
+Portée : distance en mètres à laquelle l'arme est efficace. Au delà elle est moins précise et la compétence du tireur/lanceur est divisée par
+deux.
+Tirs par round : nombre de fois que l'arme peut tirer à chaque round.
+Munitions : nombre de balles dans le magasin. N'oubliez pas de les décompter. Arrivé à 0, il faut recharger.
+
+BaSIC le jeu de rôle de base Page 13
+
+

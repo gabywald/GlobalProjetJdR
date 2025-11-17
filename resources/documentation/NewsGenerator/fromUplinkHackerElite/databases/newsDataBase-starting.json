@@ -1,0 +1,545 @@
+[
+	{
+		"launcher": { 
+			"computername": "International Social Security Database", 
+			"numrecentshacks": 1
+		}, 	
+		"titles": [ "Government social security records compromised" ],
+		"content1": [ "The Government run social security database has been hacked by an unknown cyber criminal." ],
+		"content2": [ "Government officials insist this is the first and only incident of its kind." ],
+		"content4": [ "In theory, unlawful changes to this database could result in dead people being reported as alive, or alive people being reported as dead. Other personal information could be stolen." ],
+		"content5": [ "A government federal agent today stated that this would not be allowed to happen again." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "International Social Security Database", 
+			"numrecentshacks": 2
+		}, 	
+		"titles": [ "Social security hacked twice in less than a month" ],
+		"content1": [ "The Government run social security database has once again been hacked by an unknown cyber criminal. " ],
+		"content2": [ "This is the second time in less than a month that this system has been attacked. It is not known if these two incidents are connected." ],
+		"content4": [ "A hacker gaining access to this system could do untold damage by modifying crucial personal data." ],
+		"content5": [ "The government today launched an investigation into these recent security problems." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "International Social Security Database", 
+			"numrecentshacks": 3
+		}, 	
+		"titles": [ "Government held Files compromised for the third time" ],
+		"content1": [ "For the third time in less than a month, the government owned Social Security Database has been hacked." ],
+		"content4": [ "The system holds key personal data on millions of people and has been the cause of some embarrasment recently for the government." ],
+		"content5": [ "The potential for damage on this system is huge, prompting calls by opposition parties for a full review of all security protocols." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "International Social Security Database", 
+			"numrecentshacks": -1
+		}, 		
+		"titles": [ "Government Social Security files accessed again", "Social Security computer once again hacked", "Government maintained Social Security documents come under attack again" ], 
+		"content4": [ "The system holds personal data on the general population, but could be maliciously used to create new identities or tamper with existing ones.", 
+					 "It is feared that the many recent hacks of this system may lead to a lack of trust in its data, which is used all over industry for many purposes.", 
+					 "In theory, a skilled hacker could manufacture a new identity, or tamper with an existing record to cause damage to a person's records. " ], 
+		"content2": [ "This system has been hacked multiple times in the last month, prompting heavy critisism from some opposition parties.", 
+					 "This is not the first time this has happened; this system has been tampered with more than once recently.", 
+					 "The Government is once again on the defensive as this system seems to be almost wide open to abuse." ], 
+		"content1": [ "Government social security documents have been accessed once again.", 
+					 "Government maintained Social Security documents have come under attack yet again.", 
+					 "The Goverment owned Social Security computer has once again been hacked by an unknown Cyber criminal." ], 
+		"content5": [ "Government spokesmen today insisted they had the situation under control, despite recent history.", 
+					 "The government is said to be considering many options on how to stop these attacks.", 
+					 "Federal agents have been called in to help catch the criminals responsible for this action." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "International Academic Database", 
+			"numrecentshacks": 1
+		}, 
+		"titles": [ "Government run academic database hacked" ], 
+		"content1": [ "The International Academic Database has been compromised by malicious hacker." ], 
+		"content2": [ "Until today this system was thought to be secure against this type of attack." ], 
+		"content4": [ "The motives of the hacker are not clear but it is thought he was attempting to forge qualifications for an unknown recipient." ], 
+		"content5": [ "Government agents made it clear they would not tolerate this action and have already taken steps to secure the database against future action." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "International Academic Database", 
+			"numrecentshacks": 2
+		}, 
+		"titles": [ "Academic records hacked again" ], 
+		"content1": [ "The International Academic Database has been hacked for the second time in less than a month." ], 
+		"content4": [ "It is not known if the two attacks are connected." ], 
+		"content5": [ "The government today began an investigation into these attacks." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "International Academic Database", 
+			"numrecentshacks": 3
+		}, 
+		"titles": [ "Government academic database hacked again" ], 
+		"content1": [ "The Government is on the defensive again today as its International Academic Database is hacked again." ], 
+		"content2": [ "This attack comes less than a week after a recent hack and is the third this month." ], 
+		"content4": [ "It is believed that an individual or small group is attempting to create new academic details and qualifications, perhaps offering this as a service." ], 
+		"content5": [ "Federal agents have been brought in to investigate." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "International Academic Database", 
+			"numrecentshacks": -1
+		}, 
+		"titles": [ "Government embarresed over repeated security failures", "International Academic Database hacked again", "Federal Agents investigate Academic Database hacks" ], 
+		"content5": [ "The Government has again promised to put a stop to these hacks quickly.", 
+					 "The Government seems to be at a loss as to what to do about these recent attacks.", 
+					 "Federal Agents from the computer crimes division where today tasked with catching the criminals involved and determining what damage has been done." ], 
+		"content2": [ "Security on this computer has been bypassed repeadly in the last month.", 
+					 "This attack is the latest in a string of hacks performed in the last month. ", 
+					 "Federal agents seem unable to stop a torrent of recent hacks on this system. "], 
+		"content1": [ "The Government Academic Database has been hacked again by an unknown intruder.", 
+					 "Hackers have again penetrated the International Acadmic Database.", 
+					 "The International Academic Database has been attacked by hackers again." ], 
+		"content4": [ "The system is used to store the Academic history of millions of people.", 
+					 "In theory a skilled hacker could create new qualifications for any person he wished.", 
+					 "The exact motives of the hackers are not clear, but it is believed they may be running some kind of buisiness offering new qualifications for people for a price." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "Global Criminal Database", 
+			"numrecentshacks": 1
+		}, 
+		"titles": [ "Global Criminal Records attacked by hackers" ], 
+    "content1": [ "The Government managed Global Criminal Database has been penetrated by an unknown computer hacker." ], 
+    "content2": [ "Security on the system is so tight that hacks of this kind were thought to be impossible." ], 
+    "content4": [ "It appears from a preliminary investigation that an unknown criminal record was modified, prompting calls from human rights groups for higher security on personal records of this kind." ], 
+    "content5": [ "The Government has said they have begun an investigation and have taken steps to stop this from happening again." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "Global Criminal Database", 
+			"numrecentshacks": 2
+		}, 
+		"titles": [ "Criminal Records opened to the public domain" ], 
+    "content1": [ "Despite the installation of a brand new high security system, the Global Criminal Database has again been attacked and penetrated by a hacker or group of hackers." ], 
+    "content2": [ "Government agents are said to be amazed that their new system has failed so soon." ], 
+    "content4": [ "This is the second time criminal records have been modified by hackers masquerading as officers." ], 
+    "content5": [ "The newly installed system will no doubt be tested in light of this new breach." ]
+	}, 
+	{
+		"launcher": { 
+			"computername": "Global Criminal Database", 
+			"numrecentshacks": 3
+		}, 
+		"titles": [ "Hackers take advantage of Global Criminal Database" ], 
+    "content1": [ "The Government owned Global Criminal Database system has recently suffered a couple of high security hacks, and it would seem more and more hackers are taking advantage of the system." ], 
+    "content2": [ "For the third time in less than a month a hacker gained adminstrative access to the system and modified criminal records within the system." ], 
+    "content4": [ "The Government now believes a group of individuals are offering modifications to personal records such as criminal records for a price, perhaps advertising through the underground anarchist group Uplink Corporation." ], 
+    "content5": [ "The Government has now clamped down on accesses to the system, claiming it is safer than ever." ]
+ 	}, 
+	{
+		"launcher": { 
+			"computername": "Global Criminal Database", 
+			"numrecentshacks": -1
+		}, 
+		"titles": [ "Global Criminal Database smashed open again", 
+					"Government criminal records system hacked yet again", 
+					"Criminal Records modified by hackers again" ], 
+		"content5": [ "The Government appears to be unable to put a stop to these attacks.", 
+					 "The Government appear to be at a loss as to what to do.", 
+					 "The Government is now considering shutting down the Global Criminal Database until this can be resolved." ],
+					  
+		"content2": [ "Security at this server system has been compromised numerous times in the past month.", 
+					 "This news service has unfortunately lost count of the number of hacks at this site in recent times.", 
+					 "The system appears to have more security holes than popular 'Micro software' written in the late 20th century." ], 
+
+		"content1": [ "The Government run Global Criminal Database has again been hacked wide open.", 
+					 "The Global Criminal Database has been successfully attacked once again.", 
+					 "Once again the Global Criminal Database has been hacked." ], 
+		"content4": [ "It is believed an underground organisation is selling the service of modifying records.", 
+					 "Hackers could clear existing records or could have innocent people thrown in jail.", 
+					 "A number of cases have now arisen of people in prison who claim they were framed in this way." ]
+	}, 
+	{
+		"launcher": { 
+			"computertype": "Public Bank Server", 
+			"numrecentshacks": 1
+		}, 
+		"titles": [ "'COMPANYNAME' hacked" ], 
+		"content1": [ "The financial computer system 'COMPANYNAME' has been penetrated from an unknown source." ], 
+		"content2": [ "This is the first incident of its kind for the owner, 'COMPANYNAME'." ], 
+		"content4": [ "Hackers gaining access to this system could perform any number of fund transfers." ], 								
+		"content5": [ "'COMPANYNAME' are investigating the incident." ]
+	}, 
+	{
+		"launcher": { 
+			"computertype": "Public Bank Server", 
+			"numrecentshacks": 2
+		}, 
+		"titles": [ "'COMPANYNAME' comes under attack again" ], 
+		"content1": [ "The 'COMPANYNAME' computer system has been hacked for the second time." ], 
+		"content4": [ "It is believed that some unauthorised money transfers were performed by the hackers." ], 
+		"content5": [ "This incident has lead to a fall in investor trust, and the Bank is currently searching for clues as to the identity of the hackers responsible." ]
+	}, 
+	{
+		"launcher": { 
+			"computertype": "Public Bank Server", 
+			"numrecentshacks": 3
+		}, 
+		"titles": [ "'COMPANYNAME' hacked for the third time" ], 
+		"content1": [ "'COMPANYNAME' are at a loss today as their online trading system, 'COMPANYNAME' was hacked for the third time in less than a month." ], 
+		"content4": [ "Funds are being illegally transfered but 'COMPANYNAME' are unable to provide any further details at this time." ], 
+		"content5": [ "Earlier today they issued a statement, saying that Federal Agents had been brought in to try to catch these hackers before they cause serious damage." ]
+	}, 
+	{
+		"launcher": { 
+			"computertype": "Public Bank Server", 
+			"numrecentshacks": -1
+		}, 
+		"titles": [ "'COMPANYNAME' is hacked again", 
+					"'COMPANYNAME' security fails once again", 
+					"'COMPANYNAME' is penetrated by hackers again" ], 
+		"content2": [ "This system has been hacked at least 4 times in the last month.", 
+					 "This is the latest in a long list of security failures for 'COMPANYNAME'.", 
+					 "Investor confidence is low as this system has been hacked many times recently." ], 
+		"content1": [ "The 'COMPANYNAME' has been attacked and penetrated again by unknown cyber-criminals.", 
+					 "Earlier today the 'COMPANYNAME' system was attacked again by Computer hackers.", 
+					 "'COMPANYNAME' suffered another embarrasing security problem today as their 'COMPANYNAME' system was hacked from an unknown source." ], 
+		"content4": [ "It is believed the hackers were attempting to transfer funds without authorisation.", 
+					 "Records indicate the hackers performed some kind of financial transfer, then attempted to remove any traces of their actions.", 
+					 "Hackers gaining access to this system could perform any number of fund transfers between accounts." ], 
+		"content5": [ "'COMPANYNAME' have hired freelance computer specialists in an attempt to catch the guilty parties.", 
+					 "'COMPANYNAME' say they are are confident they will catch the hacker.", 
+					 "'COMPANYNAME' are said to be considering further action in light of the number of recent hacks." ]
+	}, 
+	{		
+		"titles": [ "Hackers take down major computer system", "Large corporation stung by malicious hacker attack", "Agressive computer attacker leaves system crippled" ], 
+		"content1": [ "'COMPANYNAME' have taken a major blow to their operations today as a malicious computer hacker penetrated one of their key computer systems and caused terminal damage.", 
+					 "A lone hacker has penetrated one of the primary computer systems of 'COMPANYNAME' and deliberately shut down the system.", 
+					 "Federal agents are now searching for the identity of a computer criminal who broke into the 'COMPANYNAME' and deliberately destroyed the machine." ], 
+		"content2": [ "It has been difficult to piece together exactly what happened, but it appears that a system wide failure of the computer system was caused by the hackers actions. Experts say the entire operating system will have to be replaced.", 
+					 "Industry experts have re-created the final moments of the system crash from access logs on another machine. A few moments before the computer shut down, a lone hacker forced his way into the system after bypassing the security, entered into administrative mode and deleted several key system files, causing the machine to malfunction.", 
+					 "A single hacker is responsible for this high-tech crime. Moments before the failure he hacked into the system and deliberatly brought about its destruction. The exact method has not yet been determined." ], 
+		"content3": [ "\nThe company stated in their press release that all files had been totally destroyed.", 
+					 "\nExtensive damage was done but the company has been able to salvage most of the data." ], 
+		"content4": [ "The city witnessed a sharp drop in the share price today as news of this disaster reached investors. It seems that nobody is safe after such a high profile system is destroyed. 'COMPANYNAME' said that millions of credits of damage had been done already.", 
+					 "This system failure will cost the company dearly. It seems the data on the system is lost for good, and the costs of repairing this damage could spiral into millions of dollars. Industry analysts say the company is looking at some rough times ahead.", 
+					 "Today the company chairman tried to play down the significance of this event, no doubt trying to avoid a public relations disaster as well as a system failure. There can be little doubt that this set back will cost the company dearly." ], 
+		"content5": [ "Company executives today released a press statement, indicating they were investigating the incident and would be seeking outside assistance from industry professionals.", 
+					 "Federal agents have been brought in on the case and will no doubt be searching for the identity of this dangerous computer hacker.", 
+					 "'COMPANYNAME' have tightened security on their remaining computer systems, and federal agents from the government cyber-crimes division were seen entering the corporate headquarters today." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SCIENTIFIC", 
+			"numrecentshacks": 1
+		}, 
+		"content1": [ "'COMPANYNAME' discovered this morning that a massive quantity of computer data had been stolen from one of their Central Mainframes." ], 
+		"titles": [ "Gigaquads of scientific data copied by hacker" ], 
+		"content2": [ "The stolen files contained data from a massive scientific research program, which 'COMPANYNAME' had been working on for the past 3 years.\n Around TOTALFILESIZE Gigaquads of data was copied before the intruder disconnected." ], 
+		"content3": [ "'COMPANYNAME' will undoubtedly try to discover the corporation behind this theft." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SCIENTIFIC", 
+			"numrecentshacks": 2
+		}, 
+		"content1": [ "A computer hacker entered the Central File Server of 'COMPANYNAME' today and copied a huge portion of computer data to an unknown location. This incident comes less than a month after a similar incident where their central mainframe was compromised." ],
+		"titles": [ "Gigaquads of scientific data copied by hacker" ], 
+		"content2": [ "The stolen files contained data from a massive scientific research program, which 'COMPANYNAME' had been working on for the past 3 years.\n Around TOTALFILESIZE Gigaquads of data was copied before the intruder disconnected." ], 
+		"content3": [ "'COMPANYNAME' will undoubtedly try to discover the corporation behind this theft." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SCIENTIFIC", 
+			"numrecentshacks": 3
+		}, 
+		"content1": [ "'COMPANYNAME' are once again reviewing their security procedures after revealing that their central mainframe has been compromised for the third time in a month, with massive amounts of confidential data being transfered away." ], 
+		"titles": [ "Gigaquads of scientific data copied by hacker" ], 
+		"content2": [ "The stolen files contained data from a massive scientific research program, which 'COMPANYNAME' had been working on for the past 3 years.\n Around TOTALFILESIZE Gigaquads of data was copied before the intruder disconnected." ], 
+		"content3": [ "'COMPANYNAME' will undoubtedly try to discover the corporation behind this theft." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SCIENTIFIC", 
+			"numrecentshacks": -1
+		}, 
+		"content1": [ "'COMPANYNAME' have suffered yet another embarrassing security breach, today revealing that a massive quantity of private data was stolen from their central mainframe. This system has been targetted repeatedly in recent times." ], 
+		"titles": [ "Gigaquads of scientific data copied by hacker" ], 
+		"content2": [ "The stolen files contained data from a massive scientific research program, which 'COMPANYNAME' had been working on for the past 3 years.\n Around TOTALFILESIZE Gigaquads of data was copied before the intruder disconnected." ], 
+		"content3": [ "'COMPANYNAME' will undoubtedly try to discover the corporation behind this theft." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CORPORATE", 
+			"numrecentshacks": 1
+		}, 
+		"content1": [ "'COMPANYNAME' discovered this morning that a massive quantity of computer data had been stolen from one of their Central Mainframes." ], 
+		"titles": [ "No data is secure - GigaQuads stolen in 'impossible' hack" ], 
+		"content2": [ "It is believed around TOTALFILESIZE Gigaquads of confidential corporate data was stolen by this hacker, and it was probably copied to a temporary fileserver somewhere on the web." ], 
+		"content3": [ "'COMPANYNAME' have said that they are considering all options to catch this hacker, and the corporation that paid him." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CORPORATE", 
+			"numrecentshacks": 2
+		}, 
+		"content1": [ "A computer hacker entered the Central File Server of 'COMPANYNAME' today and copied a huge portion of computer data to an unknown location. This incident comes less than a month after a similar incident where their central mainframe was compromised." ],
+		"titles": [ "No data is secure - GigaQuads stolen in 'impossible' hack" ], 
+		"content2": [ "It is believed around TOTALFILESIZE Gigaquads of confidential corporate data was stolen by this hacker, and it was probably copied to a temporary fileserver somewhere on the web." ], 
+		"content3": [ "'COMPANYNAME' have said that they are considering all options to catch this hacker, and the corporation that paid him." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CORPORATE", 
+			"numrecentshacks": 3
+		}, 
+		"content1": [ "'COMPANYNAME' are once again reviewing their security procedures after revealing that their central mainframe has been compromised for the third time in a month, with massive amounts of confidential data being transfered away." ],
+		"titles": [ "No data is secure - GigaQuads stolen in 'impossible' hack" ], 
+		"content2": [ "It is believed around TOTALFILESIZE Gigaquads of confidential corporate data was stolen by this hacker, and it was probably copied to a temporary fileserver somewhere on the web." ], 
+		"content3": [ "'COMPANYNAME' have said that they are considering all options to catch this hacker, and the corporation that paid him." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CORPORATE", 
+			"numrecentshacks": -1
+		}, 
+		"content1": [ "'COMPANYNAME' have suffered yet another embarrassing security breach, today revealing that a massive quantity of private data was stolen from their central mainframe. This system has been targetted repeatedly in recent times." ], 
+		"titles": [ "No data is secure - GigaQuads stolen in 'impossible' hack" ], 
+		"content2": [ "It is believed around TOTALFILESIZE Gigaquads of confidential corporate data was stolen by this hacker, and it was probably copied to a temporary fileserver somewhere on the web." ], 
+		"content3": [ "'COMPANYNAME' have said that they are considering all options to catch this hacker, and the corporation that paid him." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CUSTOMER", 
+			"numrecentshacks": 1
+		}, 
+		"content1": [ "'COMPANYNAME' discovered this morning that a massive quantity of computer data had been stolen from one of their Central Mainframes." ], 
+		"titles": [ "Personal customer data copied by hacker" ], 
+		"content2": [ "The computer system stored hundreds of GigaQuads of personal data on all of the corporation's customers. This data is now in the public domain. Over TOTALFILESIZE Gigaquads of data was stolen." ], 
+		"content3": [ "'COMPANYNAME' tried to reassure the public today, and issued a statement saying they had brought in Federal Agents to try and find the corporation responsible." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CUSTOMER", 
+			"numrecentshacks": 2
+		}, 
+		"content1": [ "A computer hacker entered the Central File Server of 'COMPANYNAME' today and copied a huge portion of computer data to an unknown location. This incident comes less than a month after a similar incident where their central mainframe was compromised." ],
+		"titles": [ "Personal customer data copied by hacker" ], 
+		"content2": [ "The computer system stored hundreds of GigaQuads of personal data on all of the corporation's customers. This data is now in the public domain. Over TOTALFILESIZE Gigaquads of data was stolen." ], 
+		"content3": [ "'COMPANYNAME' tried to reassure the public today, and issued a statement saying they had brought in Federal Agents to try and find the corporation responsible." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CUSTOMER", 
+			"numrecentshacks": 3
+		}, 
+		"content1": [ "'COMPANYNAME' are once again reviewing their security procedures after revealing that their central mainframe has been compromised for the third time in a month, with massive amounts of confidential data being transfered away." ],
+		"titles": [ "Personal customer data copied by hacker" ], 
+		"content2": [ "The computer system stored hundreds of GigaQuads of personal data on all of the corporation's customers. This data is now in the public domain. Over TOTALFILESIZE Gigaquads of data was stolen." ], 
+		"content3": [ "'COMPANYNAME' tried to reassure the public today, and issued a statement saying they had brought in Federal Agents to try and find the corporation responsible." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CUSTOMER", 
+			"numrecentshacks": -1
+		}, 
+		"content1": [ "'COMPANYNAME' have suffered yet another embarrassing security breach, today revealing that a massive quantity of private data was stolen from their central mainframe. This system has been targetted repeatedly in recent times." ], 
+		"titles": [ "Personal customer data copied by hacker" ], 
+		"content2": [ "The computer system stored hundreds of GigaQuads of personal data on all of the corporation's customers. This data is now in the public domain. Over TOTALFILESIZE Gigaquads of data was stolen." ], 
+		"content3": [ "'COMPANYNAME' tried to reassure the public today, and issued a statement saying they had brought in Federal Agents to try and find the corporation responsible." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SOFTWARE", 
+			"numrecentshacks": 1
+		}, 
+		"content1": [ "'COMPANYNAME' discovered this morning that a massive quantity of computer data had been stolen from one of their Central Mainframes." ], 
+		"titles": [ "Two years of software development - stolen" ], 
+		"content2": [ "'COMPANYNAME' had been working on several advanced software products and this computer system was their primary file server. Most of their proprietary source code has been copied - over TOTALFILESIZE Gigaquads of data, immediately compromising several of their planned security systems." ], 
+		"content3": [ "Federal Agents have been called in to help track down the Corporation and the hacker responsible." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SOFTWARE", 
+			"numrecentshacks": 2
+		}, 
+		"content1": [ "A computer hacker entered the Central File Server of 'COMPANYNAME' today and copied a huge portion of computer data to an unknown location. This incident comes less than a month after a similar incident where their central mainframe was compromised." ],
+		"titles": [ "Two years of software development - stolen" ], 
+		"content2": [ "'COMPANYNAME' had been working on several advanced software products and this computer system was their primary file server. Most of their proprietary source code has been copied - over TOTALFILESIZE Gigaquads of data, immediately compromising several of their planned security systems." ], 
+		"content3": [ "Federal Agents have been called in to help track down the Corporation and the hacker responsible." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SOFTWARE", 
+			"numrecentshacks": 3
+		}, 
+		"content1": [ "'COMPANYNAME' are once again reviewing their security procedures after revealing that their central mainframe has been compromised for the third time in a month, with massive amounts of confidential data being transfered away." ],
+		"titles": [ "Two years of software development - stolen" ], 
+		"content2": [ "'COMPANYNAME' had been working on several advanced software products and this computer system was their primary file server. Most of their proprietary source code has been copied - over TOTALFILESIZE Gigaquads of data, immediately compromising several of their planned security systems." ], 
+		"content3": [ "Federal Agents have been called in to help track down the Corporation and the hacker responsible." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SOFTWARE", 
+			"numrecentshacks": -1
+		}, 
+		"content1": [ "'COMPANYNAME' have suffered yet another embarrassing security breach, today revealing that a massive quantity of private data was stolen from their central mainframe. This system has been targetted repeatedly in recent times." ], 
+		"titles": [ "Two years of software development - stolen" ], 
+		"content2": [ "'COMPANYNAME' had been working on several advanced software products and this computer system was their primary file server. Most of their proprietary source code has been copied -- over TOTALFILESIZE Gigaquads of data, immediately compromising several of their planned security systems." ], 
+		"content3": [ "Federal Agents have been called in to help track down the Corporation and the hacker responsible." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SCIENTIFIC", 
+			"numrecentshacks": 1
+		}, 
+		"content1": [ "'COMPANYNAME' found themselves in the public eye today as one of their primary computer systems suffered a complete failure, resulting in a large amount of lost data." ], 
+		"titles": [ "Computer failure blaimed for research loss" ], 
+		"content2": [ "The data deleted was the combined results of a large scale scientific test, being conducted by 'COMPANYNAME' in order to develop new technology." ], 
+		"content3": [ "In a statement today the company said that serious damage had been done and that it could cost the company millions of dollars to perform the research again." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SCIENTIFIC", 
+			"numrecentshacks": 2
+		}, 
+		"content1": [ "'COMPANYNAME' again found themselves in trouble as gigaquds of data where wiped from their system. In a statement today the company claimed it had evidence that the files where deliberately deleted by a malicious hacker." ], 
+		"titles": [ "Computer failure blaimed for research loss" ], 
+		"content2": [ "The data deleted was the combined results of a large scale scientific test, being conducted by 'COMPANYNAME' in order to develop new technology." ], 
+		"content3": [ "In a statement today the company said that serious damage had been done and that it could cost the company millions of dollars to perform the research again." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SCIENTIFIC", 
+			"numrecentshacks": -1
+		}, 
+		"content1": [ "'COMPANYNAME' are today boosting their security systems as their file servers suffered yet another complete failure. The company has come under attack on several occasions in the last month by hackers who have yet to be identified." ], 
+		"titles": [ "Computer failure blaimed for research loss" ], 
+		"content2": [ "The data deleted was the combined results of a large scale scientific test, being conducted by 'COMPANYNAME' in order to develop new technology." ], 
+		"content3": [ "In a statement today the company said that serious damage had been done and that it could cost the company millions of dollars to perform the research again." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CORPORATE", 
+			"numrecentshacks": 1
+		}, 
+		"content1": [ "'COMPANYNAME' found themselves in the public eye today as one of their primary computer systems suffered a complete failure, resulting in a large amount of lost data." ], 
+		"titles": [ "Major corporation suffers complete data loss" ], 
+		"content2": [ "The company found that masses of corporate data has been destroyed." ], 
+		"content3": [ "It is not known how much this will cost the company but there is little doubt that serious damage has been done. This level of data loss could not occur without serious repurcusions." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CORPORATE", 
+			"numrecentshacks": 2
+		}, 
+		"content1": [ "'COMPANYNAME' again found themselves in trouble as gigaquds of data where wiped from their system. In a statement today the company claimed it had evidence that the files where deliberately deleted by a malicious hacker." ], 
+		"titles": [ "Major corporation suffers complete data loss" ], 
+		"content2": [ "The company found that masses of corporate data has been destroyed." ], 
+		"content3": [ "It is not known how much this will cost the company but there is little doubt that serious damage has been done. This level of data loss could not occur without serious repurcusions." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CORPORATE", 
+			"numrecentshacks": -1
+		}, 
+		"content1": [ "'COMPANYNAME' are today boosting their security systems as their file servers suffered yet another complete failure. The company has come under attack on several occasions in the last month by hackers who have yet to be identified." ], 
+		"titles": [ "Major corporation suffers complete data loss" ], 
+		"content2": [ "The company found that masses of corporate data has been destroyed." ], 
+		"content3": [ "It is not known how much this will cost the company but there is little doubt that serious damage has been done. This level of data loss could not occur without serious repurcusions." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CUSTOMER", 
+			"numrecentshacks": 1
+		}, 
+		"content1": [ "'COMPANYNAME' found themselves in the public eye today as one of their primary computer systems suffered a complete failure, resulting in a large amount of lost data." ], 
+		"titles": [ "'COMPANYNAME' loses gigaquads of customer data due to 'malicious hackers'" ], 
+		"content2": [ "The computer system that was damaged was used to hold customer records and sales data. It is believed that all backups of the data were also destroyed, leading the company to believe that this was a deliberate act." ], 
+		"content3": [ "'COMPANYNAME' today issued a statement saying that they were investigating the incident." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CUSTOMER", 
+			"numrecentshacks": 2
+		}, 
+		"content1": [ "'COMPANYNAME' again found themselves in trouble as gigaquds of data where wiped from their system. In a statement today the company claimed it had evidence that the files where deliberately deleted by a malicious hacker." ], 
+		"titles": [ "'COMPANYNAME' loses gigaquads of customer data due to 'malicious hackers'" ], 
+		"content2": [ "The computer system that was damaged was used to hold customer records and sales data. It is believed that all backups of the data were also destroyed, leading the company to believe that this was a deliberate act." ], 
+		"content3": [ "'COMPANYNAME' today issued a statement saying that they were investigating the incident." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "CUSTOMER", 
+			"numrecentshacks": -1
+		}, 
+		"content1": [ "'COMPANYNAME' are today boosting their security systems as their file servers suffered yet another complete failure. The company has come under attack on several occasions in the last month by hackers who have yet to be identified." ], 
+		"titles": [ "'COMPANYNAME' loses gigaquads of customer data due to 'malicious hackers'" ], 
+		"content2": [ "The computer system that was damaged was used to hold customer records and sales data. It is believed that all backups of the data were also destroyed, leading the company to believe that this was a deliberate act." ], 
+		"content3": [ "'COMPANYNAME' today issued a statement saying that they were investigating the incident." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SOFTWARE", 
+			"numrecentshacks": 1
+		}, 
+		"content1": [ "'COMPANYNAME' found themselves in the public eye today as one of their primary computer systems suffered a complete failure, resulting in a large amount of lost data." ], 
+		"titles": [ "Proprietary software source code deleted by hacker" ], 
+		"content2": [ "Upon investigating the damaged computer, the company found that much of their software that was still in development had been deleted, along with all source code and back ups. It was claimed that the revolutionary software would dominate the market once released." ], 
+		"content3": [ "'COMPANYNAME' have undoubtably suffered a large loss here, which could cost the company millions." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SOFTWARE", 
+			"numrecentshacks": 2
+		}, 
+		"content1": [ "'COMPANYNAME' again found themselves in trouble as gigaquds of data where wiped from their system. In a statement today the company claimed it had evidence that the files where deliberately deleted by a malicious hacker." ], 
+		"titles": [ "Proprietary software source code deleted by hacker" ], 
+		"content2": [ "Upon investigating the damaged computer, the company found that much of their software that was still in development had been deleted, along with all source code and back ups. It was claimed that the revolutionary software would dominate the market once released." ], 
+		"content3": [ "'COMPANYNAME' have undoubtably suffered a large loss here, which could cost the company millions." ]
+	}, 
+	{
+		"launcher": { 
+			"filetype": "SOFTWARE", 
+			"numrecentshacks": -1
+		}, 
+		"content1": [ "'COMPANYNAME' are today boosting their security systems as their file servers suffered yet another complete failure. The company has come under attack on several occasions in the last month by hackers who have yet to be identified." ], 
+		"titles": [ "Proprietary software source code deleted by hacker" ], 
+		"content2": [ "Upon investigating the damaged computer, the company found that much of their software that was still in development had been deleted, along with all source code and back ups. It was claimed that the revolutionary software would dominate the market once released." ], 
+		"content3": [ "'COMPANYNAME' have undoubtably suffered a large loss here, which could cost the company millions." ]
+	}, 
+	{
+		"launcher": { 
+			"uplinkrating": 1
+		}, 
+		"titles": [ "Man arrested for Computer Crime", "Police arrest suspect in Computer fraud crime", "Federal agents arrest suspect in dawn raid" ],
+		"content1": [ "Earlier today a man was arrested by Federal Agents for REASON. " ], 
+		"content2": [ "The man arrested, who has been named as PERSONNAME, has protested his innocence from the start, claiming he has no knowledge of Computers at all and could not have committed this crime." ], 
+		"content3": [ "", "The man will face court in a few months time for these crimes and could serve several years in jail for this crime.", "This case will go to court and he may face some time in jail. Friends and family today began a campaign to prove his innocence, claiming that he does not have the knowledge or equipment necessary to complete the crimes he is accused of." ]
+	}, 
+	{
+		"launcher": { 
+			"uplinkrating": 3
+		}, 
+		"titles": [ "Amateur hacker caught and arrested", "Federal Agents catch hacker red handed", "Part-time hacker brought to justice" ], 
+		"content1": [ "Earlier today a man was arrested by Federal Agents for REASON. " ], 
+		"content2": [ "The man has been named by Federal Agents as PERSONNAME, and is on record with a history of small time computer crime. Police who arrested him found Computer equipment and hardware for hacking in his house. It is believed this man was a part-time employee of the underground hacker group Uplink-Corporation, where he went by the hacker alias of PERSONHANDLE." ], 
+		"content3": [ "He may not get a chance to hack again however, as he could face up to ten years in prison." ]
+	}, 
+	{
+		"launcher": { 
+			"uplinkrating": 11
+		}, 
+		"titles": [ "Experienced computer hacker finally caught", "Federal Agents catch up with underground Hacker", "High-ranked Uplink Agent arrested" ],
+		"content1": [ "Earlier today a man was arrested by Federal Agents for REASON. " ], 
+		"content2": [ "The man's real name is PERSONNAME and he is a well known player in the underground hacker scene. It is believed he is a full-time freelance hacker, working for several organised groups including the well known Uplink-Corporation, where he went by the hacker alias of PERSONHANDLE." ], 
+		"content3": [ "Police suspect this man of multiple computer crimes and as such it is believed he will serve between ten and fifteen years inprisonment, and most likely a life ban on the use of computers." ]
+	}, 
+	{
+		"launcher": { 
+			"uplinkrating": -1
+		}, 
+		"titles": [ "Hacker ring-leader arrested in dawn raid", "Police arrest hacker 'Demi-God'", "Federal Agents pleased with arrest of hacker leader" ],
+		"content1": [ "Earlier today a man was arrested by Federal Agents for REASON. " ], 
+		"content2": [ "The man in question is PERSONNAME and he is a well established member of the secretive underground hacker movement Uplink-Corporation, where he worked behind the hacker alias of PERSONHANDLE. His rating is incredibly high, suggesting a long history of computer crime. Police have had a file on this many for several years but have finally caught him red handed." ], 
+		"content3": [ "Due to the nature of his history, it is believed the prosecution may push for a life sentence for this man. The courts are becoming increasingly hostile to hackers and they may decide to deal a heavy punishment to this hacker as a warning to others." ]
+	}
+]

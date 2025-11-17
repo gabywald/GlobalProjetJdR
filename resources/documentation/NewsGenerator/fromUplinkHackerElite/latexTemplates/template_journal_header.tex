@@ -1,0 +1,132 @@
+\documentclass[11pt,twoside,a4paper]{article}
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+\usepackage{lmodern}
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+\usepackage{float}           % pour le placement des figures
+\usepackage{verbatim}
+
+\usepackage{lastpage}
+
+\usepackage{eso-pic} %% mettre une image de fond !!
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing, shapes}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+%% \setmainfont{Cyberpunk Is Not Dead}
+
+\usepackage[top=2.0cm, bottom=2.0cm, left=2.0cm, right=2.0cm]{geometry}
+
+\def\magazineTitle{The CyberPunk Gazette}
+
+\usepackage{lipsum} 
+
+\usepackage{multicol}
+
+\usepackage{tikzpeople}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{  }
+\fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	\textbf{\magazineTitle }
+\hfill \includegraphics[width=0.5cm]{../../../../imgGraphics/logos/glider/logo-glider.png} }
+\fancyfoot[RO]{\includegraphics[width=0.5cm]{../../../../imgGraphics/logos/glider/logo-glider.png} \hfill
+	\textbf{\magazineTitle }
+\hfill \thepage /\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\fancyfoot{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+%--- Definitions de nouvelles commandes ---
+
+\def\peopleOnRight{% 
+	\begin{tikzpicture}
+		\node[criminal,evil,saturated,shield,sword,minimum size=0.75cm]{};
+	\end{tikzpicture}
+}
+
+\def\peopleOnLeft{% 
+	\begin{tikzpicture}
+		\node[nun,female,good,mirrored,monitor,saturated,shield,sword,minimum size=0.75cm]{};
+	\end{tikzpicture}
+}
+
+%--- Pour le titre ---
+\def\date{\today}
+\def\maketitle{%
+	\setlength{\parindent}{0em}
+	\begin{center}
+		\begin{tabular}[c]{c|c|c}
+			\peopleOnRight						& \setmainfont{Chomsky} \Huge{ \magazineTitle }				&	\peopleOnLeft							\\
+												& 															&											\\
+			Issue 0, Volume 0 					& \setmainfont{DS Zierschrift} \Large{Neo-Paris News}		& \date										\\
+												& 															&											\\
+	\setmainfont{FoglihtenDeH02} \textbf{G-z}	& \setmainfont{FoglihtenDeH02} \textbf{T+++++2+++++t}		& \setmainfont{FoglihtenDeH02} \textbf{Z-G}	\\
+		\end{tabular}~\\
+	\end{center}
+	\setlength{\parindent}{2\parskip}
+}%
+
+\usepackage{hyperref}
+%% http://www.andy-roberts.net/writing/latex/pdfs -- for some properties...
+%% https://tex.stackexchange.com/questions/26529/how-can-i-generate-pdf-metadata-from-latex
+\hypersetup{
+	pdfauthor={Gaby Wald / Gabriel Chandesris},
+	pdftitle={\magazineTitle "News Generator" \today},
+	pdfsubject={\magazineTitle "News Generator" \today},
+	pdfkeywords={\magazineTitle "News Generator" \today},
+	pdfproducer={PDFLaTeX (production)},
+	pdfcreator={PDFLaTeX (creation)}
+	%% urlcolor=green,
+}
+%% https://tex.stackexchange.com/questions/79395/option-clash-for-hyperref-package
+
+%============================= Corps =================================
+\begin{document}
+
+\AddToShipoutPicture{
+    \AtPageUpperLeft{1cm}{
+		\put(0,0){
+			\parbox[b][\paperheight]{\paperwidth}{%
+			\includegraphics[width=\paperwidth]{../../../../imgGraphics/cyberpunk/CyberPunkRedBandeauHaut.jpg}%
+			\vfill
+		}}}
+    
+    %% \AtPageCenter{ AtPageCenter }
+    %% \AtTextCenter{ AtTextCenter }
+    %% \AtStockCenter{ AtStockCenter }
+    
+    \AtTextCenter{ \begin{tikzpicture}[opacity=0.35, scale=2.00] %% ,shift={(0.00,-5.00)}] %% ,rotate=-90] 
+    	%% ,xshift=-12]
+    	%% ,xshift=-12,yshift=-12]
+    	%% ,shift={(12,12)}]
+		%% \draw [very thin, gray] (-3,-3) grid (3,3);
+		\draw [very thick, blue   ] (-1.50, 0.00) ..controls +(0, 2) and +(0, 2).. ( 1.50, 0.00);
+		\draw [very thick, red    ] (-1.50, 0.00) ..controls +(0,-2) and +(0,-2).. ( 1.50, 0.00);
+		\draw [very thick, green  ] (-1.50, 0.00) ..controls +(0, 2) and +(0,-2).. ( 1.50, 0.00);
+		\draw [very thick, magenta] (-1.00, 1.00) ..controls +(0, 2) and +(0,-2).. ( 1.00,-1.00);
+		\draw [very thick, yellow ] ( 0.00, 1.50) ..controls +(0, 2) and +(0,-2).. ( 0.00,-1.50);
+		\draw [very thick, yellow ] (-1.50, 0.00) ..controls +(0,-2) and +(0, 2).. ( 1.50, 0.00);
+		\draw [very thick, cyan   ] ( 1.00, 1.00) ..controls +(0, 2) and +(0,-2).. (-1.00,-1.00);
+		\draw [very thick, gray, fill=white] (0.00,0.00) circle (0.75);
+		\draw [very thick, white, fill=gray] (0.00,0.00) circle (0.25);
+	\end{tikzpicture} }
+    
+    \AtPageLowerLeft{1cm}{\includegraphics[width=\paperwidth]{../../../../imgGraphics/cyberpunk/CyberPunkRedBandeauBas.jpg}}
+}
+
+% ecrire le titre...
+\maketitle

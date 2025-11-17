@@ -1,0 +1,835 @@
+\documentclass[11pt,twoside,a4paper]{book}
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
+% http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
+%=========================== En-Tete =================================
+%--- Insertion de paquetages (optionnel) ---
+\usepackage[french]{babel}   % pour dire que le texte est en fran{\'e}ais
+\usepackage{a4}	             % pour la taille   
+\usepackage[T1]{fontenc}     % pour les font postscript
+
+\usepackage{amsmath, amsthm} % tres bon mode mathematique
+\usepackage{amsfonts,amssymb}% permet la definition des ensembles
+
+\usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
+
+\usepackage{tikz}
+
+\usepackage{lastpage}
+
+\usepackage[top=1.80cm, bottom=1.70cm, left=1.0cm, right=1.0cm]{geometry}
+% gauche, haut, droite, bas, entete, ente2txt, pied, txt2pied
+% \usepackage{vmargin}
+% \setmarginsrb{1.0cm}{1.0cm}{1.0cm}{1.0cm}{15pt}{3pt}{60pt}{3pt}
+
+% \usepackage{frbib} % enlever pour obtenir references en anglais
+
+\def\author{Gaby Wald \& Amael Assour}
+\title{Regroupement des JdR de \author }
+\date{\today}
+
+% % % en-tete et pieds de page configurables : fancyhdr.sty
+% http://www.trustonme.net/didactels/250.html
+% http://ww3.ac-poitiers.fr/math/tex/pratique/entete/entete.htm
+% http://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \newcommand{\chaptermark}[1]{\markboth{#1}{}}
+% \newcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
+	\title
+\hfill \includegraphics[width=0.5cm]{../../../../imgGraphics/logos/glider/logo-glider.png} }
+\fancyfoot[RO]{\includegraphics[width=0.5cm]{../../../../imgGraphics/logos/glider/logo-glider.png} \hfill
+	\title
+\hfill \thepage /\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.25pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\setlength{\headheight}{13.64296pt}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+%--- Pour le titre ---
+% \def\maketitle{}%
+
+%--- Pour le glossaire --- a defaut de \makeglossary ou d'utilisation d'index latex
+
+\definecolor{verylightgray}{rgb}{0.8,0.8,0.8}
+\def\makeglossaire{%
+	\begin{center}
+
+	Glossaire Générique :~\\
+	\begin{tabular}{|>{\columncolor{verylightgray}} p{0.20\textwidth}|p{0.70\textwidth}|}
+		\hline
+
+		\textbf{Terme} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				D{\'e}finition du terme
+			 \end{tabular} \\
+		\hline
+	\end{tabular}~\\
+	
+	\clearpage 
+	
+	Pour le JdR "Arcanes" :~\\ 
+	\begin{tabular}{|>{\columncolor{verylightgray}} p{0.20\textwidth}|p{0.70\textwidth}|}
+		\hline
+
+		\textbf{Carte RS} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Au d{\'e}but des ann{\'e}es 80, on trouva un catalyseur de l'effet RS en l'esp{\`e}ce de curieuses cartes, dont on ignore {\`a} peu pr{\`e}s tout. les premi{\`e}res cartes firent leur apparition dans la r{\'e}gion de Seattle, USA. On cherche encore {\`a} percer l'identit{\'e} du ou des cr{\'e}ateurs des premiers paquets. 
+				La C.I.A., comprenant rapidement l'immense potentiel tactique que recelaient les cartes, cr{\'e}a Stargate, un groupe de scientifiques charg{\'e} d'anakyser le ph{\'e}nom{\`e}ne et de former des agents capables de le contr{\^o}ler : les agents RS.
+			 \end{tabular} \\
+		\hline
+		\textbf{Agent RS} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				D{\`e}s le d{\'e}but, les premiers agents RS remport{\`e}rent des succ{\`e}s impresionnants, accomplissant des missions alors que toutes les chances de r{\'e}ussites {\'e}taient contre eux. 
+				Les diff{\'e}rentes op{\'e}rations Stargate sont encore class{\'e}es "secret d{\'e}fense" mais les chercheurs pointent le doigt sur un certain nombre d'{\'e}v{\`e}nements, comme la mort du Pr{\'e}sident panam{\'e}en en 82 ou le putsch rat{\'e} des g{\'e}n{\'e}raux russes. 
+				Certains affirment que les cartes existent de toute {\'e}ternit{\'e}, et que nos cartes {\`a} jouer en seraient des formes simplifi{\'e}es. 
+			\end{tabular} \\
+		\hline
+		\textbf{Grade Stargate} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				On a pris l'habitude de classer les agents Stargate {\`a} partir des figures des cartes {\`a} jouer classiques : 6, 8, 9, 10, Valet, Cavalier, etc. Ainsi, un 6 n'est sans doute capable que d'influer sur de petits {\'e}v{\`e}nements ayant peu de possibilit{\'e}s statistiques, comme le lancement d'une pi{\`e}ce de monnaie par exemple. Les grades sup{\'e}rieurs peuvent agir beaucoup plus en profondeur sur la trame du hasard.
+			\end{tabular} \\
+		\hline
+%% 		\textbf{DEA (Drug Enforcement Administration)} & 
+%% 			\begin{tabular}{p{0.68\textwidth}}
+%% 				Agence gouvernementale am{\'e}ricaine charg{\'e}e de la lutte anti-drogue dans le monde.
+%% 			\end{tabular} \\
+%% 		\hline  
+%% 		\textbf{Nagual} & 
+%% 			\begin{tabular}{p{0.68\textwidth}}
+%% 				Esprit, double de l'esprit humain.
+%% 			\end{tabular} \\
+%% 		\hline 
+		\textbf{Comit{\'e} Magic} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Organisme Ultra-secret mis en place par les Alli{\'e}s durant la Seconde Guerre Mondiale pour {\'e}tudier, utiliser les cartes et manipuler le hasard. Il n'avait de compte {\`a} rendre qu'{\`a} Churchill et Roosevelt. Magic fut dissous en 1946. 
+				Magic travailla en {\'e}troite collaboration avec Ultra, le programma de d{\'e}codage des messages secrets allemands [Enigma] puis avec Manhattan, le programme de r{\'e}alisation de la premi{\`e}re bombe atomique am{\'e}ricaine {\`a} Los Alamos. 
+				Les bras arm{\'e}s de Magic {\'e}taient, du c{\^o}t{\'e} anglais : le SOE (Special Operation Executive), et c{\^o}t{\'e} am{\'e}ricain l'OSS (anc{\^e}tre de la CIA), comme Magic, ces deux entit{\'e}s furent dissoutes au lendemain de la guerre, du moins officiellement.
+			\end{tabular} \\
+		\hline 
+		\textbf{Fondation Vane} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Agence gouvernementale am{\'e}ricaine qui prit la suite de Magic. Les anglais refus{\`e}rent d'en faire partie. Au d{\'e}part, il s'agissait d'un simple programme d{\'e}tude des ph{\'e}nom{\`e}nes RS.
+			\end{tabular} \\
+		\hline 
+		\textbf{Stargate} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Successeur de la Fondation Vane dans les ann{\'e}es 60. Dot{\'e} d'un budget beaucoup plus important, et plus tourn{\'e} vers l'utilisation des cartes que vers leur {\'e}tude.
+				Programme de la C.I.A. qui cherche depuis plusieurs ann{\'e}es {\`a} percer le secret des cartes RS et qui, dans le m{\^e}me temps, les utilise pour former des agents RS capables de manipuler le hasard. Ces agents, tr{\`e}s rares et tr{\`e}s fragiles psychologiquement ont un immense potentiel tactique. Ils peuvent, {\`a} la lettre, accomplir des miracles, gagner contre toutes les probailit{\'e}s, mlais qui sont-ils vraiment, et en derni{\`e}re analyse, qui les contr{\^o}le ?
+			\end{tabular} \\
+		\hline 
+		\textbf{R{\'e}tro-Synchronicit{\'e} (RS)} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Th{\'e}orie selon laquelle le hasard n'existe pas. Elle suppose qu'on peut orienter les {\'e}v{\`e}nements et le futur {\`a} condition de disposer d'un catalyseur qui d{\'e}clenche et acc{\'e}l{\`e}re la r{\'e}action. ces catalyseurs seraient en l'occurrence des cartes qui seraient les anc{\^e}tres de nos jeux de cartes.
+			\end{tabular} \\
+		\hline
+		\textbf{Singularit{\'e} ou effet RS} & 
+			\begin{tabular}{p{0.68\textwidth}}
+				Moment o{\`u} l'action des cartes se d{\'e}clenche. Le sujet est alors devant les possibilit{\'e}s offertes par le futur, {\`a} lui de choisir les plus int{\'e}ressantes. Plus une singularit{\'e} est profonde, plus les possibilit{\'e}s sont nombreuses et plongent plus loin dans le futur. 
+			\end{tabular} \\
+		\hline
+
+	\end{tabular}
+
+	\end{center}
+
+}%
+
+
+\def\makeLogoAndTXTagenceTownsend{%
+	\begin{tikzpicture}[scale=0.5]
+		%% color 		white, black, red, green, blue, cyan, magenta, yellow 
+		%% thickness 	ultra thin, very thin, thin, thick, very thick, ultra thick 
+		
+		%% Wings && Lines within wings
+		% \draw [very thin, gray] ( 0, 0) grid ( 6, 6);
+		\draw[thick] ( 1, 0) -- ( 6, 5) -- ( 2, 5);
+		\draw[thick] ( 1, 0) -- ( 1, 4) -- ( 5, 4);
+		\draw[thick] ( 1, 2) -- ( 4, 5);
+		\draw[thick] ( 1, 2) -- ( 2, 1);
+		\draw[thick] ( 2, 1) -- ( 2, 3) -- ( 4, 3);
+		\draw[thick] ( 2, 3) -- ( 3, 2);
+		
+		\draw[thick] (-1, 0) -- (-6, 5) -- (-2, 5);
+		\draw[thick] (-1, 0) -- (-1, 4) -- (-5, 4);
+		\draw[thick] (-1, 2) -- (-4, 5);
+		\draw[thick] (-1, 2) -- (-2, 1);
+		\draw[thick] (-2, 1) -- (-2, 3) -- (-4, 3);
+		\draw[thick] (-2, 3) -- (-3, 2);
+	
+		%% TXT
+		\node at ( 0,-2) {\textbf{TOWNSEND AGENCY}};
+		\node at ( 0,-3) {\large LOS ANGELES};
+		\node at ( 0,-4) {\small BEIJING \textbullet\ BERLIN \textbullet\ LONDON};
+		\node at ( 0,-5) {\small MUMBAI \textbullet\ NAIROBI \textbullet\ SAO PAULO};
+	\end{tikzpicture}
+}%
+
+%============================= Corps =================================
+\begin{document}
+%ecrire le titre...
+\maketitle
+\setcounter{page}{0}
+\thispagestyle{empty}
+\clearpage
+
+% ecrire la table des mati{\'e}res...
+\tableofcontents
+\setcounter{page}{0}
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{0}
+\thispagestyle{empty}
+\clearpage
+
+%% \setcounter{page}{0}
+%% \thispagestyle{empty}
+%% ~\\ \rule{10cm}{1mm}~\\
+%% \listoffigures
+%% ~\\ \rule{10cm}{1mm}~\\
+%% \listoftables
+%% \clearpage
+
+\setcounter{page}{1}
+
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+\chapter{Agence Townsend}
+
+	\begin{center}
+		\emph{\textbf{JdR inspir{\'e} des films \emph{Charlie's Angels}}}~\\
+		\Huge{Agence Townsend}~\\
+		\Large{Un JdR Girly}~\\
+		
+		\vfill
+
+		\begin{minipage}[c]{0.45\linewidth}
+			
+			\makeLogoAndTXTagenceTownsend
+			
+		\end{minipage}\hfill\begin{minipage}[c]{0.45\linewidth}
+		
+			\begin{tikzpicture}[scale=0.5]
+				%% TXT
+				\node at ( 0, 0 ) {
+					\begin{tabular}{c}
+						BEIJING \\ 
+						BERLIN \\ 
+						LONDON \\ 
+						LOS ANGELES \\ 
+						MUMBAI \\ 
+						NAIROBI \\ 
+						SAO PAULO \\ 
+					\end{tabular}
+				};
+				\node at ( 0,-5) {\large TOWNSEND};
+				\node at ( 0,-6) {\small AGENCY};
+				
+			\end{tikzpicture}
+		
+		\end{minipage}~\\
+		
+		\vfill
+	\end{center}
+	
+	\vfill
+	
+\clearpage
+
+\section{Historique}
+
+Fondation de l'Agence par Charlie Townsend dans les années 1970, et comprenant à l'époque qu'une seule agence basée à Los Angeles, les "Anges" ont depuis connues un développement en conservant la même struture et en s'adaptant aux technologies sans cesses renouvelées : automobile, systèmes de sécurités, informatique et numérique.~\\
+
+Les équipes locales comprennent un (ou une) <<Bosley>> chargé.e des contacts avec les clients et de la répartition des missions auprès des équipes d'Anges. Principal arguemnt avancé par l'Agence : dans des sociétés principalement partriarcales, personneou presque ne fait attention aux femmes : d'où leur avantage pour réaliser des missions discrètes !~\\
+
+\section{Fiches de persos et Système de Jeu}
+
+...
+
+\section{Id{\'e}es de sc{\'e}narios}
+
+\begin{itemize}
+	\item <<Bloody Milshake>> (cf. film du m{\^e}me nom, vers 2021) ; 
+	\begin{itemize}
+		\item Un \emph{Diner} (restaurant classique {\`a} l'am{\'e}ricaine, presque restoroute), qui est un lieu de rendez-vous de l'Agence Twnsend, tenu par des membres d'{\'e}lite (combat rapproch{\'e}, armes {\`a} feu) ; 
+		\item Une librairie {\`a} l'anglaise, tenue par des membres de l'Agence Townsend ; certains ouvrages dissimulent des armes, des trousses de secours ou autre mat{\'e}riel utilisable de suite ; les sous-sols et r{\'e}serves de cette librairie disposent {\'e}galement de ressources peu conventionnelles pour le vente de livres ;
+		\item ...  
+	\end{itemize}
+	\item Le centre de formation : lieu isol{\'e} en {\'E}cosse (ou {\'e}quivalent) ; 
+	\begin{itemize}
+		\item ... 
+		\item ... 
+		\item ...  
+	\end{itemize}
+	\item <<Premier Contact>> : carte de visite remise inopin{\'e}ment, rendez-vous insolite... 
+\end{itemize}
+
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+\chapter{Arcanes -- \emph{Un JdR de Tarot} }
+
+	\emph{\textbf{JdR inspir{\'e} des BD \emph{Arcanes} / \emph{Arcane Majeure} / \emph{L'Histoire Secr{\`e}te}}}~\\
+	
+	\vfill
+	
+\section{Introduction\markboth{Introduction}{Introduction}}
+%% \addcontentsline{toc}{section}{Introduction}
+
+
+[...]~\\
+
+\rule{10cm}{0.5mm}~\\
+
+\vfill
+
+\clearpage
+
+\section{{\'E}l{\'e}ments de base, id{\'e}es...}
+
+\subsection{R{\^o}le des cartes}
+
+{ \setlength\parindent{0pt} \small
+\begin{tabular}[c]{c c c c c c}
+	\rowcolor{verylightgray}
+	Famille			&	Symbole			&	{\'E}l{\'e}ment	& 	Type / Groupe... ou Id{\'e}al (?)		& Famille "CyberPunk" (?)		& "Pouvoirs"			\\
+	Arcanes			&	Nb et Nom		&	-- selon --		&	Magie (?) ...							& Magie (?) ; Hasard ... 		& ... 					\\
+	B{\^a}tons		&	Carreaux		&	Air				&	Sociabilit{\'e}, Charisme ; Sant{\'e}	& Gangs, Nomades...				& Social / Relation 	\\
+	Coupes			&	C\oe ur			&	Eau				& 	Vie, Gu{\'e}rison ; Ing{\'e}nierie		& Tech, MedTech... 				& Mat{\'e}riel			\\
+	Deniers			&	Piques			&	Terre			& 	Protection, R{\'e}flexion ; Fortune		& Solos, Fixers, Hackers...		& Virtuel / Intellect	\\
+	{\'E}p{\'e}es	&	Tr{\`e}fles		&	Feu				& 	Pouvoir, Unification ; Action			& Corporations, {\'E}tats...	& Temporel / Religieux	\\
+	
+	%% Erlin => Deniers => Tr{\`e}fles
+	%% Dyo => Coupes => Coeurs
+	%% Reka => B{\^a}tons => Piques
+	%% Aker => {\'E}p{\'e}es => Carreaux
+\end{tabular} }~\\
+
+%% Tirage des PJ : 5 {\`a} 10 cartes classiques ; d{\'e}termination puissance dans chaque caract{\'e}ristique, si t{\^e}te : cela permet de d{\'e}terminer une appartenance {\`a} une maison (ou deux ?) et un niveau au sein ce celle(s)-ci. ~\\
+
+Pour le tirage des personnages : une carte pour d{\'e}finir l'arch{\'e}type (parmi les atouts / arcanes majeures), et une autre pour d{\'e}finir son statut et son appartenance (dans les arcanes mineures, {\`a} partir du 8 inclu) ; ceci est not{\'e} sur la fiche de personnage, visible ou pas des autres joueurs. Ces cartes sont remises dans le jeu. Cette carte d'arcane mineure est jouable constamment en plus par le joueur (porteur permanent) au prix du d{\'e}p{\^o}t de sa main compl{\`e}te (acte h{\'e}ro{\"i}que).~\\  
+
+Pendant une partie, main de 5 cartes pour chaque joueur : utilisation d'un jeu de tarot complet (une campagne ?) ou un jeu classique de 54 cartes (ou deux, selon les besoins ou la variante utilis{\'e}e), symbolisant jeu(x) construit(s) "dans le jeu" (intra-di{\'e}g{\'e}tique) "{\`a} la demande", ou apparus voire d{\'e}couverts selon les circonstances... %% ~\\
+
+\subsection{R{\'e}solution des actions des PJ / Phase d'Action}
+
+\textbf{Rappel / R{\`e}gle d'or : une action triviale r{\'e}ussit toujours !} {\`A} moins qu'une action d'un autre joueur / personnage ne rende cela pas trivial. L'initiative est r{\'e}solue par le tirage d'une carte dans un jeu sp{\'e}cifique m{\'e}lang{\'e} ({\`a} moins que le premier intervenant ne prenne les autres par surprise) : cela peut {\^e}tre dans la pile de cartes restantes ou une r{\'e}serve de cartes du MJ ; en cas d'{\'e}aglit{\'e} entre valeurs faciales, respecter l'ordre classique ou le niveau du personnage, ou un nouveau tirage.~\\
+
+Chaque joueur dispose d'une main de cinq (5) cartes, renouvelable au fur et {\`a} mesure de son utilisation apr{\`e}s chaque usage d'une ou pluseurs cartes dans une pile de tirage d{\'e}di{\'e}e, en compl{\'e}tion {\`a} 5 (sauf sp{\'e}cificit{\'e}s).~\\
+Une action se r{\'e}sout par le d{\'e}p{\^o}t d'une ou plusieurs cartes par chaque joueur pour son PJ, le d{\'e}compte du "score" s'effectue de la fa\c{c}on suivante (hors Atouts / Arcanes) : 
+\begin{itemize}
+	\item Valeur faciale des cartes li{\'e}es au type ou au groupe utilis{\'e} (de l'as qui vaut 1 au 14 pour la plus haute t{\^e}te) ; 
+	\item Un demi point par autres cartes non li{\'e}es au type ou au groupe utilis{\'e} ; 
+	\item Un Joker (ou Excuse) vaut toujours 7 ; 
+	\item Dans les combinaisons sp{\'e}ciales (paire, brelan, suite...), multipliez le score pr{\'e}c{\'e}demment obtenu par le nombre de cartes de la combinatoire ; 
+	\item \emph{Optionnel : }Un Atout ou une Arcane (ou un Joker) permet une action sp{\'e}ciale (contr{\'e} par un Atout de valeur sup{\'e}rieure) : 
+	\begin{itemize}
+		\item Tirage de cartes suppl{\'e}mentaires (valeur de l'Atout divis{\'e} par trois (3), arrondi au sup{\'e}rieur ; ou 1d6) ; 
+		\item Rejouer imm{\'e}diatement (apr{\`e}s compl{\'e}tion de la main) ; 
+		\item Action h{\'e}ro{\"i}que (dont la r{\'e}ussite d{\'e}pend du reste des cartes jou{\'e}es avec celle-ci). 
+	\end{itemize}
+	\item \emph{Optionnel : }Utilisation d'une Carte Sp{\'e}ciale d{\'e}finissant le PJ : {\`a} d{\'e}finir {\`a} l'avance entre le MJ et le joueur (valeur de la carte), mise en jeu de la vie du PJ et : ou du pouvoir associ{\'e} {\`a} cette carte. 
+\end{itemize} %% ~\\
+
+Les cartes jou{\'e}es rejoignent une d{\'e}fausse en attendant d'{\^e}tre rem{\'e}lang{\'e}es pour cr{\'e}er une nouvelle pile de tirage quand celle-ci est vide. %% ~\\
+
+\subsection{"Effet R{\'e}troSynchronicit{\'e}" (RS)} 
+
+En dehors d'un Phase d'Action, on peut utiliser un "Effet R{\'e}troSynchronicit{\'e}" (RS) : un joueur pose une carte sur la table en pr{\'e}vision d'une utilisation future (avec une annotation ou un post-it) ; cela permet d'avoir un {\'e}l{\'e}ment utile par la suite et que le joueur peut ainsi faire appara{\^i}tre par la suite (v{\'e}hicule, {\'e}l{\'e}ment de d{\'e}cor...). Cette carte est ensuite int{\'e}gr{\'e}e {\`a} la pile de tirage : quand cette carte est tir{\'e}e, elle est forc{\'e}ment en faveur du joueur l'ayant d{\'e}pos{\'e}e (int{\'e}gration {\`a} sa main courante). Cela peut {\^e}tre utile selon puissance et typologie de la carte concern{\'e}e, et l'objet concern{\'e}.~\\
+
+Une variante de cet "Effet RS" peut {\^e}tre utilis{\'e} de la fa\c{c}on suivante : selon des {\'e}l{\'e}ments pr{\'e}vus par le MJ ou propos{\'e}s par les joueurs (fixes : lieux et leurs propri{\'e}t{\'e}s ; mobiles : v{\'e}hicules) : l'utilisationn de la carte immobilis{\'e}e devant soi fait intervenir cet {\'e}l{\'e}ment au b{\'e}n{\'e}fice de la carte la plus puissante, sous r{\'e}serve que le lieu soit {\`a} nouveau parcouru ou que l'{\'e}l{\'e}ment mobile puisse arriver {\`a} l'endroit de l'action. Une fois cet {\'e}l{\'e}ment utilis{\'e}, la carte peut {\^e}tre d{\'e}fauss{\'e}e ou {\^e}tre laiss{\'e}e associ{\'e} {\`a} l'{\'e}l{\'e}ment. Lorsqu'elle est associ{\'e}e {\`a} un {\'e}l{\'e}ment, la carte est pos{\'e}e devant le joueur, annot{\'e}e (post-it) et une nouvelle carte est tir{\'e}e dans sa main. %%~\\
+
+\subsection{Ressorts pour le MJ}
+
+Quelques {\'e}l{\'e}ments {\`a} utiliser par le MJ comme ressorts d'action, {\`a} communiquer ou {\`a} faire d{\'e}couvrir : 
+\begin{itemize}
+	\item Les cartes, leurs utilisations et les porteurs de cartes sont rep{\'e}rables {\`a} distance par d'autres (adversaires ou non) : bruit blanc / color{\'e} perceptible, cartes qui chauffent (pour les joueurs)... ; 
+	\item Certains mat{\'e}riaux peuvent servir d'isolants : eau, tissus (soie ou autres mat{\'e}riaux sp{\'e}cifiques)...
+	\item Il est possible de marquer des lieux par des glyphes, de m{\^e}me pour les gens (tatouages) ou certains objets : cela peut servir de protection, dans un sens comme dans l'autre (bloquer {\`a} l'int{\'e}rieur ou {\`a} l'ext{\'e}rieur) ; 
+	\item Lois physiques modifi{\'e}es en certains lieux (g{\'e}om{\'e}trie non euclidienne : on entre dans un b{\^a}timent, la sortie aboutie ailleurs...) ; 
+	\item ... 
+\end{itemize}%%~\\
+
+\subsection{Variantes et modes de jeu (jeu en campagne)}
+
+Ces variantes peuvent compl{\'e}ter ou remplacer les r{\`e}gles d{\'e}crites pr{\'e}c{\'e}dentes.~\\
+
+Variante (jeu en campagne) : chaque joueur dispose au d{\'e}part de la campagne d'un jeu partiel ou complet (54 ou 78 cartes) et peut utiliser ses cartes comme bon lui semble ; les cartes tir{\'e}es pour d{\'e}finir son personnage sont consid{\'e}r{\'e}es comme maitresses et peuvent n'{\^e}tre actives qu'en certaines circonstances.~\\
+
+Destructions de cartes ? Annotations sp{\'e}cifiques ? Par exemple les cartes du tirage du personnage du joueur ou tir{\'e}es pendant la partie ; si n{\'e}cessaire on subtitue par un carton solide (carte bristol) avec annotations. %% ~\\
+
+\subsection{Modalit{\'e}s particuli{\`e}res : {\'e}poques, cultures...}
+
+Modalit{\'e}s CyberPunk : magie limit{\'e} au monde virtuel (matrice / cyberespace) et classiquement reli{\'e} {\`a} la mythologie vaudoue (at autres {\'e}l{\'e}ments cultures Cara{\"i}bes). 
+Relier {\`a} une autre mythologie dans un autre univers (de jeu) : romain, grec, sum{\'e}rien, {\'e}gyptien, nordique, inca... (NOTE : tableau de correspondances {\`a} faire !)~\\
+
+Selon les {\'e}poques, les symboliques, les cultures... {\`A} d{\'e}finir {\'e}ventuellement par le groupe. ~\\
+
+Renommage des Arcanes majeures ? Renommage des Figures des familles ?~\\
+
+Antiquit{\'e} et Moyen-{\^A}ge (et {\'e}quivalents dans diverses cultures) : Aau, Air, Terre, Feu (voire d'autres {\'e}l{\'e}ments : Bois, M{\'e}tal...) d'o{\`u} l'id{\'e}e de diff{\'e}rentes familles et diff{\'e}rents regroupement d'arcanes. ~\\
+
+Combinatoire avec Magie / Magye ou Technologie : comme le vaudou dans l'informatique (dans les suites de \emph{Neuromancien} notamment) ; {\'e}mergence d'une autre symbolique au choix du (de la) MJ et des joueurs / joueuses ? Comme des domaiesn {\`a} conqu{\'e}rir ou {\`a} se r{\'e}partir ? <<Terre, Mer, ciel, Cyberespace>> ?~\\
+
+Diff{\'e}rents jeux possibles en m{\^e}me temps ?~\\
+
+\subsection{Symboles et design / dessin des cartes}
+
+N'importe quel jeu de cartes ou de tarot peut faire l'affaire ; ceux {\`a} petit prix peuvent faire l'affaire (selon le mode de jeu), ou de votre propre dessin. L'essentiel est de pouvoir les utiliser facilement pendant la ou les parties.~\\
+
+\begin{minipage}[ht]{0.45\textwidth}
+	FEU / AIR / EAU / TERRE
+\end{minipage} \hfill \begin{minipage}[ht]{0.45\textwidth}
+	\def\triangle{--++(120:1)--++(240:1)--cycle}
+	\def\triangleReverse{--++(240:1)--cycle}
+	\begin{tikzpicture}
+		\tikz\draw[red,thick](0,0)\triangle; %% FEU
+		
+		\tikz\draw[blue,thick](2,0)\triangle (1,0.40)--(2,0.40); %% AIR
+		
+		\tikz\draw[orange,thick](3,1)--(4,1)\triangleReverse; %% EAU
+		
+		\tikz\draw[green,thick](5,1)--(6,1)\triangleReverse (5,0.60)--(6,0.60); %% TERRE
+	\end{tikzpicture}
+\end{minipage}
+
+\clearpage
+
+\section{Quelques notes et id{\'e}es}
+
+Cette partie est l{\`a} pour vous donner une id{\'e}e de la structure d'un jeu de tarot et des cartes pr{\'e}sentes, leurs d{\'e}nominations, les concepts associ{\'e}s aux arcanes et lames. Beaucoup de jeux de tarots d{\'e}coratifs ou jouables sont en g{\'e}n{\'e}ral disponibles dans des magasins dits "{\'e}sot{\'e}riques" ou des magasins sp{\'e}cialis{\'e}s (jeux de cartes), avec des illustrations vari{\'e}es. L'id{\'e}e ici est d'en faire usage pour jouer d'une fa\c{c}on diff{\'e}rente et raconter une histoire interactive entre amis autour d'une table. %%~\\ 
+
+\subsection{Tarot "classique"}
+
+Les 78 cartes sont r{\'e}parties r{\'e}parties comme suit (trois fois sept plus un et quatre fois deux fois sept) :~\\
+\begin{minipage}[ht]{0.45\textwidth}
+ 	\begin{itemize}
+	\item 22 arcanes majeures, num{\'e}rot{\'e}es de 0 {\`a} 21 inclus :~\newline
+		\begin{tabular}[c]{ p{4.5cm} p{4.5cm} }
+			0	Mat	(Excuse)			&	11	La Force			\\
+			1	Le Bateleur	(Le Mage)	&	12	Le Pendu			\\
+			2	La Papesse				&	13	La Mort				\\
+			3	L'Imp{\'e}ratrice		&	14	La Temp{\'e}rance	\\
+			4	L'Empereur				&	15	Le Diable			\\
+			5	Le Pape					&	16	La Maison-Dieu		\\
+			6	L'Amoureux				&	17	L'{\'E}toile		\\
+			7	Le Chariot				&	18	La Lune				\\
+			8	La Justice				&	19	Le Soleil			\\
+			9	L'Ermite (L'Hermite)	&	20	Le Jugement			\\
+			10	La Roue de Fortune		&	21	Le Monde			\\
+		\end{tabular}
+	\end{itemize}
+\end{minipage}
+\begin{minipage}[ht]{0.45\textwidth}
+	\begin{itemize}
+	\item 56 arcanes mineures, r{\'e}parties en quatres s{\'e}ries ({\'E}p{\'e}es, Coupes, Deniers, B{\^a}tons) comme suit : % ~\newline
+		\begin{itemize}
+			\item As, 2, 3, 4, 5, 6, 7, 8, 9, 10, Valet, Cavalier, Dame, Roi
+			\item As a pour valeur 1 ; Valet, 11 ; Cavalier 12 ; Dame 13 ; Roi 14. 
+			\item Dans certains cas Cavalier sup{\'e}rieur au Roi (au lieu d'{\^e}tre entre Valet et Dame). 
+		\end{itemize}
+		\item[] 
+		\item[] Arcanes majeures non associ{\'e}es {\`a} des arcanes mineures : 0;5;10;15;20;21
+		\item[] 
+		\item[] 
+	\end{itemize}
+\end{minipage}
+
+	\begin{itemize}
+	\item Associations et "significations" des s{\'e}ries, et arcanes majeures associ{\'e}es :~\newline
+		\begin{tabular}[c]{ c c c c }
+			B{\^a}tons		&	Air		&	Carreaux	&	1;2;3;4		\\
+			{\'E}p{\'e}es	&	Feu		&	Tr{\^e}fles	&	6;7;8;9		\\
+			Coupes			&	Eau		&	Coeurs		&	11;12;13;14	\\
+		 	Deniers			&	Terre	&	Piques		&	16;17;18;19	\\
+		 \end{tabular}
+	\end{itemize}
+
+\subsection{Tarot du JdR Mage}
+
+\begin{minipage}[ht]{13cm}
+	{ \setlength\parindent{0pt} \small
+	\begin{tabular}[c]{ p{6.5cm} p{6.5cm} }
+			0.	Le Fou - Les Possibilit{\'e}s				& 11.	La Justice - La Justice			\\
+			1.	Le Mage - La Volont{\'e}					& 12. Le Pendu - Les Perspectives		\\
+			2.	La Grande Pr{\'e}tresse - L'Illumination	& 13. La Mort - Le Renouveau			\\
+			3.	L'Imp{\'e}ratrice - La Fertilit{\'e}		& 14. La Temp{\'e}rance - L'Adaptation	\\
+			4.	L'Empereur - Le Gouvernement				& 15. Le Diable - Les Entraves			\\
+			5.	L'Hi{\'e}rophante - La Morale				& 16. La Tour - La Purification			\\
+			6.	Les Amoureux - L'Attirance					& 17. L'{\'E}toile - L'Inspiration		\\
+			7.	Le Chariot - Le Triomphe					& 18. Luna - L'Intuition				\\
+			8.	La Force - La Puissance						& 19. Le Soleil - La Lib{\'e}ration		\\
+			9.	L'Ermite - Le Conseil						& 20. Le Jugement - La R{\'e}union		\\
+			10.	La Roue de Fortune - Le Destin				& 21. Gaia - L'Accomplissement			\\
+	\end{tabular} }~\\
+\end{minipage}
+\begin{minipage}[ht]{5.0cm}
+	\footnotesize
+	Les quatres familles : 
+		\begin{itemize}
+			\item Questivisme - Traditions - Feu - B{\^a}tons
+			\item Primordialisme - Nephandi - Eau - Coupes
+			\item Dynamisme - Maraudeurs - Air - {\'E}p{\'e}es
+			\item Motivalisme - Technocratie - Terre - Deniers (Pentacles)
+		\end{itemize}~\\
+\end{minipage}
+	
+\subsection{Tarot "{\'E}gyptien" (non Etteila)}
+
+{ \setlength\parindent{0pt} \small
+\begin{tabular}[c]{ p{6.5cm} p{6.5cm} }	
+		0.	Le Fou - Le Ch{\^a}timent			& 11.	La Force - La Puissance			\\
+		1.	Le Bateleur - La Volont{\'e}		& 12. Le Pendu - L'Expiation			\\
+		2.	La Papesse - La Science				& 13. La Mort - La Transformation		\\
+		3.	L'Imp{\'e}ratrice - L'Action		& 14. La Temp{\'e}rance - L'initiative	\\
+		4.	L'Empereur - La R{\'e}alisation		& 15. Le Diable - La Fatalit{\'e}		\\
+		5.	Le Pape - L'Inspiration				& 16. La Pyramide - La Ruine			\\
+		6.	Les Amoureux - L'{\'E}preuve		& 17. L'{\'E}toile - L'Espoir			\\
+		7.	Le Chariot - La Victoire			& 18. La Lune - La D{\'e}ception		\\
+		8.	La Justice - L'{\'E}quilibre		& 19. Le Soleil - Le Bonheur			\\
+		9.	L'Ermite - La Prudence				& 20. Le Jugement - Le Renouvellement	\\
+		10.	La Roue de Fortune - Le Destin		& 21. Le Monde - La R{\'e}compense		\\
+\end{tabular} }~\\
+
+%% \subsection{Autres Jeux de tarot}
+
+%% utilisation packages latex tikz / tikzpeople pour figures et dessins de fonds
+%% tikz-3dplot ?
+%% tikzsymbols ?
+%% tikz-network ?
+%% ... 
+%% find /usr/share/ -name "tikz*"
+%% find /usr/share/tex* -name "*card*"
+%% find /usr/share/tex* -name "*game*"
+%% find /usr/share/tex* -name "*chess*"
+%% %% /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+%% chercher dans : 
+%% %% /usr/share/doc/texlive-doc/latex
+%% %% /usr/share/texlive/texmf-dist/makeindex/latex
+%% %% /usr/share/texlive/texmf-dist/source/latex
+%% %% /usr/share/texlive/texmf-dist/tex4ht/ht-fonts/alias/latex
+%% %% /usr/share/texlive/texmf-dist/tex4ht/ht-fonts/unicode/latex
+%% %% /usr/share/texlive/texmf-dist/tex/latex
+%% %% /usr/share/texmf/doc/latex
+%% %% /usr/share/texmf/tex/latex
+
+\clearpage
+
+%% \section{Section}
+%% \subsection{Sous-section}
+%% \subsubsection{sous sous sous section}
+%% [...]~\\
+%% \subsubsection{sous sous sous section}
+%% \subsection*{SousSectionNonNumerot}
+%% \addcontentsline{toc}{section}{SousSectionNonNumerot}
+%% \begin{table}[ht]
+	%% \begin{center}
+		%% \begin{tabular}{|p{0.1\textwidth}|p{0.7\textwidth}|}
+		%% \hline
+		%% \includegraphics[width=1cm]{img/logo_glider.png}
+		%% & 
+		%% \textbf{GLIDER} est le logo des hacker, symbole repris du jeu de la vie (cavalier). \\
+		%% \hline
+		%% \end{tabular}
+	%% \end{center}
+	%% \caption{Un tableau r{\'e}f{\'e}renc{\'e}}
+	%% \label{tab:TabReference01}
+%% \end{table}~\\
+%% \clearpage
+%% \subsection{Encore une sous-section}
+%% \begin{figure}[H]
+	%% \centerline {\epsfig {file=img/logo_glider.png,width=0.5\textwidth}}
+	%% \caption{Une belle image}
+	%% \label{fig:FigReference01}
+%% \end{figure}
+%% \clearpage
+
+\section{Annexes}
+
+\subsection{Jeu de r{\^o}le g{\'e}n{\'e}rique de Philippe Tromeur : Arcanes}
+
+Source : \texttt{http://philippe.tromeur.free.fr/53/arcanes.pdf}, publi{\'e} le mardi 10 juin 2008.
+
+\subsubsection{Le mat{\'e}riel et les personnages}
+
+Ce jeu de r{\^o}le se joue avec un jeu de tarots normal, mais vous pouvez {\'e}galement utiliser un jeu de tarot divinatoire, si \c{c}a vous amuse.
+Durant la partie, chaque joueur a une main de cinq cartes, renouvell{\'e}es au fur et {\`a} mesure du jeu. Les autres cartes sont dispos{\'e}es dans une pioche tourn{\'e}e contre la table.
+Papier, crayons et victuailles sont utiles...~\\
+
+Les personnages sont d{\'e}finis par 5 Couleurs not{\'e}es A, B, C, D et E : Arcane, B{\^a}tons, Coupes, Deniers et {\'E}p{\'e}es.
+Le joueur peut r{\'e}partir 22 points entre ses 5 caract{\'e}ristiques, sachant que l'Arcane co{\^u}te deux fois plus cher que les autres Couleurs. 
+Pour chaque Couleur, choisir une sp{\'e}cialit{\'e}. ~\\
+
+\begin{minipage}[ht]{0.40\textwidth}
+
+	\subsubsection{Tirage de cartes}
+	
+	Pour effectuer une action, utilisez une carte de votre main ou tirez-en une de la pioche.
+	Chaque action est associ{\'e}e {\`a} une Couleur :
+	\begin{itemize}
+		\item[Arcanes] (ou Atouts) pour la magie
+		\item[B{\^a}tons] (ou Carreau) pour la sant{\'e}
+		\item[Coupes] (ou Coeurs) pour le charme
+		\item[Deniers] (ou Tr{\`e}fles) pour la fortune
+		\item[Ep{\'e}es] (ou Pique) pour l'action
+	\end{itemize}
+
+\end{minipage} \hfill \begin{minipage}[ht]{0.54\textwidth}
+
+	\subsubsection{Personnages joueurs (PJ) et Personnages non joueurs (PNJ)}
+	
+	Le R{\'e}sultat est la valeur de la carte pos{\'e}e, ajout{\'e}e au score du personnage dans la Couleur de l'action. Si la carte est de la Couleur de l'action, le score du personnage compte double.
+	L'Excuse / le Mat compte pour 0 ; les Valets 11, les Cavaliers 12, les Dames 13, les Rois 14. 
+	Par exemple : un personnage chante, avec un score de 5 en Coeur. Il pose le Valet de Coeur : le R{\'e}sultat est donc de (5x2)+11=21
+
+\end{minipage}~\\
+
+Le ma{\^i}tre du jeu a une seule main utilis{\'e}e pour l'ensemble des personnages non joueurs.
+
+\subsubsection{Combat}
+
+Un combat consiste en des oppositions en Ep{\'e}e : le vainqueur a bless{\'e} l'adversaire. Ce dernier doit faire une opposition contre une difficult{\'e} d{\'e}pendant de l'arme (et souvent du score de B{\^a}tons de l'attaquant) :~\\
+\begin{tabular}[c]{c c c c}
+	Poings		&	2xB{\^a}tons	&	Pistolet		&	20	\\
+	Couteau		&	5+B{\^a}tons	&	Fusil			&	30	\\
+	Ep{\'e}e	&	10+B{\^a}tons	&	Lance-Pierre	& 	5	\\
+\end{tabular}~\\
+En cas d'{\'e}chec (r{\'e}sultat inf{\'e}rieur {\`a} la difficult{\'e}), c'est une blessure grave, sinon c'est une blessure l{\'e}g{\`e}re. En cas d'{\'e}chec critique (r{\'e}sul tat inf{\'e}rieur {\`a} la moiti{\'e} de la difficult{\'e}), c'est une blessure critique (et le coma).
+Avec une blessure l{\'e}g{\`e}re, on n'a plus que 3 cartes en main. Avec une blessure grave, on n'en a plus qu'une en main. On r{\'e}cup{\`e}re un niveau de blessure par jour de soins appropri{\'e}s.
+
+\subsubsection{Sp{\'e}cialit{\'e}s et Magie, Exp{\'e}rience, Aventure... }
+
+Les sp{\'e}cialit{\'e}s autorisent les personnages {\`a} rajouter +5 {\`a} leur R{\'e}sultat, si jamais l'action est li{\'e}e au champ de cette sp{\'e}cialit{\'e}. Pour utiliser la magie, il faut poss{\'e}der la sp{\'e}cialit{\'e} ad{\'e}quate :
+\begin{itemize}
+	\item[] n{\'e}cromancie pour discuter avec des fant{\^o}mes,
+	\item[] d{\'e}monisme pour appeler des d{\'e}mons,
+	\item[] divination pour savoir des choses,
+	\item[] t{\'e}l{\'e}kin{\'e}sie pour d{\'e}placer des objets...
+\end{itemize}
+La difficult{\'e} d'Arcane, incluant le bonus de +5 pour la sp{\'e}cialit{\'e}, est g{\'e}n{\'e}ralement {\'e}lev{\'e}e, de 20 pour une divination mineure, {\`a} 40 pour la destruction d'un immeuble par la foudre.
+Plusieurs tentatives successives sont possibles, mais en cas d'{\'e}chec critique (R{\'e}sultat inf{\'e}rieur {\`a} la moiti{\'e} de la difficult{\'e}), le r{\'e}sultat est catastrophique, par exemple une blessure.
+En prenant son temps (une heure par jet d'Arcane), on {\'e}vite le risque d'{\'e}chec critique.~\\
+
+Apr{\`e}s une aventure, un personnage gagne de 1 {\`a} 5 points d'exp{\'e}rience, qui se d{\'e}pensent pour acheter de nouveaux points dans les 5 Couleurs (l'Arcane co{\^u}te toujours deux fois plus cher). Une sp{\'e}cialit{\'e} co{\^u}te 3 points, sauf les sp{\'e}cialit{\'e}s Arcanes qui co{\^u}tent 5 points. 
+--- Oup's, nous arrivons d{\'e}j{\`a} en fin de page et je n'ai pas l'espace de vous pr{\'e}senter un univers et un exemple de sc{\'e}nario... D{\'e}brouillez-vous, je vous fais confiance !
+
+\subsection{Autres JdR / Jeux de R{\^o}le utilisant un Tarot}
+
+\begin{itemize}
+	\item \emph{Les Lames du Cardinal} (Tarot des Ombres) ; 
+	\item Tarot d'inspiration pour \emph{R{\^e}ves de Dragon}, \emph{Mal{\'e}fices}
+	\item \emph{Ambre}, \emph{Mage}...
+	\item ...
+	\item Cas {\`a} part et m{\'e}ritant d'{\^e}tre cit{\'e} ici : \emph{Ch{\^a}teau FalkenStein}, o{\`u} plusieurs jeux de 54 cartes sont utilis{\'e}s {\`a} la place des d{\'e}s en cours de partie afin de r{\'e}soudre les actions des personnages de joueurs.
+\end{itemize}
+	
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+%%%%% %%%%% %%%%% %%%%% 
+\chapter{GiscardPunk}
+
+	\begin{center}
+	
+		\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/banniereGiscardPunk.jpeg}~\\
+		
+		~\vfill
+		
+		\emph{\textbf{JdR inspir{\'e} des Villes nouvelles Futuristes des ann{\'e}es 1970's et 1980's}}~\\
+		\Huge{1980's GiscardPunk}~\\
+		\Large{Un JdR de B{\'e}ton et de technologies rétrofutristes !}~\\
+		
+		~\vfill
+		
+		\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/Giscardpunk3.jpeg}~\\
+		
+	\end{center}
+	
+	\vfill
+	
+\clearpage
+
+\section{Introduction\markboth{Introduction}{Introduction}}
+%% \addcontentsline{toc}{section}{Introduction}
+
+Tout d'abord, quelques images d'illustration :~\\
+
+\begin{minipage}{0.45\linewidth}
+	%% \begin{figure}[ht]
+	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/2-e1596900022719.png}~\\
+	\emph{La maquette de Paris par le Corbusier}
+	%% \caption{La maquette de Paris par le Corbusier}
+	%% \end{figure}
+\end{minipage}
+\begin{minipage}{0.20\linewidth}\end{minipage}
+\begin{minipage}{0.45\linewidth}
+	%% \begin{figure}[ht]
+	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/8.png}~\\
+	\emph{Une Vision Glorieuse d'un Pass{\'e} R{\'e}volu ?}
+	%% \caption{Une Vision Glorieuse d'un Pass{\'e} R{\'e}volu ?}
+	%% \end{figure}
+\end{minipage}~\\~\\
+
+\rule{0.33\linewidth}{0.5mm}~\\
+
+\begin{minipage}{0.30\linewidth}
+	%% \begin{figure}[ht]
+	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/c-a_hk681_barbes-870x652.jpg}~\\
+	%% \caption{Ruelle 1 : Barb{\`e}s}
+	%% \end{figure}
+\end{minipage}
+\begin{minipage}{0.01\linewidth}\end{minipage}
+\begin{minipage}{0.30\linewidth}
+	%% \begin{figure}[ht]
+	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/c-a_hk826_montaigne-870x652.jpg}~\\
+	%% \caption{Ruelle 2 : Avenue Montaigne}
+	%% \end{figure}
+\end{minipage}
+\begin{minipage}{0.01\linewidth}\end{minipage}
+\begin{minipage}{0.30\linewidth}
+	%% \begin{figure}[ht]
+	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/c-a_hk831_6e_b-870x652.jpg}~\\
+	%% \caption{Ruelle 3 : o{\`u} ?}
+	%% \end{figure}
+\end{minipage}~\\
+
+\rule{0.66\linewidth}{0.5mm}~\\
+
+%% \begin{itemize}
+%% 	\item[$\checkmark$] This will give a checkmark bullet.
+%% 	\item[$\square$] This will give a hollow square bullet.
+%% 	\item[$\blacksquare$] This will give a filled square bullet.
+%% 	\item[$\bigstar$] This will give you a bigstar bullet.
+%% \end{itemize}
+
+\begin{itemize}
+	\item[$\bigstar$] Ruelles et avenues de b{\'e}ton {\'e}clair{\'e}es par des n{\'e}ons clignotants ?
+	\item[$\bigstar$] Des publicit{\'e}s pour des produits polluants (voitures, {\'e}lectrom{\'e}nager, cosm{\'e}tiques...) ?
+	\item[$\bigstar$] Une technologie omnipr{\'e}sente d{\'e}pass{\'e}e, tout de m{\^e}me r{\'e}trofuturiste ?
+\end{itemize}~\\
+
+Ce n'est pas CyberPunk 2020 ni m{\^e}me CyberPunk 2077 : c'est du \textbf{GiscardPunk}, et ça se passe en 1977 !~\\
+
+Bienvenue dans un R{\'e}troPunk qui fonctionne au Diesel, au Minitel et {\`a} la poussi{\`e}re de B{\'e}ton !~\\
+
+\rule{1.00\linewidth}{0.5mm}~\\
+
+\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/banniereGiscardPunk.jpeg}~\\
+
+\clearpage
+
+\section{Dans le B{\'e}ton}
+
+\begin{minipage}{0.28\linewidth}
+	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/clemensgritl/_no0906009005.jpeg}~\\
+\end{minipage} \hfill \begin{minipage}{0.68\linewidth}
+
+	\subsection{C'{\'e}tait le Futur}
+	
+	<<La France de Demain !>>~\\
+	
+	C'{\'e}tait avant tout dans la continuit{\'e} des plans de construction centrales nucl{\'e}aires, la construction des villes nouvelles en b{\'e}ton ({\'E}vry-Courcouronnes, Cr{\'e}teil, Champs-Sur-Marne...) aux alentours de Paris et centr{\'e}e sur l'automobile roulant au Diesel, des autoroutes pour les relier, des voies ferr{\'e}es rapides avec le TGV (<<Train Grande Vitesse>>) et ses airs de Concorde Orange restant au sol, le RER (<<R{\'e}seau Express R{\'e}gional>>) et ses tunnels carrel{\'e}s aux tonalit{\'e}s color{\'e}es blanches-oranges-rouges de la d{\'e}cennie 1970, des services t{\'e}l{\'e}matiques et de t{\'e}l{\'e}texte qui pointent leur nez avec le Minitel : vous pouvez r{\'e}server vos billets AirFrance ou SNCF, ou acheter "en ligne" avec des services comme LaRedoute ou Les3Suisses et vous faire livrer chez vous !~\\
+	
+\end{minipage}
+
+\begin{minipage}{0.68\linewidth}
+
+	Du CyberPunk 50 ans (ou 100 ans) trop t{\^o}t : avec des technologies d'avance comme le TGV, le Minitel, les villes nouvelles !~\\ 
+	
+	\c{C}a, c'{\'e}tait l'avenir, c'{\'e}tait avant !
+
+	\subsection{C'est le Pr{\'e}sent}
+	
+	Le b{\'e}ton a un peu vieillit, l'essence co{\^u}te plus cher, les routes ne sont pas entretenues, les constructions non plus. La publicit{\'e} recouvre tout ceci afin de maintenir l'illusion d'une {\'e}conomie de march{\'e} florissante !~\\
+	
+	Pas ou peu d'innovations ici : c'est une "soci{\'e}t{\'e} glorieuse" qui continue dans sa lanc{\'e}e ! L'administration et les entreprises s'occupent de vos emplois et de besoins en biens de consommation !~\\
+	
+	Qui se soucie r{\'e}ellement d'aller au-del{\`a} de la maintenance ?~\\
+	<<Cela a toujours fonctionn{\'e} ainsi !>>
+	
+\end{minipage} \hfill \begin{minipage}{0.28\linewidth}
+	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/clemensgritl/_no1005007530.jpeg}~\\
+	\vfill
+\end{minipage}
+
+	\subsection{Ce sera le Pass{\'e}}
+	
+	Des personnes s'organisent pour que cela change, {\`a} leur niveau !~\\
+	
+	\begin{itemize}
+		\item[$\bigstar$] De la Magye ?
+		\item[$\bigstar$] Des Nouvelles Technologies ?
+		\item[$\bigstar$] Des Organisations Alternatives ?
+	\end{itemize}~\\
+	
+	{\`A} vous de voir !
+
+\clearpage
+
+\section{Villes et Cités}
+
+Les centres historiques des villes sont devenus des musées pour les nombreux touristes : surtout les façades y sont conservées, avec les bars et restaurants classiques de la vie paisible de ces lieux. Les habitants s'y font discrets, parfois on se demandent si ils existent : mais il faut bien que des gens travaillent dans les commerces de proximités accessibles aux touristes, que ce soit comme serveurs, chargés de clientèles ou simplement figurants et avatars d'une vie urbaine paisible.~\\
+
+L'autre aspect de l'Urbanisme \emph{GiscardPunk} : les monuments en béton dédiés aux Habitats, Entreprises, Ministères et longue liste de noms à la gloire du Béton des Villes Nouvelles ! Cités Dortoirs, Cités Adminstratives, Centres Commerciaux, Pôles de Transports...~\\
+
+\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/ParisMatch_1967_Architecture.jpeg}~\\
+
+\clearpage
+ 
+\section{Technologies}
+
+Transports : Grande Vitesse (le fameux TGV), le métro, le RER et ses gares monumentales !~\\
+
+Télécommunications : complémentaire au téléphone, le fameux et incomparable \textsc{Minitel}, avec affichage en couleurs !~\\
+
+\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/Annuaire_lectroniqueSaintMalo980.jpeg}~\\
+
+\clearpage
+
+\section{Sc{\'e}narios}
+
+\begin{itemize}
+	\item[$\bigstar$] S.O.S. Bonheur Saison 1 : la Compagnie d'Analyse G{\'e}n{\'e}rale recrute ! Une occasion en or de sortir du ch{\^o}mage et / ou d'avoir une carrière !~\newline
+	Mais que fait r{\'e}ellement cette soci{\'e}t{\'e} dont personne n'a jamais vu les dirigeants, {\`a} part le Directeur des Ressources Humaines. Qui donc occupe les {\'e}tages sup{\'e}rieurs au num{\'e}ro 11 ?
+	\item[$\bigstar$] S.O.S. Bonheur Saison 1 : des cr{\'e}ations non homologu{\'e}es se distribuent sous le manteau, au d{\'e}triment des v{\'e}ritables artistes reconnus par l'{\'E}tat ; qui diffuse ces \oe uvres (livres, films...), et pourquoi ?  
+	\item[$\bigstar$] S.O.S. Bonheur Saison 1 : de plus en plus de personnes prétendent avoir rencontrées des "non-enregistrés" ou des \emph{deregs} ("de-registrés"), l'État nie pourtant toujours leur existence ? Qui sont ces exclus du systèmes ? Pourquoi sont-ils ou elles présent(e)s sur le terrotoire national ?
+\end{itemize}~\\
+
+\chapter{Annexes}
+
+\clearpage 
+
+\section{Glossaire}
+
+%% voir en haut : sous la definition du titre : glossaire
+\makeglossaire
+
+\clearpage
+
+\section{Bibliographie}
+
+\nocite{*} %% TODO segmenter par chapitre !!
+%% \bibliography{GrandLivreJdRparGW}
+\bibliographystyle{frplain} % plain or frplain
+\bibliography{GrandLivreJdRparGW}
+
+% \bibliography{agenceTownsendJdR}
+% \bibliography{arcanesJdR}
+% \bibliography{giscardpunkBetonJdR}
+
+\end{document}

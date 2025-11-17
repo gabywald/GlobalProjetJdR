@@ -1,9 +1,16 @@
-\documentclass{article}
+\documentclass[a5paper]{article} %% pagesize near a5paper ??
+
+%% better use this ('usepackage') for a5paper !!
+\usepackage[top=0.25\textwidth, bottom=0.25\textwidth, left=0.25\textwidth, right=0.25\textwidth]{geometry}
+
+\pagestyle{empty}
+
 \usepackage{fontspec}
 \usepackage{xeCJK}
 
-\setmainfont{Times New Roman}
-\setCJKmainfont{LiSong Pro} % or another font supporting Chinese
+%% \setmainfont{Times New Roman}
+%% \setCJKmainfont{LiSong Pro} % or another font supporting Chinese
+\setCJKmainfont{Noto Sans Mono CJK JP} %% and "Noto" Fonts Series
 
 \newCJKfontfamily{\dejavusanszh}{DejaVu Sans} % this font has the required glyphs
 \newfontface{\dejavusans}{DejaVu Sans} % this font has the required glyphs
@@ -17,7 +24,6 @@ Yì Jīng 易經 - Hex: \iching{8} \trigram{7}
 
 \trigram{0} \trigram{1} \trigram{2} \trigram{3}
 \trigram{4} \trigram{5} \trigram{6} \trigram{7}
-
 
 \iching{0}
 \iching{1}

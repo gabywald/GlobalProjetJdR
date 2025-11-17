@@ -5,8 +5,8 @@
 	<classpathentry kind="src" path="views"/>
 	<classpathentry kind="src" path="controllers"/>
 	<classpathentry kind="src" path="tests"/>
+	<classpathentry kind="src" path="utilities"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/utilities"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

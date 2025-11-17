@@ -1,0 +1,86 @@
+[
+	{		
+		"titles": [ "possible title 1", "possible title 2", "possible title 3" ], 
+		"head": [ "HEAD of the article" ], 
+		"content1": [ "long content part 1 of the generated article... " ], 
+		"content2": [ "long content part 2 of the generated article... " ], 
+		"content3": [ "long content part 3 of the generated article... " ], 
+		"content4": [ "long content part 4 of the generated article... " ], 
+		"content5": [ "long content part 5 of the generated article... " ], 
+		"conclusion": [ "END of the article" ],  
+		"launcher": { 
+			"computername": "International Social Security Database", 
+			"numrecentshacks": 1
+		}
+	}, 
+	{		
+		"titles": [ "possible title 1", "possible title 2", "possible title 3" ], 
+		"head": [ "HEAD of the article" ], 
+		"content1": [ "long content part 1 of the generated article... " ], 
+		"content2": [ "long content part 2 of the generated article... " ], 
+		"content3": [ "long content part 3 of the generated article... " ], 
+		"content4": [ "long content part 4 of the generated article... " ], 
+		"content5": [ "long content part 5 of the generated article... " ], 
+		"conclusion": [ "END of the article" ], 
+		"launcher": { 
+			"computername": "International Social Security Database", 
+			"numrecentshacks": 2
+		}
+	}, 
+	{		
+		"titles": [ "possible title 1", "possible title 2", "possible title 3" ], 
+		"head": [ "HEAD of the article" ], 
+		"content1": [ "long content part 1 of the generated article... " ], 
+		"content2": [ "long content part 2 of the generated article... " ], 
+		"content3": [ "long content part 3 of the generated article... " ], 
+		"content4": [ "long content part 4 of the generated article... " ], 
+		"content5": [ "long content part 5 of the generated article... " ], 
+		"conclusion": [ "END of the article" ], 
+		"launcher": { 
+			"computername": "International Social Security Database", 
+			"numrecentshacks": 3
+		}
+	}, 
+	{		
+		"titles": [ "possible title 1", "possible title 2", "possible title 3" ], 
+		"head": [ "HEAD alt 1 of the article", "HEAD alt 2 of the article", "HEAD alt 3 of the article" ], 
+		"content1": [ "long content part 1 of the generated article... " ], 
+		"content2": [ "long content part 2 of the generated article... " ], 
+		"content3": [ "long content part 3 of the generated article... " ], 
+		"content4": [ "long content part 4 of the generated article... " ], 
+		"content5": [ "long content part 5 of the generated article... " ], 
+		"conclusion": [ "END of the article" ], 
+		"launcher": { 
+			"computername": "International Social Security Database", 
+			"numrecentshacks": -1
+		}
+	}, 
+	{		
+		"titles": [ "possible title 1", "possible title 2", "possible title 3" ], 
+		"head": [ "HEAD of the article" ], 
+		"content1": [ "long content part 1 of the generated article... " ], 
+		"content2": [ "long content part 2 of the generated article... " ], 
+		"content3": [ "long content part 3 of the generated article... " ], 
+		"content4": [ "long content part 4 of the generated article... " ], 
+		"content5": [ "long content part 5 of the generated article... " ], 
+		"conclusion": [ "END of the article, said by 'COMPANYNAME' " ],  
+		"launcher": { 
+			"computertype": "Public Bank Server", 
+			"numrecentshacks": 1
+		}
+	}, 
+	{		
+		"titles": [ "possible title 1", "possible title 2", "possible title 3" ], 
+		"head": [ "HEAD alt 1 of the article", "HEAD alt 2 of the article", "HEAD alt 3 of the article" ], 
+		"content1": [ "long content part 1 of the generated article... " ], 
+		"content2": [ "long content part 2 of the generated article... " ], 
+		"content3": [ "long content part 3 of the generated article... " ], 
+		"content4": [ "long content part 4 of the generated article... " ], 
+		"content5": [ "long content part 5 of the generated article... " ], 
+		"conclusion": [ "END of the article, said by 'COMPANYNAME' " ],  
+		"launcher": { 
+			"computertype": "Public Bank Server", 
+			"numrecentshacks": -1
+		}
+	}
+]

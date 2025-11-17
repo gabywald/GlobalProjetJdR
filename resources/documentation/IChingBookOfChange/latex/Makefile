@@ -4,13 +4,16 @@ LATEXFILE=documentBaseIChing
 ## BIBTEFILE=documentBaseIChing
 
 ## the local software...
+## the local software...
+CCLUAXE=xelatex
+CCLUALA=lualatex
 CCPDFLA=pdflatex
 CCLATEX=latex
 CCBIBTE=bibtex
 CCPDFTE=dvipdf
 CCPSTEX=dvips
 
-all : pdflatex
+all : xelatex
 
 pdf : $(LATEXFILE).dvi
 	$(CCPDFTE) $(LATEXFILE).dvi
@@ -22,25 +25,39 @@ clean : $(LATEXFILE).log mrproper
 	rm $(LATEXFILE).log
 	## rm $(LATEXFILE).lot
 	## rm $(LATEXFILE).lof
-	# rm $(LATEXFILE).dvi
-	# rm $(LATEXFILE).pdf
+	## rm $(LATEXFILE).dvi
+	## rm $(LATEXFILE).pdf
 
-mrproper : $(LATEXFILE).aux $(LATEXFILE).toc ## $(LATEXFILE).bbl $(LATEXFILE).blg 
+mrproper : $(LATEXFILE).aux ## $(LATEXFILE).bbl $(LATEXFILE).blg $(LATEXFILE).toc
 	rm $(LATEXFILE).aux
 	## rm $(LATEXFILE).bbl
 	## rm $(LATEXFILE).blg
-	rm $(LATEXFILE).toc
+	## rm $(LATEXFILE).toc
 
 $(LATEXFILE).dvi : $(LATEXFILE).tex ## $(BIBTEFILE).bib
-	$(CCLATEX) $(LATEXFILE).tex
-	## $(CCBIBTE) $(LATEXFILE)
 	## $(CCLATEX) $(LATEXFILE).tex
+	## $(CCBIBTE) $(LATEXFILE)
+	$(CCLATEX) $(LATEXFILE).tex
 	$(CCLATEX) $(LATEXFILE).tex
 	$(CCLATEX) $(LATEXFILE).tex
 
 pdflatex : $(LATEXFILE).tex ## $(BIBTEFILE).bib
-	$(CCPDFLA) $(LATEXFILE).tex
-	## $(CCBIBTE) $(BIBTEFILE)
 	## $(CCPDFLA) $(LATEXFILE).tex
+	## $(CCBIBTE) $(BIBTEFILE)
 	$(CCPDFLA) $(LATEXFILE).tex
 	$(CCPDFLA) $(LATEXFILE).tex
+	$(CCPDFLA) $(LATEXFILE).tex
+
+lualatex : $(LATEXFILE).tex ## $(BIBTEFILE).bib
+	## $(CCLUALA) $(LATEXFILE).tex
+	## $(CCBIBTE) $(BIBTEFILE)
+	$(CCLUALA) $(LATEXFILE).tex
+	$(CCLUALA) $(LATEXFILE).tex
+	$(CCLUALA) $(LATEXFILE).tex
+	
+xelatex : $(LATEXFILE).tex ## $(BIBTEFILE).bib
+	## $(CCLUAXE) $(LATEXFILE).tex
+	## $(CCBIBTE) $(BIBTEFILE)
+	$(CCLUAXE) $(LATEXFILE).tex
+	$(CCLUAXE) $(LATEXFILE).tex
+	$(CCLUAXE) $(LATEXFILE).tex

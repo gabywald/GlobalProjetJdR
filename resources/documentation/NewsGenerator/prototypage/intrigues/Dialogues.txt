@@ -1,0 +1,17 @@
+Réplique: "T’as les crédits ou t’as les balles ? Ici, c’est l’un ou l’autre, mon pote."
+Contexte: Un marchand d’armes dans une ruelle du Sector 7, alors qu’un client hésite à payer.
+
+---
+
+Réplique: "Les corporations nous vendent des rêves en kit, mais elles oublient de mentionner le prix… en morceaux de ton âme."
+Contexte: Une hackeuse ivre, dans un bar, après avoir piraté un serveur de NeoDyne.
+
+---
+
+Réplique: "T’as déjà vu un homme sans mémoire ? C’est comme un fantôme qui erre sans savoir qu’il est mort."
+Contexte: Un médecin clandestin, en train d’examiner une victime du virus "Mémoire Morte".
+
+---
+
+Réplique: "La ville est un piège, mais c’est le seul endroit où on peut encore se battre. Alors on reste. Et on brûle."
+Contexte: Un mercenaire, alors qu’il prépare une mission suicide contre une tour corporatiste.
