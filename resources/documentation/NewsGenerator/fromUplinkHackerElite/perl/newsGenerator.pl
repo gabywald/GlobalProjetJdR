@@ -122,7 +122,7 @@ sub generateNewsToLaTeX {
 	$toReturn .= "".selectELTinNews($newsHashMAIN, "content2")."\n";
 	$toReturn .= "".selectELTinNews($newsHashMAIN, "content3")."\n";
 	$toReturn .= "".selectELTinNews($newsHashMAIN, "content4")."\n";
-	$toReturn .= "".selectELTinNews($newsHashMAIN, "content5")."~\\\\\n\n";
+	$toReturn .= "".selectELTinNews($newsHashMAIN, "content5")." %% ~\\\\\n\n";
 	$toReturn .= "\\vfill~\\vfill\n\n";
 	$toReturn .= "\\textbf{".selectELTinNews($newsHash0001, "titles")."}~\\\\\n";
 	$toReturn .= "\\emph{".selectELTinNews($newsHash0001, "head")."}~\\\\\n";
@@ -130,7 +130,7 @@ sub generateNewsToLaTeX {
 	$toReturn .= "".selectELTinNews($newsHash0001, "content2")."\n";
 	$toReturn .= "".selectELTinNews($newsHash0001, "content3")."\n";
 	$toReturn .= "".selectELTinNews($newsHash0001, "content4")."\n";
-	$toReturn .= "".selectELTinNews($newsHash0001, "content5")."~\\\\\n\n";
+	$toReturn .= "".selectELTinNews($newsHash0001, "content5")." %% ~\\\\\n\n";
 	$toReturn .= "\\vfill~\\vfill\n\n";
 	$toReturn .= "\\textbf{".selectELTinNews($newsHash0002, "titles")."}~\\\\\n";
 	$toReturn .= "\\emph{".selectELTinNews($newsHash0002, "head")."}~\\\\\n";
