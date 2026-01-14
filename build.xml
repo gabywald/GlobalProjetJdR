@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+
+<!-- Build file for creating JAR file -->
+<project name="GlobalProjectJdR" default="CreateJar">
+ 	<property file="mesproprietes.properties" />
+	<!-- <property name="repSources" value="src" /> -->
+ 	<property name="projet.nom" value="GlobalProjectJdR" />
+ 	<property name="projet.version" value="0.5" />
+	<property name="dist.dir" value="generated" />
+	<property name="build.dir" value="build" />
+	<property name="resources.dir" value="resources" />
+	<property name="src.dir" value="." />
+	<!-- 
+	<property name="src.dir" value="src" />
+	<property name="launchers.dir" value="launchers" />
+	<property name="views.dir" value="views" />
+	<property name="controllers.dir" value="controllers" />
+	<property name="utilities.dir" value="utilities" />
+	-->
+	<fileset dir="src" includes="**/*.java" />
+	<!--
+	<fileset dir="src">
+	  <patternset id="source_code">
+		<includes="**/*.java" >
+	  </patternset>
+	</fileset>
+	-->
+	<target name="init"> 
+		<mkdir dir="${basedir}/${build.dir}" /> 
+		<mkdir dir="${basedir}/${dist.dir}" /> 
+	</target>
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.dir}" />
+	</target>
+	<!-- 
+	<target name="compile" depends="init">
+		<javac srcdir="${utilities.dir}" destdir="${build.dir}" />
+		<javac srcdir="${src.dir}" destdir="${build.dir}" />
+		<javac srcdir="${views.dir}" destdir="${build.dir}" />
+		<javac srcdir="${controllers.dir}" destdir="${build.dir}" />
+		<javac srcdir="${launchers.dir}" destdir="${build.dir}" />
+	</target>
+	-->
+	<target name="compile" depends="clean,init">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="last">
+			<classpath>
+				<!-- include here the junit for compilation (and tests) JUnit3 TODO make it more generic ! (if possible)-->
+				<pathelement path="/home/gabywald/.p2/pool/plugins/org.junit_4.13.2.v20240929-1000.jar" />
+			</classpath>
+		</javac>
+		<copy todir="${build.dir}/${resources.dir}">
+			<fileset dir="resources" />
+		</copy>
+	</target>
+	<target name="CreateJar" description="Create JAR file" depends="compile">
+		<!-- JAR Options -->
+		<!-- <jar jarfile="${projet.nom}.jar" basedir="." includes="**/*.class" /> -->
+		<jar jarfile="${dist.dir}/${projet.nom}.jar" basedir="${build.dir}" includes="**/*.class,resources/**" >
+			<manifest>
+				<!-- <section name="common"> -->
+					<attribute name="Main-Class" value="gabywald.rpg.launcher.RPGViewLauncher"/>
+					<!-- <attribute name="Class-Path" value="." /> -->
+					<!-- <attribute name="Path" value="." /> -->
+					<!-- Who is building this jar ? -->
+					<attribute name="Built-By" value="${user.name}"/>
+					<!-- Information about the program itself -->
+					<attribute name="Implementation-Vendor" value="Gabriel 'GabyWald' Chandesris (Since 2000+, mainly 2011-2012, and since 2020)"/>
+					<attribute name="Implementation-Title" value="Global Project JdR"/>
+					<attribute name="Implementation-Version" value="${projet.version}"/>
+					<!-- TODO add a timestamp : <attribute name="Built-Date" value="${TODAY}"/> -->
+					<!-- details -->
+					<!-- ... -->
+				<!-- </section> -->
+			</manifest>
+		</jar>
+
+	</target>
+</project>

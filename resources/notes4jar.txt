@@ -1,0 +1,194 @@
+
+https://www.jmdoudoux.fr/java/dej/chap-ant.htm
+
+https://ant.apache.org/manual/Tasks/manifest.html
+
+https://www.baeldung.com/eclipse-quickly-build-jar-file
+
+
+baeldung.com
+Quickly Building a JAR File in Eclipse | Baeldung
+9–11 minutes
+
+announcement - icon
+
+Mocking is an essential part of unit testing, and the Mockito library makes it easy to write clean and intuitive unit tests for your Java code.
+
+Get started with mocking and improve your application tests using our Mockito guide:
+
+Download the eBook
+
+announcement - icon
+
+Handling concurrency in an application can be a tricky process with many potential pitfalls. A solid grasp of the fundamentals will go a long way to help minimize these issues.
+
+Get started with understanding multi-threaded applications with our Java Concurrency guide:
+
+announcement - icon
+
+Spring 5 added support for reactive programming with the Spring WebFlux module, which has been improved upon ever since. Get started with the Reactor project basics and reactive programming in Spring Boot:
+
+announcement - icon
+
+Since its introduction in Java 8, the Stream API has become a staple of Java development. The basic operations like iterating, filtering, mapping sequences of elements are deceptively simple to use.
+
+But these can also be overused and fall into some common pitfalls.
+
+To get a better understanding on how Streams work and how to combine them with other language features, check out our guide to Java Streams:
+
+announcement - icon
+
+Get started with Spring and Spring Boot, through the Learn Spring course:
+
+announcement - icon
+
+Yes, Spring Security can be complex, from the more advanced functionality within the Core to the deep OAuth support in the framework.
+
+I built the security material as two full courses - Core and OAuth, to get practical with these more complex scenarios. We explore when and how to use each feature and code through it on the backing project.
+
+You can explore the course here:
+
+announcement - icon
+
+Spring Data JPA is a great way to handle the complexity of JPA with the powerful simplicity of Spring Boot.
+
+Get started with Spring Data JPA through the guided reference course:
+
+announcement - icon
+
+Refactor Java code safely — and automatically — with OpenRewrite.
+
+Refactoring big codebases by hand is slow, risky, and easy to put off. That’s where OpenRewrite comes in. The open-source framework for large-scale, automated code transformations helps teams modernize safely and consistently.
+
+Each month, the creators and maintainers of OpenRewrite at Moderne run live, hands-on training sessions — one for newcomers and one for experienced users. You’ll see how recipes work, how to apply them across projects, and how to modernize code with confidence.
+
+Join the next session, bring your questions, and learn how to automate the kind of work that usually eats your sprint time.
+
+announcement - icon
+
+Regression testing is an important step in the release process, to ensure that new code doesn't break the existing functionality. As the codebase evolves, we want to run these tests frequently to help catch any issues early on.
+
+The best way to ensure these tests run frequently on an automated basis is, of course, to include them in the CI/CD pipeline. This way, the regression tests will execute automatically whenever we commit code to the repository.
+
+In this tutorial, we'll see how to create regression tests using Selenium, and then include them in our pipeline using GitHub Actions:, to be run on the LambdaTest cloud grid:
+
+1. Overview
+
+In this article, we’ll learn how to quickly build a JAR file in the Eclipse IDE. We’ll follow two approaches. First, we’ll use the Eclipse-specific .jardesc file for quick JAR creation. We’ll also learn about the structure of the .jardesc file.
+
+Then, we’ll create a custom Ant Builder to automatically produce a JAR file of a project on a successful build.
+2. Using .jardesc File
+
+A .jardesc file defines how to turn a Java project into a JAR (Java Archive) file. The JAR file includes the necessary source and class files, the dependencies, resources, and a manifest file that contains information about the JAR file.
+2.1. Creating a .jardesc
+
+The .jardesc is an XML file that we can use to quickly create a JAR in a few simple steps inside the Eclipse IDE. We can generate the file in the JAR export wizard in a fairly user-friendly way.
+
+For instance, we have the following project layout:
+
+md2epub
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── app
+    │   │       └── Application.java
+    │   └── resources
+    └── test
+        ├── java
+        └── resources
+
+We create a JAR of the project by right-clicking the project in the package explorer view and selecting the “Export” option from the menu:
+Export Project
+
+Once we select “Export“, we’ll be presented with the Export Wizard, where we choose the export format:
+Select Export Wizard
+
+From the tree, we select “JAR file” and press “Next“:
+JAR Options
+
+Here, we select the required files we want to include in the JAR file. Then, we choose the destination for the JAR file and check the required options. Once done, press “Next“:
+Save JAR Info
+
+This is an important step. Here, we check the “Save the description of this JAR in the workspace” option, which creates a .jardesc file. In this scenario, the debug.jardesc file will be created at the root of the project. Once we’re set, we press “Next“:
+Customize Manifest
+
+In this view, we can generate or select an existing manifest file by choosing the “Use existing manifest from workspace” option. However, in this scenario, we create a default manifest file.
+
+At this point, we’re done and we press “Finish“. Once the file is created, we can see it in Package Explorer:
+.jardesc Created
+
+Now, every time, when we need to create a JAR file, we double-click this file and it presents us with the options dialog:
+JAR Quick Create
+
+Notably, it remembers all the options we initially selected when creating the JAR file. We can change these options and press “Finish” to produce the JAR at the specified location.
+2.2. Structure of a .jardesc
+
+The .jardesc file is a standard XML file:
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/Haidar Ali/Documents/md2epub.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/md2epub/debug.jardesc" 
+      exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" 
+      saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" 
+      saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <folder path="/md2epub/src"/>
+        <folder path="/md2epub/target"/>
+        ...
+    </selectedElements>
+</jardesc>
+
+We can change these options with no issues. Better yet, we can create a copy of this file that we tune for our default .jardesc configuration and use that file in new projects.
+
+This approach is indeed very productive. However, there are some limitations to it. One of the limitations is the absence of adding dynamic information to the filename. For instance, we can’t add a build number or date to the filename. Therefore, we’ll have to add this information manually.
+3. Creating JAR With Ant Builder
+
+In Eclipse, we can create custom builders that can perform automated tasks during project building. For our use case, we’ll define an Ant Builder that creates the JAR file during the project build.
+
+First, we’ll need to create a build.xml file in the workspace root by heading over to New → File:
+
+<?xml version="1.0" ?>
+
+<!-- Build file for creating JAR file -->
+<project name="md2epub" default="CreateJar">
+    <target name="CreateJar" description="Create JAR file">
+        <!-- JAR Options -->
+        <jar jarfile="debug.jar" basedir="." includes="*.class" />
+    </target>
+</project>
+
+This file specifies basic project information and options for the JAR. Next, we’ll create a custom Ant Builder by going to File -> Properties:
+Project Properties
+
+Here, we navigate to “Builders” and select “New“:
+Config Type Chooser
+
+We select “Ant Builder” from the options and press “OK“. It displays the configuration dialog:
+Select Build File
+
+In the view, we rename the configuration and select the build.xml file, which we previously added to the workspace:
+Select build.xml Location
+
+Afterward, we head over to the “Targets” tab and select “Set Targets“:
+Select Target
+
+In the list, we can observe that it automatically picked the “CreateJar” target from our build.xml file. It contains other targets if they’re available in build.xml. However, in this case, we already have one which will be set by default:
+Set Target
+
+Now, when we successfully build the project, it creates debug.jar in the workspace root:
+Created JAR in Explorer
+
+We can change the filename in build.xml if we need to.
+4. Conclusion
+
+This article covered two quick methods for creating a JAR file in Eclipse. We can use any one of these approaches depending on the project. For a simple project, creating and using a .jardesc file will suffice. However, for complex projects, using an Ant Builder is a good choice due to the flexibility it offers.
