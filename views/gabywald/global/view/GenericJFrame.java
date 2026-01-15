@@ -7,8 +7,9 @@ import javax.swing.JFrame;
 
 /**
  * Generic abstract class to define generic JFrame. 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public abstract class GenericJFrame extends JFrame {
 	/** Configuration for Generic Frame and inheritants... */
 	public static final TextualInfoFile confGenericJFrame = 

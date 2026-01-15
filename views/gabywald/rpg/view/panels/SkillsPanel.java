@@ -5,8 +5,9 @@ import gabywald.rpg.controller.IntegrationActionListenerSkills;
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class SkillsPanel extends RPGDataPanel {
 	private static SkillsPanel instance;
 	

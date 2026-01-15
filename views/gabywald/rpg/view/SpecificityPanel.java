@@ -5,11 +5,12 @@ import javax.swing.JPanel;
 
 /**
  * A general abstract 'mother' class to build Personnae datas, attributes...
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  * @see gabywald.rpg.view.panels.RPGPersonnaeAnyPanel
  * @see gabywald.rpg.view.panels.RPGDataPanel
  * @see gabywald.rpg.view.panels.WelcomePanel
  */
+@SuppressWarnings("serial")
 public abstract class SpecificityPanel extends JPanel {
 	private static final String[] CRITERIAS_NAMES = {
 		"scenarioGeneratorScrollPosX", 			/** 00 */

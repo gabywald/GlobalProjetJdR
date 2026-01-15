@@ -7,7 +7,7 @@ import gabywald.rpg.view.BuildPersonnaeFrame;
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011, 2022)
+ * @author Gabriel Chandesris (2011, 2022, 2026)
  */
 @SuppressWarnings("serial")
 public class RPGPersonnaeSimulacreSPanel extends RPGPersonnaeAnyPanel {

@@ -3,8 +3,13 @@ https://www.jmdoudoux.fr/java/dej/chap-ant.htm
 
 https://ant.apache.org/manual/Tasks/manifest.html
 
-https://www.baeldung.com/eclipse-quickly-build-jar-file
+https://koor.fr/Java/Tutorial/java_archive_jar.wp
 
+https://stackoverflow.com/questions/482560/can-you-tell-on-runtime-if-youre-running-java-from-within-a-jar
+
+https://www.javaspring.net/blog/can-you-tell-on-runtime-if-you-re-running-java-from-within-a-jar/#11-running-in-eclipse-ide
+
+https://www.baeldung.com/eclipse-quickly-build-jar-file
 
 baeldung.com
 Quickly Building a JAR File in Eclipse | Baeldung

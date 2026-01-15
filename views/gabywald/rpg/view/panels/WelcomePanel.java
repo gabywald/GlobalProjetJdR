@@ -11,14 +11,13 @@ import javax.swing.JTextArea;
 import gabywald.rpg.view.BuildPersonnaeFrame;
 import gabywald.rpg.view.RPGAvailableImages;
 import gabywald.rpg.view.SpecificityPanel;
-import gabywald.utilities.logger.Logger;
-import gabywald.utilities.logger.Logger.LoggerLevel;
 
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class WelcomePanel extends SpecificityPanel {
 	private static WelcomePanel instance;
 	private static final int mainImageWidth = 
@@ -31,17 +30,19 @@ public class WelcomePanel extends SpecificityPanel {
 	private WelcomePanel() {
 		this.setLayout(null);
 		
-		int x = 500; // WelcomePanel.mainImageWidth+60;
-		int y = 325; // WelcomePanel.mainImageHeight-325;
+		int x = 475; // WelcomePanel.mainImageWidth+60;
+		int y = 425; // WelcomePanel.mainImageHeight-325;
 		int titleWidth		= Integer.parseInt(BuildPersonnaeFrame.confRPG.getValueOf("titleWidth"));
 		int titleHeight		= Integer.parseInt(BuildPersonnaeFrame.confRPG.getValueOf("titleHeight"));
 		int welcomeWidth	= Integer.parseInt(BuildPersonnaeFrame.confRPG.getValueOf("welcomeScrollWidth"));
 		int welcomeHeight	= Integer.parseInt(BuildPersonnaeFrame.confRPG.getValueOf("welcomeScrollHeight"));
 		
-		Logger.printlnLog(LoggerLevel.LL_DEBUG, "x: "+ x);
-		Logger.printlnLog(LoggerLevel.LL_DEBUG, "y: "+ y);
-		Logger.printlnLog(LoggerLevel.LL_DEBUG, BuildPersonnaeFrame.confRPG.getValueOf("welcomeBiggTitle"));
-		Logger.printlnLog(LoggerLevel.LL_DEBUG, BuildPersonnaeFrame.confRPG.getValueOf("welcomeSubbTitle"));
+//		Logger.printlnLog(LoggerLevel.LL_DEBUG, "prefix: " + AvailableImages.prefix);
+//		Logger.printlnLog(LoggerLevel.LL_DEBUG, WelcomePanel.instance.getClass().getResource("") + "");
+//		Logger.printlnLog(LoggerLevel.LL_DEBUG, "x: "+ x);
+//		Logger.printlnLog(LoggerLevel.LL_DEBUG, "y: "+ y);
+//		Logger.printlnLog(LoggerLevel.LL_DEBUG, BuildPersonnaeFrame.confRPG.getValueOf("welcomeBiggTitle"));
+//		Logger.printlnLog(LoggerLevel.LL_DEBUG, BuildPersonnaeFrame.confRPG.getValueOf("welcomeSubbTitle"));
 		
 		JLabel biggTitle = new JLabel(BuildPersonnaeFrame.confRPG.getValueOf("welcomeBiggTitle"));
 		biggTitle.setForeground(Color.DARK_GRAY);

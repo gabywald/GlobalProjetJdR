@@ -6,9 +6,10 @@ import gabywald.rpg.view.BuildPersonnaeFrame;
 /**
  * Double implementation of dialog for Skills. 
  * <br><i>Doubleton ("double singleton")</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  * @deprecated ...
  */
+@SuppressWarnings("serial")
 public class SkillsAskingDialog extends GenericAskingDialog {
 	private static final String FIRST_SET_LABEL		= "Skill Name : ";
 	private static final String SECOND_SET_LABEL	= "Sub-Choice : ";

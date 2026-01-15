@@ -5,8 +5,9 @@ import gabywald.rpg.controller.IntegrationActionListenerSpecial;
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class SpecialPanel extends RPGDataPanel {
 	private static SpecialPanel instance;
 

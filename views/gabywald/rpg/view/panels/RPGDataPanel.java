@@ -15,7 +15,7 @@ import gabywald.rpg.view.SpecificityPanel;
 
 /**
  * Intermediate abstract class for determining some 'complex' data of Personnae. 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  * @see BiographyPanel
  * @see ScenarioGenerator
  * @see EquipmentsPanel
@@ -23,6 +23,7 @@ import gabywald.rpg.view.SpecificityPanel;
  * @see SpecialPanel
  * @see WeaponsPanel
  */
+@SuppressWarnings("serial")
 public abstract class RPGDataPanel extends SpecificityPanel {
 	protected static final String[] FIRST_BUTTON_NAME	= { "Select & Add below",	"Generate !!" };
 	protected static final String[] SECOND_BUTTON_NAME	= { "Remove one. ",			"Add one line" };
@@ -31,7 +32,7 @@ public abstract class RPGDataPanel extends SpecificityPanel {
 	/** A TextArea for content. */
 	private JTextArea contentGenerated;
 	/** A selector. */
-	private JComboBox selector;
+	private JComboBox<String> selector;
 	/** Some apply-ing button. */
 	private JButton applyFirst, applySecond;
 	/** A TextField for a number. */
@@ -66,7 +67,7 @@ public abstract class RPGDataPanel extends SpecificityPanel {
 	
 	protected JScrollPane getContentScroll() {
 		this.contentGenerated	= new JTextArea();
-		this.contentGenerated.setFont(new Font("Monospaced", Font.PLAIN, 12));
+		this.contentGenerated.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 12));
 		this.contentGenerated.setDisabledTextColor(Color.DARK_GRAY);
 		JScrollPane scroll		= new JScrollPane(this.contentGenerated);
 		scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -76,8 +77,8 @@ public abstract class RPGDataPanel extends SpecificityPanel {
 		return scroll;
 	}
 	
-	protected JComboBox getComboBox(String[] items) {
-		this.selector			= new JComboBox(items);
+	protected JComboBox<String> getComboBox(String[] items) {
+		this.selector			= new JComboBox<String>(items);
 		this.selector.setBounds(this.criterias[0], this.criterias[4], this.criterias[7], this.criterias[5]);
 		return this.selector;
 	}
