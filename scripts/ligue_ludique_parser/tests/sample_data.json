@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Lundi 27 avril 19h30-23h : Arcadia",
+    "forum": "Le Repaire du Dragon",
+    "date": "Lundi",
+    "start_time": "19h30",
+    "end_time": "23h",
+    "address": "43bis Av. Simon Bolivar, 75019 Paris",
+    "price": "3€",
+    "last_post_date": "2026-04-24T14:01:00",
+    "link": "https://ligue-ludique.fr/forum/viewtopic.php?p=31494"
+  },
+  {
+    "title": "Lundi 25 Mai : Table Libre",
+    "forum": "Loufoque, 5ème arr, Rue Dante",
+    "date": "Lundi",
+    "start_time": "19h",
+    "end_time": "00h",
+    "address": "5 Rue Dante, 75005 Paris",
+    "price": null,
+    "last_post_date": "2026-04-23T10:20:00",
+    "link": "https://ligue-ludique.fr/forum/viewtopic.php?p=31454"
+  }
+]
