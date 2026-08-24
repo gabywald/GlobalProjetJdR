@@ -34,6 +34,7 @@ bin/
 **/*.lot
 **/*.toc
 **/*.bib.bak
+**/*.out
 
 # after ant build.xml
 build/
