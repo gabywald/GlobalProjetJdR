@@ -12,9 +12,10 @@ import javax.swing.SwingConstants;
 /**
  * This class defines the North Panel of the Frame (title, help...). 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  * @see SpecificJFrame
  */
+@SuppressWarnings("serial")
 public class SpecificNorthPanel extends JPanel {
 	private static SpecificNorthPanel instance;
 	/** Default width of the Panel (same as Frame). */

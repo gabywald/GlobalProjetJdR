@@ -17,8 +17,9 @@ import javax.swing.JTextField;
 
 /**
  * An Abstract Class to define dialogs with choices and subChoices, values... 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class GenericAskingDialog extends JDialog {
 	/** Current instances of WeaponAskingDialog. */
 	private static GenericAskingDialog configureAndAddv01, configureAndAddv02, removal;
@@ -27,7 +28,7 @@ public class GenericAskingDialog extends JDialog {
 	/** Sets of skills and sub-skills currently used. */
 	private String[] choices, subChoices;
 	/** Space of Choices. */
-	private JComboBox choice, subChoice;
+	private JComboBox<String> choice, subChoice;
 	/** A given Value for a given choice (Skill for example). */
 	private JTextField value;
 	/** The buttons in the box. */
@@ -65,7 +66,7 @@ public class GenericAskingDialog extends JDialog {
 		this.choice.addActionListener(new GenericSelectActionListener(this, valuesToChoose, subChoices));
 		this.value	= new JTextField("*****");
 		// this.value.setEditable(false);
-		this.subChoice	 = new JComboBox();
+		this.subChoice	 = new JComboBox<String>();
 		this.subChoice.setEditable(true);
 		this.subChoice.setEnabled(false);
 		/** ****** ****** ****** ****** ****** */
@@ -173,7 +174,7 @@ public class GenericAskingDialog extends JDialog {
 		GridBagConstraints c = new GridBagConstraints();
 		c.fill = GridBagConstraints.HORIZONTAL;
 		/** ****** ****** ****** ****** ****** */
-		this.choice = new JComboBox(this.choices);
+		this.choice = new JComboBox<String>(this.choices);
 		/** ****** ****** ****** ****** ****** */
 		this.addAComponent(0, 0, 3, c, new JLabel(message));
 		this.addAComponent(0, 1, 3, c, GenericAskingDialog.getEmptyJLabel());

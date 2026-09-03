@@ -1,0 +1,256 @@
+Voici une **analyse enrichie** intégrant les données sur **l'Agence Félicie** (créée par Tristan Lhomme dans *Le Musée de Lhomme* pour *L'Appel de Cthulhu*), ainsi que le **niveau de classification ultra-secret** typique d'une agence de lutte contre l'occulte, inspirée de Delta Green.
+
+---
+
+---
+
+---
+
+## **Agence Félicie : Une référence française majeure**
+D'après les documents et scénarios de **Tristan Lhomme** (notamment dans *Le Musée de Lhomme*), **Félicie** est une **organisation secrète française** fondée en **1945**, spécialisée dans la lutte contre les menaces surnaturelles et occultes.
+Elle est présentée comme le **successeur du Bureau S** (une autre organisation occulte française, active pendant la Seconde Guerre mondiale).
+Félicie a été **officiellement dissoute dans les années 1980**, mais continue d'opérer **clandestinement** jusqu'à l'époque contemporaine, avec des agents infiltrés dans divers services de l'État (armée, police, renseignement, diplomatie).
+
+---
+
+### **📜 Caractéristiques clés de Félicie**
+#### **1. Niveau de classification : Ultra-secret (Top Secret / Défense Nationale)**
+- **Accès restreint** : Seuls les agents **triés sur le volet** (et souvent "recrutés" de force) ont connaissance de son existence.
+  - Les dossiers sont classifiés **"Défense Nationale – Accès Réservé"** (équivalent français du *Top Secret* américain).
+  - Les archives sont **compartimentées** : chaque agent n'a accès qu'à une partie des informations, selon son niveau d'habilitation.
+  - **Effacement des traces** : Les missions sont **niées** par l'État en cas de fuite. Les agents disparus sont déclarés **morts au combat** ou **démissionnaires**.
+
+- **Protocoles de sécurité** :
+  - **Désinformation** : Félicie utilise des **couvertures** (fausses identités, missions officielles bidon) pour masquer ses activités.
+  - **Neutralisation** : Les agents **trop exposés** ou **corrompus** sont **éliminés** (suicides maquillés, accidents).
+  - **Contrôle mental** : Certains agents subissent des **conditionnements psychologiques** pour éviter les fuites (hypnose, drogues amnésiques).
+
+---
+
+#### **2. Structure organisationnelle**
+Félicie est organisée en **cellules autonomes**, sans hiérarchie centrale visible, pour limiter les risques de trahison ou d'infiltration.
+
+| **Division**               | **Rôle**                                                                                     | **Profil des agents**                                                                                     |
+|---------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Direction (Conseil des Anciens)** | Supervise les opérations, prend les décisions stratégiques.                                | Ancien militaires, hauts fonctionnaires, scientifiques de renom (souvent liés à des sociétés secrètes comme la franc-maçonnerie occulte). |
+| **Bureau des Opérations**  | Planifie et coordonne les missions sur le terrain.                                         | Officiers du RAID, de la DGSE, ou anciens mercenaires. Spécialistes en **infiltration** et **neutralisation**. |
+| **Service Recherche**      | Étudie les phénomènes occultes, analyse les artefacts.                                     | Universitaires (historiens, archéologues), scientifiques (physiciens, chimistes), et **occultistes repentis**. |
+| **Service Contre-espionnage** | Traque les infiltrations (cultes, entités, espions étrangers).                              | Agents du contre-espionnage (DGSE, DRM), experts en **désinformation**.                              |
+| **Service Logistique**     | Gère les équipements spéciaux (armes, artefacts, technologies occultes).                  | Ingénieurs, techniciens, et **nécromanciens sous contrôle**.                                             |
+| **Service "Nettoyage"**    | Efface les preuves, élimine les témoins, couvre les scandales.                              | **Tueurs professionnels**, experts en **fausses preuves** et **manipulation médiatique**.               |
+
+---
+
+#### **3. Profils des agents**
+Les agents de Félicie sont **recrutés de force ou par nécessité**, souvent après avoir été exposés à des phénomènes inexplicables.
+
+| **Type d'agent**          | **Origine**                          | **Compétences**                                                                                     | **Faiblesses**                                                                                     |
+|---------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **Le Baroudeur**          | Légion étrangère, RAID, DGSE         | Combat, survie, infiltration.                                                                     | **Paranoïa**, **alcoolisme** (pour oublier ce qu'il a vu).                                       |
+| **Le Scientifique**       | CNRS, CEA, universités               | Recherche, analyse d'artefacts, protocoles occultes.                                            | **Obsession** pour le savoir interdit, risque de **corruption** par les grimoires.               |
+| **Le Policier**           | Police nationale, gendarmerie        | Enquête, interrogatoire, gestion de crise.                                                       | **Cynisme**, **désillusion** (a vu trop d'horreurs).                                              |
+| **L'Occultiste repenti**   | Ancien membre de culte, sorcier     | Connaissance des rituels, détection des menaces surnaturelles.                                  | **Instabilité mentale**, **tentations** de replonger dans le mal.                                  |
+| **Le Diplomate**          | Quai d'Orsay, ambassades              | Négociation, couverture internationale.                                                          | **Manipulateur**, peut devenir un **traître** s'il découvre trop de vérités.                     |
+| **Le Nettoyeur**          | Services secrets, mercenaires        | Élimination discrète, falsification de preuves.                                                 | **Froid**, **déshumanisé** (a trop tué).                                                           |
+
+---
+**💡 Recrutement typique** :
+- **Scénarios d'enrôlement** :
+  - Un agent **témoin d'un phénomène inexplicable** (ex : un village entier disparu, un artefact maudit) est **approché** par Félicie.
+  - On lui propose un **choix** : **rejoindre l'agence** ou **disparaître** (menace ou "accident").
+  - Certains sont **enlevés** et **conditionnés** (lavage de cerveau, drogues).
+- **Formation** :
+  - **Stage de survie** en milieu hostile (forêts, déserts, zones de guerre).
+  - **Cours d'occultisme** (symboles, rituels, entités à éviter).
+  - **Tests psychologiques** pour évaluer leur **résistance à la folie**.
+
+---
+
+#### **4. Méthodes et outils**
+Félicie utilise un mélange de **technologies modernes** et de **savoir occulte ancien**.
+
+| **Catégorie**            | **Exemples**                                                                                     |
+|--------------------------|-------------------------------------------------------------------------------------------------|
+| **Armes**                | Pistolets silencieux, **armes bénites** (balles en argent, lames en fer froid).               |
+| **Équipement**           | **Détecteurs de magie** (basés sur des artefacts), **caméras thermiques** (pour voir les entités). |
+| **Artefacts**            | **Grimoires protégés**, **objets maudits sous scellés**, **talismans de protection**.          |
+| **Protocoles**           | **Rituels de confinement** (pour neutraliser des entités), **exorcisme militaire**.           |
+| **Réseaux**              | **Collaboration avec des sociétés secrètes** (franc-maçonnerie, Rosicruciens).                |
+| **Bases secrètes**       | **Sous-sols du ministère de la Défense**, **châteaux isolés**, **bunkers abandonnés**.       |
+
+---
+**📌 Exemple de mission (inspirée de *La Saga Félicie*)** :
+- **Contexte** : Un **trafic d'objets d'art maudits** est repéré entre le **Laos et le Cambodge** (années 1970).
+- **Déroulement** :
+  1. Les agents de Félicie **infiltrent un réseau de contrebandiers** (couverture : douaniers ou mercenaires).
+  2. Ils découvrent un **temple en jungle** où un **culte** tente de **réveiller un Grand Ancien**.
+  3. **Affrontement** avec des **sectateurs** et des **créatures surnaturelles**.
+  4. **Problème** : Les agents **perdent 30 ans de mémoire** (manipulation temporelle) et se réveillent **au Pays Basque**, accusés de **trahison** par leur propre organisation.
+  5. **Dilemme final** : **Détruire le culte** (et mourir) ou **le laisser faire** (et condamner l'humanité).
+
+---
+---
+
+---
+
+## **Intégration de Félicie dans l'analyse précédente**
+### **🔹 Comparaison avec Delta Green (États-Unis)**
+| **Critère**               | **Delta Green (USA)**                          | **Félicie (France)**                          | **Agence Européenne (proposition)**          |
+|---------------------------|-----------------------------------------------|-----------------------------------------------|---------------------------------------------|
+| **Cadre institutionnel**  | Branche secrète du FBI/NSA.                   | **Ministère de la Défense** / **DGSE**.       | **IntCen (Centre de renseignement UE)**.     |
+| **Niveau de secret**      | **Top Secret – Majestic-12**.                 | **Défense Nationale – Accès Réservé**.        | **UE Classifié – Niveau Omega**.             |
+| **Financement**           | Budget noir du Pentagone.                     | **Fonds secrets** (ministère de la Guerre).   | **Budget européen + contributions nationales**. |
+| **Profil des agents**     | Ex-militaires, ex-FBI, scientifiques.         | **Légionnaires, DGSE, universitaires**.       | **Eurocrates, Interpol, scientifiques EU**. |
+| **Menaces typiques**      | Cultes lovecraftiens, extraterrestres.       | **Cultes médiévaux, folklore français**.      | **Organisations transnationales, mythes européens**. |
+| **Méthodes**              | **Force brute + technologie**.               | **Barbouzerie + occultisme contrôlé**.       | **Coopération inter-services + diplomatie occulte**. |
+| **Faiblesses**            | **Paranoïa, trahisons internes**.            | **Méfiance historique envers l'État**.        | **Barrières linguistiques, conflits de juridiction**. |
+
+---
+
+### **🔹 Proposition d'agence européenne inspirée de Félicie**
+#### **Nom** : **EORA (European Occult Response Agency)**
+- **Autres noms possibles** :
+  - **Bureau des Phénomènes Anormaux Européens (BPAE)**.
+  - **Institut Européen de Lutte contre l'Occulte (IELCO)**.
+  - **Aegis** (référence à la mythologie grecque, bouclier contre les menaces).
+
+#### **Cadre institutionnel** :
+- **Rattachée à l'IntCen** (Centre de renseignement de l'UE) ou à **Europol**.
+- **Financement** : Budget **UE Classifié**, avec contributions des **services de renseignement nationaux** (DGSE, BND, MI6, etc.).
+- **Niveau de secret** : **Omega** (équivalent européen du *Top Secret*).
+  - **Accès** : Seuls les **États membres** peuvent désigner des agents.
+  - **Compartimentage** : Chaque pays ne connaît qu'une partie des opérations.
+
+#### **Structure** :
+| **Division**               | **Rôle**                                                                                     | **Profil des agents**                                                                                     |
+|---------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Direction (Conseil des Gardiens)** | Supervise les opérations à l'échelle européenne.                                          | **Hauts fonctionnaires EU**, anciens chefs des services de renseignement nationaux.                |
+| **Bureau des Opérations Transnationales** | Coordonne les missions entre pays.                                                        | **Agents d'Interpol, Europol, forces spéciales**.                                                       |
+| **Centre de Recherche Occulte** | Étudie les menaces et développe des contre-mesures.                                       | **Scientifiques, historiens, occultistes** (issus des universités européennes).                     |
+| **Service de Contre-espionnage** | Traque les infiltrations (cultes, espions, entités).                                         | **Agents du contre-espionnage** (DGSE, BND, MI5).                                                       |
+| **Unité de Nettoyage**     | Efface les preuves, gère les crises médiatiques.                                           | **Experts en désinformation**, **tueurs professionnels**.                                             |
+
+#### **Profil des agents** :
+- **Recrutement** :
+  - **Agents nationaux** (DGSE, BND, MI6) **détachés** à l'EORA.
+  - **Scientifiques** (CERN, ESA) ayant découvert des **anomalies**.
+  - **Occultistes repentis** (anciens membres de cultes européens).
+- **Formation** :
+  - **Stage commun** en **Belgique** (siège de l'UE) ou en **Allemagne** (bases secrètes).
+  - **Apprentissage des langues** (anglais + 2 autres langues européennes).
+  - **Tests de résistance mentale** (exposition contrôlée à des artefacts).
+
+#### **Menaces typiques** :
+- **Cultes transnationaux** (ex : **Ordre du Dragon Noir**, inspiré des sociétés secrètes médiévales).
+- **Entités liées au folklore européen** :
+  - **Vampires** (Europe de l'Est).
+  - **Loup-garous** (Allemagne, France).
+  - **Fées et korrigans** (Irlande, Bretagne).
+  - **Démons bibliques** (liés à l'histoire chrétienne).
+- **Phénomènes paranormaux** :
+  - **Portails dimensionnels** (ex : **Triangle des Bermudes européen**).
+  - **Expériences nazies occultes** (héritage de la Seconde Guerre mondiale).
+
+#### **Défis uniques** :
+- **Barrières linguistiques** : Les agents doivent **parler plusieurs langues**.
+- **Conflits de juridiction** : Chaque pays veut **contrôler** l'agence.
+- **Méfiance historique** : Certains États (ex : **Pologne, Hongrie**) refusent de **partager des informations**.
+- **Financement instable** : Les **crises économiques** en UE peuvent menacer le budget.
+
+---
+---
+---
+## **📜 Niveaux de classification proposés**
+Pour rendre ces agences **crédibles**, voici une **hiérarchie de secret** inspirée des standards militaires et du renseignement :
+
+| **Niveau**               | **Description**                                                                                     | **Accès**                                                                                     | **Exemple d'information classée**                                                                                     |
+|--------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Omega-1 (Top Secret +)** | **Accès ultra-restreint**. Seuls 5-10 personnes par pays.                                      | **Chefs d'État, directeurs des services secrets**.                                         | **Existence de l'agence**, **noms des Grand Anciens**, **localisation des artefacts maudits**.                     |
+| **Omega-2 (Secret Défense)** | **Accès limité aux hauts gradés**.                                                             | **Generaux, directeurs de la DGSE/IntCen**.                                                 | **Missions en cours**, **identité des agents de terrain**.                                                          |
+| **Omega-3 (Confidentiel)** | **Accès aux agents opérationnels**.                                                           | **Agents de Félicie/EORA**, **scientifiques habilités**.                                    | **Protocoles d'intervention**, **listes des cultes surveillés**.                                                     |
+| **Omega-4 (Réservé)**     | **Accès aux collaborateurs externes**.                                                        | **Police, militaires en mission ponctuelle**.                                              | **Signes de reconnaissance**, **protocoles de base**.                                                                |
+| **Non classé**            | **Information publique (désinformation)**.                                                     | **Médias, grand public**.                                                                   | **Rumeurs sur des "enquêtes paranormales"**, **fausses théories du complot**.                                         |
+
+---
+**💡 Exemple de protocole Omega-1** :
+- **"Projet Janus"** : **Confinement d'un Grand Ancien** sous la **Mer du Nord**.
+  - **Seuls 3 personnes** (1 Français, 1 Allemand, 1 Britannique) connaissent **l'emplacement exact**.
+  - **Protocole de destruction** : Si le site est compromis, **bombardement nucléaire** (plan approuvé par l'OTAN).
+
+---
+---
+---
+## **🎯 Synthèse : Comment intégrer Félicie dans une campagne ?**
+### **1. Pour une campagne française (années 1970-2020)**
+- **Cadre** : Les joueurs incarnent des **agents de Félicie** (ou des civils recrutés de force).
+- **Mission type** :
+  - **Enquête sur un trafic d'artefacts** (ex : **statue maudite volée au Louvre**).
+  - **Infiltration d'un culte** (ex : **secte néonazie occulte en Alsace**).
+  - **Protection d'un site sensible** (ex : **catacombes de Paris, château hanté en Auvergne**).
+- **Dilemmes** :
+  - **Trahir l'agence** pour sauver des innocents ?
+  - **Utiliser un artefact maudit** pour vaincre un ennemi ?
+  - **Accepter de perdre la mémoire** pour oublier l'horreur ?
+
+### **2. Pour une campagne européenne (années 2000-2020)**
+- **Cadre** : Les joueurs sont des **agents de l'EORA**, en mission dans **plusieurs pays**.
+- **Mission type** :
+  - **Traquer un culte transnational** (ex : **Ordre du Dragon Noir**, actif en **Allemagne, France, Italie**).
+  - **Enquêter sur des disparitions** liées à un **portail dimensionnel** (ex : **forêt de Brocéliande**).
+  - **Négocier avec des entités** (ex : **fées irlandaises** pour récupérer un artefact).
+- **Dilemmes** :
+  - **Coopérer avec un service de renseignement hostile** (ex : **Russie, Chine**) ?
+  - **Détruire un site historique** pour empêcher un rituel ?
+  - **Sacrifier un agent** pour sauver l'Europe ?
+
+---
+---
+---
+## **📚 Ressources pour aller plus loin**
+### **📖 Documents et scénarios de Tristan Lhomme (Agence Félicie)**
+- **Le Musée de Lhomme** (Sans-Détour Éditions, 2014) :
+  - **Livret 7 : *La Saga Félicie*** (88 pages) :
+    - **Aide de jeu** : Historique, structure, personnages emblématiques.
+    - **Scénario principal** : *Ethor bedi zure erresuma* (mission au **Laos/Cambodge**, avec **voyage dans le temps** et **trahison**).
+  - **Livret 5 : *La Débâcle*** :
+    - **Aide de jeu sur le Bureau S** (précurseur de Félicie, actif pendant la **Seconde Guerre mondiale**).
+    - **Scénario** : *Le Crépuscule du Bureau S* (déliquescence de l'organisation en 1940).
+- **Autres scénarios liés** :
+  - *Aktion Hel* (mission en **Alsace, 1940**, avec **fantômes et entités**).
+  - *La Maison reste ouverte pendant les travaux* (sauver l'Europe d'une **menace cosmique**).
+
+- **Où trouver ces documents ?**
+  - **Le Musée de Lhomme** est disponible en **boîte collector** (7 livrets + aides de jeu).
+  - **Site de l'éditeur** : [Sans-Détour Éditions](https://www.sans-detour.net/).
+  - **Boutiques spécialisées** : [Agorajeux](https://www.agorajeux.com/), [Philibert](https://www.philibertnet.com/).
+
+---
+### **🎲 Idées pour un maître de jeu (MJ)**
+1. **Créer une campagne "Félicie : Héritage"** :
+   - **Période** : Années **2020**, les joueurs découvrent que **Félicie a été réactivée** pour affronter une **nouvelle menace**.
+   - **Intrigue** : Un **ancien agent de Félicie** (devenu fou) tente de **réveiller un Grand Ancien** sous **Paris**.
+   - **Twist** : Les joueurs réalisent qu'ils **font partie d'une expérience** (ils ont été **recrutés sans le savoir**).
+
+2. **Intégrer Félicie dans une campagne Delta Green** :
+   - **Collaboration transatlantique** : Félicie et Delta Green **travaillent ensemble** sur une menace globale.
+   - **Conflit** : Les **méthodes françaises** (barbouzerie) vs. **méthodes américaines** (technologie) créent des **tensions**.
+
+3. **Créer une agence rivale** :
+   - **Exemple** : **"L'Ordre de la Rose Noire"** (culte infiltré dans **Félicie/EORA**).
+   - **Mission** : Les joueurs doivent **déjouer un complot** pour **prendre le contrôle de l'agence**.
+
+---
+---
+---
+## **🔚 Conclusion : Une agence occulte crédible doit être…**
+✅ **Ultra-secrète** (niveau **Omega-1**, accès **compartimenté**).
+✅ **Intégrée aux institutions** (ministère de la Défense, IntCen, Europol).
+✅ **Avec des agents variés** (militaires, scientifiques, occultistes).
+✅ **Confrontée à des menaces locales** (folklore, histoire, géopolitique).
+✅ **Avec des dilemmes moraux** (trahison, sacrifice, folie).
+
+---
+**💬 Et toi, Gabriel ?**
+- Veux-tu que je te propose **un scénario clé en main** pour Félicie ou l'EORA ?
+- Ou préfères-tu des **idées de personnages pré-tirés** pour une campagne ?
+- As-tu une **période historique** ou un **lieu** en tête pour une aventure ? (Ex : **Paris 1970, Berlin 1989, Prague 2020** ?)

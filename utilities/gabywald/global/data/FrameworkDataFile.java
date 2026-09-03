@@ -2,7 +2,7 @@ package gabywald.global.data;
 
 /**
  * 
- * @author Gabriel Chandesris (2012)
+ * @author Gabriel Chandesris (2012, 2026)
  */
 @SuppressWarnings("serial")
 public class FrameworkDataFile extends DataFile {

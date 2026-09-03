@@ -9,8 +9,7 @@ import gabywald.utilities.logger.Logger.LoggerLevel;
 /**
  * This class defines some access to textual datas for Graphical Interfaces (cf. resources/conf/TextualInfo* files). 
  * <br><i>Multiton ("multiple singleton")</i>
- * TODO change / tranfert to use 'File' class ! <=
- * @author Gabriel Chandesris (2011, 2022)
+ * @author Gabriel Chandesris (2011, 2022, 2026)
  */
 @SuppressWarnings("serial")
 public class TextualInfoFile extends File {

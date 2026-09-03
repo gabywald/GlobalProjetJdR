@@ -5,9 +5,10 @@ import javax.swing.JTabbedPane;
 
 /**
  * This abstract class to provide a model for Tabbed Pane with a set of names. 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  * @see PanelsFactory
  */
+@SuppressWarnings("serial")
 public abstract class DataBasesTabbedPanel extends JTabbedPane {
 	private String[] databasesNames;
 	private String[] enabledDBnames;

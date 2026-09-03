@@ -12,9 +12,7 @@ import gabywald.global.data.StringUtils;
  * Window Menu Bar. 
  * <br><i>Some items are inactivated. </i>
  * <br><i>Graphical class</i>
- * <br><i>Graphical class</i>
- * @author St&eacute;fan Engelen (2006)
- * @author Gabriel Chandesris (2008-2012)
+ * @author Gabriel Chandesris (2008-2012, 2026)
  */
 public class MyMenu extends JMenuBar {
 	private static MyMenu instance;
@@ -50,13 +48,13 @@ public class MyMenu extends JMenuBar {
 												int indexOfLine, MyMenuFile conf, 
 												MyMenuActionListener mmal) {
 		
-		String currLine		= conf.getLine(indexOfLine);
+		String currLine		= conf.line(indexOfLine);
 		/** For current-level menu items. */
 		Pattern ppp			= Pattern.compile("^"+StringUtils.repeat("\t", 0)
 								+MyMenu.BASE_MENU_RECOGNITION);
 		Matcher mmm			= ppp.matcher(currLine);
 		
-		while (indexOfLine < conf.getNbLines()) {
+		while (indexOfLine < conf.nbLines()) {
 			if (mmm.matches()) {
 				JMenu firstLvl = new JMenu(mmm.group(1));
 				indexOfLine++;
@@ -64,8 +62,8 @@ public class MyMenu extends JMenuBar {
 				/** System.out.println("\tmenuBar\t"+indexOfLine+"\t'"+currLine+"'"); */
 				menuBar.add(firstLvl);
 			} /** else { System.out.println("\t.......\t"+indexOfLine+"\t'"+currLine+"'"); } */
-			if (indexOfLine < conf.getNbLines()) {
-				currLine	= conf.getLine(indexOfLine);
+			if (indexOfLine < conf.nbLines()) {
+				currLine	= conf.line(indexOfLine);
 				mmm			= ppp.matcher(currLine);
 			}
 		}
@@ -85,7 +83,7 @@ public class MyMenu extends JMenuBar {
 	private static int menuRecognitionAndAdding(int lvl, JMenu upperLevel, 
 												int indexOfLine, MyMenuFile conf, 
 												MyMenuActionListener mmal) {
-		String currLine		= conf.getLine(indexOfLine);
+		String currLine		= conf.line(indexOfLine);
 		// System.out.println("\tnextLvls\t"+indexOfLine+"\t'"+currLine+"'");
 		/** For current-level menu items. */
 		Pattern ppp			= Pattern.compile("^"+StringUtils.repeat("\t", lvl)
@@ -99,8 +97,8 @@ public class MyMenu extends JMenuBar {
 		String prevName		= null;
 		String prevActs		= null;
 
-		while (indexOfLine < conf.getNbLines()) { 
-			currLine	= conf.getLine(indexOfLine);
+		while (indexOfLine < conf.nbLines()) { 
+			currLine	= conf.line(indexOfLine);
 			/** System.out.println("\t"+indexOfLine+"\t'"+currLine+"'"); */
 			mmm			= ppp.matcher(currLine);
 			mmmNext		= pppNext.matcher(currLine);

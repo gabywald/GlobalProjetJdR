@@ -1,6 +1,5 @@
 package gabywald.framework.view;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
@@ -14,8 +13,7 @@ import gabywald.framework.controller.MyInternalFrameActionListener;
 
 /**
  * 
- * @author St&eacute;fan Engelen (2006)
- * @author Gabriel Chandesris (2008-2012)
+ * @author Gabriel Chandesris (2008-2012, 2026)
  */
 public /** abstract */ class MyPanel extends JPanelWithBackgroundImage {
 	/** Serial number (48).  */

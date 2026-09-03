@@ -12,8 +12,9 @@ import gabywald.rpg.view.SpecificityPanel;
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class RetroFuturPanel extends SpecificityPanel {
 	private static RetroFuturPanel instance;
 	private static final Font BUTTON_FONT		= 
