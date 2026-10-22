@@ -1,4 +1,4 @@
-\documentclass[11pt,twoside,a4paper]{book}
+\documentclass[11pt,twoside,a5paper]{book}
 % http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_maths+pix/node6.html symboles de math
 % http://fr.wikibooks.org/wiki/Programmation_LaTeX Programmation latex (wikibook)
 %=========================== En-Tete =================================
@@ -10,6 +10,7 @@
 \usepackage{amsmath, amsthm} % tres bon mode mathematique
 \usepackage{amsfonts,amssymb}% permet la definition des ensembles
 
+\usepackage{longtable} % pour les tableaux de plusieurs pages
 \usepackage[table]{xcolor} % couleur de fond des cellules de tableaux
 
 \usepackage{tikz}
@@ -24,7 +25,7 @@
 % \usepackage{frbib} % enlever pour obtenir references en anglais
 
 \def\author{Gaby Wald \& Amael Assour}
-\title{Regroupement des JdR de \author }
+\title{Regroupement des JdR de \newline \author }
 \date{\today}
 
 % % % en-tete et pieds de page configurables : fancyhdr.sty
@@ -41,8 +42,8 @@
 \fancyhead[RE]{\bfseries\leftmark}
 \fancyfoot[LE]{\thepage /\pageref{LastPage} \hfill
 	\title
-\hfill \includegraphics[width=0.5cm]{../../../../imgGraphics/logos/glider/logo-glider.png} }
-\fancyfoot[RO]{\includegraphics[width=0.5cm]{../../../../imgGraphics/logos/glider/logo-glider.png} \hfill
+\hfill \includegraphics[width=0.5cm]{../../../imgGraphics/logos/glider/logo-glider.png} }
+\fancyfoot[RO]{\includegraphics[width=0.5cm]{../../../imgGraphics/logos/glider/logo-glider.png} \hfill
 	\title
 \hfill \thepage /\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.25pt}
@@ -62,7 +63,6 @@
 \definecolor{verylightgray}{rgb}{0.8,0.8,0.8}
 \def\makeglossaire{%
 	\begin{center}
-
 	Glossaire Générique :~\\
 	\begin{tabular}{|>{\columncolor{verylightgray}} p{0.20\textwidth}|p{0.70\textwidth}|}
 		\hline
@@ -73,76 +73,40 @@
 			 \end{tabular} \\
 		\hline
 	\end{tabular}~\\
+	\end{center}
 	
-	\clearpage 
+	%% \clearpage 
 	
-	Pour le JdR "Arcanes" :~\\ 
-	\begin{tabular}{|>{\columncolor{verylightgray}} p{0.20\textwidth}|p{0.70\textwidth}|}
-		\hline
-
-		\textbf{Carte RS} & 
-			\begin{tabular}{p{0.68\textwidth}}
+	Pour le JdR "Arcanes" : 
+	\begin{itemize}
+		\item[\textbf{Carte RS}]
 				Au d{\'e}but des ann{\'e}es 80, on trouva un catalyseur de l'effet RS en l'esp{\`e}ce de curieuses cartes, dont on ignore {\`a} peu pr{\`e}s tout. les premi{\`e}res cartes firent leur apparition dans la r{\'e}gion de Seattle, USA. On cherche encore {\`a} percer l'identit{\'e} du ou des cr{\'e}ateurs des premiers paquets. 
 				La C.I.A., comprenant rapidement l'immense potentiel tactique que recelaient les cartes, cr{\'e}a Stargate, un groupe de scientifiques charg{\'e} d'anakyser le ph{\'e}nom{\`e}ne et de former des agents capables de le contr{\^o}ler : les agents RS.
-			 \end{tabular} \\
-		\hline
-		\textbf{Agent RS} & 
-			\begin{tabular}{p{0.68\textwidth}}
+		\item[\textbf{Agent RS}]
 				D{\`e}s le d{\'e}but, les premiers agents RS remport{\`e}rent des succ{\`e}s impresionnants, accomplissant des missions alors que toutes les chances de r{\'e}ussites {\'e}taient contre eux. 
 				Les diff{\'e}rentes op{\'e}rations Stargate sont encore class{\'e}es "secret d{\'e}fense" mais les chercheurs pointent le doigt sur un certain nombre d'{\'e}v{\`e}nements, comme la mort du Pr{\'e}sident panam{\'e}en en 82 ou le putsch rat{\'e} des g{\'e}n{\'e}raux russes. 
 				Certains affirment que les cartes existent de toute {\'e}ternit{\'e}, et que nos cartes {\`a} jouer en seraient des formes simplifi{\'e}es. 
-			\end{tabular} \\
-		\hline
-		\textbf{Grade Stargate} & 
-			\begin{tabular}{p{0.68\textwidth}}
+		\item[\textbf{Grade Stargate}]
 				On a pris l'habitude de classer les agents Stargate {\`a} partir des figures des cartes {\`a} jouer classiques : 6, 8, 9, 10, Valet, Cavalier, etc. Ainsi, un 6 n'est sans doute capable que d'influer sur de petits {\'e}v{\`e}nements ayant peu de possibilit{\'e}s statistiques, comme le lancement d'une pi{\`e}ce de monnaie par exemple. Les grades sup{\'e}rieurs peuvent agir beaucoup plus en profondeur sur la trame du hasard.
-			\end{tabular} \\
-		\hline
-%% 		\textbf{DEA (Drug Enforcement Administration)} & 
-%% 			\begin{tabular}{p{0.68\textwidth}}
+%% 		\item[\textbf{DEA (Drug Enforcement Administration)}}]
 %% 				Agence gouvernementale am{\'e}ricaine charg{\'e}e de la lutte anti-drogue dans le monde.
-%% 			\end{tabular} \\
-%% 		\hline  
-%% 		\textbf{Nagual} & 
-%% 			\begin{tabular}{p{0.68\textwidth}}
+%% 		\item[\textbf{Nagual}]
 %% 				Esprit, double de l'esprit humain.
-%% 			\end{tabular} \\
-%% 		\hline 
-		\textbf{Comit{\'e} Magic} & 
-			\begin{tabular}{p{0.68\textwidth}}
+		\item[\textbf{Comit{\'e} Magic}]
 				Organisme Ultra-secret mis en place par les Alli{\'e}s durant la Seconde Guerre Mondiale pour {\'e}tudier, utiliser les cartes et manipuler le hasard. Il n'avait de compte {\`a} rendre qu'{\`a} Churchill et Roosevelt. Magic fut dissous en 1946. 
 				Magic travailla en {\'e}troite collaboration avec Ultra, le programma de d{\'e}codage des messages secrets allemands [Enigma] puis avec Manhattan, le programme de r{\'e}alisation de la premi{\`e}re bombe atomique am{\'e}ricaine {\`a} Los Alamos. 
 				Les bras arm{\'e}s de Magic {\'e}taient, du c{\^o}t{\'e} anglais : le SOE (Special Operation Executive), et c{\^o}t{\'e} am{\'e}ricain l'OSS (anc{\^e}tre de la CIA), comme Magic, ces deux entit{\'e}s furent dissoutes au lendemain de la guerre, du moins officiellement.
-			\end{tabular} \\
-		\hline 
-		\textbf{Fondation Vane} & 
-			\begin{tabular}{p{0.68\textwidth}}
+		\item[\textbf{Fondation Vane}]
 				Agence gouvernementale am{\'e}ricaine qui prit la suite de Magic. Les anglais refus{\`e}rent d'en faire partie. Au d{\'e}part, il s'agissait d'un simple programme d{\'e}tude des ph{\'e}nom{\`e}nes RS.
-			\end{tabular} \\
-		\hline 
-		\textbf{Stargate} & 
-			\begin{tabular}{p{0.68\textwidth}}
+		\item[\textbf{Stargate}]
 				Successeur de la Fondation Vane dans les ann{\'e}es 60. Dot{\'e} d'un budget beaucoup plus important, et plus tourn{\'e} vers l'utilisation des cartes que vers leur {\'e}tude.
 				Programme de la C.I.A. qui cherche depuis plusieurs ann{\'e}es {\`a} percer le secret des cartes RS et qui, dans le m{\^e}me temps, les utilise pour former des agents RS capables de manipuler le hasard. Ces agents, tr{\`e}s rares et tr{\`e}s fragiles psychologiquement ont un immense potentiel tactique. Ils peuvent, {\`a} la lettre, accomplir des miracles, gagner contre toutes les probailit{\'e}s, mlais qui sont-ils vraiment, et en derni{\`e}re analyse, qui les contr{\^o}le ?
-			\end{tabular} \\
-		\hline 
-		\textbf{R{\'e}tro-Synchronicit{\'e} (RS)} & 
-			\begin{tabular}{p{0.68\textwidth}}
+		\item[\textbf{R{\'e}tro-Synchronicit{\'e} (RS)}]
 				Th{\'e}orie selon laquelle le hasard n'existe pas. Elle suppose qu'on peut orienter les {\'e}v{\`e}nements et le futur {\`a} condition de disposer d'un catalyseur qui d{\'e}clenche et acc{\'e}l{\`e}re la r{\'e}action. ces catalyseurs seraient en l'occurrence des cartes qui seraient les anc{\^e}tres de nos jeux de cartes.
-			\end{tabular} \\
-		\hline
-		\textbf{Singularit{\'e} ou effet RS} & 
-			\begin{tabular}{p{0.68\textwidth}}
+		\item[\textbf{Singularit{\'e} ou effet RS}]
 				Moment o{\`u} l'action des cartes se d{\'e}clenche. Le sujet est alors devant les possibilit{\'e}s offertes par le futur, {\`a} lui de choisir les plus int{\'e}ressantes. Plus une singularit{\'e} est profonde, plus les possibilit{\'e}s sont nombreuses et plongent plus loin dans le futur. 
-			\end{tabular} \\
-		\hline
-
-	\end{tabular}
-
-	\end{center}
-
+	\end{itemize}
 }%
-
 
 \def\makeLogoAndTXTagenceTownsend{%
 	\begin{tikzpicture}[scale=0.5]
@@ -175,6 +139,7 @@
 
 %============================= Corps =================================
 \begin{document}
+\setlength\parindent{0pt}
 %ecrire le titre...
 \maketitle
 \setcounter{page}{0}
@@ -269,8 +234,6 @@ Les équipes locales comprennent un (ou une) <<Bosley>> chargé.e des contacts a
 	\end{itemize}
 	\item Le centre de formation : lieu isol{\'e} en {\'E}cosse (ou {\'e}quivalent) ; 
 	\begin{itemize}
-		\item ... 
-		\item ... 
 		\item ...  
 	\end{itemize}
 	\item <<Premier Contact>> : carte de visite remise inopin{\'e}ment, rendez-vous insolite... 
@@ -304,15 +267,22 @@ Les équipes locales comprennent un (ou une) <<Bosley>> chargé.e des contacts a
 \subsection{R{\^o}le des cartes}
 
 { \setlength\parindent{0pt} \small
-\begin{tabular}[c]{c c c c c c}
+\begin{tabular}[c]{c c c c c}
 	\rowcolor{verylightgray}
-	Famille			&	Symbole			&	{\'E}l{\'e}ment	& 	Type / Groupe... ou Id{\'e}al (?)		& Famille "CyberPunk" (?)		& "Pouvoirs"			\\
-	Arcanes			&	Nb et Nom		&	-- selon --		&	Magie (?) ...							& Magie (?) ; Hasard ... 		& ... 					\\
-	B{\^a}tons		&	Carreaux		&	Air				&	Sociabilit{\'e}, Charisme ; Sant{\'e}	& Gangs, Nomades...				& Social / Relation 	\\
-	Coupes			&	C\oe ur			&	Eau				& 	Vie, Gu{\'e}rison ; Ing{\'e}nierie		& Tech, MedTech... 				& Mat{\'e}riel			\\
-	Deniers			&	Piques			&	Terre			& 	Protection, R{\'e}flexion ; Fortune		& Solos, Fixers, Hackers...		& Virtuel / Intellect	\\
-	{\'E}p{\'e}es	&	Tr{\`e}fles		&	Feu				& 	Pouvoir, Unification ; Action			& Corporations, {\'E}tats...	& Temporel / Religieux	\\
+	Famille			&	Symbole			&	{\'E}l{\'e}ment	& 	Type / Groupe... ou Id{\'e}al (?)		& "Pouvoirs"			\\
+	Arcanes			&	Nb et Nom		&	-- selon --		&	Magie (?) ...							& ... 					\\
+	B{\^a}tons		&	Carreaux		&	Air				&	Sociabilit{\'e}, Charisme ; Sant{\'e}	& Social / Relation 	\\
+	Coupes			&	C\oe ur			&	Eau				& 	Vie, Gu{\'e}rison ; Ing{\'e}nierie		& Mat{\'e}riel			\\
+	Deniers			&	Piques			&	Terre			& 	Protection, R{\'e}flexion ; Fortune		& Virtuel / Intellect	\\
+	{\'E}p{\'e}es	&	Tr{\`e}fles		&	Feu				& 	Pouvoir, Unification ; Action			& Temporel / Religieux	\\
 	
+	% & Famille "CyberPunk" (?)
+	% & Magie (?) ; Hasard ... 
+	% & Gangs, Nomades...
+	% & Tech, MedTech... 
+	% & Solos, Fixers, Hackers...		
+	% & Corporations, {\'E}tats...	
+
 	%% Erlin => Deniers => Tr{\`e}fles
 	%% Dyo => Coupes => Coeurs
 	%% Reka => B{\^a}tons => Piques
@@ -343,13 +313,15 @@ Une action se r{\'e}sout par le d{\'e}p{\^o}t d'une ou plusieurs cartes par chaq
 		\item Action h{\'e}ro{\"i}que (dont la r{\'e}ussite d{\'e}pend du reste des cartes jou{\'e}es avec celle-ci). 
 	\end{itemize}
 	\item \emph{Optionnel : }Utilisation d'une Carte Sp{\'e}ciale d{\'e}finissant le PJ : {\`a} d{\'e}finir {\`a} l'avance entre le MJ et le joueur (valeur de la carte), mise en jeu de la vie du PJ et : ou du pouvoir associ{\'e} {\`a} cette carte. 
-\end{itemize} %% ~\\
+\end{itemize}~\\
 
 Les cartes jou{\'e}es rejoignent une d{\'e}fausse en attendant d'{\^e}tre rem{\'e}lang{\'e}es pour cr{\'e}er une nouvelle pile de tirage quand celle-ci est vide. %% ~\\
 
 \subsection{"Effet R{\'e}troSynchronicit{\'e}" (RS)} 
 
 En dehors d'un Phase d'Action, on peut utiliser un "Effet R{\'e}troSynchronicit{\'e}" (RS) : un joueur pose une carte sur la table en pr{\'e}vision d'une utilisation future (avec une annotation ou un post-it) ; cela permet d'avoir un {\'e}l{\'e}ment utile par la suite et que le joueur peut ainsi faire appara{\^i}tre par la suite (v{\'e}hicule, {\'e}l{\'e}ment de d{\'e}cor...). Cette carte est ensuite int{\'e}gr{\'e}e {\`a} la pile de tirage : quand cette carte est tir{\'e}e, elle est forc{\'e}ment en faveur du joueur l'ayant d{\'e}pos{\'e}e (int{\'e}gration {\`a} sa main courante). Cela peut {\^e}tre utile selon puissance et typologie de la carte concern{\'e}e, et l'objet concern{\'e}.~\\
+
+\clearpage
 
 Une variante de cet "Effet RS" peut {\^e}tre utilis{\'e} de la fa\c{c}on suivante : selon des {\'e}l{\'e}ments pr{\'e}vus par le MJ ou propos{\'e}s par les joueurs (fixes : lieux et leurs propri{\'e}t{\'e}s ; mobiles : v{\'e}hicules) : l'utilisationn de la carte immobilis{\'e}e devant soi fait intervenir cet {\'e}l{\'e}ment au b{\'e}n{\'e}fice de la carte la plus puissante, sous r{\'e}serve que le lieu soit {\`a} nouveau parcouru ou que l'{\'e}l{\'e}ment mobile puisse arriver {\`a} l'endroit de l'action. Une fois cet {\'e}l{\'e}ment utilis{\'e}, la carte peut {\^e}tre d{\'e}fauss{\'e}e ou {\^e}tre laiss{\'e}e associ{\'e} {\`a} l'{\'e}l{\'e}ment. Lorsqu'elle est associ{\'e}e {\`a} un {\'e}l{\'e}ment, la carte est pos{\'e}e devant le joueur, annot{\'e}e (post-it) et une nouvelle carte est tir{\'e}e dans sa main. %%~\\
 
@@ -416,7 +388,6 @@ Cette partie est l{\`a} pour vous donner une id{\'e}e de la structure d'un jeu d
 \subsection{Tarot "classique"}
 
 Les 78 cartes sont r{\'e}parties r{\'e}parties comme suit (trois fois sept plus un et quatre fois deux fois sept) :~\\
-\begin{minipage}[ht]{0.45\textwidth}
  	\begin{itemize}
 	\item 22 arcanes majeures, num{\'e}rot{\'e}es de 0 {\`a} 21 inclus :~\newline
 		\begin{tabular}[c]{ p{4.5cm} p{4.5cm} }
@@ -432,24 +403,14 @@ Les 78 cartes sont r{\'e}parties r{\'e}parties comme suit (trois fois sept plus 
 			9	L'Ermite (L'Hermite)	&	20	Le Jugement			\\
 			10	La Roue de Fortune		&	21	Le Monde			\\
 		\end{tabular}
-	\end{itemize}
-\end{minipage}
-\begin{minipage}[ht]{0.45\textwidth}
-	\begin{itemize}
 	\item 56 arcanes mineures, r{\'e}parties en quatres s{\'e}ries ({\'E}p{\'e}es, Coupes, Deniers, B{\^a}tons) comme suit : % ~\newline
 		\begin{itemize}
 			\item As, 2, 3, 4, 5, 6, 7, 8, 9, 10, Valet, Cavalier, Dame, Roi
 			\item As a pour valeur 1 ; Valet, 11 ; Cavalier 12 ; Dame 13 ; Roi 14. 
 			\item Dans certains cas Cavalier sup{\'e}rieur au Roi (au lieu d'{\^e}tre entre Valet et Dame). 
 		\end{itemize}
-		\item[] 
-		\item[] Arcanes majeures non associ{\'e}es {\`a} des arcanes mineures : 0;5;10;15;20;21
-		\item[] 
-		\item[] 
-	\end{itemize}
-\end{minipage}
-
-	\begin{itemize}
+	\clearpage %% !!
+	\item Arcanes majeures non associ{\'e}es {\`a} des arcanes mineures : 0;5;10;15;20;21
 	\item Associations et "significations" des s{\'e}ries, et arcanes majeures associ{\'e}es :~\newline
 		\begin{tabular}[c]{ c c c c }
 			B{\^a}tons		&	Air		&	Carreaux	&	1;2;3;4		\\
@@ -574,21 +535,23 @@ Les personnages sont d{\'e}finis par 5 Couleurs not{\'e}es A, B, C, D et E : Arc
 Le joueur peut r{\'e}partir 22 points entre ses 5 caract{\'e}ristiques, sachant que l'Arcane co{\^u}te deux fois plus cher que les autres Couleurs. 
 Pour chaque Couleur, choisir une sp{\'e}cialit{\'e}. ~\\
 
-\begin{minipage}[ht]{0.40\textwidth}
+\begin{minipage}[ht]{0.45\textwidth}
 
 	\subsubsection{Tirage de cartes}
 	
 	Pour effectuer une action, utilisez une carte de votre main ou tirez-en une de la pioche.
 	Chaque action est associ{\'e}e {\`a} une Couleur :
 	\begin{itemize}
-		\item[Arcanes] (ou Atouts) pour la magie
-		\item[B{\^a}tons] (ou Carreau) pour la sant{\'e}
-		\item[Coupes] (ou Coeurs) pour le charme
-		\item[Deniers] (ou Tr{\`e}fles) pour la fortune
-		\item[Ep{\'e}es] (ou Pique) pour l'action
+		\item[Arcanes] (ou Atouts) : magie
+		\item[B{\^a}tons] (ou Carreau) : sant{\'e}
+		\item[Coupes] (ou Coeurs) : charme
+		\item[Deniers] (ou Tr{\`e}fles) : fortune
+		\item[Ep{\'e}es] (ou Pique) : action
 	\end{itemize}
+	
+	\emph{Le ma{\^i}tre du jeu a une seule main utilis{\'e}e pour l'ensemble des personnages non joueurs.}
 
-\end{minipage} \hfill \begin{minipage}[ht]{0.54\textwidth}
+\end{minipage} \hfill \begin{minipage}[ht]{0.50\textwidth}
 
 	\subsubsection{Personnages joueurs (PJ) et Personnages non joueurs (PNJ)}
 	
@@ -597,8 +560,6 @@ Pour chaque Couleur, choisir une sp{\'e}cialit{\'e}. ~\\
 	Par exemple : un personnage chante, avec un score de 5 en Coeur. Il pose le Valet de Coeur : le R{\'e}sultat est donc de (5x2)+11=21
 
 \end{minipage}~\\
-
-Le ma{\^i}tre du jeu a une seule main utilis{\'e}e pour l'ensemble des personnages non joueurs.
 
 \subsubsection{Combat}
 
@@ -645,22 +606,14 @@ Apr{\`e}s une aventure, un personnage gagne de 1 {\`a} 5 points d'exp{\'e}rience
 \chapter{GiscardPunk}
 
 	\begin{center}
-	
-		\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/banniereGiscardPunk.jpeg}~\\
-		
+		\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/banniereGiscardPunk.jpeg}~\\
 		~\vfill
-		
 		\emph{\textbf{JdR inspir{\'e} des Villes nouvelles Futuristes des ann{\'e}es 1970's et 1980's}}~\\
 		\Huge{1980's GiscardPunk}~\\
 		\Large{Un JdR de B{\'e}ton et de technologies rétrofutristes !}~\\
-		
 		~\vfill
-		
-		\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/Giscardpunk3.jpeg}~\\
-		
+		\includegraphics[width=0.75\textwidth]{../../../imgGraphics/giscardpunk/Giscardpunk3.jpeg}~\\
 	\end{center}
-	
-	\vfill
 	
 \clearpage
 
@@ -671,42 +624,42 @@ Tout d'abord, quelques images d'illustration :~\\
 
 \begin{minipage}{0.45\linewidth}
 	%% \begin{figure}[ht]
-	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/2-e1596900022719.png}~\\
-	\emph{La maquette de Paris par le Corbusier}
+	\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/planVoisinAlainBublex/2-e1596900022719.png}~\\
+	\emph{Maquette de Paris par le Corbusier}
 	%% \caption{La maquette de Paris par le Corbusier}
 	%% \end{figure}
 \end{minipage}
 \begin{minipage}{0.20\linewidth}\end{minipage}
 \begin{minipage}{0.45\linewidth}
 	%% \begin{figure}[ht]
-	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/8.png}~\\
-	\emph{Une Vision Glorieuse d'un Pass{\'e} R{\'e}volu ?}
-	%% \caption{Une Vision Glorieuse d'un Pass{\'e} R{\'e}volu ?}
+	\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/planVoisinAlainBublex/8.png}~\\
+	\emph{Vision Glorieuse d'un Pass{\'e} R{\'e}volu ?}
+	%% \caption{Une Vision Glorieuse du Passé ?}
 	%% \end{figure}
-\end{minipage}~\\~\\
+\end{minipage} %% ~\\
 
 \rule{0.33\linewidth}{0.5mm}~\\
 
 \begin{minipage}{0.30\linewidth}
 	%% \begin{figure}[ht]
-	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/c-a_hk681_barbes-870x652.jpg}~\\
+	\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/planVoisinAlainBublex/c-a_hk681_barbes-870x652.jpg}~\\
 	%% \caption{Ruelle 1 : Barb{\`e}s}
 	%% \end{figure}
 \end{minipage}
 \begin{minipage}{0.01\linewidth}\end{minipage}
 \begin{minipage}{0.30\linewidth}
 	%% \begin{figure}[ht]
-	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/c-a_hk826_montaigne-870x652.jpg}~\\
+	\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/planVoisinAlainBublex/c-a_hk826_montaigne-870x652.jpg}~\\
 	%% \caption{Ruelle 2 : Avenue Montaigne}
 	%% \end{figure}
 \end{minipage}
 \begin{minipage}{0.01\linewidth}\end{minipage}
 \begin{minipage}{0.30\linewidth}
 	%% \begin{figure}[ht]
-	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/planVoisinAlainBublex/c-a_hk831_6e_b-870x652.jpg}~\\
+	\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/planVoisinAlainBublex/c-a_hk831_6e_b-870x652.jpg}~\\
 	%% \caption{Ruelle 3 : o{\`u} ?}
 	%% \end{figure}
-\end{minipage}~\\
+\end{minipage} %% ~\\
 
 \rule{0.66\linewidth}{0.5mm}~\\
 
@@ -721,51 +674,45 @@ Tout d'abord, quelques images d'illustration :~\\
 	\item[$\bigstar$] Ruelles et avenues de b{\'e}ton {\'e}clair{\'e}es par des n{\'e}ons clignotants ?
 	\item[$\bigstar$] Des publicit{\'e}s pour des produits polluants (voitures, {\'e}lectrom{\'e}nager, cosm{\'e}tiques...) ?
 	\item[$\bigstar$] Une technologie omnipr{\'e}sente d{\'e}pass{\'e}e, tout de m{\^e}me r{\'e}trofuturiste ?
-\end{itemize}~\\
+\end{itemize} %% ~\\
 
-Ce n'est pas CyberPunk 2020 ni m{\^e}me CyberPunk 2077 : c'est du \textbf{GiscardPunk}, et ça se passe en 1977 !~\\
-
-Bienvenue dans un R{\'e}troPunk qui fonctionne au Diesel, au Minitel et {\`a} la poussi{\`e}re de B{\'e}ton !~\\
+Ce n'est pas CyberPunk 2020 ni m{\^e}me CyberPunk 2077 : c'est du \textbf{GiscardPunk}, et ça se passe en 1977 ! Bienvenue dans un R{\'e}troPunk qui fonctionne au Diesel, au Minitel et {\`a} la poussi{\`e}re de B{\'e}ton !~\\
 
 \rule{1.00\linewidth}{0.5mm}~\\
 
-\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/banniereGiscardPunk.jpeg}~\\
+\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/banniereGiscardPunk.jpeg}~\\
 
 \clearpage
 
 \section{Dans le B{\'e}ton}
 
 \begin{minipage}{0.28\linewidth}
-	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/clemensgritl/_no0906009005.jpeg}~\\
+	\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/clemensgritl/_no0906009005.jpeg}~\\
+	\vfill
+	\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/clemensgritl/_no1005007530.jpeg}~\\
 \end{minipage} \hfill \begin{minipage}{0.68\linewidth}
 
 	\subsection{C'{\'e}tait le Futur}
 	
+	\c{C}a, c'{\'e}tait l'avenir, c'{\'e}tait avant !
+	
 	<<La France de Demain !>>~\\
 	
-	C'{\'e}tait avant tout dans la continuit{\'e} des plans de construction centrales nucl{\'e}aires, la construction des villes nouvelles en b{\'e}ton ({\'E}vry-Courcouronnes, Cr{\'e}teil, Champs-Sur-Marne...) aux alentours de Paris et centr{\'e}e sur l'automobile roulant au Diesel, des autoroutes pour les relier, des voies ferr{\'e}es rapides avec le TGV (<<Train Grande Vitesse>>) et ses airs de Concorde Orange restant au sol, le RER (<<R{\'e}seau Express R{\'e}gional>>) et ses tunnels carrel{\'e}s aux tonalit{\'e}s color{\'e}es blanches-oranges-rouges de la d{\'e}cennie 1970, des services t{\'e}l{\'e}matiques et de t{\'e}l{\'e}texte qui pointent leur nez avec le Minitel : vous pouvez r{\'e}server vos billets AirFrance ou SNCF, ou acheter "en ligne" avec des services comme LaRedoute ou Les3Suisses et vous faire livrer chez vous !~\\
+	C'{\'e}tait avant tout dans la continuit{\'e} des plans de construction centrales nucl{\'e}aires, la construction des villes nouvelles en b{\'e}ton ({\'E}vry-Courcouronnes, Cr{\'e}teil, Champs-Sur-Marne...) aux alentours de Paris et centr{\'e}e sur l'automobile roulant au Diesel, des autoroutes pour les relier, des voies ferr{\'e}es rapides avec le TGV (<<Train Grande Vitesse>>) et ses airs de Concorde Orange restant au sol, le RER (<<R{\'e}seau Express R{\'e}gional>>) et ses tunnels carrel{\'e}s aux tonalit{\'e}s color{\'e}es blanches-oranges-rouges de la d{\'e}cennie 1970, des services t{\'e}l{\'e}matiques et de t{\'e}l{\'e}texte qui pointent leur nez avec le Minitel : vous pouvez r{\'e}server vos billets AirFrance ou SNCF, ou acheter "en ligne" avec des services comme LaRedoute ou Les3Suisses et vous faire livrer chez vous, oiu un point relai dans votre bloc d'habitation  !~\\
 	
+	Du CyberPunk 50 ans (ou 100 ans) trop t{\^o}t : avec des technologies d'avance comme le TGV, le Minitel, les villes nouvelles !~\\
 \end{minipage}
 
-\begin{minipage}{0.68\linewidth}
-
-	Du CyberPunk 50 ans (ou 100 ans) trop t{\^o}t : avec des technologies d'avance comme le TGV, le Minitel, les villes nouvelles !~\\ 
-	
-	\c{C}a, c'{\'e}tait l'avenir, c'{\'e}tait avant !
+% \begin{minipage}{0.68\linewidth}
+% 	\vfill
+% \end{minipage} \hfill \begin{minipage}{0.28\linewidth}
+% 	\vfill
+% \end{minipage}
 
 	\subsection{C'est le Pr{\'e}sent}
 	
-	Le b{\'e}ton a un peu vieillit, l'essence co{\^u}te plus cher, les routes ne sont pas entretenues, les constructions non plus. La publicit{\'e} recouvre tout ceci afin de maintenir l'illusion d'une {\'e}conomie de march{\'e} florissante !~\\
-	
-	Pas ou peu d'innovations ici : c'est une "soci{\'e}t{\'e} glorieuse" qui continue dans sa lanc{\'e}e ! L'administration et les entreprises s'occupent de vos emplois et de besoins en biens de consommation !~\\
-	
-	Qui se soucie r{\'e}ellement d'aller au-del{\`a} de la maintenance ?~\\
-	<<Cela a toujours fonctionn{\'e} ainsi !>>
-	
-\end{minipage} \hfill \begin{minipage}{0.28\linewidth}
-	\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/clemensgritl/_no1005007530.jpeg}~\\
-	\vfill
-\end{minipage}
+	Le b{\'e}ton a un peu vieillit, l'essence co{\^u}te plus cher, les routes ne sont pas entretenues, les constructions non plus. La publicit{\'e} recouvre tout ceci afin de maintenir l'illusion d'une {\'e}conomie de march{\'e} florissante ! Pas ou peu d'innovations ici : c'est une "soci{\'e}t{\'e} glorieuse" qui continue dans sa lanc{\'e}e ! L'administration et les entreprises s'occupent de vos emplois et de besoins en biens de consommation ! Qui se soucie r{\'e}ellement d'aller au-del{\`a} de la maintenance ?~\\
+	\emph{<<Cela a toujours fonctionn{\'e} ainsi !>>}
 
 	\subsection{Ce sera le Pass{\'e}}
 	
@@ -779,7 +726,7 @@ Bienvenue dans un R{\'e}troPunk qui fonctionne au Diesel, au Minitel et {\`a} la
 	
 	{\`A} vous de voir !
 
-\clearpage
+%% \clearpage
 
 \section{Villes et Cités}
 
@@ -787,17 +734,17 @@ Les centres historiques des villes sont devenus des musées pour les nombreux to
 
 L'autre aspect de l'Urbanisme \emph{GiscardPunk} : les monuments en béton dédiés aux Habitats, Entreprises, Ministères et longue liste de noms à la gloire du Béton des Villes Nouvelles ! Cités Dortoirs, Cités Adminstratives, Centres Commerciaux, Pôles de Transports...~\\
 
-\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/ParisMatch_1967_Architecture.jpeg}~\\
+\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/ParisMatch_1967_Architecture.jpeg}~\\
 
 \clearpage
  
 \section{Technologies}
 
-Transports : Grande Vitesse (le fameux TGV), le métro, le RER et ses gares monumentales !~\\
+\textbf{Transports} : Grande Vitesse (le fameux TGV), le métro, le RER et ses gares monumentales !~\\
 
-Télécommunications : complémentaire au téléphone, le fameux et incomparable \textsc{Minitel}, avec affichage en couleurs !~\\
+\textbf{Télécommunications} : complémentaire au téléphone, le fameux et incomparable \textsc{Minitel}, avec affichage en couleurs !~\\
 
-\includegraphics[width=0.95\textwidth]{../../../../imgGraphics/giscardpunk/Annuaire_lectroniqueSaintMalo980.jpeg}~\\
+\includegraphics[width=0.95\textwidth]{../../../imgGraphics/giscardpunk/Annuaire_lectroniqueSaintMalo980.jpeg}~\\
 
 \clearpage
 
@@ -822,12 +769,9 @@ Télécommunications : complémentaire au téléphone, le fameux et incomparable
 \clearpage
 
 \section{Bibliographie}
-
 \nocite{*} %% TODO segmenter par chapitre !!
-%% \bibliography{GrandLivreJdRparGW}
 \bibliographystyle{frplain} % plain or frplain
 \bibliography{GrandLivreJdRparGW}
-
 % \bibliography{agenceTownsendJdR}
 % \bibliography{arcanesJdR}
 % \bibliography{giscardpunkBetonJdR}

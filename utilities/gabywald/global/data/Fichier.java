@@ -16,7 +16,7 @@ import gabywald.utilities.others.PropertiesLoader;
 
 /**
  * This class to manipulate files. 
- * @author Gabriel Chandesris (2011, 2020)
+ * @author Gabriel Chandesris (2011, 2020, 2026)
  * XXX adding check of validity
  * @deprecated Use @see {@link File}
  */

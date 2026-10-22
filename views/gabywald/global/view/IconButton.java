@@ -7,8 +7,9 @@ import javax.swing.JButton;
 
 /**
  * This class defines Iconic Buttons, seized to their icon size. 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class IconButton extends JButton {
 	/**
 	 * Constructor with given icon path. 

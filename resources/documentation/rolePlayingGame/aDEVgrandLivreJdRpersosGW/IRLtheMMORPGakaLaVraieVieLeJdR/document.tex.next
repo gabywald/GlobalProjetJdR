@@ -1,0 +1,589 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[table]{xcolor}
+
+% Couleurs sobres
+\definecolor{grisclair}{RGB}{245,245,245}
+\definecolor{bleufonce}{RGB}{30,50,100}
+\definecolor{bleuclair}{RGB}{200,220,250}
+
+% Mise en page
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+% Style des titres
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries\color{bleufonce}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{bleufonce}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{bleufonce}}{\thesubsubsection}{1em}{}
+
+% Titre du document
+\title{\Huge \textbf{La Vie en Mode Jeu} ~\newline \large \textit{Un jeu de rôle où le quotidien devient une aventure}}
+\author{Gabriel Chandesris}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\vspace{1cm}
+\begin{center}
+    \large \textit{Pour 2 à 6 joueurs}~\newline
+    \large \textit{Durée : 1h à plusieurs mois}~\newline
+    \large \textit{Matériel : dés (d4, d6, d20), fiches de personnage, crayons}
+\end{center}
+
+\newpage
+\tableofcontents
+\newpage
+
+% ======================
+% 1. PRÉSENTATION
+% ======================
+\section{Présentation}
+
+\subsection{Concept}
+\textbf{La Vie en Mode Jeu} est un jeu de rôle humoristique et immersif où les joueurs incarnent des personnages ordinaires (étudiants, employés, artisans, etc.) dans un monde où le quotidien fonctionne comme un \textbf{jeu de rôle}. Les actions banales (faire ses courses, passer un entretien, cuisiner un repas) deviennent des \textbf{missions}, des \textbf{épreuves} ou des \textbf{défis} à relever pour gagner de l'\textbf{expérience}, de l'\textbf{argent}, des \textbf{objets} ou des \textbf{compétences}.
+
+\subsection{Ambiance}
+\begin{itemize}
+    \item \textbf{Satirique et décalée} : Une parodie des codes des jeux vidéo et des travers de la société moderne.
+    \item \textbf{Collaborative ou compétitive} : Les joueurs peuvent s'entraider (colocataires, collègues) ou rivaliser (pour un logement, un emploi, etc.).
+    \item \textbf{Immersive} : Le meneur de jeu (MJ) introduit des \textbf{événements imprévus} (un "bug" dans la réalité, une panne de métro, une rencontre inattendue).
+\end{itemize}
+
+\subsection{Public}
+À partir de 14 ans. Idéal pour les amateurs de jeux de société, de jeux de rôle, ou simplement pour ceux qui aiment rire de leur quotidien.
+
+% ======================
+% 2. SYSTÈME DE JEU
+% ======================
+\newpage
+\section{Système de jeu}
+
+\subsection{Les caractéristiques}
+Chaque personnage possède \textbf{6 caractéristiques principales}, notées de 1 à 20 (1 = très faible, 20 = exceptionnel) :
+
+\begin{center}
+    \begin{tabular}{>{\bfseries}lc p{8cm}}
+        \toprule
+        \textbf{Caractéristique} & \textbf{Abréviation} & \textbf{Description}	\\
+        \midrule
+        Force & FOR & Capacité physique, port de charges, résistance aux efforts.	\\
+        Adresse & ADR & Habileté manuelle, réflexes, coordination.	\\
+        Santé & SAN & Résistance à la fatigue, aux maladies, à la faim.	\\
+        Intelligence & INT & Logique, culture générale, apprentissage.	\\
+        Perception & PER & Intuition, observation, gestion du stress.	\\
+        Charisme & CHA & Persuasion, séduction, leadership, réseau social.	\\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\subsubsection{Modificateurs}
+Chaque caractéristique donne un \textbf{modificateur} :
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        \textbf{Valeur} & \textbf{Modificateur} & \textbf{Valeur} & \textbf{Modificateur} & \textbf{Valeur} & \textbf{Modificateur}	\\
+        \hline
+        1-2 & -2 & 9-10 & +0 & 17-18 & +3	\\
+        3-4 & -1 & 11-12 & +1 & 19-20 & +4	\\
+        5-6 & 0 & 13-14 & +1 & &	\\
+        7-8 & +0 & 15-16 & +2 & &	\\
+        \hline
+    \end{tabular}
+\end{center}
+
+% ----------------------
+\subsection{Les compétences}
+Les compétences sont liées aux caractéristiques et permettent de réussir des actions spécifiques. En voici quelques-unes :
+
+\begin{itemize}
+    \item \textbf{Athlétisme} (FOR) : Courir, sauter, porter des charges lourdes.
+    \item \textbf{Artisanat} (ADR/INT) : Cuisiner, bricoler, réparer.
+    \item \textbf{Persuasion} (CHA) : Convaincre, négocier, mentir.
+    \item \textbf{Gestion} (PER) : Budget, organisation, survie urbaine.
+    \item \textbf{Technologie} (INT) : Utiliser un ordinateur, coder, réparer un téléphone.
+    \item \textbf{Social} (CHA/PER) : Détecter les mensonges, comprendre les émotions.
+    \item \textbf{Ponctualité} (PER) : Arriver à l'heure, éviter les retards.
+    \item \textbf{Réseautage} (CHA) : Se faire des amis, trouver des contacts.
+\end{itemize}
+
+\subsubsection{Test de compétence}
+Pour réussir une action, le joueur lance \textbf{1d20} et ajoute :
+\begin{itemize}
+    \item Le \textbf{modificateur de la caractéristique} associée.
+    \item Le \textbf{bonus de compétence} (si le personnage a cette compétence).
+\end{itemize}
+Le MJ fixe un \textbf{seuil de difficulté} (ex : 15 pour convaincre un patron de vous augmenter).
+
+\subsubsection{Exemple}
+
+
+
+\textit{Jean veut réparer une étagère. Il a ADR 14 (+2) et la compétence Artisanat (+2). Il lance 1d20 : il obtient 12. Total = 12 + 2 + 2 = 16. Le MJ avait fixé le seuil à 15 : Jean réussit !}
+
+% ----------------------
+\subsection{Progression}
+Les personnages gagnent de l'\textbf{expérience (XP)} en accomplissant des missions, en découvrant des lieux, ou en relevant des défis. Voici comment progresser :
+
+\begin{itemize}
+    \item \textbf{Niveau 1 à 5} : Débutant (XP nécessaire : 0 à 1 000).
+    \item \textbf{Niveau 6 à 10} : Confirmé (XP nécessaire : 1 001 à 3 000).
+    \item \textbf{Niveau 11 à 15} : Expert (XP nécessaire : 3 001 à 6 000).
+    \item \textbf{Niveau 16 à 20} : Légendaire (XP nécessaire : 6 001+).
+\end{itemize}
+
+À chaque niveau, le personnage :
+\begin{itemize}
+    \item Gagne \textbf{1 point de caractéristique} à répartir.
+    \item Peut apprendre \textbf{1 nouvelle compétence} ou améliorer une compétence existante (+1).
+    \item Débloque un \textbf{talent} (à partir du niveau 3, puis tous les 3 niveaux).
+\end{itemize}
+
+% ----------------------
+\subsection{Ressources}
+\begin{itemize}
+    \item \textbf{Argent} : En \textbf{euros} (ou en \textbf{écus} pour une version fantasy). Peut être gagné via des missions, des petits boulots, ou en vendant des objets.
+    \item \textbf{Points de vie (PV)} : Représentent la santé physique et mentale. Un personnage en a \textbf{10 + modificateur de Santé}. Il en perd en cas d'échec critique (ex : se casser une jambe, subir un burn-out).
+    \item \textbf{Points de fatigue} : Limite les actions par jour (maximum = 10 + modificateur de Santé). Récupérés en dormant ou en se reposant.
+    \item \textbf{Inventaire} : Nombre d'objets limités par la \textbf{Force} (ex : un sac à dos peut contenir FOR objets).
+\end{itemize}
+
+% ----------------------
+\subsection{Conflits et épreuves}
+Pas de combat traditionnel, mais des \textbf{conflits sociaux ou physiques} résolus via :
+\begin{itemize}
+    \item \textbf{Jets de dés opposés} : Comparer le résultat d'un test de compétence à celui d'un adversaire (ex : \textbf{CHA + Persuasion} vs \textbf{PER + Détection de mensonges} pour mentir à un ami).
+    \item \textbf{Épreuves en plusieurs étapes} : Pour les actions complexes (ex : un entretien d'embauche avec 3 jets de dés différents).
+    \item \textbf{Dégâts sociaux/mentaux} : Les échecs répétés peuvent causer des \textbf{malus temporaires} (ex : "-2 en Charisme après une rupture").
+\end{itemize}
+
+\subsubsection{Exemple de conflit}
+
+
+
+\textit{Marie veut voler un croissant dans une boulangerie. Elle lance ADR + Discrétion (modificateur total +4) contre PER + Vigilance du boulanger (modificateur +3). Marie obtient 14 + 4 = 18, le boulanger obtient 10 + 3 = 13. Marie réussit !}
+
+% ----------------------
+\subsection{Objets}
+\begin{itemize}
+    \item \textbf{Objets communs} : Téléphone, clés, portefeuille, vêtements (chaque objet a un poids et une utilité).
+    \item \textbf{Objets utiles} :
+    \begin{itemize}
+        \item \textbf{Carte de réduction} (ex : carte étudiante) : -10 sur certains achats.
+        \item \textbf{Diplôme} : +2 en Intelligence pour les missions liées à l'emploi.
+        \item \textbf{Téléphone portable} : Permet d'accéder à des missions en ligne (ex : "Trouver un rendez-vous sur une appli").
+    \end{itemize}
+    \item \textbf{Consommables} :
+    \begin{itemize}
+        \item \textbf{Café} : +1 en Adresse ou Intelligence pour 1h (mais -1 en Santé après).
+        \item \textbf{Baguette} : Restaure 2 points de fatigue.
+        \item \textbf{Bière} : +2 en Charisme pour les interactions sociales… mais -1 en Perception le lendemain.
+    \end{itemize}
+\end{itemize}
+
+% ----------------------
+\subsection{Événements aléatoires}
+Le MJ peut lancer \textbf{1d6} en début de session pour déclencher un événement imprévu :
+
+\begin{center}
+    \begin{tabular}{|c|p{10cm}|}
+        \hline
+        \textbf{Dés} & \textbf{Événement}	\\
+        \hline
+        1 & \textbf{Erreur administrative} : Un papier important a été perdu. Il faut le retrouver (jet de PER + Gestion).	\\
+        \hline
+        2 & \textbf{Grève des transports} : Tous les déplacements prennent 2x plus de temps aujourd'hui.	\\
+        \hline
+        3 & \textbf{Rencontre inattendue} : Un ancien camarade de classe propose une mission (ex : "Aide-moi à déménager !").	\\
+        \hline
+        4 & \textbf{Pénurie} : Un objet du quotidien devient introuvable (ex : "Plus de pain dans les boulangeries").	\\
+        \hline
+        5 & \textbf{Coup de chance} : Tous les joueurs gagnent +2 en Charisme pour la session.	\\
+        \hline
+        6 & \textbf{Quiproquo} : Un malentendu déclenche une situation comique (ex : on vous prend pour quelqu'un d'autre).	\\
+        \hline
+    \end{tabular}
+\end{center}
+
+% ----------------------
+\subsection{Mort et échec}
+Un personnage est \textbf{éliminé} s'il atteint :
+\begin{itemize}
+    \item \textbf{0 PV} : Blessure grave, maladie, burn-out.
+    \item \textbf{0 points de fatigue} : Épuisement total.
+\end{itemize}
+
+\textbf{Options} :
+\begin{itemize}
+    \item \textbf{Recommencer} : Créer un nouveau personnage avec un malus aléatoire (ex : "-2 en Santé" pour avoir négligé sa santé).
+    \item \textbf{Mode difficile} : Le personnage est définitivement perdu.
+    \item \textbf{Secours} : Un autre joueur peut dépenser 100 euros pour le "soigner" (ex : payer une ambulance ou un médecin).
+\end{itemize}
+
+% ======================
+% 3. CRÉATION DE PERSONNAGE
+% ======================
+\newpage
+\section{Création de personnage}
+
+\subsection{Étapes de création}
+\begin{enumerate}
+    \item \textbf{Choisir une origine} (donne des bonus/malus de base) :
+    \begin{itemize}
+        \item \textbf{Étudiant} : +2 INT, -1 SAN, 50 euros, 1 objet "Livre de cours".
+        \item \textbf{Employé de bureau} : +1 CHA, +1 PER, 100 euros, 1 objet "Ordinateur portable".
+        \item \textbf{Chômeur} : +2 PER, -1 CHA, 20 euros, 1 objet "CV usagé".
+        \item \textbf{Artisan} : +2 ADR, +1 INT, 40 euros, 1 objet "Boîte à outils".
+        \item \textbf{Sportif} : +2 FOR, +1 SAN, 30 euros, 1 objet "Bouteille d'eau".
+        \item \textbf{Influenceur} : +3 CHA, -2 INT, 200 euros, 1 objet "Smartphone dernier cri".
+    \end{itemize}
+
+\item \textbf{Répartir 70 points} entre FOR, ADR, SAN, INT, PER, CHA (minimum 1, maximum 20).
+
+\item \textbf{Choisir 3 compétences} parmi la liste (ex : Persuasion, Cuisine, Bricolage) avec +2 pour chacune.
+
+\item \textbf{Choisir 1 talent} (ex : "Polyglotte", "Toujours en retard mais charismatique", "Accro au café").
+\item \textbf{Choisir 1 défaut} (ex : "Peur des pigeons", "Allergique aux chats", "Dépensier").
+\item \textbf{Équipement de départ} : 5 objets communs + 1 objet lié à l'origine.
+\item \textbf{Définir un objectif personnel} (ex : "Devenir riche", "Trouver l'amour", "Survivre à la fac").
+
+\end{enumerate}
+
+% ----------------------
+\subsection{Exemple de fiche de personnage}
+
+\begin{center}
+\rowcolors{2}{bleuclair}{white}
+\begin{tabular}{|>{\bfseries}l|l|}
+    \hline
+    \multicolumn{2}{|c|}{\textbf{Fiche de Personnage : Pierre}}	\\
+    \hline
+    \textbf{Origine} & Employé de bureau	\\
+    \hline
+    \textbf{Niveau} & 2	\\
+    \hline
+    \textbf{XP} & 500/1000	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{Caractéristiques} & \textbf{Valeur (Modificateur)}	\\
+    \hline
+    Force (FOR) & 10 (+0)	\\
+    \hline
+    Adresse (ADR) & 14 (+2)	\\
+    \hline
+    Santé (SAN) & 8 (-1)	\\
+    \hline
+    Intelligence (INT) & 12 (+1)	\\
+    \hline
+    Perception (PER) & 14 (+2)	\\
+    \hline
+    Charisme (CHA) & 10 (+0)	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{Compétences} & \textbf{Bonus}	\\
+    \hline
+    Persuasion & +2	\\
+    \hline
+    Gestion & +2	\\
+    \hline
+    Technologie & +2	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{Talent} & "Maître des excuses" : +2 en Persuasion pour justifier un retard.	\\
+    \hline
+    \textbf{Défaut} & "Addict au café" : -1 en Santé si pas de café dans la journée.	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{Équipement} & Téléphone portable, Ordinateur portable, Carte de transport, Portefeuille, Clés, Bouteille d'eau	\\
+    \hline
+    \textbf{Objectif} & Obtenir une augmentation.	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{PV} & 9/9	\\
+    \hline
+    \textbf{Fatigue} & 7/9	\\
+    \hline
+    \textbf{Argent} & 120 euros	\\
+    \hline
+\end{tabular}
+\end{center}
+
+% ======================
+% 4. SCÉNARIOS
+% ======================
+\newpage
+\section{Scénarios}
+
+\subsection{Scénarios courts (1-2 sessions)}
+
+\subsubsection{"La Chasse à l'Appartement"}
+\textbf{Synopsis} : Les joueurs doivent trouver un logement décent dans une ville où les loyers sont exorbitants.
+
+\textbf{Missions} :
+\begin{enumerate}
+    \item \textbf{Recherche d'annonces} : Trouver 3 annonces intéressantes (jet de PER + Gestion).
+    \item \textbf{Visite des logements} : Convaincre les propriétaires de vous laisser visiter (jet de CHA + Persuasion).
+    \item \textbf{Réunir la caution} : Trouver l'argent nécessaire (jet de INT + Technologie pour un prêt, ou ADR + Artisanat pour un petit boulot).
+    \item \textbf{Négociation finale} : Convaincre le propriétaire de vous choisir (3 jets de CHA + Persuasion ou INT + Négociation contre le propriétaire, qui a CHA 16 et PER 14).
+\end{enumerate}
+
+\textbf{Récompenses} :
+\begin{itemize}
+    \item Clés de l'appartement (objet rare).
+    \item +300 XP.
+    \item Accès au scénario \textbf{"Colocation : Mode Chaos"} (optionnel).
+\end{itemize}
+
+% ----------------------
+\subsubsection{"L'Examen de la Dernière Chance"}
+\textbf{Synopsis} : Un joueur doit réussir un examen crucial pour valider son année.
+
+\textbf{Étapes} :
+\begin{enumerate}
+    \item \textbf{Révision} : Étudier efficacement (jet de INT + Mémoire).
+    \item \textbf{Gestion du stress} : Éviter de paniquer (jet de PER + Calme).
+    \item \textbf{Épreuve écrite} : Répondre aux questions (jet de INT + Logique).
+    \item \textbf{Oral} : Convaincre le jury (jet de CHA + Éloquence contre le professeur, qui a INT 16 et PER 14).
+\end{enumerate}
+
+\textbf{Récompenses} :
+\begin{itemize}
+    \item Diplôme (objet rare, +2 en Intelligence pour les missions liées à l'emploi).
+    \item +250 XP.
+\end{itemize}
+
+% ----------------------
+\subsubsection{"Soirée Catastrophe"}
+\textbf{Synopsis} : Les joueurs organisent une soirée chez eux, mais tout semble vouloir mal tourner.
+
+\textbf{Objectifs} :
+\begin{itemize}
+    \item Acheter de la nourriture et des boissons (jet de ADR + Cuisine pour éviter les intoxications).
+    \item Inviter des amis (jet de CHA + Réseautage).
+    \item Éviter que les voisins n'appellent la police (jet de ADR + Discrétion toutes les 30 minutes).
+\end{itemize}
+
+\textbf{Événement aléatoire} : Un invité trop ivre déclenche un conflit (jet de FOR + Résistance à l'alcool vs CHA + Persuasion pour le calmer).
+
+\textbf{Récompenses} :
+\begin{itemize}
+    \item +150 XP.
+    \item Objet aléatoire (ex : "Bouteille de vin de luxe", "Numéro de téléphone d'un inconnu").
+\end{itemize}
+
+% ----------------------
+\subsection{Campagnes longues}
+
+\subsubsection{"De Zéro à Héros"}
+\textbf{Synopsis} : Les joueurs commencent sans le sou et doivent s'en sortir par eux-mêmes.
+
+\textbf{Étapes possibles} :
+\begin{itemize}
+    \item Trouver un petit boulot (missions : livraison, baby-sitting, etc.).
+    \item Se former (missions : cours du soir, stages).
+    \item Créer une entreprise ou une association.
+    \item \textbf{Défis finaux} : Affronter un "patron" corrompu ou un rival malveillant (ex : un concurrent en affaires).
+\end{itemize}
+
+\textbf{Thèmes abordés} :
+\begin{itemize}
+    \item Les inégalités sociales.
+    \item L'importance du réseautage.
+    \item La gestion des ressources (temps, argent, énergie).
+\end{itemize}
+
+% ----------------------
+\subsubsection{"Le Bug de la Réalité"}
+\textbf{Synopsis} : Une anomalie fait que la réalité commence à fonctionner comme un jeu vidéo. Les PNJ répètent les mêmes phrases, des objets disparaissent, etc.
+
+\textbf{Mécaniques spéciales} :
+\begin{itemize}
+    \item \textbf{Anomalies aléatoires} : Chaque session, le MJ lance 1d10 pour appliquer un effet (ex : "Tous les jets sont désavantagés", "Les objets pèsent 2x plus").
+    \item \textbf{Missions de réparation} : Trouver la source du bug (ex : "Localiser le serveur central" avec un jet de INT + Technologie).
+\end{itemize}
+
+% ----------------------
+\subsubsection{"La Colocation de l'Enfer"}
+\textbf{Synopsis} : Les joueurs emménagent ensemble et doivent gérer les défis de la vie en colocation.
+
+\textbf{Quêtes récurrentes} :
+\begin{itemize}
+    \item Faire le ménage (jet de ADR + Artisanat).
+    \item Payer les factures à temps (jet de PER + Gestion).
+    \item Éviter les conflits entre colocataires (jet de CHA + Diplomatie).
+\end{itemize}
+
+\textbf{Événements} :
+\begin{itemize}
+    \item Un colocataire invite 20 personnes sans prévenir.
+    \item Le frigo tombe en panne.
+    \item Un voisin se plaint du bruit.
+\end{itemize}
+
+\textbf{Récompenses} :
+\begin{itemize}
+    \item Amélioration de l'appartement (ex : "Canapé confortable" = +1 en Santé quand on s'y repose).
+    \item \textbf{Fin alternative} : Si les joueurs échouent trop, la colocation explose et ils doivent déménager.
+\end{itemize}
+
+% ----------------------
+\subsection{Scénarios thématiques}
+
+\begin{center}
+    \begin{tabular}{|>{\bfseries}l|p{6cm}|p{5cm}|}
+        \hline
+        \textbf{Thème} & \textbf{Idée de scénario} & \textbf{Mécaniques spéciales}	\\
+        \hline
+        Amour & Trouver l'âme sœur via une appli de rencontre. & Jets de CHA + Séduction vs PER + Détection de mensonges du PNJ.	\\
+        \hline
+        Survie & Survivre une semaine avec 50 euros. & Gestion stricte des ressources (nourriture, transport).	\\
+        \hline
+        Enquête & Résoudre la disparition d'un voisin. & Jets de PER + Observation pour trouver des indices.	\\
+        \hline
+        Aventure & Road-trip en Europe avec un budget serré. & Mini-jeux pour les transports (ex : "Trouver un covoiturage").	\\
+        \hline
+        Horreur & Un joueur est hanté par une "anomalie". & Jets de PER + Volonté pour résister à la folie.	\\
+        \hline
+    \end{tabular}
+\end{center}
+
+% ======================
+% 5. CONSEILS POUR LE MJ
+% ======================
+\newpage
+\section{Conseils pour le Meneur de Jeu (MJ)}
+
+\begin{itemize}
+    \item \textbf{Adaptez les scénarios} à la vie réelle des joueurs (ex : si un joueur est étudiant, proposez des missions liées aux examens).
+    \item \textbf{Utilisez des PNJ stéréotypés} : le voisin râleur, le patron tyrannique, l'ami toujours en retard, le commerçant radin.
+    \item \textbf{Encouragez la créativité} : Les joueurs peuvent proposer des actions originales (ex : "J'organise un flashmob pour distraire le vigile").
+    \item \textbf{Équilibrez les défis} : Assurez-vous que les missions ne sont ni trop faciles ni trop difficiles.
+    \item \textbf{Ajoutez des clins d'œil} : Références à la culture française (ex : un PNJ nommé "Gérard" qui tient un café, une mission pour "trouver une baguette parfaite").
+    \item \textbf{Improvisez} : N'hésitez pas à créer des événements imprévus en fonction des actions des joueurs.
+\end{itemize}
+
+% ======================
+% 6. EXTENSIONS POSSIBLES
+% ======================
+\section{Extensions possibles}
+
+\begin{itemize}
+    \item \textbf{Métiers} : À haut niveau, les joueurs peuvent choisir un métier (ex : "Hacker", "Artiste de rue", "Chef cuisinier") avec des compétences uniques.
+    \item \textbf{Réputation} : Selon leurs actions, les joueurs gagnent ou perdent de la réputation dans différents milieux (ex : "Ami des animaux", "Ennemi des banquiers").
+    \item \textbf{Mode difficile} : Pas de sauvegarde, mort définitive, ressources très limitées.
+    \item \textbf{Éléments fantastiques} : Intégrez des pouvoirs ou des créatures pour un mélange humoristique (ex : un joueur découvre qu'il peut lancer des sorts… mais c'est juste un effet secondaire d'un médicament).
+\end{itemize}
+
+% ======================
+% 7. EXEMPLE DE SESSION
+% ======================
+\section{Exemple de session type}
+
+\textbf{Titre} : "Premier jour au travail"
+\textbf{Joueurs} : 3 (Pierre, Marie, Thomas).
+\textbf{Synopsis} : Les joueurs commencent un nouveau travail dans une startup. Leur mission : survivre à la journée sans se faire virer.
+
+\textbf{Déroulé} :
+\begin{enumerate}
+    \item \textbf{Arriver à l'heure} : Éviter les retards (jet de PER + Ponctualité).
+    \item \textbf{Faire bonne impression} : Présenter un projet au boss (jet de CHA + Persuasion).
+    \item \textbf{Éviter un collègue toxique} : Détecter ses manipulations (jet de PER + Détection de mensonges).
+    \item \textbf{Événement aléatoire} : La machine à café tombe en panne → mini-jeu pour la réparer (jet de ADR + Bricolage).
+    \item \textbf{Défis final} : Convaincre un client mécontent de signer un contrat (PNJ avec CHA 15 et INT 12).
+\end{enumerate}
+
+\textbf{Récompenses} :
+\begin{itemize}
+    \item Salaire de la journée (50 euros).
+    \item +200 XP.
+    \item Objet : "Carte de visite" (+1 en Charisme pour les interactions professionnelles).
+\end{itemize}
+
+% ======================
+% 8. MATÉRIEL NÉCESSAIRE
+% ======================
+\section{Matériel nécessaire}
+
+\begin{itemize}
+    \item Fiches de personnage (voir exemple ci-dessus).
+    \item Dés : 1d4, 1d6, 1d20 (et éventuellement d'autres pour des variantes).
+    \item Feuilles de notes : Pour noter les missions et les récompenses.
+    \item Accessoires : Post-it pour les objets, jetons ou pièces pour l'argent, etc.
+\end{itemize}
+
+% ======================
+% 9. FEUILLE DE PERSONNAGE VIERGE
+% ======================
+\newpage
+\section{Feuille de personnage vierge}
+
+\begin{center}
+\rowcolors{2}{bleuclair}{white}
+\begin{tabular}{|>{\bfseries}l|l|}
+    \hline
+    \multicolumn{2}{|c|}{\textbf{Fiche de Personnage}}	\\
+    \hline
+    \textbf{Nom} &	\\
+    \hline
+    \textbf{Origine} &	\\
+    \hline
+    \textbf{Niveau} &	\\
+    \hline
+    \textbf{XP} & /	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{Caractéristiques} & \textbf{Valeur (Modificateur)}	\\
+    \hline
+    Force (FOR) & (+)	\\
+    \hline
+    Adresse (ADR) & (+)	\\
+    \hline
+    Santé (SAN) & (+)	\\
+    \hline
+    Intelligence (INT) & (+)	\\
+    \hline
+    Perception (PER) & (+)	\\
+    \hline
+    Charisme (CHA) & (+)	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{Compétences} & \textbf{Bonus}	\\
+    \hline
+    1. & +	\\
+    \hline
+    2. & +	\\
+    \hline
+    3. & +	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{Talent} &	\\
+    \hline
+    \textbf{Défaut} &	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{Équipement} &	\\
+    \hline
+    \textbf{Objectif} &	\\
+    \hline
+    \rowcolor{grisclair}
+    \textbf{PV} & /	\\
+    \hline
+    \textbf{Fatigue} & /	\\
+    \hline
+    \textbf{Argent} & euros	\\
+    \hline
+\end{tabular}
+\end{center}
+
+\end{document}

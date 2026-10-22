@@ -6,8 +6,9 @@ import gabywald.rpg.model.IdeesSousLesDes;
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class ScenarioGenerator extends RPGDataPanel {
 	private static ScenarioGenerator instance = null;
 	

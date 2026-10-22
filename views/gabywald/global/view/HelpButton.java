@@ -4,8 +4,9 @@ import gabywald.global.controller.HelpButtonListener;
 
 /**
  * This class to define Help Buttons with help content (tool tip text). 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class HelpButton extends IconButton {
 	/**
 	 * Constructor.

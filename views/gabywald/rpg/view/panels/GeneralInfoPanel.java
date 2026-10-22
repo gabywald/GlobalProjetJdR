@@ -5,8 +5,9 @@ import gabywald.rpg.model.Personnae;
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class GeneralInfoPanel extends RPGPersonnaeAnyPanel /** SpecificityPanel */ {
 	private static GeneralInfoPanel instance;
 	private static String[] TEXTS_FOR_LABELS = Personnae.GENERAL_ATTR_NAMES;

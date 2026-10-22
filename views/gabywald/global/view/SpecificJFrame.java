@@ -1,5 +1,10 @@
 package gabywald.global.view;
 
+/**
+ * 
+ * @author Gabriel Chandesris (2011, 2026)
+ */
+@SuppressWarnings("serial")
 public class SpecificJFrame extends GenericJFrame {
 
 	protected SpecificJFrame(String title) {

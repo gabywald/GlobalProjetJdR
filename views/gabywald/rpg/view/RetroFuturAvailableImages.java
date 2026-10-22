@@ -5,13 +5,17 @@ import javax.swing.ImageIcon;
 import gabywald.global.data.StringUtils;
 import gabywald.global.view.AvailableImages;
 
+/**
+ * 
+ * @author Gabriel Chandesris (2011, 2026)
+ */
 public abstract class RetroFuturAvailableImages extends AvailableImages {
 	private static String[] pathes = {
-		"resources/imgGraphics/retrofutur/", 
-		"resources/imgGraphics/retrofutur/affiches/",
-		"resources/imgGraphics/retrofutur/bannieres/",
-		"resources/imgGraphics/retrofutur/decors/",
-		"resources/imgGraphics/retrofutur/logos/",
+		AvailableImages.prefix + "resources/imgGraphics/retrofutur/", 
+		AvailableImages.prefix + "resources/imgGraphics/retrofutur/affiches/",
+		AvailableImages.prefix + "resources/imgGraphics/retrofutur/bannieres/",
+		AvailableImages.prefix + "resources/imgGraphics/retrofutur/decors/",
+		AvailableImages.prefix + "resources/imgGraphics/retrofutur/logos/",
 	};
 
 	private static final String[] pathToImages = {
@@ -310,7 +314,7 @@ public abstract class RetroFuturAvailableImages extends AvailableImages {
 	
 	public static ImageIcon getRandom() { 
 		int select	= StringUtils.randomValue(RetroFuturAvailableImages.pathToImages.length);
-		return new ImageIcon(RetroFuturAvailableImages.pathToImages[select]); 
+		return AvailableImages.getImageIcon(RetroFuturAvailableImages.pathToImages[select]); 
 	}
 	
 	public static ImageIcon getRandom(int start, int endin) {
@@ -326,7 +330,7 @@ public abstract class RetroFuturAvailableImages extends AvailableImages {
 	
 	public static ImageIcon getImageIcon(int i) { 
 		if ( (i >= 0) && (i < RetroFuturAvailableImages.pathToImages.length) )
-			{ return new ImageIcon(RetroFuturAvailableImages.pathToImages[i]); }
+			{ return AvailableImages.getImageIcon(RetroFuturAvailableImages.pathToImages[i]); }
 		else { return null; }
 	}
 }

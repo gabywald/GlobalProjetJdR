@@ -23,8 +23,7 @@ import java.util.regex.Pattern;
 /**
  * This class to ensure a generic file format use.
  * <br>Overload of original {@linkplain java.io.File} to ensure a "real file" Object. 
- * @author St&eacute;fan Engelen (2006)
- * @author Gabriel Chandesris (2008-2010)
+ * @author Gabriel Chandesris (2008-2010, 2026)
  * @see Directory
  */
 @SuppressWarnings("serial")

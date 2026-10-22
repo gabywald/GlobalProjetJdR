@@ -6,9 +6,10 @@ import gabywald.rpg.view.BuildPersonnaeFrame;
 /**
  * Double implementation of dialog for Weapons. 
  * <br><i>Doubleton ("double singleton")</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  * @deprecated ...
  */
+@SuppressWarnings("serial")
 public class WeaponsAskingDialog extends GenericAskingDialog {
 	private static final String FIRST_SET_LABEL		= "Weapon Name : ";
 	private static final String VALUE_LABEL			= "Weapon Value";

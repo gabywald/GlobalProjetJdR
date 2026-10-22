@@ -5,8 +5,7 @@ import javax.swing.JProgressBar;
 /**
  * Main item of graphical interface (it is NOT a graphical item), 
  * it is used for computing and drive the user from interface to interface 
- * @author St&eacute;fan Engelen (2006)
- * @author Gabriel Chandesris (2008-2012)
+ * @author Gabriel Chandesris (2008-2012, 2026)
  */
 public class MyProcessus implements Runnable {
 	private MyInternalFrame internalFrame;

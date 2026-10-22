@@ -5,8 +5,9 @@ import gabywald.rpg.controller.BiographyGeneratorActionListener;
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class BiographyPanel extends RPGDataPanel {
 	private static BiographyPanel instance;
 

@@ -1,13 +1,14 @@
 package gabywald.framework.view;
 
-import gabywald.global.data.Fichier;
+import gabywald.global.data.File;
 import gabywald.global.data.TextualInfoFile;
 
 /**
  * 
- * @author Gabriel Chandesris (2012)
+ * @author Gabriel Chandesris (2012, 2026)
  */
-public class MyMenuFile extends Fichier {
+@SuppressWarnings("serial")
+public class MyMenuFile extends File {
 	private static MyMenuFile instance;
 
 	private MyMenuFile() 

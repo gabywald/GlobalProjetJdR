@@ -5,8 +5,9 @@ import gabywald.rpg.controller.BarbarismScientificGeneratorActionListener;
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2012)
+ * @author Gabriel Chandesris (2012, 2026)
  */
+@SuppressWarnings("serial")
 public class BarbarismScientificPanel extends RPGDataPanel {
 	private static BarbarismScientificPanel instance;
 

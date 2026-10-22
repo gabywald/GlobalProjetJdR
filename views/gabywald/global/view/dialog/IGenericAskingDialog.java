@@ -1,5 +1,9 @@
 package gabywald.global.view.dialog;
 
+/**
+ * 
+ * @author Gabriel Chandesris (2011, 2026)
+ */
 public interface IGenericAskingDialog {
 	public GenericAskingDialog getConfigureAndAddInstance(String name, String message, 
 													      String[] choices, 

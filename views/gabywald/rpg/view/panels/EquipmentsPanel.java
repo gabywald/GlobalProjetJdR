@@ -5,8 +5,9 @@ import gabywald.rpg.controller.IntegrationActionListenerEquipments;
 /**
  * 
  * <br><i>DPSingleton</i>
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
+@SuppressWarnings("serial")
 public class EquipmentsPanel extends RPGDataPanel {
 	private static EquipmentsPanel instance;
 

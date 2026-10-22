@@ -11,9 +11,10 @@ import javax.swing.JPanel;
  * South (bottom) part of the main Frame / Window. 
  * <br><i>DPSingleton</i>
  * <!-- <br><b><i>Uses CardLayout</i></b> -->
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  * @see SpecificJFFrame
  */
+@SuppressWarnings("serial")
 public class SpecificSouthPanel extends JPanel {
 	private static SpecificSouthPanel instance;
 	/** Half the width remained without the compass width). */

@@ -6,14 +6,13 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
-
 /**
  * This class defines a specific List Cell Renderer for Models in a JList. 
- * @author Gabriel Chandesris (2011)
+ * @author Gabriel Chandesris (2011, 2026)
  */
-public class GenericListRenderer implements ListCellRenderer {
-	public Component getListCellRendererComponent(JList list, Object value,
-							int index, boolean isSelected, boolean cellHasFocus) {
+public class GenericListRendererString implements ListCellRenderer<String> {
+	@Override
+	public Component getListCellRendererComponent(JList<? extends String> list, String value, int index, boolean isSelected, boolean cellHasFocus) {
 		JLabel tmp = new JLabel((String)value);
 		tmp.setHorizontalAlignment(SwingConstants.CENTER);
 		tmp.setText((String)list.getModel().getElementAt(index));
