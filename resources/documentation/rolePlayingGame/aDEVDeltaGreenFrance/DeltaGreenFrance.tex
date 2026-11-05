@@ -16,6 +16,8 @@
     footskip=1cm
 }
 
+%% pdflatex DeltaGreenFrance.tex && pdflatex DeltaGreenFrance.tex && rm *.aux *.log *.toc *.out
+
 %  Packages pour la mise en page et le style 
 \usepackage{parskip}
 \usepackage{setspace}
@@ -28,6 +30,11 @@
 \fancyhead[RE,LO]{\nouppercase{\leftmark}}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0pt}
+\usepackage{longtable} % pour les tableaux de plusieurs pages
+
+% --- Packages pour les organigrammes TikZ ---
+\usepackage{tikz}
+\usetikzlibrary{trees, positioning, arrows.meta, shapes.geometric}
 
 %  Packages pour les images et les couleurs 
 \usepackage{graphicx}
@@ -62,7 +69,7 @@
 %  Titre et auteur 
 \title{\textbf{Livret des Agences Occultes \\ France et Europe \\ pour Delta Green}}
 \author{}
-\date{}
+\date{\today}
 
 \begin{document}
 
@@ -553,6 +560,302 @@ Les agents de l'EORA doivent maîtriser \textbf{plusieurs langues} et avoir une 
 	\textbf{Faiblesses}				&	Manque de ressources, corruption interne	&	Méfiance envers l'état, manque de moyens	&	Bureaucratie, divergences culturelles \\ \hline
 	\end{tabular} }
 \end{center}
+
+\newpage
+
+% =====================================================
+% CHAPITRE : LE SERVICE PUBLIC DE LUTTE CONTRE L'OCCULTE
+% DPE (France) et CESA (Europe)
+% =====================================================
+
+\chapter{Le Service Public de Lutte contre l'Occulte}
+\markboth{Le Service Public de Lutte contre l'Occulte}{}
+
+Ce chapitre détaille la construction institutionnelle, l'historique et le
+positionnement des deux structures publiques de lutte contre l'occulte :
+la version française (la Direction du Patrimoine Exceptionnel, alias
+\textbf{Félicie}) et la version européenne (la Coordination Européenne de
+Sécurité Anormale, alias \textbf{CESA}).
+
+\clearpage
+
+\begin{shaded}
+\begin{center}
+\textbf{DPE (France)} \\ \og Ce que la République ne peut admettre, elle le garde. \fg
+\end{center}
+\textbf{Nom officiel de couverture :} \textit{Direction du Patrimoine Exceptionnel et des Collections Sensibles} (ministère de la Culture). \\
+\textbf{Nom réel (interne) :} \textbf{Félicie}. \\
+\textbf{Classification :} Secret Défense --- compartiment \textbf{ARCANE}.
+\end{shaded}
+
+\begin{shaded}
+\begin{center}
+\textbf{CESA (Europe)} \\ \og Concordia res parvae crescunt \fg{} (\og Par l'union, les petites choses grandissent \fg)
+\end{center}
+\textbf{Nom officiel de couverture :} \textit{Task Force Européenne de Coopération Patrimoniale et Culturelle} (Conseil de l'UE). \\
+\textbf{Nom réel (interne) :} \textbf{CESA} (ou \textbf{EORA}, nom de code historique). \\
+\textbf{Classification :} \textbf{EU TOP SECRET // ARCANE-EU} (compartiment européen spécifique).
+\end{shaded}
+
+\newpage
+
+% -----------------------------------------------------
+% SECTION 1 : LA DPE (FRANCE)
+% -----------------------------------------------------
+
+\section{La Direction du Patrimoine Exceptionnel (DPE)}
+
+\subsection{Historique français}
+
+\begin{center}
+\begin{longtable}{|P{1.5cm}|P{3.0cm}|P{6.0cm}|}
+\hline
+\textbf{Période} & \textbf{Événement} & \textbf{Détail} \\
+\hline
+\textbf{1793} & \textit{Commission des Arts et Monuments} & Pendant la Révolution, la confiscation des biens du clergé met au jour des \textbf{objets anormaux}. Le \textit{Rapport Grégoire, annexe VII} recommande de ne pas détruire certains artefacts mais de les \textbf{inventorier à part}. Acte de naissance de la pratique : l'État français \textbf{collectionne} l'occulte au lieu de le brûler. \\
+\hline
+\textbf{1854--1891} & \textit{Sous-commission des Sciences Occultes} & L'essor de l'occultisme (Papus, Martinisme) inquiète les pouvoirs publics. Une sous-commission informelle du ministère de l'Instruction publique surveille les cercles ésotériques. Ère des \textbf{correspondants}, sans structure officielle. \\
+\hline
+\textbf{1914--1918} & \textit{Section d'Études du 2\ieme{} Bureau} & La Grande Guerre révèle des phénomènes sur le front : les \og Boches-verts \fg, hantises des tranchées, expériences aux effets inexpliqués. Une \textbf{section d'études discrète} est créée ; elle rejoindra les légendes du \textit{No Man's Land}. \\
+\hline
+\textbf{1935--1940} & \textbf{Création du Bureau S} & Le ministère de la Guerre fonde officiellement le \textbf{Bureau S} (pour \og Spécial \fg{} ou \og Sinistres \fg, selon les archives) : première structure \textbf{formelle} de l'État français consacrée au renseignement occulte. Dépend du 2\ieme{} Bureau, moins de 40 agents. \\
+\hline
+\textbf{1940--1944} & \textit{La Débâcle} & Le Bureau S se scinde : une partie suit Vichy (et tente de saborder les archives avant l'arrivée de l'\textbf{Ahnenerbe}), une autre rejoint la \textbf{France Libre à Londres}. Période la plus sombre : accusations réciproques de trahison, archives dispersées, artefacts \textbf{volés par les nazis}. \\
+\hline
+\textbf{1945} & \textbf{Fondation de Félicie} & À la Libération, le GPRF fusionne les réseaux de la France Libre, les survivants du Bureau S et les enquêteurs des archives allemandes saisies (dossiers Ahnenerbe). Le service est placé sous \textbf{autorité directe du Président du Conseil}. Le nom de code \og Félicie \fg{} serait un clin d'œil à la devise \textit{Felix qui potuit rerum cognoscere causas} (\og Heureux celui qui a pu connaître les causes des choses \fg, Virgile). \\
+\hline
+\textbf{1950--1962} & \textit{L'Ère coloniale} & Félicie opère en \textbf{Indochine, Algérie, Madagascar} : enquêtes sur des cultes, récupération d'artefacts, collaboration forcée avec les services coloniaux. C'est le cadre de la \textbf{Saga Félicie} (Tristan Lhomme) : Laos, Cambodge, 1970. Âge d'or du service : budget noir, opérations exfiltrées --- et premiers \textbf{agents retournés} par ce qu'ils ont vu. \\
+\hline
+\textbf{1962--1981} & \textit{Les Troubles} & Félicie traverse la Ve République. Les scandales de l'époque (OAS, services parallèles) éclaboussent le service : il perd son accès direct à l'Élysée, est \textbf{rétrogradé} sous tutelle du ministère de la Défense. Budget amputé, effectifs fondent. \\
+\hline
+\textbf{1981--1986} & \textbf{Dissolution officielle} & La politique de \og transparence républicaine \fg{} entraîne la \textbf{dissolution administrative} de Félicie. Officiellement : \og économies de budget \fg. Officieusement : le service était devenu \textbf{ingouvernable}, ses archives plus dangereuses que les menaces qu'il combattait. \\
+\hline
+\textbf{1986--2001} & \textit{La Clandestinité} & Dissoute sur le papier, Félicie survit : une cinquantaine d'agents \textbf{infiltrés} (DGSE, DST, gendarmerie, archives nationales), un réseau de \textbf{correspondants bénévoles} (universitaires, prêtres, conservateurs), et une seule archive complète : les \textbf{Dossiers Félicie}, cachées dans un lieu tenu secret. \\
+\hline
+\textbf{2001} & \textit{Le Réveil} & Le 11 septembre et la refonte du renseignement entraînent une \textbf{réactivation discrète} : le constat que des \textbf{organisations transnationales} exploitent la mondialisation plus vite que les services officiels. Félicie est \textbf{recréée en sous-main}, sous couverture d'un service du \textbf{ministère de la Culture} : la \textbf{Direction du Patrimoine Exceptionnel}. \\
+\hline
+\textbf{2008--2015} & \textit{La Professionnalisation} & Création de la DCRI (2008), puis \textbf{DGSI (2014)} : Félicie obtient un \textbf{cadre d'habilitation clair} (compartiment ARCANE), un budget officieux (plan \og Renewal \fg) et des \textbf{protocoles de coopération}. Recrutement de profils scientifiques (CNRS, CEA), militaires (COS, DGSE) et de \textbf{consultants} issus des traditions occultes françaises. \\
+\hline
+\textbf{2015--2026} & \textit{Le Constat Échu} & Attentats de 2015, crise migratoire, \textbf{pandémie de 2020} : chaque grande crise nationale a eu sa \textbf{composante anormale}, traitée en silence. Le service fonctionne en \textbf{cellules autonomes de 3 à 5 agents}, état-major restreint (moins de 200 personnes), doctrine : \og Empêcher. Effacer. Endormir. \fg \\
+\hline
+\end{longtable}
+\end{center}
+
+\subsection{Positionnement institutionnel}
+
+\begin{shaded}
+\begin{verbatim}
+Président de la République
+        |
+        +-- Coordination : SGDSN
+        |       |
+        |       +-- [Cellule "ARCANE" - 3 pers. max,
+        |            habilitation présidentielle]
+        |
+        +-- Félicie (Direction du Patrimoine Exceptionnel)
+        |   - Rattachement public : ministère de la Culture
+        |   - Rattachement réel : SGDSN / ministère des Armées
+        |   - Compartiment ARCANE (Secret Défense)
+        |
+        +-- Autres services (non informés, sauf cellules
+            de contact dédiées)
+\end{verbatim}
+\end{shaded}
+
+\newpage
+
+\subsection{Liens avec les agences et directions existantes}
+
+\begin{center}
+\begin{longtable}{|P{1.5cm}|P{3.0cm}|P{6.0cm}|}
+\hline
+\textbf{Service réel} & \textbf{Lien avec Félicie} & \textbf{Nature du lien} \\
+\hline
+\textbf{DGSI} (contre-terrorisme, contre-espionnage intérieur) & Coopération ponctuelle & Une \textbf{cellule de contact} de 2 personnes est informée de l'existence de Félicie. Interface pour les enquêtes qui \og dérangent \fg{} : une affaire présentant des \textbf{signes inexpliqués} est \textbf{transférée} avec un dossier de réorientation. La DGSI ne sait pas tout : elle sait juste qu'il existe \og une autre boîte pour les affaires bizarres \fg. \\
+\hline
+\textbf{DGSE} (renseignement extérieur) & Historiquement proche & Le service le plus \textbf{imbriqué} avec Félicie : depuis les opérations coloniales des années 1950. Certains agents de la DGSE sont \textbf{détachés} à Félicie à l'insu de leur hiérarchie. Les opérations à l'étranger (récupération d'artefacts, surveillance de cultes) se font \textbf{sous couverture DGSE}. \\
+\hline
+\textbf{DRM} (renseignement militaire) & Soutien logistique & La DRM fournit des \textbf{analyses de zones} (géopolitique des cultes, cartographie des zones anormales) et des \textbf{moyens de transport militaires}. Une section (\og Section Z \fg) gère le \textbf{traitement automatisé} des signaux anormaux (programme d'IA filtrant les alertes \og irrationnelles \fg{} des capteurs). \\
+\hline
+\textbf{ANSSI} (cybersécurité) & Partenariat technique & L'ANSSI a développé (sans savoir exactement pour qui) des outils de \textbf{détection d'anomalies informationnelles} : une IA qui repère dans le trafic internet des \textbf{motifs mathématiques} correspondant à des activations rituelles. Cette IA (nom de code \textbf{SYBILLE}) est exploitée par Félicie. \\
+\hline
+\textbf{CEA / CNRS} (recherche) & Sous-traitance scientifique & Des \textbf{laboratoires clandestins} au CEA et au CNRS étudient les artefacts et échantillons \og anormaux \fg{} sous couvert de \textbf{recherches en physique fondamentale}. Moins de 20 chercheurs ont l'habilitation ARCANE. \\
+\hline
+\textbf{Ministère de la Culture} (couverture principale) & Nom de façade & La DPE est une \textbf{vraie direction} du ministère : vrais locaux, vrais fonctionnaires, vrai budget pour la partie \og collections sensibles \fg{} (art maudit, archives classées). Seuls 10\% de ses effectifs savent qu'ils sont en réalité \textbf{Félicie}. \\
+\hline
+\textbf{Archives nationales} & Dépôt des secrets & Les \textbf{Archives Félicie} (dossiers du Bureau S, période coloniale, dissidences 1962--1981) sont conservées dans un \textbf{lieu non communiqué} (une ancienne carrière souterraine de la région parisienne, selon les rumeurs). Accès sur \textbf{autorisation présidentielle} écrite. \\
+\hline
+\textbf{Gendarmerie / Police nationale} & Premier maillon & Les gendarmes et policiers \textbf{ne savent rien} de Félicie. Mais une \textbf{procédure discrète} existe : une affaire présentant des \og signes d'anormalité \fg{} génère une \textbf{fiche standard} qui remonte (adresse mail générique du ministère de l'Intérieur) jusqu'à une \textbf{boîte de tri} tenue par Félicie. C'est le \textbf{philtre} : la plupart des fiches sont des délires, quelques-unes sont de vraies alertes. \\
+\hline
+\textbf{Préfectures / SGDSN} & Autorisation d'opération & Pour toute opération active (intervention, exorcisme, exfiltration), Félicie doit obtenir une \textbf{autorisation du préfet} ou du \textbf{SGDSN}, souvent \textbf{sans lui expliquer la vraie nature} de l'opération (couverture : \og exercice de sécurité civile \fg, \og inspection technique \fg, \og expertise patrimoniale \fg). \\
+\hline
+\end{longtable}
+\end{center}
+
+\subsection{Profils d'agents (dans le cadre service public)}
+
+\begin{center}
+\begin{longtable}{|P{2.5cm}|P{3.0cm}|P{6.0cm}|}
+\hline
+\textbf{Profil} & \textbf{Corps d'origine réel} & \textbf{Rôle dans Félicie} \\
+\hline
+\textbf{Le Conservateur} & Conservateur du patrimoine (ministère de la Culture) & Chef de cellule. Gère l'inventaire des artefacts, la couverture administrative, les contacts musées. Diplômé de l'\textbf{École du Louvre} ou de l'\textbf{INP} (Institut national du patrimoine). \\
+\hline
+\textbf{Le Recherche} & Chercheur CNRS / CEA / université & Expert des phénomènes. Physicien, chimiste, historien des religions, anthropologue. Détaché sous couvert d'un \og congé de recherche \fg. \\
+\hline
+\textbf{Le Terrain} & Gendarme / Policier / Militaire (COS, Légion) & Opérateur. Issu du \textbf{GIGN}, du \textbf{RAID}, de la \textbf{Légion étrangère} ou du \textbf{COS}. Détaché pour 2 à 5 ans, avec promesse de retour au corps d'origine (rarement honorée). \\
+\hline
+\textbf{Le Médecin} & Médecin des hôpitaux / médecin militaire & Gère les \textbf{conséquences psychologiques et physiologiques} des expositions. Travaille avec des services de psychiatrie \og amis \fg{} (l'annexe de l'hôpital \textbf{Sainte-Anne} abriterait un service d'accueil spécialisé). \\
+\hline
+\textbf{Le Sapeur} & Ingénieur (Transition écologique, DSI) & Gère les \textbf{protocoles techniques} : capteurs, mesure des signaux anormaux, décontamination rituelle, sécurisation des lieux (\og remise en état patrimoniale \fg). \\
+\hline
+\textbf{L'Occultiste Consultant} & ÉPHE, société initiatique & \textbf{Pas un agent} au sens strict : un \textbf{contractuel} (payé sur le budget Culture comme \og expert scientifique \fg). Issu des traditions \textbf{franc-maçonnes}, de l'\textbf{Église} (exorcistes) ou de familles de \textbf{guérisseurs} traditionnels. \\
+\hline
+\end{longtable}
+\end{center}
+
+% -----------------------------------------------------
+% SECTION 2 : LE CESA (EUROPE)
+% -----------------------------------------------------
+
+\section{La Coordination Européenne de Sécurité Anormale (CESA)}
+
+\subsection{Historique européen}
+
+\begin{center}
+\begin{longtable}{|P{2.0cm}|P{3.0cm}|P{5.0cm}|}
+\hline
+\textbf{Période} & \textbf{Événement} & \textbf{Détail} \\
+\hline
+\textbf{1949--1957} & \textit{Les Précurseurs informels} & Après la guerre, les services \textbf{clandestins} de plusieurs pays (Bureau S, \textbf{SOE} britannique, réseaux italiens et néerlandais) se coordonnent \textbf{officieusement} pour traquer les \textbf{artefacts nazis volés} (Ahnenerbe, projet Thule). Un \textbf{réseau de contacts}, pas une organisation. Ce que l'Europe ne récupère pas, les Américains l'emportent (BIOS, \textit{Paperclip}) --- ce qui alimente la \textbf{méfiance historique} entre Delta Green et les services européens. \\
+\hline
+\textbf{1957--1970} & \textit{L'Échec des Communautés} & La \textbf{CEE} (1957) ne prévoit \textbf{aucune coopération} en matière de sécurité : domaine réservé des États. Chaque pays garde \textbf{son} service occulte national : Bureau S/Félicie (France), \textbf{MI6's Department Z} (Royaume-Uni), \textbf{BND's Abteilung XIV} (RFA). Coordination par \textbf{conventions bilatérales secrètes}, hors cadre européen. \\
+\hline
+\textbf{1970--1992} & \textit{L'Émergence de l'intérêt commun} & Le terrorisme international (Brigades Rouges, RAF, ETA, IRA) révèle que des \textbf{réseaux occultes transnationaux} exploitent la globalisation plus vite que les services nationaux. Une \textbf{conférence informelle à Vienne (1977)} réunit 8 services nationaux occidentaux : ils constatent qu'ils sont \textbf{tous} confrontés à des phénomènes similaires... et qu'aucun gouvernement ne veut en entendre parler officiellement. \\
+\hline
+\textbf{1992--2001} & \textbf{Le Tournant de Maastricht} & La création de l'\textbf{Union européenne} (1992) et de la JAI ouvre la voie à une coopération policière \textbf{structurelle} : Europol (1999), Eurojust (2002). Dans l'ombre, les services nationaux occultes commencent à parler d'une \textbf{agence européenne de coordination}. \\
+\hline
+\textbf{2001--2004} & \textit{Le Choc du 11 Septembre} & Les attentats de Madrid (2004) et Londres (2005) forcent les Européens à créer des outils de renseignement \textbf{communs} : le \textbf{SitCen} (2001) puis l'\textbf{IntCen} (intégré au SEAE en 2010). Les services nationaux obtiennent un \textbf{groupe de contact informel} au sein de l'IntCen : c'est la \textbf{naissance administrative du CESA}. \\
+\hline
+\textbf{2004--2014} & \textit{La Lente Institutionnalisation} & Un \textbf{mémorandum secret} (2007), signé par 12 États membres, pose les bases d'une \textbf{coordination opérationnelle} (partage de données, protocoles communs d'évaluation des menaces, \textbf{interventions conjointes} exceptionnelles). Le CESA n'a \textbf{pas d'existence légale propre} : il fonctionne comme une \textbf{task force} sous couvert de coopération policière informelle (cadre Europol, compartiment séparé \textbf{ARCANE-EU}). \\
+\hline
+\textbf{2014--2020} & \textit{Le Sursaut} & Les attentats de 2015--2016, l'\textbf{affaire Skripal} (2018), la \textbf{pandémie de 2020} révèlent des \textbf{composantes anormales} dans des affaires officielles. Le CESA obtient un \textbf{budget propre} (via le \textbf{Fonds européen de défense} et le \textbf{Fonds pour la sécurité intérieure}, lignes budgétaires camouflées comme \og recherche en sécurité \fg) et un \textbf{état-major permanent} à Bruxelles, dissimulé dans un bureau de la \textbf{DG HOME}. \\
+\hline
+\textbf{2020--2026} & \textit{La Doctrine actuelle} & Le CESA fonctionne comme une \textbf{agence de coordination} (pas une agence d'exécution) : centralisation des alertes, \textbf{analyses de menaces européennes}, coordination d'opérations \textbf{multinationales}, gestion des \textbf{archivages communs} (le \textbf{Réseau de Mémoire}, base de données répartie sur 6 sites dans l'UE). Effectifs : environ \textbf{150 personnes} en staff permanent et des centaines de \textbf{correspondants} détachés dans les services nationaux. \\
+\hline
+\end{longtable}
+\end{center}
+
+\clearpage
+
+\subsection{Positionnement institutionnel européen}
+
+\begin{shaded}
+\begin{verbatim}
+Haut Représentant de l'UE (HR/VP)
+        |
+        +-- SEAE (Service Européen pour l'Action Extérieure)
+        |       |
+        |       +-- IntCen (Centre de Renseignement de l'UE)
+        |               |
+        |               +-- [Groupe ARCANE-EU / CESA
+        |                    - existence officieuse]
+        |
+        +-- Relations avec :
+            +-- Europol (coopération opérationnelle)
+            +-- Eurojust (cadre judiciaire)
+            +-- DG HOME (couverture administrative, budget)
+\end{verbatim}
+\end{shaded}
+
+\subsection{Liens avec les institutions et agences existantes}
+
+\begin{center}
+\begin{longtable}{|P{2.0cm}|P{3.0cm}|P{5.0cm}|}
+\hline
+\textbf{Institution réelle} & \textbf{Lien avec le CESA} & \textbf{Nature du lien} \\
+\hline
+\textbf{IntCen} (Centre de renseignement de l'UE) & Hébergeur officiel & Le CESA est officiellement un \textbf{groupe de travail} de l'IntCen, rattaché sur le papier à la \og sécurité hybride \fg. En réalité : locaux propres (Bruxelles), réseau informatique propre (\textbf{MIRADOR}, séparé des systèmes IntCen), canaux de communication propres. L'IntCen fournit un \textbf{parapluie administratif} et une \textbf{couverture diplomatique} (personnel enregistré comme \og experts nationaux détachés \fg). \\
+\hline
+\textbf{Europol} (coopération policière) & Opérateur opérationnel & Pour les enquêtes criminelles avec composante \og anormale \fg{} (cultes criminels, trafics d'artefacts, organisations secrètes), le CESA utilise \textbf{Europol} comme canal d'exécution : les analystes Europol (qui ne savent pas pour qui ils travaillent) reçoivent des demandes d'analyse et de coordination. Une \textbf{unité spéciale} de 3 personnes sert d'interface. \\
+\hline
+\textbf{Eurojust} (coopération judiciaire) & Cadre légal & Les opérations CESA (perquisitions, arrestations, saisies d'artefacts) sont \textbf{habilitées juridiquement} via Eurojust : un magistrat \og ami \fg{} (procureur national détaché, informé de la réalité) délivre les mandats, justifiés par des \textbf{infractions classiques} (trafic d'objets d'art, association de malfaiteurs, escroquerie). L'existence du CESA n'est \textbf{jamais mentionnée} dans les procédures. \\
+\hline
+\textbf{Commission européenne --- DG HOME} & Bouclier administratif & Le personnel et le budget du CESA transitent par la \textbf{DG HOME} : les agents sont enregistrés comme \og experts \fg{} sur des projets de \og recherche et innovation en sécurité \fg. Le CESA n'apparaît \textbf{nulle part} dans les organigrammes officiels. \\
+\hline
+\textbf{Agence Européenne de Défense (EDA)} & Fournisseur technologique & Via des programmes de \textbf{recherche appliquée}, l'EDA finance (sans en connaître la finalité réelle) le développement de \textbf{capteurs}, de systèmes de détection et d'\textbf{outils de mesure} des phénomènes anormaux. Une cellule de l'EDA (\og Cellule Innovation-13 \fg) sert d'intermédiaire. \\
+\hline
+\textbf{ESA / CERN} & Soutien scientifique & Des \textbf{contrats de recherche} (programmes européens de science fondamentale) permettent d'étudier les phénomènes \og anormaux \fg{} sous couvert de \textbf{physique des particules}, d'\textbf{astrophysique} ou d'\textbf{étude de matériaux}. Moins de 30 scientifiques, disséminés, ont l'habilitation ARCANE-EU. \\
+\hline
+\textbf{Parlement européen --- Commission LIBE} & Contrôle impossible & Contrairement aux autres agences (Europol, Frontex), le CESA n'est soumis à \textbf{aucun contrôle démocratique direct} : pas de base législative propre, montants noyés dans des programmes de recherche. Seuls quelques parlementaires (membres d'une \textbf{sous-commission confidentielle}) sont \textbf{informés de son existence}, sans en connaître le détail des opérations. \\
+\hline
+\end{longtable}
+\end{center}
+
+\subsection{Profils d'agents (dans le cadre européen)}
+
+\begin{center}
+\begin{longtable}{|P{2.0cm}|P{3.0cm}|P{5.0cm}|}
+\hline
+\textbf{Profil} & \textbf{Corps d'origine réel} & \textbf{Rôle dans le CESA} \\
+\hline
+\textbf{Le Coordinateur} & Haut fonctionnaire (Conseil de l'UE, SEAE) & Chef de cellule multinationale. Ancien diplomate ou officier de renseignement national détaché à Bruxelles. Gère la \textbf{liaison} entre services nationaux (souvent rivaux) et la \textbf{Commission}. Parfait \textbf{multilingue} (minimum 3 langues de l'UE). \\
+\hline
+\textbf{L'Analyste} & Analyste de renseignement (IntCen, Europol, service national) & Évalue les menaces, produit des \textbf{notes d'alerte}, cartographie les organisations occultes européennes (base \textbf{MIRADOR}). De plus en plus souvent : un \textbf{data scientist} repérant des \textbf{motifs} dans les données (dates, symboles, correspondances). \\
+\hline
+\textbf{Le Juriste} & Magistrat, avocat, juriste (Eurojust, Commission) & Indispensable pour naviguer dans le \textbf{droit européen} (mandats, entraide judiciaire, conflits de juridiction). Rédige les \textbf{dossiers de couverture} (justification des opérations par des infractions classiques). \\
+\hline
+\textbf{Le Détaché national} & Agent d'un service national occulte (Félicie, Department Z, Abteilung XIV...) & \textbf{Représentant} de son service national au sein du CESA. \textbf{Agent opérationnel} connaissant le terrain, pouvant activer sa cellule nationale si une affaire doit être traitée dans son pays. La \textbf{double allégeance} (nationale / européenne) est une source constante de tension. \\
+\hline
+\textbf{Le Scientifique} & Chercheur (CERN, universités, instituts européens) & Physicien, historien, anthropologue, cryptographe. Travaille sous \textbf{contrat} sur des sujets \og dérivés \fg{} (linguistique historique, modèles mathématiques de phénomènes collectifs). \\
+\hline
+\textbf{Le Nettoyeur} & Expert en gestion de crise (Commission, consultant) & Gère la \textbf{communication de crise} : couvrir les incidents, produire des explications rationnelles, coordonner les services de secours. Rarement agent de terrain : plutôt un \textbf{expert en communication} (ancien journaliste, ancien porte-parole). \\
+\hline
+\end{longtable}
+\end{center}
+
+% -----------------------------------------------------
+% SECTION 3 : TABLEAU COMPARATIF DES SERVICES PUBLICS
+% -----------------------------------------------------
+
+\section{Tableau comparatif des services publics}
+
+\begin{center}
+\begin{tabular}{|P{2.0cm}|P{2.0cm}|P{3.0cm}|P{3.0cm}|}
+\hline
+\textbf{Aspect} & \textbf{Félicie (DPE)} \textbf{France} & \textbf{CESA} \textbf{Europe} & \textbf{Delta Green} \textbf{USA} \\
+\hline
+\textbf{Nature} & Service secret d'État, rattaché à la Présidence & Groupe de coordination informel au sein de l'IntCen & Programme clandestin (bureau officiel dissous 1970, réactivé clandestinement) \\
+\hline
+\textbf{Base légale} & Aucune (dissoute officiellement en 1981) & Aucune (groupe de travail informel, sans mandat) & Aucune (illégal, vit de vols et détournements) \\
+\hline
+\textbf{Couverture administrative} & Ministère de la Culture (Direction du Patrimoine Exceptionnel) & DG HOME (programmes de recherche et sécurité) & Aucune officielle \\
+\hline
+\textbf{Effectifs} & $\sim$200 (dont $\sim$50 opérationnels) & $\sim$150 staff + centaines de correspondants détachés & $\sim$20--30 agents opérationnels \\
+\hline
+\textbf{Budget} & Plan occulte via ministère de la Culture et fonds SGDSN & Lignes budgétaires camouflées (recherche, sécurité intérieure, défense) & Vol, extorsion, financement occulte \\
+\hline
+\textbf{Ancrage historique} & 1793 (Commission des Arts) $\rightarrow$ Bureau S (1935) $\rightarrow$ Félicie (1945) & 1977 (Conférence de Vienne) $\rightarrow$ CESA (2004, IntCen) & 1928 $\rightarrow$ dissolution 1970 $\rightarrow$ réactivation clandestine \\
+\hline
+\textbf{Faiblesse principale} & Trop petit, dépendant du bonvouloir de l'Élysée, archives ingouvernables & Pas de pouvoir d'exécution propre : dépend des services nationaux (qui se méfient les uns des autres) & Illégal, paranoïaque, isolé \\
+\hline
+\textbf{Credo} & \og Empêcher. Effacer. Endormir. \fg & \og Coordonner sans jamais commander. \fg & \og Tuer le Mythe avant qu'il ne nous tue. \fg \\
+\hline
+\end{tabular}
+\end{center}
+
+% -----------------------------------------------------
+% SECTION 4 : SCÉNARIOS LIÉS AUX STRUCTURES
+% -----------------------------------------------------
+
+\section{Scénarios liés à ces structures}
+
+\begin{itemize}
+\item \textbf{La Fiche Préfecture} (Félicie, débutants) : un gendarme de campagne remonte une \og fiche anormalité \fg{} : un village où tous les habitants font le même cauchemar. La fiche arrive dans la \og boîte de tri \fg{} de Félicie... et c'est la première mission des agents. \emph{Ambiance : X-Files rencontre le bac à sable administratif français.}
+\item \textbf{Le Conflit de Juridiction} (CESA, intermédiaire) : une affaire implique la France, l'Allemagne et l'Italie. Le CESA doit coordonner une opération... mais les services nationaux refusent de partager leurs informations. Les agents (détachés de 3 pays différents) doivent coopérer malgré les ordres contraires de leurs hiérarchies respectives.
+\item \textbf{Le Contrôle Parlementaire} (Félicie + CESA, avancé) : un parlementaire européen de la \og sous-commission LIBE \fg{} pose trop de questions sur une ligne budgétaire suspecte. Les agents doivent \textbf{dissuader} l'élu de creuser... sans le tuer, sans le menacer, sans rien faire d'illégal. \emph{Scénario de négociation et de manipulation, sans combat.}
+\item \textbf{L'Archiviste Disparu} (Félicie, tous niveaux) : le seul homme qui connaissait l'emplacement des Archives Félicie (la carrière souterraine) est mort. Les agents doivent \textbf{retrouver les archives} avant qu'un culte (ou Delta Green, ou un service rival) ne les trouve. \emph{Course contre la montre, milieu parisien et périurbain.}
+\end{itemize}
 
 \newpage
 
@@ -1895,9 +2198,1082 @@ Pour créer une \textbf{campagne cohérente}, tu peux lier ces scénarios entre 
 	\end{itemize}
 \end{itemize}
 
-%  Annexes 
-\chapter*{Annexes}
-\addcontentsline{toc}{chapter}{Annexes}
+%% Annexes
+%% \newpage
+
+
+
+
+% =====================================================
+% CHAPITRE : PROTOCOLES ET DOCTRINES INTERNES
+% =====================================================
+
+\chapter{Protocoles et Doctrines Internes}
+\markboth{Protocoles et Doctrines Internes}{}
+
+Ces fiches sont conçues pour être utilisées \textbf{telles quelles en jeu} : le meneur peut les distribuer aux joueurs comme \og documents internes \fg{} ou s'en servir pour structurer ses scénarios.
+
+\clearpage
+
+\section{Habilitations et Compartimentage}
+
+\subsection{Niveaux d'habilitation (compartiment ARCANE)}
+
+\begin{center}
+\begin{longtable}{|P{2.0cm}|P{2.0cm}|P{3.0cm}|P{4.0cm}|}
+\hline
+\textbf{Niveau} & \textbf{Dénomination} & \textbf{Qui la détient} & \textbf{Ce qu'elle permet} \\
+\hline
+ARCANE-0 & Le Voile & Aucune (grand public) & Rien. Le public ne doit \textbf{jamais} savoir. Désinformation officielle : \og phénomènes inexpliqués \fg, \og canular \fg, \og pathologie collective \fg. \\
+\hline
+ARCANE-1 & La Fiche & Gendarmes, policiers, maires, préfets (non informés) & Savoir que des \textbf{fiches anormalité} existent et vers où les envoyer. Ne sait pas qui les traite. \\
+\hline
+ARCANE-2 & Le Contact & Agents détachés (DGSI, DGSE, DRM), correspondants bénévoles & Savoir qu'\textbf{une structure existe} pour les affaires inexplicables. Connaître son officier de liaison. Ne connaît ni le nom, ni l'ampleur, ni l'historique. \\
+\hline
+ARCANE-3 & L'Agent & Opérateurs Félicie, chercheurs habilités & Connaître l'existence de \textbf{Félicie}, son rattachement Culture/SGDSN, l'historique sommaire. Accès aux dossiers de sa \textbf{cellule uniquement}. \\
+\hline
+ARCANE-4 & L'État-Major & Chefs de cellule, Direction, cellule Élysée (3 pers.) & Accès à \textbf{l'inventaire général} des artefacts, cartographie des menaces actives, \textbf{dossiers A} (affaires non closes depuis 1945). Connaît l'emplacement des Archives. \\
+\hline
+ARCANE-5 & Le Seuil & Directeur de Félicie + 2 personnes (cellule présidentielle) & Accès aux \textbf{Dossiers Z} : les affaires jamais classées. Les \textbf{réveils avérés} de Grands Anciens (3 cas documentés depuis 1945). Le contenu du \textit{Rapport Grégoire, annexe VII} (1793). \\
+\hline
+\end{longtable}
+\end{center}
+
+\begin{shaded}
+\textbf{Règle de jeu (Delta Green) :} un agent ARCANE-3 qui apprend une information de niveau supérieur \textbf{sans autorisation} déclenche automatiquement une procédure \og REMORA \fg{} (voir section~\ref{sec:remora}). Il ne peut pas la partager sans en assumer les conséquences : cela crée un dilemme récurrent en campagne.
+\end{shaded}
+
+\subsection{La cérémonie d'habilitation (ARCANE-3)}
+
+\begin{shaded}
+\textit{Vous ne lirez jamais ces lignes. Ce document n'existe pas.}
+\end{shaded}
+
+\begin{enumerate}
+\item \textbf{Le repérage} (6--18 mois) : le candidat est observé à distance après un \og incident d'exposition \fg. Son entourage est vérifié (fiche S, renseignement territorial).
+\item \textbf{L'entretien} : un agent se présente sous couverture (\og Inspection générale des services, ministère de la Culture \fg). Trois entretiens, dont un avec un psychologue habilité. Objectif réel : mesurer la \textbf{capacité à garder un secret} et la \textbf{solidité mentale} (en jeu : VOL et SAN de départ).
+\item \textbf{L'offre} : on lui présente deux dossiers. Le premier, officiel : un détachement \og valorisant \fg. Le second : la vérité. \og L'un des deux dossiers est un mensonge. Si vous choisissez le mauvais, vous ne le saurez jamais. \fg
+\item \textbf{La signature} : aucun contrat. On signe un \og engagement de réserve \fg{} banal. La vraie adhésion est orale, devant témoin, sans trace écrite.
+\item \textbf{L'injection} (rumeur, jamais confirmée) : un traitement \og de confort \fg{} administré à l'insu du nouvel agent lors d'un \og bilan de santé obligatoire \fg. Effet en jeu : $-$1D4 aux pertes de SAN la première année, mais \textbf{syndrome de dépendance} si l'agent quitte le service.
+\end{enumerate}
+
+\clearpage
+
+\section{Doctrines d'Intervention}
+
+\subsection{Les trois doctrines officielles}
+
+\begin{center}
+\begin{tabular}{|P{2.0cm}|P{2.0cm}|P{3.0cm}|P{3.5cm}|}
+\hline
+\textbf{Doctrine} & \textbf{Nom de code} & \textbf{Quand} & \textbf{Principe} \\
+\hline
+\textbf{Endormir} & SIESTE & Défaut & Ne pas détruire, ne pas affronter : \textbf{isoler, sceller, surveiller}. Le Mythe ne meurt pas ; on peut seulement l'endormir. Un site scellé est visité chaque année (contrôle COLCHIQUE). \\
+\hline
+\textbf{Effacer} & GOMME & Menace active, exposition publique imminente & Détruire les preuves, neutraliser les témoins (psychologiquement, pas physiquement --- en théorie), produire une \textbf{version rationnelle} des événements. \\
+\hline
+\textbf{Brûler} & THERMITE & Dernier recours, autorisation ARCANE-5 & Destruction totale du site, de l'artefact, \textbf{et de la cellule qui l'a manipulé}. Appliquée 4 fois en 80 ans. Deux de ces applications restent classifiées. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Déroulement type d'une opération}
+
+\begin{itemize}
+\item \textbf{Phase 1 — LA FICHE} : dossier reçu (fiche anormalité, photos, témoignages, analyse préliminaire de l'IA SYBILLE). Vérification des \textbf{archives} (80\% des cas ont un précédent entre 1793 et 1981). Choix de la \textbf{couverture} administrative banale.
+\item \textbf{Phase 2 — L'APPROCHE} : jamais moins de \textbf{3 agents}, jamais plus de \textbf{5}. Aucune arme visible en phase d'enquête. Rôles assignés : \textbf{LE VERT} (enquêteur), \textbf{LE GRIS} (technique), \textbf{LE BLEU} (sécurité et extraction).
+\item \textbf{Phase 3 — LE CONTACT} : premier jet de SAN \textbf{collectif}. Protocole \textbf{MIROIR} : ne jamais toucher, ne jamais nommer à voix haute, ne jamais répondre si \og ça \fg{} parle.
+\item \textbf{Phase 4 — LE TRI} : décision à trois (aucun agent ne décide seul du sort d'un artefact). Rapport final en \textbf{double exemplaire} : version ARCANE (vraie) et version \og culturelle \fg{} (fictive).
+\end{itemize}
+
+\section{Procédures de Dissuasion et de Sortie}
+
+\subsection{Procédure REMORA (agent compromis)}\label{sec:remora}
+
+\begin{center}
+\begin{tabular}{|P{2.0cm}|P{6cm}|P{3.0cm}|}
+\hline
+\textbf{Étape} & \textbf{Action} & \textbf{Enjeu} \\
+\hline
+R1 — L'Entretien & Un ancien (ARCANE-4) le rencontre \og par hasard \fg. Rappel oral de l'engagement. Convivial, presque chaleureux. & Dernière chance de repartir sans dommage. \\
+\hline
+R2 — La Requalification & Mutation forcée vers un poste administratif isolé (outre-mer, archive). Courrier ouvert, famille \og protégée \fg{} (surveillée). & L'isolement social sans l'isolement physique. \\
+\hline
+R3 — Le Traitement & Hospitalisation psychiatrique \og de droit commun \fg{} : dossier médical fabriqué de toutes pièces. & On ne l'élimine pas : on le rend \textbf{incontestable}. \\
+\hline
+R4 — L'Accident & Historiquement documenté 9 fois (1945--1981). Aucun cas confirmé depuis 2001. La direction actuelle refuse officiellement cette étape. & Les dossiers Z suggèrent que certains agents ne sont pas morts dans des accidents. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{La sortie propre (retraite)}
+
+Engagement de réserve \textbf{à vie}, fausse carrière administrative vérifiable, pensionnement \og Pathfinder \fg{} versé via une association discrète (\textit{Fondation Aimé-Malézieux}, association loi 1901). Un retraité de Félicie est un PNJ précieux mais \textbf{surveillé} : le contacter sans passer par la hiérarchie expose à REMORA.
+
+\subsection{Le suivi psychologique}
+
+\begin{itemize}
+\item \textbf{Bilan COLCHIQUE annuel} : entretien avec un psychiatre ARCANE-3, destiné à repérer les troubles non déclarés.
+\item \textbf{Règle du Double Zéro} : SAN sous 40 = suspension de terrain (\og mise en réserve \fg). SAN sous 25 = réorientation d'office vers les archives.
+\item \textbf{Le Registre Rouge} : liste des agents \og en souffrance \fg. Donne droit à du repos, retire le droit de participer aux opérations THERMITE.
+\end{itemize}
+
+\clearpage
+
+\section{Équipement et Procédés}
+
+\begin{center}
+\begin{tabular}{|P{2.0cm}|P{2.0cm}|P{3.0cm}|P{3.0cm}|}
+\hline
+\textbf{Élément} & \textbf{Nom de code} & \textbf{Effet en jeu} & \textbf{Coût / Limite} \\
+\hline
+Cocktail de stabilisation & CALMANT & $-$1D4 aux pertes de SAN pour une exposition (max 2 prises/op). & Après 3 prises cumulées sur un mois : jet de CON ou dépendance. \\
+\hline
+Détecteur d'anomalie & SONDE & Jet de Science réussi pour détecter une entité invisible ou un artefact actif. & Encombrant, nécessite une couverture technique. \\
+\hline
+Balise de confinement & CERCLE & Posée en cercle (4 balises), réduit de moitié la capacité d'une entité à quitter la zone, pendant 12h. & Fragile ; émet un signal détectable par SYBILLE \emph{et par l'ennemi}. \\
+\hline
+Kit de remise en état & SOLVANT & Décontamine un site (efface traces rituelles, résidus, \og taches \fg). & Ne fonctionne pas sur les sites classés \og Z \fg. \\
+\hline
+Faux papiers patrimoniaux & PASSE-CULTURE & Justifie une présence sur tout site patrimonial (musée, château, église, fouille). & Vérifiable par la DGSI en 4h. \\
+\hline
+Armement & FERRURE & Armes standard + munitions en argent (dégâts doublés sur certaines entités). & Interdit en zone urbaine sans autorisation R4 minimum. \\
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+
+% =====================================================
+% ORGANIGRAMMES (TikZ)
+% =====================================================
+
+\chapter{Organigrammes et Positionnements Institutionnels}
+\markboth{Organigrammes et Positionnements Institutionnels}{}
+
+\clearpage
+
+\section{Félicie : positionnement institutionnel français}
+
+\begin{center}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style={draw=black, thick, anchor=center, font=\footnotesize,
+                    align=center, rounded corners=2pt},
+  org/.style={fill=gray!15},
+  fel/.style={fill=gray!35, font=\footnotesize\bfseries},
+  secret/.style={fill=gray!25, dashed, font=\footnotesize\itshape},
+  lien/.style={->, thick, >=Stealth},
+  lienpointille/.style={<->, dashed, >=Stealth},
+]
+
+% --- Colonne gauche : Présidence et coordination ---
+\node[org] (elysee) at (0,4) {\textbf{Président de la}\\\textbf{République}};
+\node[org] (sgdsn) at (0,2) {SGDSN\\(coordination)};
+\node[secret] (cellule) at (0,0) {Cellule \og ARCANE \fg\\{\scriptsize (3 personnes max, habilitation présidentielle)}};
+
+% --- Colonne centrale : Félicie ---
+\node[fel] (felicie) at (4.5,2) {\textbf{FÉLICIE}\\Direction du Patrimoine\\Exceptionnel (DPE)\\{\scriptsize compartiment ARCANE}};
+\node[secret] (archives) at (4.5,-0.5) {Archives Félicie\\{\scriptsize (lieu non communiqué, autorisation présidentielle)}};
+
+% --- Colonne droite : tutelles ---
+\node[org] (culture) at (8.5,3.5) {Ministère de la\\Culture\\{\scriptsize (rattachement public)}};
+\node[org] (armees) at (8.5,1.5) {Ministère des\\Armées\\{\scriptsize (rattachement réel)}};
+
+% --- Services de contact ---
+\node[org] (dgsi) at (0,-3) {DGSI\\{\scriptsize cellule de contact (2 pers.)}};
+\node[org] (dgse) at (2.8,-3) {DGSE\\{\scriptsize détachements clandestins}};
+\node[org] (drm) at (5.6,-3) {DRM / Section Z\\{\scriptsize analyses, transport militaire}};
+\node[org] (anssi) at (8.5,-3) {ANSSI\\{\scriptsize IA SYBILLE}};
+\node[org] (cea) at (2.8,-4.7) {CEA / CNRS\\{\scriptsize laboratoires clandestins}};
+\node[org] (police) at (5.6,-4.7) {Gendarmerie / Police\\{\scriptsize fiches anormalité (le philtre)}};
+\node[org] (pref) at (8.5,-4.7) {Préfectures\\{\scriptsize autorisations d'opération}};
+
+% --- Liens ---
+\draw[lien] (elysee) -- (sgdsn);
+\draw[lien] (sgdsn) -- (cellule);
+\draw[lien] (sgdsn) -- (felicie);
+\draw[lienpointille] (cellule) -- (felicie);
+\draw[lienpointille] (culture) -- (felicie);
+\draw[lienpointille] (armees) -- (felicie);
+\draw[lienpointille] (felicie) -- (archives);
+
+\draw[lienpointille] (felicie) -- (dgsi);
+\draw[lienpointille] (felicie) -- (dgse);
+\draw[lienpointille] (felicie) -- (drm);
+\draw[lienpointille] (felicie) -- (anssi);
+\draw[lienpointille] (felicie) -- (cea);
+\draw[lienpointille] (felicie) -- (police);
+\draw[lienpointille] (felicie) -- (pref);
+
+\end{tikzpicture} } %% resizebox
+\end{center}
+
+\begin{shaded}
+\textbf{Lecture :} les flèches pleines indiquent la \textbf{chaîne d'autorité}
+(Président $\rightarrow$ SGDSN $\rightarrow$ Félicie). Les flèches en
+pointillés indiquent des liens de \textbf{coopération, tutelle ou
+compartimentage} : aucun service de droite ou du bas ne connaît
+l'existence de Félicie dans son ensemble, seulement sa propre interface.
+\end{shaded}
+
+\clearpage
+
+\section{CESA : positionnement institutionnel européen}
+
+\begin{center}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style={draw=black, thick, anchor=center, font=\footnotesize,
+                    align=center, rounded corners=2pt},
+  org/.style={fill=gray!15},
+  cesa/.style={fill=gray!35, font=\footnotesize\bfseries},
+  secret/.style={fill=gray!25, dashed, font=\footnotesize\itshape},
+  lien/.style={->, thick, >=Stealth},
+  lienpointille/.style={<->, dashed, >=Stealth},
+]
+
+% --- Sommet ---
+\node[org] (hrvp) at (0,4) {\textbf{Haut Représentant}\\de l'UE (HR/VP)};
+\node[org] (seae) at (0,2) {SEAE\\(Service Européen pour\\l'Action Extérieure)};
+\node[org] (intcen) at (0,0) {IntCen\\(Centre de renseignement\\de l'UE)};
+
+% --- CESA ---
+\node[cesa] (cesa) at (0,-2.5) {\textbf{CESA}\\(groupe ARCANE-EU)\\{\scriptsize existence officieuse}};
+\node[secret] (mirador) at (-3,-2.5) {Réseau\\MIRADOR\\{\scriptsize (base séparée)}};
+\node[secret] (memoire) at (3,-2.5) {Réseau de Mémoire\\{\scriptsize (6 sites, archivage commun)}};
+
+% --- Interfaces ---
+\node[org] (europol) at (-3.5,-5) {Europol\\{\scriptsize canal opérationnel (unité spéciale : 3 pers.)}};
+\node[org] (eurojust) at (0,-5) {Eurojust\\{\scriptsize cadre judiciaire (magistrat ami)}};
+\node[org] (dghome) at (3.5,-5) {DG HOME\\{\scriptsize bouclier administratif et budget}};
+\node[org] (eda) at (-3.5,-6.8) {EDA\\{\scriptsize recherche appliquée (Cellule Innovation-13)}};
+\node[org] (cern) at (0,-6.8) {ESA / CERN\\{\scriptsize soutien scientifique ($<$30 habilités)}};
+\node[org] (libe) at (3.5,-6.8) {Parlement / LIBE\\{\scriptsize sous-commission confidentielle (contrôle partiel)}};
+
+% --- Services nationaux détachés ---
+\node[org] (nat) at (7,0) {Services\\nationaux occultes\\{\scriptsize Félicie, Dept. Z, Abteilung XIV...}};
+
+% --- Liens ---
+\draw[lien] (hrvp) -- (seae);
+\draw[lien] (seae) -- (intcen);
+\draw[lienpointille] (intcen) -- (cesa);
+\draw[lienpointille] (cesa) -- (mirador);
+\draw[lienpointille] (cesa) -- (memoire);
+\draw[lienpointille] (cesa) -- (europol);
+\draw[lienpointille] (cesa) -- (eurojust);
+\draw[lienpointille] (cesa) -- (dghome);
+\draw[lienpointille] (cesa) -- (eda);
+\draw[lienpointille] (cesa) -- (cern);
+\draw[lienpointille] (libe) -- (dghome);
+\draw[lienpointille] (nat) -- (cesa);
+
+\end{tikzpicture} } %% resizebox
+\end{center}
+
+\begin{shaded}
+\textbf{Lecture :} le CESA n'a \textbf{pas de base légale propre}. Il est
+hébergé par l'IntCen (flèche pointillée : existence officieuse), finance
+ses opérations via la DG HOME, exécute par Europol et se légalise par
+Eurojust. Les services nationaux (colonne de droite) y détachent des
+agents --- c'est la \textbf{double allégeance}, source constante de tension.
+\end{shaded}
+
+\clearpage
+
+\section{Procédure REMORA : flux de traitement}
+
+\begin{center}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  node distance=1.6cm and 2.2cm,
+  every node/.style={draw=black, thick, anchor=center, font=\footnotesize,
+                    align=center, rounded corners=2pt},
+  etape/.style={fill=gray!20},
+  fin/.style={fill=gray!35, font=\footnotesize\bfseries},
+  lien/.style={->, thick, >=Stealth},
+  lienpointille/.style={->, dashed, >=Stealth},
+]
+
+\node[etape] (signe) {Signes de compromission\\{\scriptsize (l'agent a parlé / veut partir / dérive mentale)}};
+\node[etape] (r1) [below=of signe] {\textbf{R1} --- L'Entretien\\{\scriptsize rencontre \og fortuite \fg, rappel oral}};
+\node[etape] (r2) [below=of r1] {\textbf{R2} --- La Requalification\\{\scriptsize mutation isolée, surveillance de l'entourage}};
+\node[etape] (r3) [below=of r2] {\textbf{R3} --- Le Traitement\\{\scriptsize hospitalisation psychiatrique de droit commun}};
+\node[etape] (r4) [below=of r3] {\textbf{R4} --- L'Accident\\{\scriptsize 9 cas documentés (1945--1981), aucun depuis 2001}};
+
+\node[fin] (propre) [right=of r1, xshift=1.5cm] {Sortie propre\\{\scriptsize retraite, fausse carrière, Pathfinder}};
+\node[fin] (reserve) [right=of r2, xshift=1.5cm] {Registre Rouge\\{\scriptsize SAN $<$ 40 : mise en réserve}};
+
+\draw[lien] (signe) -- (r1);
+\draw[lien] (r1) -- node[right, font=\scriptsize] {échec} (r2);
+\draw[lien] (r2) -- node[right, font=\scriptsize] {échec} (r3);
+\draw[lien] (r3) -- node[right, font=\scriptsize] {échec} (r4);
+\draw[lienpointille] (r1.east) -- node[above, font=\scriptsize] {succès} (propre.west);
+\draw[lienpointille] (r2.east) -- node[above, font=\scriptsize] {suivi psy} (reserve.west);
+
+\end{tikzpicture} } %% resizebox
+\end{center}
+
+\clearpage
+
+\section{Flux d'une opération standard (doctrine interne)}
+
+\begin{center}
+\begin{tikzpicture}[
+  node distance=1.4cm,
+  every node/.style={draw=black, thick, anchor=center, font=\footnotesize,
+                    align=center, rounded corners=2pt},
+  phase/.style={fill=gray!20},
+  decision/.style={fill=gray!30, diamond, aspect=2.5},
+  lien/.style={->, thick, >=Stealth},
+]
+
+\node[phase] (fiche) {\textbf{PHASE 1 --- LA FICHE}\\{\scriptsize dossier + archives + couverture}};
+\node[phase] (approche) [below=of fiche] {\textbf{PHASE 2 --- L'APPROCHE}\\{\scriptsize 3 à 5 agents, rôles VERT/GRIS/BLEU}};
+\node[phase] (contact) [below=of approche] {\textbf{PHASE 3 --- LE CONTACT}\\{\scriptsize jet de SAN collectif, protocole MIROIR}};
+\node[decision] (tri) [below=of contact] {\textbf{PHASE 4 --- LE TRI}\\{\scriptsize quelle doctrine ?}};
+\node[phase] (sieste) [below left=of tri] {\textbf{SIESTE}\\{\scriptsize sceller et surveiller}};
+\node[phase] (gomme) [below=of tri] {\textbf{GOMME}\\{\scriptsize effacer les traces}};
+\node[phase] (thermite) [below right=of tri] {\textbf{THERMITE}\\{\scriptsize tout détruire (ARCANE-5)}};
+
+\draw[lien] (fiche) -- (approche);
+\draw[lien] (approche) -- (contact);
+\draw[lien] (contact) -- (tri);
+\draw[lien] (tri) -- (sieste);
+\draw[lien] (tri) -- (gomme);
+\draw[lien] (thermite.west) -- ++(-1,0) node[midway, above, font=\scriptsize] {dernier recours} -| (gomme.east);
+
+\end{tikzpicture}
+\end{center}
+
+\begin{shaded}
+\textbf{Note du meneur :} le choix de doctrine (SIESTE, GOMME, THERMITE)
+est le cœur du dilemme de chaque fin de mission. La règle interne impose
+une \textbf{décision à trois} : aucun agent ne décide seul du sort d'un
+artefact, règle issue de la dissolution de 1981 : \og la concentration
+de décision tue \fg.
+\end{shaded}
+
+% =====================================================
+% CHAPITRE : ORGANISATIONS RIVALES
+% =====================================================
+
+\chapter{Organisations Rivales}
+\markboth{Organisations Rivales}{}
+
+\begin{shaded}
+\og Ils ne croient pas au Mythe. Ils croient que le Mythe est une arme. C'est exactement pour ça qu'ils sont plus dangereux que le Mythe. \fg{} --- Note interne CESA, 2019, classifiée ARCANE-EU.
+\end{shaded}
+
+\section{Le Bureau Vetch (Russie)}
+
+\subsection{Présentation générale}
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{6.0cm}|}
+\hline
+\textbf{Nom réel} & \textbf{Direktiva Vetch} (corruption phonétique de \textit{Veche}, l'assemblée de la Russie ancienne ; \\ %% jeu de mots avec \og ВЕЧ \fg, abréviation gravée sur le premier artefact récupéré en 1919). \\
+\hline
+\textbf{Couverture actuelle} & Section 11 de la SVR. En réalité plus ancien que la SVR ; ne lui rend de comptes que par un canal de trois personnes. \\
+\hline
+\textbf{Classification occidentale} & ARCANE-EU niveau ROUGE. Le CESA n'a \textbf{jamais} réussi à infiltrer le Bureau Vetch. \\
+\hline
+%% \textbf{Devise} & \og Мы не спрашиваем разрешения у мёртвых \fg{} --- \og Nous ne demandons pas la permission aux morts. \fg \\
+\textbf{Devise} & \og -- \fg{} --- \og Nous ne demandons pas la permission aux morts. \fg \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Historique}
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{9.0cm}|}
+\hline
+\textbf{Période} & \textbf{Événement} \\
+\hline
+1890--1917 & \textbf{L'Okhrana et le Département des Affaires Mystiques} : surveillance des sectes et occultistes (Raspoutine). Une section spécialisée naît en 1905 après \og l'Affaire de la Nuit de Toula \fg{} (jamais documentée en Occident). \\
+\hline
+1919 & \textbf{La Tchéka reprend les archives} : Staline ordonne leur conservation secrète : \og La superstition est l'opium du peuple. Mais l'opium a des usages. \fg{} La Direktiva Vetch naît officieusement. \\
+\hline
+1928--1953 & \textbf{L'Ère Staline} : outil de terreur d'État (empoisonnements rituels, \og suicides \fg{} maquillés). Récupère une partie des artefacts allemands capturés à Berlin en 1945. \\
+\hline
+1953--1985 & \textbf{Le Glacis} : réfugié dans la première Direction générale du KGB. Ère des grandes opérations de vol d'artefacts à l'étranger, avec pertes considérables. \\
+\hline
+1985--1991 & \textbf{La Perestroïka} : l'\og Affaire Ostankino \fg{} (1988, une expérience qui coûte la vie à 14 officiers) conduit à une purge sanglante du Bureau. Plus de la moitié des effectifs disparaît. \\
+\hline
+1991--2000 & \textbf{Le Chaos Eltsine} : des agents vendent des artefacts au crime organisé et à des collectionneurs internationaux (dont des clients français et américains). Deux transfuges exfiltrés par l'Ouest (1994, 1998) ; le second s'est suicidé trois mois après. \\
+\hline
+2000--2026 & \textbf{La Restauration} : réintégré à la SVR mais autonome. Doctrine révisée : \og Ne plus subir, ne plus voler : \textbf{produire}. \fg{} Le Bureau tente de \textbf{fabriquer} des artefacts et de créer des entités contrôlées. Ce changement a provoqué le classement ROUGE. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Doctrine}
+
+\begin{center}
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Doctrine occidentale} & \textbf{Équivalent Vetch} & \textbf{Différence} \\
+\hline
+Endormir (sceller et surveiller) & \textbf{Éveil contrôlé} : réveiller partiellement une entité pour l'étudier en laboratoire. & Le Vetch pense que le Mythe peut être \textbf{domestiqué} comme l'énergie nucléaire. \\
+\hline
+Effacer (dénier publiquement) & \textbf{Exploitation} : utiliser les phénomènes comme armes (déstabilisation psychologique, sabotage rituel). & Pour le Vetch, le Mythe n'est pas une menace, c'est un \textbf{arsenal}. \\
+\hline
+Brûler (détruire) & \textbf{Récolte} : récupérer des \og spécimens \fg{} sur les sites occidentaux neutralisés. & Le Vetch suit les opérations occidentales pour \textbf{ramasser ce que les Occidentaux détruisent}. \\
+\hline
+\end{tabular}
+\end{center}~\\
+
+\begin{shaded}
+\textbf{Conséquence dramatique :} les opérations de Félicie et du CESA sont \textbf{infiltrées ou suivies} par le Vetch, qui attend que les Occidentaux fassent le sale travail, puis intervient après coup. Cela explique pourquoi un site \og scellé \fg{} peut se réveiller : ce n'est pas un échec occidental, c'est une \textbf{récolte russe}.
+\end{shaded}
+
+\clearpage
+
+\subsection{Profils d'agents du Vetch}
+
+\begin{center}
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Profil} & \textbf{Origine} & \textbf{Caractéristiques} \\
+\hline
+Le Vetchnik (opérateur) & SVR, ex-KGB, Spetsnaz, GRU & Extrêmement discipliné, souvent \textbf{plus stable psychologiquement} que ses équivalents occidentaux. N'éprouve aucune culpabilité à sacrifier des témoins. \\
+\hline
+L'Académicien & Académie des sciences, instituts fermés & Traite les entités comme des \textbf{spécimens biologiques} : dissection, vaccination, croisement. Certains sont de vrais savants brillants --- les plus dangereux en discussion. \\
+\hline
+Le Prêtre-Récoltant & Église orthodoxe, cultes sibériens & Recruté pour son expertise rituelle. Souvent un \textbf{croyant authentique}, donc imprévisible : peut refuser une opération \og blasphématoire \fg{} ou s'y livrer avec un fanatisme terrifiant. \\
+\hline
+Le Nettoyeur Rouge & Anciens militaires, sécurité intérieure & Contre-mesure : surveiller les Occidentaux, éliminer les témoins gênants, \textbf{exfiltrer les spécimens}. C'est lui que les joueurs croiseront le plus souvent. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Points de contact avec la campagne}
+
+\begin{itemize}
+	\item \textbf{Les collectionneurs occultes} (Montclair, Orlov, van der Meer) : les artefacts volés par le Vetch dans les années 1990 ont transité par ces réseaux.
+	\item \textbf{Le Projet Thule / l'Ahnenerbe} : les archives nazies saisies par l'Armée rouge en 1945 sont détenues par le Vetch.
+	\item \textbf{Les scénarios de musées} : le Vetch \textbf{infiltre les musées européens} par les prêts d'exposition, les restaurateurs sous contrat et les fondations culturelles écrans.
+	\item \textbf{Delta Green} : le Vetch considère les Américains comme son \textbf{ennemi principal}. Il peut donc proposer des \textbf{alliances ponctuelles} aux Européens --- une tentation permanente pour le CESA.
+\end{itemize}
+
+\clearpage
+
+\section{Le Department Z (Royaume-Uni)}
+
+\subsection{Présentation générale}
+
+\begin{shaded}
+\og Le Brexit a eu lieu. Les anges, eux, n'ont pas voté. \fg{} --- Note interne CESA, 2020.
+\end{shaded}
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{9.0cm}|}
+\hline
+\textbf{Nom officiel de couverture} & \textit{Special Collections Unit}, Joint Intelligence Organisation (JIO), Cabinet Office. \\
+\hline
+\textbf{Nom interne} & \textbf{Department Z} (26\ieme{} lettre : dernier service classé de l'ancien Imperial War Office, jamais réformé depuis). \\
+\hline
+\textbf{Devise} & \og Si vis pacem, para arcanum \fg{} (\og Si tu veux la paix, prépare l'arcane \fg). \\
+\hline
+\textbf{Particularité} & Seul service occidental à avoir \textbf{deux fois} refusé de rejoindre les structures européennes (1997, 2004) --- par \textbf{fierté nationale}, pas par doctrine. Principal partenaire non européen du CESA et principal \og flirt institutionnel \fg{} de Delta Green en Europe. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Historique}
+
+\clearpage
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{9.0cm}|}
+\hline
+\textbf{Période} & \textbf{Événement} \\
+\hline
+1888 & \textbf{La fondation officieuse} : les meurtres de Whitechapel révèlent des \textbf{motifs rituels} inexpliqués. Le \textit{Megilah File} (archives du MET Police, toujours scellées) conclut à un \og collectif pratiquant un culte pré-babylonien \fg. Un comité ad hoc est créé --- jamais dissous depuis. \\
+\hline
+1914--1918 & \textbf{Le Western Front Committee} : les phénomènes des tranchées (\og Angels of Mons \fg) inquiètent le War Office. Création formelle en 1916, détachée au War Office : le Department Z est \textbf{militaire}, pas civil. \\
+\hline
+1939--1945 & \textbf{L'Alliance} : collaboration avec le Bureau S et le futur OSS. Les Britanniques récupèrent une partie des archives Ahnenerbe et, surtout, \textbf{l'île} : le site de \textbf{Pellamore} (Écosse), le site de confinement le plus ancien et le plus stable d'Europe --- une jalousie permanente pour Félicie. \\
+\hline
+1947--1970 & \textbf{Le Special Relationship} : collaboration étroite avec l'embryon de Delta Green. Âge d'or : 200 agents, budget confortable. \\
+\hline
+1970--1979 & \textbf{La Rupture} : quand Delta Green est dissous (1970), le Department Z refuse de suivre les Américains dans la clandestinité. Il collabore \og à distance \fg{} avec la version clandestine, ce qui lui vaut la \textbf{méfiance durable} des Américains. \\
+\hline
+1980--1990 & \textbf{Le Silence opérationnel} : sous Thatcher, effectifs réduits à moins de 60. Le service survit en se recentrant sur le \textbf{patrimoine} : il garde Pellamore et surveille les sites britanniques. \\
+\hline
+1997--2016 & \textbf{Le Refus européen} : deux refus de rejoindre le CESA (refus de partager Pellamore). Relation \og polie mais distante \fg{} : informations \textbf{sélectives}, jamais d'opérations communes. \\
+\hline
+2016--2026 & \textbf{Le Brexit} : perte de l'accès à MIRADOR, mais \textbf{indépendance stratégique} gagnée. Le Department Z devient le \textbf{pont} entre l'Europe et Delta Green, jouant sur les deux tableaux, au grand dam du CESA. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Doctrine}
+
+\begin{center}
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Doctrine} & \textbf{Nom} & \textbf{Principe} \\
+\hline
+Observer sans intervenir & HEDGEHOG & Moins d'effectifs que Félicie, beaucoup plus de sites à surveiller. Doctrine défensive : observer, cataloguer, contenir. \\
+\hline
+Le patrimoine comme forteresse & CASTLE & La Grande-Bretagne est \textbf{littéralement truffée} de sites anciens (monastères, menhirs, cathédrales, puits sacrés) : chaque lieu de culte ancien est un scellé. Mission : \textbf{maintenir les scellés}, pas en créer de nouveaux. \\
+\hline
+L'amitié dangereuse & BRIDGE & Depuis le Brexit, le Department Z sert d'\textbf{intermédiaire} entre Delta Green et le CESA. Il \textbf{vend cette position} : informations contre faveurs, des deux côtés. Partenaire nécessaire mais \textbf{indéloyal}. \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\subsection{Profils d'agents}
+
+\begin{center}
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Profil} & \textbf{Origine} & \textbf{Caractéristiques} \\
+\hline
+The Keeper (le Gardien) & MI5, GCHQ, militaire & Gère un \textbf{site spécifique} (Pellamore, Stonehenge, cathédrales). Connaît son site mieux que quiconque. Faiblesse : hyper-spécialisé, incapable de gérer une affaire hors de son site. \\
+\hline
+The Analyst & GCHQ, Oxford, Cambridge & Le Department Z a \textbf{les meilleures archives d'Europe} (l'Empire a collecté mondialement pendant 300 ans). Analystes \textbf{élitistes} qui considèrent les Européens comme des \og amateurs bien intentionnés \fg. \\
+\hline
+The Bridge Officer & MI6/SIS, ancien militaire & Seul profil \textbf{déployable à l'étranger}. Rôle : \textbf{liaison} avec Delta Green, le CESA, parfois le Vetch. Discret, sophistiqué, \textbf{jamais complètement honnête}. \\
+\hline
+The Academic & Université (théologie, archéologie) & Souvent des \textbf{savants sincères} (à la différence du Vetch), mais leur foi dans la \textbf{supériorité britannique} les rend parfois aveugles aux menaces extérieures. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Points de contact avec la campagne}
+
+\begin{itemize}
+	\item \textbf{Pellamore} : le site de confinement britannique. Le CESA n'a \textbf{jamais} pu y accéder. Une affaire nécessitant Pellamore (par exemple re-sceller le Nœud de \textit{La Récolte}) oblige à \textbf{négocier l'accès} avec le Department Z.
+	\item \textbf{Les archives} : le \textit{Megilah File} (1888), les archives coloniales occultes (Inde, Afrique, Moyen-Orient), une collection égyptienne plus complète que celle du Louvre. Toute enquête historique approfondie finit par aboutir aux Britanniques.
+	\item \textbf{Delta Green} : le Department Z est le \textbf{seul canal} par lequel Delta Green opère officiellement en Europe.
+	\item \textbf{Le Brexit comme arme dramatique} : frictions automatiques dans toute coopération, mais le Department Z, isolé, a parfois \textbf{besoin} des Européens.
+\end{itemize}
+
+\clearpage
+
+\subsection{Tableau comparatif final des organisations}
+
+\begin{center}
+\begin{small}
+\rotatebox{90}{
+	\begin{tabular}{|P{2.0cm}|P{2.0cm}|P{2.0cm}|P{2.0cm}|P{2.0cm}|P{2.0cm}|}
+	\hline
+	\textbf{Aspect} & \textbf{Félicie} & \textbf{CESA} & \textbf{Dept. Z} & \textbf{Vetch} & \textbf{Delta Green} \\
+	\hline
+	\textbf{Nature} & Service secret civil & Groupe de coordination & Unité \textbf{militaire} & Section SVR autonome & Programme clandestin illégal \\
+	\hline
+	\textbf{Doctrine} & Endormir & Coordonner & Observer / Confiner & Exploiter / Produire & Détruire \\
+	\hline
+	\textbf{Fondation} & 1945 (racines 1793) & 2004 (racines 1977) & \textbf{1888/1916} (le plus ancien) & 1919 (racines 1905) & 1928, réactivé clandestinement \\
+	\hline
+	\textbf{Effectifs} & $\sim$200 & $\sim$150 + correspondants & \textbf{$\sim$80} & $\sim$250 & $\sim$30 actifs \\
+	\hline
+	\textbf{Force} & Archives historiques & Réseau multilatéral & \textbf{Pellamore + archives coloniales} & Discipline, recherche & Improvisation \\
+	\hline
+	\textbf{Faiblesse} & Petit, dépendant du politique & Sans pouvoir d'exécution & \textbf{Isolé post-Brexit} & Paranoïa, purges & Illégal, isolé \\
+	\hline
+	\textbf{Rapport au Mythe} & Menace à contenir & Menace partagée & Patrimoine à \textbf{préserver} & Ressource à exploiter & Ennemi à abattre \\
+	\hline
+	\end{tabular} }
+\end{small}
+\end{center}
+
+% =====================================================
+% CHAPITRE : SCÉNARIO COMPLET — LA RÉCOLTE
+% =====================================================
+
+\chapter{Scénario Complet : La Récolte}
+\markboth{Scénario : La Récolte}{}
+
+\begin{shaded}
+\begin{center}
+\textbf{La Récolte} --- Forêt-Noire, Allemagne, époque contemporaine.
+\end{center}
+\textbf{Agence :} CESA (recommandé) ou Félicie (cellule détachée en coopération). \quad
+\textbf{Joueurs :} 3 à 5 agents, ARCANE-3 minimum. \quad
+\textbf{Durée :} 3 à 4 séances (12--15h). \quad
+\textbf{Ambiance :} contre-espionnage, horreur contenue, dilemmes politiques. \quad
+\textbf{Menaces :} le Bureau Vetch, un site qui se réveille, la tentation de l'artefact. \\
+\textbf{Inspiration :} \textit{Twin Peaks}, \textit{Tinker Tailor}, \textit{Annihilation}.
+\end{shaded}
+
+\clearpage
+
+\section{Accroche pour les joueurs}
+
+\begin{shaded}
+Il y a trois semaines, la cellule berlinoise du CESA a scellé un site dans la Forêt-Noire : une mine du XVI\ieme{} siècle où un culte local avait tenté un réveil. Doctrine SIESTE appliquée : quatre balises CERCLE posées, site isolé, couverture officielle --- \og ancienne galerie de mine, risque d'effondrement, accès interdit par arrêté municipal \fg.
+
+Hier, le contrôle COLCHIQUE annuel a été effectué par un garde forestier payé pour signaler toute intrusion.
+
+Ce matin, son rapport est arrivé par fax : \og Hier soir, des lumières. Des bruits. Le portail de la barrière est ouvert. J'ai vu des traces de pas. Beaucoup de traces. Elles sortent de la mine. \fg
+
+Les balises CERCLE ont cessé d'émettre il y a 36 heures.
+\end{shaded}
+
+\begin{shaded}
+\textbf{Note du meneur :} le vrai sujet du scénario n'est pas le monstre. C'est la question : \emph{que fait-on quand l'ennemi a dérobé ce qu'on a scellé --- et qu'avouer le vol revient à avouer qu'on l'avait scellé par des moyens inavouables ?}
+\end{shaded}
+
+\clearpage
+
+\section{Acte I : Le Site}
+
+\subsection{Le voyage}
+
+Les agents partent en véhicule banalisé, sous couverture d'\og experts en patrimoine minier \fg{} (PASSE-CULTURE). Le CESA impose un correspondant local : \textbf{l'agent Hans Beckenbauer} (BND, Abteilung XIV, ARCANE-EU niveau 2), \textbf{agacé d'être réveillé pour ça} --- son service n'a jamais cru à l'affaire de la mine.
+
+\begin{shaded}
+\textbf{Événement du voyage :} à mi-chemin, la radio capte un bulletin local avec des \textbf{difficultés sonores répétées} (grésillements, phrases coupées). Un jet d'Écoute/Attention réussi fait remarquer que les coupures sont \textbf{rythmées} --- comme un battement. Ce n'est pas l'entité : c'est le \textbf{matériel du Vetch}, qui brouille la zone.
+\end{shaded}
+
+\subsection{Le site de la mine}
+
+\begin{shaded}
+La mine se cache au bout d'un chemin forestier, sous des hêtres centenaires. La barrière métallique est arrachée, pas coupée --- arrachée vers l'extérieur. Le périmètre de barbelé a été sectionné proprement, au cutter. Sur le sol, des traces de pas militaires --- godillons --- et deux sillons parallèles : un brancard ou un traîneau, traîné lourdement.
+\end{shaded}
+
+\clearpage
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{9.0cm}|}
+\hline
+\textbf{Investigation} & \textbf{Découverte} \\
+\hline
+\textbf{Balises CERCLE (4)} & Trois sont \textbf{démontées et emportées}. La quatrième a été \textbf{ouverte et refermée} : les Russes ont compris la technologie. \emph{Conséquence stratégique majeure : une technologie occidentale classifiée est en mains russes.} \\
+\hline
+\textbf{La galerie principale} & Le site scellé est \textbf{vide}. L'entité (le \og Nœud de la Forêt \fg) a été \textbf{extraite}. Traces : sang, boue, substance organique gélatineuse qui \textbf{brille faiblement dans le noir}. Contact direct : perte de 1D4 SAN. \\
+\hline
+\textbf{La galerie latérale} & Matériel du culte : robes, icônes, le \textit{Malleus Saltorum} (\og Le Marteau des Forêts \fg, grimoire mineur, allemand, 1653). Le grimoire a été \textbf{feuilleté récemment} (traces de poudre latex). Le Vetch l'a lu et \textbf{l'a laissé}. \\
+\hline
+\textbf{Un objet intrus} & Un \textbf{canif de campagne}, modèle russe standard, gravé d'un matricule. Jet de Bureaucratie/Militaire réussi : série des \textbf{unités des garde-frontières SVR}. Pas des touristes. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{L'incident du garde forestier}
+
+Le garde forestier, \textbf{Erich Lessing}, n'a pas répondu à son fax-confirmation du jour.
+
+\begin{itemize}
+	\item Sa maison est \textbf{ouverte, en désordre léger} : quelqu'un a cherché, sans violence.
+	\item Lessing est \textbf{absent depuis la veille}. Un voisin a vu \og une grande berline noire avec des plaques tchèques \fg.
+	\item Un tiroir a été forcé : il contenait son \textbf{journal de bord}, où il notait scrupuleusement les passages du CESA --- \textbf{dates, horaires, effectifs, objets transportés}. Le journal a été \textbf{emporté}.
+\end{itemize}
+
+\begin{shaded}
+\textbf{Jet de SAN possible :} si un agent réussit un jet de Psychologie en inspectant la chambre, il comprend que le vieil homme a été \textbf{enlevé} --- les Russes ont besoin de lui vivant. Perte : 1D2 SAN.
+\end{shaded}
+
+\clearpage
+
+\subsection{Le dilemme de fin d'Acte I}
+
+\begin{itemize}
+	\item \textbf{Rapporter en haut lieu} : la révélation \og balise volée + site vidé \fg{} est une catastrophe politique.
+	\item \textbf{Enquêter d'abord sur place} : risquer que le Vetch soit déjà loin.
+	\item \textbf{Alerter les Allemands} (Abteilung XIV) : faire éclater l'affaire au grand jour du renseignement allemand.
+\end{itemize}
+
+\clearpage
+
+\section{Acte II : La Piste}
+
+\begin{shaded}
+\textbf{Le nœud d'énigme de l'acte :} le Vetch n'a pas fait ça seul. Ils avaient un \textbf{informateur en amont} : quelqu'un qui savait où et quand le site avait été scellé. Cette information n'existait que dans trois endroits : le rapport de la cellule berlinoise, les archives du CESA, et l'agenda de liaison de Beckenbauer.
+\end{shaded}
+
+\subsection{Les trois pistes}
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{9.0cm}|}
+\hline
+\textbf{Piste A — Télécommunications} & (Jet de Science/Info réussi) Le brouillage radio capté dans la voiture est le signal de \textbf{relais russes} : émetteur portable de puissance moyenne, actif il y a environ 40 heures. Un \textbf{faible signal résiduel persiste vers l'est} --- une direction, pas une adresse. \\
+\hline
+\textbf{Piste B — Le Malleus Saltorum} & (Jet d'Histoire/Occultisme réussi) Le grimoire raconte l'histoire du culte : des mineurs du XVII\ieme{} siècle qui \og nourrissaient la Forêt \fg{} en sacrifice, espérant des \og filons d'argent miraculeux \fg. Le Vetch n'a pas emporté le livre parce qu'ils \textbf{en possèdent déjà un exemplaire} (archives nazies saisies en 1945). Ce qu'ils voulaient, c'était \textbf{l'entité elle-même}. \\
+\hline
+\textbf{Piste C — Le trafic routier} & (Jet de Criminologie/Enquête réussi) La berline aux plaques tchèques : une \textbf{voiture de location} louée à Prague, payée par une société écran --- \textbf{Transport Mraz Ltd.}, \og entreprise de transport frigorifique \fg{}. Détail clé : \textbf{l'entité doit être transportée à basse température} (le Nœud entre en dormance sous 10\,\textdegree C). \\
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\subsection{Beckenbauer (PNJ pivot)}
+
+\begin{shaded}
+L'agent allemand est honnête mais \textbf{hors circuit} --- il n'avait pas l'habilitation complète. Deux options dramatiques au choix du meneur :
+\begin{itemize}
+	\item \textbf{Beckenbauer coopère, mais exige une contrepartie} : le dossier complet sur le site (le rapport réel, pas la version \og risque d'effondrement \fg). Mentir à un allié (et risquer de le perdre), ou \textbf{lui révéler la vérité} (accroître le nombre de personnes au courant, avec les risques REMORA associés) ?
+	\item \textbf{Beckenbauer est soupçonné} (par des joueurs paranos) : il n'est pas un traître, mais son \textbf{agenda} a bien été copié --- par son adjoint, un civil du BND non habilité. \emph{Le traître n'est pas un agent, c'est un fonctionnaire de secrétariat : les failles sont toujours administratives.}
+	\end{itemize}
+\textbf{Point dramatique :} si les joueurs accusent à tort Beckenbauer et l'interrogent brutalement, il \textbf{refusera toute coopération ultérieure} --- rendant l'Acte III beaucoup plus dur (pas de soutien logistique allemand).
+\end{shaded}
+
+\subsection{La poursuite}
+
+Les agents localisent le convoi : un \textbf{camion frigorifique} (Transport Mraz) quittant la Forêt-Noire vers le sud-est, en direction de la République tchèque. Destination : un \textbf{hangar désaffecté} près de Cheb --- une ancienne ferme laitière industrielle, rachetée par une société écran, zone rurale isolée.
+
+\begin{shaded}
+\textbf{Découverte clé en route :} le garde forestier Lessing est retrouvé --- pas mort, mais \textbf{catatonique}, abandonné dans une aire d'autoroute. Les Russes ont utilisé sur lui le \og masque de Gogol \fg, artefact qui \textbf{extrait la mémoire verbale} de la victime. Lessing se réveille, parle de sa vie entière, \textbf{en boucle}. Perte de SAN pour qui l'observe : 1D4.
+\end{shaded}
+
+\clearpage
+
+\section{Acte III : Le Hangar}
+
+\subsection{Description}
+
+\begin{shaded}
+Une ancienne ferme laitière, abandonnée depuis les années 2000. Le hangar principal, en béton, est éclairé de l'intérieur par des halogènes froids. Deux véhicules devant : le camion frigorifique, une berline. Un générateur diesel ronronne. À l'intérieur, des voix --- russes, calmes, professionnelles. Pas de cris, pas de chaos : une équipe qui travaille.
+\end{shaded}
+
+\textbf{À l'intérieur :} le Vetch a installé un \textbf{laboratoire de fortune} : 3 Académiciens, un Prêtre-Récoltant (le Père Mikhaïl), 2 Nettoyeurs Rouges en garde, et le chef d'équipe, \textbf{le Major Anatóli Sedov}. Ils ont extrait le Nœud de la mine et tentent de le \textbf{conditionner} : une cuve cryogénique, scellage, puis \textbf{expédition par avion cargo} depuis Prague vers Moscou-Vnukovo.
+
+\clearpage
+
+\subsection{Le Nœud de la Forêt}
+
+\begin{shaded}
+Une masse gélatineuse d'environ 2 mètres de diamètre, blanchâtre, translucide. Elle \textbf{pense}. Elle n'est pas violente par nature --- elle est \textbf{affamée} (le culte la nourrissait rituellement depuis 300 ans). Réchauffée et affamée, elle est dangereuse --- pas par agressivité, mais par \textbf{faim irrépressible} : elle aspire ce qui s'approche, absorbe la chaleur et la matière organique, \textbf{et les émotions aussi} (d'où les cauchemars dans la forêt).
+\end{shaded}
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{5.0cm}|P{3.0cm}|}
+\hline
+\textbf{Effet} & \textbf{Conséquence} & \textbf{Jet de résistance} \\
+\hline
+Voir le Nœud en activité & Perte de 1D6 SAN & --- \\
+\hline
+Toucher le Nœud / sa substance & Perte de 1D10 SAN + jet de CON (froideur permanente possible) & CON \\
+\hline
+Rester à proximité (10 min et +) & Perte de 1D4 (température corporelle) + besoin irrésistible de s'approcher & VOL \\
+\hline
+Voir une victime absorbée & Perte de 1D10 SAN & --- \\
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\subsection{Les options tactiques des joueurs}
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{9.0cm}|}
+\hline
+\textbf{Option A — Assaut frontal} & 5 à 7 ennemis armés, avec le risque de \textbf{détruire la cuve cryogénique} et de réveiller le Nœud en plein combat. Possible, mais très risqué : une entité affamée dans une zone rurale tchèque = scénario apocalyptique. \\
+\hline
+\textbf{Option B — Sabotage} & Couper le générateur : la cuve se réchauffe, le Nœud se réveille à l'intérieur du hangar, chaos dans l'équipe russe. Les joueurs doivent ensuite \textbf{affronter le Nœud aussi} --- qui ne distingue pas ses alliés de ses ennemis. \emph{Stratégie pragmatique, mais très morale : les scientifiques russes sont aussi des victimes potentielles.} \\
+\hline
+\textbf{Option C — Négociation / Dissuasion} & Révéler aux Russes que le CESA sait tout et que le vol des balises est un \emph{casus belli} clandestin. Sedov est un professionnel : si les joueurs \textbf{démontrent} que l'affaire est compromise (rapport déjà envoyé, équipe de secours en route --- un bluff), il peut choisir de \textbf{se retirer et abandonner le Nœud}. Mais Sedov peut faire un double bluff : abandonner le Nœud et emporter les \textbf{balises volées}, technologiquement plus précieuses que le Nœud. \\
+\hline
+\textbf{Option D — Laisser faire} & Le choix lâche. Le Vetch emporte le Nœud vers la Russie. À long terme, ce choix se paie : le Nœud, domestiqué, réapparaîtra dans un scénario futur. \\
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\subsection{PNJ : le Major Anatóli Sedov}
+
+\begin{shaded}
+\begin{tabular}{|P{3.0cm}|P{9.0cm}|}
+\hline
+\textbf{Profil} & 52 ans, ancien Spetsnaz (GRU, Tchétchénie), recruté par la SVR à 40 ans. Ni cruel ni fanatique : il \textbf{croit} à sa mission. \og La nature n'a pas de morale. Nous devons apprendre à la domestiquer, ou l'Occident le fera avant nous. \fg \\
+\hline
+\textbf{Combat} & Redoutable : fusil et arme de poing 80\%, corps à corps 75\%, excellente couverture de ses hommes. \\
+\hline
+\textbf{Personnalité} & Pragmatique, rusé, respecte l'adversaire. S'il doit négocier, il le fera --- mais il ne laissera jamais ses hommes mourir pour un artefact. \\
+\hline
+\textbf{Offre possible} & (si la négociation se passe bien) Rendre le Nœud, \textbf{garder les balises}, et partager une information : \og Votre site allemand n'était pas le premier. Nous en avons déjà récolté deux autres, en Suède et en Finlande. Vous devriez vérifier vos scellés. \fg{} --- \emph{Hook pour une campagne future.} \\
+\hline
+\end{tabular}
+\end{shaded}
+
+\subsection{PNJ : le Père Mikhaïl}
+
+\begin{shaded}
+Prêtre orthodoxe, 60 ans, \textbf{croyant sincère}. Il refuse catégoriquement de participer à la \og domestication \fg{} du Nœud --- pour lui, c'est un démon, et il faut l'\textbf{exorciser}, pas le transporter. C'est le point de \textbf{friction interne} de l'équipe russe : si les joueurs le découvrent, ils peuvent \textbf{retourner le prêtre} et créer une diversion qui sauve la situation sans un seul coup de feu. Le Père Mikhaïl ne trahira pas la Russie --- mais il trahira Sedov \og pour le salut de son âme et de la vôtre \fg.
+\end{shaded}
+
+\clearpage
+
+\subsection{Les Nettoyeurs Rouges (3 hommes)}
+
+\begin{center}
+\begin{tabular}{|P{6.0cm}|P{6.0cm}|}
+\hline
+\textbf{Caractéristique} & \textbf{Valeur} \\
+\hline
+Combat (fusil/pistolet) & 70\% \\
+\hline
+Corps à corps & 60\% \\
+\hline
+Conviction & 80\% \\
+\hline
+\textbf{Faiblesse} & Discipline : jamais d'improvisation. Si leur officier (Sedov) est neutralisé, ils \textbf{se retirent systématiquement} plutôt que de continuer le combat. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Le Nœud (si affrontement)}
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{6.0cm}|}
+\hline
+\textbf{Taille} & 2 m de diamètre (en croissance si nourri). \\
+\hline
+\textbf{Absorption} & Toute créature en contact : 2D6 points de constitution absorbés par round. \\
+\hline
+\textbf{Déplacement} & Très lent (1 m/round) --- mais peut \textbf{émettre des prolongations} (pseudopodes) jusqu'à 3 m. \\
+\hline
+\textbf{Faiblesses} & Température inférieure à 10\,\textdegree C : entrée en dormance. \textbf{Feu} : détruit les prolongations mais pas le noyau. \textbf{La seule destruction documentée} : un rituel d'exorcisme + le feu (le Père Mikhaïl connaît le rituel --- d'où sa valeur). \\
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\section{Fins possibles}
+
+\begin{center}
+\begin{tabular}{|P{3.0cm}|P{3.0cm}|P{6.0cm}|}
+\hline
+\textbf{Ending} & \textbf{Conditions} & \textbf{Conséquences} \\
+\hline
+\textbf{La neutralisation} & Les joueurs récupèrent le Nœud, tuent ou capturent l'équipe russe. & Victoire tactique. Le CESA doit gérer diplomatiquement un incident armé sur le sol tchèque. Le Nœud doit être \textbf{re-scellé} (où ? voir Épilogue). \\
+\hline
+\textbf{Le compromis} & Sedov abandonne le Nœud, garde les balises, se retire. & Victoire amère. Le Vetch a la technologie des balises CERCLE. La prochaine fois, les agents devront réagir plus vite. \\
+\hline
+\textbf{Le désastre} & Le Nœud se libère et échappe à tout le monde. & Le Nœud disparaît dans la forêt tchèque, affamé, en croissance. \textbf{Hook majeur pour campagne.} \\
+\hline
+\textbf{Le renvoi à l'expéditeur} & Les joueurs laissent faire, rapportent. & Aucune conséquence immédiate. Le Vetch domestique le Nœud en Russie --- qui \textbf{explosera} dans un scénario futur. \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Épilogue : le dilemme du re-scellement}
+
+De retour au QG, le débriefing tourne autour d'une question embarrassante : \textbf{que fait-on du Nœud ?} (s'ils l'ont récupéré). Le scellé d'origine est \textbf{compromis} --- le Vetch sait où il était. Les Archives Félicie suggèrent un site alternatif : le \textit{Rapport Grégoire, annexe VII} (1793) mentionne un lieu \og où la terre ne donne rien et où rien ne pousse \fg{} --- possiblement le seul \textbf{site de confinement naturel} jamais documenté en France.
+
+\begin{shaded}
+\textbf{Accroche du scénario suivant :} \og Le Lieu Muet \fg{} --- ou, si les joueurs préfèrent Pellamore (Royaume-Uni), l'épilogue devient \og La Dette de Pellamore \fg{} : négocier l'accès avec le Department Z, qui exige en échange... un accès aux archives de Félicie.
+\end{shaded}
+
+\section{Document distribuable (à imprimer pour la table)}
+
+\begin{shaded}
+\begin{small}
+\textbf{RAPPORT DE CLÔTURE --- Cellule berlinoise CESA --- OPÉRATION \og SIEBEN \fg}
+
+Site : ancienne galerie de mine, Forêt-Noire, Allemagne. État : scellé (doctrine SIESTE). Balises : 4/4 posées. Couverture : \og risque d'effondrement, arrêté municipal n\textsuperscript{o} 2024-117 \fg. Prochaine inspection COLCHIQUE : 11 mois.
+
+Note de la Direction : la cellule berlinoise a signalé, en annexe, que l'entité contenue (désignée \og objet S-7 \fg) a présenté une \og activité anormale \fg{} pendant le scellement, incluant des vocalises entendues par tous les agents présents. Ces vocalises ont été interprétées par un agent comme une \og phrase intelligible, en allemand ancien, dont il ne se souvient pas \fg. Le rapport recommande un suivi psychologique des agents impliqués.
+
+Ce rapport est classifié ARCANE-EU niveau 3. Toute divulgation non autorisée est passible de procédure REMORA.
+\end{small}
+\end{shaded}
+
+% =====================================================
+% ANNEXE : SCÉNARIOS COURTS AVEC LES ORGANISATIONS RIVALES
+% =====================================================
+
+\chapter*{Annexe : Scénarios Courts avec les Organisations Rivales}
+\addcontentsline{toc}{chapter}{Annexe : Scénarios Courts avec les Organisations Rivales}
+\markboth{Scénarios Courts avec les Organisations Rivales}{}
+
+\section*{Avec le Bureau Vetch}
+
+\begin{itemize}
+\item \textbf{L'Invité de Prague} (CESA, intermédiaire) : un \og conservateur russe \fg{} invité à une exposition sur les artefacts samoyèdes à Prague demande à visiter les réserves. Le Vetch utilise les prêts d'exposition pour cartographier les collections occultes européennes. Déterminer ce qu'il cherche \textbf{sans provoquer d'incident diplomatique}.
+\item \textbf{L'Ostankino Français} (Félicie, avancé) : un laboratoire \og ami \fg{} du CEA tente une \textbf{expérience d'éveil contrôlé} sans en informer Félicie. Catastrophe contenue de justesse. Or, l'expérience s'inspirait de documents acquis auprès d'un transfuge russe. Le Vetch a-t-il \textbf{délibérément} provoqué l'expérience française ?
+\item \textbf{La Nuit de Toula} (Vetch, tous niveaux) : contre-renseignement en Russie (rare, autorisation ARCANE-5) : infiltrer le Bureau Vetch pour comprendre ce qui s'est passé à Toula en 1905 --- l'événement fondateur, jamais documenté en Occident.
+\end{itemize}
+
+\section*{Avec le Department Z}
+
+\begin{itemize}
+\item \textbf{La Dette de Pellamore} (CESA $\times$ Dept. Z, avancé) : suite à \textit{La Récolte}, le Nœud ne peut être re-scellé nulle part en Europe continentale --- sauf à Pellamore. Les agents doivent \textbf{obtenir l'accès} : le Department Z exige en échange un accès aux archives de Félicie (les dossiers Z, le Rapport Grégoire). \emph{Payer la dette en trahissant le patrimoine français ?}
+\item \textbf{Le Pont Brisé} (CESA, intermédiaire) : un Bridge Officer du Department Z est retrouvé \textbf{mort à Paris} --- tué par un artefact qui n'aurait jamais dû quitter Pellamore. Enquête mixte franco-britannique pour empêcher la rupture totale de la coopération.
+\item \textbf{L'Ange de Mons} (Dept. Z $\times$ CESA, tous niveaux) : des touristes belges signalent des apparitions près d'Ypres, un siècle après les \og Angels of Mons \fg{}. Le phénomène semble avoir une \textbf{affinité avec les soldats morts}... et la mission dérive vers le vertige : l'Ange est-il un phénomène naturel, un artefact activé, ou le \textbf{premier signe d'un réveil continental} ?
+\end{itemize}
+
+\clearpage
+
+% =====================================================
+% ANNEXE : INDEX DES NOMS DE CODE
+% =====================================================
+
+\chapter{Index des Noms de Code (et autres annexes)}
+%% \addcontentsline{toc}{chapter}{Index des Noms de Code}
+%% \markboth{Index des Noms de Code}{}
+
+Les noms de code utilisés par Félicie, le CESA et les organisations rivales sont classés par ordre alphabétique. Chaque entrée précise l'organisation émettrice et le niveau d'habilitation nécessaire.
+
+\section*{A}
+
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Nom de code} & \textbf{Émetteur} & \textbf{Signification} \\
+\hline
+\textbf{ARCANE} & Félicie & Compartiment de classification (Secret Défense). Niveaux 0 (Le Voile) à 5 (Le Seuil). \\
+\hline
+\textbf{ARCANE-EU} & CESA & Compartiment européen de classification (EU TOP SECRET). Regroupe les habilitations des correspondants nationaux. \\
+\hline
+\textbf{Abteilung XIV} & BND (Allemagne) & Service occulte allemand, section 14 du BND. Partenaire national du CESA. \\
+\hline
+\textbf{Ahnenerbe} & Historique (nazisme) & Institut de recherche occulte nazi (1935--1945). Ses archives saisies sont réparties entre les Américains (majorité), les Britanniques et les Russes. \\
+\hline
+\end{tabular}
+
+\section*{B}
+
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Nom de code} & \textbf{Émetteur} & \textbf{Signification} \\
+\hline
+\textbf{Bureau S} & Historique (France) & Service occulte français (1935--1944), dépendant du ministère de la Guerre. Précurseur de Félicie. \\
+\hline
+\textbf{BRIDGE} & Department Z (R.-Uni) & Doctrine d'intermédiation entre Delta Green et le CESA depuis le Brexit. \\
+\hline
+\textbf{Bureau Vetch} & Russie & Alias de la \textit{Direktiva Vetch} (SVR, section 11). Organisation rivale, classifiée ROUGE. \\
+\hline
+\end{tabular}
+
+\section*{C}
+
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Nom de code} & \textbf{Émetteur} & \textbf{Signification} \\
+\hline
+\textbf{CALMANT} & Félicie & Cocktail de stabilisation psychologique : $-$1D4 aux pertes de SAN (dépendance possible). \\
+\hline
+\textbf{CASTLE} & Department Z & Doctrine du patrimoine comme forteresse : la Grande-Bretagne est un dispositif de confinement. \\
+\hline
+\textbf{CERCLE} & Félicie & Balise de confinement (posée par 4) : réduit de moitié la capacité d'une entité à quitter la zone pendant 12h. \\
+\hline
+\textbf{CESA} & Union européenne & Coordination Européenne de Sécurité Anormale. Groupe de travail ARCANE-EU au sein de l'IntCen. Alias historique : EORA. \\
+\hline
+\textbf{COLCHIQUE} & Félicie & Bilan psychologique annuel obligatoire ; par extension, inspection annuelle des sites scellés. \\
+\hline
+\end{tabular}
+
+\clearpage
+
+\section*{D--E}
+
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Nom de code} & \textbf{Émetteur} & \textbf{Signification} \\
+\hline
+\textbf{DPE} & Félicie & Direction du Patrimoine Exceptionnel : couverture officielle au ministère de la Culture. \\
+\hline
+\textbf{Dossiers A} & Félicie (ARCANE-4) & Affaires non closes depuis 1945. \\
+\hline
+\textbf{Dossiers Z} & Félicie (ARCANE-5) & Affaires jamais classées : réveils avérés de Grands Anciens (3 cas documentés). Contiennent aussi le \textit{Rapport Grégoire, annexe VII} (1793). \\
+\hline
+\textbf{Department Z} & Royaume-Uni & \textit{Special Collections Unit} (JIO, Cabinet Office). Service occulte militaire britannique, fondé 1888/1916. \\
+\hline
+\textbf{EORA} & CESA & Nom de code historique du CESA (European Occult Response Agency). \\
+\hline
+\textbf{Éveil contrôlé} & Bureau Vetch & Doctrine : réveiller partiellement une entité pour l'étudier en laboratoire. \\
+\hline
+\end{tabular}
+
+\section*{F--G}
+
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Nom de code} & \textbf{Émetteur} & \textbf{Signification} \\
+\hline
+\textbf{Félicie} & France & Nom interne du service occulte français. Fondé 1945 (racines 1793, via le Bureau S). \\
+\hline
+\textbf{FERRURE} & Félicie & Armement : armes standard + munitions en argent. \\
+\hline
+\textbf{GOMME} & Félicie & Doctrine d'effacement : détruire les preuves, neutraliser les témoins, produire une version rationnelle. \\
+\hline
+\end{tabular}
+
+\clearpage
+
+\section*{H--M}
+
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Nom de code} & \textbf{Émetteur} & \textbf{Signification} \\
+\hline
+\textbf{HEDGEHOG} & Department Z & Doctrine d'observation sans intervention. \\
+\hline
+\textbf{Le philtre} & Félicie & Procédure discrète de remontée des \og fiches anormalité \fg{} depuis la gendarmerie et la police. \\
+\hline
+\textbf{MIRADOR} & CESA & Réseau informatique séparé du CESA (indépendant des systèmes IntCen). Aussi : base de données des menaces occultes européennes. \\
+\hline
+\textbf{MIROIR} & Félicie & Protocole de contact : ne jamais toucher, ne jamais nommer à voix haute, ne jamais répondre si \og ça \fg{} parle. \\
+\hline
+\textbf{Masque de Gogol} & Bureau Vetch & Artefact d'interrogatoire qui extrait la mémoire verbale de la victime. \\
+\hline
+\end{tabular}
+
+\clearpage
+
+\section*{P--R}
+
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Nom de code} & \textbf{Émetteur} & \textbf{Signification} \\
+\hline
+\textbf{PASSE-CULTURE} & Félicie & Faux papiers patrimoniaux : justifient une présence sur tout site patrimonial. \\
+\hline
+\textbf{Pathfinder} & Félicie & Pensionnement de retraite : versé via la \textit{Fondation Aimé-Malézieux} (association loi 1901). \\
+\hline
+\textbf{Pellamore} & Department Z & Site de confinement (Écosse), le plus ancien et stable d'Europe. Jalousie permanente de Félicie. \\
+\hline
+\textbf{Récolte} & Bureau Vetch & Doctrine : récupérer des spécimens sur les sites occidentaux neutralisés. \\
+\hline
+\textbf{REMORA} & Félicie & Procédure de dissuasion/sortie d'un agent compromis : R1 Entretien, R2 Requalification, R3 Traitement, R4 Accident. \\
+\hline
+\textbf{Registre Rouge} & Félicie & Liste interne des agents \og en souffrance \fg{} (suspension de terrain). \\
+\hline
+\textbf{Renewal} & Félicie & Plan de redémarrage budgétaire post-2001. \\
+\hline
+\hline
+\end{tabular}
+
+\clearpage
+
+\section*{S--T}
+
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6.0cm}|}
+\hline
+\textbf{Nom de code} & \textbf{Émetteur} & \textbf{Signification} \\
+\hline
+\textbf{SIESTE} & Félicie & Doctrine par défaut : isoler, sceller, surveiller. Le Mythe ne meurt pas ; on l'endort. \\
+\hline
+\textbf{SONDE} & Félicie & Détecteur d'anomalie : révèle entités invisibles et artefacts actifs. \\
+\hline
+\textbf{SOLVANT} & Félicie & Kit de remise en état : décontamine un site. \\
+\hline
+\textbf{SYBILLE} & Félicie / ANSSI & IA de détection des motifs mathématiques d'activations rituelles dans le trafic internet. \\
+\hline
+\textbf{THERMITE} & Félicie & Doctrine de dernier recours (ARCANE-5) : destruction totale du site, de l'artefact et de la cellule. Appliquée 4 fois en 80 ans. \\
+\hline
+\textbf{Transport Mraz Ltd.} & Bureau Vetch & Société écran (transport frigorifique, Prague) utilisée pour l'exfiltration de spécimens. \\
+\hline
+\end{tabular}~\\
+
+\begin{shaded}
+\textbf{Note pour le meneur de jeu :} les noms de code sont volontairement \textbf{banals et administratifs}. C'est un choix dramatique : l'horreur se cache derrière le langage le plus neutre possible, et les joueurs devraient ressentir un froid quand ils croisent le mot \og THERMITE \fg{} dans un document d'aspect inoffensif.
+\end{shaded}
+
+\clearpage
+
+%% \chapter{Annexes}
+%% \addcontentsline{toc}{chapter}{Annexes}
 
 \section{Glossaire}
 \begin{itemize}
@@ -1913,8 +3289,6 @@ Pour créer une \textbf{campagne cohérente}, tu peux lier ces scénarios entre 
 	\item \textbf{Shoggoth} : Entité amorphe et maléfique de l'univers lovecraftien.
 \end{itemize}
 
-\newpage
-
 %  Notes 
 \section{Notes}
 
@@ -1927,8 +3301,6 @@ N'hésitez pas à \textbf{adapter et personnaliser} le contenu pour vos propres 
 		\textbf{Bonne partie, et que les Grands Anciens vous épargnent !}
 	\end{center}
 \end{shaded}
-
-%% \newpage
 
 %  Sources et Références 
 % \chapter*{Sources et Références}
@@ -1958,6 +3330,9 @@ N'hésitez pas à \textbf{adapter et personnaliser} le contenu pour vos propres 
 	
 	\bibitem{cthulhu}
 	Chaosium. (1981). \textit{L'Appel de Cthulhu} (6ème édition).
+	
+	\bibitem{protocoles}
+	Chandesris, G. (2026). \textit{DEP (France), CESA (Europe), Protocoles internes et organisations rivales : le Bureau Vetch et le Department Z}. Matériel de jeu original, inspiré de Delta Green (Arc Dream Publishing) et du Musée de Lhomme (Tristan Lhomme, Sans-Détour Éditions).
 
 \end{thebibliography}
 

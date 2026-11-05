@@ -254,3 +254,850 @@ Pour rendre ces agences **crédibles**, voici une **hiérarchie de secret** insp
 - Veux-tu que je te propose **un scénario clé en main** pour Félicie ou l'EORA ?
 - Ou préfères-tu des **idées de personnages pré-tirés** pour une campagne ?
 - As-tu une **période historique** ou un **lieu** en tête pour une aventure ? (Ex : **Paris 1970, Berlin 1989, Prague 2020** ?)
+
+
+
+Des sources numériques existent elles pour l'agence Félicie ?
+D'après les recherches effectuées, **l'Agence Félicie** est principalement documentée dans des **ouvrages physiques** (notamment *Le Musée de Lhomme* de Tristan Lhomme), mais il existe également des **ressources numériques** et des **extraits en ligne** pour les maîtres de jeu et les joueurs. Voici ce que j'ai identifié :
+
+---
+
+---
+
+### **📚 Sources numériques disponibles pour l'Agence Félicie**
+
+#### **1. Le Musée de Lhomme (Tristan Lhomme) – Extraits et critiques en ligne**
+Bien que l'ouvrage complet soit un **recueil physique** (boîte contenant 7 livrets), plusieurs sites proposent des **analyses, résumés et extraits** qui peuvent t'aider à comprendre l'organisation et les scénarios liés à Félicie.
+
+- **🔹 [Le Grog – Fiche détaillée du Musée de Lhomme](https://www.legrog.org/jeux/appel-de-cthulhu/musee-de-lhomme-fr)**
+  - **Contenu** :
+    - Description complète des **7 livrets**, dont le **Livret 7 : *La Saga Félicie*** (88 pages).
+    - **Aide de jeu** sur Félicie : historique, structure, personnages emblématiques.
+    - **Scénario principal** : *Ethor bedi zure erresuma* (mission au Laos/Cambodge, avec voyage dans le temps et trahison).
+    - **Critiques et conseils** pour les maîtres de jeu.
+  - **Accès** : **Gratuit** (site communautaire).
+
+- **🔹 [LudoVox – Critique et résumé du Musée de Lhomme](https://ludovox.fr/jdr-lappel-de-cthulhu-le-musee-de-lhomme/)**
+  - **Contenu** :
+    - Résumé des **scénarios et campagnes**, dont *La Saga Félicie*.
+    - **Contexte** : Félicie comme successeur du **Bureau S** (années 1940).
+    - **Ambiance** : Barbouzerie française, trahisons, et missions en **Asie du Sud-Est**.
+  - **Accès** : **Gratuit**.
+
+- **🔹 [Unification France – Présentation du Musée de Lhomme](https://www.unificationfrance.com/article39226.html)**
+  - **Contenu** :
+    - **Structure de l'ouvrage** (7 livrets + aides de jeu).
+    - **Mention de la Saga Félicie** : Organisation fondée en **1945**, dépendante de l'État, spécialisée dans le **surnaturel**.
+    - **Scénario** : Enquête sur un **trafic d'objets d'art maudits** au Laos/Cambodge.
+  - **Accès** : **Gratuit**.
+
+---
+
+#### **2. Forums et communautés de JDR**
+Plusieurs forums discutent de **Félicie** et partagent des **retours d'expérience** ou des **adaptations maison** :
+
+- **🔹 [Forum Les Gardiens du Jeu – Discussion sur Félicie](https://www.lesgardiensdujeu.fr/)**
+  - **Contenu** :
+    - **Retours de joueurs** sur la campagne *La Saga Félicie*.
+    - **Conseils** pour adapter Félicie à d'autres époques ou univers.
+  - **Accès** : **Gratuit** (inscription parfois nécessaire).
+
+- **🔹 [Forum du Grog – Discussions sur L'Appel de Cthulhu](https://www.legrog.org/)**
+  - **Contenu** :
+    - **Fils de discussion** sur les scénarios de Tristan Lhomme.
+    - **Partage de fiches de personnages** ou d'**aides de jeu maison**.
+  - **Accès** : **Gratuit**.
+
+---
+
+#### **3. Boutiques en ligne (PDF ou versions numériques)**
+Certaines boutiques proposent des **versions numériques** (PDF) de suppléments pour *L'Appel de Cthulhu*, mais **pas encore pour *Le Musée de Lhomme*** (qui reste un produit physique). Cependant, tu peux trouver d'autres **scénarios ou aides de jeu** compatibles avec Félicie :
+
+- **🔹 [DriveThruRPG](https://www.drivethrurpg.com/)**
+  - **Contenu** :
+    - **Scénarios pour L'Appel de Cthulhu** (certains compatibles avec Félicie).
+    - **Suppléments sur les organisations secrètes** (ex : *Delta Green*).
+  - **Accès** : **Payant** (achat de PDF).
+
+- **🔹 [Agorajeux](https://www.agorajeux.com/)**
+  - **Contenu** :
+    - **Fiche produit** pour *Le Musée de Lhomme* (description détaillée).
+    - **Liens vers d'autres suppléments** (ex : *Achtung! Cthulhu* pour des missions en Europe pendant la Seconde Guerre mondiale).
+  - **Accès** : **Gratuit** (achat du livre physique possible).
+
+---
+
+#### **4. Résumés et fiches de synthèse (créés par la communauté)**
+Certains joueurs ou maîtres de jeu ont **résumé ou adapté** les informations sur Félicie pour leurs propres campagnes. Tu peux trouver :
+- **Des fiches de synthèse** sur des blogs ou forums (ex : [Over-Blog](https://jdr-ariistef.over-blog.com/)).
+- **Des adaptations pour d'autres systèmes de jeu** (ex : *Delta Green*, *GURPS*).
+
+---
+---
+
+### **📌 Comment accéder à ces ressources ?**
+| **Type de ressource**       | **Où la trouver ?**                          | **Coût**       | **Lien direct**                                                                 |
+|-----------------------------|---------------------------------------------|----------------|---------------------------------------------------------------------------------|
+| **Analyses et critiques**   | Le Grog, LudoVox, Unification France        | Gratuit        | [Le Grog](https://www.legrog.org/), [LudoVox](https://ludovox.fr/)               |
+| **Discussions communautaires** | Forums (Les Gardiens du Jeu, Le Grog)   | Gratuit        | [Les Gardiens du Jeu](https://www.lesgardiensdujeu.fr/), [Le Grog](https://www.legrog.org/) |
+| **Suppléments numériques** | DriveThruRPG                              | Payant         | [DriveThruRPG](https://www.drivethrurpg.com/)                                   |
+| **Achat du livre physique** | Agorajeux, Sans-Détour Éditions             | Payant (~60€) | [Agorajeux](https://www.agorajeux.com/), [Sans-Détour](https://www.sans-detour.net/) |
+
+---
+
+---
+### **💡 Conseils pour utiliser ces ressources**
+1. **Commence par les analyses en ligne** (Le Grog, LudoVox) pour **comprendre l'univers de Félicie** sans acheter le livre.
+2. **Rejoins des forums** (Les Gardiens du Jeu) pour **poser des questions** ou **trouver des adaptations maison**.
+3. **Si tu veux le contenu complet** :
+   - Achète *Le Musée de Lhomme* en **version physique** (disponible sur [Agorajeux](https://www.agorajeux.com/) ou [Sans-Détour](https://www.sans-detour.net/)).
+   - Certains **PDF piratés** peuvent exister, mais je te conseille de **soutenir l'auteur** en achetant l'ouvrage officiel.
+
+---
+---
+### **⚠️ Attention aux spoilers !**
+Les **scénarios de Félicie** (notamment *Ethor bedi zure erresuma*) contiennent des **twists majeurs** (voyage dans le temps, trahisons, perte de mémoire). Si tu veux **jouer ces scénarios**, évite de tout lire en détail avant !
+
+---
+---
+### **🔎 Résumé des meilleures sources numériques gratuites**
+| **Source**               | **Lien**                                                                 | **Contenu utile**                                                                 |
+|--------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| **Le Grog**              | [Lien](https://www.legrog.org/jeux/appel-de-cthulhu/musee-de-lhomme-fr) | Fiche complète + résumé de *La Saga Félicie*.                                      |
+| **LudoVox**              | [Lien](https://ludovox.fr/jdr-lappel-de-cthulhu-le-musee-de-lhomme/)   | Critique détaillée + contexte historique.                                         |
+| **Unification France**   | [Lien](https://www.unificationfrance.com/article39226.html)           | Présentation de l'ouvrage + mention de Félicie.                                   |
+| **Les Gardiens du Jeu**  | [Lien](https://www.lesgardiensdujeu.fr/)                              | Discussions et retours d'expérience sur Félicie.                                |
+
+---
+---
+**💬 Besoin d’aide supplémentaire ?**
+- Veux-tu que je te **résume un scénario précis** de Félicie (ex : *Ethor bedi zure erresuma*) ?
+- Cherches-tu des **idées pour adapter Félicie à une autre époque** (ex : années 2020) ?
+- Ou préfères-tu des **conseils pour créer une campagne maison** avec cette agence ?
+
+[...] -- [...] -- [...] -- [...] -- [...] -- 
+
+Proposer un "service public de lutte contre l'Occulte" avec son historique, en France. De même au niveau Européen. Lien avec agences et directions existantes.
+
+
+# 🇫🇷 Service Public de Lutte contre l'Occulte : Proposition détaillée
+
+Voici une construction **cohérente et jouable**, ancrée dans l'histoire et les institutions réelles, conçue pour s'intégrer au livret (historique de Félicie / Bureau S de Tristan Lhomme inclus).
+
+---
+
+## PARTIE 1 : LE SERVICE FRANÇAIS
+
+### **Direction du Patrimoine Exceptionnel (DPE)** — la "vraie" Félicie
+
+**Nom officiel de couverture** : *Direction du Patrimoine Exceptionnel et des Collections Sensibles* (ministère de la Culture)
+**Nom réel (interne)** : **Félicie**
+**Classification** : Secret Défense — compartiment **"ARCANE"**
+**Devise** : *"Ce que la République ne peut admettre, elle le garde."*
+
+---
+
+### 📜 Historique français
+
+| Période | Événement | Détail |
+|---------|-----------|--------|
+| **1793** | *Commission des Arts et Monuments* | Pendant la Révolution, la confiscation des biens du clergé et de la noblesse met au jour des **objets "anormaux"**. Un rapport secret de la Commission (le *Rapport Grégoire, annexe VII*) recommande de **ne pas détruire** certains artefacts mais de les **inventorier à part**. C'est l'acte de naissance de la pratique : l'État français ** collectionne** l'occulte au lieu de le brûler. |
+| **1854-1891** | *Sous-commission des Sciences Occultes* | Sous le Second Empire puis la IIIe République, la **Société d'anthropologie de Paris** et l'essor de l'occultisme (Papus, Martinisme) inquiètent les pouvoirs publics. Une sous-commission informelle du ministère de l'Instruction publique surveille les cercles ésotériques. Aucune structure officielle : c'est l'ère des **"correspondants"**. |
+| **1914-1918** | *Section d'Études du 2e Bureau* | La Grande Guerre révèle des phénomènes sur le front (les *"Boches-verts"*, expériences chimiques allemandes aux effets inexpliqués, hantises des tranchées). Le 2e Bureau crée une **section d'études discrète**, qui rejoindra les légendes du *No Man's Land*. |
+| **1935-1940** | **Création du Bureau S** | Le ministère de la Guerre fonde officiellement le **Bureau S** (pour *"Spécial"* ou *"Sinistres"*, selon les archives) : première structure **formelle** de l'État français consacrée au renseignement occulte. Il dépend du **2e Bureau** et compte moins de 40 agents. |
+| **1940-1944** | *La Débâcle* | Le Bureau S se scinde : une partie suit Vichy (et tente de saborder les archives avant l'arrivée de l'**Ahnenerbe**), une autre rejoint **la France Libre à Londres**. C'est la période la plus sombre : chacun accuse l'autre de trahison, les archives sont dispersées, et une partie des artefacts est **volée par les nazis** (source de scénarios : *Aktion Hel*, *Le Crépuscule du Bureau S*). |
+| **1945** | **Fondation de Félicie** | À la Libération, le **GPRF** (Gouvernement provisoire) fusionne les réseaux de la France Libre, les survivants du Bureau S et les enquêteurs des **archives allemandes saisies** (les dossiers Ahnenerbe). Le service est placé sous **autorité directe du Président du Conseil** (puis du Président de la République sous la Ve). Le nom de code **"Félicie"** serait un clin d'œil à la devise *"Felix qui potuit rerum cognoscere causas"* (*"Heureux celui qui a pu connaître les causes des choses"* — Virgile). |
+| **1950-1962** | *L'Ère coloniale* | Félicie opère en **Indochine, Algérie, Madagascar** : enquêtes sur des cultes locaux, récupération d'artefacts, collaboration forcée avec les services coloniaux (c'est le cadre de la **Saga Félicie** de Tristan Lhomme : Laos, Cambodge, 1970). C'est l'âge d'or du service : budget noir, opérations exfiltrées, et premiers **agents "retournés"** par ce qu'ils ont vu. |
+| **1962-1981** | *Les Troubles* | Félicie traverse les régimes de la Ve République. La décolonisation et les scandales (affaires des **généraux**, services parallèles de l'OAS) éclaboussent le service. Il perd son accès direct à l'Élysée et est **rétrogradé** sous tutelle du ministère de la Défense. Le budget est amputé, les effectifs fondent. |
+| **1981-1986** | **Dissolution officielle** | Sous Mitterrand, la politique de **"transparence républicaine"** (dissolution de la Cour de sûreté de l'État, abolition de la peine de mort, décentralisation) entraîne la **dissolution administrative de Félicie**. Officiellement : *"économies de budget"*. Officieusement : le service est devenu **ingouvernable**, ses archives étant devenues plus dangereuses que les menaces qu'il devait combattre. |
+| **1986-2001** | *La Clandestinité* | Dissoute sur le papier, Félicie survit : une cinquantaine d'agents **infiltrés** dans d'autres services (DGSE, DST, gendarmerie, archives nationales), un **réseau de "correspondants bénévoles"** (universitaires, prêtres, conservateurs), et une seule archive complète : les **"Dossiers Félicie"** cachés dans un lieu tenu secret. |
+| **2001** | *Le Réveil* | Le 11 septembre 2001 et la refonte totale du renseignement français (loi Renseignement 1991, création de la **DCSI/DGSE** moderne) entraînent une **réactivation discrète** : le constat que des **organisations transnationales** (cultes, mafias occultes) exploitent la mondialisation plus vite que les services officiels. Félicie est **recréée en sous-main**, sous couverture d'un service du **ministère de la Culture** : la **Direction du Patrimoine Exceptionnel**. |
+| **2008-2015** | *La Professionnalisation* | Création de la **DCRI (2008)**, puis **DGSI (2014)** : Félicie obtient enfin un **cadre d'habilitation clair** (secret défense, compartiment ARCANE), un budget officieux (plan *"Renewal"*), et des **protocoles de coopération** avec les autres services. Elle recrute des profils scientifiques (CNRS, CEA), militaires (COS, DGSE) et des **"consultants"** issus des traditions occultes françaises. |
+| **2015-2026** | *Le Constat Échoué* | Attentats de 2015, crise migratoire, **pandémie de 2020** : chaque grande crise nationale a eu sa **"composante anormale"** que Félicie a traitée en silence. Le service fonctionne aujourd'hui en **cellules autonomes de 3 à 5 agents**, avec un état-major restreint (moins de 200 personnes au total) et une doctrine officielle : *"Empêcher. Effacer. Endormir."* |
+
+---
+
+### 🏛️ Positionnement institutionnel (France)
+
+```
+Président de la République
+        │
+        ├── Coordination : Secrétariat général de la Défense et de la Sécurité Nationale (SGDSN)
+        │           │
+        │           └── [Cellule "ARCANE" - 3 personnes max, habilitation Présidentiel]
+        │
+        ├── Félicie (Direction du Patrimoine Exceptionnel)
+        │   ├── Rattachement public : ministère de la Culture
+        │   ├── Rattachement réel : SGDSN / ministère des Armées
+        │   └── Compartiment ARCANE (Secret Défense)
+        │
+        └── Autres services (non informés de l'existence de Félicie,
+            sauf cellules de contact dédiées)
+```
+
+| Service réel | Lien avec Félicie | Nature du lien |
+|--------------|-------------------|----------------|
+| **DGSI** (contre-terrorisme, contre-espionnage intérieur) | **Coopération ponctuelle** | Une **"cellule de contact"** de 2 personnes à la DGSI est informée de l'existence de Félicie. Elle sert d'interface pour les enquêtes qui "dérangent" : quand une affaire de terrorisme présente des **signes inexpliqués**, elle est **transférée** à Félicie avec un dossier de "réorientation". La DGSI ne sait **pas tout**, elle sait juste qu'il existe "une autre boîte pour les affaires bizarres". |
+| **DGSE** (renseignement extérieur) | **Historiquement proche** | C'est le service le plus **imbriqué** avec Félicie : depuis les années 1950 (opérations coloniales) jusqu'à aujourd'hui. Certains agents de la DGSE sont **"détachés"** à Félicie sans que leur hiérarchie directe le sache. Les opérations à l'étranger (récupération d'artefacts, surveillance de cultes) se font **sous couverture DGSE**. |
+| **DRM** (Direction du renseignement militaire) | **Soutien logistique** | La DRM fournit à Félicie des **analyses de zones** (géopolitique des cultes, cartographie des zones "anormales") et des **moyens de transport militaires** pour les opérations lointaines. Une section de la DRM ("Section Z") gère le **traitement automatisé** des signaux anormaux (un programme d'IA filtrant les alertes "irrationnelles" des capteurs). |
+| **ANSSI** (cybersécurité) | **Partenariat technique** | L'ANSSI a développé (sans savoir exactement pour qui) des outils de **"détection d'anomalies informationnelles"** : une IA qui repère dans le trafic internet des **motifs mathématiques** correspondant à des activations rituelles (chaînes de symboles, dates, cycles). Cette IA (nom de code **"SYBILLE"**) est exploitée par Félicie. |
+| **CEA / CNRS** (recherche) | **Sous-traitance scientifique** | Des **laboratoires "clandestins"** au CEA (Commissariat à l'énergie atomique) et au CNRS étudient les artefacts et les échantillons "anormaux" sous couvert de **recherches en physique fondamentale**. Une poignée de chercheurs (moins de 20 au total) a l'habilitation ARCANE. |
+| **Ministère de la Culture** (couverture principale) | **Nom de façade** | La Direction du Patrimoine Exceptionnel ("DPE") est une **vraie direction** du ministère de la Culture, avec de vrais locaux, de vrais fonctionnaires et un vrai budget... pour la partie "collections sensibles" (art maudit, archives classées). Seuls 10% de ses effectifs savent qu'ils sont en réalité **Félicie**. |
+| **Archives nationales** | **Dépôt des secrets** | Les **"Archives Félicie"** (dossiers du Bureau S, de la période coloniale, des "dissidences" 1962-1981) sont conservées dans un **lieu non communiqué** (une ancienne carrière souterraine de la région parisienne, selon les rumeurs). L'accès nécessite une **autorisation présidentielle** écrite. |
+| **Gendarmerie / Police nationale** | **Premier maillon** | Les gendarmes et policiers **ne savent rien** de Félicie. Mais une **procédure discrète** existe : quand une affaire présente des "signes d'anormalité" (les fous qui racontent la même chose, des cadavres inexplicables, des lieux "noirs"), une **fiche standard** est générée et remonte (via une adresse mail générique du ministère de l'Intérieur) jusqu'à une **boîte de tri** tenue par Félicie. C'est le **"philtre"** : la plupart des fiches sont des délires, quelques-unes sont de vraies alertes. |
+| **Préfectures / SGDN** | **Autorisation d'opération** | Pour toute opération "active" (intervention, exorcisme, exfiltration), Félicie doit obtenir une **autorisation du préfet** ou du **SGDSN**, souvent **sans lui expliquer la vraie nature** de l'opération (couverture : "exercice de sécurité civile", "inspection technique", "expertise patrimoniale"). |
+
+---
+
+### 🎭 Profils d'agents (dans le cadre "service public")
+
+| Profil | Corps d'origine réel | Rôle dans Félicie |
+|--------|---------------------|-------------------|
+| **Le "Conservateur"** | Conservateur du patrimoine (ministère de la Culture) | Chef de cellule. Gère l'inventaire des artefacts, la couverture administrative, les contacts musées. Diplômé de l'**École du Louvre** ou de l'**INP** (Institut national du patrimoine). |
+| **Le "Recherche"** | Chercheur CNRS / CEA / université | Expert des phénomènes. Physicien, chimiste, historien des religions, anthropologue. Détaché auprès de Félicie sous couvert d'un "congé de recherche". |
+| **Le "Terrain"** | Gendarme / Policier / Militaire (COS, Légion) | Opérateur. Issu du **GIGN**, du **RAID**, de la **Légion étrangère**, ou du **COS**. Détaché pour une durée de 2 à 5 ans, avec promesse de retour au corps d'origine (rarement honorée). |
+| **Le "Médecin"** | Médecin des hôpitaux / Médecin militaire | Gère les **conséquences psychologiques et physiologiques** des expositions. Travaille en lien avec des services de psychiatrie "amis" (l'annexe de l'hôpital **Sainte-Anne** abriterait, selon les rumeurs, un service d'accueil spécialisé). |
+| **Le "Sapeur"** | Ingénieur (ministère de la Transition écologique, DSI) | Gère les **protocoles techniques** : capteurs, mesure des "signaux anormaux", décontamination rituelle, sécurisation des lieux (une version "occulte" de la dépollution, appelée *"remise en état patrimoniale"*). |
+| **L'Occultiste Consultant"** | Université (École Pratique des Hautes Études), ou société initiatique | **Pas un agent** au sens strict : un **contractuel** (souvent payé sur le budget du ministère de la Culture comme "expert scientifique"). Aujourd'hui, la plupart sont issus des traditions **franc-maçonnes** (rites ésotériques), de l'**Église** (exorcistes, moines-soldats) ou de familles de **"guérisseurs"** traditionnels. |
+
+---
+
+## PARTIE 2 : LE SERVICE EUROPÉEN
+
+### **Coordination Européenne de Sécurité Anormale (CESA)** — la "vraie" EORA
+
+**Nom officiel de couverture** : *Task Force Européenne de Coopération Patrimoniale et Culturelle* (Conseil de l'UE)
+**Nom réel (interne)** : **CESA** (prononcé *"KESA"*), ou **EORA** (nom de code historique)
+**Classification** : **EU TOP SECRET // ARCANE-EU** (compartiment européen spécifique)
+**Devise** : *"Concordia res parvae crescunt"* (*"Par l'union, les petites choses grandissent"*)
+
+---
+
+### 📜 Historique européen
+
+| Période | Événement | Détail |
+|---------|-----------|--------|
+| **1949-1957** | *Les Précurseurs informels* | Après la guerre, les services **clandestins** de plusieurs pays européens (le Bureau S français, le **SOE** britannique, les réseaux italiens et néerlandais) se coordonnent **officieusement** pour traquer les **artefacts nazis volés** (Ahnenerbe, projet Thule). C'est un **réseau de contacts**, pas une organisation. Le British Intelligence Object Sub-Committee (BIOS) et le **Paperclip Committee** (États-Unis) récupèrent la majorité des scientifiques nazis — et avec eux, une partie des dossiers occultes. Ce que l'Europe ne récupère pas, les Américains l'emportent (ce qui alimente la **méfiance historique** entre Delta Green et les services européens). |
+| **1957-1970** | *L'Échec des Communautés* | La création de la **CEE** (1957) ne prévoit **aucune coopération** en matière de sécurité : c'est le domaine réservé des États. Chaque pays garde **son** service occulte national : le Bureau S/Félicie (France), le **MI6's Department Z** (Royaume-Uni), le **BND's Abteilung XIV** (Allemagne de l'Ouest), etc. Ils se coordonnent par **conventions bilatérales secrètes**, hors cadre européen. |
+| **1970-1992** | *L'Emergence de l'intérêt commun* | Les chocs pétroliers, le terrorisme international (Brigades Rouges, Fraction Armée Rouge, **ETA**, IRA) révèlent que des **réseaux occultes transnationaux** (cultes, organisations criminelles avec des composantes "anormales") exploitent la **globalisation** plus vite que les services nationaux. Une **conférence informelle** à **Vienne (1977)** réunit pour la première fois des représentants de 8 services nationaux occidentaux : ils constatent qu'ils sont **tous** confrontés à des phénomènes similaires... et qu'aucun gouvernement ne veut en entendre parler officiellement. |
+| **1992-2001** | **Le Tournant de Maastricht** | La création de l'**Union européenne** (1992) et de ses **piliers** (dont la JAI, Justice et Affaires Intérieures) ouvre la voie à une coopération policière et judiciaire **structurelle** : Europol (1999), Eurojust (2002), Cepol. Parallèlement, une **réserve de coopération** est prévue : l'article 36 de la Convention de Naples (1997, entrée en vigueur 2000) crée un cadre juridique pour le partage d'informations sensibles entre services. Dans l'ombre, les services nationaux occultes commencent à parler d'une **"agence européenne de coordination"**. |
+| **2001-2004** | *Le Choc du 11 Septembre et l'Irak* | Le 11 septembre, puis les attentats de **Madrid (2004)** et **Londres (2005)**, forcent les Européens à créer des outils de renseignement **communs** : le **SitCen** (Centre de situation, créé 2001) puis l'**IntCen** (Centre de renseignement de l'UE, intégré au SEAE en 2010). Les services nationaux occultes obtiennent, dans le cadre de la réforme, un **"groupe de contact informel"** au sein de l'IntCen : c'est la **naissance administrative du CESA**, comme un simple "groupe d'échange d'informations". |
+| **2004-2014** | *La Lente Institutionnalisation* | Le CESA grandit discrètement : un **mémorandum secret** (2007) signé par les chefs des services nationaux occultes de 12 États membres pose les bases d'une **coordination opérationnelle** (partage de données, protocoles communs d'évaluation des menaces, **interventions conjointes** exceptionnelles). Le CESA n'a **pas d'existence légale propre** : il fonctionne comme une **"task force"** sous couvert de coopération policière informelle (cadre Europol, mais avec un compartiment séparé, **ARCANE-EU**). |
+| **2014-2020** | *Le Sursaut* | Les attentats de **2015** (Paris), **2016** (Bruxelles, Nice), l'**affaire Skripal** (2018), et la **pandémie de 2020** révèlent des **"composantes anormales"** dans des affaires officielles. Le CESA obtient un **budget propre** (via le **Fonds européen de défense** et le **Fonds pour la sécurité intérieure**, lignes budgétaires camouflées comme "recherche en sécurité"), et un **état-major permanent** à Bruxelles (dissimulé dans un bureau de la **Commission** — Direction générale Migration et Affaires Intérieures, DG HOME). |
+| **2020-2026** | *La Doctrine actuelle* | Le CESA fonctionne aujourd'hui comme une **agence de coordination** (pas une agence d'exécution) : il centralise les alertes, produit des **analyses de menaces européennes**, coordonne des opérations **multinationales** (une cellule française + une cellule allemande sur une même affaire), et gère les **archivages communs** (le **"Réseau de Mémoire"**, base de données répartie sur 6 sites dans l'UE). Ses effectifs : environ **150 personnes** (staff permanent) et **des centaines de "correspondants"** détachés dans les services nationaux. |
+
+---
+
+### 🏛️ Positionnement institutionnel (Europe)
+
+```
+Haut Représentant de l'UE pour les Affaires Étrangères et la Politique de Sécurité (HR/VP)
+        │
+        ├── SEAE (Service Européen pour l'Action Extérieure)
+        │       └── IntCen (Centre de Renseignement de l'UE)
+        │               └── [Groupe ARCANE-EU / CESA - existence officieuse]
+        │
+        └── Relations avec :
+            ├── Europol (coopération opérationnelle)
+            ├── Eurojust (cadre judiciaire)
+            └── DG HOME (couverture administrative, budget)
+```
+
+| Institution / agence réelle | Lien avec le CESA | Nature du lien |
+|------------------------------|-------------------|----------------|
+| **IntCen** (Centre de renseignement de l'UE) | **Hébergeur officiel** | Le CESA est officiellement un **"groupe de travail"** de l'IntCen, sur le papier rattaché à la *"sécurité hybride"*. En réalité, il a ses propres locaux (Bruxelles), son propre réseau informatique (**"MIRADOR"**, séparé des systèmes IntCen), et ses propres canaux de communication avec les services nationaux. L'IntCen fournit un **parapluie administratif** et une **couverture diplomatique** (le personnel CESA est enregistré comme "experts nationaux détachés" à l'IntCen). |
+| **Europol** (coopération policière) | **Opérateur opérationnel** | Pour les enquêtes criminelles avec une composante "anormale" (cultes criminels, trafics d'artefacts, organisations secrètes), le CESA utilise **Europol** comme canal d'exécution : les analystes Europol (qui ne savent pas qu'ils travaillent pour le CESA) reçoivent des demandes d'analyse, des mandats d'information, des demandes de coordination. Une **"unité spéciale"** (3 personnes) à Europol sert d'interface et sait ce qu'est le CESA. |
+| **Eurojust** (coopération judiciaire) | **Cadre légal** | Les opérations CESA (perquisitions, arrestations, saisies d'artefacts) sont **habilitées juridiquement** via Eurojust : un magistrat "ami" (un procureur national détaché à Eurojust, informé de la réalité) délivre les mandats nécessaires, en les justifiant par des **infractions classiques** (trafic d'objets d'art, association de malfaiteurs, escroquerie,...). L'existence du CESA n'est **jamais mentionnée** dans les procédures. |
+| **Commission européenne** — DG HOME (couverture administrative) | **Bouclier administratif** | Le personnel et le budget du CESA transitent par la **DG HOME** (Direction générale Migration et Affaires Intérieures) : les agents sont enregistrés comme "experts" sur des projets de "recherche et innovation en sécurité", des "réseaux d'excellence", des "programmes de formation". Le CESA n'apparaît **nulle part** dans les organigrammes officiels de la Commission. |
+| **Agence Européenne de Défense (EDA)** | **Fournisseur technologique** | Via des programmes de **"recherche appliquée"** (et quelques contrats de R&D), l'EDA finance (sans en connaître la finalité réelle) le développement de **capteurs**, de systèmes de détection, et d'**outils de mesure** des phénomènes anormaux. Une cellule de l'EDA ("Cellule Innovation-13") sert d'intermédiaire. |
+| **Agence spatiale européenne (ESA)** / **CERN** | **Soutien scientifique** | Des **contrats de recherche** (financés sur des programmes européens de science fondamentale) permettent d'étudier les phénomènes "anormaux" sous couvert de **physique des particules**, d'**astrophysique**, ou d'**étude de matériaux**. Moins de 30 scientifiques au total, disséminés, ont l'habilitation ARCANE-EU. |
+| **Parlement européen** — Commission LIBE (contrôle démocratique) | **Contrôle impossible** | Contrairement aux autres agences (Europol, Frontex), le CESA n'est soumis à **aucun contrôle démocratique direct** : il n'est pas une agence officielle, n'a pas de base législative propre, et n'apparaît pas dans les documents budgétaires (les montants sont noyés dans des programmes de recherche et de sécurité). Seuls quelques parlementaires (membres de la **"Commission spéciale LIBE"**, une sous-commission confidentielle) sont **informés de son existence**, sans en connaître le détail des opérations. |
+
+---
+
+### 🎭 Profils d'agents (dans le cadre européen)
+
+| Profil | Corps d'origine réel | Rôle dans le CESA |
+|--------|---------------------|-------------------|
+| **Le Coordinateur** | Haut fonctionnaire (Conseil de l'UE, SEAE) | Chef de cellule multinationale. Ancien diplomate, ancien officier de renseignement national détaché à Bruxelles. Gère la **liaison** entre services nationaux (souvent rivaux) et la **Commission**. Parfait **multilingue** (minimum 3 langues de l'UE). |
+| **L'Analyste** | Analyste de renseignement (IntCen, Europol, service national) | Évalue les menaces, produit des **notes d'alerte**, cartographie les organisations occultes européennes (bases de données **"MIRADOR"**). De plus en plus souvent : un **data scientist** capable de repérer des **motifs** dans les données (dates, symboles, correspondances). |
+| **Le Juriste** | Magistrat, avocat, juriste (Eurojust, Commission) | Indispensable pour naviguer dans le **droit européen** (mandats, entraide judiciaire, conflits de juridiction). Rédige les **dossiers de couverture** (justifications des opérations par des infractions classiques). |
+| **Le Détaché national** | Agent d'un service national occulte (Félicie, MI6's Department Z, BND's Abteilung XIV, AISI, ...) | **Représentant** de son service national au sein du CESA. C'est un **agent opérationnel** qui connaît le terrain et peut activer sa propre cellule nationale si une affaire doit être traitée dans son pays. La **double allégeance** (national / européen) est une source constante de tension. |
+| **Le Scientifique** | Chercheur (CERN, universités, instituts européens) | Physicien, historien, anthropologue, cryptographe. Travaille sous **contrat** (pas détaché) sur des sujets "dérivés" (études de matériaux, linguistique historique, modèles mathématiques de phénomènes collectifs). |
+| **Le "Nettoyeur"** | Expert en gestion de crise (Commission, agences de l'UE, consultants) | Gère la **communication de crise** : couvrir les incidents, produire des explications rationnelles, coordonner les services de secours. Rarement un agent de terrain, plutôt un **expert en communication** (ancien journaliste, ancien porte-parole d'institution). |
+
+---
+
+## 🎯 Tableau comparatif final
+
+| Aspect | **Félicie (DPE)** 🇫🇷 | **CESA** 🇪🇺 | **Delta Green** 🇺🇸 |
+|--------|----------------------|--------------|---------------------|
+| **Nature** | Service secret d'État, rattaché à la Présidence | Groupe de coordination informel au sein de l'IntCen | Programme clandestin (ancien bureau officiel dissous 1970, réactivé clandestinement) |
+| **Base légale** | Aucune (dissoute officiellement en 1981) | Aucune (groupe de travail informel, sans mandat) | Aucune (illégal, vit de vols et de détournements) |
+| **Couverture administrative** | Ministère de la Culture (Direction du Patrimoine Exceptionnel) | DG HOME (programmes de recherche et sécurité) | Aucune officielle (vols, chantage, maigres ressources) |
+| **Effectifs** | ~200 (dont ~50 opérationnels) | ~150 staff + centaines de "correspondants" détachés | ~20-30 agents opérationnels (avec des centaines de "contacts" non officiellement membres) |
+| **Budget** | Plan occulte via ministère de la Culture et fonds SGDSN | Lignes budgétaires camouflées (recherche, sécurité intérieure, défense) | Vol, extorsion, financement occulte (héroïne, projets noirs) |
+| **Ancrage historique** | 1793 (Commission des Arts) → Bureau S (1935) → Félicie (1945) | 1977 (Conférence de Vienne) → CESA (2004, groupe de travail IntCen) | 1928 (Bureau 13, soucoupe de Métacraft) → 1970 (dissolution officielle, réactivation clandestine) |
+| **Faiblesse principale** | Trop petit, trop dépendant du bonvouloir de l'Élysée, archives ingouvernables | Pas de pouvoir d'exécution propre : dépend des services nationaux (qui se méfient les uns des autres) | Illégal, paranoïaque, se méfie de tout le monde (y compris de lui-même) |
+| **Credo** | *"Empêcher. Effacer. Endormir."* | *"Coordonner sans jamais commander."* | *"Tuer le Mythe avant qu'il ne nous tue."* |
+
+---
+
+## 💡 Idées de scénarios liés à ces structures
+
+1. **"La Fiche Préfecture"** (Félicie, débutants) : Un gendarme de campagne remonte une "fiche anormalité" : un village où tous les habitants font le même cauchemar. La fiche arrive dans la "boîte de tri" de Félicie... et c'est la première mission des agents. *Ambiance : X-Files rencontre le bac à sable administratif français.*
+
+2. **"Le Conflit de Juridiction"** (CESA, intermédiaire) : Une affaire implique la France, l'Allemagne et l'Italie. Le CESA doit coordonner une opération... mais les services nationaux refusent de partager leurs informations (chacun veut "gérer seul" une affaire sur son territoire). Les agents (détachés de 3 pays différents) doivent coopérer malgré les ordres contraires de leurs hiérarchies respectives.
+
+3. **"Le Contrôle Parlementaire"** (Félicie + CESA, avancé) : Un parlementaire européen de la "Commission spéciale LIBE" commence à poser trop de questions sur une ligne budgétaire suspecte. Les agents doivent **dissuader** l'élu de creuser... sans le tuer, sans le menacer, sans rien faire d'illégal. *Scénario de negotiation et de manipulation, sans combat.*
+
+4. **"L'Archiviste Disparu"** (Félicie, tous niveaux) : Le seul homme qui connaissait l'emplacement des "Archives Félicie" (la carrière souterraine) est mort. Les agents doivent **retrouver les archives** avant qu'un culte (ou Delta Green, ou un service rival) ne les trouve. *Course contre la montre, milieu parisien et périurbain.*
+
+---
+
+**💬 Prochaines étapes possibles** :
+- Veux-tu que j'intègre ce **schéma institutionnel et cet historique** dans le **livret LaTeX** (nouveau chapitre "Historique et Positionnement des Agences") ?
+- Veux-tu que je développe les **protocoles internes** (habilitations, procédures d'effacement, doctrine d'intervention) sous forme de fiches ?
+- Ou préfères-tu approfondir un **concurrent ou une organisation ennemie** (une agence russe ? chinoise ? britannique post-Brexit ?) ?
+
+
+
+
+
+Développer **protocoles internes et** un **concurrent ou une organisation ennemie**
+
+
+
+
+
+# 🔐 PARTIE 1 : PROTOCOLES INTERNES (Félicie / CESA)
+
+Ces fiches sont conçues pour être utilisées **telles quelles en jeu** : le MJ peut les distribuer aux joueurs comme "documents internes" ou s'en servir pour structurer ses scénarios.
+
+---
+
+## Fiche 1.1 — Habilitations et compartimentage
+
+### 🏅 Niveaux d'habilitation (compartiment ARCANE)
+
+| Niveau | Dénomination | Qui la détient | Ce qu'elle permet |
+|--------|--------------|----------------|-------------------|
+| **ARCANE-0** | *"Le Voile"* | Aucune (grand public) | Rien. Le public ne doit **jamais** savoir. La désinformation officielle : *"phénomènes inexpliqués", "canular", "pathologie collective"*. |
+| **ARCANE-1** | *"La Fiche"* | Gendarmes, policiers, maires, préfets (non informés) | Savoir que **des fiches "anormalité"** existent et vers où les envoyer (adresse générique). Ne **sait pas** qui les traite. |
+| **ARCANE-2** | *"Le Contact"* | Agents détachés (DGSI, DGSE, DRM), correspondants bénévoles | Savoir qu'**"une structure existe"** pour les affaires inexplicables. Connaître son officier de liaison. Ne connaît **ni le nom, ni l'ampleur, ni l'historique**. |
+| **ARCANE-3** | *"L'Agent"* | Opérateurs Félicie, chercheurs habilités | Connaître l'existence de **Félicie**, son rattachement Culture/SGDSN, l'historique sommaire (Bureau S → 1945 → 1981 → réactivation). Accès aux dossiers de sa **cellule uniquement**. |
+| **ARCANE-4** | *"L'État-Major"* | Chefs de cellule, Direction, cellule Élysée (3 pers.) | Accès à **l'inventaire général** des artefacts, à la cartographie des menaces actives, aux **dossiers "A"** (affaires non closes depuis 1945). Connaît l'emplacement des Archives. |
+| **ARCANE-5** | *"Le Seuil"* | Directeur de Félicie + 2 personnes (cellule présidentielle) | Accès aux **"Dossiers Z"** : les affaires que même Félicie n'a jamais réussi à classer. Les **réveils avérés** de Grands Anciens (3 cas documentés depuis 1945). Le contenu du *Rapport Grégoire, annexe VII* (1793). |
+
+**Règle de jeu (Delta Green)** : Un agent ARCANE-3 qui apprend une information de niveau supérieur **sans autorisation** déclenche automatiquement une procédure `"REMORA"` (voir Fiche 1.3). Il ne peut pas la partager sans en assumer les conséquences : cela crée un dilemme récurrent en campagne.
+
+---
+
+### 📋 La cérémonie d'habilitation (ARCANE-3)
+
+*"Vous ne lirez jamais ces lignes. Ce document n'existe pas."*
+
+1. **Le repérage** (6-18 mois) : le candidat est observé à distance après un "incident d'exposition" (il a vu quelque chose qu'il n'aurait pas dû voir). Son entourage est vérifié (fiche S, renseignement territorial).
+2. **L'entretien** : un agent se présente sous couverture ("Inspection générale des services, ministère de la Culture"). Trois entretiens, dont un avec un psychologue habilité. Le vrai objectif : mesurer la **capacité à garder un secret** et la **solidité mentale** (en termes de jeu : VOL et SAN de départ).
+3. **L'offre** : on lui présente deux dossiers. Le premier, officiel : une proposition de détachement "valorisante" (augmentation, projet prestigieux). Le second : la vérité. *"L'un des deux dossiers est un mensonge. Si vous choisissez le mauvais, vous ne le saurez jamais."*
+4. **La signature** : aucun contrat. On signe simplement un **"engagement de réserve"** banal (formulaire standard de la fonction publique). La vraie adhésion est orale, devant témoin, sans trace écrite. *"Il n'y a pas de contrat parce qu'il n'y a pas de preuve. Ni de nous, ni de ce que vous verrez."*
+5. **L'injection** (rumeur, jamais confirmée) : un traitement "de confort" administré à l'insu du nouvel agent lors d'un "bilan de santé obligatoire". Officiellement : vaccin et rappel. Officieusement : cocktail de stabilisateurs qui **réduit les cauchemars post-exposition**. Effet en jeu : -1D4 aux pertes de SAN la première année, mais **syndrome de dépendance** si l'agent quitte le service.
+
+---
+
+## Fiche 1.2 — Doctrines d'intervention
+
+### ⚔️ Les trois doctrines officielles
+
+| Doctrine | Nom de code | Quand | Principe |
+|----------|------------|-------|----------|
+| **Endormir** | *"SIESTE"* | Défaut | Ne pas détruire, ne pas affronter : **isoler, sceller, surveiller**. Le Mythe ne meurt pas ; on peut seulement l'endormir. Un site scellé est visité chaque année (contrôle "COLCHIQUE"). |
+| **Effacer** | *"GOMME"* | Menace active, exposition publique imminente | Détruire les preuves, neutraliser les témoins (psychologiquement, pas physiquement — en théorie), produire une **version rationnelle** des événements. |
+| **Brûler** | *"THERMITE"* | Dernier recours, autorisation ARCANE-5 | Destruction totale du site, de l'artefact, **et de la cellule qui l'a manipulé**. En 80 ans, la doctrine THERMITE n'a été appliquée que **4 fois**. Deux d'entre elles restent classifiées. |
+
+### 🎯 Déroulement type d'une opération (standard Félicie)
+
+**Phase 1 — "LA FICHE"** (préparation) :
+- La cellule reçoit un dossier : fiche anormalité, photos, témoignages, analyse préliminaire de l'IA **SYBILLE**.
+- Vérification des **archives** : l'affaire a-t-elle un précédent ? (80% des cas ont un précédent entre 1793 et 1981 — c'est l'intérêt majeur des Archives.)
+- Choix de la **couverture** : chaque opération doit avoir une justification administrative banale ("expertise patrimoniale", "exercice sécurité civile", "inspection technique", "inventaire muséal").
+
+**Phase 2 — "L'APPROCHE"** (sur le terrain) :
+- Jamais moins de **3 agents**, jamais plus de **5**. Au-delà, on crée de l'exposition.
+- Règle absolue : **aucune arme visible** en phase d'enquête. L'arsenal est dans le coffre du véhicule, sous déclaration "patrimoniale" (fictive).
+- Chaque agent a un **rôle assigné** : LE VERT (enquêteur, parle aux témoins), LE GRIS (technique, capteurs et mesures), LE BLEU (sécurité, sortie de secours, véhicule).
+
+**Phase 3 — "LE CONTACT"** (face au phénomène) :
+- Premier jet de SAN **collectif** : on ne décrit le phénomène qu'après que chacun ait réussi ou échoué son jet (l'échec d'un seul peut déstabiliser la cellule).
+- Protocole **"MIROIR"** : ne jamais toucher, ne jamais nommer à voix haute, ne jamais répondre si "ça" parle. Trois interdits affichés dans chaque véhicule de Félicie.
+
+**Phase 4 — "LE TRI"** (résolution) :
+- Décision à trois : aucun agent ne peut décider seul du sort d'un artefact (règle issue de la dissolution de 1981 : "la concentration de décision tue").
+- Le rapport final est rédigé **en double exemplaire** : la version ARCANE (vraie) et la version "culturelle" (fictive, pour la couverture administrative du ministère).
+
+---
+
+## Fiche 1.3 — Protocoles de dissuasion et de sortie
+
+### 🚨 Procédure "REMORA" (agent compromis)
+
+Un agent qui a parlé, qui veut partir, ou qui montre des signes de contamination mentale :
+
+| Étape | Action | Enjeu |
+|-------|--------|-------|
+| **R1 — L'Entretien** | Un ancien (ARCANE-4) le rencontre "par hasard". Rappel oral de l'engagement. Convivial, presque chaleureux. | Dernière chance de repartir sans dommage. |
+| **R2 — La Requalification** | Mutation forcée vers un poste administratif isolé (outre-mer, archive, bibliothèque universitaire). Le courrier de l'agent est ouvert. Sa famille est "protégée" (surveillée). | L'isolement social sans l'isolement physique. |
+| **R3 — Le Traitement** | Hospitalisation psychiatrique "de droit commun" : le dossier médical est fabriqué de toutes pièces (burn-out, dépression, syndrome paranoïaque). | On ne l'élimine pas : on le rend **incontestable**. |
+| **R4 — L'Accident** | Historiquement documenté 9 fois (1945-1981). Aucun cas confirmé depuis la réactivation de 2001. La direction actuelle refuse officiellement cette étape. Officieusement ? *Les dossiers Z suggèrent que certains agents ne sont pas morts dans des accidents.* |
+
+### 🚪 La sortie "propre" (retraite)
+
+- L'agent partant signe un engagement de réserve **à vie**, reçoit une **fausse carrière** dans les archives du ministère (une trajectoire administrative complète et vérifiable est créée pour lui), et un **pensionnement " Pathfinder "** : une pension augmentée, versée via une association discrète (*Fondation Aimé-Malézieux*, association loi 1901 réelle, trois salariés, objet social : "soutien aux personnels du patrimoine").
+- **Conséquence en jeu** : un retraité de Félicie est un PNJ précieux mais **surveillé**. Contacter un retraité sans passer par la hiérarchie = procédure REMORA potentielle.
+
+### 🧠 Le suivi psychologique (adapté à Delta Green)
+
+- **Bilan "COLCHIQUE"** annuel obligatoire : entretien avec un psychiatre ARCANE-3, destiné à repérer les troubles non déclarés (adaptation du SAN perdant masqué).
+- **La règle du "Double Zéro"** : un agent dont la SAN passe sous 40 est **suspendu de terrain** ("mis en réserve"). Un agent sous 25 est réorienté d'office vers les archives. La direction considère qu'un agent brisé est plus dangereux qu'un mort.
+- **Le "Registre Rouge"** : liste interne des agents "en souffrance". Y figurer donne droit à du repos... et retire le droit de participer aux opérations THERMITE.
+
+---
+
+## Fiche 1.4 — Équipement et procédés (adaptés aux règles Delta Green)
+
+| Élément | Nom de code | Effet en jeu | Coût / Limite |
+|---------|------------|--------------|----------------|
+| **Cocktail de stabilisation** | "CALMANT" | -1D4 aux pertes de SAN pour une exposition. Effet cumulatif max : 2 prises/op. | Après 3 prises cumulées sur un mois : jet de CON ou dépendance. |
+| **Détecteur d'anomalie** | "SONDE" | Permet un jet de Science réussi pour détecter une entité invisible ou un artefact actif. | Encombrant, civil, nécessite une couverture technique. |
+| **Balise de confinement** | "CERCLE" | Posée en cercle (4 balises), réduit de moitié la capacité d'une entité à quitter la zone, pendant 12h. | Perdante : fragile, émet un signal détectable par SYBILLE (et par l'ennemi). |
+| **Kit de remise en état** | "SOLVANT" | Décontamine un site (efface les traces rituelles, les résidus, les "taches"). | Ne fonctionne pas sur les sites classés "Z". |
+| **Faux papiers patrimoniaux** | "PASSE-CULTURE" | Permet de justifier une présence sur tout site patrimonial (musée, château, église, fouille). | Signature vérifiable par la DGSI en 4h. |
+| **Armement** | "FERRURE" | Armes standard + munitions en argent (dégâts doublés sur certaines entités, selon le MJ). | Interdit d'usage en zone urbaine sans autorisation R4 minimum. |
+
+---
+
+# ☠️ PARTIE 2 : L'ENNEMI — Le **Bureau VetchER** (Russie)
+
+*"Ils ne croient pas au Mythe. Ils croient que le Mythe est une arme. C'est exactement pour ça qu'ils sont plus dangereux que le Mythe."*
+— Note interne CESA, 2019, classifiée ARCANE-EU
+
+---
+
+## 🏛️ Présentation générale
+
+**Nom réel** : **Direktiva Vetch** ("Directive Vetch" — *vetch* étant une corruption phonétique de *Veche*, l'assemblée de la Russie ancienne, et un jeu de mots avec **"ВЕЧ"** : l'abréviation gravée sur le premier artefact récupéré par le service en 1919).
+**Couverture actuelle** : Section 11 de la **SVR** (Service des renseignements extérieurs russes) — en réalité, le service est **plus ancien que la SVR** et ne lui rend de comptes que par un canal de trois personnes.
+**Classification occidentale** : ARCANE-EU niveau ROUGE. Le CESA n'a **jamais** réussi à infiltrer le Bureau Vetch.
+**Devise** : *"Мы не спрашиваем разрешения у мёртвых"* — *"Nous ne demandons pas la permission aux morts."*
+
+---
+
+## 📜 Historique
+
+| Période | Événement |
+|---------|-----------|
+| **1890-1917** | ***L'Okhrana et le Département des Affaires Mystiques*** : la police politique tsariste surveille les sectes (*khlysty*, *skoptsy*), les occultistes (Raspoutine) et les cultes de la Russie profonde. Une section spécialisée naît en **1905** après "l'Affaire de la Nuit de Toula" (événement jamais documenté en Occident). |
+| **1919** | ***La Tchéka reprend les archives*** : à la Révolution, les bolcheviks saisissent les archives de l'Okhrana. Staline (alors commissaire) prend connaissance des dossiers occultes et ordonne leur conservation secrète : *"La superstition est l'opium du peuple. Mais l'opium a des usages."* La **Direktiva Vetch** naît officieusement la même année. |
+| **1928-1953** | ***L'Ère Staline*** : le Bureau Vetch devient un outil de terreur d'État : il utilise des artefacts pour briser les ennemis du régime (empoisonnements rituels, "suicides" maquillés, persécution psychologique). Le Bureau récupère les artefacts allemands capturés en **1945** à Berlin (une partie seulement : les Américains ont eu le plus gros, les Français quelques dossiers). |
+| **1953-1985** | ***Le Glacis*** : après la mort de Staline, le Bureau survit mais perd son accès direct au pouvoir (le PCUS est méfiant envers toute structure non-idéologique). Il se réfugie dans la **première Direction générale du KGB**, protégé par un petit nombre d'officiers ayant les liens familiaux avec la vieille garde. C'est l'ère des grandes opérations de **vol d'artefacts** à l'étranger (Afghanistan, Inde, Vietnam — avec pertes considérables). |
+| **1985-1991** | ***La Perestroïka et la crise*** : le Bureau Vetch, comme tout le KGB, est fragilisé. Un scandale interne (l'**"Affaire Ostankino"**, 1988 : une expérience sur un artefact qui a coûté la vie à 14 officiers) conduit à une **purge sanglante** du Bureau par le KGB lui-même. Plus de la moitié des effectifs disparaissent dans les purges. |
+| **1991-2000** | ***Le Chaos Eltsine*** : l'effondrement de l'URSS désorganise le Bureau. Certains agents **vendent des artefacts** au crime organisé et à des collectionneurs internationaux (dont des clients... français et américains, ce qui explique des liens avec le Comte de Montclair et d'autres collectionneurs occidentaux). Une partie du Bureau fait scission et tente de passer à l'Ouest : le CESA récupère **deux transfuges** (l'un en 1994, l'autre en 1998 — le second s'est suicidé trois mois après son exfiltration). |
+| **2000-2026** | ***La Restauration Poutine*** : le renforcement du pouvoir vertical restaure le Bureau Vetch. Il est officiellement réintégré à la **SVR** (créée 1991) mais conserve une autonomie interne forte, un budget "spécial" et une doctrine révisée : *"Ne plus subir, ne plus voler : **produire**."* Le Bureau tente aujourd'hui de **fabriquer** des artefacts, de créer des entités contrôlées, de développer l'occulte comme technologie d'État. C'est cette doctrine qui a alarmé le CESA et provoqué le classement ROUGE. |
+
+---
+
+## ⚔️ Doctrine actuelle du Bureau Vetch
+
+Là où Félicie **endort** et le CESA **coordonne**, le Bureau Vetch **explore** :
+
+| Doctrine occidentale | Équivalent Vetch | Différence |
+|---------------------|------------------|------------|
+| Endormir (sceller et surveiller) | **Пробуждение — Éveil contrôlé** : réveiller partiellement une entité pour l'étudier en laboratoire | Le Vetch pense que le Mythe peut être **domestiqué** comme l'énergie nucléaire |
+| Effacer (dénier publiquement) | **Exploitation** : utiliser les phénomènes comme armes (déstabilisation psychologique de cibles, sabotage rituel) | Pour le Vetch, le Mythe n'est pas une menace, c'est un **arsenal** |
+| Brûler (détruire) | **Récolte** : récupérer des "spécimens" sur les sites occidentaux neutralisés | Le Vetch suit les opérations occidentales pour **ramasser ce que les Occidentaux détruisent** |
+
+**Conséquence dramatique en jeu** : les opérations de Félicie et du CESA sont **infiltrées ou suivies** par le Vetch, qui attend que les Occidentaux fassent le sale travail, puis intervient après coup. Cela explique pourquoi un site "scellé" peut se réveiller : ce n'est pas un échec occidental, c'est une **récolte russe**.
+
+---
+
+## 👥 Profils d'agents du Vetch
+
+| Profil | Origine | Caractéristiques |
+|--------|---------|------------------|
+| **Le Vetchnik** (opérateur) | SVR, ex-KGB, Spetsnaz, anciens militaires du GRU | Extrêmement discipliné, souvent **plus stable psychologiquement** que ses équivalents occidentaux (le Bureau sélectionne sur la froideur, pas sur la créativité). N'éprouve aucune culpabilité à sacrifier des témoins. |
+| **L'Académicien** | Académie des sciences (physique, biologie, linguistique) | Issu des instituts de recherche fermés (*Akademgorodok*, instituts de Novossibirsk). Traite les entités comme des **spécimens biologiques** : dissection, vaccination, croisement. Certains sont de **vrais savants brillants** et sincèrement curieux — les plus dangereux en discussion. |
+| **Le Prêtre-Récoltant** | Église orthodoxe / anciens officiants des cultes sibériens | Recruté pour son expertise rituelle. Souvent un **croyant authentique** — ce qui le rend imprévisible : il peut refuser une opération "blasphématoire", ou au contraire s'y livrer avec un fanatisme terrifiant. |
+| **Le Nettoyeur Rouge** | Anciens militaires, service de sécurité intérieure | Assure la contre-mesure : surveiller les Occidentaux, éliminer les témoins gênants, **exfiltrer les spécimens** après une opération occidentale. C'est lui que les joueurs croiseront le plus souvent. |
+
+---
+
+## 🎭 Points de contact avec la campagne
+
+Le Bureau Vetch s'interface naturellement avec les éléments déjà établis du livret :
+
+1. **Les collectionneurs occultes** (Comte de Montclair, Comte Orlov, Comte van der Meer) : les artefacts volés par le Vetch dans les années 1990 ont transité par ces réseaux. Un scénario sur un collectionneur peut donc révéler une **piste russe**.
+2. **Le Projet Thule / l'Ahnenerbe** : les archives nazies saisies par l'Armée rouge en 1945 (la partie que les Américains n'ont pas eue) sont détenues par le Vetch. Une affaire "Thule" en Autriche peut donc attirer l'attention du Bureau.
+3. **Les scénarios de musées** : le Vetch **infiltre les musées européens** par le biais de prêts d'exposition, de restaurateurs sous contrat et de fondations culturelles écrans. Tout scénario de musée peut intégrer un "conservateur invité" suspect.
+4. **Delta Green** : le Vetch considère les Américains comme son **ennemi principal** (Majestic-12 ayant récupéré le gros des archives nazies). Il peut donc proposer des **alliances ponctuelles** aux Européens — une tentation permanente pour le CESA, source des meilleurs dilemmes.
+
+---
+
+## 🎲 Scénarios types mettant le Vetch en jeu
+
+**1. "L'Invité de Prague"** (CESA, intermédiaire) : Un "conservateur russe" invité à une exposition sur les artefacts samoyèdes au musée de Prague demande à visiter les réserves. Le Vetch utilise les prêts d'exposition comme couverture pour cartographier les collections occultes européennes. Les agents doivent déterminer ce qu'il cherche **sans provoquer d'incident diplomatique**.
+
+**2. "La Récolte"** (Félicie ou CESA, avancé) : Les agents scellent un site en Forêt-Noire (doctrine SIESTE). Trois semaines plus tard, le site est **vide** : l'entité a disparu, et des traces de matériel russe sont trouvées. Le Bureau Vetch a suivi l'opération et récolté. Faut-il se taire (et admettre l'humiliation) ou porter l'affaire au CESA (et révéler que le site était scellé par des moyens inavouables) ?
+
+**3. "L'Ostankino Français"** (Félicie, avancé, inspiration directe de l'affaire de 1988) : Un laboratoire "ami" du CEA tente une **expérience d'éveil contrôlé** (sans en informer Félicie). Le résultat est une catastrophe contenue de justesse. Or, l'expérience s'inspirait de documents... acquis auprès d'un transfuge russe. Qui a laissé fuiter ces documents, et pourquoi ? Le Vetch a-t-il **deliberately** provoqué l'expérience française ?
+
+**4. "La Nuit de Toula"** (Vetch, tous niveaux, scénario "retour aux sources") : Une mission de contre-renseignement en Russie (rare, hautement dangereuse, autorisation ARCANE-5) : infiltrer le Bureau Vetch pour comprendre ce qui s'est passé à Toula en **1905** — l'événement fondateur, jamais documenté en Occident, qui pourrait expliquer la vraie nature du Bureau.
+
+---
+
+## 📊 Tableau comparatif final (avec le Vetch)
+
+| Aspect | **Félicie** 🇫🇷 | **CESA** 🇪🇺 | **Bureau Vetch** 🇷🇺 | **Delta Green** 🇺🇸 |
+|--------|----------------|--------------|----------------------|---------------------|
+| **Doctrine** | Endormir | Coordonner | **Exploiter / Produire** | Détruire |
+| **Rapport au Mythe** | Menace à contenir | Menace partagée | **Ressource à domestiquer** | Ennemi à abattre |
+| **Cohérence morale** | Sombre, mais républicaine | Bureaucratique, lente | **Cynique, instrumentale** | Paranoïaque, sacrificielle |
+| **Point fort** | Archives historiques (1793-2026) | Réseau multilatéral | **Discipline + recherche appliquée** | Improvisation, ressources vols |
+| **Point faible** | Petit, dépendant du politique | Sans pouvoir d'exécution | **Paranoïa interne, purges** | Illégal, isolé, improvisé |
+| **Ce qui le rend unique** | Il a **vu le pire et survécu deux fois** (1940, 1981) | Il est le **seul** lieu où l'on coopère | Il est le seul à **ne pas avoir peur du Mythe** | Il est le seul à **comprendre** le Mythe |
+
+---
+
+**💬 Prochaines étapes possibles** :
+- Veux-tu que j'intègre ces deux parties (protocoles internes + Bureau Vetch) dans le **livret LaTeX** (nouveaux chapitres "Protocoles et Doctrines" et "Organisations Rivales") ?
+- Veux-tu développer un **scénario complet** avec le Vetch comme antagoniste (ex : "La Récolte" en Forêt-Noire, directement jouable) ?
+- Ou préfères-tu un **second concurrent** pour compléter le tableau (les britanniques post-Brexit du "Department Z" ? une organisation criminelle transnationale ? un culte lovecraftien international) ?
+
+
+
+Développer un scénario complet et un second concurrent
+
+
+# 🎬 SCÉNARIO COMPLET : « LA RÉCOLTE »
+
+**Scénario pour Delta Green — utilisable avec Félicie ou le CESA**
+*Forêt-Noire, Allemagne — Époque contemporaine*
+
+---
+
+## 📋 Fiche technique
+
+| | |
+|---|---|
+| **Agence** | CESA (recommandé) ou Félicie (cellule détachée en coopération) |
+| **Joueurs** | 3 à 5 agents, ARCANE-3 minimum |
+| **Durée** | 3 à 4 séances (env. 12-15h de jeu) |
+| **Ambiance** | Contre-espionnage, horreur contenue, dilemmes politiques |
+| **Menaces** | Le Bureau Vetch, un site qui "se réveille", la tentation de l'artefact |
+| **Inspiration** | *Twin Peaks* (l'endroit qui ne va pas), *Tinker Tailor* (l'espionnage), *Annihilation* (la zone) |
+
+### ⚠️ Accroche pour les joueurs (briefing d'ouverture)
+
+> *Il y a trois semaines, la cellule berlinoise du CESA a scellé un site dans la Forêt-Noire : une mine du XVIᵉ siècle où un culte local avait tenté un réveil. Opération sale, deux morts côté culte, un agent blessé. Doctrine SIESTE appliquée : quatre balises "CERCLE" posées, site isolé, périmètre barbelé, couverture officielle — « ancienne galerie de mine, risque d'effondrement, accès interdit par arrêté municipal ».*
+>
+> *Hier, le contrôle COLCHIQUE annuel a été effectué par un garde forestier payé pour signaler toute intrusion.*
+>
+> *Ce matin, son rapport est arrivé par fax (le seul canal qu'il utilise) : « Hier soir, des lumières. Des bruits. Le portail de la barrière est ouvert. J'ai vu des traces de pas. Beaucoup de traces. Elles sortent de la mine. »*
+>
+> *Les balises CERCLE ont cessé d'émettre il y a 36 heures.*
+
+---
+
+## 🎭 Structure générale
+
+Le scénario se joue en **trois actes** :
+1. **L'Inspection** — le site, les traces, la découverte de l'incursion russe ;
+2. **La Piste** — remonter l'équipe du Vetch, enquête à Furtwangen et au-delà ;
+3. **Le Confrontation** — le hangar de la "récolte", l'entité, le dilemme final.
+
+**Le vrai sujet du scénario** n'est pas le monstre. C'est la question : *que fait-on quand l'ennemi a dérobé ce qu'on a scellé — et qu'avouer le vol revient à avouer qu'on l'avait scellé par des moyens inavouables ?*
+
+---
+
+## ACTE I : LE SITE
+
+### 1.1 — Le voyage
+
+Les agents partent de Paris ou Bruxelles en véhicule banalisé. C'est l'occasion de **développer la couverture** : ils voyagent comme « experts en patrimoine minier » (couverture PASSE-CULTURE), une convention de secrétariat les identifie comme consultante du ministère de la Culture. L'Allemagne exige que le CESA passe par un **correspondant local** : **l'agent Hans Beckenbauer** (voir PNJ), du BND, détaché Abteilung XIV,ARCANE-EU niveau 2. Il les attend sur place, **agacé d'être réveillé pour ça** — son service n'a jamais cru à l'affaire de la mine.
+
+**Événement du voyage** : à mi-chemin, la radio de la voiture capte une station locale qui émet un bulletin d'information... avec des **difficultés sonores répétées** (grésillements, phrases coupées). Un jet de *Écoute/Attention* réussi fait remarquer que les coupures sont **rythmées** — comme un battement. (Ce n'est pas l'entité : c'est le **matériel du Vetch**, qui brouille la zone. Le MJ garde l'info pour l'Acte II.)
+
+### 1.2 — Le site de la mine
+
+**Description d'ambiance** :
+> *La mine se cache au bout d'un chemin forestier, sous des hêtres centenaires. La barrière métallique est arrachée, pas coupée — arrachée vers l'extérieur. Le périmètre de barbelé a été sectionné proprement, au cutter. Sur le sol, des traces de pas militaires — godillons, pas de chaussures civiles — et deux sillons parallèles : un brancard ou un traîneau, traîné lourdement.*
+
+**Ce que l'investigation du site révèle** :
+
+| Investigation | Découverte |
+|---------------|------------|
+| **Balises CERCLE (4)** | Trois sont **démontées et emportées**. La quatrième est restée — elle a été **ouverte et refermée** : les Russes ont compris la technologie et en ont emporté des exemplaires. *Conséquence stratégique majeure : une technologie occidentale classifiée est désormais en mains russes.* |
+| **La galerie principale** | Le site scellé est **vide**. L'entité (un « nœud » de Mythe, une masse informe souterraine liée au culte — voir encadré) a été **extraite**. Il reste des traces : un mélange de sang, de boue et d'une substance organique, gélatineuse, qui **brille faiblement dans le noir**. Contact direct : perte de **1D4 SAN**. |
+| **La galerie latérale** | Les agents trouvent le **matériel abandonné par le culte** (partiellement) : robes, icônes, un livre (le *Malleus Saltuum*, « Le Marteau des Forêts », grimoire mineur, allemand, 1653). Le *Malleus* a été **feuilleté récemment** — des gants en caoutchouc ont laissé des traces de poudre latex. Le Vetch l'a lu et **l'a laissé**. (Pourquoi ? Voir Acte II.) |
+| **Un objet intrus** | Dans un coin de la galerie, un objet qui n'était pas là trois semaines avant : un **canif de campagne**, modèle russe standard, gravé d'un matricule. Un jet de *Bureaucratie/Militaire* réussi identifie la série : **équipement des unités des garde-frontières SVR**, pas des touristes. |
+
+### 1.3 — L'incident du garde forestier
+
+Avant de quitter le site, les agents reçoivent un appel de Beckenbauer : **le garde forestier n'a pas répondu à son fax-confirmation du jour**. C'est un vieil homme méticuleux (voir PNJ Erich Lessing). S'ils vont le voir :
+
+- Sa maison de village est **ouverte, en désordre léger** — quelqu'un a cherché quelque chose, sans violence.
+- Lessing est **absent depuis la veille au soir**. Son voisin dit avoir vu « une grande berline noire avec des plaques tchèques » garée près de chez lui.
+- Dans son bureau, un tiroir forcé : il contenait son **journal de bord**, où il notait scrupuleusement... les passages du CESA, **les dates, les horaires, le nombre de personnes, les objets transportés**. Lessing ne savait pas ce qu'il gardait — mais il **avait tout consigné**, avec un luxe de détails. Ce journal a été **emporté**.
+
+**Premier jet de SAN possible** : si un agent échoue à un jet de *Psychologie* en inspectant la chambre de Lessing, il comprend que le vieil homme a été **enlevé** (et non juste disparu) — les Russes ont besoin de lui vivant pour reconstituer **ce qu'il a vu**. Perte : 1D2 SAN.
+
+### 1.4 — Le débriefing de fin d'Acte I
+
+Les agents doivent décider :
+- **Rapporter en haut lieu** (le CESA doit être informé, mais la révélation « balise volée + site vidé » est une catastrophe politique — un pays membre a hébergé une opération, et une puissance étrangère l'a sabotée sur son sol) ;
+- **Enquêter d'abord sur place** (et risquer que le Vetch soit déjà loin) ;
+- **Alerter les Allemands** (Abteilung XIV, ce qui fera éclater l'affaire au grand jour du renseignement allemand — le BND n'est pasARCANE-EU et prendra très mal d'apprendre qu'on cachait un site sur son territoire).
+
+*C'est le premier dilemme réel du scénario. Le MJ doit laisser les joueurs choisir librement — chaque option a des conséquences en Acte III.*
+
+---
+
+## ACTE II : LA PISTE
+
+### 2.1 — Ce que les joueurs peuvent apprendre
+
+**Le nœud d'énigme de l'acte** : le Vetch n'a pas fait ça **seul**. Ils avaient un **informateur en amont** — quelqu'un qui savait où et quand le site avait été scellé. Cette information n'existait que dans trois endroits : le **rapport de la cellule berlinoise**, les **archives du CESA** à Bruxelles, et l'**agenda de l'agent de liaison** allemand (Beckenbauer, qui avait été informé après coup, mais par écrit).
+
+L'enquête des joueurs (selon leurs compétences) mène à trois pistes :
+
+**Piste A — Les télécommunications (jet de Science/Info réussi)** :
+Le brouillage radio capté dans la voiture est le signal de **relais russes** : un jet de *SIGINT/Électronique* réussi révèle que la zone a été saturée par un **émetteur portable** de puissance moyenne, il y a environ 40 heures. Le signal n'a pas complètement disparu : un **faible signal résiduel persiste vers l'est**. Triangulation possible : un point de relais dans un village à 30 km, ou une **antenne mobile** en déplacement. Cela donne une **direction**, pas une adresse.
+
+**Piste B — Le Malleus Saltorum (jet d'Histoire/Occultisme réussi)** :
+Le grimoire laissé sur place raconte l'histoire du culte de la mine : une secte de **mineurs**, fondée au XVIIᵉ siècle, qui cherchait à « nourrir la forêt » en sacrifice rituel, espérant que « la Forêt nourrirait en retour » — c'est-à-dire que l'entité scellée (le « Nœud de la Forêt ») donnerait des **filons d'argent miraculeux** aux mineurs. Le Vetch n'a pas emporté le livre parce que le livre ne l'intéresse pas : **ils ont déjà lu mieux** (dans les archives nazies saisies en 1945, le *Malleus* existe en trois exemplaires — le Vetch en possède un). Ce qu'ils voulaient, c'était **l'entité elle-même**.
+
+**Piste C — Le trafic routier (jet de Criminologie/Enquête réussi)** :
+La grande berline aux plaques tchèques vue chez Lessing — un contrôle de police tchèque (via Europol, sous couverture) confirme qu'une **voiture de location** louée à Prague sous un faux nom a traversé la frontière vers l'Allemagne il y a 3 jours. La location est payée par une **société écran** — une « entreprise de transport frigorifique » : *Transport Mraz Ltd.*, Prague. Le frigorifique est un détail important : **l'entité doit être transportée à basse température** (le « nœud » entre en dormance sous 10°C — c'est la seule chose qui le calme, découverte par hasard lors de l'opération de scellement).
+
+### 2.2 — Beckenbauer (PNJ pivot)
+
+L'agent allemand devient **l'enjeu dramatique** de l'acte. Il est honnête mais **hors circuit** — il n'avait pas l'habilitation ARCANE-EU complète. Deux options dramatiques au choix du MJ :
+
+- **Beckenbauer coopère, mais exige une contrepartie** : il veut le dossier complet sur le site (le rapport réel de la cellule berlinoise, pas la version « risque d'effondrement »). Les agents doivent choisir : mentir à un allié (et risquer de le perdre), ou **lui révéler la vérité** (et accroître de 1 le nombre de personnes au courant — avec les risques REMORA associés).
+- **Beckenbauer est soupçonné** (par les joueurs paranos) : il n'est pas un traître, mais son **agenda** a bien été copié (par son adjoint, un civil du BND, non habilité, qui a reçu l'info par écrit « pour le dossier de liaison » — le Vetch a payé ou fait chanter quelqu'un au BND pour obtenir une copie). *Le traître n'est pas un agent, c'est un fonctionnaire de secrétariat : les failles sont toujours administratives.*
+
+**Point dramatique** : si les joueurs accusent à tort Beckenbauer et le mettent au pied du mur (interrogatoire musclé, menace de REMORA), il **refusera toute coopération ultérieure** — rendant l'Acte III beaucoup plus dur (pas de soutien logistique allemand).
+
+### 2.3 — La poursuite (montée en tension)
+
+En suivant les pistes, les agents localisent le convoi : un **camion frigorifique** (Transport Mraz) qui a quitté la Forêt-Noire vers le sud-est, **en direction de la République tchèque**. Le relais radio capté vers l'est correspond au **suivi du convoi** par l'équipe du Vetch (une équipe de « nettoyage » de 3-4 hommes, les Nettoyeurs Rouges, dont le rôle est de **couvrir la récolte** — pas de la mener eux-mêmes).
+
+**Découverte clé en route** : le **garde forestier Lessing** est retrouvé — pas mort, mais **dans un état catatonique**, abandonné dans une aire d'autoroute. Les Russes ont utilisé sur lui une technique de « interrogatoire approfondi » : un mélange de drogues, de privation sensorielle et... d'exposition légère à un artefact (le « masque de Gogol », artefact russe qui **extrait la mémoire verbale** de la victime). Lessing se réveille, parle de sa vie entière, **en boucle**, sans pouvoir s'arrêter — le Vetch a récupéré son journal de bord **et effacé la mémoire de sa propre possession**. Perte de SAN pour qui l'observe : **1D4**.
+
+Le convoi se dirige vers un **hangar désaffecté** près de la frontière tchèque — une ancienne **ferme laitière industrielle**, rachetée par une société écran, dans une zone rurale isolée, à 15 km de Cheb (République tchèque).
+
+---
+
+## ACTE III : LE HANGAR
+
+### 3.1 — Le hangar de la récolte
+
+**Description** :
+> *Une ancienne ferme laitière, abandonnée depuis les années 2000. Le hangar principal, en béton, est éclairé de l'intérieur par des halogènes froids. Deux véhicules devant : le camion frigorifique, une berline. Sur le côté, un générateur diesel ronronne. À l'intérieur, des voix — russes, calmes, professionnelles. Pas de cris, pas de chaos : une équipe qui travaille.*
+
+**Ce qui se passe à l'intérieur** (les joueurs l'apprendront en s'approchant) :
+Le Vetch a installé un **laboratoire de fortune** : 3 chercheurs (Académiciens) supervisés par un **Prêtre-Récoltant** (orthodoxe, vêtu d'une soutane sous sa blouse), 2 Nettoyeurs Rouges en garde, et le chef d'équipe, **le Major Anatóli Sedov**. Ils ont réussi à **extraire le Nœud** de la mine (il est inactif, refroidi), et tentent de le **conditionner** pour le transport vers la Russie : une cuve métallique, remplie d'un liquide cryogénique, où le Nœud sera scellé et **expédié par avion cargo** depuis Prague (aéroport privé, liaison vers Moscou-Vnukovo).
+
+**Le Nœud lui-même** : une masse gélatineuse, d'environ 2 mètres de diamètre, blanchâtre, translucide. Elle **pense**. Elle n'est pas violente par nature — elle est **affamée** (le culte la nourrissait rituellement, depuis 300 ans, de sang animal — et parfois pas seulement animal). Dans la mine, elle était en dormance, faute de nourriture. **Réchauffée et affamée, elle est dangereuse** — pas par agressivité, mais par **faim irrépressible** : elle aspire ce qui s'approche, elle absorbe la chaleur et la matière organique, et **les émotions** aussi (d'où les cauchemars, l'étrange ambiance de la forêt).
+
+**Ce que le Nœud provoque** (et pourquoi les cultes l'adoraient) :
+- Perte de SAN à sa vue : **1D6** ;
+- Si quelqu'un **touche** la substance : 1D10 SAN et jet de CON — les chairs se refroidissent, une **froideur qui ne part pas** (handicap permanent possible) ;
+- Toute personne restant plus de 10 minutes à proximité perd 1D4 **Température corporelle**, ressent un besoin irrésistible de **s'approcher** (jet de VOL pour résister).
+
+### 3.2 — L'approche : les options tactiques des joueurs
+
+Les joueurs ont plusieurs options, aucune n'est « la bonne » :
+
+**Option A — Assaut frontal** : 5 à 7 ennemis armés (fusils, pistolets), avec le risque de **détruire la cuve cryogénique** et de réveiller le Nœud en plein combat. Possible, mais très risqué : le chaos libère le Nœud dans la nature (une entité affamée dans une zone rurale tchèque = scénario apocalyptique, à l'initiative du MJ).
+
+**Option B — Sabotage** : couper le générateur → la cuve se réchauffe → le Nœud se réveille à l'intérieur du hangar → chaos dans l'équipe russe (le Nœud attaque tout ce qui bouge, y compris les Russes). Les joueurs peuvent intervenir ensuite, mais **doivent affronter le Nœud** aussi — et le Nœud ne distingue pas ses alliés de ses ennemis. *Stratégie pragmatique, mais très morale : les scientifiques russes sont aussi des victimes potentielles.*
+
+**Option C — Négociation / Dissuasion** : révéler aux Russes que **le CESA sait tout** et que le vol des balises CERCLE est une casus belli diplomatique (même clandestin). Sedov est un professionnel, pas un fanatique : si les joueurs peuvent **démontrer** que l'affaire est compromise (rapport déjà envoyé à Bruxelles, équipe de secours en route — un bluff), il pourrait choisir de **retirer son équipe et abandonner le Nœud**, pour éviter un incident majeur. Mais Sedov n'est pas naïf : un **double bluff** est possible (il abandonne le Nœud et emporte les **balises volées**, qui sont, technologiquement, plus précieuses que le Nœud lui-même).
+
+**Option D — Laisser faire et rapporter** : le choix lâche. Le Vetch emporte le Nœud vers la Russie. Les agents rentrent, font leur rapport, la hiérarchie leur dit *"vous avez bien fait de ne pas créer d'incident"*. Mais à long terme, ce choix se paie : le Nœud, domestiqué par le Vetch, réapparaîtra dans un scénario futur (le MJ peut le réutiliser — le Nœud devient une **arthrite dramatique récurrente**, un fantôme qui revient).
+
+### 3.3 — Le Major Anatóli Sedov (PNJ principal)
+
+Le chef d'équipe, 52 ans, professionnel, ni cruel ni fanatique. Il **croit** à la mission de son service : *"La nature n'a pas de morale. Nous devons apprendre à la domestiquer, ou l'Occident le fera avant nous."*
+
+- **Profil** : ancien Spetsnaz, GRU pendant la Tchétchénie, recruté par la SVR à 40 ans. Il a vu des choses en Tchétchénie qui expliquent pourquoi le Bureau Vetch l'a recruté (le MJ peut laisser ça dans le flou — un passé trouble qui a coûté la vie à son unité, une histoire que Sedov ne raconte jamais).
+- **Combat** : redoutable (jet de combat 80%, arme de poing et fusil d'assaut, excellente couverture de ses hommes).
+- **Personnalité** : pragmatique, rusé, respecte l'adversaire. Il **n'est pas un méchant stéréotypé** : s'il doit négocier, il le fera — mais il ne laissera jamais ses hommes mourir pour un artefact.
+- **Ce qu'il peut offrir** (si la négociation se passe bien) : rendre le Nœud, **garder les balises**, et partager une information : *« Votre site allemand n'était pas le premier. Nous en avons déjà récolté deux autres, en Suède et en Finlande. Vous devriez vérifier vos scellés. »* — Hook pour une campagne future.
+
+### 3.4 — Le Prêtre-Récoltant (adversaire dramatique)
+
+Le Père Mikhaïl, prêtre orthodoxe, 60 ans, **croyant sincère**. Il refuse catégoriquement de participer à la « domestication » du Nœud — pour lui, c'est un démon, et il faut l'**exorciser**, pas le transporter. C'est le point de **friction interne** de l'équipe russe : si les joueurs le découvrent, ils peuvent **retourner le prêtre** (et créer une diversion qui sauve la situation sans un seul coup de feu). Le Père Mikhaïl ne trahira pas la Russie — mais il trahira Sedov *« pour le salut de son âme et de la vôtre »*.
+
+### 3.5 — Endings possibles
+
+| Ending | Conditions | Conséquences |
+|--------|------------|--------------|
+| **La neutralisation** | Les joueurs récupèrent le Nœud, tuent ou capturent l'équipe russe (Sedov meurt ou s'échappe) | Victoire tactique. Mais le CESA doit **gérer diplomatiquement** un incident armé sur le sol tchèque. Le Nœud doit être **re-scellé** (où ? la question reste ouverte — voir Épilogue). |
+| **Le compromis** | Sedov abandonne le Nœud, garde les balises, se retire | Victoire amère. Le Vetch a la technologie des balises CERCLE. Les agents savent que **la prochaine fois**, ils devront réagir plus vite. |
+| **Le désastre** | Le Nœud se libère et échappe à tout le monde | Le Nœud disparaît dans la forêt tchèque, affamé, en train de grandir. Scénario de poursuite/impossibilité : **la prochaine fois qu'on le reverra, il sera trop tard**. Hook majeur pour campagne. |
+| **Le renvoi à l'expéditeur** | Les joueurs laissent faire, rapportent | Aucune conséquence immédiate. Le Vetch domestique le Nœud en Russie, dans un labo — qui **explosera** (littéralement ou métaphoriquement) dans un scénario futur, **"l'Ostankino français"** devenant réalité. |
+
+### 3.6 — Épilogue (à jouer)
+
+De retour au QG (Bruxelles ou Paris), le débriefing tourne autour d'une question embarrassante : **que fait-on du Nœud ?** (s'ils l'ont récupéré). Le scellé d'origine (mine) est **compromis** — le Vetch sait où il était. Les Archives Félicie suggèrent un site alternatif : une **légende** mentionne, dans le *Rapport Grégoire, annexe VII* (1793), un lieu « où la terre ne donne rien et où rien ne pousse » — possiblement le seul **site de confinement naturel** jamais documenté en France.
+
+*Le MJ peut laisser ce fil ouvert : l'épilogue devient l'accroche du scénario suivant (« Le Lieu Muet »).*
+
+---
+
+## 🎲 Annexes de jeu (Delta Green)
+
+### Perte de SAN (récapitulatif)
+
+| Événement | Perte |
+|-----------|-------|
+| Voir le Nœud en activité (hors dormance) | 1D6 |
+| Toucher le Nœud / sa substance | 1D10 + jet de CON |
+| Voir Lessing catatonique (mémoire extraite) | 1D4 |
+| Découvrir les balises CERCLE volées (comprendre la compromission) | 1D2 |
+| Assister à la libération du Nœud (option B) | 1D8 |
+| **Voir une victime absorbée par le Nœud** (si un PNJ ou joueur est capturé) | 1D10 |
+
+### Les Nettoyeurs Rouges (3 hommes)
+
+| Caractéristique | Valeur |
+|-----------------|--------|
+| Combat (fusil/pistolet) | 70% |
+| Corps à corps | 60% |
+| Conviction | 80% |
+| **Faiblesse** | Discipline : jamais d'improvisation, jamais de prise d'initiative. Si leur officier (Sedov) est neutralisé, ils **se retirent systématiquement** plutôt que de continuer le combat. |
+
+### Le Major Sedov
+
+| Caractéristique | Valeur |
+|-----------------|--------|
+| Combat | 80% |
+| Corps à corps | 75% |
+| Conviction | 90% |
+| Négociation/Manipulation | 85% |
+| **Faiblesses** | Ses hommes (il ne les sacrifiera jamais), son passé en Tchétchénie (source potentielle de distraction émotionnelle). |
+
+### Le Nœud (si affrontement)
+
+| Caractéristique | Valeur |
+|-----------------|--------|
+| Taille | 2m de diamètre (en croissance si nourri) |
+| Absorption | Toute créature en contact : 2D6 points de constitution absorbés par round |
+| Déplacement | Très lent (1m/round) — mais peut **émettre des prolongations** (pseudopodes) jusqu'à 3m |
+| **Faiblesses** | Température inférieure à 10°C : entrée en dormance. **Feu** : détruit les prolongations mais pas le noyau. **La seule destruction documentée** : un rituel d'exorcisme + le feu (le Père Mikhaïl connaît le rituel — d'où sa valeur). |
+
+### 📄 Document distribuable au MJ (à imprimer pour la table)
+
+> **RAPPORT DE CLÔTURE — Cellule berlinoise CESA — OPERATION "SIEBEN"**
+> *Site : ancienne galerie de mine, Forêt-Noire, Allemagne. État : scellé (doctrine SIESTE). Balises : 4/4 posées. Couverture : "risque d'effondrement, arrêté municipal n° 2024-117. Prochaine inspection COLCHIQUE : 11 mois.*
+> *Note de la Direction : la cellule berlinoise a signalé, en annexe, que l'entité contenue (désignée "objet S-7") a présenté une "activité anormale" pendant le scellement, incluant des vocalises entendues par tous les agents présents. Ces vocalises ont été interprétées par un agent comme une "phrase intelligible, en allemand ancien, dont il ne se souvient pas." Le rapport recommande un suivi psychologique des agents impliqués.*
+> *Ce rapport est classifié ARCANE-EU niveau 3. Toute divulgation non autorisée est passible de procédure REMORA.*
+
+---
+
+---
+
+# 🇬🇧 PARTIE 2 : SECOND CONCURRENT — LE « DEPARTMENT Z » (Royaume-Uni)
+
+*"Le Brexit a eu lieu. Les anges, eux, n'ont pas voté."*
+— Note interne CESA, 2020
+
+---
+
+## 🏛️ Présentation générale
+
+**Nom officiel de couverture** : *Special Collections Unit*, rattaché au **Joint Intelligence Organisation** (JIO), Cabinet Office
+**Nom interne** : **Department Z** (la 26ᵉ lettre, dernier service classé de l'ancien Imperial War Office, jamais réformé depuis)
+**Devise** : *"Si vis pacem, para arcanum"* (*"Si tu veux la paix, prépare l'arcane"*)
+**Particularité unique** : le Department Z est le **seul service occidental** à avoir **deux fois** refusé de rejoindre les structures européennes (1997 et 2004) — pour des raisons de **fierté nationale**, pas de doctrine. Il est aujourd'hui le **principal partenaire non européen** du CESA, et le principal **flirt institutionnel** de Delta Green en Europe (ce qui le rend précieux ET suspect).
+
+---
+
+## 📜 Historique
+
+| Période | Événement |
+|---------|-----------|
+| **1888** | ***La fondation officieuse*** : les meurtres de Whitechapel (Jack l'Eventreur) révèlent au Scotland Yard que certains crimes présentent des **motifs rituels** impossibles à expliquer. Une enquête secrète (le *Megilah File*, archives du MET Police, toujours scellées) conclut : *"Ces meurtres ne sont pas l'œuvre d'un seul homme, mais d'un collectif pratiquant un culte pré-babylonien."* Le commissaire en chef crée un **comité ad hoc** — jamais dissous depuis. |
+| **1914-1918** | ***Le Western Front Committee*** : les phénomènes des tranchées (les *"Angels of Mons"*, les fantômes, les voix) inquiètent le War Office. Le Department Z est formellement créé en **1916** comme unité de contre-espionnage occulte, rattaché au MI5, puis **détaché** au War Office (militaire, pas civil — c'est encore sa singularité aujourd'hui : le Department Z est **militaire**, pas policier). |
+| **1939-1945** | ***L'Alliance*** : la Seconde Guerre mondiale rapproche le Department Z du Bureau S français et du futur OSS américain. Les Britanniques récupèrent une partie des archives Ahnenerbe (moins que les Américains, plus que les Français) et, surtout, **l'île** : le site de **Pellamore** (Écosse), un ancien monastère où l'on a « observé » le premier Grand Ancien jamais repéré sur le sol britannique. L'île est aujourd'hui **le site de confinement le plus ancien et le plus stable d'Europe** — une source de jalousie permanente pour Félicie. |
+| **1947-1970** | ***Le Special Relationship*** : le Department Z travaille main dans la main avec l'embryon de Delta Green. Les Américains (Majestic-12, puis le programme Delta Green officiel) financent une partie des opérations britanniques en échange d'**accès aux archives**. C'est l'âge d'or du Department Z : 200 agents, un budget confortable, une confiance sans faille avec les Américains. |
+| **1970-1979** | ***La Rupture*** : quand Delta Green est officiellement dissous (1970), le Department Z perd son partenaire principal — et refuse de suivre les Américains dans la clandestinité. Il continue de collaborer avec la version clandestine de Delta Green, mais **à distance**, par prudence diplomatique. Cette prudence lui vaut la **méfiance durable** des Américains ("les Anglais ont eu peur", dit la rumeur à Delta Green). |
+| **1980-1990** | ***Le Silence opérationnel*** : sous Thatcher, le Department Z est réduit à la portion congrue (le gouvernement est sceptique, le MI5 le considère comme une "curiosité historique"). Effectifs : moins de 60. Budget : minimum syndical. Le service survit en se recentrant sur le **patrimoine** : il garde Pellamore et surveille les sites britanniques, sans opérations offensives. |
+| **1997-2016** | ***Le Refus européen*** : le CESA propose au Department Z de rejoindre le réseau (1997, puis 2004). Refus deux fois : le Department Z refuse de **partager Pellamore** et ses archives, et ne veut pas d'un contrôle multinational sur ses sites. La relation avec le CESA est **polie mais distante** : le Royaume-Uni fournit des informations **sélectives**, reçoit des analyses du CESA, mais ne participe jamais aux opérations. |
+| **2016-2026** | ***Le Brexit*** : le Brexit change tout et rien. Le Department Z perd son accès aux bases de données du CESA (MIRADOR), ce qui le handicape sévèrement. Mais il gagne une **indépendance stratégique** : le Royaume-Uni, sorti de l'UE, devient un **partenaire privilégié de Delta Green** en Europe (le seul partenaire européen « officiel » des Américains). Le Department Z devient le **pont** entre l'Europe et les Américains — jouant sur les deux tableaux, au grand dam du CESA. |
+
+---
+
+## ⚔️ Doctrine actuelle
+
+| Doctrine | Nom | Principe |
+|----------|-----|----------|
+| **Observer sans intervenir** | *"HEDGEHOG"* (Hérisson) | Le Department Z a **moins d'effectifs** que Félicie et **beaucoup plus de sites à surveiller**. Sa doctrine est défensive : observer, cataloguer, contenir. Il n'a pas les moyens d'intervenir offensivement à l'échelle du Vetch ou de Delta Green. |
+| **Le patrimoine comme forteresse** | *"CASTLE"* | Le Royaume-Uni est **littéralement truffé** de sites anciens (monastères, menhirs, cathédrales, puits sacrés). Le Department Z considère que **la Grande-Bretagne elle-même est un dispositif de confinement** — chaque lieu de culte ancien est un scellé. Sa mission : **maintenir les scellés**, pas en créer de nouveaux. |
+| **L'amitié dangereuse** | *"BRIDGE"* (Pont) | Depuis le Brexit, le Department Z sert d'**intermédiaire** entre Delta Green et le CESA. Les Américains lui font confiance (depuis 1947), les Européens le tolèrent. Le Department Z **vend cette position** : en échange d'informations, il obtient des faveurs des deux côtés. *Ce qui en fait, du point de vue du CESA, un partenaire nécessaire mais **indéloyal**. |
+
+---
+
+## 👥 Profils d'agents
+
+| Profil | Origine | Caractéristiques |
+|--------|---------|------------------|
+| **The Keeper** (le Gardien) | MI5, GCHQ, War Office, militaire | Gère un **site spécifique** (Pellamore, les sites de Stonehenge, les cathédrales). Vit sur place ou à proximité. Connaît son site **mieux que quiconque**. Faiblesse : hyper-spécialisé, incapable de gérer une affaire hors de son site. |
+| **The Analyst** | GCHQ, universités (Oxford, Cambridge) | Analyseur de données, historien, linguiste. Le Department Z a **les meilleures archives d'Europe** (l'Empire a collecté mondialement pendant 300 ans). Ses analystes sont **élitistes** et considèrent les Européens comme des "amateurs bien intentionnés". |
+| **The Bridge Officer** | MI6/SIS, ancien militaire | Le seul profil **déployable à l'étranger**. Son rôle : la **liaison** avec Delta Green, le CESA, parfois le Vetch (lorsque les intérêts convergent — contre le Vetch, jamais avec lui). Profil discret, sophistiqué, **jamais complètement honnête**. |
+| **The Academic** | Université (théologie, archéologie, physique) | Le Department Z recrute massivement à **Oxford et Cambridge**. Ses agents sont souvent **des savants sincères** (à la différence du Vetch), mais leur foi dans la **supériorité britannique** les rend parfois aveugles aux menaces extérieures. |
+
+---
+
+## 🎭 Points de contact avec la campagne
+
+1. **Pellamore** : le site de confinement britannique, la fierté nationale. Le CESA n'a **jamais** pu y accéder. Une affaire européenne qui nécessiterait l'aide de Pellamore (par exemple, re-sceller le Nœud de *La Récolte*) obligerait les agents à **négocier l'accès** avec le Department Z — une humiliation politique potentielle, mais un levier dramatique puissant.
+
+2. **Les archives** : le Department Z possède le **megilah File** (1888), les archives coloniales occultes (le plus grand patrimoine occulte jamais collectionné, incluant l'Inde, l'Afrique, le Moyen-Orient), et une collection d'artefacts égyptiens **plus complète que celle du Louvre**. Toute enquête historique approfondie finit par aboutir aux Britanniques.
+
+3. **Delta Green** : le Department Z est le **seul canal** par lequel Delta Green opère officiellement en Europe. Si les joueurs européens croisent des Américains sur leur sol, il y a de fortes chances que ce soit par l'intermédiaire du Department Z — ce qui complique tout : **qui informe qui, et qui trahit qui ?**
+
+4. **Le Brexit comme arme dramatique** : les agents du Department Z sont **négativement perçus** par le CESA (soupçons de duplicité, d'arrogance). Cela crée des frictions automatiques dans toute coopération. Et le Department Z, isolé, a parfois **besoin** des Européens — ce qui rend la coopération inévitable, malgré les rancœurs.
+
+---
+
+## 🎲 Scénarios types avec le Department Z
+
+**1. "La Dette de Pellamore"** (CESA × Department Z, avancé) : Suite à *La Récolte*, le Nœud récupéré ne peut être re-scellé nulle part en Europe continentale — sauf à Pellamore, le seul site de confinement stable. Les agents doivent **obtenir l'accès** : négociation au plus haut niveau, avec le Department Z qui exige en échange... un accès aux archives de Félicie (les dossiers Z, le Rapport Grégoire). *Dilemme central : payer la dette en trahissant le patrimoine français ?*
+
+**2. "Le Pont Brisé"** (CESA, intermédiaire) : Un Bridge Officer du Department Z est retrouvé **mort à Paris** — tué par un artefact qui n'aurait jamais dû quitter Pellamore. Qui l'a emporté ? Le Department Z accuse le CESA d'espionnage, le CESA accuse le Department Z d'avoir perdu le contrôle de son patrimoine. Les agents doivent **enquêter ensemble** (équipe mixte franco-britannique), le temps d'une affaire, pour empêcher la rupture totale de la coopération.
+
+**3. "L'Ange de Mons"** (Department Z, tous niveaux, scénario "retour aux sources") : Le Western Front Committee (1916) n'a jamais cessé de surveiller les **phénomènes des tranchées**. Un siècle après, des touristes belges signalent des apparitions près d'Ypres. Le Department Z envoie une équipe sur place (les joueurs), en collaboration forcée avec le CESA (c'est le sol belge). Le phénomène, l'"Ange", semble avoir une **affinité avec les soldats morts**... et la mission dérive rapidement vers le vertige : l'Ange est-il un phénomène naturel, un artefact activé, ou le **premier signe d'un réveil continental** ?
+
+---
+
+## 📊 Tableau final des organisations
+
+| Aspect | **Félicie** 🇫🇷 | **CESA** 🇪🇺 | **Department Z** 🇬🇧 | **Bureau Vetch** 🇷🇺 | **Delta Green** 🇺🇸 |
+|--------|----------------|--------------|----------------------|----------------------|---------------------|
+| **Nature** | Service secret civil (réactivé clandestinement) | Groupe de coordination (pas d'exécution propre) | Unité **militaire** du War Office | Section SVR, autonome de facto | Programme clandestin illégal |
+| **Doctrine** | Endormir | Coordonner | **Observer / Confiner** | **Exploiter / Produire** | Détruire |
+| **Age** | Fondé 1945 (racines 1793) | Né 2004 (racines 1977) | Fondé **1888/1916** (le plus ancien en activité) | Fondé 1919 (racines 1905) | Fondé 1928, dissous 1970, réactivé clandestinement |
+| **Effectifs** | ~200 | ~150 staff + correspondants | **~80** (petit, concentré) | ~250 | ~30 actifs + réseau |
+| **Force principale** | Archives historiques | Réseau multilatéral | **Pellamore + archives coloniales** | Discipline, recherche appliquée | Improvisation, détermination |
+| **Faiblesse principale** | Petit, dépendant du politique | Pas de pouvoir d'exécution | **Isolé post-Brexit**, effectifs réduits | Paranoïa, purges internes | Illégal, paranoïaque, isolé |
+| **Rapport au Mythe** | Menace à contenir | Menace partagée | Patrimoine à **préserver** | Ressource à exploiter | Ennemi à abattre |
+
+---
+
+**💬 Prochaines étapes possibles** :
+- Veux-tu que j'intègre le **scénario « La Récolte »** et la fiche **Department Z** dans le livret LaTeX (chapitres additionnels) ?
+- Veux-tu développer un **troisième concurrent** (par exemple une **organisation criminelle occulte** transnationale, ou un **culte lovecraftien** structuré comme un réseau terroriste) ?
+- Ou préfères-tu un **arsenal de scénarios courts** (1 séance) mettant en jeu ces différentes organisations en confrontation ?
+
